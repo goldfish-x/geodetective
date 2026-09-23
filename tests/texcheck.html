@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="globe" style="width:400px;height:400px;"></div>
+<script type="module">
+import * as echarts from 'echarts'
+import 'echarts-gl'
+import worldGeo from '/src/data/world-map.json'
+echarts.registerMap('world', worldGeo)
+
+// 与 map-world.js 完全一致的贴图配置
+const PALETTE = [
+  '#77875f', '#8a8161', '#6d7f72', '#94825f',
+  '#7b8563', '#87795d', '#6e7a68', '#8d8a66'
+]
+const countryNames = worldGeo.features
+  .map(f => f.properties && f.properties.name)
+  .filter(Boolean)
+
+const canvas = document.createElement('canvas')
+const chart = echarts.init(canvas, null, { renderer: 'canvas', width: 2048, height: 1024 })
+chart.setOption({
+  backgroundColor: '#0a1120',
+  series: [{
+    type: 'map',
+    map: 'world',
+    roam: false,
+    aspectScale: 1,
+    boundingCoords: [[-180, -90], [180, 90]],
+    left: 0,
+    top: 0,
+    width: '100%',
+    height: '100%',
+    label: { show: false },
+    emphasis: { label: { show: false } },
+    select: { disabled: true },
+    itemStyle: { borderColor: 'rgba(236,225,200,.55)', borderWidth: 0.6 },
+    data: countryNames.map((name, i) => ({
+      name,
+      itemStyle: { areaColor: PALETTE[i % PALETTE.length] }
+    }))
+  }]
+})
+
+// 用同一贴图渲染 3D 地球（shading: color 无光照，颜色即贴图原色）
+const gchart = echarts.init(document.getElementById('globe'))
+gchart.setOption({
+  globe: {
+    baseTexture: chart,
+    shading: 'color',
+    viewControl: {
+      autoRotate: false,
+      distance: 160,
+      minDistance: 110,
+      maxDistance: 320,
+      targetCoord: [2.35, 48.86]
+    }
+  }
+})
+
+// 探针 1：某经纬度在贴图 canvas 上的像素坐标
+window.__probe = (lng, lat) => {
+  try {
+    return chart.convertToPixel({ seriesIndex: 0 }, [lng, lat])
+  } catch (e) {
+    try {
+      const s = chart.getModel().getSeriesByIndex(0)
+      return s.coordinateSystem.dataToPoint([lng, lat])
+    } catch (e2) {
+      return ['ERR', String(e), String(e2)]
+    }
+  }
+}
+
+// 探针 2：把视角对准某经纬度，返回贴图上该点的颜色（随后由截图对比球心颜色）
+window.__lookAt = (lng, lat) => {
+  gchart.setOption({ globe: { viewControl: { targetCoord: [lng, lat] } } })
+  const tx = Math.round((lng + 180) / 360 * 2048)
+  const ty = Math.round((90 - lat) / 180 * 1024)
+  const d = canvas.getContext('2d').getImageData(tx, ty, 1, 1).data
+  return [d[0], d[1], d[2]]
+}
+</script>
+</body>
+</html>
