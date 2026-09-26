@@ -9,7 +9,7 @@ DATA_ROOT = ROOT / "src" / "data"
 def main():
     for mode in ("china", "world"):
         mode_dir = IMAGE_ROOT / mode
-        names = sorted(p.stem for p in mode_dir.glob("*.jpg")) if mode_dir.exists() else []
+        names = sorted(p.stem for p in mode_dir.glob("*.webp")) if mode_dir.exists() else []
         out = DATA_ROOT / (mode + "-images.json")
         out.write_text(
             json.dumps(names, ensure_ascii=False, indent=2) + "\n",

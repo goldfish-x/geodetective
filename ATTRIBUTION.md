@@ -421,8 +421,8 @@
 | 世界篇 · 黄山 | [Anhui Huangshan.jpg](https://commons.wikimedia.org/wiki/File:Anhui_Huangshan.jpg) | Miaulian | CC BY-SA 3.0 |
 | 世界篇 · 黄石国家公园 | [Old Faithful Geyser eruption 03.jpg](https://commons.wikimedia.org/wiki/File:Old_Faithful_Geyser_eruption_03.jpg) | Supercarwaar | CC BY-SA 4.0 |
 
-其余图片（中国篇一二星 120 张、世界篇 37 张）来自项目自备的生成素材，不由 Wikimedia Commons 提供。
+其余图片来自项目自备素材，不由 Wikimedia Commons 提供：其中 157 张为 AI 生成图（中国篇一二星 120 张、世界篇 37 张），29 张为 scripts/generate_illustrations.py 按地名意象绘制的插画（中国篇 28 张、世界篇 1 张），均未登记在本表中。
 
 说明：配图只在答题结束后的结算面板出现，且全部是仓库内的静态文件（`public/images/`），
 游戏运行时不请求任何外部图片地址；因此本署名表用于素材来源合规，而不是运行依赖。
-未覆盖的地点在运行时由 `src/core/placeholder.js` 按地名确定性渲染占位图。
+若将来出现未覆盖的地点，运行时由 `src/core/placeholder.js` 按地名确定性渲染占位图。

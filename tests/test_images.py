@@ -4,12 +4,14 @@ import json
 
 # 地名配图资产校验（离线，无需浏览器）
 #   1. 一二星地点必须有图          2. 磁盘上不得出现陌生地名（孤儿图）
-#   3. 清单 JSON 必须与磁盘一致    4. 统一 300x300、体积在合理区间
+#   3. 清单 JSON 必须与磁盘一致    4. 统一 300x300 WebP、体积在合理区间
 #   5. 全库不得有字节相同的重复图  6. 每张 Commons 图都必须已登记署名
 
 ROOT = Path(__file__).resolve().parents[1]
 MAX_BYTES = 80 * 1024
-MIN_BYTES = 3 * 1024
+# WebP 比 JPEG 小得多：雾景/大平面这类低细节真拍可以压到 2KB 左右仍然正常，
+# 所以下限按 WebP 重新取值（1.5KB 足以筛掉纯色/空白/半写入文件）。
+MIN_BYTES = 1500
 EDGE = 300
 
 try:
@@ -43,7 +45,7 @@ def bank_names(mode):
 
 def on_disk(mode):
     d = ROOT / "public" / "images" / mode
-    return {p.stem for p in d.glob("*.jpg")} if d.is_dir() else set()
+    return {p.stem for p in d.glob("*.webp")} if d.is_dir() else set()
 
 
 fail = []
@@ -61,7 +63,7 @@ for mode in ("china", "world"):
 
 hashes = {}
 for mode in ("china", "world"):
-    for p in sorted((ROOT / "public" / "images" / mode).glob("*.jpg")):
+    for p in sorted((ROOT / "public" / "images" / mode).glob("*.webp")):
         b = p.read_bytes()
         h = hashlib.md5(b).hexdigest()
         tag = "%s/%s" % (mode, p.name)
@@ -85,7 +87,7 @@ for mode, rel in PROV_SOURCES:
     prov = json.loads(f.read_text(encoding="utf-8"))
     total_prov += len(prov)
     for name in prov:
-        if not (ROOT / "public" / "images" / mode / (name + ".jpg")).exists():
+        if not (ROOT / "public" / "images" / mode / (name + ".webp")).exists():
             fail.append("provenance 指向不存在的图: %s/%s" % (mode, name))
         label = "世界篇" if mode == "world" else "中国篇"
         if "%s · %s" % (label, name) not in attr:

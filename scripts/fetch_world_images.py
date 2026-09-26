@@ -112,7 +112,7 @@ def save(img_url, dest, size=300):
             side = min(w, h)
             im = im.crop(((w - side) // 2, (h - side) // 2, (w - side) // 2 + side, (h - side) // 2 + side))
             im = im.resize((size, size), Image.LANCZOS)
-            im.save(dest, "JPEG", quality=82, optimize=True, progressive=True)
+            im.save(dest, "WEBP", quality=80, method=6)
         p.unlink()
         return dest.stat().st_size
     except Exception as e:
@@ -124,7 +124,7 @@ def save(img_url, dest, size=300):
 done = skipped = failed = 0
 for rec in todo:
     name = rec["name"]
-    dest = DEST / (name + ".jpg")
+    dest = DEST / (name + ".webp")
     if dest.exists():
         skipped += 1
         continue

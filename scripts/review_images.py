@@ -44,7 +44,7 @@ def main():
     if "--names" in args:
         want = set(args[args.index("--names") + 1].split(","))
     prov = load(mode)
-    have = {p.stem for p in (ROOT / "public/images" / mode).glob("*.jpg")}
+    have = {p.stem for p in (ROOT / "public/images" / mode).glob("*.webp")}
     rows = []
     for name, rec in prov.items():
         if name not in have:

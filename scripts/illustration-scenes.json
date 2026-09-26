@@ -1,0 +1,35 @@
+{
+ "china": {
+  "株洲":     {"recipe": "city_river",   "pal": "dusk",    "sun": [0.2, 0.2, 0.05], "clouds": 2, "note": "湘江+铁路大桥+电力机车（株洲=动力机械/铁路枢纽）"},
+  "忻州":     {"recipe": "mesa",         "pal": "golden",  "sun": [0.78, 0.2, 0.045], "note": "黄土台峁+五台山塔院寺白塔"},
+  "怀化":     {"recipe": "drum_tower",   "pal": "emerald", "clouds": 3, "note": "雪峰山云雾+侗族鼓楼与吊脚楼"},
+  "百色":     {"recipe": "karst_lake",   "pal": "tealsea", "sun": [0.24, 0.18, 0.04], "note": "喀斯特峰丛+澄碧湖"},
+  "钦州":     {"recipe": "coast",        "pal": "dawn",    "sun": [0.7, 0.3, 0.05], "args": {"pans": false}, "note": "滨海红树林+白鹭"},
+  "锡林浩特": {"recipe": "steppe",       "pal": "dayblue", "sun": [0.8, 0.16, 0.04], "clouds": 1, "note": "典型草原+蒙古包"},
+  "扎尕那":   {"recipe": "stone_wall",   "pal": "snow",    "clouds": 3, "note": "石城状陡崖+藏寨+云带"},
+  "乌兰布统草原": {"recipe": "steppe", "pal": "golden", "sun": [0.2, 0.24, 0.05], "args": {}, "note": "丘陵草原+白桦林（清御兰沟）"},
+  "怒江第一湾": {"recipe": "gorge_bend", "pal": "emerald", "clouds": 2, "note": "怒江马蹄形大拐弯+峡谷"},
+  "靖边波浪谷": {"recipe": "wave_sandstone", "pal": "redrock", "sun": [0.8, 0.14, 0.04], "note": "红色长石砂岩波纹"},
+  "贺兰山岩画": {"recipe": "rock_art",   "pal": "ochre",   "sun": [0.16, 0.16, 0.035], "note": "贺兰山口+人面像/射手岩画"},
+  "乌梁素海": {"recipe": "steppe_lake",  "pal": "dawn",    "sun": [0.74, 0.26, 0.05], "note": "草原湖泊+芦苇+候鸟"},
+  "关门山":   {"recipe": "gorge_bend",   "pal": "dusk",    "args": {"boat_it": false}, "clouds": 2, "note": "本溪关门山峡谷（秋季红叶色调）"},
+  "绩溪龙川": {"recipe": "hui_village",  "pal": "dayblue", "sun": [0.2, 0.18, 0.04], "clouds": 2, "note": "徽派马头墙+龙川水+石桥"},
+  "屏山峡谷": {"recipe": "gorge_bend",   "pal": "tealsea", "args": {"boat_it": true}, "note": "躲避峡碧水+竹筏（悬浮船意象）"},
+  "七百弄":   {"recipe": "karst_paddy",  "pal": "emerald", "clouds": 3, "note": "高峰丛+弄场梯田"},
+  "明仕田园": {"recipe": "karst_paddy",  "pal": "golden",  "sun": [0.76, 0.2, 0.045], "note": "喀斯特+稻田+竹筏"},
+  "俄博梁雅丹": {"recipe": "yardang",    "pal": "ochre",   "sun": [0.2, 0.22, 0.04], "note": "风蚀雅丹城堡群"},
+  "冷湖黑独山": {"recipe": "yardang",     "pal": "night",   "star": true, "args": {"road_it": false}, "note": "黑山+灰白戈壁+星空"},
+  "达里诺尔湖": {"recipe": "steppe_lake", "pal": "dayblue", "sun": [0.22, 0.18, 0.04], "note": "达里湖草原湖+候鸟"},
+  "加榜梯田": {"recipe": "terraces",     "pal": "dawn",    "sun": [0.72, 0.24, 0.05], "clouds": 2, "note": "苗寨灌水梯田"},
+  "安集海大峡谷": {"recipe": "gorge_bend", "pal": "redrock", "args": {"boat_it": false}, "note": "红色峡谷+辫状河"},
+  "阿斯哈图石阵": {"recipe": "stone_forest", "pal": "snow", "clouds": 2, "note": "花岗岩石林+高山"},
+  "鹿院坪":   {"recipe": "gorge_bend",   "pal": "emerald", "args": {"waterfall": true}, "note": "恩施天坑+瀑布+栈道"},
+  "浩坤湖":   {"recipe": "karst_lake",   "pal": "dayblue", "sun": [0.78, 0.18, 0.04], "note": "凌云喀斯特湖泊"},
+  "莺歌海盐场": {"recipe": "coast",       "pal": "tealsea", "args": {"pans": true}, "note": "盐田方格+白盐晶"},
+  "尼汝村":   {"recipe": "forest_falls", "pal": "emerald", "clouds": 3, "note": "香格里拉密林+藏房+瀑布"},
+  "大海道":   {"recipe": "yardang",      "pal": "golden",  "sun": [0.24, 0.26, 0.05], "args": {"road_it": true}, "note": "戈壁雅丹+无人区公路"}
+ },
+ "world": {
+  "阿什哈巴德": {"recipe": "yardang", "pal": "dayblue", "sun": [0.2, 0.16, 0.04], "clouds": 1, "args": {"city": true}, "note": "白色大理石城+卡拉库姆沙漠边缘"}
+ }
+}

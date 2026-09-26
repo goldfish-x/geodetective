@@ -60,7 +60,7 @@ for m in (["china", "world"] if mode == "all" else [mode]):
         print("      %s" % " | ".join(cats)[:100])
     if APPLY:
         for name in bad:
-            f = ROOT / "public" / "images" / m / (name + ".jpg")
+            f = ROOT / "public" / "images" / m / (name + ".webp")
             if f.exists():
                 f.unlink()
             prov.pop(name)

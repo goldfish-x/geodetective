@@ -157,7 +157,7 @@ def save(url, dest):
             side = min(w, h)
             im = im.crop(((w - side) // 2, (h - side) // 2, (w - side) // 2 + side,
                           (h - side) // 2 + side)).resize((EDGE, EDGE), Image.LANCZOS)
-            im.save(dest, "JPEG", quality=82, optimize=True, progressive=True)
+            im.save(dest, "WEBP", quality=80, method=6)
         return dest.stat().st_size
     except Exception:
         return None
@@ -170,7 +170,7 @@ done = skip = 0
 failed = []
 for rec in todo:
     name = rec["name"]
-    if (DEST / (name + ".jpg")).exists():
+    if (DEST / (name + ".webp")).exists():
         skip += 1
         continue
     cands = [c for c in fetch(rec["lat"], rec["lng"]) if c["title"] not in used]
@@ -187,7 +187,7 @@ for rec in todo:
         time.sleep(SLEEP)
         continue
     best = cands[0]
-    kb = 1 if DRY else save(best["url"], DEST / (name + ".jpg"))
+    kb = 1 if DRY else save(best["url"], DEST / (name + ".webp"))
     if not kb:
         failed.append(name)
         print("[--]  %-10s save rejected" % name)

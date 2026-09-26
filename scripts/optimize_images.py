@@ -5,6 +5,8 @@ IMAGE_ROOT = ROOT / "public" / "images"
 BACKUP_ROOT = ROOT / "assets-src" / "images-original"
 
 MAX_EDGE = int(__import__("sys").argv[1]) if len(__import__("sys").argv) > 1 else 300
+# 资产统一 WebP（scripts/convert_to_webp.py 做过一次性迁移）；格式由文件后缀决定
+GLOBS = ("*.webp", "*.jpg")
 QUALITY = int(__import__("sys").argv[2]) if len(__import__("sys").argv) > 2 else 82
 
 
@@ -19,7 +21,7 @@ def main():
             continue
         bak_dir = BACKUP_ROOT / mode
         bak_dir.mkdir(parents=True, exist_ok=True)
-        for p in sorted(src_dir.glob("*.jpg")):
+        for p in sorted(x for g in GLOBS for x in src_dir.glob(g)):
             before = p.stat().st_size
             bak = bak_dir / p.name
             if not bak.exists():
@@ -33,7 +35,10 @@ def main():
                 im = im.crop((left, top, left + side, top + side))
                 if side > MAX_EDGE:
                     im = im.resize((MAX_EDGE, MAX_EDGE), Image.LANCZOS)
-                im.save(p, "JPEG", quality=QUALITY, optimize=True, progressive=True)
+                if p.suffix == ".webp":
+                    im.save(p, "WEBP", quality=QUALITY, method=6)
+                else:
+                    im.save(p, "JPEG", quality=QUALITY, optimize=True, progressive=True)
             after = p.stat().st_size
             total_before += before
             total_after += after

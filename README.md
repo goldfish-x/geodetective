@@ -117,30 +117,61 @@ GitHub Actions 会自动根据仓库名设置该值。
 
 ## 本地地名配图
 
-配图放在：
+配图放在（WebP，300×300，quality 80）：
 
 ```text
-public/images/china/地点名.jpg
-public/images/world/地点名.jpg
+public/images/china/地点名.webp
+public/images/world/地点名.webp
 ```
 
 文件名必须与题库中的 `name` 完全一致（中文原名，无需转写）。当前覆盖情况：
 
-| 篇目 | 已配图 | 占位图 | 其中自备生成图 | 其中 Commons 真拍 | 体积 |
-| --- | --- | --- | --- | --- | --- |
-| 中国篇 | 272 张 / 300 | 28 | 120（一二星全部） | 152（三四五星） | 5683 KB |
-| 世界篇 | 299 张 / 300 | 1 | 37（一二星的一部分） | 262 | 6603 KB |
+| 篇目 | 已配图 | 占位图 | 自备生成图 | Commons 真拍 | 代码插画 | 体积 |
+| --- | --- | --- | --- | --- | --- | --- |
+| 中国篇 | 300 / 300 | 0 | 120（一二星全部） | 152（三四五星） | 28 | 4627 KB |
+| 世界篇 | 300 / 300 | 0 | 37（一二星的一部分） | 262 | 1 | 5354 KB |
+
+合计 600 张 / 9.75 MB（同批图 jpg 时代是 12.0 MB，转 WebP 后 −19%）。
 
 - 配图只出现在**答题结束后的结算面板**，答题过程中不展示，因此不影响难度曲线与信息量。
-- 磁盘上没有对应 jpg 的地点，由 `src/core/placeholder.js` 按地名渲染确定性占位图（同一名
+- 磁盘上没有对应 webp 的地点，由 `src/core/placeholder.js` 按地名渲染确定性占位图（同一名
   字每次生成的图案一致），不会出现破图，也不需要任何网络请求。
 - 图片是 `public/` 下的静态文件，不进 bundle：`src/data/{mode}-images.json` 只是一份地名清单
-  （异步 chunk），运行时按 `images/<mode>/<地名>.jpg` 懒加载单张图。
+  （异步 chunk，1.6 / 2.1 kB），运行时按 `images/<mode>/<地名>.webp` 懒加载单张图。
+
+### 为什么是 WebP
+
+`scripts/convert_to_webp.py` 是一次性迁移脚本：把 `public/images/**/*.jpg` 逐张重编码为
+300×300 的 WebP（quality 80、method 6），并把原 jpg 移到 `assets-src/images-original-jpg/`
+（已被 `.gitignore` 忽略）。现在重跑它会打印「没有待转换的 jpg」，属正常。
+引用扩展名的地方都已同步：`src/ui/game.js`、`tests/test_images.py`、`scripts/` 下全部
+清单/署名/审计/抓取脚本（抓图脚本现在直接落盘 WebP）。
+注意 WebP 对雾景、大平面水面压得极狠，个别真拍只有 2.3 KB，所以 `test_images.py` 的
+体积下限从 3 KB 降到 1.5 KB，这个阈值只用于剔除明显损坏的文件。
+
+### 29 张代码插画
+
+三四五星里仍有 29 个地点在 Commons 上抓不到「图文对应」的真拍（如 株洲、贺兰山岩画、
+冷湖黑独山、阿什哈巴德）。这些不用占位图、也不硬凑同名异地照片，而是用
+`scripts/generate_illustrations.py` 按地名意象绘制旅行海报式插画：
+
+- `scripts/illustration-scenes.json`：逐条人工指定 `{recipe, pal, sun, star, clouds, args, note}`，
+  `note` 写明意象依据（例：株洲 = 湘江 + 铁路大桥 + 电力机车）。
+- 17 个 recipe（喀斯特峰林/梯田/雅丹/岩画/徽派马头墙/侗族鼓楼/峡谷大拐弯…）+ 10 套配色，
+  统一在 900px 上绘制再缩到 300px，最后套同一层胶片颗粒与暗角，保证成套观感一致。
+- 确定性：随机种子取自地名 md5，同一地名每次重绘像素一致，因此不需要把生成参数入库。
+- 插画属于自备素材，**不写入 provenance / ATTRIBUTION.md**（署名表只登记 Commons 真拍）。
+
+```powershell
+.venv\Scripts\python.exe scripts\generate_illustrations.py            # 只补缺失
+.venv\Scripts\python.exe scripts\generate_illustrations.py --force     # 全部重绘
+.venv\Scripts\python.exe scripts\generate_illustrations.py --only 怀化,屏山峡谷   # 局部重绘
+```
 
 新增图片后依次运行：
 
 ```powershell
-# 1. 居中裁方 + 缩到 300px（结算卡片只有 100x100 CSS px，原图 1920px 属于浪费）
+# 1. 居中裁方 + 缩到 300px 并输出 WebP（结算卡片只有 100x100 CSS px，原图 1920px 属于浪费）
 #    首次运行会把未压缩原图备份到 assets-src/images-original/（已被 .gitignore 忽略）
 .venv\Scripts\python.exe scripts\optimize_images.py 300 82
 
@@ -192,7 +223,7 @@ $env:PYTHONIOENCODING='utf-8'; $env:GD_SLEEP='2.2'
 .venv\Scripts\python.exe scripts\build_contact_sheets.py     # 拼版总览图，肉眼扫一遍最快
 ```
 
-不合格的处理方式固定是三步：删 `public/images/<mode>/<地名>.jpg`、从
+不合格的处理方式固定是三步：删 `public/images/<mode>/<地名>.webp`、从
 `scripts/<mode>-image-*-provenance.json` 删该条、往 `alias-reject.json` 加否决正则。
 `tests/test_images.py` 会校验 provenance ↔ 磁盘 ↔ ATTRIBUTION.md 三者一致，漏一步就红。
 
@@ -203,11 +234,14 @@ $env:PYTHONIOENCODING='utf-8'; $env:GD_SLEEP='2.2'
 
 - 成绩保存在浏览器 `localStorage`，不能跨设备同步。
 - 没有后端排行榜，不能可靠比较不同玩家的成绩。
-- 地名配图覆盖 中国篇 272/300、世界篇 299/300，其余地点显示确定性占位图。
-- 配图全部来自仓库内静态文件，不依赖外部图片接口，离线可用。
+- 地名配图已 100% 覆盖（两篇各 300/300）：414 张 Commons 真拍 + 157 张自备生成图 +
+  29 张代码插画；插画是意象图而非实景照片，后续若抓到对应真拍可直接替换同名 webp。
+- 配图全部来自仓库内静态文件，不依赖外部图片接口，离线可用；600 张共 9.75 MB，
+  不进 bundle，按地点懒加载。
 
 ## 署名
 
 `public/images/` 中 414 张来自 Wikimedia Commons（CC BY / CC BY-SA / CC0 / 公有领域），
-作者与许可证逐条见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+作者与许可证逐条见 [ATTRIBUTION.md](ATTRIBUTION.md)；其余 186 张为项目自备素材
+（157 张生成图 + 29 张代码插画），不属于第三方授权作品。
 

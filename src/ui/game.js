@@ -21,7 +21,7 @@ const pad2 = n => String(n).padStart(2, '0')
 import { placeholderFor } from '../core/placeholder.js'
 const imgURL = (name, modeKey, availableImages) => {
   if (availableImages.has(name)) {
-    return `${import.meta.env.BASE_URL}images/${modeKey}/${encodeURIComponent(name)}.jpg`
+    return `${import.meta.env.BASE_URL}images/${modeKey}/${encodeURIComponent(name)}.webp`
   }
   return placeholderFor(name, 120, 120)
 }

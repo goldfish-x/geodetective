@@ -3,7 +3,7 @@
 顺序: 别名1 检索 -> 坐标邻近检索 -> 别名2 -> 别名3/中文名，每地点 <=4 次 API 调用。
 硬约束: 候选必须命中「本次检索词的全部实义词」，再用 JUNK 黑名单 + VIEW/QUAL 打分，
         分数不达标就跳过（运行时保留占位图），宁缺毋滥。
-可续跑: public/images/<mode>/<name>.jpg 已存在即跳过。
+可续跑: public/images/<mode>/<name>.webp 已存在即跳过。
 
 用法: python scripts/fetch_alias.py <mode> [limit] [start]
 """
@@ -315,8 +315,8 @@ def save(url, dest):
             side = min(w, h)
             im = im.crop(((w - side) // 2, (h - side) // 2, (w - side) // 2 + side,
                           (h - side) // 2 + side)).resize((EDGE, EDGE), Image.LANCZOS)
-        for q in (82, 76, 68):
-            im.save(dest, "JPEG", quality=q, optimize=True, progressive=True)
+        for q in (80, 72, 64):        # WebP：比 JPEG 再省约 25%，卡片只有 100 CSS px
+            im.save(dest, "WEBP", quality=q, method=6)
             if dest.stat().st_size <= 78 * 1024:
                 break
         return dest.stat().st_size
@@ -333,7 +333,7 @@ REGION = json.loads((ROOT / "scripts/place-region.json").read_text(encoding="utf
 BANK = json.loads((ROOT / ("src/data/%s.json" % MODE)).read_text(encoding="utf-8"))
 todo = [{"name": it["name"], "lat": it["lat"], "lng": it["lng"], "diff": it["difficulty"],
          "bucket": k} for k in ("cities", "scenics") for it in BANK[k]
-        if it["difficulty"] >= 3 and not (DEST / (it["name"] + ".jpg")).exists()]
+        if it["difficulty"] >= 3 and not (DEST / (it["name"] + ".webp")).exists()]
 only = [x for x in os.environ.get("GD_ONLY", "").split(",") if x.strip()]
 if only:
     todo = [r for r in todo if r["name"] in only]
@@ -353,7 +353,7 @@ failed = []
 print("%s: %d places to try (used titles=%d)" % (MODE, len(todo), len(used)), flush=True)
 for rec in todo:
     name = rec["name"]
-    if (DEST / (name + ".jpg")).exists():
+    if (DEST / (name + ".webp")).exists():
         skip += 1
         continue
     pool = list(dict.fromkeys(ALIAS.get(name, []) + [name]))
@@ -387,7 +387,7 @@ for rec in todo:
         continue
     got = None
     for sc, best in picked:
-        kb = save(best["url"], DEST / (name + ".jpg"))
+        kb = save(best["url"], DEST / (name + ".webp"))
         if kb:
             got = (sc, best, kb)
             break

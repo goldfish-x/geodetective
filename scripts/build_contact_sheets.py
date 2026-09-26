@@ -45,7 +45,7 @@ def build(mode, names, out_path):
         d.text((x + 4, y + 2), "%d %s" % (i + 1, name), fill=(255, 235, 150), font=f_lbl)
         if src:
             d.text((x + 4, y + TILE + 8), src[:34], fill=(150, 200, 255), font=f_lbl)
-        p = dest / (name + ".jpg")
+        p = dest / (name + ".webp")
         box = (x, y + pad_t, x + TILE, y + pad_t + TILE)
         if p.exists():
             with Image.open(p) as im:
