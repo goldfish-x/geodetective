@@ -9,3 +9,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 tests/*.png
+tests/*.jpg
+
+# original (uncompressed) image assets, kept local only
+assets-src/

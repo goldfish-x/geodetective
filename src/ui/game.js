@@ -16,24 +16,32 @@ const ICON_COMPASS = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none
 const fmt = n => n.toLocaleString('zh-CN')
 const pad2 = n => String(n).padStart(2, '0')
 
-// 地名简介与配图（配图为 AI 文生图接口，prompt 来自题库档案数据）
-const IMG_API = 'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image'
-const imgURL = prompt => `${IMG_API}?prompt=${encodeURIComponent(prompt)}&image_size=square`
+// 地名简介与配图：优先加载 public/images 中的真实图片；
+// 没有本地图片的地点回退到确定性视觉占位图，避免远程服务不可用时出现空白。
+import { placeholderFor } from '../core/placeholder.js'
+const imgURL = (name, modeKey, availableImages) => {
+  if (availableImages.has(name)) {
+    return `${import.meta.env.BASE_URL}images/${modeKey}/${encodeURIComponent(name)}.jpg`
+  }
+  return placeholderFor(name, 120, 120)
+}
 
 export async function renderGame(app, modeKey, routeToken) {
   const mode = MODES[modeKey]
   if (!mode) return
 
   // 按模式懒加载地图、题库与档案，避免 ECharts/ECharts GL 与两套大 GeoJSON 全部进入首屏。
-  const [mapModule, bankModule, descModule] = await Promise.all([
+  const [mapModule, bankModule, descModule, imagesModule] = await Promise.all([
     modeKey === 'china' ? import('./map-china.js') : import('./map-world.js'),
     modeKey === 'china' ? import('../data/china.json') : import('../data/world.json'),
-    modeKey === 'china' ? import('../data/china-desc.json') : import('../data/world-desc.json')
+    modeKey === 'china' ? import('../data/china-desc.json') : import('../data/world-desc.json'),
+    modeKey === 'china' ? import('../data/china-images.json') : import('../data/world-images.json')
   ])
   if (window.__gdRouteToken !== routeToken || !app.isConnected) return
 
   const bank = bankModule.default
   const descBank = descModule.default
+  const availableImages = new Set(imagesModule.default)
   const descOf = name => descBank[name] || {}
   const stages = buildQuiz(bank)
 
@@ -328,7 +336,7 @@ export async function renderGame(app, modeKey, routeToken) {
     // 预加载本局著名地点配图，悬停时即可快速显示
     stage.questions.forEach(q => {
       const e = descOf(q.name)
-      if (e.img) { const im = new Image(); im.src = imgURL(e.img) }
+      if (availableImages.has(q.name)) { const im = new Image(); im.src = imgURL(q.name, modeKey, availableImages) }
     })
 
     const panel = document.createElement('div')
@@ -359,7 +367,7 @@ export async function renderGame(app, modeKey, routeToken) {
       const e = descOf(q.name)
       const lv = Math.min(5, Math.max(1, q.difficulty || 1))
       detail.innerHTML = `
-        ${e.img ? `<img class="ss-img" src="${imgURL(e.img)}" alt="${q.name}" onerror="this.remove()">` : ''}
+        ${availableImages.has(q.name) || e.img ? `<img class="ss-img" src="${imgURL(q.name, modeKey, availableImages)}" alt="${q.name}" onerror="this.remove()">` : ''}
         <div class="ss-text">
           <div class="ss-name">${q.name}<em class="diff-tag lv${lv}">${DIFFICULTY_LABELS[lv]}</em></div>
           <p class="ss-desc">${e.desc || ''}</p>

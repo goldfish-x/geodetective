@@ -74,7 +74,7 @@ with sync_playwright() as p:
     imgs = page.locator(".ss-img")
     assert imgs.count() == 1, "著名地点缺少配图"
     src = imgs.get_attribute("src")
-    assert src.startswith("https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt="), src
+    assert src and (src.startswith('/images/') or src.startswith('/geodetective/images/') or src.startswith('data:image/')), src
     print(f"[悬停] 「{name0}」简介/坐标/配图 ✓")
 
     # 红点视觉验证截图

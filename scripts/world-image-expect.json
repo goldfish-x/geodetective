@@ -1,0 +1,564 @@
+{
+  "首尔": [
+    [
+      "seoul"
+    ],
+    []
+  ],
+  "柏林": [
+    [
+      "brandenburg gate",
+      "brandenburger tor",
+      "berlin"
+    ],
+    []
+  ],
+  "洛杉矶": [
+    [
+      "los angeles",
+      "hollyland",
+      "hollywood"
+    ],
+    []
+  ],
+  "吉隆坡": [
+    [
+      "petronas",
+      "kuala lumpur"
+    ],
+    []
+  ],
+  "大阪": [
+    [
+      "osaka"
+    ],
+    []
+  ],
+  "台北": [
+    [
+      "taipei 101",
+      "taipei"
+    ],
+    []
+  ],
+  "德黑兰": [
+    [
+      "tehran"
+    ],
+    []
+  ],
+  "马尼拉": [
+    [
+      "manila"
+    ],
+    []
+  ],
+  "雅典": [
+    [
+      "athens",
+      "acropolis"
+    ],
+    []
+  ],
+  "哥本哈根": [
+    [
+      "nyhavn",
+      "copenhagen"
+    ],
+    []
+  ],
+  "斯德哥尔摩": [
+    [
+      "stockholm"
+    ],
+    []
+  ],
+  "布达佩斯": [
+    [
+      "budapest",
+      "parliament",
+      "danube"
+    ],
+    []
+  ],
+  "都柏林": [
+    [
+      "dublin",
+      "trinity college"
+    ],
+    []
+  ],
+  "华盛顿": [
+    [
+      "capitol",
+      "washington",
+      "national mall",
+      "tidal basin"
+    ],
+    []
+  ],
+  "蒙特利尔": [
+    [
+      "montreal",
+      "notre-dame basilica"
+    ],
+    []
+  ],
+  "西雅图": [
+    [
+      "seattle",
+      "space needle"
+    ],
+    []
+  ],
+  "圣地亚哥": [
+    [
+      "santiago"
+    ],
+    []
+  ],
+  "波哥大": [
+    [
+      "bolivar",
+      "bogota",
+      "candelaria",
+      "monserrate"
+    ],
+    []
+  ],
+  "亚的斯亚贝巴": [
+    [
+      "addis ababa"
+    ],
+    []
+  ],
+  "达喀尔": [
+    [
+      "dakar"
+    ],
+    []
+  ],
+  "达累斯萨拉姆": [
+    [
+      "dar es salaam"
+    ],
+    []
+  ],
+  "珀斯": [
+    [
+      "perth",
+      "swan river"
+    ],
+    []
+  ],
+  "布里斯班": [
+    [
+      "brisbane",
+      "story bridge"
+    ],
+    []
+  ],
+  "埃菲尔铁塔": [
+    [
+      "eiffel tower"
+    ],
+    []
+  ],
+  "自由女神像": [
+    [
+      "statue of liberty"
+    ],
+    []
+  ],
+  "吉萨金字塔": [
+    [
+      "giza",
+      "pyramid",
+      "sphinx"
+    ],
+    []
+  ],
+  "悉尼歌剧院": [
+    [
+      "sydney opera house"
+    ],
+    []
+  ],
+  "富士山": [
+    [
+      "mount fuji",
+      "fuji"
+    ],
+    []
+  ],
+  "罗马斗兽场": [
+    [
+      "colosseum",
+      "colosseo"
+    ],
+    []
+  ],
+  "莫斯科红场": [
+    [
+      "red square",
+      "basil"
+    ],
+    []
+  ],
+  "泰姬陵": [
+    [
+      "taj mahal"
+    ],
+    []
+  ],
+  "大本钟": [
+    [
+      "big ben",
+      "elizabeth tower",
+      "houses of parliament"
+    ],
+    []
+  ],
+  "帕特农神庙": [
+    [
+      "parthenon"
+    ],
+    []
+  ],
+  "长城": [
+    [
+      "great wall"
+    ],
+    []
+  ],
+  "故宫": [
+    [
+      "forbidden city"
+    ],
+    []
+  ],
+  "兵马俑": [
+    [
+      "terracotta"
+    ],
+    []
+  ],
+  "哈利法塔": [
+    [
+      "burj khalifa"
+    ],
+    []
+  ],
+  "珠穆朗玛峰": [
+    [
+      "everest"
+    ],
+    []
+  ],
+  "滨海湾金沙": [
+    [
+      "marina bay sands"
+    ],
+    []
+  ],
+  "巨石阵": [
+    [
+      "stonehenge"
+    ],
+    []
+  ],
+  "圣家堂": [
+    [
+      "sagrada familia"
+    ],
+    []
+  ],
+  "勃兰登堡门": [
+    [
+      "brandenburg gate",
+      "brandenburger tor"
+    ],
+    []
+  ],
+  "卢浮宫": [
+    [
+      "louvre"
+    ],
+    []
+  ],
+  "圣彼得大教堂": [
+    [
+      "peter",
+      "vatican"
+    ],
+    []
+  ],
+  "黄石国家公园": [
+    [
+      "old faithful",
+      "yellowstone"
+    ],
+    []
+  ],
+  "帝国大厦": [
+    [
+      "empire state building"
+    ],
+    []
+  ],
+  "金门大桥": [
+    [
+      "golden gate bridge"
+    ],
+    []
+  ],
+  "好莱坞": [
+    [
+      "hollywood sign",
+      "hollywood"
+    ],
+    []
+  ],
+  "里约基督像": [
+    [
+      "christ the redeemer",
+      "corcovado",
+      "cristo redentor"
+    ],
+    []
+  ],
+  "糖面包山": [
+    [
+      "sugarloaf",
+      "pao de acucar",
+      "pan de acucar",
+      "guanabara"
+    ],
+    []
+  ],
+  "塞伦盖蒂": [
+    [
+      "serengeti"
+    ],
+    []
+  ],
+  "好望角": [
+    [
+      "cape of good hope",
+      "cape point"
+    ],
+    []
+  ],
+  "乌鲁鲁": [
+    [
+      "uluru",
+      "ayers rock"
+    ],
+    []
+  ],
+  "马丘比丘": [
+    [
+      "machu picchu",
+      "machupicchu"
+    ],
+    []
+  ],
+  "吴哥窟": [
+    [
+      "angkor"
+    ],
+    []
+  ],
+  "复活节岛": [
+    [
+      "moai",
+      "easter island",
+      "rapa nui",
+      "tongariki"
+    ],
+    []
+  ],
+  "尼亚加拉瀑布": [
+    [
+      "niagara"
+    ],
+    []
+  ],
+  "大堡礁": [
+    [
+      "barrier reef",
+      "heart reef"
+    ],
+    []
+  ],
+  "乞力马扎罗山": [
+    [
+      "kilimanjaro"
+    ],
+    []
+  ],
+  "圣托里尼": [
+    [
+      "santorini",
+      "oia"
+    ],
+    []
+  ],
+  "科罗拉多大峡谷": [
+    [
+      "grand canyon",
+      "colorado river"
+    ],
+    []
+  ],
+  "京都金阁寺": [
+    [
+      "kinkaku",
+      "rokuon"
+    ],
+    []
+  ],
+  "伊瓜苏瀑布": [
+    [
+      "iguazu",
+      "iguaçu"
+    ],
+    []
+  ],
+  "东京塔": [
+    [
+      "tokyo tower"
+    ],
+    []
+  ],
+  "巴厘岛": [
+    [
+      "bali",
+      "tanah lot",
+      "uluwatu",
+      "tegallalang"
+    ],
+    []
+  ],
+  "济州岛": [
+    [
+      "seongsan",
+      "jeju"
+    ],
+    []
+  ],
+  "下龙湾": [
+    [
+      "ha long",
+      "lan ha"
+    ],
+    []
+  ],
+  "莫高窟": [
+    [
+      "mogao",
+      "dunhuang"
+    ],
+    []
+  ],
+  "张家界": [
+    [
+      "zhangjiajie",
+      "tianzi"
+    ],
+    []
+  ],
+  "新天鹅堡": [
+    [
+      "neuschwanstein"
+    ],
+    []
+  ],
+  "阿尔罕布拉宫": [
+    [
+      "alhambra"
+    ],
+    []
+  ],
+  "庞贝古城": [
+    [
+      "pompeii",
+      "pompei",
+      "pompei"
+    ],
+    []
+  ],
+  "白金汉宫": [
+    [
+      " buckingham palace"
+    ],
+    []
+  ],
+  "拉什莫尔山": [
+    [
+      "rushmore"
+    ],
+    []
+  ],
+  "优胜美地": [
+    [
+      "yosemite"
+    ],
+    []
+  ],
+  "班夫": [
+    [
+      "banff",
+      "louse lake",
+      "lake louise",
+      "moraine lake"
+    ],
+    []
+  ],
+  "的的喀喀湖": [
+    [
+      "titicaca",
+      "uros"
+    ],
+    []
+  ],
+  "科帕卡巴纳海滩": [
+    [
+      "copacabana"
+    ],
+    []
+  ],
+  "卢克索神庙": [
+    [
+      "luxor"
+    ],
+    []
+  ],
+  "桑给巴尔岛": [
+    [
+      "zanzibar",
+      "stone town"
+    ],
+    []
+  ],
+  "桌山": [
+    [
+      "table mountain"
+    ],
+    []
+  ],
+  "十二门徒岩": [
+    [
+      "twelve apostles",
+      "apostles"
+    ],
+    []
+  ],
+  "米尔福德峡湾": [
+    [
+      "milford sound",
+      "mitre peak"
+    ],
+    []
+  ]
+}

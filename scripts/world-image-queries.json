@@ -1,0 +1,417 @@
+{
+  "首尔": [
+    "Seoul skyline Han River",
+    "Seoul cityscape night",
+    "N Seoul Tower"
+  ],
+  "柏林": [
+    "Brandenburg Gate Berlin panorama",
+    "Berlin TV Tower Alexanderplatz",
+    "Berlin city skyline"
+  ],
+  "洛杉矶": [
+    "Hollywood Sign Los Angeles",
+    "Los Angeles skyline downtown",
+    "Griffith Observatory Los Angeles"
+  ],
+  "吉隆坡": [
+    "Petronas Twin Towers Kuala Lumpur",
+    "Kuala Lumpur skyline night",
+    "KLCC Park"
+  ],
+  "大阪": [
+    "Osaka Castle keep",
+    "Osaka Castle park cherry",
+    "Dotonbori Osaka"
+  ],
+  "台北": [
+    "Taipei 101 night skyline",
+    "Taipei 101 mountain backdrop",
+    "Taipei city skyline"
+  ],
+  "德黑兰": [
+    "Tehran skyline Azadi Tower",
+    "Tehran Milad Tower mountains",
+    "Azadi Tower Tehran"
+  ],
+  "马尼拉": [
+    "Manila Bay sunset",
+    "Intramuros Manila walls",
+    "Manila skyline bay"
+  ],
+  "雅典": [
+    "Acropolis of Athens panorama",
+    "Athens from Lycabettus",
+    "Plaka Athens street"
+  ],
+  "哥本哈根": [
+    "Nyhavn Copenhagen canal",
+    "Copenhagen harbour Nyhavn",
+    "Nyhavn buildings"
+  ],
+  "斯德哥尔摩": [
+    "Gamla stan Stockholm aerial",
+    "Stockholm old town rooftop",
+    "Stockholm city hall island"
+  ],
+  "布达佩斯": [
+    "Hungarian Parliament Building Danube night",
+    "Budapest Chain Bridge Parliament",
+    "Fisherman's Bastion Budapest"
+  ],
+  "都柏林": [
+    "Trinity College Dublin library",
+    "Dublin Ha'penny Bridge",
+    "Dublin O'Connell Street"
+  ],
+  "华盛顿": [
+    "United States Capitol cherry blossoms",
+    "Washington National Mall Tidal Basin",
+    "US Capitol building"
+  ],
+  "蒙特利尔": [
+    "Notre-Dame Basilica Montreal",
+    "Old Montreal street Place d'Armes",
+    "Montreal Jacques-Cartier bridge"
+  ],
+  "西雅图": [
+    "Space Needle Seattle skyline",
+    "Seattle Puget Sound skyline",
+    "Space Needle"
+  ],
+  "圣地亚哥": [
+    "Santiago Chile skyline Cordillera",
+    "Santiago Cerro San Cristobal",
+    "Costanera Center Santiago"
+  ],
+  "波哥大": [
+    "Bolivar Square Bogota",
+    "La Candelaria Bogota street",
+    "Monserrate Bogota"
+  ],
+  "亚的斯亚贝巴": [
+    "Addis Ababa skyline",
+    "Addis Ababa street scene",
+    "Meskel Square Addis Ababa"
+  ],
+  "达喀尔": [
+    "Dakar corniche Atlantic",
+    "Dakar city beach Senegal",
+    "African Renaissance Monument Dakar"
+  ],
+  "达累斯萨拉姆": [
+    "Dar es Salaam harbour",
+    "Dar es Salaam beach fishing",
+    "Dar es Salaam skyline"
+  ],
+  "珀斯": [
+    "Perth skyline Swan River",
+    "Perth city Cavershill",
+    "Swan River Perth sunset"
+  ],
+  "布里斯班": [
+    "Story Bridge Brisbane",
+    "Brisbane river South Bank skyline",
+    "Brisbane City Hall"
+  ],
+  "埃菲尔铁塔": [
+    "Eiffel Tower night sparkling",
+    "Eiffel Tower from Trocadero",
+    "Eiffel Tower Paris"
+  ],
+  "自由女神像": [
+    "Statue of Liberty crown",
+    "Statue of Liberty from ferry",
+    "Liberty Island Manhattan"
+  ],
+  "吉萨金字塔": [
+    "Giza pyramid complex Sphinx",
+    "Great Pyramid of Giza sunset",
+    "Pyramids of Giza panorama"
+  ],
+  "悉尼歌剧院": [
+    "Sydney Opera House harbour bridge",
+    "Sydney Opera House sails closeup",
+    "Sydney Opera House Bennelong Point"
+  ],
+  "富士山": [
+    "Mount Fuji Chureito Pagoda",
+    "Mount Fuji Kawaguchiko reflection",
+    "Mount Fuji snow cherry blossom"
+  ],
+  "罗马斗兽场": [
+    "Colosseum Rome interior",
+    "Colosseum exterior sunset",
+    "Colosseum Rome"
+  ],
+  "莫斯科红场": [
+    "Saint Basil's Cathedral Red Square winter",
+    "Red Square Moscow snow",
+    "Moscow Kremlin Red Square"
+  ],
+  "泰姬陵": [
+    "Taj Mahal reflecting pool sunrise",
+    "Taj Mahal white marble",
+    "Taj Mahal Yamuna"
+  ],
+  "大本钟": [
+    "Elizabeth Tower Big Ben Thames",
+    "Big Ben Houses of Parliament Westminster",
+    "Big Ben London"
+  ],
+  "帕特农神庙": [
+    "Parthenon closeup columns",
+    "Parthenon sunset Acropolis",
+    "Acropolis Athens Propylaea"
+  ],
+  "长城": [
+    "Great Wall of China Jinshanling sunrise",
+    "Mutianyu Great Wall mountains",
+    "Badaling Great Wall"
+  ],
+  "故宫": [
+    "Forbidden City Hall of Supreme Harmony",
+    "Forbidden City Beijing red walls",
+    "Forbidden City corner tower"
+  ],
+  "兵马俑": [
+    "Terracotta Army pit Xian",
+    "Terracotta warriors detail",
+    "Terracotta Army formation"
+  ],
+  "哈利法塔": [
+    "Burj Khalifa from Dubai Fountain",
+    "Burj Khalifa sunset skyline",
+    "Burj Khalifa observation"
+  ],
+  "珠穆朗玛峰": [
+    "Mount Everest south summit sunrise",
+    "Everest base camp Rongbuk",
+    "Mount Everest Himalaya"
+  ],
+  "滨海湾金沙": [
+    "Marina Bay Sands SkyPark pool night",
+    "Marina Bay Sands aerial",
+    "Marina Bay Singapore skyline"
+  ],
+  "巨石阵": [
+    "Stonehenge sunset stones",
+    "Stonehenge Salisbury plain",
+    "Stonehenge"
+  ],
+  "圣家堂": [
+    "Sagrada Familia towers facade",
+    "Sagrada Familia Nativity facade",
+    "Barcelona Sagrada Familia"
+  ],
+  "勃兰登堡门": [
+    "Brandenburg Gate quadriga detail",
+    "Brandenburg Gate night lit",
+    "Pariser Platz Brandenburg Gate"
+  ],
+  "卢浮宫": [
+    "Louvre pyramid night",
+    "Cour Napoléon Louvre pyramid fountain",
+    "Louvre museum courtyard"
+  ],
+  "圣彼得大教堂": [
+    "St Peter's Basilica dome square colonnade",
+    "St Peter's Basilica dome view",
+    "Vatican St Peter square"
+  ],
+  "黄石国家公园": [
+    "Old Faithful eruption geyser",
+    "Yellowstone Grand Prismatic Spring",
+    "Old Faithful Yellowstone"
+  ],
+  "帝国大厦": [
+    "Empire State Building Manhattan night",
+    "Empire State Building from Fifth Avenue",
+    "Empire State Building"
+  ],
+  "金门大桥": [
+    "Golden Gate Bridge fog sunset",
+    "Golden Gate Bridge from Battery Spencer",
+    "Golden Gate Bridge"
+  ],
+  "好莱坞": [
+    "Hollywood Sign hills panorama",
+    "Hollywood Walk of Fame stars",
+    "Hollywood Lake Park"
+  ],
+  "里约基督像": [
+    "Christ the Redeemer Corcovado view",
+    "Cristo Redentor arms panorama",
+    "Corcovado Rio"
+  ],
+  "糖面包山": [
+    "Sugarloaf Mountain cable car Guanabara",
+    "Pao de Acucar sunset",
+    "Sugarloaf Mountain Rio"
+  ],
+  "塞伦盖蒂": [
+    "Serengeti wildebeest migration",
+    "Serengeti acacia sunset savanna",
+    "Serengeti plain lions"
+  ],
+  "好望角": [
+    "Cape of Good Hope lighthouse cliffs",
+    "Cape Point lighthouse South Africa",
+    "Cape of Good Hope sign"
+  ],
+  "乌鲁鲁": [
+    "Uluru sunset red rock",
+    "Ayers Rock Uluru changing colour",
+    "Uluru base walk"
+  ],
+  "马丘比丘": [
+    "Machu Picchu ruins terraces clouds",
+    "Machu Picchu classic viewpoint",
+    "Huayna Picchu Machu Picchu"
+  ],
+  "吴哥窟": [
+    "Angkor Wat reflection sunrise pond",
+    "Angkor Wat towers lotus",
+    "Angkor Wat causeway"
+  ],
+  "复活节岛": [
+    "Ahu Tongariki moai statues",
+    "Easter Island moai Rano Raraku",
+    "Easter Island moai sea"
+  ],
+  "尼亚加拉瀑布": [
+    "Horseshoe Falls Niagara mist",
+    "Niagara Falls American side",
+    "Niagara Falls rainbow"
+  ],
+  "大堡礁": [
+    "Heart Reef Great Barrier Reef aerial",
+    "Great Barrier Reef coral aerial turquoise",
+    "Whitsunday Great Barrier Reef"
+  ],
+  "乞力马扎罗山": [
+    "Mount Kilimanjaro peak savanna elephant",
+    "Kibo Mount Kilimanjaro",
+    "Mount Kilimanjaro sunrise"
+  ],
+  "圣托里尼": [
+    "Santorini blue domes Oia",
+    "Oia Santorini sunset",
+    "Santorini white village caldera"
+  ],
+  "科罗拉多大峡谷": [
+    "Grand Canyon Colorado River sunset",
+    "Grand Canyon South Rim panorama",
+    "Grand Canyon"
+  ],
+  "京都金阁寺": [
+    "Kinkaku-ji golden pavilion pond snow",
+    "Kinkakuji Kyoto reflection",
+    "Rokuon-ji Kinkaku-ji"
+  ],
+  "伊瓜苏瀑布": [
+    "Iguazu Falls Devil's Throat",
+    "Iguazu Falls全景",
+    "Cataratas Iguazu rainbow"
+  ],
+  "东京塔": [
+    "Tokyo Tower night red white",
+    "Tokyo Tower Roppongi skyline",
+    "Tokyo Tower"
+  ],
+  "巴厘岛": [
+    "Tanah Lot temple sunset sea",
+    "Bali rice terrace Tegallalang",
+    "Uluwatu temple Bali cliff"
+  ],
+  "济州岛": [
+    "Seongsan Ilchulbong Jeju crater",
+    "Jeju island Sanbangsan sea",
+    "Seongsan peak Jeju"
+  ],
+  "下龙湾": [
+    "Ha Long Bay limestone karsts junk boat",
+    "Lan Ha Bay view",
+    "Ha Long Bay from air"
+  ],
+  "莫高窟": [
+    "Mogao Caves exterior grottoes",
+    "Dunhuang Mogao Nine Storey Building",
+    "Mogao caves mural"
+  ],
+  "张家界": [
+    "ZhangjiajieAvatar Hallelujah Mountain",
+    "Zhangjiajie sandstone pillars fog",
+    "Tianzi Mountain Zhangjiajie"
+  ],
+  "新天鹅堡": [
+    "Neuschwanstein Castle autumn Marienbrucke",
+    "Neuschwanstein Castle Alps",
+    "Schwangau Neuschwanstein"
+  ],
+  "阿尔罕布拉宫": [
+    "Alhambra Court of the Lions",
+    "Alhambra Granada Nasrid palaces",
+    "Alhambra Generalife view"
+  ],
+  "庞贝古城": [
+    "Pompeii ancient ruins Via dell Abbondanza",
+    "Pompeii amphitheatre Vesuvius",
+    "Pompeii Forum Vesuvius"
+  ],
+  "白金汉宫": [
+    "Buckingham Palace facade gates",
+    "Buckingham Palace Victoria Memorial",
+    "Queen's Guard Buckingham Palace"
+  ],
+  "拉什莫尔山": [
+    "Mount Rushmore four presidents",
+    "Mount Rushmore full view",
+    "Rushmore monument detail"
+  ],
+  "优胜美地": [
+    "Yosemite Valley Half Dome Bridalveil",
+    "Tunnel View Yosemite",
+    "El Capitan Yosemite"
+  ],
+  "班夫": [
+    "Lake Louise Banff Emerald",
+    "Moraine Lake Banff Ten Peaks",
+    "Banff townsite mountains"
+  ],
+  "的的喀喀湖": [
+    "Uros floating islands Titicaca reed boat",
+    "Lake Titicaca Peru island",
+    "Taquile Lake Titicaca"
+  ],
+  "科帕卡巴纳海滩": [
+    "Copacabana beach Rio aerial",
+    "Copacabana promenade Calçadão",
+    "Copacabana fort beach"
+  ],
+  "卢克索神庙": [
+    "Luxor Temple colonnade sunset",
+    "Luxor temple Egypt pylon",
+    "Avenue of Sphinxes Luxor"
+  ],
+  "桑给巴尔岛": [
+    "Stone Town Zanzibar carved door",
+    "Zanzibar Forodhani street",
+    "Stone Town Zanzibar alley"
+  ],
+  "桌山": [
+    "Table Mountain Cape Town cloud cloth",
+    "Table Mountain from Signal Hill",
+    "Lion's Head Table Mountain Cape Town"
+  ],
+  "十二门徒岩": [
+    "Twelve Apostles Victoria Great Ocean Road",
+    "Twelve Apostles sunset",
+    "The Apostles limestone stacks"
+  ],
+  "米尔福德峡湾": [
+    "Milford Sound Mitre Peak",
+    "Milford Sound cruise steep cliffs",
+    "Doubtful Sound Fiordland"
+  ]
+}
