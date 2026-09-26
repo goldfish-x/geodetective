@@ -1,0 +1,1373 @@
+{
+ "延吉": [
+  "Jilin",
+  "China",
+  "Manchuria"
+ ],
+ "吐鲁番": [
+  "Xinjiang",
+  "China"
+ ],
+ "丹东": [
+  "Liaoning",
+  "China",
+  "Yalu"
+ ],
+ "信阳": [
+  "Henan",
+  "China"
+ ],
+ "湛江": [
+  "Guangdong",
+  "China",
+  "Zhanjiang"
+ ],
+ "伊宁": [
+  "Xinjiang",
+  "Ili",
+  "China"
+ ],
+ "哈密": [
+  "Xinjiang",
+  "China"
+ ],
+ "张掖": [
+  "Gansu",
+  "China"
+ ],
+ "乌兰察布": [
+  "Inner Mongolia",
+  "China"
+ ],
+ "巴彦淖尔": [
+  "Inner Mongolia",
+  "China"
+ ],
+ "忻州": [
+  "Shanxi",
+  "China"
+ ],
+ "衢州": [
+  "Zhejiang",
+  "China"
+ ],
+ "三明": [
+  "Fujian",
+  "China"
+ ],
+ "怀化": [
+  "Hunan",
+  "China"
+ ],
+ "百色": [
+  "Guangxi",
+  "China"
+ ],
+ "河池": [
+  "Guangxi",
+  "China"
+ ],
+ "钦州": [
+  "Guangxi",
+  "China"
+ ],
+ "安顺": [
+  "Guizhou",
+  "China"
+ ],
+ "中卫": [
+  "Ningxia",
+  "China"
+ ],
+ "马尔康": [
+  "Sichuan",
+  "China",
+  "Aba"
+ ],
+ "三沙": [
+  "Hainan",
+  "China",
+  "Paracel",
+  "Xisha"
+ ],
+ "锡林浩特": [
+  "Inner Mongolia",
+  "China"
+ ],
+ "霍林郭勒": [
+  "Inner Mongolia",
+  "China"
+ ],
+ "德兴": [
+  "Jiangxi",
+  "China"
+ ],
+ "石狮": [
+  "Fujian",
+  "China",
+  "Quanzhou"
+ ],
+ "冷水江": [
+  "Hunan",
+  "China"
+ ],
+ "凭祥": [
+  "Guangxi",
+  "China"
+ ],
+ "东兴": [
+  "Guangxi",
+  "China"
+ ],
+ "芒市": [
+  "Yunnan",
+  "China",
+  "Dehong"
+ ],
+ "若羌": [
+  "Xinjiang",
+  "Bayingol",
+  "China"
+ ],
+ "阿拉尔": [
+  "Xinjiang",
+  "China"
+ ],
+ "稻城亚丁": [
+  "Sichuan",
+  "Garzê",
+  "Garze",
+  "China"
+ ],
+ "额济纳胡杨林": [
+  "Inner Mongolia",
+  "Alxa",
+  "Ejin",
+  "China"
+ ],
+ "长白山天池": [
+  "Jilin",
+  "China",
+  "Yanbian",
+  "Changbai"
+ ],
+ "茶卡盐湖": [
+  "Qinghai",
+  "Ulan",
+  "China"
+ ],
+ "恩施大峡谷": [
+  "Hubei",
+  "Enshi",
+  "China"
+ ],
+ "扎尕那": [
+  "Gansu",
+  "Diebu",
+  "Minxian",
+  "China"
+ ],
+ "荔波小七孔": [
+  "Guizhou",
+  "Libo",
+  "Qiannan",
+  "China"
+ ],
+ "雨崩": [
+  "Yunnan",
+  "Deqin",
+  "Meili",
+  "China"
+ ],
+ "悬空寺": [
+  "Shanxi",
+  "Datong",
+  "Hengshan",
+  "China"
+ ],
+ "乔家大院": [
+  "Shanxi",
+  "Qi County",
+  "China"
+ ],
+ "白洋淀": [
+  "Hebei",
+  "Baoding",
+  "China"
+ ],
+ "乌兰布统草原": [
+  "Inner Mongolia",
+  "Xilin Gol",
+  "China"
+ ],
+ "本溪水洞": [
+  "Liaoning",
+  "Benxi",
+  "China"
+ ],
+ "千山": [
+  "Liaoning",
+  "Anshan",
+  "China"
+ ],
+ "三清山": [
+  "Jiangxi",
+  "China"
+ ],
+ "岳麓山": [
+  "Hunan",
+  "Changsha",
+  "China"
+ ],
+ "洞庭湖": [
+  "Hunan",
+  "China"
+ ],
+ "衡山": [
+  "Hunan",
+  "Hengyang",
+  "China"
+ ],
+ "德天瀑布": [
+  "Guangxi",
+  "Chongzuo",
+  "China"
+ ],
+ "开平碉楼": [
+  "Guangdong",
+  "Kaiping",
+  "China"
+ ],
+ "火焰山": [
+  "Xinjiang",
+  "Turpan",
+  "China"
+ ],
+ "冈仁波齐": [
+  "Tibet",
+  "Ngar",
+  "China"
+ ],
+ "珠峰大本营": [
+  "Tibet",
+  "Shigatse",
+  "China",
+  "Everest"
+ ],
+ "巴丹吉林沙漠": [
+  "Inner Mongolia",
+  "Alxa",
+  "China"
+ ],
+ "怒江第一湾": [
+  "Yunnan",
+  "Nujiang",
+  "Gongshan",
+  "China"
+ ],
+ "东川红土地": [
+  "Yunnan",
+  "Kunming",
+  "Dongchuan",
+  "China"
+ ],
+ "禾木村": [
+  "Xinjiang",
+  "Kanas",
+  "Altay",
+  "Burqin",
+  "China"
+ ],
+ "靖边波浪谷": [
+  "Shaanxi",
+  "Jingbian",
+  "Yulin",
+  "China"
+ ],
+ "查干湖": [
+  "Jilin",
+  "Songyuan",
+  "China"
+ ],
+ "喀拉峻草原": [
+  "Xinjiang",
+  "Ili",
+  "China"
+ ],
+ "贺兰山岩画": [
+  "Ningxia",
+  "China"
+ ],
+ "乌梁素海": [
+  "Inner Mongolia",
+  "Bayannur",
+  "China"
+ ],
+ "白石山": [
+  "Hebei",
+  "Laishui",
+  "China"
+ ],
+ "防川": [
+  "Jilin",
+  "Hunchun",
+  "Yanbian",
+  "China"
+ ],
+ "关门山": [
+  "Liaoning",
+  "Benxi",
+  "China"
+ ],
+ "龙虎山": [
+  "Jiangxi",
+  "Yingtan",
+  "China"
+ ],
+ "太姥山": [
+  "Fujian",
+  "Fuding",
+  "China"
+ ],
+ "霞浦北岐滩涂": [
+  "Fujian",
+  "Xiapu",
+  "Ningde",
+  "China"
+ ],
+ "绩溪龙川": [
+  "Anhui",
+  "Jixi",
+  "Xuancheng",
+  "China"
+ ],
+ "屏山峡谷": [
+  "Hubei",
+  "Enshi",
+  "China"
+ ],
+ "东江湖": [
+  "Hunan",
+  "Chenzhou",
+  "Dongkou",
+  "China"
+ ],
+ "崀山": [
+  "Hunan",
+  "Xinning",
+  "Shaoyang",
+  "China"
+ ],
+ "七百弄": [
+  "Guangxi",
+  "Dahua",
+  "China"
+ ],
+ "鹅泉": [
+  "Guangxi",
+  "Detian",
+  "Jingxi",
+  "China"
+ ],
+ "明仕田园": [
+  "Guangxi",
+  "Daxin",
+  "Chongzuo",
+  "China"
+ ],
+ "普者黑": [
+  "Yunnan",
+  "Qiubei",
+  "Wenshan",
+  "China"
+ ],
+ "江布拉克": [
+  "Xinjiang",
+  "Jimsar",
+  "Changji",
+  "China"
+ ],
+ "扎达土林": [
+  "Tibet",
+  "Zanda",
+  "Ngari",
+  "China"
+ ],
+ "艾肯泉": [
+  "Qinghai",
+  "Mangya",
+  "Guoluo",
+  "China"
+ ],
+ "大柴旦翡翠湖": [
+  "Qinghai",
+  "Delingha",
+  "China"
+ ],
+ "俄博梁雅丹": [
+  "Qinghai",
+  "Dulan",
+  "China"
+ ],
+ "冷湖黑独山": [
+  "Qinghai",
+  "Lenghu",
+  "China"
+ ],
+ "帕米尔白沙山": [
+  "Xinjiang",
+  "Tashkurgan",
+  "Kashgar",
+  "China"
+ ],
+ "达里诺尔湖": [
+  "Inner Mongolia",
+  "Xilingol",
+  "China"
+ ],
+ "加榜梯田": [
+  "Guizhou",
+  "Jiabang",
+  "Congjiang",
+  "Qiandongnan",
+  "China"
+ ],
+ "安集海大峡谷": [
+  "Xinjiang",
+  "Kuytun",
+  "Tacheng",
+  "China"
+ ],
+ "来古冰川": [
+  "Tibet",
+  "Ranwu",
+  "Baxoi",
+  "China"
+ ],
+ "阿斯哈图石阵": [
+  "Inner Mongolia",
+  "Hexigten",
+  "Keshiketeng",
+  "China"
+ ],
+ "乌兰哈达火山群": [
+  "Inner Mongolia",
+  "Ulanqab",
+  "Jining",
+  "China"
+ ],
+ "鸡鸣驿": [
+  "Hebei",
+  "Zhangjiakou",
+  "China"
+ ],
+ "黑瞎子岛": [
+  "Heilongjiang",
+  "Khabarovsk",
+  "Fuyuan",
+  "China"
+ ],
+ "绿江村": [
+  "Liaoning",
+  "Kuandian",
+  "Dandong",
+  "Yalu",
+  "China"
+ ],
+ "嵊山无人村": [
+  "Zhejiang",
+  "Shengshan",
+  "Shengsi",
+  "Houtouwan",
+  "China"
+ ],
+ "呈坎": [
+  "Anhui",
+  "Huizhou",
+  "Huangshan",
+  "China"
+ ],
+ "塔川": [
+  "Anhui",
+  "Yixi",
+  "Huangshan",
+  "China"
+ ],
+ "前童古镇": [
+  "Zhejiang",
+  "Ninghai",
+  "Ningbo",
+  "China"
+ ],
+ "高椅岭": [
+  "Hunan",
+  "Chenzhou",
+  "Yizhang",
+  "China"
+ ],
+ "鹿院坪": [
+  "Hubei",
+  "Enshi",
+  "China"
+ ],
+ "黔阳古城": [
+  "Hunan",
+  "Hongjiang",
+  "Huaihua",
+  "China"
+ ],
+ "浩坤湖": [
+  "Guangxi",
+  "Lingyun",
+  "Baise",
+  "China"
+ ],
+ "灯楼角": [
+  "Guangdong",
+  "Xuwen",
+  "Zhanjiang",
+  "China"
+ ],
+ "莺歌海盐场": [
+  "Hainan",
+  "Yinggehai",
+  "Dongfang",
+  "China"
+ ],
+ "坝美": [
+  "Yunnan",
+  "Bama",
+  "Qiubei",
+  "China"
+ ],
+ "尼汝村": [
+  "Yunnan",
+  "Lanping",
+  "Shangri",
+  "China"
+ ],
+ "罗布泊": [
+  "Xinjiang",
+  "Bayingol",
+  "China"
+ ],
+ "大海道": [
+  "Xinjiang",
+  "Hami",
+  "China"
+ ],
+ "雷克雅未克": [
+  "Iceland"
+ ],
+ "乌兰巴托": [
+  "Mongolia"
+ ],
+ "惠灵顿": [
+  "New Zealand"
+ ],
+ "阿斯塔纳": [
+  "Kazakhstan"
+ ],
+ "基多": [
+  "Ecuador"
+ ],
+ "塔那那利佛": [
+  "Madagascar"
+ ],
+ "努克": [
+  "Greenland"
+ ],
+ "苏瓦": [
+  "Fiji"
+ ],
+ "河内": [
+  "Vietnam"
+ ],
+ "里斯本": [
+  "Portugal"
+ ],
+ "平壤": [
+  "North Korea",
+  "Korea"
+ ],
+ "仰光": [
+  "Myanmar"
+ ],
+ "金边": [
+  "Cambodia"
+ ],
+ "加德满都": [
+  "Nepal"
+ ],
+ "巴库": [
+  "Azerbaijan"
+ ],
+ "奥斯陆": [
+  "Norway"
+ ],
+ "赫尔辛基": [
+  "Finland"
+ ],
+ "布拉格": [
+  "Czech"
+ ],
+ "布加勒斯特": [
+  "Romania"
+ ],
+ "基辅": [
+  "Ukraine"
+ ],
+ "哈瓦那": [
+  "Cuba"
+ ],
+ "巴拿马城": [
+  "Panama"
+ ],
+ "圣多明各": [
+  "Dominican"
+ ],
+ "蒙得维的亚": [
+  "Uruguay"
+ ],
+ "亚松森": [
+  "Paraguay"
+ ],
+ "巴西利亚": [
+  "Brazil"
+ ],
+ "突尼斯": [
+  "Tunisia"
+ ],
+ "阿尔及尔": [
+  "Algeria"
+ ],
+ "拉巴特": [
+  "Morocco"
+ ],
+ "莫尔兹比港": [
+  "Papua New Guinea"
+ ],
+ "阿布贾": [
+  "Nigeria"
+ ],
+ "卢萨卡": [
+  "Zambia"
+ ],
+ "阿拉木图": [
+  "Kazakhstan"
+ ],
+ "第比利斯": [
+  "Georgia"
+ ],
+ "圣何塞": [
+  "Costa Rica"
+ ],
+ "拉巴斯": [
+  "Bolivia"
+ ],
+ "帕拉马里博": [
+  "Suriname"
+ ],
+ "维尔纽斯": [
+  "Lithuania"
+ ],
+ "塔什干": [
+  "Uzbekistan"
+ ],
+ "摩加迪沙": [
+  "Somalia"
+ ],
+ "比什凯克": [
+  "Kyrgyzstan"
+ ],
+ "科威特城": [
+  "Kuwait"
+ ],
+ "马斯喀特": [
+  "Oman"
+ ],
+ "安曼": [
+  "Jordan"
+ ],
+ "多哈": [
+  "Qatar"
+ ],
+ "里加": [
+  "Latvia"
+ ],
+ "塔林": [
+  "Estonia"
+ ],
+ "卢布尔雅那": [
+  "Slovenia"
+ ],
+ "布拉迪斯拉发": [
+  "Slovakia"
+ ],
+ "萨格勒布": [
+  "Croatia"
+ ],
+ "地拉那": [
+  "Albania"
+ ],
+ "危地马拉城": [
+  "Guatemala"
+ ],
+ "拿骚": [
+  "Bahamas"
+ ],
+ "特古西加尔巴": [
+  "Honduras"
+ ],
+ "库斯科": [
+  "Peru"
+ ],
+ "瓜亚基尔": [
+  "Ecuador"
+ ],
+ "基加利": [
+  "Rwanda"
+ ],
+ "雅温得": [
+  "Cameroon"
+ ],
+ "霍尼亚拉": [
+  "Solomon"
+ ],
+ "帕果帕果": [
+  "American Samoa",
+  "Samoa"
+ ],
+ "亚伦": [
+  "Nauru"
+ ],
+ "恩吉鲁穆德": [
+  "Palau"
+ ],
+ "富纳富提": [
+  "Tuvalu"
+ ],
+ "塔拉瓦": [
+  "Kiribati"
+ ],
+ "维拉港": [
+  "Vanuatu"
+ ],
+ "普拉亚": [
+  "Cape Verde",
+  "Verde"
+ ],
+ "廷布": [
+  "Bhutan"
+ ],
+ "班珠尔": [
+  "Gambia"
+ ],
+ "恩贾梅纳": [
+  "Chad"
+ ],
+ "朗伊尔城": [
+  "Svalbard",
+  "Norway"
+ ],
+ "内比都": [
+  "Myanmar"
+ ],
+ "阿什哈巴德": [
+  "Turkmenistan"
+ ],
+ "杜尚别": [
+  "Tajikistan"
+ ],
+ "麦纳麦": [
+  "Bahrain"
+ ],
+ "瓦杜兹": [
+  "Liechtenstein"
+ ],
+ "圣马力诺": [
+  "San Marino",
+  "Italy"
+ ],
+ "安道尔城": [
+  "Andorra"
+ ],
+ "托尔斯港": [
+  "Faroe"
+ ],
+ "布里奇敦": [
+  "Barbados"
+ ],
+ "罗索": [
+  "Dominica"
+ ],
+ "卡斯特里": [
+  "Saint Lucia",
+  "Lucia"
+ ],
+ "威廉斯塔德": [
+  "Curacao",
+  "Netherlands"
+ ],
+ "圣乔治": [
+  "Grenada"
+ ],
+ "圣约翰": [
+  "Antigua"
+ ],
+ "斯坦利": [
+  "Falkland"
+ ],
+ "卡宴": [
+  "Guiana"
+ ],
+ "乌斯怀亚": [
+  "Argentina",
+  "Tierra del Fuego"
+ ],
+ "路易港": [
+  "Mauritius"
+ ],
+ "维多利亚": [
+  "Seychelles"
+ ],
+ "阿斯马拉": [
+  "Eritrea"
+ ],
+ "乌尤尼盐沼": [
+  "Bolivia",
+  "Uyuni"
+ ],
+ "维多利亚瀑布": [
+  "Zambia",
+  "Zimbabwe"
+ ],
+ "百内国家公园": [
+  "Chile",
+  "Patagonia"
+ ],
+ "棉花堡": [
+  "Turkey",
+  "Türkiye"
+ ],
+ "佩特拉古城": [
+  "Jordan"
+ ],
+ "盖朗厄尔峡湾": [
+  "Norway"
+ ],
+ "梅尔祖卡沙丘": [
+  "Morocco"
+ ],
+ "蒲甘": [
+  "Myanmar",
+  "Bagan"
+ ],
+ "婆罗浮屠": [
+  "Indonesia",
+  "Java"
+ ],
+ "奥卡万戈三角洲": [
+  "Botswana"
+ ],
+ "黄山": [
+  "Anhui",
+  "Huangshan",
+  "China"
+ ],
+ "伏见稻荷大社": [
+  "Japan",
+  "Kyoto"
+ ],
+ "卡帕多奇亚": [
+  "Turkey",
+  "Türkiye",
+  "Nevsehir",
+  "Göreme",
+  "Goreme"
+ ],
+ "巨人之路": [
+  "Northern Ireland",
+  "Ulster",
+  "Ireland",
+  "Antrim"
+ ],
+ "少女峰": [
+  "Switzerland",
+  "Bern"
+ ],
+ "马特洪峰": [
+  "Switzerland",
+  "Italy",
+  "Valais"
+ ],
+ "蓝湖温泉": [
+  "Iceland",
+  "Reykjanes",
+  "Grindavik"
+ ],
+ "羚羊峡谷": [
+  "Arizona",
+  "Page",
+  "United States"
+ ],
+ "纪念碑谷": [
+  "Utah",
+  "Arizona",
+  "United States"
+ ],
+ "奇琴伊察": [
+  "Mexico",
+  "Yucatan"
+ ],
+ "死亡谷": [
+  "California",
+  "Nevada",
+  "United States"
+ ],
+ "纳斯卡线条": [
+  "Peru",
+  "Nazca"
+ ],
+ "佩里托莫雷诺冰川": [
+  "Argentina",
+  "Patagonia",
+  "Santa Cruz"
+ ],
+ "加拉帕戈斯群岛": [
+  "Ecuador",
+  "Galapagos"
+ ],
+ "阿布辛贝神庙": [
+  "Egypt",
+  "Nubia"
+ ],
+ "恩戈罗恩戈罗火山口": [
+  "Tanzania"
+ ],
+ "汤加里罗国家公园": [
+  "New Zealand"
+ ],
+ "怀托摩萤火虫洞": [
+  "New Zealand",
+  "Waitomo"
+ ],
+ "罗托鲁瓦": [
+  "New Zealand",
+  "Rotorua"
+ ],
+ "索苏斯维利沙丘": [
+  "Namibia",
+  "Sossusvlei"
+ ],
+ "猴面包树大道": [
+  "Madagascar"
+ ],
+ "伊卢利萨特冰湾": [
+  "Greenland",
+  "Ilulissat"
+ ],
+ "瓦特纳冰川冰洞": [
+  "Iceland",
+  "Vatnajokull"
+ ],
+ "阿塔卡马月亮谷": [
+  "Chile",
+  "Atacama",
+  "Antofagasta"
+ ],
+ "马赛马拉": [
+  "Kenya",
+  "Masai"
+ ],
+ "彩虹山": [
+  "Peru",
+  "Vinicunca",
+  "Cusco"
+ ],
+ "安赫尔瀑布": [
+  "Venezuela",
+  "Canaima"
+ ],
+ "法罗群岛": [
+  "Faroe"
+ ],
+ "瓦迪拉姆": [
+  "Jordan",
+  "Wadi"
+ ],
+ "锡吉里耶": [
+  "Sri Lanka"
+ ],
+ "会安古城": [
+  "Vietnam",
+  "Hoi An"
+ ],
+ "罗弗敦群岛": [
+  "Norway",
+  "Lofoten"
+ ],
+ "克鲁姆洛夫": [
+  "Czech"
+ ],
+ "普利特维采湖": [
+  "Croatia"
+ ],
+ "马德拉岛": [
+  "Madeira",
+  "Portugal"
+ ],
+ "大提顿国家公园": [
+  "Wyoming",
+  "United States",
+  "Teton"
+ ],
+ "白沙国家公园": [
+  "New Mexico",
+  "Alamogordo",
+  "United States"
+ ],
+ "迪纳利山": [
+  "Alaska",
+  "United States"
+ ],
+ "凯厄图尔瀑布": [
+  "Guyana",
+  "Potaro"
+ ],
+ "科尔卡峡谷": [
+  "Peru",
+  "Arequipa"
+ ],
+ "瓦尔登斯半岛": [
+  "Argentina",
+  "Patagonia"
+ ],
+ "拉利贝拉岩石教堂": [
+  "Ethiopia"
+ ],
+ "鱼河峡谷": [
+  "Namibia"
+ ],
+ "塞米恩山脉": [
+  "Ethiopia",
+  "Gondar"
+ ],
+ "水母湖": [
+  "Palau"
+ ],
+ "宁格罗礁": [
+  "Australia",
+  "Western Australia",
+  "Exmouth"
+ ],
+ "达尔瓦扎地狱之门": [
+  "Turkmenistan",
+  "Darvaza"
+ ],
+ "达纳基勒凹地": [
+  "Ethiopia",
+  "Afar"
+ ],
+ "索科特拉岛": [
+  "Yemen",
+  "Socotra"
+ ],
+ "堪察加间歇泉谷": [
+  "Russia",
+  "Kamchatka"
+ ],
+ "纳汉尼国家公园": [
+  "Canada",
+  "Northwest Territories",
+  "Yukon"
+ ],
+ "钦基石林": [
+  "Madagascar",
+  "Bemaraha"
+ ],
+ "克里穆图三色湖": [
+  "Indonesia",
+  "Flores"
+ ],
+ "扬马延岛": [
+  "Jan Mayen",
+  "Norway",
+  "Svalbard"
+ ],
+ "波浪岩": [
+  "Australia",
+  "Western Australia",
+  "Hyden"
+ ],
+ "布温迪密林": [
+  "Uganda"
+ ],
+ "班公湖": [
+  "Tibet",
+  "Xinjiang",
+  "China",
+  "Ladakh"
+ ],
+ "恰伦峡谷": [
+  "Kazakhstan",
+  "Ili"
+ ],
+ "巴音扎格": [
+  "Mongolia",
+  "Umnugovi",
+  "Ovorkhangai"
+ ],
+ "罕萨山谷": [
+  "Pakistan",
+  "Gilgit",
+  "Karakoram"
+ ],
+ "希巴姆古城": [
+  "Yemen",
+  "Hadramaut",
+  "Hadhramaut"
+ ],
+ "设得兰群岛": [
+  "Scotland",
+  "Shetland",
+  "United Kingdom"
+ ],
+ "多瑙河三角洲": [
+  "Romania",
+  "Dobruja"
+ ],
+ "里拉修道院": [
+  "Bulgaria",
+  "Rila"
+ ],
+ "奈卡水晶洞": [
+  "Mexico",
+  "Chihuahua"
+ ],
+ "迪恩蓝洞": [
+  "Belize"
+ ],
+ "科科岛": [
+  "Costa Rica",
+  "Cocos"
+ ],
+ "中苏里南自然保护区": [
+  "Suriname"
+ ],
+ "戈克塔瀑布": [
+  "Peru",
+  "Amazonas",
+  "Gocta",
+  "San Pablo"
+ ],
+ "伦索伊斯国家公园": [
+  "Brazil",
+  "Maranhenses",
+  "Maranhão"
+ ],
+ "奥莫低谷": [
+  "Ethiopia",
+  "Omo"
+ ],
+ "撒哈拉之眼": [
+  "Mauritania",
+  "Adrar"
+ ],
+ "塔西利纳杰尔": [
+  "Algeria",
+  "Djanet",
+  "Tassili"
+ ],
+ "骷髅海岸": [
+  "Namibia"
+ ],
+ "南马都尔": [
+  "Micronesia",
+  "Pohnpei"
+ ],
+ "马罗沃泻湖": [
+  "Solomon",
+  "Marovo"
+ ],
+ "张掖丹霞": [
+  "Gansu",
+  "Zhangye",
+  "China"
+ ],
+ "大理": [
+  "Yunnan",
+  "Dali",
+  "China"
+ ],
+ "满洲里": [
+  "Inner Mongolia",
+  "Manzhouli",
+  "Hulunbuir",
+  "China"
+ ],
+ "遵义": [
+  "Guizhou",
+  "Zunyi",
+  "China"
+ ],
+ "洛阳": [
+  "Henan",
+  "Luoyang",
+  "China"
+ ],
+ "赤峰": [
+  "Inner Mongolia",
+  "Chifeng",
+  "China"
+ ],
+ "牡丹江": [
+  "Heilongjiang",
+  "Mudanjiang",
+  "China"
+ ],
+ "芜湖": [
+  "Anhui",
+  "Wuhu",
+  "China"
+ ],
+ "赣州": [
+  "Jiangxi",
+  "Ganzhou",
+  "China"
+ ],
+ "临沂": [
+  "Shandong",
+  "Linyi",
+  "China"
+ ],
+ "衡阳": [
+  "Hunan",
+  "Hengyang",
+  "China"
+ ],
+ "南充": [
+  "Sichuan",
+  "Nanchong",
+  "China"
+ ],
+ "曲靖": [
+  "Yunnan",
+  "Qujing",
+  "China"
+ ],
+ "阿勒泰": [
+  "Xinjiang",
+  "Altay",
+  "Aletai",
+  "China"
+ ],
+ "防城港": [
+  "Guangxi",
+  "Fangchenggang",
+  "China"
+ ],
+ "佳木斯": [
+  "Heilongjiang",
+  "Jiamusi",
+  "China"
+ ],
+ "保山": [
+  "Yunnan",
+  "Baoshan",
+  "China"
+ ],
+ "黑河": [
+  "Heilongjiang",
+  "Heihe",
+  "China"
+ ],
+ "池州": [
+  "Anhui",
+  "Chizhou",
+  "China"
+ ],
+ "十堰": [
+  "Hubei",
+  "Shiyan",
+  "China"
+ ],
+ "商丘": [
+  "Henan",
+  "Shangqiu",
+  "China"
+ ],
+ "昭通": [
+  "Yunnan",
+  "Zhaotong",
+  "China"
+ ],
+ "和田": [
+  "Xinjiang",
+  "Hotan",
+  "Khotan",
+  "China"
+ ],
+ "那曲": [
+  "Tibet",
+  "Nagqu",
+  "China"
+ ],
+ "塔城": [
+  "Xinjiang",
+  "Tacheng",
+  "Tarbagatay",
+  "China"
+ ],
+ "阿尔山": [
+  "Inner Mongolia",
+  "Arxan",
+  "Hinggan",
+  "China"
+ ],
+ "日喀则": [
+  "Tibet",
+  "Shigatse",
+  "China"
+ ],
+ "绥芬河": [
+  "Heilongjiang",
+  "Suifenhe",
+  "China"
+ ],
+ "武夷山": [
+  "Fujian",
+  "Wuyi",
+  "China"
+ ],
+ "天门": [
+  "Hubei",
+  "Tianmen",
+  "China"
+ ],
+ "潜江": [
+  "Hubei",
+  "Qianjiang",
+  "China"
+ ],
+ "琼海": [
+  "Hainan",
+  "Qionghai",
+  "China"
+ ],
+ "北极村": [
+  "Heilongjiang",
+  "Mohe",
+  "China"
+ ],
+ "徐州": [
+  "Jiangsu",
+  "Xuzhou",
+  "China"
+ ],
+ "株洲": [
+  "Hunan",
+  "Zhuzhou",
+  "China"
+ ]
+}

@@ -10,6 +10,7 @@ __pycache__/
 Thumbs.db
 tests/*.png
 tests/*.jpg
+tests/_contact/
 
 # original (uncompressed) image assets, kept local only
 assets-src/

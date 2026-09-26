@@ -1,0 +1,1274 @@
+{
+ "延吉": [
+  "Yanji"
+ ],
+ "吐鲁番": [
+  "Turpan",
+  "Turfan"
+ ],
+ "丹东": [
+  "Dandong"
+ ],
+ "信阳": [
+  "Xinyang"
+ ],
+ "湛江": [
+  "Zhanjiang"
+ ],
+ "伊宁": [
+  "Yining",
+  "Ghulja",
+  "Kulja"
+ ],
+ "哈密": [
+  "Hami",
+  "Kumul"
+ ],
+ "张掖": [
+  "Zhangye"
+ ],
+ "乌兰察布": [
+  "Ulanqab",
+  "Jining"
+ ],
+ "巴彦淖尔": [
+  "Bayannur",
+  "Dengkou"
+ ],
+ "忻州": [
+  "Xinzhou"
+ ],
+ "衢州": [
+  "Quzhou"
+ ],
+ "三明": [
+  "Sanming"
+ ],
+ "怀化": [
+  "Huaihua"
+ ],
+ "百色": [
+  "Baise"
+ ],
+ "河池": [
+  "Hechi",
+  "Jinchengjiang"
+ ],
+ "钦州": [
+  "Qinzhou"
+ ],
+ "安顺": [
+  "Anshun"
+ ],
+ "中卫": [
+  "Zhongwei"
+ ],
+ "马尔康": [
+  "Barkam",
+  "Maerkang"
+ ],
+ "三沙": [
+  "Sansha",
+  "Xisha",
+  "Paracel"
+ ],
+ "锡林浩特": [
+  "Xilinhot"
+ ],
+ "霍林郭勒": [
+  "Huolin Gol",
+  "Holingol"
+ ],
+ "德兴": [
+  "Dexing"
+ ],
+ "石狮": [
+  "Shishi"
+ ],
+ "冷水江": [
+  "Lengshuijiang",
+  "Meshan"
+ ],
+ "凭祥": [
+  "Pingxiang"
+ ],
+ "东兴": [
+  "Dongxing"
+ ],
+ "芒市": [
+  "Mangshi",
+  "Luliang"
+ ],
+ "若羌": [
+  "Ruoqiang",
+  "Charklik"
+ ],
+ "阿拉尔": [
+  "Aral City",
+  "Aral Xinjiang"
+ ],
+ "稻城亚丁": [
+  "Yading",
+  "Daocheng Yading",
+  "Chanzi"
+ ],
+ "额济纳胡杨林": [
+  "Ejin Banner",
+  "Populus euphratica",
+  "Bayan Haoha"
+ ],
+ "长白山天池": [
+  "Heaven Lake",
+  "Changbai Mountain",
+  "Baekdu"
+ ],
+ "茶卡盐湖": [
+  "Chaka Salt Lake",
+  "Chaka"
+ ],
+ "恩施大峡谷": [
+  "Enshi Grand Canyon",
+  "Yunlong Peak Enshi",
+  "Enshi Hubei"
+ ],
+ "扎尕那": [
+  "Zhagaba",
+  "Zagana",
+  "Diebu"
+ ],
+ "荔波小七孔": [
+  "Xiaoqikeng",
+  "Libo",
+  "Largo Chong'an"
+ ],
+ "雨崩": [
+  "Yubeng",
+  "Meili Snow Mountain"
+ ],
+ "悬空寺": [
+  "Hanging Monastery",
+  "Xuankong Temple",
+  "Hengshan Shanxi"
+ ],
+ "乔家大院": [
+  "Qiao Family Compound",
+  "Qiao Zhaoyi Tang"
+ ],
+ "白洋淀": [
+  "Baiyangdian"
+ ],
+ "乌兰布统草原": [
+  "Ulan Butong",
+  "Ulantub"
+ ],
+ "本溪水洞": [
+  "Benxi Water Cave",
+  "Benxi"
+ ],
+ "千山": [
+  "Qianshan",
+  "Ning'an Qianshan"
+ ],
+ "三清山": [
+  "Mount Sanqing",
+  "Sanqingshan"
+ ],
+ "岳麓山": [
+  "Yuelu Mountain",
+  "Yuelu Academy"
+ ],
+ "洞庭湖": [
+  "Dongting Lake"
+ ],
+ "衡山": [
+  "南岳衡山",
+  "Nanyue Mount Heng",
+  "Mount Heng Hunan"
+ ],
+ "德天瀑布": [
+  "Detian Falls",
+  "Ban Gioc"
+ ],
+ "开平碉楼": [
+  "Kaiping Diaolou",
+  "Zili Village",
+  "Kaiping"
+ ],
+ "火焰山": [
+  "Flaming Mountains",
+  "Huoyan Shan"
+ ],
+ "冈仁波齐": [
+  "Mount Kailash",
+  "Kailash"
+ ],
+ "珠峰大本营": [
+  "Everest Base Camp",
+  "Rongbuk Monastery",
+  "Qomolangma"
+ ],
+ "巴丹吉林沙漠": [
+  "Badain Jaran Desert",
+  "Badain Jaran"
+ ],
+ "怒江第一湾": [
+  "First Bend Nu River",
+  "Salween bend",
+  "Gongshan bend"
+ ],
+ "东川红土地": [
+  "Dongchuan Red Land",
+  "Dongchuan Huagou"
+ ],
+ "禾木村": [
+  "Hemu Village",
+  "Hemu"
+ ],
+ "靖边波浪谷": [
+  "Wave Valley Jingbian",
+  "Xiangyang Wave Valley",
+  "Red Sandstone Jingbian"
+ ],
+ "查干湖": [
+  "Chagan Lake",
+  "Chagan Nayinger"
+ ],
+ "喀拉峻草原": [
+  "Kalajun",
+  "Karajun"
+ ],
+ "贺兰山岩画": [
+  "Helan Mountains rock art",
+  "Helan Shan",
+  "Rock engravings Ningxia"
+ ],
+ "乌梁素海": [
+  "Wuliangsuhai",
+  "Wuliangsu Lake"
+ ],
+ "白石山": [
+  "Baishi Mountain",
+  "White Marble Mountain"
+ ],
+ "防川": [
+  "Fangchuan",
+  "Jingbian Fangchuan"
+ ],
+ "关门山": [
+  "Guanmen Mountain",
+  "Guanmenbenxi"
+ ],
+ "龙虎山": [
+  "Mount Longhu",
+  "Longhu Shan"
+ ],
+ "太姥山": [
+  "Mount Taimu",
+  "Taimu Shan"
+ ],
+ "霞浦北岐滩涂": [
+  "Xiapu",
+  "Beiqi Xiapu",
+  "Xiapu mudflats"
+ ],
+ "绩溪龙川": [
+  "Longchuan Jingxi",
+  "Jingxi Anhui"
+ ],
+ "屏山峡谷": [
+  "Pingshan Gorge",
+  "Duobi Gorge",
+  "Pingshan Hubei"
+ ],
+ "东江湖": [
+  "Dongjiang Lake",
+  "Dongjiang Dongkou"
+ ],
+ "崀山": [
+  "Langshan",
+  "Lang Mountain"
+ ],
+ "七百弄": [
+  "Qibainong",
+  "七百弄"
+ ],
+ "鹅泉": [
+  "Equan Spring",
+  "鹅泉"
+ ],
+ "明仕田园": [
+  "Mingshi",
+  "Mingshi Tianyuan"
+ ],
+ "普者黑": [
+  "Puzhehei"
+ ],
+ "江布拉克": [
+  "Jiangbulak",
+  "Jimsar"
+ ],
+ "扎达土林": [
+  "Zanda",
+  "Tsanda",
+  "Tholing"
+ ],
+ "艾肯泉": [
+  "Aiken Spring",
+  "Mangya",
+  "Atushi Aiken"
+ ],
+ "大柴旦翡翠湖": [
+  "Da Qaidam",
+  "Qaidam Basin",
+  "Chaka Qarhan"
+ ],
+ "俄博梁雅丹": [
+  "Eboling",
+  "Yardang Dunhuang",
+  "Yardang Qinghai"
+ ],
+ "冷湖黑独山": [
+  "Lenghu",
+  "Heidu Mountain",
+  "Yadan Lenghu"
+ ],
+ "帕米尔白沙山": [
+  "Baisha Lake",
+  "Tashkurgan",
+  "Pamir Highway"
+ ],
+ "达里诺尔湖": [
+  "Dali Lake",
+  "Dalai Nur",
+  "Dalinor"
+ ],
+ "加榜梯田": [
+  "Jiabang",
+  "Jiabang terraces",
+  "Congjiang"
+ ],
+ "安集海大峡谷": [
+  "Anjihai Canyon",
+  "An集海",
+  "Kuytun canyon"
+ ],
+ "来古冰川": [
+  "Laigu Glacier",
+  "Ranwu glacier",
+  "Baxoi glacier"
+ ],
+ "阿斯哈图石阵": [
+  "Asihatu",
+  "Shi Lin Inner Mongolia",
+  "Heshigten"
+ ],
+ "乌兰哈达火山群": [
+  "Ulanhada",
+  "Hada volcanoes",
+  "Chahar volcanoes"
+ ],
+ "鸡鸣驿": [
+  "Jiming Post",
+  "Jimingyi",
+  "Ji Ming驿"
+ ],
+ "黑瞎子岛": [
+  "Bolshoy Island",
+  "Heixiazi",
+  "Great Ussuriysky"
+ ],
+ "绿江村": [
+  "Lujiang Village",
+  "Kuandian Yalu River",
+  "绿江村"
+ ],
+ "嵊山无人村": [
+  "Houtouwan",
+  "Shengshan Island",
+  "Xiaoxi Yangshan"
+ ],
+ "呈坎": [
+  "Chengkan",
+  "Chengkan Huizhou"
+ ],
+ "塔川": [
+  "Tachuan",
+  "Tachuan Hongcun",
+  "Yixian Tachuan"
+ ],
+ "前童古镇": [
+  "Qiantong",
+  "Qiantong Ninghai"
+ ],
+ "高椅岭": [
+  "Gaoyiling",
+  "Gaoyi Ridge",
+  "Yongxing Dongjiang"
+ ],
+ "鹿院坪": [
+  "Luyuanping",
+  "Lu Yuanping",
+  "Enshi Luyuanping"
+ ],
+ "黔阳古城": [
+  "Qianyang Ancient City",
+  "Hongjiang Qianyang",
+  "Qianyang Hunan"
+ ],
+ "浩坤湖": [
+  "Haokun Lake",
+  "Lingyun Haokun",
+  "Xilong Haokun"
+ ],
+ "灯楼角": [
+  "Dengloujiao",
+  "Xuwen",
+  "Denglou角"
+ ],
+ "莺歌海盐场": [
+  "Yinggehai",
+  "Yinggehai salt field",
+  " Dongfang Hainan"
+ ],
+ "坝美": [
+  "Bamei",
+  "Bama Yaoang",
+  "Bamei village"
+ ],
+ "尼汝村": [
+  "Niru Village",
+  "Niru",
+  "Laxixi valley"
+ ],
+ "罗布泊": [
+  "Lop Nur",
+  "Lob Nur"
+ ],
+ "大海道": [
+  "Dahaidao",
+  "Hami yardang",
+  "Dahai Road desert"
+ ],
+ "雷克雅未克": [
+  "Reykjavik",
+  "Reykjavík"
+ ],
+ "乌兰巴托": [
+  "Ulaanbaatar",
+  "Ulan Bator"
+ ],
+ "惠灵顿": [
+  "Wellington New Zealand",
+  "Wellington cityscape"
+ ],
+ "阿斯塔纳": [
+  "Astana",
+  "Nur-Sultan"
+ ],
+ "基多": [
+  "Quito"
+ ],
+ "塔那那利佛": [
+  "Antananarivo"
+ ],
+ "努克": [
+  "Nuuk",
+  "Godthaab"
+ ],
+ "苏瓦": [
+  "Suva"
+ ],
+ "河内": [
+  "Hanoi"
+ ],
+ "里斯本": [
+  "Lisbon",
+  "Lisboa"
+ ],
+ "平壤": [
+  "Pyongyang"
+ ],
+ "仰光": [
+  "Yangon"
+ ],
+ "金边": [
+  "Phnom Penh"
+ ],
+ "加德满都": [
+  "Kathmandu"
+ ],
+ "巴库": [
+  "Baku"
+ ],
+ "奥斯陆": [
+  "Oslo"
+ ],
+ "赫尔辛基": [
+  "Helsinki"
+ ],
+ "布拉格": [
+  "Prague",
+  "Praha"
+ ],
+ "布加勒斯特": [
+  "Bucharest"
+ ],
+ "基辅": [
+  "Kyiv",
+  "Kiev"
+ ],
+ "哈瓦那": [
+  "Havana",
+  "La Habana"
+ ],
+ "巴拿马城": [
+  "Panama City",
+  "Panamá"
+ ],
+ "圣多明各": [
+  "Santo Domingo"
+ ],
+ "蒙得维的亚": [
+  "Montevideo"
+ ],
+ "亚松森": [
+  "Asuncion",
+  "Asunción"
+ ],
+ "巴西利亚": [
+  "Brasilia",
+  "Brasília"
+ ],
+ "突尼斯": [
+  "Tunis"
+ ],
+ "阿尔及尔": [
+  "Algiers",
+  "Alger"
+ ],
+ "拉巴特": [
+  "Rabat"
+ ],
+ "莫尔兹比港": [
+  "Port Moresby"
+ ],
+ "阿布贾": [
+  "Abuja"
+ ],
+ "卢萨卡": [
+  "Lusaka"
+ ],
+ "阿拉木图": [
+  "Almaty"
+ ],
+ "第比利斯": [
+  "Tbilisi"
+ ],
+ "圣何塞": [
+  "San Jose Costa Rica",
+  "San José Costa Rica"
+ ],
+ "拉巴斯": [
+  "La Paz Bolivia",
+  "La Paz"
+ ],
+ "帕拉马里博": [
+  "Paramaribo"
+ ],
+ "维尔纽斯": [
+  "Vilnius"
+ ],
+ "塔什干": [
+  "Tashkent"
+ ],
+ "摩加迪沙": [
+  "Mogadishu"
+ ],
+ "比什凯克": [
+  "Bishkek"
+ ],
+ "科威特城": [
+  "Kuwait City"
+ ],
+ "马斯喀特": [
+  "Muscat"
+ ],
+ "安曼": [
+  "Amman"
+ ],
+ "多哈": [
+  "Doha"
+ ],
+ "里加": [
+  "Riga"
+ ],
+ "塔林": [
+  "Tallinn"
+ ],
+ "卢布尔雅那": [
+  "Ljubljana"
+ ],
+ "布拉迪斯拉发": [
+  "Bratislava"
+ ],
+ "萨格勒布": [
+  "Zagreb"
+ ],
+ "地拉那": [
+  "Tirana"
+ ],
+ "危地马拉城": [
+  "Guatemala City",
+  "La Aurora Guatemala City"
+ ],
+ "拿骚": [
+  "Nassau Bahamas",
+  "Nassau Harbour"
+ ],
+ "特古西加尔巴": [
+  "Tegucigalpa"
+ ],
+ "库斯科": [
+  "Cusco"
+ ],
+ "瓜亚基尔": [
+  "Guayaquil"
+ ],
+ "基加利": [
+  "Kigali"
+ ],
+ "雅温得": [
+  "Yaounde",
+  "Yaoundé"
+ ],
+ "霍尼亚拉": [
+  "Honiara"
+ ],
+ "帕果帕果": [
+  "Pago Pago"
+ ],
+ "亚伦": [
+  "Yaren Nauru",
+  "Yaren District"
+ ],
+ "恩吉鲁穆德": [
+  "Ngerulmud",
+  "Melekeok"
+ ],
+ "富纳富提": [
+  "Funafuti"
+ ],
+ "塔拉瓦": [
+  "Tarawa"
+ ],
+ "维拉港": [
+  "Port Vila"
+ ],
+ "普拉亚": [
+  "Praia Santiago",
+  "Praia Cape Verde"
+ ],
+ "廷布": [
+  "Thimphu"
+ ],
+ "班珠尔": [
+  "Banjul"
+ ],
+ "恩贾梅纳": [
+  "NDjamena",
+  "N'Djamena"
+ ],
+ "朗伊尔城": [
+  "Longyearbyen"
+ ],
+ "内比都": [
+  "Naypyidaw",
+  "Nay Pyi Taw"
+ ],
+ "阿什哈巴德": [
+  "Ashgabat"
+ ],
+ "杜尚别": [
+  "Dushanbe"
+ ],
+ "麦纳麦": [
+  "Manama"
+ ],
+ "瓦杜兹": [
+  "Vaduz"
+ ],
+ "圣马力诺": [
+  "San Marino",
+  "Citta di San Marino",
+  "Città di San Marino"
+ ],
+ "安道尔城": [
+  "Andorra la Vella"
+ ],
+ "托尔斯港": [
+  "Torshavn",
+  "Tórshavn"
+ ],
+ "布里奇敦": [
+  "Bridgetown Barbados",
+  "Bridgetown"
+ ],
+ "罗索": [
+  "Roseau Dominica",
+  "Roseau"
+ ],
+ "卡斯特里": [
+  "Castries"
+ ],
+ "威廉斯塔德": [
+  "Willemstad",
+  "Punda"
+ ],
+ "圣乔治": [
+  "St George's Grenada",
+  "Saint George's Grenada"
+ ],
+ "圣约翰": [
+  "St John's Antigua",
+  "Saint John's Antigua"
+ ],
+ "斯坦利": [
+  "Stanley Falkland Islands",
+  "Stanley Harbour"
+ ],
+ "卡宴": [
+  "Cayenne"
+ ],
+ "乌斯怀亚": [
+  "Ushuaia"
+ ],
+ "路易港": [
+  "Port Louis"
+ ],
+ "维多利亚": [
+  "Victoria Seychelles",
+  "Morne Seychelles"
+ ],
+ "阿斯马拉": [
+  "Asmara"
+ ],
+ "乌尤尼盐沼": [
+  "Salar de Uyuni",
+  "Uyuni"
+ ],
+ "维多利亚瀑布": [
+  "Victoria Falls",
+  "Mosi-oa-Tunya"
+ ],
+ "百内国家公园": [
+  "Torres del Paine",
+  "Cerro Paine Grande",
+  "Cuernos del Paine"
+ ],
+ "棉花堡": [
+  "Pamukkale"
+ ],
+ "佩特拉古城": [
+  "Petra Jordan",
+  "Al Khazneh Petra",
+  "Petra Archaeological Park"
+ ],
+ "盖朗厄尔峡湾": [
+  "Geirangerfjord",
+  "Geiranger"
+ ],
+ "梅尔祖卡沙丘": [
+  "Erg Chebbi",
+  "Merzouga"
+ ],
+ "蒲甘": [
+  "Bagan",
+  "Pukama Bagan"
+ ],
+ "婆罗浮屠": [
+  "Borobudur"
+ ],
+ "奥卡万戈三角洲": [
+  "Okavango Delta",
+  "Moremi Okavango"
+ ],
+ "黄山": [
+  "Huangshan",
+  "Yellow Mountain Anhui",
+  "Welcoming Pine"
+ ],
+ "伏见稻荷大社": [
+  "Fushimi Inari",
+  "Fushimi Inari-taisha"
+ ],
+ "巨人之路": [
+  "Giant's Causeway",
+  "Giants Causeway"
+ ],
+ "少女峰": [
+  "Jungfrau",
+  "Top of Europe"
+ ],
+ "马特洪峰": [
+  "Matterhorn",
+  "Monte Cervino"
+ ],
+ "蓝湖温泉": [
+  "Blue Lagoon Iceland",
+  "Grindavik Blue Lagoon"
+ ],
+ "羚羊峡谷": [
+  "Antelope Canyon",
+  "Horseshoe Bend Antelope"
+ ],
+ "纪念碑谷": [
+  "Monument Valley",
+  "John Ford Point"
+ ],
+ "奇琴伊察": [
+  "Chichen Itza",
+  "El Castillo Chichen Itza"
+ ],
+ "死亡谷": [
+  "Death Valley",
+  "Mesquite Flat Sand Dunes",
+  "Badwater Basin"
+ ],
+ "纳斯卡线条": [
+  "Nazca Lines",
+  "Nazca pampa"
+ ],
+ "佩里托莫雷诺冰川": [
+  "Perito Moreno Glacier",
+  "El Calafate glacier"
+ ],
+ "加拉帕戈斯群岛": [
+  "Galapagos",
+  "Santa Cruz Galapagos",
+  "Española Galapagos"
+ ],
+ "阿布辛贝神庙": [
+  "Abu Simbel",
+  "Abu Simbel temples"
+ ],
+ "恩戈罗恩戈罗火山口": [
+  "Ngorongoro Crater",
+  "Ngorongoro"
+ ],
+ "汤加里罗国家公园": [
+  "Tongariro",
+  "Mount Doom Tongariro",
+  "Tongariro Alpine Crossing"
+ ],
+ "怀托摩萤火虫洞": [
+  "Waitomo",
+  "Waitomo Cave glowworm"
+ ],
+ "罗托鲁瓦": [
+  "Rotorua",
+  "Wai-O-Tapu",
+  "Whakarewarewa Rotorua"
+ ],
+ "索苏斯维利沙丘": [
+  "Sossusvlei",
+  "Deadvlei",
+  "Big Daddy dune"
+ ],
+ "猴面包树大道": [
+  "Avenue of the Baobabs",
+  "Baobab Avenue"
+ ],
+ "伊卢利萨特冰湾": [
+  "Ilulissat Icefjord",
+  "Sermeq Kujalleq"
+ ],
+ "瓦特纳冰川冰洞": [
+  "Vatnajokull",
+  "Vatnajökull ice cave",
+  "Jokulsarlon"
+ ],
+ "阿塔卡马月亮谷": [
+  "Valle de la Luna Atacama",
+  "Moon Valley Chile",
+  "Cerro Paranal"
+ ],
+ "马赛马拉": [
+  "Maasai Mara",
+  "Masai Mara"
+ ],
+ "彩虹山": [
+  "Vinicunca",
+  "Rainbow Mountain Peru",
+  "Montaña Siete Colores"
+ ],
+ "安赫尔瀑布": [
+  "Angel Falls",
+  "Kerepakupai Vena"
+ ],
+ "法罗群岛": [
+  "Faroe Islands",
+  "Saksun Faroe",
+  "Mykines Faroe"
+ ],
+ "瓦迪拉姆": [
+  "Wadi Rum"
+ ],
+ "锡吉里耶": [
+  "Sigiriya",
+  "Lion Rock Sigiriya"
+ ],
+ "会安古城": [
+  "Hoi An"
+ ],
+ "罗弗敦群岛": [
+  "Lofoten",
+  "Reine Lofoten",
+  "Hamnoy Lofoten"
+ ],
+ "克鲁姆洛夫": [
+  "Cesky Krumlov",
+  "Český Krumlov"
+ ],
+ "普利特维采湖": [
+  "Plitvice Lakes",
+  "Plitvička jezera"
+ ],
+ "马德拉岛": [
+  "Madeira",
+  "Pico do Arieiro",
+  "Levada Madeira"
+ ],
+ "大提顿国家公园": [
+  "Grand Teton",
+  "Jackson Lake Teton",
+  "Moraine Mountain"
+ ],
+ "白沙国家公园": [
+  "White Sands National Park",
+  "Algodones Sands"
+ ],
+ "迪纳利山": [
+  "Denali",
+  "Mount McKinley"
+ ],
+ "凯厄图尔瀑布": [
+  "Kaieteur Falls",
+  "Potaro River falls"
+ ],
+ "科尔卡峡谷": [
+  "Colca Canyon",
+  "Cruz del Condor Colca"
+ ],
+ "瓦尔登斯半岛": [
+  "Peninsula Valdes",
+  "Península Valdés",
+  "Puerto Piramides"
+ ],
+ "拉利贝拉岩石教堂": [
+  "Lalibela",
+  "Bete Giyorgis Lalibela"
+ ],
+ "鱼河峡谷": [
+  "Fish River Canyon",
+  "Ai-Ais Canyon"
+ ],
+ "塞米恩山脉": [
+  "Simien Mountains",
+  "Debre-Libanos Simien",
+  "Bwalinyika"
+ ],
+ "水母湖": [
+  "Jellyfish Lake Palau",
+  "Onimel Lake",
+  "Rock Islands Palau"
+ ],
+ "宁格罗礁": [
+  "Ningaloo Reef",
+  "Coral Bay Ningaloo",
+  "Exmouth Ningaloo"
+ ],
+ "达尔瓦扎地狱之门": [
+  "Darvaza gas crater",
+  "Door to Hell",
+  "Darvaza"
+ ],
+ "达纳基勒凹地": [
+  "Danakil Depression",
+  "Erta Ale",
+  "Dallol Ethiopia"
+ ],
+ "索科特拉岛": [
+  "Socotra",
+  "Dragon blood tree Socotra"
+ ],
+ "堪察加间歇泉谷": [
+  "Valley of Geysers",
+  "Zhupanova valley",
+  "Kronotsky geysers"
+ ],
+ "纳汉尼国家公园": [
+  "Nahanni",
+  "Virginia Falls Nahanni",
+  "Nahanni Range"
+ ],
+ "钦基石林": [
+  "Tsingy de Bemaraha",
+  "Bemaraha",
+  "Tsingy"
+ ],
+ "克里穆图三色湖": [
+  "Kelimutu",
+  "Keli Mutu lakes"
+ ],
+ "扬马延岛": [
+  "Jan Mayen",
+  "Beerenberg"
+ ],
+ "波浪岩": [
+  "Wave Rock Hyden",
+  "Wave Rock Western Australia",
+  "Hyden Wave Rock"
+ ],
+ "布温迪密林": [
+  "Bwindi",
+  "Bwindi Impenetrable"
+ ],
+ "班公湖": [
+  "Pangong Lake",
+  "Pangong Tso"
+ ],
+ "恰伦峡谷": [
+  "Charyn Canyon",
+  "Charyn valley Kazakhstan"
+ ],
+ "巴音扎格": [
+  "Bayanzag",
+  "Flaming Cliffs",
+  "Umnugovi bayanzag"
+ ],
+ "罕萨山谷": [
+  "Hunza Valley",
+  "Karimabad",
+  "Attabad Lake Hunza"
+ ],
+ "希巴姆古城": [
+  "Shibam",
+  "Shibam Hadramawt",
+  "Manahil Shibam"
+ ],
+ "设得兰群岛": [
+  "Shetland Islands",
+  "Lerwick Shetland",
+  "Scalloway Shetland"
+ ],
+ "多瑙河三角洲": [
+  "Danube Delta",
+  "Sulina Danube Delta",
+  "Tulcea Delta"
+ ],
+ "里拉修道院": [
+  "Rila Monastery",
+  "Rila mountain Bulgaria"
+ ],
+ "奈卡水晶洞": [
+  "Naica mine crystals",
+  "Cave of the Crystals",
+  "Cueva de los Cristales"
+ ],
+ "迪恩蓝洞": [
+  "Great Blue Hole",
+  "Blue Hole Belize",
+  "Lightouse Reef"
+ ],
+ "科科岛": [
+  "Isla del Coco",
+  "Cocos Island Costa Rica"
+ ],
+ "中苏里南自然保护区": [
+  "Central Suriname Nature Reserve",
+  "Raleighvallen",
+  "Sipaliwini"
+ ],
+ "戈克塔瀑布": [
+  "Gocta Falls",
+  "Gocta"
+ ],
+ "伦索伊斯国家公园": [
+  "Lencois Maranhenses",
+  "Lençóis Maranhenses",
+  "Atins Lencois"
+ ],
+ "奥莫低谷": [
+  "Omo Valley",
+  "Turmi Omo",
+  "Jinka Omo"
+ ],
+ "撒哈拉之眼": [
+  "Richat Structure",
+  "Eye of the Sahara"
+ ],
+ "塔西利纳杰尔": [
+  "Tassili n'Ajjer",
+  "Tassili",
+  "Djanet Tassili"
+ ],
+ "骷髅海岸": [
+  "Skeleton Coast",
+  "Wales Shipwreck Namibia",
+  "Sandwich Harbour"
+ ],
+ "南马都尔": [
+  "Nan Madol",
+  "Pohnpei ruins"
+ ],
+ "马罗沃泻湖": [
+  "Marovo Lagoon",
+  "Marovo"
+ ],
+ "卡帕多奇亚": [
+  "Cappadocia",
+  "Goreme",
+  "Erciyes Cappadocia"
+ ],
+ "张掖丹霞": [
+  "Zhangye Danxia",
+  "Danxia landform",
+  "Rainbow Mountains Gansu"
+ ],
+ "大理": [
+  "Dali Old Town",
+  "Dali Yunnan"
+ ],
+ "满洲里": [
+  "Manzhouli",
+  "Manzhouli Mengshi"
+ ],
+ "遵义": [
+  "Zunyi",
+  "Zunyi Guizhou"
+ ],
+ "洛阳": [
+  "Luoyang",
+  "Luoyang Henan"
+ ],
+ "赤峰": [
+  "Chifeng",
+  "Ulanhad"
+ ],
+ "牡丹江": [
+  "Mudanjiang",
+  "Mudan River"
+ ],
+ "芜湖": [
+  "Wuhu",
+  "Wuhu Anhui"
+ ],
+ "赣州": [
+  "Ganzhou",
+  "Ganzhou Jiangxi"
+ ],
+ "临沂": [
+  "Linyi",
+  "Linyi Shandong"
+ ],
+ "衡阳": [
+  "Hengyang",
+  "Hengyang Hunan"
+ ],
+ "南充": [
+  "Nanchong",
+  "Nanchong Sichuan"
+ ],
+ "曲靖": [
+  "Qujing",
+  "Qujing Yunnan"
+ ],
+ "阿勒泰": [
+  "Altay Prefecture",
+  "Aletai"
+ ],
+ "防城港": [
+  "Fangchenggang",
+  "Fangcheng Gulf"
+ ],
+ "佳木斯": [
+  "Jiamusi",
+  "Jiamusi Heilongjiang"
+ ],
+ "保山": [
+  "Baoshan Yunnan",
+  "Baoshan"
+ ],
+ "黑河": [
+  "Heihe",
+  "Heihe Heilongjiang"
+ ],
+ "池州": [
+  "Chizhou",
+  "Chizhou Anhui"
+ ],
+ "十堰": [
+  "Shiyan",
+  "Shiyan Hubei"
+ ],
+ "商丘": [
+  "Shangqiu",
+  "Shangqiu Henan"
+ ],
+ "昭通": [
+  "Zhaotong",
+  "Zhaotong Yunnan"
+ ],
+ "和田": [
+  "Hotan",
+  "Khotan"
+ ],
+ "那曲": [
+  "Nagqu",
+  "Nagqu Tibet"
+ ],
+ "塔城": [
+  "Tacheng",
+  "Tarbagatay"
+ ],
+ "阿尔山": [
+  "Arxan",
+  "Aershan"
+ ],
+ "日喀则": [
+  "Shigatse",
+  "Shigatse Tibet"
+ ],
+ "绥芬河": [
+  "Suifenhe",
+  "Suifenhe River"
+ ],
+ "武夷山": [
+  "Mount Wuyi",
+  "Wuyishan"
+ ],
+ "天门": [
+  "Tianmen",
+  "Tianmen Hubei"
+ ],
+ "潜江": [
+  "Qianjiang Hubei",
+  "Qianjiang"
+ ],
+ "琼海": [
+  "Qionghai",
+  "Qionghai Hainan"
+ ],
+ "北极村": [
+  "Beiji Village",
+  "North Pole Village"
+ ],
+ "徐州": [
+  "Xuzhou",
+  "Xuzhou Jiangsu"
+ ],
+ "株洲": [
+  "Zhuzhou",
+  "Zhuzhou Hunan"
+ ]
+}

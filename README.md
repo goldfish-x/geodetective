@@ -124,9 +124,18 @@ public/images/china/地点名.jpg
 public/images/world/地点名.jpg
 ```
 
-文件名必须与题库中的 `name` 完全一致。当前已就位：**china 120 张、world 120 张**，正好覆盖每篇题库里
-一星与二星各 60 个地点（共 120 个带 `img` 的条目）；剩余 180 个三四星地点
-运行时回退为确定性占位图。
+文件名必须与题库中的 `name` 完全一致（中文原名，无需转写）。当前覆盖情况：
+
+| 篇目 | 已配图 | 占位图 | 其中自备生成图 | 其中 Commons 真拍 | 体积 |
+| --- | --- | --- | --- | --- | --- |
+| 中国篇 | 272 张 / 300 | 28 | 120（一二星全部） | 152（三四五星） | 5683 KB |
+| 世界篇 | 299 张 / 300 | 1 | 37（一二星的一部分） | 262 | 6603 KB |
+
+- 配图只出现在**答题结束后的结算面板**，答题过程中不展示，因此不影响难度曲线与信息量。
+- 磁盘上没有对应 jpg 的地点，由 `src/core/placeholder.js` 按地名渲染确定性占位图（同一名
+  字每次生成的图案一致），不会出现破图，也不需要任何网络请求。
+- 图片是 `public/` 下的静态文件，不进 bundle：`src/data/{mode}-images.json` 只是一份地名清单
+  （异步 chunk），运行时按 `images/<mode>/<地名>.jpg` 懒加载单张图。
 
 新增图片后依次运行：
 
@@ -137,31 +146,68 @@ public/images/world/地点名.jpg
 
 # 2. 重新生成清单，供 game.js 判断哪些地点有本地图
 .venv\Scripts\python.exe scripts\generate_image_manifests.py
-```
 
-## 从 Wikimedia Commons 补齐配图
-
-`scripts/fetch_world_images.py` 按 `scripts/world-image-queries.json` 里的检索词
-到 Commons 抓图，居中裁方为 300px 后写入 `public/images/world/`，并把文件名、
-作者、许可证记到 `scripts/world-image-provenance.json`。
-
-```powershell
-# 只补缺失项（已存在同名文件会跳过），可用 scripts/world-image-fixes.json 覆盖检索词
-.venv\Scripts\python.exe scripts\fetch_world_images.py
-# 抓完必须重建署名表（CC BY / CC BY-SA 要求署名）
+# 3. 重新生成署名表
 .venv\Scripts\python.exe scripts\generate_attribution.py
 ```
 
-脚本靠 Commons 分类元数据判断图文是否对应，但仍需人工复核：自动检索会选中
-构图主体不符的图（例如把 Athena Nike 神庙当成帕特农、把油画当成实景照片）。
+## 从 Wikimedia Commons 补齐三四五星配图
+
+主脚本 `scripts/fetch_alias.py`，对每个缺图地点按「别名1 → 坐标邻近(25km) → 别名2 →
+中文原名 → `Views of <别名1>`」的顺序检索，最多 5 次 API 调用，宁缺毋滥：
+
+- `scripts/place-aliases.json`：地名 → 英文/拼音/别名（缺别名基本抓不到，先补这张表）
+- `scripts/place-region.json`：地名 → 所属省/国，用于同名异地判定（中国篇会剔除 "China" 这类
+  到处都命中的泛词）
+- `scripts/alias-reject.json`：人工否决表 `{"<mode>": {"<地名>": {"not": [正则], "must": [正则]}}}`，
+  用来永久拉黑「城市名命中同名街道 / 学校 / 界碑 / 龙卷风」这类误图
+- 硬过滤：检索词的每个实义词都必须出现在文件名或分类里；候选自带 GPS 距答案 >400km 丢弃；
+  行政区不一致丢弃；地图/标识牌/车站/机场/学校/政府/人物/船舶等 JUNK 词直接淘汰
+- 打分：`Views of X` 景观分类、Quality/Featured 分类、分辨率、横构图加分，低于阈值
+  （检索 30 / 邻近 24）就跳过，保留占位图
+- 结果写入 `scripts/{mode}-image-alias-provenance.json`（文件名、作者、许可证、分类、分数、来源）
+
+```powershell
+# 只补缺失项（磁盘已有同名文件自动跳过）；429 限流明显，GD_SLEEP 建议 >=2.2
+$env:PYTHONIOENCODING='utf-8'; $env:GD_SLEEP='2.2'
+.venv\Scripts\python.exe scripts\fetch_alias.py china
+.venv\Scripts\python.exe scripts\fetch_alias.py world
+
+# 常用开关
+#   GD_ONLY=地名1,地名2   只重抓指定地点
+#   GD_DEBUG=1            打印每条候选被淘汰的原因
+#   GD_NO_GEO=1           关闭坐标邻近轮（该轮最容易抓到政府/学校/机场）
+#   GD_RADIUS=25000       邻近检索半径（米）
+```
+
+**每轮抓完必须人工复核**（自动检索无法判断构图主体），再跑：
+
+```powershell
+.venv\Scripts\python.exe scripts\review_images.py china      # 列出标题+分类+可疑词
+.venv\Scripts\python.exe scripts\audit_alias.py china        # 用同一套规则复查别名轮
+.venv\Scripts\python.exe scripts\audit_alias.py china apply  # 判定不合格的：删图 + 删 provenance
+.venv\Scripts\python.exe scripts\generate_attribution.py     # 重建署名（顺带清理失效 provenance）
+.venv\Scripts\python.exe scripts\generate_image_manifests.py # 重建清单 + 打印缺口
+.venv\Scripts\python.exe tests\test_images.py               # 尺寸/体积/去重/署名一致性
+.venv\Scripts\python.exe scripts\build_contact_sheets.py     # 拼版总览图，肉眼扫一遍最快
+```
+
+不合格的处理方式固定是三步：删 `public/images/<mode>/<地名>.jpg`、从
+`scripts/<mode>-image-*-provenance.json` 删该条、往 `alias-reject.json` 加否决正则。
+`tests/test_images.py` 会校验 provenance ↔ 磁盘 ↔ ATTRIBUTION.md 三者一致，漏一步就红。
+
+历史脚本 `scripts/fetch_world_images.py`（关键词抓世界篇）、`scripts/fetch_geo_images.py`
+（坐标抓中国篇）保留备查，它们的 provenance 文件仍参与署名生成。
 
 ## 当前限制
 
 - 成绩保存在浏览器 `localStorage`，不能跨设备同步。
 - 没有后端排行榜，不能可靠比较不同玩家的成绩。
-- 配图全部来自仓库内静态文件，不依赖外部图片接口。
+- 地名配图覆盖 中国篇 272/300、世界篇 299/300，其余地点显示确定性占位图。
+- 配图全部来自仓库内静态文件，不依赖外部图片接口，离线可用。
 
 ## 署名
 
-`public/images/world/` 中 83 张来自 Wikimedia Commons（CC BY / CC BY-SA / CC0 / 公有领域），
-作者与许可证见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+`public/images/` 中 414 张来自 Wikimedia Commons（CC BY / CC BY-SA / CC0 / 公有领域），
+作者与许可证逐条见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+

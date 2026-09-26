@@ -1,0 +1,436 @@
+{
+ "china": {
+  "百色": {
+   "must": [
+    "guangxi|guangdong"
+   ],
+   "not": [
+    "baise",
+    "france",
+    "nerac"
+   ]
+  },
+  "达里诺尔湖": {
+   "must": [
+    "inner mongolia|xilingol|dalinor|dali lake|达里"
+   ],
+   "not": [
+    "erhai",
+    "taihe",
+    "yunnan",
+    "yunnan|erhai|dali, |taihe"
+   ]
+  },
+  "崀山": {
+   "must": [
+    "hunan|xinning|shaoyang|新宁"
+   ],
+   "not": [
+    "jiangsu",
+    "nantong"
+   ]
+  },
+  "俄博梁雅丹": {
+   "not": [
+    "dunhuang",
+    "dunhuang|gansu",
+    "gansu"
+   ],
+   "must": [
+    "qinghai|dulan|EBOLING|俄博梁",
+    "qinghai|dulan|eboling|俄博梁"
+   ]
+  },
+  "信阳": {
+   "not": [
+    "tea",
+    "毛尖",
+    "毛尖|tea"
+   ],
+   "must": []
+  },
+  "哈密": {
+   "not": [
+    "concert",
+    "concert|tajbakhsh|hamid",
+    "hamid",
+    "tajbakhsh"
+   ],
+   "must": []
+  },
+  "延吉": {
+   "must": [
+    "yanji|jilin"
+   ],
+   "not": [
+    "river"
+   ]
+  },
+  "乌兰察布": {
+   "must": [
+    "inner mongolia|ulanqab|jining|察哈尔|yurt"
+   ],
+   "not": []
+  },
+  "阿拉尔": {
+   "must": [
+    "aral|xinjiang",
+    "aral|xinjiang|alar"
+   ],
+   "not": []
+  },
+  "洞庭湖": {
+   "not": [
+    "dongting lake bridge"
+   ],
+   "must": []
+  },
+  "张掖": {
+   "not": [
+    "remains at"
+   ],
+   "must": []
+  },
+  "千山": {
+   "not": [
+    "maitreya",
+    "qianshan bridge",
+    "zhuhai"
+   ],
+   "must": [
+    "liaoning|anshan|ningwu|千山"
+   ]
+  },
+  "锡林浩特": {
+   "not": [
+    "b733",
+    "boeing",
+    "顺丰"
+   ],
+   "must": []
+  },
+  "扎达土林": {
+   "not": [
+    "1969",
+    "austin",
+    "truck",
+    "vehicle"
+   ],
+   "must": []
+  },
+  "东兴": {
+   "not": [
+    "\\brd\\b",
+    "xinhua rd"
+   ],
+   "must": []
+  },
+  "河池": {
+   "not": [
+    "direction",
+    "g75"
+   ],
+   "must": []
+  },
+  "衢州": {
+   "not": [
+    "cooperation",
+    "transportation group"
+   ],
+   "must": []
+  },
+  "帕米尔白沙山": {
+   "not": [
+    "farmer",
+    "tajik man"
+   ],
+   "must": []
+  },
+  "冷水江": {
+   "not": [
+    "power plant",
+    "power station",
+    "thermal"
+   ],
+   "must": []
+  },
+  "巴彦淖尔": {
+   "not": [
+    "airport"
+   ],
+   "must": []
+  },
+  "德兴": {
+   "not": [
+    "tracks"
+   ],
+   "must": []
+  },
+  "怀化": {
+   "not": [
+    "railway",
+    "senna|bicapsularis|\\bplant|\\bflora",
+    "maps of|annotations|locator"
+   ],
+   "must": []
+  },
+  "衡山": {
+   "not": [
+    "calligraphy",
+    "art center",
+    "hengshan road",
+    "hengshan rd"
+   ],
+   "must": [
+    "hunan|nanyue|南岳|hengyang|衡山"
+   ]
+  },
+  "大柴旦翡翠湖": {
+   "not": [
+    "sentinel",
+    "landsat",
+    "srtm",
+    "aster",
+    "modis"
+   ],
+   "must": []
+  },
+  "保山": {
+   "not": [
+    "shanghai|baoshan district",
+    "yulong|lijiang|\\bvillage"
+   ]
+  },
+  "黑河": {
+   "not": [
+    "yunnan|hani|yuanyang|afghanistan|black river of"
+   ]
+  },
+  "天门": {
+   "not": [
+    "zhangjiajie|wulingyuan|hunan|tianmen mountain"
+   ]
+  },
+  "潜江": {
+   "not": [
+    "zhejiang|panan|qiantang"
+   ]
+  },
+  "大理": {
+   "not": [
+    "turkey|dali kingdom|painting|scroll"
+   ]
+  },
+  "和田": {
+   "not": [
+    "afghanistan|badakhshan|khotan river"
+   ]
+  },
+  "那曲": {
+   "not": [
+    "arunachal|india|nakchuka county"
+   ]
+  },
+  "十堰": {
+   "not": [
+    "dongfeng|\\btruck"
+   ]
+  },
+  "芜湖": {
+   "not": [
+    "\\bchery\\b|automobile|\\bcar plant|jetour"
+   ]
+  },
+  "阿勒泰": {
+   "not": [
+    "republic of altai|gorno|altai krai"
+   ]
+  },
+  "塔城": {
+   "not": [
+    "taipei|street",
+    "playground|slide|elephant"
+   ]
+  },
+  "昭通": {
+   "not": [
+    "bookstore|xinhua|\\bshop",
+    "pylon|electricity|transmission",
+    "cinema|theater|theatre|media lacking"
+   ]
+  },
+  "防城港": {
+   "not": [
+    "df4|locomotive|\\brail|freight|\\bwagon"
+   ]
+  },
+  "曲靖": {
+   "not": [
+    "wind farm|windmill|turbine|maldives"
+   ]
+  },
+  "衡阳": {
+   "not": [
+    "library"
+   ]
+  },
+  "赤峰": {
+   "not": [
+    "bultfonteinite|datolite|mineral|\\brock sample",
+    "tornado|weather"
+   ]
+  },
+  "池州": {
+   "not": [
+    "television cent|\\btower"
+   ]
+  },
+  "临沂": {
+   "not": [
+    "chimney|\\bfactory"
+   ]
+  },
+  "钦州": {
+   "not": [
+    "boundary stone|stone marker|\\bjiebei|界碑|memorial stone"
+   ]
+  },
+  "株洲": {
+   "not": [
+    "二中|三中|一中|中学|小学|学校|school|中外景|\\bcampus"
+   ]
+  },
+  "徐州": {
+   "not": [
+    "中学|school"
+   ]
+  }
+ },
+ "world": {
+  "卢萨卡": {
+   "not": [
+    "koffi",
+    "olomide"
+   ],
+   "must": []
+  },
+  "瓜亚基尔": {
+   "not": [
+    "aguirre",
+    "colegio",
+    "escuela",
+    "profesor",
+    "socializaci|enmienda|constituci|\\bassembly\\b|\\bseats? of"
+   ],
+   "must": []
+  },
+  "摩加迪沙": {
+   "not": [
+    "a man carries",
+    "somalia water",
+    "ruins? of|war|battle"
+   ],
+   "must": []
+  },
+  "死亡谷": {
+   "not": [
+    "resort",
+    "sr 190"
+   ],
+   "must": []
+  },
+  "阿什哈巴德": {
+   "not": [
+    "bouygues",
+    "gurbanguly",
+    "monument to president",
+    "openstreetmap",
+    "technical base"
+   ],
+   "must": []
+  },
+  "莫尔兹比港": {
+   "not": [
+    "doulos"
+   ],
+   "must": []
+  },
+  "杜尚别": {
+   "not": [
+    "tulip of"
+   ],
+   "must": []
+  },
+  "巴西利亚": {
+   "not": [
+    "kubitschek",
+    "memorial"
+   ],
+   "must": []
+  },
+  "哈瓦那": {
+   "not": [
+    "rooster"
+   ],
+   "must": []
+  },
+  "拉巴特": {
+   "not": [
+    "honor guard"
+   ],
+   "must": []
+  },
+  "惠灵顿": {
+   "not": [],
+   "must": []
+  },
+  "撒哈拉之眼": {
+   "not": [
+    "srtm",
+    "landsat",
+    "map"
+   ],
+   "must": []
+  },
+  "设得兰群岛": {
+   "not": [
+    "antarctic",
+    "penguin",
+    "south shetland"
+   ],
+   "must": []
+  },
+  "里拉修道院": {
+   "not": [
+    "fresco"
+   ],
+   "must": []
+  },
+  "多瑙河三角洲": {
+   "not": [
+    "esa2345",
+    "satellite",
+    "sentinel"
+   ],
+   "must": []
+  },
+  "波浪岩": {
+   "not": [
+    " dam",
+    "reservoir"
+   ],
+   "must": []
+  },
+  "班珠尔": {
+   "not": [
+    "aster"
+   ],
+   "must": []
+  },
+  "戈克塔瀑布": {
+   "not": [
+    "sri lanka|buddha"
+   ]
+  }
+ }
+}

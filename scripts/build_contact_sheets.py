@@ -3,7 +3,6 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-DEST = ROOT / "public" / "images" / "world"
 TILE = 220
 COLS = 6
 
@@ -17,11 +16,22 @@ def font(size):
     return ImageFont.load_default()
 
 
+PROV = {}
+for _rel in ("scripts/world-image-provenance.json", "scripts/world-image-geo-provenance.json",
+             "scripts/china-image-geo-provenance.json", "scripts/world-image-alias-provenance.json",
+             "scripts/china-image-alias-provenance.json"):
+    _f = ROOT / _rel
+    if _f.exists():
+        for _n, _r in json.loads(_f.read_text(encoding="utf-8")).items():
+            PROV[(_rel.split("/")[1].split("-")[0], _n)] = _r.get("title", "")[5:]
+
+
 def build(mode, names, out_path):
+    dest = ROOT / "public" / "images" / mode
     f_tile = font(20)
     f_lbl = font(20)
     rows = (len(names) + COLS - 1) // COLS
-    pad_t, pad_b, gap = 30, 8, 6
+    pad_t, pad_b, gap = 30, 26, 6
     W = COLS * (TILE + gap) + gap
     H = rows * (TILE + pad_t + pad_b + gap) + gap
     sheet = Image.new("RGB", (W, H), (18, 24, 38))
@@ -31,8 +41,11 @@ def build(mode, names, out_path):
         r, c = divmod(i, COLS)
         x = gap + c * (TILE + gap)
         y = gap + r * (TILE + pad_t + pad_b + gap)
+        src = PROV.get((mode, name), "")
         d.text((x + 4, y + 2), "%d %s" % (i + 1, name), fill=(255, 235, 150), font=f_lbl)
-        p = DEST / (name + ".jpg")
+        if src:
+            d.text((x + 4, y + TILE + 8), src[:34], fill=(150, 200, 255), font=f_lbl)
+        p = dest / (name + ".jpg")
         box = (x, y + pad_t, x + TILE, y + pad_t + TILE)
         if p.exists():
             with Image.open(p) as im:
@@ -58,10 +71,9 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     for old in out.glob("*.jpg"):
         old.unlink()
-    for part, i in ((world[j:j + 60], 1) for j in range(0, len(world), 60)):
-        build("world", part, out / "world-%02d.jpg" % i)
-    build("china", china[:60], out / "china-01.jpg")
-    build("china", china[60:], out / "china-02.jpg")
+    for mode, names in (("world", world), ("china", china)):
+        for i in range(0, len(names), 60):
+            build(mode, names[i:i + 60], out / ("%s-%02d.jpg" % (mode, i // 60 + 1)))
 
 
 if __name__ == "__main__":
