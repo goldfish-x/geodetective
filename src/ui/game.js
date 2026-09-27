@@ -199,6 +199,10 @@ export async function renderGame(app, modeKey, routeToken) {
     state.lastTickSec = 99
     map.clearPick()
     map.clearHighlight()
+    // 清掉上一题的揭晓物：答案红点（带地名标签）与浅蓝连线，
+    // 否则新一题开始时屏幕上还挂着上一题的正确答案位置与名称
+    map.clearReveal()
+    map.clearSpot()
     elHint.classList.add('hidden')
     elConfirm.classList.add('hidden')
     elSettle.classList.add('hidden')

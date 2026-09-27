@@ -403,11 +403,12 @@ body::before {
 .q-stage.danger em { color: #ff5f56; }
 
 .hint-banner {
-  position: absolute;
-  top: 62px;
-  left: 50%;
-  transform: translateX(-50%);
+  /* 文档流提示带：出现时地图整体下移。
+     原来是 absolute + top:62px，而顶栏实测高 80px（窄屏 79~99px），
+     横幅会一直压在顶栏下沿上，窄屏更明显。 */
+  align-self: center;
   z-index: 22;
+  margin: 7px 12px 0;
   background: rgba(19, 29, 47, 0.94);
   border: 1px solid var(--gold);
   border-radius: 3px;
@@ -421,8 +422,8 @@ body::before {
 .hint-banner b { color: var(--gold); font-family: var(--serif); letter-spacing: 0.2em; }
 
 @keyframes dropIn {
-  from { opacity: 0; transform: translate(-50%, -8px); }
-  to { opacity: 1; transform: translate(-50%, 0); }
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
 }
 
 .map-stage { flex: 1; display: flex; min-height: 0; }
@@ -1005,8 +1006,19 @@ body::before {
 
 /* ============ 移动端适配 ============ */
 @media (max-width: 560px) {
-  .game-top { padding: 8px 10px; gap: 10px; }
-  .q-stats { gap: 0; }
+  /* 顶栏两行化：待猜地名是谜题本体，窄屏必须独占一行 */
+  .game-top { flex-wrap: wrap; padding: 8px 10px 7px; gap: 4px 10px; }
+  .q-meta { order: 3; flex-basis: 100%; gap: 8px; }
+  /* 长地名（世界篇最长 9 字）允许折行，不用省略号吞掉 */
+  .q-name { font-size: clamp(19px, 5.4vw, 24px); letter-spacing: 0.05em; white-space: normal; line-height: 1.18; }
+  .q-diff { font-size: 12px; }
+  /* 分数区压成一行，顶栏高度不因地名换行而额外增长 */
+  .q-stats { order: 1; flex-direction: row; align-items: baseline; gap: 9px; margin-left: auto; }
+  .btn-snd { order: 2; }
+  .q-index { font-size: 10.5px; letter-spacing: 0.1em; }
+  .q-stage { font-size: 10.5px; }
+  .q-score { font-size: 12px; }
+  .q-score em { font-size: 14px; }
   .game-bottom { padding: 7px 10px 10px; gap: 10px; flex-wrap: wrap; }
   .props { flex: 1; justify-content: space-between; }
   .prop { flex: 1; justify-content: center; padding: 7px 8px; }

@@ -31,6 +31,25 @@ def settle_card(page, mode):
     page.wait_for_timeout(1600)
 
 
+# 题库里最长的地名（世界篇 9 字），窄屏必须完整可读
+LONGEST = "恩戈罗恩戈罗火山口"
+
+
+def header_check(page, w):
+    """顶栏守卫：待猜地名不许被挤成省略号或溢出视口"""
+    page.evaluate("t => { document.querySelector('#q-name').textContent = t }", LONGEST)
+    page.wait_for_timeout(150)
+    m = page.evaluate("""() => {
+      const e = document.querySelector('#q-name'), r = e.getBoundingClientRect()
+      return { clipX: e.scrollWidth - e.clientWidth, clipY: e.scrollHeight - e.clientHeight,
+               right: r.right, top: r.top, headBottom: document.querySelector('.game-top').getBoundingClientRect().bottom }
+    }""")
+    bad = m["clipX"] > 1 or m["clipY"] > 1 or m["right"] > w or m["top"] >= m["headBottom"]
+    print(f"[{w}px] 最长地名完整可见 = {not bad}  {m}")
+    if bad:
+        fails.append(f"{w}px 顶栏地名被裁切或溢出：{m}")
+
+
 def stage_panel(page):
     if page.evaluate("() => window.__gdDebug.state.phase") == "settle":
         page.click("#btn-next")
@@ -49,10 +68,17 @@ def stage_panel(page):
 fails = []
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
-    for w, h, tag in [(1280, 800, "desk"), (1440, 900, "wide"), (390, 844, "mob")]:
+    for w, h, tag in [(1280, 800, "desk"), (1440, 900, "wide"), (390, 844, "mob"), (360, 780, "small")]:
         page = browser.new_page(viewport={"width": w, "height": h})
         errs = []
         page.on("pageerror", lambda e: errs.append(str(e)))
+        if w <= 560:
+            page.goto(f"{BASE}/#/game/china")
+            page.wait_for_selector("#q-name", timeout=30000)
+            page.wait_for_function("() => window.__gdDebug", timeout=10000)
+            page.wait_for_timeout(400)
+            header_check(page, w)
+
         for mode in ("china", "world"):
             settle_card(page, mode)
             mb = page.locator("#map-holder").bounding_box()

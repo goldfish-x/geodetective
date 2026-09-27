@@ -185,6 +185,15 @@ export function createChinaMap(container, { onPick, onInvalidPick }) {
     clearReveal() {
       chart.setOption({ series: [{ id: 'answer', data: [] }, { id: 'link', data: [] }] })
     },
+    // 供测试读取：当前挂在图上的标记数量（回归守卫用）
+    markerState() {
+      const list = chart.getOption().series || []
+      const n = id => {
+        const hit = list.find(x => x && x.id === id)
+        return hit && hit.data ? hit.data.length : 0
+      }
+      return { pick: n("pick"), answer: n("answer"), link: n("link"), spot: n("spot") }
+    },
     // 复位视野
     resetView() {
       chart.setOption({ geo: { zoom: 1.2, center: [104.5, 36.5] } })

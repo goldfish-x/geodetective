@@ -16,6 +16,10 @@ def state(page):
                          'return { phase: d.phase, q: d.qInStage, stage: d.stageIndex } }')
 
 
+def markers(page):
+    return page.evaluate('() => window.__gdDebug.map.markerState()')
+
+
 def unit(p):
     a, b = math.radians(90 - p[1]), math.radians(p[0])
     return (math.sin(a) * math.cos(b), math.cos(a), math.sin(a) * math.sin(b))
@@ -85,12 +89,20 @@ with sync_playwright() as p:
     assert state(page) == {'phase': 'settle', 'q': 0, 'stage': 0}, f'结算后仍被自动跳题: {state(page)}'
     print('[节奏] 单题结算 4 秒后停在原地，等待玩家点击 ✓')
 
+    m = markers(page)
+    assert m == {'pick': 1, 'answer': 1, 'link': 1, 'spot': 0}, f'结算卡上缺少落点/答案点/连线: {m}'
+    print(f'[揭晓] 落点+答案点+连线齐备 {m} ✓')
+
     page.keyboard.press('Enter')
     page.wait_for_function(
         '() => window.__gdDebug.state.qInStage === 1 && window.__gdDebug.state.phase === "answering"',
         timeout=5000)
     assert 'settled' not in page.locator('.timer').get_attribute('class'), '新题未解除已结算态'
     print('[键盘] 回车推进到第 2 题，倒计时恢复 ✓')
+
+    m = markers(page)
+    assert m == {'pick': 0, 'answer': 0, 'link': 0, 'spot': 0}, f'第 2 题残留上一题的标记: {m}'
+    print('[清除] 新一题屏幕上没有上一题的答案点/地名标签/连线/落点 ✓')
 
     page.evaluate('() => { window.__gdDebug.state.qInStage = 7 }')
     page.mouse.click(cx, cy)
@@ -129,9 +141,16 @@ with sync_playwright() as p:
     assert ang(v0, v1) < 1.5, f'答案与落点都可见却转向了: {v0} -> {v1}'
     print(f'[视角] 答案可见时地球保持原位（偏移 {ang(v0, v1):.2f}°）✓')
 
+    m = markers(page)
+    assert m == {'pick': 1, 'answer': 1, 'link': 1, 'spot': 0}, f'世界篇结算缺少落点/答案点/连线: {m}'
+    print(f'[揭晓·世界] 落点+答案点+贴地连线齐备 {m} ✓')
+
     # ————— 3. 世界篇：落点转到背面时朝两点中点转向 —————
     page.click('#btn-next')
     page.wait_for_function('() => window.__gdDebug.state.phase === "answering"', timeout=5000)
+    m = markers(page)
+    assert m == {'pick': 0, 'answer': 0, 'link': 0, 'spot': 0}, f'世界篇第 2 题残留上一题的标记: {m}'
+    print('[清除·世界] 新一题开始时上一题的揭晓标记已清空 ✓')
     q1 = page.evaluate('() => window.__gdDebug.stages[0].questions[1]')
     A1 = [q1['lng'], q1['lat']]
     face(page, A1[0], A1[1])          # 镜头先对准答案 → 答案可见
