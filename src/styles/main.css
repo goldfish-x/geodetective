@@ -425,8 +425,21 @@ body::before {
   to { opacity: 1; transform: translate(-50%, 0); }
 }
 
-.map-wrap { flex: 1; position: relative; min-height: 0; }
+.map-stage { flex: 1; display: flex; min-height: 0; }
+.map-wrap { flex: 1 1 auto; position: relative; min-width: 0; min-height: 0; }
 .map-holder { position: absolute; inset: 0; }
+
+/* 结算卡 / 局档案栏：宽屏占右侧一列，地图相应收缩让位（卡片不再盖住红点） */
+.card-slot { display: none; flex: 0 0 360px; min-height: 0; padding: 12px 16px 12px 0; }
+.card-slot.active {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  justify-content: safe center;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
 
 /* 确认弹层 */
 .confirm-pop {
@@ -458,12 +471,10 @@ body::before {
 
 /* 单题结算：结果卡 + 精准度刻度 */
 .settle-pop {
-  position: absolute;
-  bottom: 18px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   z-index: 25;
-  width: min(430px, 92vw);
+  width: 100%;
+  flex-shrink: 0;
   text-align: center;
   background: linear-gradient(180deg, rgba(23, 35, 57, 0.98), rgba(15, 24, 41, 0.98));
   border: 1px solid rgba(232, 182, 76, 0.72);
@@ -493,9 +504,13 @@ body::before {
 /* 结算弹层弹出动画 */
 .settle-pop.pop { animation: settlePop 0.42s cubic-bezier(0.2, 0.9, 0.3, 1.25); }
 @keyframes settlePop {
-  0% { transform: translate(-50%, 18px) scale(0.86); opacity: 0; }
-  60% { transform: translate(-50%, 0) scale(1.03); opacity: 1; }
-  100% { transform: translate(-50%, 0) scale(1); }
+  0% { transform: translateY(18px) scale(0.86); opacity: 0; }
+  60% { transform: translateY(0) scale(1.03); opacity: 1; }
+  100% { transform: translateY(0) scale(1); }
+}
+@keyframes sheetIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
 }
 /* 判级标签 */
 .grade {
@@ -580,18 +595,16 @@ body::before {
 
 /* ============ 局结算：地名档案面板 ============ */
 .stage-settle {
-  position: absolute;
-  left: 50%;
-  bottom: 18px;
-  transform: translateX(-50%);
+  position: relative;
   z-index: 30;
-  width: min(880px, 94vw);
+  width: 100%;
+  flex-shrink: 0;
   background: rgba(19, 29, 47, 0.97);
   border: 1px solid var(--gold);
   border-radius: 6px;
   padding: 16px 20px 14px;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.65);
-  animation: riseIn 0.25s ease;
+  animation: sheetIn 0.25s ease;
 }
 .ss-head { display: flex; align-items: center; gap: 12px; }
 .ss-title {
@@ -623,7 +636,8 @@ body::before {
   font-size: 15px;
   font-variant-numeric: tabular-nums;
 }
-.ss-body { display: flex; gap: 14px; margin-top: 12px; align-items: stretch; }
+/* 右侧栏只有 ~340px 可用宽，档案列表与详情改为上下堆叠 */
+.ss-body { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; align-items: stretch; }
 .ss-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -664,7 +678,7 @@ body::before {
 }
 .ss-chip.active i { color: #ff8a80; }
 .ss-detail {
-  width: 310px;
+  width: auto;
   flex-shrink: 0;
   background: rgba(10, 17, 32, 0.55);
   border: 1px dashed var(--line);
@@ -730,7 +744,8 @@ body::before {
   margin-top: 12px;
   gap: 10px;
 }
-.ss-hint { font-size: 11.5px; color: var(--parchment-dim); letter-spacing: 0.08em; }
+.ss-hint { font-size: 11.5px; color: var(--parchment-dim); letter-spacing: 0.08em; flex: 1; min-width: 0; }
+.ss-foot .btn { white-space: nowrap; flex-shrink: 0; }
 .settle-detail {
   margin: 0 0 14px;
   padding-top: 10px;
@@ -1008,9 +1023,30 @@ body::before {
   .confirm-pop, .toast, .stage-settle, .ss-img, #btn-next { animation: none !important; }
 }
 
+/* 窄屏（含竖屏手机）放不下右侧栏：卡片回落到地图下方的抽屉，同样不与地图重叠 */
+@media (max-width: 899px) {
+  .map-stage { flex-direction: column; }
+  .card-slot { flex: 0 0 auto; padding: 0 10px 10px; }
+  .card-slot.active { justify-content: flex-start; max-height: 52vh; }
+  /* 面板超高时列表内部滚动，但主操作按钮吸在底部，始终可见可点 */
+  .stage-settle .ss-foot {
+    position: sticky;
+    bottom: 0;
+    margin: 0 -12px -10px;
+    padding: 10px 12px;
+    background: rgba(19, 29, 47, 0.99);
+    border-top: 1px dashed rgba(236, 225, 200, 0.14);
+    border-radius: 0 0 6px 6px;
+  }
+  .settle-pop { width: min(430px, 100%); margin: 0 auto; }
+  .stage-settle { width: min(760px, 100%); margin: 0 auto; }
+  .ss-body { flex-direction: row; }
+  .ss-detail { width: 300px; }
+}
+
 /* 局结算档案面板：窄屏适配 */
 @media (max-width: 720px) {
-  .stage-settle { padding: 12px 12px 10px; bottom: 10px; }
+  .stage-settle { padding: 12px 12px 10px; }
   .ss-body { flex-direction: column; }
   .ss-detail { width: auto; min-height: 0; }
   .ss-list { grid-template-columns: repeat(2, 1fr); }

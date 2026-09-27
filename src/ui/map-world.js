@@ -58,6 +58,11 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
     globe: {
       baseTexture: texChart,
       shading: 'lambert',
+      // 高度轴是按「数据里的最大 alt」归一化到 [0, globeOuterRadius - globeRadius] 的
+      // （见 echarts-gl globeCreator.js），默认 outerRadius=150 会把连线抬到球面上方 50 个单位
+      // ——半个球半径，于是大圆弧看着像一根飞出地球的直线。压到 103 后连线只离地 3 个单位，
+      // 既贴着球面又不会和地表 z-fighting。
+      globeOuterRadius: 103,
       viewControl: {
         autoRotate: false,
         distance: 180,
@@ -105,8 +110,11 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
         type: 'lines3D',
         coordinateSystem: 'globe',
         silent: true,
-        // 浅蓝连线：加宽 + 抬到球面上方 2.5 个单位（globeRadius=100），避免贴地时被大地遮挡
-        lineStyle: { width: 4.5, color: '#8fd3ff', opacity: 1, curveness: 0.18 },
+        // polyline 必须为 true：echarts-gl 在 globe 上的 lines3D 会忽略 curveness，
+        // 一律用三次贝塞尔拟合，两点夹角一大控制点就被甩到球外（连线翘出球的轮廓）。
+        // 折线模式改为直接沿我们算好的大圆插值点走线，严格贴球面。
+        polyline: true,
+        lineStyle: { width: 4.5, color: '#8fd3ff', opacity: 1 },
         data: []
       },
       {
@@ -150,7 +158,62 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
     const lng = Math.atan2(m[2], m[0]) * 180 / Math.PI
     return [lng, lat]
   }
-  const faceTo = (lng, lat) => chart.setOption({ globe: { viewControl: { alpha: lat, beta: lng + 90 } } })
+  // ———— 程序转向（结算时把答案转到正面） ————
+  // 必须用 viewControl.targetCoord，不能用 alpha/beta：
+  // echarts-gl 每帧都会把相机「当前角度」回写进 model.viewControl.alpha/beta
+  // （GlobeView._updateViewControl → control.on('update') → globeChangeCamera action → model.setView），
+  // 而且该回写是异步 action。玩家刚拖拽过地球时阻尼惯性仍在持续回写，会把我们用 setOption
+  // 下发的新 alpha/beta 立刻覆盖回去，表现为「结算时地球不转」（实测 0/6 全灭）。
+  // targetCoord 不参与回写，且在 _updateViewControl 里优先于 alpha/beta，每次重渲染都重新指向目标，
+  // 所以收敛稳定。代价：它会留在 option 里成为「回位锚点」，到达后必须摘掉，
+  // 否则之后任何一次 setOption 重渲染都会把镜头拉回来（就是「一题结束地球自动回位」）。
+  let anchor = null           // 正在进行的程序转向目标 [lng, lat]
+  let anchorRaf = 0
+  const releaseAnchor = () => {
+    if (!anchor) return
+    anchor = null
+    if (anchorRaf) { cancelAnimationFrame(anchorRaf); anchorRaf = 0 }
+    try {
+      // echarts 的 merge 会跳过 null，所以只能直接改原始 option 摘锚点
+      chart.getModel().getComponent('globe', 0).option.viewControl.targetCoord = null
+    } catch { /* 图表已销毁 */ }
+  }
+  // 下发转向目标，并看守到相机到位后自动摘锚点
+  const watchAnchor = () => {
+    if (!anchor) return
+    const t0 = performance.now()
+    const tick = () => {
+      if (!anchor) return
+      const still = angBetween(facing(), anchor)
+      if (still < 1.5 || performance.now() - t0 > 1600) { releaseAnchor(); return }
+      anchorRaf = requestAnimationFrame(tick)
+    }
+    anchorRaf = requestAnimationFrame(tick)
+  }
+  const turnTo = (lng, lat) => {
+    anchor = [lng, lat]
+    return { targetCoord: [lng, lat] }   // 作为 globe.viewControl 的一部分随 setOption 一起下发
+  }
+  // 玩家一上手拖拽就让位，避免程序视角和人手抢镜头
+  chart.getZr().on('mousedown', releaseAnchor)
+  chart.getZr().on('touchstart', releaseAnchor)
+  // 沿大圆做球面线性插值(slerp)，返回 h 高度上的 seg+1 个 [lng, lat, h] 点
+  const arcPath = (p, q, h, seg = 48) => {
+    const u = toVec(p), v = toVec(q)
+    const dot = Math.max(-1, Math.min(1, u[0] * v[0] + u[1] * v[1] + u[2] * v[2]))
+    const w = Math.acos(dot)
+    if (w < 1e-4) return [[p[0], p[1], h], [q[0], q[1], h]]
+    const sw = Math.sin(w)
+    const pts = []
+    for (let i = 0; i <= seg; i++) {
+      const t = i / seg
+      const k0 = Math.sin((1 - t) * w) / sw, k1 = Math.sin(t * w) / sw
+      const x = u[0] * k0 + v[0] * k1, y = u[1] * k0 + v[1] * k1, z = u[2] * k0 + v[2] * k1
+      pts.push([Math.atan2(z, x) * 180 / Math.PI,
+                90 - Math.acos(y / Math.hypot(x, y, z)) * 180 / Math.PI, h])
+    }
+    return pts
+  }
 
   // —— 获取 globe 坐标系（首次渲染后可用） ——
   const getCoordSys = () => {
@@ -235,23 +298,26 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
     },
     reveal(actual, guess) {
       const series = [{ id: 'answer', data: [[actual.lng, actual.lat, 0]] }]
-      const h = 2.5
+      const h = 1     // 折线整体抬到球面上方 3 个单位（见 globeOuterRadius：最大 alt 映射为 outerRadius-R）
       if (guess) {
         series.push({
           id: 'link',
-          data: [{ coords: [[guess.lng, guess.lat, h], [actual.lng, actual.lat, h]] }]
+          data: [{ coords: arcPath([guess.lng, guess.lat], [actual.lng, actual.lat], h) }]
         })
       }
-      chart.setOption({ series })
-      // 视角保持不动：只有当答案或落点被转到球背面（离视线中心 >72° 已贴到边缘）时才转向，
-      // 转向目标是两点的球面中点；两点近乎对跖时中点无意义，直接面向答案。
+      // 视角保持不动：只有当答案或落点被转到球背面时才转向，转向目标是两点的球面中点；
+      // 两点近乎对跖时中点无意义，直接面向答案。
+      // 可见半径 = acos(R / (R + distance)) = acos(100 / 280) ≈ 69.5°，超出即被球身挡住。
       const A = [actual.lng, actual.lat]
       const G = guess ? [guess.lng, guess.lat] : null
-      const visible = pt => angBetween(pt, facing()) <= 72
+      const visible = pt => angBetween(pt, facing()) <= 66
+      const opt = { series }
       if (!visible(A) || (G && !visible(G))) {
         const pair = G && angBetween(G, A) < 150 ? midOf(G, A) : A
-        faceTo(pair[0], pair[1])
+        opt.globe = { viewControl: turnTo(pair[0], pair[1]) }
       }
+      chart.setOption(opt)
+      watchAnchor()
     },
     // 供测试读取：相机正对的经纬度 [lng, lat]
     getView() { return facing() },
@@ -261,9 +327,9 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
     showSpot(lng, lat) {
       chart.setOption({
         series: [{ id: 'spot', data: [[lng, lat, 0]] }],
-        // 同 reveal：用 alpha/beta 转向，不写 targetCoord，避免留下「回位锚点」
-        globe: { viewControl: { alpha: lat, beta: lng + 90 } }
+        globe: { viewControl: turnTo(lng, lat) }
       })
+      watchAnchor()
     },
     clearSpot() {
       chart.setOption({ series: [{ id: 'spot', data: [] }] })
@@ -274,6 +340,7 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
     },
     resetView() { /* 保持当前视角 */ },
     dispose() {
+      releaseAnchor()
       ro.disconnect()
       chart.dispose()
       texChart.dispose()

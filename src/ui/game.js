@@ -81,24 +81,28 @@ export async function renderGame(app, modeKey, routeToken) {
 
     <div class="hint-banner hidden" id="hint-banner"></div>
 
-    <div class="map-wrap">
-      <div class="map-holder" id="map-holder"></div>
+    <div class="map-stage">
+      <div class="map-wrap">
+        <div class="map-holder" id="map-holder"></div>
 
-      <div class="confirm-pop hidden" id="confirm-pop">
-        <span class="confirm-text">就是这里？</span>
-        <button class="btn btn-ghost" id="btn-rechoose">重选</button>
-        <button class="btn btn-primary" id="btn-confirm">确认指认</button>
+        <div class="confirm-pop hidden" id="confirm-pop">
+          <span class="confirm-text">就是这里？</span>
+          <button class="btn btn-ghost" id="btn-rechoose">重选</button>
+          <button class="btn btn-primary" id="btn-confirm">确认指认</button>
+        </div>
+
+        <div class="toast hidden" id="toast"></div>
       </div>
 
-      <div class="settle-pop hidden" id="settle-pop">
-        <div class="settle-title" id="settle-title"></div>
-        <div class="settle-meter" aria-hidden="true"><i id="settle-meter-fill"></i></div>
-        <div class="settle-detail" id="settle-detail"></div>
-        <button class="btn btn-primary" id="btn-next">下一题</button>
-        <div class="settle-tip">点击「下一题」继续 · 也可按回车</div>
-      </div>
-
-      <div class="toast hidden" id="toast"></div>
+      <aside class="card-slot" id="card-slot">
+        <div class="settle-pop hidden" id="settle-pop">
+          <div class="settle-title" id="settle-title"></div>
+          <div class="settle-meter" aria-hidden="true"><i id="settle-meter-fill"></i></div>
+          <div class="settle-detail" id="settle-detail"></div>
+          <button class="btn btn-primary" id="btn-next">下一题</button>
+          <div class="settle-tip">点击「下一题」继续 · 也可按回车</div>
+        </div>
+      </aside>
     </div>
 
     <footer class="game-bottom">
@@ -120,6 +124,9 @@ export async function renderGame(app, modeKey, routeToken) {
   const elFill = $('timer-fill'), elTimerText = $('timer-text')
   const elConfirm = $('confirm-pop'), elSettle = $('settle-pop'), elMeterFill = $('settle-meter-fill'), elToast = $('toast'), elHint = $('hint-banner')
   const btnNext = $('btn-next'), elTimer = app.querySelector('.timer')
+  const elSlot = $('card-slot')
+  // 结算卡/局档案不浮在地图上，而是占一条独立栏位：出现时地图收缩让位，红点绝不被遮
+  const setSlot = on => elSlot.classList.toggle('active', on)
 
   const createMap = modeKey === 'china' ? mapModule.createChinaMap : mapModule.createWorldMap
   const map = createMap(elMap, {
@@ -196,6 +203,7 @@ export async function renderGame(app, modeKey, routeToken) {
     elConfirm.classList.add('hidden')
     elSettle.classList.add('hidden')
     elTimer.classList.remove('settled')
+    setSlot(false)
 
     const stage = stages[state.stageIndex]
     const q = stage.questions[state.qInStage]
@@ -276,6 +284,8 @@ export async function renderGame(app, modeKey, routeToken) {
     countUp(elStageScore, prevStage, state.stageScore)
     $('q-stage-wrap').classList.toggle('danger', state.stageScore < stages[state.stageIndex].minScore)
 
+    // 先让出卡片栏位（地图同帧收缩），再揭晓答案，避免红点位置事后跳一下
+    setSlot(true)
     map.reveal(q, state.guess)
 
     // 音效 + 判级文案
@@ -330,6 +340,7 @@ export async function renderGame(app, modeKey, routeToken) {
     elSettle.classList.add('hidden')
     elConfirm.classList.add('hidden')
     elHint.classList.add('hidden')
+    setSlot(true)
     map.clearPick()
     map.clearHighlight()
     map.clearReveal()
@@ -366,7 +377,7 @@ export async function renderGame(app, modeKey, routeToken) {
         <span class="ss-hint">悬停地名 · 地图红点即实际位置${modeKey === 'world' ? ' · 地球自动转向' : ''}</span>
         <button class="btn btn-primary" id="btn-stage-next">${passed ? (isLast ? '查看最终结算' : `进入第${state.stageIndex + 2}局`) : '结束本局任务'}</button>
       </div>`
-    elMap.parentElement.appendChild(panel)
+    elSlot.appendChild(panel)
 
     const detail = panel.querySelector('#ss-detail')
     const showDetail = q => {
