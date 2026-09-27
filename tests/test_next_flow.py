@@ -1,5 +1,5 @@
 # 结算推进节奏回归：单题结算后不再自动跳题，必须由玩家点击/回车推进；
-# 世界篇结算时地球保持玩家视角（仅在答案转到背面时才转向）。
+# 世界篇结算时地球保持玩家视角（仅当答案或落点转到背面时才朝两点中点转向）。
 import math
 import os
 from pathlib import Path
@@ -8,6 +8,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = os.environ.get('GD_BASE', 'http://127.0.0.1:5173')
+TURN = 2500  # 等地球转向动画（viewControl animationDurationUpdate ≈ 1s）
 
 
 def state(page):
@@ -15,12 +16,47 @@ def state(page):
                          'return { phase: d.phase, q: d.qInStage, stage: d.stageIndex } }')
 
 
+def unit(p):
+    a, b = math.radians(90 - p[1]), math.radians(p[0])
+    return (math.sin(a) * math.cos(b), math.cos(a), math.sin(a) * math.sin(b))
+
+
+def from_unit(v):
+    n = math.sqrt(sum(x * x for x in v))
+    lat = 90 - math.degrees(math.acos(max(-1.0, min(1.0, v[1] / n))))
+    lng = math.degrees(math.atan2(v[2], v[0]))
+    return [lng, lat]
+
+
 def ang(p, q):
     '''两点球面大圆夹角（度）'''
-    a1, b1 = math.radians(90 - p[1]), math.radians(p[0])
-    a2, b2 = math.radians(90 - q[1]), math.radians(q[0])
-    d = (math.sin(a1) * math.sin(a2) * math.cos(b1 - b2) + math.cos(a1) * math.cos(a2))
+    u, v = unit(p), unit(q)
+    d = sum(a * b for a, b in zip(u, v))
     return math.degrees(math.acos(max(-1.0, min(1.0, d))))
+
+
+def rot_away(p, deg):
+    '''从 p 沿某条大圆走 deg 度，得到球面上确定距离的另一点'''
+    u = unit(p)
+    w = (0.0, 1.0, 0.0) if abs(u[1]) < 0.9 else (1.0, 0.0, 0.0)
+    dot = sum(a * b for a, b in zip(w, u))
+    v = tuple(a - dot * b for a, b in zip(w, u))
+    vn = math.sqrt(sum(x * x for x in v))
+    v = tuple(x / vn for x in v)
+    c, s = math.cos(math.radians(deg)), math.sin(math.radians(deg))
+    return from_unit(tuple(ux * c + vx * s for ux, vx in zip(u, v)))
+
+
+def mid(p, q):
+    u, v = unit(p), unit(q)
+    return from_unit(tuple(a + b for a, b in zip(u, v)))
+
+
+def face(page, lng, lat):
+    '''借局结算的 showSpot 把镜头确定性转向某地，随后清掉红点'''
+    page.evaluate('([lng, lat]) => { const m = window.__gdDebug.map; '
+                  'm.showSpot(lng, lat); m.clearSpot() }', [lng, lat])
+    page.wait_for_timeout(TURN)
 
 
 with sync_playwright() as p:
@@ -66,45 +102,55 @@ with sync_playwright() as p:
     page.wait_for_selector('.stage-settle', timeout=10000)
     print('[末题] 第 8 题按钮为「查看本局档案」→ 局结算面板 ✓')
 
-    # ————— 2. 世界篇：结算不改变玩家视角 —————
+    # ————— 2. 世界篇：答案可见时视角纹丝不动 —————
     page.goto(f'{BASE}/#/')
     page.wait_for_selector('.mode-card.world', timeout=10000)
     page.click('.mode-card.world')
     page.wait_for_selector('#q-name', timeout=30000)
     page.wait_for_function('() => window.__gdDebug && typeof window.__gdDebug.map.getView === "function"',
                            timeout=20000)
-    page.wait_for_timeout(2500)  # 等地球首帧与初始视角稳定
-    v0 = page.evaluate('() => window.__gdDebug.map.getView()')
-
+    page.wait_for_timeout(TURN)
     box = page.locator('#map-holder').bounding_box()
     cx, cy = box['x'] + box['width'] / 2, box['y'] + box['height'] / 2
-    # 落点选在视角正前方：答案与落点都可见，视角应当纹丝不动
+
+    q0 = page.evaluate('() => window.__gdDebug.stages[0].questions[0]')
+    face(page, q0['lng'], q0['lat'])
+    v0 = page.evaluate('() => window.__gdDebug.map.getView()')
+    assert ang(v0, [q0['lng'], q0['lat']]) < 3, f'预设视角未对准答案: {v0} vs {q0}'
+
     page.mouse.click(cx, cy)
     page.wait_for_selector('#confirm-pop:not(.hidden)', timeout=5000)
-    page.evaluate('() => { const d = window.__gdDebug; const [lng, lat] = d.map.getView(); '
-                  'd.state.guess = { lng: lng + 6, lat } }')
+    g0 = rot_away([q0['lng'], q0['lat']], 5)
+    page.evaluate('([lng, lat]) => { window.__gdDebug.state.guess = { lng, lat } }', g0)
     page.click('#btn-confirm')
     page.wait_for_selector('#settle-pop:not(.hidden)', timeout=5000)
-    page.wait_for_timeout(2500)
+    page.wait_for_timeout(TURN)
     v1 = page.evaluate('() => window.__gdDebug.map.getView()')
-    assert ang(v0, v1) < 1.5, f'结算导致地球回位/转向: {v0} -> {v1}'
-    print(f'[视角] 答案可见时视角保持不动（偏移 {ang(v0, v1):.2f}°）✓')
+    assert ang(v0, v1) < 1.5, f'答案与落点都可见却转向了: {v0} -> {v1}'
+    print(f'[视角] 答案可见时地球保持原位（偏移 {ang(v0, v1):.2f}°）✓')
 
-    # 落点选到球背面：应转向，让答案与落点都进入可见半球
+    # ————— 3. 世界篇：落点转到背面时朝两点中点转向 —————
     page.click('#btn-next')
     page.wait_for_function('() => window.__gdDebug.state.phase === "answering"', timeout=5000)
     q1 = page.evaluate('() => window.__gdDebug.stages[0].questions[1]')
+    A1 = [q1['lng'], q1['lat']]
+    face(page, A1[0], A1[1])          # 镜头先对准答案 → 答案可见
+    v2 = page.evaluate('() => window.__gdDebug.map.getView()')
+    G1 = rot_away(A1, 120)            # 落点甩到背面（距答案 120° > 72° 不可见）
+    assert ang(G1, v2) > 72, '构造失败：落点仍可见'
     page.mouse.click(cx, cy)
     page.wait_for_selector('#confirm-pop:not(.hidden)', timeout=5000)
-    page.evaluate('() => { window.__gdDebug.state.guess = { lng: -75, lat: 8 } }')
+    page.evaluate('([lng, lat]) => { window.__gdDebug.state.guess = { lng, lat } }', G1)
     page.click('#btn-confirm')
     page.wait_for_selector('#settle-pop:not(.hidden)', timeout=5000)
-    page.wait_for_timeout(2500)
-    v2 = page.evaluate('() => window.__gdDebug.map.getView()')
-    assert ang(v1, v2) > 20, f'答案在背面却没有转向: {v1} -> {v2}'
-    far = max(ang(v2, [q1['lng'], q1['lat']]), ang(v2, [-75, 8]))
-    assert far <= 80, f'转向后答案/落点仍不可见，最远 {far:.1f}°'
-    print(f'[转向] 答案在背面时朝两点中点旋转，最远点距视线 {far:.1f}° ✓')
+    page.wait_for_timeout(TURN)
+    v3 = page.evaluate('() => window.__gdDebug.map.getView()')
+    want = mid(G1, A1)                # 120° < 150° → 应转向两点球面中点
+    assert ang(v2, v3) > 20, f'落点在背面却没有转向: {v2} -> {v3}'
+    assert ang(v3, want) < 2, f'转向目标不是两点中点: 实际 {v3} 期望 {want}'
+    assert max(ang(v3, A1), ang(v3, G1)) <= 65, '转向后答案/落点仍贴近边缘'
+    print(f'[转向] 落点在背面时朝两点中点旋转，两点距视线 '
+          f'{max(ang(v3, A1), ang(v3, G1)):.1f}° ✓')
     page.screenshot(path=str(ROOT / 'tests' / 'gd_world_settle_view.png'))
 
     browser.close()
