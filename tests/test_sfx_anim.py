@@ -42,6 +42,7 @@ with sync_playwright() as p:
     print(f"[判定] 判级标签「{grade.inner_text().strip()}」+ 弹出动画 ✓")
 
     # —— 第2题：倒计时告急脉冲，随后自然超时（超时判级） ——
+    page.click("#btn-next")
     page.wait_for_function(
         "() => window.__gdDebug.state.qInStage === 1 && window.__gdDebug.state.phase === 'answering'",
         timeout=10000,
@@ -50,15 +51,17 @@ with sync_playwright() as p:
     page.wait_for_selector("#settle-pop:not(.hidden)", timeout=15000)
     assert page.locator("#settle-title .grade").inner_text().strip() == "超 时"
     print("[倒计时] 最后 3 秒脉冲动画 + 超时判级 ✓")
+    page.click("#btn-next")
 
     # —— 第3~8题：快速作答走完第1局（第8题前抬高局分以触发过关） ——
     def answer_and_wait(target_q, target_stage):
-        # 等待结算弹层的 2.5s 自动等待期结束、进入答题阶段
+        # 上一题需玩家点击「下一题」，这里显式推进
         page.wait_for_function("() => window.__gdDebug.state.phase === 'answering'", timeout=10000)
         page.mouse.click(cx, cy)
         page.wait_for_selector("#confirm-pop:not(.hidden)", timeout=5000)
         page.click("#btn-confirm")
         page.wait_for_selector("#settle-pop:not(.hidden)", timeout=5000)
+        page.click("#btn-next")
         page.wait_for_function(
             f"() => window.__gdDebug.state.qInStage === {target_q} && window.__gdDebug.state.stageIndex === {target_stage}",
             timeout=10000,
@@ -76,6 +79,7 @@ with sync_playwright() as p:
     page.wait_for_selector("#confirm-pop:not(.hidden)", timeout=5000)
     page.click("#btn-confirm")
     page.wait_for_selector("#settle-pop:not(.hidden)", timeout=5000)
+    page.click("#btn-next")  # 第 8 题结算后点击「查看本局档案」
     page.wait_for_selector(".stage-settle", timeout=10000)
     page.click("#btn-stage-next")
     page.wait_for_selector(".stage-flash", timeout=3000)
@@ -84,7 +88,7 @@ with sync_playwright() as p:
 
     # —— 终局：印章 + 进度点（注入未达标状态触发中止） ——
     page.wait_for_function("() => window.__gdDebug.state.phase === 'answering'", timeout=10000)
-    page.evaluate("() => { const d = window.__gdDebug; d.state.qInStage = 7; d.state.stageScore = 0; }")
+    page.evaluate("() => { const d = window.__gdDebug; d.state.qInStage = 7; d.state.stageScore = 0; d.state.phase = 'settle'; }")
     page.evaluate("() => document.getElementById('btn-next').click()")
     page.wait_for_selector(".stage-settle", timeout=10000)
     page.click("#btn-stage-next")

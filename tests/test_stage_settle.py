@@ -32,13 +32,14 @@ with open(rf"{ROOT}\src\data\china-desc.json", encoding="utf-8") as f:
     CDESC = json.load(f)
 
 def play_stage(page, cx, cy):
-    """快速答完当前局 8 题（中心点击 → 确认）"""
+    """快速答完当前局 8 题（中心点击 → 确认 → 点「下一题」）"""
     for _ in range(8):
         page.wait_for_function("() => window.__gdDebug.state.phase === 'answering'", timeout=10000)
         page.mouse.click(cx, cy)
         page.wait_for_selector("#confirm-pop:not(.hidden)", timeout=5000)
         page.click("#btn-confirm")
         page.wait_for_selector("#settle-pop:not(.hidden)", timeout=5000)
+        page.click("#btn-next")  # 结算后由玩家点击推进（已取消自动跳题）
 
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)

@@ -66,7 +66,12 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
         rotateSensitivity: 2,
         zoomSensitivity: 1.5,
         panSensitivity: 0,
-        targetCoord: [105, 30]   // 初始面对东亚
+        // 初始面对东亚，用 alpha/beta 而不是 targetCoord：
+        // echarts-gl 每次 setOption 都会按 model 里的 targetCoord 重设相机
+        // （GlobeView._updateViewControl），表现为「一题结束地球自动回位」；
+        // 而 alpha/beta 会被拖拽实时回写进 model，所以再 setOption 也不会跳。
+        alpha: 30,
+        beta: 195
       },
       light: {
         main: { intensity: 1.1, shadow: false },
@@ -100,7 +105,8 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
         type: 'lines3D',
         coordinateSystem: 'globe',
         silent: true,
-        lineStyle: { width: 2, color: '#e05d44', opacity: 0.9 },
+        // 浅蓝连线：加宽 + 抬到球面上方 2.5 个单位（globeRadius=100），避免贴地时被大地遮挡
+        lineStyle: { width: 4.5, color: '#8fd3ff', opacity: 1, curveness: 0.18 },
         data: []
       },
       {
@@ -116,6 +122,35 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
       }
     ]
   })
+
+  // —— 相机朝向 / 球面角度：用于判断答案是否落在可见半球 ——
+  const facing = () => {
+    try {
+      const vc = chart.getModel().getComponent('globe', 0).get('viewControl') || {}
+      return [Number(vc.beta) - 90 || 0, Number(vc.alpha) || 0]   // [lng, lat]
+    } catch {
+      return [105, 30]
+    }
+  }
+  const toVec = ([lng, lat]) => {
+    const a = (90 - lat) * Math.PI / 180, b = lng * Math.PI / 180
+    return [Math.sin(a) * Math.cos(b), Math.cos(a), Math.sin(a) * Math.sin(b)]
+  }
+  const angBetween = (p, q) => {
+    const u = toVec(p), v = toVec(q)
+    const d = Math.max(-1, Math.min(1, u[0] * v[0] + u[1] * v[1] + u[2] * v[2]))
+    return Math.acos(d) * 180 / Math.PI
+  }
+  const midOf = (p, q) => {
+    const u = toVec(p), v = toVec(q)
+    const m = [u[0] + v[0], u[1] + v[1], u[2] + v[2]]
+    const len = Math.hypot(m[0], m[1], m[2])
+    if (len < 1e-6) return p
+    const lat = 90 - Math.acos(m[1] / len) * 180 / Math.PI
+    const lng = Math.atan2(m[2], m[0]) * 180 / Math.PI
+    return [lng, lat]
+  }
+  const faceTo = (lng, lat) => chart.setOption({ globe: { viewControl: { alpha: lat, beta: lng + 90 } } })
 
   // —— 获取 globe 坐标系（首次渲染后可用） ——
   const getCoordSys = () => {
@@ -200,21 +235,34 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
     },
     reveal(actual, guess) {
       const series = [{ id: 'answer', data: [[actual.lng, actual.lat, 0]] }]
+      const h = 2.5
       if (guess) {
         series.push({
           id: 'link',
-          data: [{ coords: [[guess.lng, guess.lat], [actual.lng, actual.lat]] }]
+          data: [{ coords: [[guess.lng, guess.lat, h], [actual.lng, actual.lat, h]] }]
         })
       }
       chart.setOption({ series })
+      // 视角保持不动：只有当答案或落点被转到球背面（离视线中心 >72° 已贴到边缘）时才转向，
+      // 转向目标是两点的球面中点；两点近乎对跖时中点无意义，直接面向答案。
+      const A = [actual.lng, actual.lat]
+      const G = guess ? [guess.lng, guess.lat] : null
+      const visible = pt => angBetween(pt, facing()) <= 72
+      if (!visible(A) || (G && !visible(G))) {
+        const pair = G && angBetween(G, A) < 150 ? midOf(G, A) : A
+        faceTo(pair[0], pair[1])
+      }
     },
+    // 供测试读取：相机正对的经纬度 [lng, lat]
+    getView() { return facing() },
     highlightRegion() { /* 世界篇提示以文字呈现（原型简化） */ },
     clearHighlight() { /* no-op */ },
     // 局结算档案：显示红点并将镜头转向该地（保证可见），清除红点
     showSpot(lng, lat) {
       chart.setOption({
         series: [{ id: 'spot', data: [[lng, lat, 0]] }],
-        globe: { viewControl: { targetCoord: [lng, lat] } }
+        // 同 reveal：用 alpha/beta 转向，不写 targetCoord，避免留下「回位锚点」
+        globe: { viewControl: { alpha: lat, beta: lng + 90 } }
       })
     },
     clearSpot() {

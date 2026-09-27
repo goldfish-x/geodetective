@@ -95,6 +95,7 @@ export async function renderGame(app, modeKey, routeToken) {
         <div class="settle-meter" aria-hidden="true"><i id="settle-meter-fill"></i></div>
         <div class="settle-detail" id="settle-detail"></div>
         <button class="btn btn-primary" id="btn-next">下一题</button>
+        <div class="settle-tip">点击「下一题」继续 · 也可按回车</div>
       </div>
 
       <div class="toast hidden" id="toast"></div>
@@ -118,6 +119,7 @@ export async function renderGame(app, modeKey, routeToken) {
   const elStageScore = $('q-stage-score'), elTarget = $('q-target')
   const elFill = $('timer-fill'), elTimerText = $('timer-text')
   const elConfirm = $('confirm-pop'), elSettle = $('settle-pop'), elMeterFill = $('settle-meter-fill'), elToast = $('toast'), elHint = $('hint-banner')
+  const btnNext = $('btn-next'), elTimer = app.querySelector('.timer')
 
   const createMap = modeKey === 'china' ? mapModule.createChinaMap : mapModule.createWorldMap
   const map = createMap(elMap, {
@@ -193,6 +195,7 @@ export async function renderGame(app, modeKey, routeToken) {
     elHint.classList.add('hidden')
     elConfirm.classList.add('hidden')
     elSettle.classList.add('hidden')
+    elTimer.classList.remove('settled')
 
     const stage = stages[state.stageIndex]
     const q = stage.questions[state.qInStage]
@@ -299,13 +302,16 @@ export async function renderGame(app, modeKey, routeToken) {
     void elSettle.offsetWidth
     elSettle.classList.add('pop')
 
-    // 2.5 秒后自动进入下一题
-    state.autoNext = setTimeout(next, 2500)
+    // 节奏交给玩家：不再自动跳题，必须点击「下一题」（或按回车/空格）才进入下一题
+    btnNext.textContent = state.qInStage + 1 >= STAGE_SIZE ? '查看本局档案' : '下一题'
+    elTimer.classList.add('settled')
+    elTimerText.textContent = '已结算'
+    btnNext.focus({ preventScroll: true })
   }
 
   function next() {
-    clearTimeout(state.autoNext)
-    if (state.phase === 'done' || state.phase === 'stageSettle') return
+    // 只有「单题结算」态能推进，天然防止回车+点击重复触发导致连跳两题
+    if (state.phase !== 'settle') return
     state.qInStage++
 
     if (state.qInStage < STAGE_SIZE) {
@@ -410,7 +416,16 @@ export async function renderGame(app, modeKey, routeToken) {
     })
   }
 
-  $('btn-next').addEventListener('click', next)
+  btnNext.addEventListener('click', next)
+  // 键盘推进：焦点已在按钮上时交给浏览器原生 click，避免同一次按键触发两次跳题
+  const onKey = e => {
+    if (state.phase !== 'settle') return
+    if (e.key !== 'Enter' && e.key !== ' ') return
+    if (document.activeElement === btnNext) return
+    e.preventDefault()
+    next()
+  }
+  window.addEventListener('keydown', onKey)
 
   // ————— 道具 —————
   $('prop-time').addEventListener('click', () => {
@@ -501,12 +516,12 @@ export async function renderGame(app, modeKey, routeToken) {
   startQuestion()
 
   // 测试钩子（仅供自动化测试读取内部状态）
-  window.__gdDebug = { state, stages }
+  window.__gdDebug = { state, stages, map }
 
   // 注册清理（路由切换时）
   window.__gdCleanup = () => {
     stopTimer()
-    clearTimeout(state.autoNext)
+    window.removeEventListener('keydown', onKey)
     clearTimeout(toastTimer)
     stopCountUps()
     map.dispose()

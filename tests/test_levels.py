@@ -67,7 +67,7 @@ with sync_playwright() as p:
     page.wait_for_selector("#hint-banner:not(.hidden)", timeout=3000)
     assert "used" in page.locator("#prop-hint").get_attribute("class"), "道具未标记 used"
 
-    # 快速作答前 7 题（点地图中心 → 确认 → 自动进入下一题）
+    # 快速作答前 7 题（点地图中心 → 确认 → 点「下一题」）
     box = page.locator("#map-holder").bounding_box()
     cx, cy = box["x"] + box["width"] / 2, box["y"] + box["height"] / 2
     for i in range(7):
@@ -75,7 +75,8 @@ with sync_playwright() as p:
         page.wait_for_selector("#confirm-pop:not(.hidden)", timeout=5000)
         page.click("#btn-confirm")
         page.wait_for_selector("#settle-pop:not(.hidden)", timeout=5000)
-        # 等待自动进入下一题
+        # 玩家点击「下一题」才会推进（无自动跳题）
+        page.click("#btn-next")
         page.wait_for_function(
             f"() => window.__gdDebug.state.qInStage === {i + 1} && window.__gdDebug.state.phase === 'answering'",
             timeout=10000,
@@ -87,6 +88,7 @@ with sync_playwright() as p:
     page.wait_for_selector("#confirm-pop:not(.hidden)", timeout=5000)
     page.click("#btn-confirm")
     page.wait_for_selector("#settle-pop:not(.hidden)", timeout=5000)
+    page.click("#btn-next")  # 第 8 题结算后点击「查看本局档案」
     # 局结算档案面板出现（通关）
     page.wait_for_selector(".stage-settle", timeout=10000)
     assert page.locator(".ss-chip").count() == 8, "档案面板缺少 8 个地名"
@@ -118,6 +120,7 @@ with sync_playwright() as p:
     for i in range(8):
         # 超时自动结算（中国篇每题 15 秒）
         page.wait_for_selector("#settle-pop:not(.hidden)", timeout=30000)
+        page.click("#btn-next")  # 超时结算后同样需要点击推进（第 8 题 → 局结算面板）
         if i < 7:
             page.wait_for_function(
                 f"() => window.__gdDebug.state.qInStage === {i + 1} && window.__gdDebug.state.phase === 'answering'",

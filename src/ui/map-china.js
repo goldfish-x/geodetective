@@ -90,7 +90,11 @@ export function createChinaMap(container, { onPick, onInvalidPick }) {
         coordinateSystem: 'geo',
         z: 19,
         silent: true,
-        lineStyle: { color: '#e05d44', width: 2, type: 'dashed', curveness: 0.15 },
+        // 浅蓝连线：加粗 + 实线 + 暗色光晕，保证在任何省份底色上都看得清
+        lineStyle: {
+          color: '#8fd3ff', width: 3.5, type: 'solid', curveness: 0.12, opacity: 1,
+          shadowColor: 'rgba(8, 14, 26, 0.9)', shadowBlur: 7
+        },
         data: []
       },
       {
