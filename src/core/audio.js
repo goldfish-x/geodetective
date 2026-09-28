@@ -122,3 +122,12 @@ export const sfxVictory = () => {
   ;[523, 659, 784, 1047, 784, 1047].forEach((f, i) =>
     tone(a, { type: 'triangle', from: f, dur: i >= 4 ? 0.35 : 0.13, delay: i * 0.12, vol: 0.13 }))
 }
+
+// 独占榜首（登顶庆典：五音上行 + 尾部长音 + 金粉式高音闪烁）
+export const sfxChampion = () => {
+  const a = ac(); if (!a) return
+  ;[523, 659, 784, 1047, 1319].forEach((f, i) =>
+    tone(a, { type: 'triangle', from: f, dur: i === 4 ? 0.55 : 0.12, delay: i * 0.1, vol: 0.14 }))
+  ;[1568, 2093, 2637].forEach((f, i) =>
+    tone(a, { type: 'sine', from: f, dur: 0.09, delay: 0.52 + i * 0.12, vol: 0.07 }))
+}

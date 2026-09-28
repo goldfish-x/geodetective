@@ -65,12 +65,14 @@ export function renderHome(app) {
   })
 
   const boardList = app.querySelector('#board-list')
+  // 前三名：1st/2nd/3rd 奖牌前缀 + 金/银/铜半透明背景板（配色见 main.css 的 li.topN）
+  const MEDAL = { 1: '1st', 2: '2nd', 3: '3rd' }
   function renderBoard(mode) {
     const top = getTop10(mode)
     boardList.innerHTML = top.length
       ? top.map((r, i) => `
-          <li>
-            <span class="bl-idx">${i + 1}</span>
+          <li${i < 3 ? ` class="top${i + 1}"` : ''}>
+            <span class="bl-idx">${i < 3 ? `<em class="bl-medal">${MEDAL[i + 1]}</em>` : i + 1}</span>
             <span class="bl-date">${r.date}</span>
             <span class="bl-score">${r.score.toLocaleString('zh-CN')}</span>
           </li>`).join('')

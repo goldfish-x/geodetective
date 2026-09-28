@@ -4,7 +4,7 @@ import { buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS } from '../core/quiz.j
 import { getNickname, addScore } from '../core/storage.js'
 import {
   isMuted, toggleMute, sfxPick, sfxConfirm, sfxJudge, sfxTimeout,
-  sfxTick, sfxProp, sfxStageClear, sfxGameOver, sfxVictory
+  sfxTick, sfxProp, sfxStageClear, sfxGameOver, sfxVictory, sfxChampion
 } from '../core/audio.js'
 
 const ICON_SND_ON = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H3v6h3l5 4V5z" fill="currentColor" stroke="none"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a9 9 0 0 1 0 12"/></svg>`
@@ -15,6 +15,22 @@ const ICON_COMPASS = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none
 
 const fmt = n => n.toLocaleString('zh-CN')
 const pad2 = n => String(n).padStart(2, '0')
+
+// 榜首庆祝用的金粉雨：种子固定 → 每次呈现完全一致（自动化测试可断言片数与位置）
+const CONFETTI_N = 36
+function confettiHtml() {
+  const COLORS = ['#e8b64c', '#d9a441', '#ece1c8', '#f2d489', '#d0563f']
+  let seed = 20260928
+  const rnd = () => (seed = (seed * 48271) % 2147483647) / 2147483647
+  const bits = Array.from({ length: CONFETTI_N }, () => {
+    const c = COLORS[Math.floor(rnd() * COLORS.length)]
+    return `<i style="--l:${(rnd() * 100).toFixed(2)}%;--w:${(4 + rnd() * 5).toFixed(1)}px;` +
+      `--h:${(7 + rnd() * 8).toFixed(1)}px;--d:${(2.2 + rnd() * 2.4).toFixed(2)}s;` +
+      `--dl:${(rnd() * 1.2).toFixed(2)}s;--r:${Math.floor(rnd() * 720 - 360)}deg;` +
+      `--o:${(0.55 + rnd() * 0.45).toFixed(2)};background:${c}"></i>`
+  }).join('')
+  return `<div class="confetti" aria-hidden="true">${bits}</div>`
+}
 
 // 地名简介与配图：优先加载 public/images 中的真实图片；
 // 没有本地图片的地点回退到确定性视觉占位图，避免远程服务不可用时出现空白。
@@ -477,15 +493,21 @@ export async function renderGame(app, modeKey, routeToken) {
 
     const nickname = getNickname() || '无名侦探'
     const rankInfo = addScore(modeKey, state.total)
+    const champion = !!rankInfo && rankInfo.rank === 1   // 本次成绩登顶 → 播放庆祝画面
     const reached = Math.min(state.stageIndex + 1, STAGES.length)
 
     app.innerHTML = `
     <div class="result-page">
-      <div class="result-card">
+      <div class="result-card${champion ? ' champion' : ''}">
         <div class="result-stamp">${victory ? '完美结案' : '任务中止'}</div>
+        ${champion ? '<div class="result-crown">★ 独占榜首 · 新纪录 ★</div>' : ''}
         <p class="result-sub">${nickname} · ${mode.title} · ${victory ? '十局全部通关' : `止步第${reached}局`}</p>
         <div class="result-score"><em>${fmt(state.total)}</em><span>总分</span></div>
-        ${rankInfo ? `<div class="result-rank">进入个人榜单 · 第 ${rankInfo.rank} 名</div>` : '<div class="result-rank dim">未能进入个人 Top 10</div>'}
+        ${champion
+          ? '<div class="result-rank first">第 1 名 · 本机历史最高</div>'
+          : rankInfo
+            ? `<div class="result-rank">进入个人榜单 · 第 ${rankInfo.rank} 名</div>`
+            : '<div class="result-rank dim">未能进入个人 Top 10</div>'}
         <div class="result-stagebar">
           ${STAGES.map((s, i) => {
             const cleared = victory || i < state.stageIndex
@@ -506,6 +528,7 @@ export async function renderGame(app, modeKey, routeToken) {
           <button class="btn btn-ghost" id="btn-home">返回首页</button>
         </div>
       </div>
+      ${champion ? confettiHtml() : ''}
     </div>`
 
     app.querySelector('#btn-again').addEventListener('click', () => {
@@ -516,11 +539,14 @@ export async function renderGame(app, modeKey, routeToken) {
 
     // 终局总分滚动 + 印章盖戳动画
     countUp(app.querySelector('.result-score em'), 0, state.total, 1200)
+    // 登顶：等印章落稳（0.35s 延迟 + 0.45s 动画）后补一段凯歌
+    if (champion) championTimer = setTimeout(sfxChampion, 820)
   }
 
   $('btn-back').addEventListener('click', () => { location.hash = '#/' })
 
   let toastTimer = 0
+  let championTimer = 0   // 登顶凯歌的延时，路由切换时必须清掉
   function showToast(msg) {
     elToast.textContent = msg
     elToast.classList.remove('hidden')
@@ -538,6 +564,7 @@ export async function renderGame(app, modeKey, routeToken) {
     stopTimer()
     window.removeEventListener('keydown', onKey)
     clearTimeout(toastTimer)
+    clearTimeout(championTimer)
     stopCountUps()
     map.dispose()
     window.__gdDebug = null

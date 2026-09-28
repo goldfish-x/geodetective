@@ -263,8 +263,46 @@ body::before {
 .bl-idx {
   font-family: var(--serif);
   color: var(--gold);
-  width: 34px;
+  width: 46px;
 }
+
+/* 荣誉榜前三名：奖牌前缀 + 金/银/铜半透明背景板 */
+.board-list li.top1, .board-list li.top2, .board-list li.top3 {
+  border-bottom-color: transparent;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.board-list li.top1 {
+  background: linear-gradient(90deg, rgba(232, 182, 76, 0.20), rgba(232, 182, 76, 0.05));
+  box-shadow: inset 0 0 0 1px rgba(232, 182, 76, 0.34);
+}
+.board-list li.top2 {
+  background: linear-gradient(90deg, rgba(207, 216, 227, 0.17), rgba(207, 216, 227, 0.04));
+  box-shadow: inset 0 0 0 1px rgba(207, 216, 227, 0.26);
+}
+.board-list li.top3 {
+  background: linear-gradient(90deg, rgba(198, 120, 66, 0.18), rgba(198, 120, 66, 0.04));
+  box-shadow: inset 0 0 0 1px rgba(198, 120, 66, 0.30);
+}
+.bl-medal {
+  display: inline-block;
+  font-family: var(--serif);
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  padding: 4px 6px 3px 5px;
+  border-radius: 999px;
+  color: var(--ink);
+}
+li.top1 .bl-medal { background: var(--gold); box-shadow: 0 0 12px rgba(232, 182, 76, 0.45); }
+li.top2 .bl-medal { background: #cfd8e3; box-shadow: 0 0 10px rgba(207, 216, 227, 0.30); }
+li.top3 .bl-medal { background: #c67842; box-shadow: 0 0 10px rgba(198, 120, 66, 0.30); }
+li.top1 .bl-score { color: var(--gold); }
+li.top2 .bl-score { color: #e6ecf3; }
+li.top3 .bl-score { color: #e8a877; }
 .bl-date { color: var(--parchment-dim); font-size: 13px; flex: 1; }
 .bl-score { font-family: var(--serif); font-weight: bold; font-size: 16px; }
 
@@ -934,6 +972,54 @@ body::before {
   font-weight: bold;
 }
 .result-rank.dim { background: transparent; color: var(--parchment-dim); border: 1px dashed var(--line); font-weight: normal; }
+.result-rank.first {
+  background: linear-gradient(90deg, var(--gold-deep), var(--gold));
+  box-shadow: 0 0 18px rgba(232, 182, 76, 0.4);
+}
+
+/* —— 独占榜首的庆祝画面 —— */
+.result-card.champion {
+  border-color: rgba(232, 182, 76, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(232, 182, 76, 0.2),
+    0 22px 60px rgba(0, 0, 0, 0.6),
+    inset 0 0 70px rgba(232, 182, 76, 0.10);
+}
+.result-crown {
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: 0.26em;
+  color: var(--gold);
+  margin-bottom: 8px;
+  text-shadow: 0 0 18px rgba(232, 182, 76, 0.6);
+  animation: crownIn 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.5) 0.3s backwards;
+}
+@keyframes crownIn {
+  from { opacity: 0; transform: translateY(-10px) scale(0.88); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+/* 金粉雨：36 片，落三段后停（both 让收尾停在视口外，不残留半空） */
+.confetti {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  overflow: hidden;
+}
+.confetti i {
+  position: absolute;
+  top: 0;
+  left: var(--l);
+  width: var(--w);
+  height: var(--h);
+  border-radius: 1px;
+  opacity: var(--o);
+  animation: confettiFall var(--d) linear var(--dl) 3 both;
+}
+@keyframes confettiFall {
+  0% { transform: translate3d(0, -8vh, 0) rotate(0deg); }
+  100% { transform: translate3d(0, 112vh, 0) rotate(var(--r)); }
+}
 
 /* 关卡进度点（终局结算） */
 .result-stagebar {
@@ -1026,13 +1112,17 @@ body::before {
   .result-card { padding: 26px 18px 22px; }
   .result-score em { font-size: 52px; }
   .result-stamp { font-size: 16px; top: 16px; right: 14px; }
+  /* 窄屏卡片只有 ~300px 内宽，王冠行与右上角印章会撞在一起：让王冠换到印章下方 */
+  .result-crown { font-size: 11.5px; letter-spacing: 0.18em; margin-top: 38px; }
+  .bl-idx { width: 42px; }
 }
 
 /* 无障碍：用户偏好减少动效时关闭装饰动画 */
 @media (prefers-reduced-motion: reduce) {
   .q-name.enter, .timer-text.pulse, .settle-pop.pop, .stage-flash,
   .stage-flash span, .stage-dot.cleared, .result-stamp, .hint-banner,
-  .confirm-pop, .toast, .stage-settle, .ss-img, #btn-next { animation: none !important; }
+  .confirm-pop, .toast, .stage-settle, .ss-img, #btn-next,
+  .confetti, .confetti i, .result-crown { animation: none !important; }
 }
 
 /* 窄屏（含竖屏手机）放不下右侧栏：卡片回落到地图下方的抽屉，同样不与地图重叠 */
