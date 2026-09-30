@@ -14,7 +14,7 @@ for bank_name, desc_name in (("china", "china-desc"), ("world", "world-desc")):
     with open(rf"{ROOT}\src\data\{desc_name}.json", encoding="utf-8") as f:
         desc = json.load(f)
     all_q = bank["cities"] + bank["scenics"]
-    assert len(desc) == 300, f"{desc_name} 条目 {len(desc)} != 300"
+    assert len(desc) == 400, f"{desc_name} 条目 {len(desc)} != 400"
     img_cnt = 0
     for q in all_q:
         e = desc.get(q["name"])
@@ -26,7 +26,7 @@ for bank_name, desc_name in (("china", "china-desc"), ("world", "world-desc")):
             img_cnt += 1
         else:
             assert not e.get("img"), f"{q['name']}（难度{q['difficulty']}）不应有配图"
-    print(f"[档案] {desc_name}: 300 条 · 配图 {img_cnt} 条 ✓")
+    print(f"[档案] {desc_name}: 400 条 · 配图 {img_cnt} 条 ✓")
 
 with open(rf"{ROOT}\src\data\china-desc.json", encoding="utf-8") as f:
     CDESC = json.load(f)

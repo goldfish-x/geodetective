@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-# 回归验证：300 题题库 + 10 局关卡结构 + 局门槛中止/晋级路径
+# 回归验证：400 题题库 + 10 局关卡结构 + 局门槛中止/晋级路径
 import json
 from playwright.sync_api import sync_playwright
 
@@ -17,11 +17,11 @@ for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
     for kind in ("cities", "scenics"):
         items = bank[kind]
         names = [q["name"] for q in items]
-        assert len(items) == 150, f"{bank_name}.{kind} 数量 {len(items)} != 150"
-        assert len(set(names)) == 150, f"{bank_name}.{kind} 存在重复题目"
+        assert len(items) == 200, f"{bank_name}.{kind} 数量 {len(items)} != 200"
+        assert len(set(names)) == 200, f"{bank_name}.{kind} 存在重复题目"
         for lv in range(1, 6):
             cnt = sum(1 for q in items if q["difficulty"] == lv)
-            assert cnt == 30, f"{bank_name}.{kind} 难度{lv} 数量 {cnt} != 30"
+            assert cnt == 40, f"{bank_name}.{kind} 难度{lv} 数量 {cnt} != 40"
         for q in items:
             assert q["hint"] in hints, f"{bank_name}.{kind} 非法 hint: {q['hint']}"
             assert isinstance(q["lat"], (int, float)) and -90 <= q["lat"] <= 90
