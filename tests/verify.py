@@ -39,14 +39,14 @@ with sync_playwright() as p:
     print('settle detail:', page.text_content('#settle-detail'))
     page.screenshot(path='tests/china-settle.png')
 
-    # 测试道具：下一题后用加时与线索
+    # 测试道具：下一题后用线索；加时属付费预留内容，当前应完全隐藏
     page.click('#btn-next')
     page.wait_for_timeout(600)
+    assert page.locator('#prop-time').count() == 0, '加时道具未隐藏（应为后续付费内容）'
     page.click('#prop-hint')
     page.wait_for_timeout(400)
     print('hint banner:', page.text_content('#hint-banner'))
-    page.click('#prop-time')
-    page.wait_for_timeout(400)
+    print('props: 加时已屏蔽，仅线索可用')
     page.screenshot(path='tests/china-props.png')
 
     # —— 世界篇 ——

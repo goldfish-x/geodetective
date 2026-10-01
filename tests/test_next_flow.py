@@ -20,6 +20,14 @@ def markers(page):
     return page.evaluate('() => window.__gdDebug.map.markerState()')
 
 
+def timer_state(page):
+    return page.evaluate('''() => ({
+      w: document.getElementById('timer-fill').style.width,
+      txt: document.getElementById('timer-text').textContent,
+      settled: document.querySelector('.timer').classList.contains('settled'),
+      propsDisabled: !!document.querySelector('#prop-hint').disabled })''')
+
+
 def unit(p):
     a, b = math.radians(90 - p[1]), math.radians(p[0])
     return (math.sin(a) * math.cos(b), math.cos(a), math.sin(a) * math.sin(b))
@@ -113,6 +121,17 @@ with sync_playwright() as p:
     page.click('#btn-next')
     page.wait_for_selector('.stage-settle', timeout=10000)
     print('[末题] 第 8 题按钮为「查看本局档案」→ 局结算面板 ✓')
+
+    # 局档案面板停留时：计时条必须彻底停车（不留残条、不显示得像还在倒计时），道具禁用
+    t1 = timer_state(page)
+    page.wait_for_timeout(1600)
+    t2 = timer_state(page)
+    assert t1 == t2, f'局档案面板停留时计时条仍在变化: {t1} -> {t2}'
+    assert t2['txt'] == '本局小结', f'局档案面板未把计时条归位: {t2}'
+    assert t2['w'] == '0%', f'局档案面板仍留着上一题的计时残条: {t2}'
+    assert t2['propsDisabled'], '局档案面板期间道具应不可点'
+    assert page.locator('#prop-time').count() == 0, '加时属付费预留内容，应隐藏'
+    print(f'[停车] 局档案面板计时条冻结为「{t2["txt"]}」宽度 {t2["w"]} · 道具已禁用 · 加时未开放 ✓')
 
     # ————— 2. 世界篇：答案可见时视角纹丝不动 —————
     page.goto(f'{BASE}/#/')

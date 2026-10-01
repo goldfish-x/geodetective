@@ -853,6 +853,8 @@ li.top3 .bl-score { color: #e8a877; }
   cursor: pointer;
   transition: opacity 0.15s, transform 0.1s;
 }
+.prop:disabled { opacity: 0.38; cursor: default; }
+
 .prop:active { transform: scale(0.96); }
 .prop.used {
   color: rgba(236, 225, 200, 0.3);

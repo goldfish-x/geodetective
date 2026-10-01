@@ -16,6 +16,9 @@ const ICON_COMPASS = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none
 const fmt = n => n.toLocaleString('zh-CN')
 const pad2 = n => String(n).padStart(2, '0')
 
+// 道具开关：加时属于后续付费内容，暂不开放（置 true 即可恢复，相关逻辑全部保留）
+const PROPS = { time: false, hint: true }
+
 // 榜首庆祝用的金粉雨：种子固定 → 每次呈现完全一致（自动化测试可断言片数与位置）
 const CONFETTI_N = 36
 function confettiHtml() {
@@ -69,7 +72,7 @@ export async function renderGame(app, modeKey, routeToken) {
     records: [],
     guess: null,
     phase: 'answering', // answering | settle | done
-    props: { time: true, hint: true },
+    props: { time: PROPS.time, hint: PROPS.hint },
     timerTotal: mode.timeLimit,
     timerRemain: mode.timeLimit,
     timerEnd: 0,
@@ -123,7 +126,7 @@ export async function renderGame(app, modeKey, routeToken) {
 
     <footer class="game-bottom">
       <div class="props">
-        <button class="prop" id="prop-time" title="当前题加时 10 秒">${ICON_CLOCK}<span>加时 +10s</span></button>
+        ${PROPS.time ? `<button class="prop" id="prop-time" title="当前题加时 10 秒">${ICON_CLOCK}<span>加时 +10s</span></button>` : ''}
         <button class="prop" id="prop-hint" title="提示大致方位">${ICON_COMPASS}<span>线索</span></button>
       </div>
       <div class="timer">
@@ -177,6 +180,8 @@ export async function renderGame(app, modeKey, routeToken) {
 
   // ————— 倒计时 —————
   function tick() {
+    // 只在答题态推进：单题结算、局档案面板、终局停留时绝不允许计时条继续走动
+    if (state.phase !== 'answering') { state.rafId = 0; return }
     state.timerRemain = Math.max(0, (state.timerEnd - performance.now()) / 1000)
     const ratio = state.timerRemain / state.timerTotal
     elFill.style.width = (ratio * 100) + '%'
@@ -206,6 +211,23 @@ export async function renderGame(app, modeKey, routeToken) {
     cancelAnimationFrame(state.rafId)
   }
 
+  function setPropsEnabled(on) {
+    for (const id of ['prop-time', 'prop-hint']) {
+      const el = $(id)
+      if (el) el.disabled = !on
+    }
+  }
+
+  // 把计时条彻底停住：不留上一题的残条，也不让它看起来还在倒计时
+  function parkTimer(text) {
+    elFill.style.width = '0%'
+    elFill.classList.remove('warn', 'danger')
+    elTimerText.textContent = text
+    elTimerText.classList.remove('pulse')
+    elTimer.classList.add('settled')
+    setPropsEnabled(false)
+  }
+
   // ————— 流程 —————
   function startQuestion() {
     state.phase = 'answering'
@@ -230,9 +252,10 @@ export async function renderGame(app, modeKey, routeToken) {
 
     // 新一局：重置道具与本局计分
     if (state.qInStage === 0) {
-      state.props = { time: true, hint: true }
-      $('prop-time').classList.remove('used')
+      state.props = { time: PROPS.time, hint: PROPS.hint }
+      $('prop-time')?.classList.remove('used')
       $('prop-hint').classList.remove('used')
+      setPropsEnabled(true)
       elTarget.textContent = fmt(stage.minScore)
       elStageScore.textContent = '0'
       $('q-stage-wrap').classList.remove('danger')
@@ -357,6 +380,7 @@ export async function renderGame(app, modeKey, routeToken) {
   function showStageSettle() {
     state.phase = 'stageSettle'
     stopTimer()
+    parkTimer('本局小结')
     elSettle.classList.add('hidden')
     elConfirm.classList.add('hidden')
     elHint.classList.add('hidden')
@@ -459,7 +483,7 @@ export async function renderGame(app, modeKey, routeToken) {
   window.addEventListener('keydown', onKey)
 
   // ————— 道具 —————
-  $('prop-time').addEventListener('click', () => {
+  $('prop-time')?.addEventListener('click', () => {
     if (!state.props.time || state.phase !== 'answering') return
     state.props.time = false
     $('prop-time').classList.add('used')
