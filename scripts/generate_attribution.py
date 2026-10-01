@@ -26,7 +26,7 @@ def main():
             continue
         data = json.loads(f.read_text(encoding="utf-8"))
         keep = {n: r for n, r in data.items()
-                if (ROOT / "public" / "images" / mode / (n + ".webp")).exists()}
+                if (ROOT / "web" / "public" / "images" / mode / (n + ".webp")).exists()}
         dropped = sorted(set(data) - set(keep))
         if dropped:
             f.write_text(json.dumps(keep, ensure_ascii=False, indent=2) + "\n",
@@ -41,7 +41,7 @@ def main():
     lines = [
         "# 图片素材署名 / Attribution",
         "",
-        "`public/images/` 中来自 Wikimedia Commons 的地名配图，共 %d 张。" % len(prov),
+        "`web/public/images/` 中来自 Wikimedia Commons 的地名配图，共 %d 张。" % len(prov),
         "这些图片多为 CC BY / CC BY-SA 授权，按许可证要求在此列出作者与许可证；",
         "部分为 CC0 或公有领域。每条链接均指向 Commons 文件页（含原始分辨率与完整授权信息）。",
         "",
@@ -64,7 +64,7 @@ def main():
         "（中国篇一二星 120 张、世界篇 37 张），29 张为 scripts/generate_illustrations.py 按地名意象绘制的插画"
         "（中国篇 28 张、世界篇 1 张），均未登记在本表中。",
         "",
-        "说明：配图只在答题结束后的结算面板出现，且全部是仓库内的静态文件（`public/images/`），",
+        "说明：配图只在答题结束后的结算面板出现，且全部是仓库内的静态文件（`web/public/images/`），",
         "游戏运行时不请求任何外部图片地址；因此本署名表用于素材来源合规，而不是运行依赖。",
         "若将来出现未覆盖的地点，运行时由 `src/core/placeholder.js` 按地名确定性渲染占位图。",
         "",

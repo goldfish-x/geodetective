@@ -8,7 +8,7 @@ _fx = Path("scripts/world-image-fixes.json")
 if _fx.exists():
     Q.update(json.loads(_fx.read_text(encoding="utf-8")))
 todo = json.load(open("scripts/world-image-todo.json", encoding="utf-8"))
-DEST = ROOT / "public" / "images" / "world"
+DEST = ROOT / "web" / "public" / "images" / "world"
 PROV = ROOT / "scripts" / "world-image-provenance.json"
 UA = {"User-Agent": "GeoDetective/1.0 (localizing game assets; one-off batch)"}
 API = "https://commons.wikimedia.org/w/api.php"

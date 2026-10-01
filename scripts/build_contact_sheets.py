@@ -27,7 +27,7 @@ for _rel in ("scripts/world-image-provenance.json", "scripts/world-image-geo-pro
 
 
 def build(mode, names, out_path):
-    dest = ROOT / "public" / "images" / mode
+    dest = ROOT / "web" / "public" / "images" / mode
     f_tile = font(20)
     f_lbl = font(20)
     rows = (len(names) + COLS - 1) // COLS
@@ -65,8 +65,8 @@ def build(mode, names, out_path):
 
 
 def main():
-    world = json.loads((ROOT / "src/data/world-images.json").read_text(encoding="utf-8"))
-    china = json.loads((ROOT / "src/data/china-images.json").read_text(encoding="utf-8"))
+    world = json.loads((ROOT / "web/src/data/world-images.json").read_text(encoding="utf-8"))
+    china = json.loads((ROOT / "web/src/data/china-images.json").read_text(encoding="utf-8"))
     out = ROOT / "tests/_contact"
     out.mkdir(parents=True, exist_ok=True)
     for old in out.glob("*.jpg"):

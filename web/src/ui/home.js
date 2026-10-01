@@ -1,6 +1,6 @@
 // 首页：昵称、模式选择、排行榜、玩法说明
 import { getNickname, setNickname, getTop10 } from '../core/storage.js'
-import { MODES } from '../core/scoring.js'
+import { MODES } from '@gd/shared'
 
 export function renderHome(app) {
   window.__gdCleanup = null

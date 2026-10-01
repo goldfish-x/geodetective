@@ -1,4 +1,4 @@
-"""把 public/images 下的地名配图从 JPEG 迁到 WebP（同尺寸 300x300，体积再降约 30%）。
+"""把 web/public/images 下的地名配图从 JPEG 迁到 WebP（同尺寸 300x300，体积再降约 30%）。
 
 原 JPEG 会先备份到 assets-src/images-original-jpg/（.gitignore 已忽略），确认无误后
 本地保留即可，仓库里只留 .webp。
@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-IMAGE_ROOT = ROOT / "public" / "images"
+IMAGE_ROOT = ROOT / "web" / "public" / "images"
 BACKUP_ROOT = ROOT / "assets-src" / "images-original-jpg"
 QUALITY = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 80
 DRY = "--dry" in sys.argv

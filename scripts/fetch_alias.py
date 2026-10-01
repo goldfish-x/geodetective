@@ -3,7 +3,7 @@
 顺序: 别名1 检索 -> 坐标邻近检索 -> 别名2 -> 别名3/中文名，每地点 <=4 次 API 调用。
 硬约束: 候选必须命中「本次检索词的全部实义词」，再用 JUNK 黑名单 + VIEW/QUAL 打分，
         分数不达标就跳过（运行时保留占位图），宁缺毋滥。
-可续跑: public/images/<mode>/<name>.webp 已存在即跳过。
+可续跑: web/public/images/<mode>/<name>.webp 已存在即跳过。
 
 用法: python scripts/fetch_alias.py <mode> [limit] [start]
 """
@@ -29,7 +29,7 @@ EMDA = "Categories|LicenseShortName|Artist|GPSLatitude|GPSLongitude|ImageDescrip
 
 API = "https://commons.wikimedia.org/w/api.php"
 UA = {"User-Agent": "GeoDetective/1.0 (one representative photo per place)"}
-DEST = ROOT / "public" / "images" / MODE
+DEST = ROOT / "web" / "public" / "images" / MODE
 PROV = ROOT / ("scripts/%s-image-alias-provenance.json" % MODE)
 
 NOISE_CAT = re.compile(r"(?i)^(category:)?(?:jpg files|png files|uploads? by|photos imported"
@@ -330,7 +330,7 @@ REJ_PATH = ROOT / "scripts/alias-reject.json"
 REJECT = json.loads(REJ_PATH.read_text(encoding="utf-8")) if REJ_PATH.exists() else {}
 ALIAS = json.loads((ROOT / "scripts/place-aliases.json").read_text(encoding="utf-8"))
 REGION = json.loads((ROOT / "scripts/place-region.json").read_text(encoding="utf-8"))
-BANK = json.loads((ROOT / ("src/data/%s.json" % MODE)).read_text(encoding="utf-8"))
+BANK = json.loads((ROOT / ("web/src/data/%s.json" % MODE)).read_text(encoding="utf-8"))
 todo = [{"name": it["name"], "lat": it["lat"], "lng": it["lng"], "diff": it["difficulty"],
          "bucket": k} for k in ("cities", "scenics") for it in BANK[k]
         if it["difficulty"] >= 3 and not (DEST / (it["name"] + ".webp")).exists()]

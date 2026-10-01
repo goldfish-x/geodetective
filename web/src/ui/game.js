@@ -1,6 +1,5 @@
 // 游戏页：出题 → 作答 → 单题结算 → 局结算（最低分门槛） → 终局结算
-import { MODES, haversine, score } from '../core/scoring.js'
-import { buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS } from '../core/quiz.js'
+import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS } from '@gd/shared'
 import { getNickname, addScore } from '../core/storage.js'
 import {
   isMuted, toggleMute, sfxPick, sfxConfirm, sfxJudge, sfxTimeout,

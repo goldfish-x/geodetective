@@ -861,7 +861,7 @@ def main():
     scenes = json.loads(SCENES.read_text(encoding="utf-8"))
     made = []
     for mode, items in scenes.items():
-        dest_dir = ROOT / "public" / "images" / mode
+        dest_dir = ROOT / "web" / "public" / "images" / mode
         dest_dir.mkdir(parents=True, exist_ok=True)
         for name, spec in items.items():
             if ONLY and name not in ONLY:

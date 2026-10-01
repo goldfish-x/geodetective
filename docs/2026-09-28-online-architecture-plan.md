@@ -163,6 +163,7 @@ POST /v1/pay/:provider/callback                                   → 验签 →
 | 期 | 内容 | 验收标准 | 预估 |
 | --- | --- | --- | --- |
 | P0 准备 | 选型定稿、monorepo 拆分（`web/ server/ shared/`）、CI 加服务端单测、域名/备案/主体启动 | CI 绿；server hello-world 部署成功 | 1 周 |
+| ↳ 进度 | **已完成**：分支 `codex/online-p0`；monorepo 拆分、`@gd/shared` 契约测试、Fastify BFF 骨架（`/v1/health` `/v1/config`）、`ci.yml`；**待办**：server 部署目标待定（依赖选型/主体），域名与备案未启动 | | |
 | P1 账号+权威对局 | auth、runs/answers/finish、storage 适配器、离线回落、mock API 测试模式 | 线上完整玩一局且 bundle 无坐标；E2E 全绿 | 2–3 周 |
 | P2 全网榜 | boards API + 首页 tab + 结算名次反馈 | 两设备互见成绩；赛季切换正确 | 1 周 |
 | P3 道具经济 | 库存/消耗/每日赠送/货币流水 | 断网重连不丢道具；消耗与判分一致 | 1–2 周 |

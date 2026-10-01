@@ -16,7 +16,7 @@ EDGE = 300
 
 API = "https://commons.wikimedia.org/w/api.php"
 UA = {"User-Agent": "GeoDetective/1.0 (one representative photo per place; low rate)"}
-DEST = ROOT / "public" / "images" / MODE
+DEST = ROOT / "web" / "public" / "images" / MODE
 PROV = ROOT / ("scripts/%s-image-geo-provenance.json" % MODE)
 
 todo = json.loads((ROOT / ("scripts/%s-image-todo.json" % MODE)).read_text(encoding="utf-8"))

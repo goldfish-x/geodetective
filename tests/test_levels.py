@@ -12,7 +12,7 @@ CHINA_HINTS = {"华北地区", "东北地区", "华东地区", "华中地区", "
 WORLD_HINTS = {"亚洲", "欧洲", "非洲", "北美洲", "南美洲", "大洋洲"}
 
 for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
-    with open(rf"{ROOT}\src\data\{bank_name}.json", encoding="utf-8") as f:
+    with open(rf"{ROOT}\web\src\data\{bank_name}.json", encoding="utf-8") as f:
         bank = json.load(f)
     for kind in ("cities", "scenics"):
         items = bank[kind]

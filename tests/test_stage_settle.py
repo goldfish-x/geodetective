@@ -9,9 +9,9 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = os.environ.get("GD_BASE", "http://127.0.0.1:5173")
 # —— 1. 档案数据校验 ——
 for bank_name, desc_name in (("china", "china-desc"), ("world", "world-desc")):
-    with open(rf"{ROOT}\src\data\{bank_name}.json", encoding="utf-8") as f:
+    with open(rf"{ROOT}\web\src\data\{bank_name}.json", encoding="utf-8") as f:
         bank = json.load(f)
-    with open(rf"{ROOT}\src\data\{desc_name}.json", encoding="utf-8") as f:
+    with open(rf"{ROOT}\web\src\data\{desc_name}.json", encoding="utf-8") as f:
         desc = json.load(f)
     all_q = bank["cities"] + bank["scenics"]
     assert len(desc) == 400, f"{desc_name} 条目 {len(desc)} != 400"
@@ -28,7 +28,7 @@ for bank_name, desc_name in (("china", "china-desc"), ("world", "world-desc")):
             assert not e.get("img"), f"{q['name']}（难度{q['difficulty']}）不应有配图"
     print(f"[档案] {desc_name}: 400 条 · 配图 {img_cnt} 条 ✓")
 
-with open(rf"{ROOT}\src\data\china-desc.json", encoding="utf-8") as f:
+with open(rf"{ROOT}\web\src\data\china-desc.json", encoding="utf-8") as f:
     CDESC = json.load(f)
 
 def play_stage(page, cx, cy):

@@ -309,17 +309,28 @@ localStorage 的特点：
 ## 9. 技术架构
 
 ```text
-index.html
-└── src/main.js                  # hash 路由与资源清理
-    ├── ui/home.js               # 首页、昵称、模式、排行榜
-    └── ui/game.js               # 游戏状态机与结算
-        ├── core/quiz.js         # 关卡与抽题
-        ├── core/scoring.js      # Haversine 与得分
-        ├── core/storage.js      # localStorage
-        ├── core/audio.js        # WebAudio 程序化音效
-        ├── ui/map-china.js       # 中国 2D 地图（懒加载）
-        └── ui/map-world.js       # 世界 3D 地球（懒加载）
+package.json                     # npm workspaces: shared / web / server（2026-10-01 起为 monorepo）
+├── shared/                      # 双端唯一事实源，无框架依赖
+│   └── src/{scoring,quiz}.js    # Haversine、得分公式、模式参数、关卡结构
+├── web/                         # 纯前端 SPA（原仓库根目录整体迁入）
+│   ├── index.html · vite.config.js · package.json
+│   ├── src/main.js              # hash 路由与资源清理
+│   │   ├── ui/{home,game}.js    # 首页 / 游戏状态机与结算
+│   │   ├── core/{storage,audio,placeholder}.js
+│   │   └── ui/{map-china,map-world}.js    # 懒加载
+│   ├── src/data/                # 题库 / 档案 / 配图清单（P1 起坐标迁服务端）
+│   ├── public/images/           # 每篇 400 张配图
+│   └── tests/texcheck.html      # 浏览器探针页（由 Vite 以 /tests/… 提供）
+├── server/                      # Fastify BFF；P0 仅 /v1/health 与 /v1/config
+│   └── src/{app,server}.js
+├── tests/                       # Python Playwright 端到端（跨 web/server，留在根目录）
+└── scripts/                     # Python 资产与取图工具链（留在根目录）
 ```
+
+- monorepo 约定：`npm run build|dev|preview` 只作用于 `web/`；`npm test` 跑 `shared` 契约测试 + `server` 单测；
+  `npm run start:server` 起 BFF（默认 127.0.0.1:8787）。
+- CI：`.github/workflows/ci.yml` 跑 shared/server 单测与 web 构建；`deploy.yml` 上传 `web/dist` 到 Pages。
+- Python 端到端与资产脚本仍留在根目录，路径统一以 `web/src/data`、`web/public/images` 为准。
 
 ### 构建与包体
 

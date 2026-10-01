@@ -1,7 +1,7 @@
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-IMAGE_ROOT = ROOT / "public" / "images"
+IMAGE_ROOT = ROOT / "web" / "public" / "images"
 BACKUP_ROOT = ROOT / "assets-src" / "images-original"
 
 MAX_EDGE = int(__import__("sys").argv[1]) if len(__import__("sys").argv) > 1 else 300

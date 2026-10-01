@@ -2,8 +2,8 @@ from pathlib import Path
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
-IMAGE_ROOT = ROOT / "public" / "images"
-DATA_ROOT = ROOT / "src" / "data"
+IMAGE_ROOT = ROOT / "web" / "public" / "images"
+DATA_ROOT = ROOT / "web" / "src" / "data"
 
 
 def main():

@@ -14,3 +14,10 @@ tests/_contact/
 
 # original (uncompressed) image assets, kept local only
 assets-src/
+
+# CC 换源暂存目录（本地核验用，不入库）
+_ccstage/
+*.part
+
+.vite/
+

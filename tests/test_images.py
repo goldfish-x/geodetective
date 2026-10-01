@@ -34,17 +34,17 @@ def load(rel):
 
 
 def img_prompt_names(mode):
-    desc = load("src/data/%s-desc.json" % mode)
+    desc = load("web/src/data/%s-desc.json" % mode)
     return {n for n, e in desc.items() if e.get("img")}
 
 
 def bank_names(mode):
-    bank = load("src/data/%s.json" % mode)
+    bank = load("web/src/data/%s.json" % mode)
     return {it["name"] for bucket in bank.values() for it in bucket}
 
 
 def on_disk(mode):
-    d = ROOT / "public" / "images" / mode
+    d = ROOT / "web" / "public" / "images" / mode
     return {p.stem for p in d.glob("*.webp")} if d.is_dir() else set()
 
 
@@ -56,14 +56,14 @@ for mode in ("china", "world"):
     orphan = have - bank_names(mode)
     if orphan:
         fail.append("%s: 图片名不在题库中 %s" % (mode, sorted(orphan)[:6]))
-    manifest = set(load("src/data/%s-images.json" % mode))
+    manifest = set(load("web/src/data/%s-images.json" % mode))
     if manifest != have:
         fail.append("%s: %s-images.json 与磁盘不一致，请重跑 generate_image_manifests.py" % (mode, mode))
     print("[%-5s] 一二星必配图 %3d · 磁盘实有 %3d · 清单 %3d" % (mode, len(want), len(have), len(manifest)))
 
 hashes = {}
 for mode in ("china", "world"):
-    for p in sorted((ROOT / "public" / "images" / mode).glob("*.webp")):
+    for p in sorted((ROOT / "web" / "public" / "images" / mode).glob("*.webp")):
         b = p.read_bytes()
         h = hashlib.md5(b).hexdigest()
         tag = "%s/%s" % (mode, p.name)
@@ -87,7 +87,7 @@ for mode, rel in PROV_SOURCES:
     prov = json.loads(f.read_text(encoding="utf-8"))
     total_prov += len(prov)
     for name in prov:
-        if not (ROOT / "public" / "images" / mode / (name + ".webp")).exists():
+        if not (ROOT / "web" / "public" / "images" / mode / (name + ".webp")).exists():
             fail.append("provenance 指向不存在的图: %s/%s" % (mode, name))
         label = "世界篇" if mode == "world" else "中国篇"
         if "%s · %s" % (label, name) not in attr:
