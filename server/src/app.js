@@ -1,20 +1,197 @@
-// BFF 骨架（P0）：只暴露健康检查与共享配置，证明服务端能复用 @gd/shared。
-// P1 起在此挂 auth / runs / answers / boards / economy 五组路由。
-import Fastify from 'fastify'
-import { MODES, STAGES, STAGE_SIZE } from '@gd/shared'
+// BFF（P1）：登录 / 服务端权威对局 / 全网榜。
+// 坐标只存在于服务端题库；下发给浏览器的题目不含 lat/lng，揭晓坐标在判分后才回传。
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { randomUUID } from "node:crypto";
+import Fastify from "fastify";
+import cors from "@fastify/cors";
+import { MODES, haversine, score, buildQuiz, STAGES, STAGE_SIZE } from "@gd/shared";
+import { openStore, seasonOf } from "./db.js";
+import { verify, issueTokens, newCode, REFRESH_TTL } from "./auth.js";
+
+const HERE = fileURLToPath(new URL(".", import.meta.url));
+
+export function loadBank(mode) {
+  const p = HERE + "../../web/src/data/" + mode + ".json";
+  return JSON.parse(readFileSync(p, "utf-8"));
+}
+
+// 下发题目：只含展示与判级所需字段，绝不含坐标
+const pubQ = q => ({ name: q.name, difficulty: q.difficulty, type: q.type });
 
 export function buildApp(opts = {}) {
-  const app = Fastify(opts)
+  const secret = opts.secret || process.env.GD_JWT_SECRET || "dev-secret-change-me";
+  const sms = opts.smsProvider || process.env.SMS_PROVIDER || "dev";
+  const store = opts.store || openStore(opts.dbFile || null);
+  const bankOf = opts.bankOf || loadBank;
+  const now = opts.now || (() => Date.now());
 
-  app.get('/v1/health', async () => ({ ok: true, service: 'geo-detective-api', version: '0.3.0' }))
+  const app = Fastify(opts.fastify || {});
 
-  // 不含任何坐标：模式参数与关卡门槛是公开规则，坐标必须留在服务端题库（见规划第 1 节）
-  app.get('/v1/config', async () => ({
+  // 开发期浏览器从 Vite 端口跨域调用；生产为同源部署，此配置无副作用
+  app.register(cors, { origin: true, maxAge: 600 })
+
+  app.addHook("onRequest", async req => {
+    const t = (req.headers.authorization || "").replace(/^Bearer\s+/i, "");
+    req.user = t ? verify(t, secret) : null;
+  });
+  const needAuth = async (req, rep) => {
+    if (!req.user) return rep.code(401).send({ error: "unauthorized" });
+    return null;
+  };
+
+  app.get("/v1/health", async () => ({ ok: true, service: "geo-detective-api", version: "0.3.0" }));
+  app.get("/v1/config", async () => ({
     modes: Object.fromEntries(Object.entries(MODES).map(([k, m]) =>
       [k, { title: m.title, timeLimit: m.timeLimit, maxDistance: m.maxDistance, maxScore: m.maxScore }])),
     stages: STAGES.map(s => ({ type: s.type, difficulty: s.difficulty, minScore: s.minScore })),
-    stageSize: STAGE_SIZE
-  }))
+    stageSize: STAGE_SIZE,
+    season: seasonOf(new Date(now()))
+  }));
 
-  return app
+  // —— 登录 ——
+  app.post("/v1/auth/code", async (req, rep) => {
+    const phone = String(req.body?.phone || "").trim();
+    if (!/^1\d{10}$/.test(phone)) return rep.code(400).send({ error: "bad_phone" });
+    const code = newCode();
+    store.putCode(phone, code, now() + 5 * 60 * 1000);
+    if (sms === "dev") return { ok: true, devCode: code };
+    return rep.code(501).send({ error: "sms_provider_not_configured" });
+  });
+
+  app.post("/v1/auth/login", async (req, rep) => {
+    const { phone, code, nickname } = req.body || {};
+    const rec = store.takeCode(String(phone || ""));
+    if (!rec || rec.exp < now() || rec.code !== String(code || ""))
+      return rep.code(401).send({ error: "bad_code" });
+    let user = store.userByPhone(phone) ||
+      store.putUser({ phone, nickname: String(nickname || "").slice(0, 12) || "无名侦探", createdAt: now() });
+    if (nickname) { user.nickname = String(nickname).slice(0, 12); store.putUser(user); }
+    return Object.assign({ user: { phone: phone.slice(0, 3) + "****" + phone.slice(7), nickname: user.nickname } },
+      issueTokens(store, user, secret));
+  });
+
+  app.post("/v1/auth/refresh", async (req, rep) => {
+    const rec = store.takeRefresh(String(req.body?.refresh || ""));
+    if (!rec || rec.exp < now()) return rep.code(401).send({ error: "bad_refresh" });
+    const user = store.userByPhone(rec.phone);
+    return issueTokens(store, user, secret);
+  });
+
+  app.get("/v1/me", async (req, rep) => {
+    if (await needAuth(req, rep)) return;
+    const season = seasonOf(new Date(now()));
+    const user = store.userByPhone(req.user.sub);
+    const best = {};
+    for (const m of Object.keys(MODES)) {
+      const e = store.bestOf(m, season, req.user.sub);
+      best[m] = e ? { score: e.score, rank: store.board(m, season, 500).findIndex(x => x.phone === req.user.sub) + 1 } : null;
+    }
+    return { phone: req.user.sub.slice(0, 3) + "****" + req.user.sub.slice(7), nickname: user?.nickname || req.user.nick, season, best };
+  });
+
+  // —— 对局 ——
+  app.post("/v1/runs", async (req, rep) => {
+    if (await needAuth(req, rep)) return;
+    const mode = req.body?.mode;
+    if (!MODES[mode]) return rep.code(400).send({ error: "bad_mode" });
+    const stages = buildQuiz(bankOf(mode));
+    const run = {
+      id: randomUUID(), phone: req.user.sub, mode, stages,
+      s: 0, q: 0, stageScore: 0, total: 0, props: { hint: true },
+      issuedAt: now(), over: false, createdAt: now()
+    };
+    store.putRun(run);
+    return { runId: run.id, mode, stage: 1, question: pubQ(stages[0].questions[0]),
+             timeLimit: MODES[mode].timeLimit };
+  });
+
+  const cur = run => run.stages[run.s].questions[run.q];
+
+  app.post("/v1/runs/:id/props/hint", async (req, rep) => {
+    if (await needAuth(req, rep)) return;
+    const run = store.run(req.params.id);
+    if (!run || run.phone !== req.user.sub || run.over) return rep.code(404).send({ error: "no_run" });
+    if (!run.props.hint) return rep.code(409).send({ error: "prop_used" });
+    run.props.hint = false;
+    store.putRun(run);
+    return { hint: cur(run).hint };
+  });
+
+  app.post("/v1/runs/:id/answers", async (req, rep) => {
+    if (await needAuth(req, rep)) return;
+    const run = store.run(req.params.id);
+    if (!run || run.phone !== req.user.sub || run.over) return rep.code(404).send({ error: "no_run" });
+    const ord = Number(req.body?.ord);
+    if (ord !== run.s * STAGE_SIZE + run.q) return rep.code(409).send({ error: "stale_answer" });
+    const q = cur(run);
+    const mode = MODES[run.mode];
+    const elapsed = (now() - run.issuedAt) / 1000;
+    const timedOut = elapsed > mode.timeLimit;
+    const lat = Number(req.body?.lat), lng = Number(req.body?.lng);
+    const bad = !Number.isFinite(lat) || !Number.isFinite(lng) || Math.abs(lat) > 90 || Math.abs(lng) > 180;
+    const dist = timedOut || bad ? null : haversine(lat, lng, q.lat, q.lng);
+    const pts = dist == null ? 0 : score(dist, mode);
+    run.total += pts;
+    run.stageScore += pts;
+    store.addAnswer({ runId: run.id, ord, name: q.name, lat, lng, dist, pts, timedOut, at: now() });
+
+    const stage = run.stages[run.s];
+    const lastQ = run.q + 1 >= STAGE_SIZE;
+    const lastStage = run.s + 1 >= run.stages.length;
+    const out = {
+      ord, points: pts, distanceKm: dist == null ? null : Math.round(dist), timedOut,
+      reveal: { name: q.name, lat: q.lat, lng: q.lng },
+      stage: { index: run.s + 1, score: run.stageScore, minScore: stage.minScore }
+    };
+    if (!lastQ) {
+      run.q += 1;
+      run.props = { hint: true };
+      run.issuedAt = now();
+      store.putRun(run);
+      out.next = pubQ(cur(run));
+      return out;
+    }
+    const passed = run.stageScore >= stage.minScore;
+    out.stageSettle = { index: run.s + 1, passed, score: run.stageScore, minScore: stage.minScore };
+    if (!passed || lastStage) {
+      run.over = true;
+      store.putRun(run);
+      out.runOver = true;
+      return out;
+    }
+    run.s += 1; run.q = 0; run.stageScore = 0; run.props = { hint: true }; run.issuedAt = now();
+    store.putRun(run);
+    out.nextStage = run.s + 1;
+    out.next = pubQ(cur(run));
+    return out;
+  });
+
+  app.post("/v1/runs/:id/finish", async (req, rep) => {
+    if (await needAuth(req, rep)) return;
+    const run = store.run(req.params.id);
+    if (!run || run.phone !== req.user.sub) return rep.code(404).send({ error: "no_run" });
+    run.over = true;
+    store.putRun(run);
+    const season = seasonOf(new Date(now()));
+    const user = store.userByPhone(run.phone);
+    const prev = store.bestOf(run.mode, season, run.phone);
+    if (!prev || run.total > prev.score)
+      store.boardUpset(run.mode, season, { phone: run.phone, nickname: user?.nickname || "无名侦探", score: run.total, date: new Date(now()).toISOString().slice(0, 10) });
+    const board = store.board(run.mode, season, 10);
+    const rank = board.findIndex(e => e.phone === run.phone) + 1;
+    return { total: run.total, season, rank: rank || null,
+             board: board.map((e, i) => ({ rank: i + 1, nickname: e.nickname, score: e.score, date: e.date })) };
+  });
+
+  app.get("/v1/boards/:mode", async (req, rep) => {
+    const mode = req.params.mode;
+    if (!MODES[mode]) return rep.code(404).send({ error: "bad_mode" });
+    const season = req.query.season || seasonOf(new Date(now()));
+    const limit = Math.min(100, Math.max(1, Number(req.query.limit) || 20));
+    return { season, board: store.board(mode, season, limit)
+      .map((e, i) => ({ rank: i + 1, nickname: e.nickname, score: e.score, date: e.date })) };
+  });
+
+  return app;
 }

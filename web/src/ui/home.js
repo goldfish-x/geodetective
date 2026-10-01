@@ -1,6 +1,8 @@
 // 首页：昵称、模式选择、排行榜、玩法说明
 import { getNickname, setNickname, getTop10 } from '../core/storage.js'
 import { MODES } from '@gd/shared'
+import { api, onlineEnabled } from '../net/api.js'
+import { getSession, setSession, clearSession } from '../net/session.js'
 
 export function renderHome(app) {
   window.__gdCleanup = null
@@ -31,12 +33,16 @@ export function renderHome(app) {
         </a>
       </div>
 
+      <div class="online-row" id="online-row"></div>
+
       <div class="board">
         <div class="board-head">
           <span class="board-title">侦探荣誉榜</span>
           <div class="board-tabs">
             <button class="board-tab active" data-mode="china">中国篇</button>
             <button class="board-tab" data-mode="world">世界篇</button>
+            <button class="board-tab scope active" id="scope-local">本机</button>
+            <button class="board-tab scope" id="scope-global">全网</button>
           </div>
         </div>
         <ol class="board-list" id="board-list"></ol>
@@ -67,25 +73,87 @@ export function renderHome(app) {
   const boardList = app.querySelector('#board-list')
   // 前三名：1st/2nd/3rd 奖牌前缀 + 金/银/铜半透明背景板（配色见 main.css 的 li.topN）
   const MEDAL = { 1: '1st', 2: '2nd', 3: '3rd' }
-  function renderBoard(mode) {
-    const top = getTop10(mode)
-    boardList.innerHTML = top.length
+  const online = onlineEnabled()
+  let curMode = 'china', curScope = 'local'
+
+  function rowsHtml(top) {
+    return top.length
       ? top.map((r, i) => `
           <li${i < 3 ? ` class="top${i + 1}"` : ''}>
             <span class="bl-idx">${i < 3 ? `<em class="bl-medal">${MEDAL[i + 1]}</em>` : i + 1}</span>
-            <span class="bl-date">${r.date}</span>
+            <span class="bl-date">${r.who ? r.who + ' · ' : ''}${r.date}</span>
             <span class="bl-score">${r.score.toLocaleString('zh-CN')}</span>
           </li>`).join('')
       : '<li class="empty">暂无记录 · 等待第一位侦探</li>'
   }
 
-  app.querySelectorAll('.board-tab').forEach(tab => {
+  async function renderBoard() {
+    if (curScope === 'local' || !online) {
+      boardList.innerHTML = rowsHtml(getTop10(curMode).map(r => ({ score: r.score, date: r.date })))
+      return
+    }
+    try {
+      const d = await api('/v1/boards/' + curMode + '?limit=10')
+      boardList.innerHTML = rowsHtml(d.board.map(r => ({ score: r.score, date: r.date, who: r.nickname })))
+    } catch {
+      boardList.innerHTML = '<li class="empty">全网榜暂不可用 · 已回落到本机榜</li>'
+    }
+  }
+
+  // —— 登录行：在线模式才出现；离线试玩保持原样 ——
+  const row = app.querySelector('#online-row')
+  function renderRow() {
+    if (!online) {
+      row.innerHTML = '<span class="or-off">离线试玩模式 · 成绩只记本机</span>'
+      app.querySelector('#scope-global').classList.add('hidden')
+      return
+    }
+    const s = getSession()
+    row.innerHTML = s.access
+      ? `<span class="or-on">已登录 ${s.phone} · ${s.nickname || '无名侦探'}</span><button class="or-btn" id="btn-logout">退出</button>`
+      : `<input id="login-phone" inputmode="numeric" maxlength="11" placeholder="手机号">
+         <button class="or-btn" id="btn-code">获取验证码</button>
+         <input id="login-code" inputmode="numeric" maxlength="6" placeholder="验证码">
+         <button class="or-btn primary" id="btn-login">登录</button>
+         <span class="or-tip" id="login-tip"></span>`
+    const tip = msg => { const t = app.querySelector('#login-tip'); if (t) t.textContent = msg }
+    app.querySelector('#btn-logout')?.addEventListener('click', () => { clearSession(); renderRow(); renderBoard() })
+    app.querySelector('#btn-code')?.addEventListener('click', async () => {
+      const phone = app.querySelector('#login-phone').value.trim()
+      try {
+        const d = await api('/v1/auth/code', { method: 'POST', body: { phone } })
+        tip(d.devCode ? '开发环境验证码：' + d.devCode : '验证码已发送')
+      } catch (e) { tip(e.message) }
+    })
+    app.querySelector('#btn-login')?.addEventListener('click', async () => {
+      const phone = app.querySelector('#login-phone').value.trim()
+      const code = app.querySelector('#login-code').value.trim()
+      try {
+        const d = await api('/v1/auth/login', { method: 'POST', body: { phone, code, nickname: getNickname() } })
+        setSession({ access: d.access, refresh: d.refresh, phone: d.user.phone, nickname: d.user.nickname })
+        renderRow(); renderBoard()
+      } catch (e) { tip(e.message) }
+    })
+  }
+
+  app.querySelectorAll('.board-tab[data-mode]').forEach(tab => {
     tab.addEventListener('click', () => {
-      app.querySelectorAll('.board-tab').forEach(t => t.classList.remove('active'))
+      app.querySelectorAll('.board-tab[data-mode]').forEach(t => t.classList.remove('active'))
       tab.classList.add('active')
-      renderBoard(tab.dataset.mode)
+      curMode = tab.dataset.mode
+      renderBoard()
     })
   })
+  for (const [id, scope] of [['scope-local', 'local'], ['scope-global', 'global']]) {
+    app.querySelector('#' + id).addEventListener('click', e => {
+      curScope = scope
+      app.querySelector('#scope-local').classList.toggle('active', scope === 'local')
+      app.querySelector('#scope-global').classList.toggle('active', scope === 'global')
+      renderBoard()
+    })
+  }
+  renderRow()
+  renderBoard()
 
   // 未设昵称直接开局时，兜底保存输入框内容
   app.querySelectorAll('.mode-card').forEach(card => {
@@ -95,5 +163,4 @@ export function renderHome(app) {
     })
   })
 
-  renderBoard('china')
 }

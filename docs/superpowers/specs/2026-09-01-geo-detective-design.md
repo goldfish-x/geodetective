@@ -296,6 +296,21 @@ localStorage 的特点：
 - 不同玩家如果使用同一浏览器同一站点，会看到同一个本地榜单，无法真正区分账号。
 - 没有后端时，不能提供可靠的跨设备成绩、多人实时排行、防作弊或好友比较。
 
+### 在线模式（P1 已落地，2026-10-01）
+
+- 开关：URL 带 `?online=1`（或 `localStorage.gd_online=1`）即进入在线对局；不带则完全是原离线玩法，
+  Pages 演示站行为不变。API 基址优先级 `?api=` > `localStorage.gd_api` > 构建期 `VITE_API` > 同源。
+- 服务端接口（`server/src/app.js`）：`/v1/auth/code|login|refresh`、`/v1/me`、`/v1/runs`、
+  `/v1/runs/:id/answers`、`/v1/runs/:id/props/hint`、`/v1/runs/:id/finish`、`/v1/boards/:mode`、`/v1/config`。
+- 权威边界：题目下发**不含坐标**（只有 name/difficulty/type）；距离与得分由服务端用 `@gd/shared` 计算；
+  超时以服务端时钟裁定；答案带 `ord` 序号防重放；他人 run 一律 404。揭晓坐标在判分后才回传。
+- 登录：手机号 + 验证码。`SMS_PROVIDER=dev` 时验证码回传前端（仅开发/内测），生产必须接阿里云短信并删除该分支。
+- 存储：`server/src/db.js` 文件型驱动（JSON 快照，重启不丢），接口与未来 Postgres 驱动一致；`GD_DB` 指定路径。
+- 部署档 A：BFF 同时托管 `web/dist`（`@fastify/static` + SPA 回落），单端口即可内测；
+  开发期跨域由 `@fastify/cors` 放开，生产同源无副作用。
+- 首页荣誉榜新增「本机 / 全网」切换；全网榜按 `mode × 赛季(UTC 月)` 取每用户最佳。
+- 回归：`tests/test_online.py` 起真 BFF 走「登录 → 8 题 → 局结算 → 终局名次 → 服务端榜单 → 未登录拦截」全链路。
+
 ### 若需要真正多人比较
 
 可后续增加后端或 Serverless API，最少需要：

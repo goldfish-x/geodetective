@@ -1,6 +1,9 @@
 // 游戏页：出题 → 作答 → 单题结算 → 局结算（最低分门槛） → 终局结算
 import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS } from '@gd/shared'
 import { getNickname, addScore } from '../core/storage.js'
+import { onlineEnabled } from '../net/api.js'
+import { getSession } from '../net/session.js'
+import { createOnlineGame } from '../net/online-game.js'
 import {
   isMuted, toggleMute, sfxPick, sfxConfirm, sfxJudge, sfxTimeout,
   sfxTick, sfxProp, sfxStageClear, sfxGameOver, sfxVictory, sfxChampion
@@ -61,7 +64,19 @@ export async function renderGame(app, modeKey, routeToken) {
   const descBank = descModule.default
   const availableImages = new Set(imagesModule.default)
   const descOf = name => descBank[name] || {}
-  const stages = buildQuiz(bank)
+  let stages = buildQuiz(bank)
+  // 在线模式：未登录则回首页提示登录；已登录则整局由服务端驱动
+  if (onlineEnabled() && !getSession().access) {
+    app.innerHTML = `<div class="result-page"><div class="result-card">
+      <div class="result-stamp">需登录</div>
+      <p class="result-sub">在线对局的成绩计入全网榜，请先在首页登录</p>
+      <div class="result-actions"><button class="btn btn-primary" id="btn-home">返回首页</button></div>
+    </div></div>`
+    app.querySelector('#btn-home').addEventListener('click', () => { location.hash = '#/' })
+    return
+  }
+  const online = onlineEnabled() ? await createOnlineGame(modeKey) : null
+  if (online) stages = online.stages
 
   const state = {
     stageIndex: 0,      // 当前局（0 起）
@@ -303,13 +318,20 @@ export async function renderGame(app, modeKey, routeToken) {
     settle(true)
   }
 
-  function settle(timedOut) {
+  async function settle(timedOut) {
     state.phase = 'settle'
     elConfirm.classList.add('hidden')
 
     const q = stages[state.stageIndex].questions[state.qInStage]
     let dist = null, pts = 0
-    if (state.guess) {
+    if (online) {
+      // 服务端判分：本地不算距离与得分，超时/未指认由服务端一并裁定
+      const r = await online.answer(timedOut ? null : state.guess, state.stageIndex)
+      pts = r.points
+      dist = r.distanceKm
+      timedOut = r.timedOut
+      Object.assign(q, { lat: r.reveal.lat, lng: r.reveal.lng })
+    } else if (state.guess) {
       dist = haversine(state.guess.lat, state.guess.lng, q.lat, q.lng)
       pts = score(dist, mode)
     }
@@ -364,6 +386,12 @@ export async function renderGame(app, modeKey, routeToken) {
   function next() {
     // 只有「单题结算」态能推进，天然防止回车+点击重复触发导致连跳两题
     if (state.phase !== 'settle') return
+    if (online) {
+      if (online.last && online.last.stageSettle) { showStageSettle(); return }
+      state.qInStage++
+      startQuestion()
+      return
+    }
     state.qInStage++
 
     if (state.qInStage < STAGE_SIZE) {
@@ -389,7 +417,7 @@ export async function renderGame(app, modeKey, routeToken) {
     map.clearReveal()
 
     const stage = stages[state.stageIndex]
-    const passed = state.stageScore >= stage.minScore
+    const passed = online ? online.last.stageSettle.passed : state.stageScore >= stage.minScore
     const isLast = state.stageIndex === stages.length - 1
     if (passed) sfxStageClear()
 
@@ -494,11 +522,21 @@ export async function renderGame(app, modeKey, routeToken) {
     showToast('已加时 10 秒')
   })
 
-  $('prop-hint').addEventListener('click', () => {
+  $('prop-hint').addEventListener('click', async () => {
     if (!state.props.hint || state.phase !== 'answering') return
     state.props.hint = false
     $('prop-hint').classList.add('used')
     sfxProp()
+    if (online) {
+      try {
+        const d = await online.hint()
+        const label = modeKey === 'china' ? '大致方位' : '所在大洲'
+        elHint.innerHTML = `<b>${label}</b>：${d.hint}`
+        elHint.classList.remove('hidden')
+        map.highlightRegion(d.hint)
+      } catch { /* 服务端不可用时静默退回 */ }
+      return
+    }
     const q = stages[state.stageIndex].questions[state.qInStage]
     const label = modeKey === 'china' ? '大致方位' : '所在大洲'
     elHint.innerHTML = `<b>${label}</b>：${q.hint}`
@@ -507,7 +545,7 @@ export async function renderGame(app, modeKey, routeToken) {
   })
 
   // ————— 终局 —————
-  function endGame(victory) {
+  async function endGame(victory) {
     state.phase = 'done'
     stopTimer()
     map.dispose()
@@ -515,7 +553,9 @@ export async function renderGame(app, modeKey, routeToken) {
     else sfxGameOver()
 
     const nickname = getNickname() || '无名侦探'
-    const rankInfo = addScore(modeKey, state.total)
+    const rankInfo = online
+      ? await online.finish().then(fb => { state.total = fb.total; return { rank: fb.rank, board: fb.board } })
+      : addScore(modeKey, state.total)
     const champion = !!rankInfo && rankInfo.rank === 1   // 本次成绩登顶 → 播放庆祝画面
     const reached = Math.min(state.stageIndex + 1, STAGES.length)
 
@@ -527,7 +567,7 @@ export async function renderGame(app, modeKey, routeToken) {
         <p class="result-sub">${nickname} · ${mode.title} · ${victory ? '十局全部通关' : `止步第${reached}局`}</p>
         <div class="result-score"><em>${fmt(state.total)}</em><span>总分</span></div>
         ${champion
-          ? '<div class="result-rank first">第 1 名 · 本机历史最高</div>'
+          ? `<div class="result-rank first">第 1 名 · ${online ? '全网榜首' : '本机历史最高'}</div>`
           : rankInfo
             ? `<div class="result-rank">进入个人榜单 · 第 ${rankInfo.rank} 名</div>`
             : '<div class="result-rank dim">未能进入个人 Top 10</div>'}
