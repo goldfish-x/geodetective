@@ -1,6 +1,6 @@
 # 图片素材署名 / Attribution
 
-`public/images/` 中来自 Wikimedia Commons 的地名配图，共 414 张。
+`public/images/` 中来自 Wikimedia Commons 的地名配图，共 462 张。
 这些图片多为 CC BY / CC BY-SA 授权，按许可证要求在此列出作者与许可证；
 部分为 CC0 或公有领域。每条链接均指向 Commons 文件页（含原始分辨率与完整授权信息）。
 
@@ -16,6 +16,7 @@
 | 中国篇 · 临沂 | [Linyi television tower.jpg](https://commons.wikimedia.org/wiki/File:Linyi_television_tower.jpg) | Liziyuan0216 | CC BY-SA 4.0 |
 | 中国篇 · 丹东 | [View of Dandong city from Jinjiangshan Park.jpg](https://commons.wikimedia.org/wiki/File:View_of_Dandong_city_from_Jinjiangshan_Park.jpg) | 红烧腰果 | CC BY 4.0 |
 | 中国篇 · 丽水 | [丽水风光 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:丽水风光_-_panoramio.jpg) | 江上清风1961 | CC BY 3.0 |
+| 中国篇 · 义乌 | [Yi wu -zhou chu bei lu - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Yi_wu_-zhou_chu_bei_lu_-_panoramio.jpg) | HALUK COMERTEL | CC BY 3.0 |
 | 中国篇 · 乌兰哈达火山群 | [Crater of Ulan Hada Volcano.jpg](https://commons.wikimedia.org/wiki/File:Crater_of_Ulan_Hada_Volcano.jpg) | Charlie fong | CC BY-SA 4.0 |
 | 中国篇 · 乌兰察布 | [Yurts.jpg](https://commons.wikimedia.org/wiki/File:Yurts.jpg) | Fanghong | CC BY-SA 3.0 |
 | 中国篇 · 乌兰浩特 | [乌兰浩特 01.jpg](https://commons.wikimedia.org/wiki/File:乌兰浩特_01.jpg) | 維基小霸王 | CC BY-SA 4.0 |
@@ -25,10 +26,12 @@
 | 中国篇 · 五当召 | [五当召 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:五当召_-_panoramio.jpg) | 天王星 | CC BY-SA 3.0 |
 | 中国篇 · 伊宁 | [Batul Mosque of Yining.jpg](https://commons.wikimedia.org/wiki/File:Batul_Mosque_of_Yining.jpg) | Akira CA | CC BY-SA 4.0 |
 | 中国篇 · 佳木斯 | [South shore of Songhua River, Jiamusi, Aug 2019.jpg](https://commons.wikimedia.org/wiki/File:South_shore_of_Songhua_River,_Jiamusi,_Aug_2019.jpg) | 颜邯 | CC BY-SA 4.0 |
+| 中国篇 · 保定 | [直隶总督署 - 上房 - 2025-10-24 01.jpg](https://commons.wikimedia.org/wiki/File:直隶总督署_-_上房_-_2025-10-24_01.jpg) | 瑞丽江的河水 | CC BY-SA 4.0 |
 | 中国篇 · 保山 | [保山市天际线 - 航拍 - 全景 - 2024-06-02 02.jpg](https://commons.wikimedia.org/wiki/File:保山市天际线_-_航拍_-_全景_-_2024-06-02_02.jpg) | 瑞丽江的河水 | CC BY-SA 4.0 |
 | 中国篇 · 信阳 | [浉河港镇.jpg](https://commons.wikimedia.org/wiki/File:浉河港镇.jpg) | Whzizhi | CC BY-SA 4.0 |
 | 中国篇 · 冈仁波齐 | [Kailash-Barkha.jpg](https://commons.wikimedia.org/wiki/File:Kailash-Barkha.jpg) | Jean-Marie Hullot | CC BY-SA 4.0 |
 | 中国篇 · 冷水江 | [Village in Lengshuijiang, picture4.jpg](https://commons.wikimedia.org/wiki/File:Village_in_Lengshuijiang,_picture4.jpg) | Huangdan2060 | CC0 |
+| 中国篇 · 凤凰古城 | [凤凰古城东城门 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:凤凰古城东城门_-_panoramio.jpg) | 江上清风1961 | CC BY 3.0 |
 | 中国篇 · 凭祥 | [Pingxiang, Chongzuo, Guangxi, China - panoramio (5).jpg](https://commons.wikimedia.org/wiki/File:Pingxiang,_Chongzuo,_Guangxi,_China_-_panoramio_(5).jpg) | liyuhanrenll | CC BY 3.0 |
 | 中国篇 · 前童古镇 | [Overlook of Qiantong Town on the top of Lushan Mountain.jpg](https://commons.wikimedia.org/wiki/File:Overlook_of_Qiantong_Town_on_the_top_of_Lushan_Mountain.jpg) | Xhtongyin | CC BY-SA 4.0 |
 | 中国篇 · 北极村 | [北极村大门.jpg](https://commons.wikimedia.org/wiki/File:北极村大门.jpg) | HCCB3947 | CC BY-SA 4.0 |
@@ -73,32 +76,42 @@
 | 中国篇 · 徐州 | [Panoramic view of Xuzhou TV Tower.jpg](https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Xuzhou_TV_Tower.jpg) | Ib | CC BY 4.0 |
 | 中国篇 · 德兴 | [2019 Huwei Dexing Temple C.jpg](https://commons.wikimedia.org/wiki/File:2019_Huwei_Dexing_Temple_C.jpg) | Taiwankengo | CC BY-SA 4.0 |
 | 中国篇 · 德天瀑布 | [2011 广西 崇左 德天瀑布 - panoramio (6).jpg](https://commons.wikimedia.org/wiki/File:2011_广西_崇左_德天瀑布_-_panoramio_(6).jpg) | 张元柏 | CC BY-SA 3.0 |
+| 中国篇 · 恒山 | [Hanging Monastery 05.JPG](https://commons.wikimedia.org/wiki/File:Hanging_Monastery_05.JPG) | Nicor | CC BY-SA 3.0 |
 | 中国篇 · 恩施大峡谷 | [Enshi Grand Canyon 20240725.jpg](https://commons.wikimedia.org/wiki/File:Enshi_Grand_Canyon_20240725.jpg) | HoweyYuan | CC BY-SA 4.0 |
 | 中国篇 · 悬空寺 | [Hunyuan Xuankong Si 2013.08.30 09-02-11.jpg](https://commons.wikimedia.org/wiki/File:Hunyuan_Xuankong_Si_2013.08.30_09-02-11.jpg) | Zhangzhugang | CC BY-SA 3.0 |
+| 中国篇 · 慕田峪长城 | [The Great Wall of China - panoramio.jpg](https://commons.wikimedia.org/wiki/File:The_Great_Wall_of_China_-_panoramio.jpg) | Jiaqian AirplaneFan | CC BY 3.0 |
 | 中国篇 · 扎达土林 | [Zanda Martens MdB.jpg](https://commons.wikimedia.org/wiki/File:Zanda_Martens_MdB.jpg) | Iris Hansen (Pfiffner) | CC BY-SA 4.0 |
+| 中国篇 · 承德 | [河北承德避暑山庄 Mountain Resort ，Chengde，Hebei.jpg](https://commons.wikimedia.org/wiki/File:河北承德避暑山庄_Mountain_Resort_，Chengde，Hebei.jpg) | Boyang12138 | CC BY-SA 4.0 |
 | 中国篇 · 抚远 | [抚远 - 29435199481 August 2016 in China.jpg](https://commons.wikimedia.org/wiki/File:抚远_-_29435199481_August_2016_in_China.jpg) | 陈霆, Ting Chen, Wing | CC BY-SA 2.0 |
 | 中国篇 · 敦煌 | [敦煌dunhuang city - panoramio.jpg](https://commons.wikimedia.org/wiki/File:敦煌dunhuang_city_-_panoramio.jpg) | 白云悠悠 | CC BY-SA 3.0 |
+| 中国篇 · 文昌 | [海南国际旅游岛——文昌高隆湾景观 （南偏西） - panoramio.jpg](https://commons.wikimedia.org/wiki/File:海南国际旅游岛——文昌高隆湾景观_（南偏西）_-_panoramio.jpg) | 川号子 | CC BY 3.0 |
 | 中国篇 · 日喀则 | [Shigatse Dzong, Tibet.jpg](https://commons.wikimedia.org/wiki/File:Shigatse_Dzong,_Tibet.jpg) | 钉钉 | CC BY-SA 4.0 |
 | 中国篇 · 昭通 | [Zhaoyang, Zhaotong, Yunnan, China - panoramio - hilloo (27).jpg](https://commons.wikimedia.org/wiki/File:Zhaoyang,_Zhaotong,_Yunnan,_China_-_panoramio_-_hilloo_(27).jpg) | hilloo | CC BY-SA 3.0 |
 | 中国篇 · 普者黑 | [Puzhehei in Yunnan, China.jpg](https://commons.wikimedia.org/wiki/File:Puzhehei_in_Yunnan,_China.jpg) | Zhangmoon618 | CC BY-SA 3.0 |
+| 中国篇 · 普达措国家公园 | [Shudu Lake - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Shudu_Lake_-_panoramio.jpg) | 风二中 | CC BY 3.0 |
 | 中国篇 · 景德镇 | [景德镇古窑民俗博览区 01.jpg](https://commons.wikimedia.org/wiki/File:景德镇古窑民俗博览区_01.jpg) | Liuxingy | CC BY-SA 4.0 |
 | 中国篇 · 曲靖 | [Huize, Qujing, Yunnan, China - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Huize,_Qujing,_Yunnan,_China_-_panoramio.jpg) | dgykx | CC BY 3.0 |
+| 中国篇 · 朔州 | [朔州站站房站前广场侧（2020）.jpg](https://commons.wikimedia.org/wiki/File:朔州站站房站前广场侧（2020）.jpg) | BMSBridge | CC BY-SA 4.0 |
 | 中国篇 · 本溪水洞 | [本溪水洞洞口.jpg](https://commons.wikimedia.org/wiki/File:本溪水洞洞口.jpg) | Unsonique | CC BY-SA 3.0 |
 | 中国篇 · 来古冰川 | [来古冰川.jpg](https://commons.wikimedia.org/wiki/File:来古冰川.jpg) | Jiangmy | CC BY-SA 3.0 |
 | 中国篇 · 查干湖 | [Chagan Lake - 2025.jpg](https://commons.wikimedia.org/wiki/File:Chagan_Lake_-_2025.jpg) | 纳瓦拉的亨利 | CC BY-SA 4.0 |
 | 中国篇 · 柳州 | [柳州柳江大桥 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:柳州柳江大桥_-_panoramio.jpg) | landagent | CC BY-SA 3.0 |
 | 中国篇 · 格尔木 | [格尔木 ge'ermu city - panoramio.jpg](https://commons.wikimedia.org/wiki/File:格尔木_ge'ermu_city_-_panoramio.jpg) | 白云悠悠 | CC BY-SA 3.0 |
 | 中国篇 · 桂林 | [桂林市街道景色 - panoramio (71).jpg](https://commons.wikimedia.org/wiki/File:桂林市街道景色_-_panoramio_(71).jpg) | luchangjiang~鲁昌江 | CC BY-SA 3.0 |
+| 中国篇 · 梵净山 | [Dharma Hall, Cheng'en Temple, Mount Fanjing, 31 March 2020a.jpg](https://commons.wikimedia.org/wiki/File:Dharma_Hall,_Cheng'en_Temple,_Mount_Fanjing,_31_March_2020a.jpg) | Huangdan2060 | CC BY 3.0 |
 | 中国篇 · 武功山 | [爬行武功山-桂穿越 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:爬行武功山-桂穿越_-_panoramio.jpg) | 龙歌谷 | CC BY-SA 3.0 |
 | 中国篇 · 武夷山 | [20121030 Mount Wuyi 02.jpg](https://commons.wikimedia.org/wiki/File:20121030_Mount_Wuyi_02.jpg) | Windmemories | CC BY-SA 4.0 |
+| 中国篇 · 毕棚沟 | [四川 理县-毕棚沟 民居 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:四川_理县-毕棚沟_民居_-_panoramio.jpg) | Nyx Ning | CC BY-SA 3.0 |
 | 中国篇 · 江布拉克 | [中国新疆吉木萨尔县 China Xinjiang, Jimsar County, China Xinjiang - panoramio (13).jpg](https://commons.wikimedia.org/wiki/File:中国新疆吉木萨尔县_China_Xinjiang,_Jimsar_County,_China_Xinjiang_-_panoramio_(13).jpg) | 罗布泊 | CC BY 3.0 |
 | 中国篇 · 池州 | [Yuxiu Gate Chizhou Anhui China.jpg](https://commons.wikimedia.org/wiki/File:Yuxiu_Gate_Chizhou_Anhui_China.jpg) | William Ng | CC BY-SA 4.0 |
 | 中国篇 · 河池 | [Hechi BaiMaJie.jpg](https://commons.wikimedia.org/wiki/File:Hechi_BaiMaJie.jpg) | Alexceltare2 | CC BY-SA 4.0 |
 | 中国篇 · 泉州 | [泉州大剧院北夜景.jpg](https://commons.wikimedia.org/wiki/File:泉州大剧院北夜景.jpg) | 董辰兴 | CC BY-SA 4.0 |
+| 中国篇 · 泰安 | [泰安市政府大楼 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:泰安市政府大楼_-_panoramio.jpg) | gdczjkk | CC BY 3.0 |
 | 中国篇 · 洛阳 | [Lijing Gate,Luoyang in 2025.jpg](https://commons.wikimedia.org/wiki/File:Lijing_Gate,Luoyang_in_2025.jpg) | Rongcan Lu | CC0 |
 | 中国篇 · 洞庭湖 | [Dongting Lake 2016110602.jpg](https://commons.wikimedia.org/wiki/File:Dongting_Lake_2016110602.jpg) | Huangdan2060 | CC BY 3.0 |
 | 中国篇 · 涠洲岛 | [涠洲岛海水浴 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:涠洲岛海水浴_-_panoramio.jpg) | chp13579753 | CC BY-SA 3.0 |
 | 中国篇 · 淮安 | [淮安的花街.jpg](https://commons.wikimedia.org/wiki/File:淮安的花街.jpg) | Cz2018764171 | CC BY-SA 4.0 |
+| 中国篇 · 清明上河园 | [Millennium City Park 02.jpg](https://commons.wikimedia.org/wiki/File:Millennium_City_Park_02.jpg) | Windmemories | CC BY-SA 4.0 |
 | 中国篇 · 湛江 | [China Australia friendship garden （top view 2）.jpg](https://commons.wikimedia.org/wiki/File:China_Australia_friendship_garden_（top_view_2）.jpg) | 一只星步甲 | CC BY-SA 4.0 |
 | 中国篇 · 满洲里 | [Manzhouli view.jpg](https://commons.wikimedia.org/wiki/File:Manzhouli_view.jpg) | Alexander V. Solomin | CC BY-SA 3.0 |
 | 中国篇 · 漠河 | [漠河街景2024年9月1.jpg](https://commons.wikimedia.org/wiki/File:漠河街景2024年9月1.jpg) | HCCB3947 | CC BY-SA 4.0 |
@@ -110,21 +123,28 @@
 | 中国篇 · 珠峰大本营 | [Everest North Face toward Base Camp Tibet Luca Galuzzi 2006.jpg](https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg) | Luca Galuzzi ( Lucag ) | CC BY-SA 2.5 |
 | 中国篇 · 珲春 | [巡道工出品 photo by Xundaogong——珲春城外珲春西街夜景 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:巡道工出品_photo_by_Xundaogong——珲春城外珲春西街夜景_-_panoramio.jpg) | xue siyang (df45086) | CC BY-SA 3.0 |
 | 中国篇 · 琼海 | [Qionghai in 2015 - 02.JPG](https://commons.wikimedia.org/wiki/File:Qionghai_in_2015_-_02.JPG) | Anna Frodesiak | CC0 |
+| 中国篇 · 甲居藏寨 | [甲居藏寨2-爵士鼓手 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:甲居藏寨2-爵士鼓手_-_panoramio.jpg) | 爵士鼓手 | CC BY 3.0 |
 | 中国篇 · 白洋淀 | [Baiyangdian Lake.JPG](https://commons.wikimedia.org/wiki/File:Baiyangdian_Lake.JPG) | Fanghong | CC BY-SA 3.0 |
 | 中国篇 · 白石山 | [白石山长城.JPG](https://commons.wikimedia.org/wiki/File:白石山长城.JPG) | Surebb | CC BY-SA 3.0 |
 | 中国篇 · 石狮 | [Shishi cityview.jpg](https://commons.wikimedia.org/wiki/File:Shishi_cityview.jpg) | CCP2017 | CC BY-SA 4.0 |
+| 中国篇 · 祁连山草原 | [祁连县牛心山.jpg](https://commons.wikimedia.org/wiki/File:祁连县牛心山.jpg) | Carmenzeng | CC BY-SA 4.0 |
 | 中国篇 · 禾木村 | [Altay Hemu panorama.jpg](https://commons.wikimedia.org/wiki/File:Altay_Hemu_panorama.jpg) | Pazakui | CC BY 4.0 |
 | 中国篇 · 稻城亚丁 | [Yading Sacred Mountain.jpg](https://commons.wikimedia.org/wiki/File:Yading_Sacred_Mountain.jpg) | Toni Wöhrl | CC BY-SA 4.0 |
 | 中国篇 · 红海滩 | [红海滩 red coast - panoramio.jpg](https://commons.wikimedia.org/wiki/File:红海滩_red_coast_-_panoramio.jpg) | 白云悠悠 | CC BY-SA 3.0 |
+| 中国篇 · 纳木错 | [Nam Co, China (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Nam_Co,_China_(Unsplash).jpg) | Mèng Jiǎ justin73 | CC0 |
 | 中国篇 · 绥芬河 | [Suifenhe (view from the temple Guanlin).jpg](https://commons.wikimedia.org/wiki/File:Suifenhe_(view_from_the_temple_Guanlin).jpg) | Digr | Public domain |
 | 中国篇 · 绿江村 | [一歩跨.jpg](https://commons.wikimedia.org/wiki/File:一歩跨.jpg) | 见文件页 | CC BY-SA 3.0 |
 | 中国篇 · 罗布泊 | [20240324 Deserts near Lop Nur 01.jpg](https://commons.wikimedia.org/wiki/File:20240324_Deserts_near_Lop_Nur_01.jpg) | Windmemories | CC BY-SA 4.0 |
+| 中国篇 · 羊卓雍措 | [Yamzho Yumco, Shannan, China (Unsplash).jpg](https://commons.wikimedia.org/wiki/File:Yamzho_Yumco,_Shannan,_China_(Unsplash).jpg) | Bolun Yan bolun | CC0 |
+| 中国篇 · 老君山 | [河南 老君山景色 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:河南_老君山景色_-_panoramio.jpg) | Nyx Ning | CC BY-SA 3.0 |
+| 中国篇 · 色达五明佛学院 | [Larung Gar (Setta, Sedda), Sichuan (22106949845).jpg](https://commons.wikimedia.org/wiki/File:Larung_Gar_(Setta,_Sedda),_Sichuan_(22106949845).jpg) | Valerian Guillot | CC BY 2.0 |
 | 中国篇 · 艾肯泉 | [Aiken Spring 202107-1.jpg](https://commons.wikimedia.org/wiki/File:Aiken_Spring_202107-1.jpg) | China News Service | CC BY 4.0 |
 | 中国篇 · 芒市 | [芒市天际线 - 2024-05-27 05.jpg](https://commons.wikimedia.org/wiki/File:芒市天际线_-_2024-05-27_05.jpg) | 瑞丽江的河水 | CC BY-SA 4.0 |
 | 中国篇 · 芜湖 | [Wuhu Skyline, December 2019.jpg](https://commons.wikimedia.org/wiki/File:Wuhu_Skyline,_December_2019.jpg) | Wu Shan | CC BY-SA 4.0 |
 | 中国篇 · 若羌 | [20240321 Aerial view of Altyn-Tagh near Xinjiang-Qinghai border in Ruoqiang 02.jpg](https://commons.wikimedia.org/wiki/File:20240321_Aerial_view_of_Altyn-Tagh_near_Xinjiang-Qinghai_border_in_Ruoqiang_02.jpg) | Windmemories | CC BY-SA 4.0 |
 | 中国篇 · 茶卡盐湖 | [茶卡盐湖湖面10.jpg](https://commons.wikimedia.org/wiki/File:茶卡盐湖湖面10.jpg) | 西安兵马俑 | CC BY-SA 4.0 |
 | 中国篇 · 荔波小七孔 | [荔波小七孔, 202408.jpg](https://commons.wikimedia.org/wiki/File:荔波小七孔,_202408.jpg) | FN-082 | CC BY-SA 4.0 |
+| 中国篇 · 营口 | [营口辽河大桥.jpg](https://commons.wikimedia.org/wiki/File:营口辽河大桥.jpg) | Miao Zexun | CC BY 3.0 |
 | 中国篇 · 衡山 | [南岳衡山 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:南岳衡山_-_panoramio.jpg) | 牛糞 | CC BY-SA 3.0 |
 | 中国篇 · 衡阳 | [Snow in Hengyang 2022022202.jpg](https://commons.wikimedia.org/wiki/File:Snow_in_Hengyang_2022022202.jpg) | Huangdan2060 | CC BY 3.0 |
 | 中国篇 · 衢州 | [Quzhou - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Quzhou_-_panoramio.jpg) | Anders Johnson | CC BY 3.0 |
@@ -137,15 +157,18 @@
 | 中国篇 · 那曲 | [Tibet landscape.jpg](https://commons.wikimedia.org/wiki/File:Tibet_landscape.jpg) | Luo Shaoyang from Beijing, China | CC BY 2.0 |
 | 中国篇 · 郎木寺 | [郎木寺白龙江 - panoramio (1).jpg](https://commons.wikimedia.org/wiki/File:郎木寺白龙江_-_panoramio_(1).jpg) | landagent | CC BY-SA 3.0 |
 | 中国篇 · 酒泉 | [中国甘肃酒泉鼓楼 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:中国甘肃酒泉鼓楼_-_panoramio.jpg) | terryzhang虎子 | CC BY 3.0 |
+| 中国篇 · 长治 | [Liufu tower ruins.jpg](https://commons.wikimedia.org/wiki/File:Liufu_tower_ruins.jpg) | 1969社论 | CC BY-SA 4.0 |
 | 中国篇 · 长白山天池 | [View of Heaven Lake 02.jpg](https://commons.wikimedia.org/wiki/File:View_of_Heaven_Lake_02.jpg) | Dquai | CC BY-SA 4.0 |
 | 中国篇 · 防城港 | [簕山古渔村的红树林.jpg](https://commons.wikimedia.org/wiki/File:簕山古渔村的红树林.jpg) | 安条矶子 | CC BY-SA 4.0 |
 | 中国篇 · 防川 | [張鼓峰事件記念館全景.jpg](https://commons.wikimedia.org/wiki/File:張鼓峰事件記念館全景.jpg) | Senkaku Islands | CC BY-SA 4.0 |
 | 中国篇 · 阿勒泰 | [Snow Scenery in Altay Prefecture, Xinjiang, China, picture2.jpg](https://commons.wikimedia.org/wiki/File:Snow_Scenery_in_Altay_Prefecture,_Xinjiang,_China,_picture2.jpg) | Huangdan2060 | CC BY 3.0 |
 | 中国篇 · 阿尔山 | [Arxan.jpg](https://commons.wikimedia.org/wiki/File:Arxan.jpg) | Fanghong | CC BY-SA 3.0 |
 | 中国篇 · 阿拉尔 | [20231216 Tarim River in Aral 02.jpg](https://commons.wikimedia.org/wiki/File:20231216_Tarim_River_in_Aral_02.jpg) | Windmemories | CC BY-SA 4.0 |
+| 中国篇 · 阿拉山口 | [Western-most end of Northern Xinjiang Railway.jpg](https://commons.wikimedia.org/wiki/File:Western-most_end_of_Northern_Xinjiang_Railway.jpg) | User:Yaohua2000 | CC BY-SA 3.0 |
 | 中国篇 · 阿里山 | [阿里山神木遗迹 - Fallen Alishan Sacred Tree - 2012.02 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:阿里山神木遗迹_-_Fallen_Alishan_Sacred_Tree_-_2012.02_-_panoramio.jpg) | rheins | CC BY 3.0 |
 | 中国篇 · 雁荡山 | [雁荡山 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:雁荡山_-_panoramio.jpg) | Likaihua | CC BY-SA 3.0 |
 | 中国篇 · 雨崩 | [Approaching Yubeng through the Rhododendrons - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Approaching_Yubeng_through_the_Rhododendrons_-_panoramio.jpg) | kimbridges | CC BY-SA 3.0 |
+| 中国篇 · 雷峰塔 | [Leifeng Pagoda 雷峰塔 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Leifeng_Pagoda_雷峰塔_-_panoramio.jpg) | lienyuan lee | CC BY 3.0 |
 | 中国篇 · 霍林郭勒 | [Huolin Gol, Tongliao, Inner Mongolia, China - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Huolin_Gol,_Tongliao,_Inner_Mongolia,_China_-_panoramio.jpg) | 陈呼和 | CC BY 3.0 |
 | 中国篇 · 霞浦北岐滩涂 | [Xiaohao Beach, Xiapu 20230827.jpg](https://commons.wikimedia.org/wiki/File:Xiaohao_Beach,_Xiapu_20230827.jpg) | 颐园居 | CC BY-SA 4.0 |
 | 中国篇 · 额济纳胡杨林 | [Ejin, Alxa, Inner Mongolia, China - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Ejin,_Alxa,_Inner_Mongolia,_China_-_panoramio.jpg) | 罗布泊 | CC BY 3.0 |
@@ -153,6 +176,7 @@
 | 中国篇 · 高椅岭 | [Mount Gaoyiling in Chenzhou, Hunan, China2.jpg](https://commons.wikimedia.org/wiki/File:Mount_Gaoyiling_in_Chenzhou,_Hunan,_China2.jpg) | Huangdan2060 | CC0 |
 | 中国篇 · 鸡鸣驿 | [Jimingyi 1.jpg](https://commons.wikimedia.org/wiki/File:Jimingyi_1.jpg) | Zeus1234 | CC BY-SA 3.0 |
 | 中国篇 · 鹅泉 | [鹅泉，靖西，广西 Guangxi 05-10-13 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:鹅泉，靖西，广西_Guangxi_05-10-13_-_panoramio.jpg) | jaysonh | CC BY 3.0 |
+| 中国篇 · 鹳雀楼 | [鹳雀楼.jpg](https://commons.wikimedia.org/wiki/File:鹳雀楼.jpg) | Yanxutong1215 | CC BY-SA 4.0 |
 | 中国篇 · 黑河 | [Amur River and Heihe.jpg](https://commons.wikimedia.org/wiki/File:Amur_River_and_Heihe.jpg) | Baycrest | CC BY-SA 2.5 |
 | 中国篇 · 黑瞎子岛 | [Bolshoy Ussuriysky Island 5.jpg](https://commons.wikimedia.org/wiki/File:Bolshoy_Ussuriysky_Island_5.jpg) | H2v5o68z | CC0 |
 | 中国篇 · 黔阳古城 | [黔阳古城.jpg](https://commons.wikimedia.org/wiki/File:黔阳古城.jpg) | DotaAI | CC BY-SA 3.0 |
@@ -167,6 +191,7 @@
 | 世界篇 · 乌鲁鲁 | [Ayers rock at sunset (47850034062).jpg](https://commons.wikimedia.org/wiki/File:Ayers_rock_at_sunset_(47850034062).jpg) | scott1346 from Mechanicsville, MD, USA | CC BY 2.0 |
 | 世界篇 · 九寨沟 | [九寨沟瀑布 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:九寨沟瀑布_-_panoramio.jpg) | gdczjkk | CC BY 3.0 |
 | 世界篇 · 乞力马扎罗山 | [Mount Kilimanjaro Tanzania-NASA-he.jpg](https://commons.wikimedia.org/wiki/File:Mount_Kilimanjaro_Tanzania-NASA-he.jpg) | רוליג | Public domain |
+| 世界篇 · 五渔村 | [Cinque Terre, La Spezia, Liguria, Italy - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Cinque_Terre,_La_Spezia,_Liguria,_Italy_-_panoramio.jpg) | trolvag | CC BY-SA 3.0 |
 | 世界篇 · 亚伦 | [Yaren Catholic Church (15390997516).jpg](https://commons.wikimedia.org/wiki/File:Yaren_Catholic_Church_(15390997516).jpg) | Sean Kelleher from Melbourne, Australia | CC BY-SA 2.0 |
 | 世界篇 · 亚松森 | [Downtown Asuncion 091057.jpg](https://commons.wikimedia.org/wiki/File:Downtown_Asuncion_091057.jpg) | Cmasi | CC BY-SA 4.0 |
 | 世界篇 · 亚的斯亚贝巴 | [Meskel Square, Addis Ababa.jpg](https://commons.wikimedia.org/wiki/File:Meskel_Square,_Addis_Ababa.jpg) | Radosław Botev | CC BY 3.0 pl |
@@ -185,17 +210,22 @@
 | 世界篇 · 兵马俑 | [Terracotta army xian assembling warriors.jpg](https://commons.wikimedia.org/wiki/File:Terracotta_army_xian_assembling_warriors.jpg) | Richardelainechambers at English Wikipedia | Public domain |
 | 世界篇 · 内比都 | [NPDAerial22.jpg](https://commons.wikimedia.org/wiki/File:NPDAerial22.jpg) | AthosworldLi | CC BY-SA 4.0 |
 | 世界篇 · 冈仁波齐 | [Gaurikund at Mount Kailash in Tibet.jpg](https://commons.wikimedia.org/wiki/File:Gaurikund_at_Mount_Kailash_in_Tibet.jpg) | Amitbalani | CC0 |
+| 世界篇 · 凡尔赛宫 | [2023-06-03 Palace and park of Versailles 77.jpg](https://commons.wikimedia.org/wiki/File:2023-06-03_Palace_and_park_of_Versailles_77.jpg) | Thomas1313 | CC BY-SA 4.0 |
 | 世界篇 · 凯厄图尔瀑布 | [Kaieteur Falls Guyana (2) 2007.jpg](https://commons.wikimedia.org/wiki/File:Kaieteur_Falls_Guyana_(2)_2007.jpg) | Bill Cameron | CC BY-SA 3.0 |
+| 世界篇 · 利伯维尔 | [Gabon Mining Logistics au Centre-ville de Libreville-2020.jpg](https://commons.wikimedia.org/wiki/File:Gabon_Mining_Logistics_au_Centre-ville_de_Libreville-2020.jpg) | Delrick Trevor | CC BY-SA 4.0 |
 | 世界篇 · 加德满都 | [Three saddhus at Kathmandu Durbar Square.jpg](https://commons.wikimedia.org/wiki/File:Three_saddhus_at_Kathmandu_Durbar_Square.jpg) | Markus Koljonen ( Dilaudid ) | CC BY-SA 3.0 |
 | 世界篇 · 加拉帕戈斯群岛 | [Iguana marina (Amblyrhynchus cristatus), Las Bachas, isla Santa Cruz, islas Galápagos, Ecuador, 2015-07-23, DD 23.jpg](https://commons.wikimedia.org/wiki/File:Iguana_marina_(Amblyrhynchus_cristatus),_Las_Bachas,_isla_Santa_Cruz,_islas_Galápagos,_Ecuador,_2015-07-23,_DD_23.jpg) | Diego Delso | CC BY-SA 4.0 |
 | 世界篇 · 努克 | [Nuuk, Greenland skyline.jpg](https://commons.wikimedia.org/wiki/File:Nuuk,_Greenland_skyline.jpg) | Quintin Soloviev | CC BY 4.0 |
+| 世界篇 · 努美阿 | [Car Park in Nouméa, New Caledonia.jpg](https://commons.wikimedia.org/wiki/File:Car_Park_in_Nouméa,_New_Caledonia.jpg) | Michael Coghlan | CC BY-SA 2.0 |
 | 世界篇 · 勃兰登堡门 | [Brandenburg Gate from west detail.jpg](https://commons.wikimedia.org/wiki/File:Brandenburg_Gate_from_west_detail.jpg) | User:Orderinchaos | CC BY-SA 3.0 |
 | 世界篇 · 十二门徒岩 | [PXL 20241002 064304134.MP Twelve Apostles at Sunset Victoria, Australia Great Ocean Road Trip 15.jpg](https://commons.wikimedia.org/wiki/File:PXL_20241002_064304134.MP_Twelve_Apostles_at_Sunset_Victoria,_Australia_Great_Ocean_Road_Trip_15.jpg) | Sourabh.biswas003 | CC BY-SA 4.0 |
+| 世界篇 · 华沙 | [Warszawa Śródmieście wejście.jpg](https://commons.wikimedia.org/wiki/File:Warszawa_Śródmieście_wejście.jpg) | Panek | CC BY 3.0 |
 | 世界篇 · 华盛顿 | [Cherry Blossoms surrounding United States Capitol Dome.jpg](https://commons.wikimedia.org/wiki/File:Cherry_Blossoms_surrounding_United_States_Capitol_Dome.jpg) | Crglenn | CC BY-SA 4.0 |
 | 世界篇 · 南马都尔 | [Nan Madol megalithic site, Pohnpei (Federated States of Micronesia) 5.jpg](https://commons.wikimedia.org/wiki/File:Nan_Madol_megalithic_site,_Pohnpei_(Federated_States_of_Micronesia)_5.jpg) | Patrick Nunn | CC BY-SA 4.0 |
 | 世界篇 · 卡宴 | [Cayenne city (8525272038).jpg](https://commons.wikimedia.org/wiki/File:Cayenne_city_(8525272038).jpg) | Spotting973 | CC BY-SA 2.0 |
 | 世界篇 · 卡帕多奇亚 | [Cappadocia Aerial View Landscape.jpg](https://commons.wikimedia.org/wiki/File:Cappadocia_Aerial_View_Landscape.jpg) | Benh LIEU SONG ( Flickr ) | CC BY-SA 4.0 |
 | 世界篇 · 卡斯特里 | [St. Lucia - View of Castries Town.jpg](https://commons.wikimedia.org/wiki/File:St._Lucia_-_View_of_Castries_Town.jpg) | Joseph Le Grand | Public domain |
+| 世界篇 · 卡普里岛 | [Capri (8259065832).jpg](https://commons.wikimedia.org/wiki/File:Capri_(8259065832).jpg) | Eric Salard | CC BY-SA 2.0 |
 | 世界篇 · 卢克索神庙 | [Luxor Temple R04.jpg](https://commons.wikimedia.org/wiki/File:Luxor_Temple_R04.jpg) | Marc Ryckaert | CC BY 3.0 |
 | 世界篇 · 卢布尔雅那 | [Gallusovo nabrezje in Ljubljana (2).jpg](https://commons.wikimedia.org/wiki/File:Gallusovo_nabrezje_in_Ljubljana_(2).jpg) | Tournasol7 | CC BY 4.0 |
 | 世界篇 · 卢浮宫 | [Cour Napoléon & Louvre Pyramid at night (38827946474).jpg](https://commons.wikimedia.org/wiki/File:Cour_Napoléon_&_Louvre_Pyramid_at_night_(38827946474).jpg) | kuhnmi | CC BY 2.0 |
@@ -213,8 +243,10 @@
 | 世界篇 · 圣地亚哥 | [Vista Panorámica de Santiago desde el cerro San Cristóbal.jpg](https://commons.wikimedia.org/wiki/File:Vista_Panorámica_de_Santiago_desde_el_cerro_San_Cristóbal.jpg) | Rjcastillo | CC BY-SA 4.0 |
 | 世界篇 · 圣多明各 | [Santo Domingo - Puerta del Conde 0521.JPG](https://commons.wikimedia.org/wiki/File:Santo_Domingo_-_Puerta_del_Conde_0521.JPG) | Phyrexian | CC BY-SA 4.0 |
 | 世界篇 · 圣家堂 | [Nativity towers, Sagrada Familia, Barcelona (Ank Kumar) 01.jpg](https://commons.wikimedia.org/wiki/File:Nativity_towers,_Sagrada_Familia,_Barcelona_(Ank_Kumar)_01.jpg) | Ank Kumar | CC BY-SA 4.0 |
+| 世界篇 · 圣彼得堡 | [Sunset over Neva River - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Sunset_over_Neva_River_-_panoramio.jpg) | Alexey Komarov | CC BY 3.0 |
 | 世界篇 · 圣彼得大教堂 | [Saint Peter's Square view from the dome of Saint Peter's Basilica (2010).jpg](https://commons.wikimedia.org/wiki/File:Saint_Peter's_Square_view_from_the_dome_of_Saint_Peter's_Basilica_(2010).jpg) | Lars Curfs (Grashoofd) | CC BY-SA 3.0 |
 | 世界篇 · 圣托里尼 | [Oia Santorini Blue Domes.jpg](https://commons.wikimedia.org/wiki/File:Oia_Santorini_Blue_Domes.jpg) | Danbu14 | CC BY-SA 3.0 |
+| 世界篇 · 圣米歇尔山 | [Mont Saint-Michel, Wattwanderung01.jpg](https://commons.wikimedia.org/wiki/File:Mont_Saint-Michel,_Wattwanderung01.jpg) | Nikater | Public domain |
 | 世界篇 · 圣约翰 | [Antigua - View of St. John's.jpg](https://commons.wikimedia.org/wiki/File:Antigua_-_View_of_St._John's.jpg) | John R. Anjo | Public domain |
 | 世界篇 · 圣马力诺 | [Guaita Fortress - San Marino - 2024 02 13 - GT 01 ver2.jpg](https://commons.wikimedia.org/wiki/File:Guaita_Fortress_-_San_Marino_-_2024_02_13_-_GT_01_ver2.jpg) | Terragio67 | CC BY-SA 4.0 |
 | 世界篇 · 地拉那 | [Tirana from South.jpg](https://commons.wikimedia.org/wiki/File:Tirana_from_South.jpg) | Albinfo | CC BY-SA 3.0 |
@@ -244,6 +276,7 @@
 | 世界篇 · 奥莫低谷 | [Washare from the Hamer tribe in Logara, near Turmi, Omo Valley, Ethiopia (16882803797).jpg](https://commons.wikimedia.org/wiki/File:Washare_from_the_Hamer_tribe_in_Logara,_near_Turmi,_Omo_Valley,_Ethiopia_(16882803797).jpg) | Alfred Weidinger from Vienna, Austria | CC BY 2.0 |
 | 世界篇 · 好望角 | [Cape Town (ZA), Cape Point Nature Reserve, Old Cape Point Lighthouse, Historical Lighthouse Cottages -- 2024 -- 3383.jpg](https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA),_Cape_Point_Nature_Reserve,_Old_Cape_Point_Lighthouse,_Historical_Lighthouse_Cottages_--_2024_--_3383.jpg) | Dietmar Rabich | CC BY-SA 4.0 |
 | 世界篇 · 好莱坞 | [View from the balcony at Griffith Observatory on the Hollywood sign and Mt. Lee 20220509 141352 (1).jpg](https://commons.wikimedia.org/wiki/File:View_from_the_balcony_at_Griffith_Observatory_on_the_Hollywood_sign_and_Mt._Lee_20220509_141352_(1).jpg) | Steveshelokhonov | CC BY-SA 4.0 |
+| 世界篇 · 威尼斯 | [Venezia SC Ponte de la Rioda 20120423.jpg](https://commons.wikimedia.org/wiki/File:Venezia_SC_Ponte_de_la_Rioda_20120423.jpg) | Unofeld781 | CC BY-SA 3.0 |
 | 世界篇 · 威廉斯塔德 | [View of Otrobanda, Willemstad, Curaçao - February 2020.jpg](https://commons.wikimedia.org/wiki/File:View_of_Otrobanda,_Willemstad,_Curaçao_-_February_2020.jpg) | Martin Falbisoner | CC BY-SA 4.0 |
 | 世界篇 · 婆罗浮屠 | [Borobudur-Nothwest-view.jpg](https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg) | Gunawan Kartapranata | CC BY-SA 3.0 |
 | 世界篇 · 宁格罗礁 | [Cape Range National Park and Ningaloo Reef from the air.jpg](https://commons.wikimedia.org/wiki/File:Cape_Range_National_Park_and_Ningaloo_Reef_from_the_air.jpg) | Andrew Turner | CC BY-SA 4.0 |
@@ -254,10 +287,13 @@
 | 世界篇 · 富纳富提 | [Funafuti township.jpg](https://commons.wikimedia.org/wiki/File:Funafuti_township.jpg) | Davidarfonjones | CC BY-SA 3.0 |
 | 世界篇 · 少女峰 | [Eiger, Mönch and Jungfrau, Swiss Skyline, Birg, Schilthorn (Ank Kumar) 03.jpg](https://commons.wikimedia.org/wiki/File:Eiger,_Mönch_and_Jungfrau,_Swiss_Skyline,_Birg,_Schilthorn_(Ank_Kumar)_03.jpg) | Ank kumar | CC BY-SA 4.0 |
 | 世界篇 · 尼亚加拉瀑布 | [Rainbow and Maid of the Mist, Horseshoe Falls, Niagara Falls, Ontario (29901826111).jpg](https://commons.wikimedia.org/wiki/File:Rainbow_and_Maid_of_the_Mist,_Horseshoe_Falls,_Niagara_Falls,_Ontario_(29901826111).jpg) | Ken Lund from Reno, Nevada, USA | CC BY-SA 2.0 |
+| 世界篇 · 屋久岛 | [Yakushima mountains (52931596125).jpg](https://commons.wikimedia.org/wiki/File:Yakushima_mountains_(52931596125).jpg) | Raita Futo from Tokyo, Japan | CC BY 2.0 |
+| 世界篇 · 巧克力山 | [Chocolate Hills - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Chocolate_Hills_-_panoramio.jpg) | Robert Breivik | CC BY-SA 3.0 |
 | 世界篇 · 巨人之路 | [Giant's Causeway (14).JPG](https://commons.wikimedia.org/wiki/File:Giant's_Causeway_(14).JPG) | Chmee2 | CC BY 3.0 |
 | 世界篇 · 巨石阵 | [Summer Solstice Sunrise over Stonehenge 2005.jpg](https://commons.wikimedia.org/wiki/File:Summer_Solstice_Sunrise_over_Stonehenge_2005.jpg) | 见文件页 | CC BY-SA 2.0 |
 | 世界篇 · 巴厘岛 | [Tanah-Lot Bali Indonesia Pura-Tanah-Lot-02.jpg](https://commons.wikimedia.org/wiki/File:Tanah-Lot_Bali_Indonesia_Pura-Tanah-Lot-02.jpg) | CEphoto, Uwe Aranas | CC BY-SA 3.0 |
 | 世界篇 · 巴库 | [Vista de Baku, Azerbaiyán, 2016-09-26, DD 138.jpg](https://commons.wikimedia.org/wiki/File:Vista_de_Baku,_Azerbaiyán,_2016-09-26,_DD_138.jpg) | Diego Delso | CC BY-SA 4.0 |
+| 世界篇 · 巴拿山 | [The Golden Bridge, Ba Na Hills, Vietnam.jpg](https://commons.wikimedia.org/wiki/File:The_Golden_Bridge,_Ba_Na_Hills,_Vietnam.jpg) | . Ray in Manila | CC BY 2.0 |
 | 世界篇 · 巴拿马城 | [Panama Canal - Pacific Side Entrance.jpg](https://commons.wikimedia.org/wiki/File:Panama_Canal_-_Pacific_Side_Entrance.jpg) | Camilo Molina derivative work: MrPanyGoff | CC BY-SA 2.0 |
 | 世界篇 · 巴西利亚 | [Catedral Metropolitana de Brasília - Brasília - 20150603150521.jpg](https://commons.wikimedia.org/wiki/File:Catedral_Metropolitana_de_Brasília_-_Brasília_-_20150603150521.jpg) | Donatas Dabravolskas | CC BY-SA 4.0 |
 | 世界篇 · 巴音扎格 | [Bayanzag 05.jpg](https://commons.wikimedia.org/wiki/File:Bayanzag_05.jpg) | Bernard Gagnon | CC0 |
@@ -272,6 +308,7 @@
 | 世界篇 · 帕拉马里博 | [Paramaribo district 20.jpg](https://commons.wikimedia.org/wiki/File:Paramaribo_district_20.jpg) | Sn.fernandez | CC BY-SA 4.0 |
 | 世界篇 · 帕果帕果 | [Pago Pago - View of harbor.jpg](https://commons.wikimedia.org/wiki/File:Pago_Pago_-_View_of_harbor.jpg) | P. Hughes | CC BY-SA 4.0 |
 | 世界篇 · 帕特农神庙 | [The East Facade of the Parthenon on March 22, 2021.jpg](https://commons.wikimedia.org/wiki/File:The_East_Facade_of_the_Parthenon_on_March_22,_2021.jpg) | George E. Koronaios | CC BY-SA 2.0 |
+| 世界篇 · 帕皮提 | [View of the harbour and town from the bridge - panoramio.jpg](https://commons.wikimedia.org/wiki/File:View_of_the_harbour_and_town_from_the_bridge_-_panoramio.jpg) | Peter Gill / UK | CC BY 3.0 |
 | 世界篇 · 帝国大厦 | [Empire State Building illuminated at night aerial view Manhattan.jpg](https://commons.wikimedia.org/wiki/File:Empire_State_Building_illuminated_at_night_aerial_view_Manhattan.jpg) | SebastianBlumeArt | CC BY-SA 4.0 |
 | 世界篇 · 平壤 | [Panoramic view from Juche Tower.jpg](https://commons.wikimedia.org/wiki/File:Panoramic_view_from_Juche_Tower.jpg) | Christophe95 | CC BY-SA 4.0 |
 | 世界篇 · 库斯科 | [Cusco, Sacsayhuamán - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Cusco,_Sacsayhuamán_-_panoramio.jpg) | gertrudis2010 | CC BY-SA 3.0 |
@@ -310,6 +347,7 @@
 | 世界篇 · 桌山 | [Cape Town, Table Mountain, Table Cloth.jpg](https://commons.wikimedia.org/wiki/File:Cape_Town,_Table_Mountain,_Table_Cloth.jpg) | KodachromeFan | CC BY-SA 3.0 |
 | 世界篇 · 桑给巴尔岛 | [Carved wooden door, Stone Town, Zanzibar (21) (28817507760).jpg](https://commons.wikimedia.org/wiki/File:Carved_wooden_door,_Stone_Town,_Zanzibar_(21)_(28817507760).jpg) | Richard Mortel from Riyadh, Saudi Arabia | CC BY 2.0 |
 | 世界篇 · 梅尔祖卡沙丘 | [Morocco Africa Flickr Rosino December 2005 84514010 edited by Buchling.jpg](https://commons.wikimedia.org/wiki/File:Morocco_Africa_Flickr_Rosino_December_2005_84514010_edited_by_Buchling.jpg) | Rosa Cabecinhas and Alcino Cunha | CC BY-SA 2.0 |
+| 世界篇 · 梵蒂冈博物馆 | [The Spiral Walk, The Vatican Museum Rome (6167019101).jpg](https://commons.wikimedia.org/wiki/File:The_Spiral_Walk,_The_Vatican_Museum_Rome_(6167019101).jpg) | Alex Proimos from Sydney, Australia | CC BY 2.0 |
 | 世界篇 · 棉花堡 | [TR Pamukkale White Terraces asv2020-02 img16.jpg](https://commons.wikimedia.org/wiki/File:TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg) | A.Savin | FAL |
 | 世界篇 · 死亡谷 | [Zabriskie Point Death Valley December 2013 002.jpg](https://commons.wikimedia.org/wiki/File:Zabriskie_Point_Death_Valley_December_2013_002.jpg) | King of Hearts | CC BY-SA 3.0 |
 | 世界篇 · 比什凯克 | [Bishkek 03-2016 img11 Chuy Prospekt.jpg](https://commons.wikimedia.org/wiki/File:Bishkek_03-2016_img11_Chuy_Prospekt.jpg) | A.Savin | FAL |
@@ -319,10 +357,13 @@
 | 世界篇 · 法罗群岛 | [Lonely house on the coast near Eiði - Faroe Islands (50413406426).jpg](https://commons.wikimedia.org/wiki/File:Lonely_house_on_the_coast_near_Eiði_-_Faroe_Islands_(50413406426).jpg) | Sanshiro KUBOTA from London, UK | CC BY 2.0 |
 | 世界篇 · 波哥大 | [On the Bolivar Square (Bogota).jpg](https://commons.wikimedia.org/wiki/File:On_the_Bolivar_Square_(Bogota).jpg) | Leon petrosyan | CC BY-SA 4.0 |
 | 世界篇 · 波浪岩 | [Wave-Rock-Hyden-WA.jpg](https://commons.wikimedia.org/wiki/File:Wave-Rock-Hyden-WA.jpg) | SKY-PuLeun | CC BY-SA 4.0 |
+| 世界篇 · 波西塔诺 | [Positano at sunset.jpg](https://commons.wikimedia.org/wiki/File:Positano_at_sunset.jpg) | Thomas Fabian | CC BY-SA 2.0 |
 | 世界篇 · 泰姬陵 | [Taj Mahal at Sunrise IMG 6028.jpg](https://commons.wikimedia.org/wiki/File:Taj_Mahal_at_Sunrise_IMG_6028.jpg) | Malpaniashutosh | CC BY-SA 4.0 |
+| 世界篇 · 泰德火山 | [El Teide, Patrimonio Mundial de la Humanidad - panoramio.jpg](https://commons.wikimedia.org/wiki/File:El_Teide,_Patrimonio_Mundial_de_la_Humanidad_-_panoramio.jpg) | Canarina | CC BY-SA 3.0 |
 | 世界篇 · 洛杉矶 | [Hollywood Sign close up.jpg](https://commons.wikimedia.org/wiki/File:Hollywood_Sign_close_up.jpg) | Wiki person that edits | CC BY-SA 4.0 |
 | 世界篇 · 济州岛 | [The Volcanic crater of Seongsan Ilchulbong.jpg](https://commons.wikimedia.org/wiki/File:The_Volcanic_crater_of_Seongsan_Ilchulbong.jpg) | 螺钉 | CC BY-SA 3.0 |
 | 世界篇 · 滨海湾金沙 | [Singapore Marina Sands Bay rooftop swimming pool 20170306.jpg](https://commons.wikimedia.org/wiki/File:Singapore_Marina_Sands_Bay_rooftop_swimming_pool_20170306.jpg) | Jorge Cortell | CC BY 3.0 |
+| 世界篇 · 火奴鲁鲁 | [Marks Garage sunrise (13294468183).jpg](https://commons.wikimedia.org/wiki/File:Marks_Garage_sunrise_(13294468183).jpg) | billsoPHOTO from Honolulu, USA | CC BY-SA 2.0 |
 | 世界篇 · 特古西加尔巴 | [Tegucigalpa view in october 2021.jpg](https://commons.wikimedia.org/wiki/File:Tegucigalpa_view_in_october_2021.jpg) | Descubriasintiniaparaserfelix | CC BY-SA 4.0 |
 | 世界篇 · 猴面包树大道 | [Adansonia grandidieri04.jpg](https://commons.wikimedia.org/wiki/File:Adansonia_grandidieri04.jpg) | Bernard Gagnon | CC BY-SA 3.0 |
 | 世界篇 · 珀斯 | [Perth skyline from swan river foreshore.jpg](https://commons.wikimedia.org/wiki/File:Perth_skyline_from_swan_river_foreshore.jpg) | Unknown authorUnknown author | Public domain |
@@ -345,9 +386,11 @@
 | 世界篇 · 科帕卡巴纳海滩 | [Beach volleyball courts beneath trees on Copacabana Beach, Rio de Janeiro, Brazil.jpg](https://commons.wikimedia.org/wiki/File:Beach_volleyball_courts_beneath_trees_on_Copacabana_Beach,_Rio_de_Janeiro,_Brazil.jpg) | Wilfredor | CC0 |
 | 世界篇 · 科科岛 | [Hammerhead shark, Cocos Island, Costa Rica.jpg](https://commons.wikimedia.org/wiki/File:Hammerhead_shark,_Cocos_Island,_Costa_Rica.jpg) | Barry Peters | CC BY 2.0 |
 | 世界篇 · 科罗拉多大峡谷 | [Colorado River winds through the Grand Canyon.jpg](https://commons.wikimedia.org/wiki/File:Colorado_River_winds_through_the_Grand_Canyon.jpg) | Chad Woodward | CC BY-SA 4.0 |
+| 世界篇 · 科莫多岛 | [Wild Komodo dragon - Komodo island (16912813237).jpg](https://commons.wikimedia.org/wiki/File:Wild_Komodo_dragon_-_Komodo_island_(16912813237).jpg) | Jorge Láscar from Melbourne, Australia | CC BY 2.0 |
 | 世界篇 · 稻城亚丁 | [Yading - panoramio (1).jpg](https://commons.wikimedia.org/wiki/File:Yading_-_panoramio_(1).jpg) | Anders Johnson | CC BY 3.0 |
 | 世界篇 · 突尼斯 | [Reflet sur le lac de Tunis.jpg](https://commons.wikimedia.org/wiki/File:Reflet_sur_le_lac_de_Tunis.jpg) | Smailtn Camera location 36° 48′ 10.53″ N, 10° 13′ 12.12″ E View this and other nearby imag | CC BY-SA 4.0 |
 | 世界篇 · 第比利斯 | [View of Havlabar (Tbilisi), in the early 1900s, Sergei Mikhailovich Prokudin-Gorskii.jpg](https://commons.wikimedia.org/wiki/File:View_of_Havlabar_(Tbilisi),_in_the_early_1900s,_Sergei_Mikhailovich_Prokudin-Gorskii.jpg) | Sergei Prokudin-Gorskii | Public domain |
+| 世界篇 · 米兰 | [Il Duomo e la Galleria Milano.jpg](https://commons.wikimedia.org/wiki/File:Il_Duomo_e_la_Galleria_Milano.jpg) | Anmalisafly83 | CC BY-SA 4.0 |
 | 世界篇 · 米尔福德峡湾 | [Milford Sound Mitre Peak.JPG](https://commons.wikimedia.org/wiki/File:Milford_Sound_Mitre_Peak.JPG) | MurielBendel | CC BY-SA 4.0 |
 | 世界篇 · 糖面包山 | [Sugarloaf Mountain and cable car station viewed from Morro da Urca, Rio de Janeiro, Brazil.jpg](https://commons.wikimedia.org/wiki/File:Sugarloaf_Mountain_and_cable_car_station_viewed_from_Morro_da_Urca,_Rio_de_Janeiro,_Brazil.jpg) | Wilfredor | CC0 |
 | 世界篇 · 索科特拉岛 | [Socotra dragon tree.JPG](https://commons.wikimedia.org/wiki/File:Socotra_dragon_tree.JPG) | Boris Khvostichenko( User:Boriskhv ) | CC BY-SA 4.0 |
@@ -370,6 +413,7 @@
 | 世界篇 · 莫尔兹比港 | [Port Moresby Town Mschlauch.JPG](https://commons.wikimedia.org/wiki/File:Port_Moresby_Town_Mschlauch.JPG) | Mschlauch | Public domain |
 | 世界篇 · 莫斯科红场 | [Saint Basil's Cathedral Moscow at winter night from the Red Square.jpg](https://commons.wikimedia.org/wiki/File:Saint_Basil's_Cathedral_Moscow_at_winter_night_from_the_Red_Square.jpg) | Yaroslav Murashkin | Public domain |
 | 世界篇 · 莫高窟 | [2021.12.24-12.26 800pcs 璀璨敦煌系列：第257窟-鹿王本生局部圖 Mogao Grottoes Cave 257 Main Chamber West Wall (1) (51776320643).jpg](https://commons.wikimedia.org/wiki/File:2021.12.24-12.26_800pcs_璀璨敦煌系列：第257窟-鹿王本生局部圖_Mogao_Grottoes_Cave_257_Main_Chamber_West_Wall_(1)_(51776320643).jpg) | Grace Hwu from Taiwan | CC BY 2.0 |
+| 世界篇 · 菲茨罗伊峰 | [Mermoz at sunset.jpg](https://commons.wikimedia.org/wiki/File:Mermoz_at_sunset.jpg) | Masa Sakano | CC BY-SA 2.0 |
 | 世界篇 · 萨格勒布 | [Zagreb (29255640143).jpg](https://commons.wikimedia.org/wiki/File:Zagreb_(29255640143).jpg) | Nick Savchenko from Kiev, Ukraine | CC BY-SA 2.0 |
 | 世界篇 · 蒙得维的亚 | [Atardecer en Pocitos, Montevideo, Uruguay.jpg](https://commons.wikimedia.org/wiki/File:Atardecer_en_Pocitos,_Montevideo,_Uruguay.jpg) | Intendencia de Montevideo | CC BY-SA 4.0 |
 | 世界篇 · 蒙特利尔 | [Détails de la facade de la Basilique Notre-Dame.JPG](https://commons.wikimedia.org/wiki/File:Détails_de_la_facade_de_la_Basilique_Notre-Dame.JPG) | LCormier | CC BY-SA 3.0 |
@@ -379,6 +423,7 @@
 | 世界篇 · 设得兰群岛 | [Stack of Sandwick, Burra, Shetland - geograph.org.uk - 5132867.jpg](https://commons.wikimedia.org/wiki/File:Stack_of_Sandwick,_Burra,_Shetland_-_geograph.org.uk_-_5132867.jpg) | Julian Paren | CC BY-SA 2.0 |
 | 世界篇 · 赫尔辛基 | [Helsinki July 2013-27a.jpg](https://commons.wikimedia.org/wiki/File:Helsinki_July_2013-27a.jpg) | Alvesgaspar | CC BY-SA 3.0 |
 | 世界篇 · 路易港 | [Port Louis Mauritius.jpg](https://commons.wikimedia.org/wiki/File:Port_Louis_Mauritius.jpg) | Ifeatu Nnaobi | CC BY-SA 4.0 |
+| 世界篇 · 达卡 | [Brahmo Samaj Temple (02).jpg](https://commons.wikimedia.org/wiki/File:Brahmo_Samaj_Temple_(02).jpg) | Yahya | CC BY-SA 4.0 |
 | 世界篇 · 达喀尔 | [Corniche Est Dakar Lagon.jpg](https://commons.wikimedia.org/wiki/File:Corniche_Est_Dakar_Lagon.jpg) | Ibfal | CC BY-SA 4.0 |
 | 世界篇 · 达尔瓦扎地狱之门 | [Derweze -Surroundings- Darvaza gas crater - 2015.jpg](https://commons.wikimedia.org/wiki/File:Derweze_-Surroundings-_Darvaza_gas_crater_-_2015.jpg) | Bjørn Christian Tørrissen | CC BY 4.0 |
 | 世界篇 · 达累斯萨拉姆 | [A patrol boat in Dar es Salaam harbour.jpg](https://commons.wikimedia.org/wiki/File:A_patrol_boat_in_Dar_es_Salaam_harbour.jpg) | Erasmus Kamugisha | CC BY-SA 4.0 |
@@ -396,6 +441,7 @@
 | 世界篇 · 锡吉里耶 | [Sigiriya Luftbild (29781064900).jpg](https://commons.wikimedia.org/wiki/File:Sigiriya_Luftbild_(29781064900).jpg) | dronepicr | CC BY 2.0 |
 | 世界篇 · 长城 | [Pano mutianyu great wall.jpg](https://commons.wikimedia.org/wiki/File:Pano_mutianyu_great_wall.jpg) | Fabienkhan | CC BY-SA 2.5 |
 | 世界篇 · 阿塔卡马月亮谷 | [Anfiteatro, Valle de la Luna, San Pedro de Atacama, Chile, 2016-02-01, DD 149.JPG](https://commons.wikimedia.org/wiki/File:Anfiteatro,_Valle_de_la_Luna,_San_Pedro_de_Atacama,_Chile,_2016-02-01,_DD_149.JPG) | Diego Delso | CC BY-SA 4.0 |
+| 世界篇 · 阿姆斯特丹运河 | [Amsterdam, historic houses1.jpg](https://commons.wikimedia.org/wiki/File:Amsterdam,_historic_houses1.jpg) | Sergio Calleja (Life is a trip) from Barcelona, Spain | CC BY-SA 2.0 |
 | 世界篇 · 阿尔及尔 | [Alger monochrome.jpg](https://commons.wikimedia.org/wiki/File:Alger_monochrome.jpg) | Cherif Meriam | CC BY-SA 4.0 |
 | 世界篇 · 阿尔罕布拉宫 | [Court of the Lions, Alhambra de Granada (Spain).jpg](https://commons.wikimedia.org/wiki/File:Court_of_the_Lions,_Alhambra_de_Granada_(Spain).jpg) | Heparina1985 | CC BY-SA 4.0 |
 | 世界篇 · 阿布贾 | [Abuja city gate.jpg](https://commons.wikimedia.org/wiki/File:Abuja_city_gate.jpg) | Fawaz.tairou | CC BY-SA 4.0 |
@@ -403,6 +449,7 @@
 | 世界篇 · 阿拉木图 | [Ascension Cathedral, Almaty KZ.JPG](https://commons.wikimedia.org/wiki/File:Ascension_Cathedral,_Almaty_KZ.JPG) | Stomac | CC BY 3.0 |
 | 世界篇 · 阿斯塔纳 | [Trip to Astana (2015-10-24) 03.jpg](https://commons.wikimedia.org/wiki/File:Trip_to_Astana_(2015-10-24)_03.jpg) | Денис Гришкин | CC BY 4.0 |
 | 世界篇 · 阿斯马拉 | [ASMARA - Panorama.jpg](https://commons.wikimedia.org/wiki/File:ASMARA_-_Panorama.jpg) | Unknown author Unknown author | Public domain |
+| 世界篇 · 阿皮亚 | [Apia clock tower, Samoa - August 2016.jpg](https://commons.wikimedia.org/wiki/File:Apia_clock_tower,_Samoa_-_August_2016.jpg) | Rickard Törnblad | CC BY-SA 4.0 |
 | 世界篇 · 雅典 | [Panorama of Athens from the area of the National Observatory of Athens. In the distance the Acropolis of Athens and Mount Lycabettus.jpg](https://commons.wikimedia.org/wiki/File:Panorama_of_Athens_from_the_area_of_the_National_Observatory_of_Athens._In_the_distance_the_Acropolis_of_Athens_and_Mount_Lycabettus.jpg) | George E. Koronaios | CC BY-SA 4.0 |
 | 世界篇 · 雅温得 | [Yaounde-BEAC.jpg](https://commons.wikimedia.org/wiki/File:Yaounde-BEAC.jpg) | Albert Bergonzo | CC BY-SA 4.0 |
 | 世界篇 · 雷克雅未克 | [View of Reykjavík from Hallgrímskirkja, 20230507 1227 5715.jpg](https://commons.wikimedia.org/wiki/File:View_of_Reykjavík_from_Hallgrímskirkja,_20230507_1227_5715.jpg) | Jakub Hałun | CC BY-SA 4.0 |
@@ -420,6 +467,7 @@
 | 世界篇 · 麦纳麦 | [Manama, Bahrain Decembre 2014.jpg](https://commons.wikimedia.org/wiki/File:Manama,_Bahrain_Decembre_2014.jpg) | Wadiia | CC BY-SA 4.0 |
 | 世界篇 · 黄山 | [Anhui Huangshan.jpg](https://commons.wikimedia.org/wiki/File:Anhui_Huangshan.jpg) | Miaulian | CC BY-SA 3.0 |
 | 世界篇 · 黄石国家公园 | [Old Faithful Geyser eruption 03.jpg](https://commons.wikimedia.org/wiki/File:Old_Faithful_Geyser_eruption_03.jpg) | Supercarwaar | CC BY-SA 4.0 |
+| 世界篇 · 龙达 | [RondaBridge.jpg](https://commons.wikimedia.org/wiki/File:RondaBridge.jpg) | Gavin pais | CC BY-SA 4.0 |
 
 其余图片来自项目自备素材，不由 Wikimedia Commons 提供：其中 157 张为 AI 生成图（中国篇一二星 120 张、世界篇 37 张），29 张为 scripts/generate_illustrations.py 按地名意象绘制的插画（中国篇 28 张、世界篇 1 张），均未登记在本表中。
 

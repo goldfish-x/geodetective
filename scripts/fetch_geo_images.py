@@ -7,6 +7,10 @@ MODE = sys.argv[1] if len(sys.argv) > 1 else "china"
 RADIUS = int(sys.argv[2]) if len(sys.argv) > 2 else 8000
 LIMIT = int(sys.argv[3]) if len(sys.argv) > 3 else 0
 DRY = os.environ.get("GD_DRY") == "1"
+# GD_REPLACE=1  对已有配图的地点也重新取 CC 图（用于把网络检索图换成可署名真拍）
+# GD_STAGE=DIR  结果只写进暂存目录与 <mode>-provenance.json，核验通过后再提升为正式资源
+REPLACE = os.environ.get("GD_REPLACE") == "1"
+STAGE = Path(os.environ["GD_STAGE"]) if os.environ.get("GD_STAGE") else None
 SLEEP = float(os.environ.get("GD_SLEEP", "2.5"))
 EDGE = 300
 
@@ -19,6 +23,11 @@ todo = json.loads((ROOT / ("scripts/%s-image-todo.json" % MODE)).read_text(encod
 if LIMIT:
     todo = todo[:LIMIT]
 prov = json.loads(PROV.read_text(encoding="utf-8")) if PROV.exists() else {}
+PROV_OUT = (STAGE / ("%s-provenance.json" % MODE)) if STAGE else PROV
+if STAGE:
+    (STAGE / MODE).mkdir(parents=True, exist_ok=True)
+    if PROV_OUT.exists():
+        prov.update(json.loads(PROV_OUT.read_text(encoding="utf-8")))
 
 BAD = re.compile(r"(?i)(\bmap\b|locator|carte|karte|\bflag\b|coat of arms|\bcrest\b|\blogo\b|"
   r"diagram|\bchart\b|\bsign\b|signage|plaque|\bstamp\b|banknote|\bcoin\b|poster|banner|"
@@ -26,7 +35,8 @@ BAD = re.compile(r"(?i)(\bmap\b|locator|carte|karte|\bflag\b|coat of arms|\bcres
   r"\bsketch\b|\bpainting\b|cartoon|emblem|\bseal\b|graffiti|\bmural\b|billboard|\binterior\b|"
   r"\binside\b|lobby|platform|\bstation\b|subway|\bmetro\b|tunnel|parking|notice|\bdoor\b|"
   r"street name|house number|\bhotel\b|\bbank\b|\boffice\b|\bschool\b|hospital|cemetery|"
-  r"\bgrave\b|\btomb\b|\bwreck\b|\bdraft\b|\btest\b|nocat|\bpanoramio \(\d+\)\.jpg$)")
+  r"\bgrave\b|\btomb\b|\bwreck\b|\bdraft\b|\btest\b|nocat|\bpanoramio \(\d+\)\.jpg$|"
+  r"ISS\d{3}|View of Earth|Lynk|\bvehicle\b|\baircraft\b|\bsatellite image\b)")
 
 GOOD = re.compile(r"(?i)(view of|views of|panorama|skyline|cityscape|landscape|overlook|"
   r"aerial|sunset|sunrise|dusk|night view|old town|\bcity\b|\btown\b|valley|mountain|lake|"
@@ -170,7 +180,7 @@ done = skip = 0
 failed = []
 for rec in todo:
     name = rec["name"]
-    if (DEST / (name + ".webp")).exists():
+    if (DEST / (name + ".webp")).exists() and not REPLACE:
         skip += 1
         continue
     cands = [c for c in fetch(rec["lat"], rec["lng"]) if c["title"] not in used]
@@ -187,7 +197,8 @@ for rec in todo:
         time.sleep(SLEEP)
         continue
     best = cands[0]
-    kb = 1 if DRY else save(best["url"], DEST / (name + ".webp"))
+    out = (STAGE / MODE / (name + ".webp")) if STAGE else (DEST / (name + ".webp"))
+    kb = 1 if DRY else save(best["url"], out)
     if not kb:
         failed.append(name)
         print("[--]  %-10s save rejected" % name)
@@ -202,12 +213,12 @@ for rec in todo:
         name, best["sc"], best["dist"] / 1000.0, "%dx%d" % (best["w"], best["h"]), best["title"][:58]))
     done += 1
     if not DRY and (done + skip) % 25 == 0:
-        PROV.write_text(json.dumps(prov, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+        PROV_OUT.write_text(json.dumps(prov, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
         print("     ..saved provenance at %d" % (done + skip))
     time.sleep(SLEEP)
 
 if not DRY:
-    PROV.write_text(json.dumps(prov, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    PROV_OUT.write_text(json.dumps(prov, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 print("\n%s: new=%d skip=%d failed=%d" % (MODE, done, skip, len(failed)))
 if failed:
     print("failed:", "、".join(failed[:50]))

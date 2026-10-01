@@ -11,12 +11,6 @@
   "title": "纽约中央公园:城市中的一片绿洲 🌳",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
- "五渔村": {
-  "url": "https://img1.baidu.com/it/u=2067586962,4035614109&fm=253&fmt=auto&app=120&f=JPEG?w=823&h=800",
-  "page": "mbd.baidu.com",
-  "title": "探索意大利五渔村的美丽风光 🌊🏞️",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
  "亚当峰": {
   "url": "https://img0.baidu.com/it/u=1789396453,494232949&fm=253&fmt=auto&app=138&f=JPEG?w=783&h=500",
   "page": "baike.baidu.com",
@@ -35,12 +29,6 @@
   "title": "克利珀顿岛(Île de clipperton)是一座位于东北太平洋的荒岛,为",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
- "凡尔赛宫": {
-  "url": "https://pic2.zhimg.com/v2-cd1432fedce277333bf09b73f5187071_r.jpg",
-  "page": "https://zhuanlan.zhihu.com/p/105006881",
-  "title": "法国凡尔赛宫【9】外景、正门、大理石庭院，北翼配殿-皇家小教堂【高清大图】 - 知乎",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
  "凯尔盖朗群岛": {
   "url": "https://img2.baidu.com/it/u=1055406757,1656727762&fm=253&fmt=auto&app=120&f=JPEG?w=608&h=456",
   "page": "baijiahao.baidu.com",
@@ -51,12 +39,6 @@
   "url": "https://img95.699pic.com/photo/50132/1317.jpg_wh860.jpg",
   "page": "https://699pic.com/tupian-501321317.html",
   "title": "法国巴黎凯旋门高清图片下载-正版图片501321317-摄图网",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "利伯维尔": {
-  "url": "https://img0.baidu.com/it/u=4208922114,1699059473&fm=253&fmt=auto&app=138&f=JPEG?w=745&h=500",
-  "page": "baijiahao.baidu.com",
-  "title": "加蓬利伯维尔:海边休闲",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "利雅得": {
@@ -71,24 +53,6 @@
   "title": "加拉加斯地铁,布加地铁,圣保罗地铁_大山谷图库",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
- "努库阿洛法": {
-  "url": "https://img2.baidu.com/it/u=568478710,65288051&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
-  "page": "hkg.agoda.com",
-  "title": "努库阿洛法",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "努美阿": {
-  "url": "https://img0.baidu.com/it/u=3245214420,3530822629&fm=253&fmt=auto&app=138&f=JPEG?w=837&h=500",
-  "page": "mbd.baidu.com",
-  "title": "新喀里多尼亚努美阿必游三大景点",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "华沙": {
-  "url": "https://img95.699pic.com/photo/50705/7958.jpg_wh860.jpg",
-  "page": "https://699pic.com/tupian-507057958.html",
-  "title": "波兰华沙城高清图片下载-正版图片507057958-摄图网",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
  "南塔拉瓦": {
   "url": "https://img1.baidu.com/it/u=1703715227,3094269496&fm=253&fmt=auto&app=138&f=JPEG?w=581&h=387",
   "page": "www.veer.com",
@@ -99,12 +63,6 @@
   "url": "https://cdn-cabinet.ua.news/uploads/images/afridi_wont_leave_sindh_without_karachi_1788721992111.webp?7821066",
   "page": "https://ua.news/cn/world/golovnii-ministr-khaiber-pakhtunkhvi-afridi-ne-zalishit-sind-bez-mitingu-v-karachi",
   "title": "阿夫里迪称不举行卡拉奇集会就不离开信德省 | UA.NEWS",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "卡普里岛": {
-  "url": "https://img2.baidu.com/it/u=714314985,3631507804&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=652",
-  "page": "mbd.baidu.com",
-  "title": "卡普里岛:蓝洞奇观与罗马皇帝的避暑胜地",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "吉布提市": {
@@ -129,18 +87,6 @@
   "url": "https://img2.baidu.com/it/u=2441971151,1174780148&fm=253&fmt=auto&app=120&f=JPEG?w=1153&h=500",
   "page": "www.sohu.com",
   "title": "圣多美投资入籍适配子女海外教育,规划指南",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "圣彼得堡": {
-  "url": "https://img95.699pic.com/photo/50343/6274.jpg_wh860.jpg",
-  "page": "https://699pic.com/tupian-503436274.html",
-  "title": "俄罗斯圣彼得堡Spilled高清图片下载-正版图片503436274-摄图网",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "圣米歇尔山": {
-  "url": "https://p6-bk.byteimg.com/tos-cn-i-mlhdmxsy5m/21be71d3aa904dc4a214854410c2ee59~tplv-mlhdmxsy5m-q75:0:0.image",
-  "page": "https://www.baike.com/wiki/圣米歇尔山",
-  "title": "圣米歇尔山 - 快懂百科",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "坎帕拉": {
@@ -197,12 +143,6 @@
   "title": "探索挪威:大西洋公路的自驾之旅🚗🌊",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
- "威尼斯": {
-  "url": "https://img95.699pic.com/photo/50264/1697.jpg_wh860.jpg",
-  "page": "https://699pic.com/tupian-502641697.html",
-  "title": "意大利威尼斯黄昏的大运河高清图片下载-正版图片502641697-摄图网",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
  "威尼斯运河": {
   "url": "https://img0.baidu.com/it/u=706929710,1222842591&fm=253&fmt=auto&app=120&f=JPEG?w=866&h=500",
   "page": "finance.sina.com.cn",
@@ -213,24 +153,6 @@
   "url": "https://dimg04.c-ctrip.com/images/100e1c000001d2vnf5C49_R_1000_500.jpg_.webp?proc=namelogo/d_5",
   "page": "https://www.wingontravel.com/discovery/scenic-beysehir-52958/scenic-urgup-9169/scenic-uchisar-246975/scenic-urgup-9169/scenic-ankara-castle-80372",
   "title": "【安卡拉城堡參觀攻略2026】門票優惠、開放時間及交通地址一覽 - 永安旅遊",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "屋久岛": {
-  "url": "https://img0.baidu.com/it/u=3639334017,2663629461&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=740",
-  "page": "mbd.baidu.com",
-  "title": "无车也能畅游屋久岛:徒步攻略与实用信息",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "巧克力山": {
-  "url": "https://img2.baidu.com/it/u=1407726599,1425035637&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1123",
-  "page": "mbd.baidu.com",
-  "title": "非常有趣的巧克力山,位于菲律宾,由1268个圆锥形小山丘组成,高度介于",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "巴拿山": {
-  "url": "https://img2.baidu.com/it/u=610599205,3293883070&fm=253&fmt=auto&app=138&f=JPEG?w=692&h=500",
-  "page": "mbd.baidu.com",
-  "title": "岘港巴拿山游玩攻略:必玩项目和实用小贴士",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "巴黎圣母院": {
@@ -255,12 +177,6 @@
   "url": "https://img95.699pic.com/photo/30374/8519.jpg_wh860.jpg",
   "page": "https://699pic.com/tupian-303748519.html",
   "title": "比利时布鲁塞尔美丽夏日的城市景观高清图片下载-正版图片303748519-摄图网",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "帕皮提": {
-  "url": "https://img2.baidu.com/it/u=3712305115,4074927656&fm=253&fmt=auto&app=138&f=JPEG?w=778&h=500",
-  "page": "mbd.baidu.com",
-  "title": "🌺 探索帕皮提:天堂般的体验 🌺",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "帝力": {
@@ -335,40 +251,16 @@
   "title": "east side gallery,作为柏林墙的遗址,虽然新年期间大部分地方都",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
- "梵蒂冈博物馆": {
-  "url": "https://bkimg.cdn.bcebos.com/pic/f7246b600c338744ebf8de7e3c43cef9d72a60590ad6?x-bce-process=image/format,f_auto",
-  "page": "https://baike.baidu.com/tashuo/browse/content?id=095968e1c9ddb3b823d6aa84",
-  "title": "梵蒂冈博物馆：西斯廷天顶画与它的作者_百科TA说",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
  "楠迪": {
   "url": "https://img0.baidu.com/it/u=3055003349,3717459580&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=652",
   "page": "mbd.baidu.com",
   "title": "斐济楠迪岛:美食,购物与惊喜体验",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
- "波士顿": {
-  "url": "https://img95.699pic.com/photo/50263/7170.jpg_wh860.jpg",
-  "page": "https://699pic.com/tupian-502637170.html",
-  "title": "波士顿马萨诸塞州美国波士顿公高清图片下载-正版图片502637170-摄图网",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
  "波多诺伏": {
   "url": "https://img1.baidu.com/it/u=2912702051,3660712504&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
   "page": "www.sohu.com",
   "title": "贝宁举办波多诺伏面具节",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "波西塔诺": {
-  "url": "https://img1.baidu.com/it/u=2742748213,1398440024&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=680",
-  "page": "mbd.baidu.com",
-  "title": "探索意大利南部迷人小镇波西塔诺",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "泰德火山": {
-  "url": "https://img2.baidu.com/it/u=1465860142,1289773653&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
-  "page": "m.dianping.com",
-  "title": "加纳利群岛之特内里芙岛泰德火山",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "泰晤士河": {
@@ -393,12 +285,6 @@
   "url": "https://shibuyacrossing.org/wp-content/uploads/2024/11/shibuya-crossing-tokyo-japan-night-view-1.jpeg",
   "page": "https://shibuyacrossing.org/empty/",
   "title": "Empty - Shibuya Crossing",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "火奴鲁鲁": {
-  "url": "https://img2.baidu.com/it/u=3609983621,846304852&fm=253&fmt=auto&app=138&f=JPEG?w=686&h=500",
-  "page": "mbd.baidu.com",
-  "title": "🌴火奴鲁鲁5日游,爱马仕购物攻略🛍️",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "特拉维夫": {
@@ -449,22 +335,10 @@
   "title": "科罗尔",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
- "科莫多岛": {
-  "url": "https://img1.baidu.com/it/u=2450904997,706732625&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
-  "page": "mbd.baidu.com",
-  "title": "🌊 科莫多岛粉色沙滩探秘之旅 🌊",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
  "科隆大教堂": {
   "url": "https://img95.699pic.com/photo/30085/4291.jpg_wh860.jpg",
   "page": "https://699pic.com/tupian-300854291.html",
   "title": "科隆大教堂鸟瞰,科隆,德国高清图片下载-正版图片300854291-摄图网",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "米兰": {
-  "url": "https://img95.699pic.com/photo/50264/7950.jpg_wh860.jpg",
-  "page": "https://699pic.com/tupian-502647950.html",
-  "title": "米兰意大利米兰的城市景象在日出时高清图片下载-正版图片502647950-摄图网",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "米兰大教堂": {
@@ -477,18 +351,6 @@
   "url": "https://img2.baidu.com/it/u=4079161954,1687515016&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
   "page": "chiletravelofficial.cn",
   "title": "关于复活节岛和胡安·费尔南德斯群岛的一千零一问_自然风光_精彩体验",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "苏黎世": {
-  "url": "https://a.cdn-hotels.com/gdcs/production127/d484/b9ca99c3-b15e-48ab-a3cb-983186637256.jpg",
-  "page": "https://www.hotels.com/go/switzerland/things-to-do-zurich",
-  "title": "10 Best Things to Do in Zurich - What is Zurich Most Famous For? – Go ",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "菲茨罗伊峰": {
-  "url": "https://img0.baidu.com/it/u=4002405608,888051911&fm=253&fmt=auto&app=138&f=JPEG?w=677&h=500",
-  "page": "mbd.baidu.com",
-  "title": "大巴车上如何拍到菲茨罗伊峰的美景?",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "蒙罗维亚": {
@@ -533,12 +395,6 @@
   "title": "p>赫德岛和麦克唐纳群岛(英语:heard island and mcdonald islands",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
- "达卡": {
-  "url": "https://img95.699pic.com/photo/50391/1083.jpg_wh860.jpg",
-  "page": "https://699pic.com/tupian-503911083.html",
-  "title": "LalbaghFort孟加拉国达卡的PariBibi高清图片下载-正版图片503911083-摄图网",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
  "迪戈加西亚": {
   "url": "https://img1.baidu.com/it/u=1341173601,2361036663&fm=253&fmt=auto&app=120&f=JPEG?w=646&h=500",
   "page": "finance.sina.com.cn",
@@ -549,18 +405,6 @@
   "url": "https://img2.baidu.com/it/u=2001576055,2570004762&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=666",
   "page": "baijiahao.baidu.com",
   "title": "加纳首都\"阿克拉\",一座西非现代化大城市",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "阿姆斯特丹运河": {
-  "url": "https://img1.baidu.com/it/u=3180028403,541322389&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889",
-  "page": "www.jj20.com",
-  "title": "阿姆斯特丹运河",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "阿皮亚": {
-  "url": "https://img0.baidu.com/it/u=2693366826,1223561403&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
-  "page": "mbd.baidu.com",
-  "title": "阿皮亚",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "马代": {
@@ -575,16 +419,28 @@
   "title": "赤道几内亚首都马拉博掠影",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
+ "努库阿洛法": {
+  "url": "https://img2.baidu.com/it/u=568478710,65288051&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+  "page": "hkg.agoda.com",
+  "title": "努库阿洛法",
+  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
+ },
+ "波士顿": {
+  "url": "https://img95.699pic.com/photo/50263/7170.jpg_wh860.jpg",
+  "page": "https://699pic.com/tupian-502637170.html",
+  "title": "波士顿马萨诸塞州美国波士顿公高清图片下载-正版图片502637170-摄图网",
+  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
+ },
+ "苏黎世": {
+  "url": "https://a.cdn-hotels.com/gdcs/production127/d484/b9ca99c3-b15e-48ab-a3cb-983186637256.jpg",
+  "page": "https://www.hotels.com/go/switzerland/things-to-do-zurich",
+  "title": "10 Best Things to Do in Zurich - What is Zurich Most Famous For? – Go ",
+  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
+ },
  "马朱罗": {
   "url": "https://img2.baidu.com/it/u=2522989135,1344734467&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
   "page": "mbd.baidu.com",
   "title": "马朱罗环礁🌊50公里人文自然全攻略",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
- },
- "龙达": {
-  "url": "https://img0.baidu.com/it/u=4028167196,1076217239&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=611",
-  "page": "mbd.baidu.com",
-  "title": "龙达:从悬崖到街角的浪漫之旅",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  }
 }

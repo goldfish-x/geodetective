@@ -1,417 +1,594 @@
 [
-  {
-    "name": "首尔",
-    "difficulty": 2,
-    "prompt": "首尔N首尔塔夜景，汉江与城市灯火璀璨，写实摄影风格"
-  },
-  {
-    "name": "柏林",
-    "difficulty": 2,
-    "prompt": "柏林勃兰登堡门，历史建筑与蓝天，城市街头，写实摄影风格"
-  },
-  {
-    "name": "洛杉矶",
-    "difficulty": 2,
-    "prompt": "洛杉矶好莱坞标志与山景，棕榈树街道，夕阳金光，写实摄影"
-  },
-  {
-    "name": "吉隆坡",
-    "difficulty": 2,
-    "prompt": "吉隆坡双子塔夜景，摩天楼灯光，城市天际线，写实摄影"
-  },
-  {
-    "name": "大阪",
-    "difficulty": 2,
-    "prompt": "大阪城天守阁与樱花，护城河倒影，蓝天白云，写实摄影"
-  },
-  {
-    "name": "台北",
-    "difficulty": 2,
-    "prompt": "台北101大楼夜景，城市灯火与山脉轮廓，写实摄影风格"
-  },
-  {
-    "name": "德黑兰",
-    "difficulty": 2,
-    "prompt": "德黑兰城市街景与雪山背景，厄尔布尔士山脉，写实摄影"
-  },
-  {
-    "name": "马尼拉",
-    "difficulty": 2,
-    "prompt": "马尼拉湾日落，西班牙王城墙与椰树，写实摄影风格"
-  },
-  {
-    "name": "雅典",
-    "difficulty": 2,
-    "prompt": "雅典卫城帕特农神庙，古老石柱与城市远景，日落，写实摄影"
-  },
-  {
-    "name": "哥本哈根",
-    "difficulty": 2,
-    "prompt": "哥本哈根新港彩色房屋与运河，游船桅杆，晴朗天色，写实摄影"
-  },
-  {
-    "name": "斯德哥尔摩",
-    "difficulty": 2,
-    "prompt": "斯德哥尔摩老城与岛屿海湾，红顶建筑，黄昏光线，写实摄影"
-  },
-  {
-    "name": "布达佩斯",
-    "difficulty": 2,
-    "prompt": "布达佩斯国会大厦夜景，多瑙河与链子桥，灯光璀璨，写实摄影"
-  },
-  {
-    "name": "都柏林",
-    "difficulty": 2,
-    "prompt": "都柏林圣三一学院与街景，乔治亚建筑，写实摄影风格"
-  },
-  {
-    "name": "华盛顿",
-    "difficulty": 2,
-    "prompt": "华盛顿国会大厦与国家广场，樱花盛开，蓝天，写实摄影"
-  },
-  {
-    "name": "蒙特利尔",
-    "difficulty": 2,
-    "prompt": "蒙特利尔老城与圣母大教堂，马车与石板路，写实摄影"
-  },
-  {
-    "name": "西雅图",
-    "difficulty": 2,
-    "prompt": "西雅图太空针塔与城市天际线，普吉特海湾，写实摄影"
-  },
-  {
-    "name": "圣地亚哥",
-    "difficulty": 2,
-    "prompt": "圣地亚哥城市与安第斯雪山背景，街道建筑，写实摄影"
-  },
-  {
-    "name": "波哥大",
-    "difficulty": 2,
-    "prompt": "波哥大老城广场与教堂，高原城市街景，写实摄影"
-  },
-  {
-    "name": "亚的斯亚贝巴",
-    "difficulty": 2,
-    "prompt": "亚的斯亚贝巴城市街景，高原建筑与桉树，写实摄影风格"
-  },
-  {
-    "name": "达喀尔",
-    "difficulty": 2,
-    "prompt": "达喀尔海岸线与城市，大西洋浪花，西非风情，写实摄影"
-  },
-  {
-    "name": "达累斯萨拉姆",
-    "difficulty": 2,
-    "prompt": "达累斯萨拉姆港口与印度洋海岸，渔船椰林，写实摄影"
-  },
-  {
-    "name": "珀斯",
-    "difficulty": 2,
-    "prompt": "珀斯天鹅河与城市天际线，印度洋落日，写实摄影风格"
-  },
-  {
-    "name": "布里斯班",
-    "difficulty": 2,
-    "prompt": "布里斯班河与故事桥，南岸公园摩天轮，写实摄影风格"
-  },
-  {
-    "name": "埃菲尔铁塔",
-    "difficulty": 1,
-    "prompt": "巴黎埃菲尔铁塔夜景，暖黄灯光与星空，塞纳河畔，写实摄影"
-  },
-  {
-    "name": "自由女神像",
-    "difficulty": 1,
-    "prompt": "纽约自由女神像，哈德逊河口晨光，渡轮与海鸥，写实摄影"
-  },
-  {
-    "name": "吉萨金字塔",
-    "difficulty": 1,
-    "prompt": "埃及吉萨金字塔群，狮身人面像，沙漠落日余晖，写实摄影"
-  },
-  {
-    "name": "悉尼歌剧院",
-    "difficulty": 1,
-    "prompt": "悉尼歌剧院白色贝壳屋顶，海港大桥与蔚蓝海水，写实摄影"
-  },
-  {
-    "name": "富士山",
-    "difficulty": 1,
-    "prompt": "日本富士山雪顶，樱花与湖面倒影，清晨光线，写实摄影"
-  },
-  {
-    "name": "罗马斗兽场",
-    "difficulty": 1,
-    "prompt": "罗马斗兽场古老拱门，黄昏暖光与残垣，写实摄影风格"
-  },
-  {
-    "name": "莫斯科红场",
-    "difficulty": 1,
-    "prompt": "莫斯科红场圣瓦西里大教堂，彩色穹顶雪景，写实摄影"
-  },
-  {
-    "name": "泰姬陵",
-    "difficulty": 1,
-    "prompt": "印度泰姬陵白色大理石，水池倒影，晨曦柔光，写实摄影"
-  },
-  {
-    "name": "大本钟",
-    "difficulty": 1,
-    "prompt": "伦敦大本钟与议会大厦，泰晤士河暮色，红色巴士，写实摄影"
-  },
-  {
-    "name": "帕特农神庙",
-    "difficulty": 1,
-    "prompt": "雅典卫城帕特农神庙，大理石柱与蓝天，日落光线，写实摄影"
-  },
-  {
-    "name": "长城",
-    "difficulty": 1,
-    "prompt": "中国长城蜿蜒于群山，日出金光，云雾缭绕，写实摄影"
-  },
-  {
-    "name": "故宫",
-    "difficulty": 1,
-    "prompt": "北京故宫太和殿，红墙金瓦与石阶，蓝天白云，写实摄影"
-  },
-  {
-    "name": "兵马俑",
-    "difficulty": 1,
-    "prompt": "西安兵马俑军阵坑，陶俑列队，暖色灯光，写实摄影风格"
-  },
-  {
-    "name": "哈利法塔",
-    "difficulty": 1,
-    "prompt": "迪拜哈利法塔高耸入云，城市天际线与喷泉，日落，写实摄影"
-  },
-  {
-    "name": "珠穆朗玛峰",
-    "difficulty": 1,
-    "prompt": "珠穆朗玛峰雪峰金顶，云海日出，喜马拉雅山脉，写实摄影"
-  },
-  {
-    "name": "滨海湾金沙",
-    "difficulty": 1,
-    "prompt": "新加坡滨海湾金沙空中花园，无边泳池夜景，城市灯火，写实摄影"
-  },
-  {
-    "name": "巨石阵",
-    "difficulty": 1,
-    "prompt": "英国巨石阵史前石柱，夕阳逆光与草原，写实摄影风格"
-  },
-  {
-    "name": "圣家堂",
-    "difficulty": 1,
-    "prompt": "巴塞罗那圣家堂尖塔，雕塑立面与蓝天，写实摄影风格"
-  },
-  {
-    "name": "勃兰登堡门",
-    "difficulty": 1,
-    "prompt": "柏林勃兰登堡门，石柱与女神战车雕像，黄昏光线，写实摄影"
-  },
-  {
-    "name": "卢浮宫",
-    "difficulty": 1,
-    "prompt": "巴黎卢浮宫玻璃金字塔，夜晚灯光与喷泉，写实摄影风格"
-  },
-  {
-    "name": "圣彼得大教堂",
-    "difficulty": 1,
-    "prompt": "梵蒂冈圣彼得大教堂穹顶，广场柱廊，暮色灯光，写实摄影"
-  },
-  {
-    "name": "黄石国家公园",
-    "difficulty": 1,
-    "prompt": "美国黄石公园老忠实间歇泉喷发，蒸汽与彩虹，写实摄影"
-  },
-  {
-    "name": "帝国大厦",
-    "difficulty": 1,
-    "prompt": "纽约帝国大厦夜景，曼哈顿灯火璀璨，写实摄影风格"
-  },
-  {
-    "name": "金门大桥",
-    "difficulty": 1,
-    "prompt": "旧金山金门大桥，红色桥身与海雾，落日余晖，写实摄影"
-  },
-  {
-    "name": "好莱坞",
-    "difficulty": 1,
-    "prompt": "洛杉矶好莱坞标志牌，山景与棕榈树，日落金光，写实摄影"
-  },
-  {
-    "name": "里约基督像",
-    "difficulty": 1,
-    "prompt": "里约基督像张开双臂，俯瞰海湾与城市，日落，写实摄影"
-  },
-  {
-    "name": "糖面包山",
-    "difficulty": 1,
-    "prompt": "里约糖面包山缆车，海湾日落与城市剪影，写实摄影"
-  },
-  {
-    "name": "塞伦盖蒂",
-    "difficulty": 1,
-    "prompt": "塞伦盖蒂草原动物大迁徙，角马群与金合欢树，写实摄影"
-  },
-  {
-    "name": "好望角",
-    "difficulty": 1,
-    "prompt": "南非好望角海角崖壁，灯塔与惊涛骇浪，写实摄影"
-  },
-  {
-    "name": "乌鲁鲁",
-    "difficulty": 1,
-    "prompt": "澳大利亚乌鲁鲁红色巨石，日落变幻色彩，荒漠星空，写实摄影"
-  },
-  {
-    "name": "马丘比丘",
-    "difficulty": 2,
-    "prompt": "秘鲁马丘比丘古城遗址，云雾山脊与梯田，写实摄影"
-  },
-  {
-    "name": "吴哥窟",
-    "difficulty": 2,
-    "prompt": "柬埔寨吴哥窟宝塔倒影，护城河日出，写实摄影风格"
-  },
-  {
-    "name": "复活节岛",
-    "difficulty": 2,
-    "prompt": "复活节岛摩艾石像，海边剪影与星空，写实摄影风格"
-  },
-  {
-    "name": "尼亚加拉瀑布",
-    "difficulty": 2,
-    "prompt": "尼亚加拉瀑布马蹄形水幕，水雾与彩虹，写实摄影风格"
-  },
-  {
-    "name": "大堡礁",
-    "difficulty": 2,
-    "prompt": "澳大利亚大堡礁心形礁，碧蓝海水与珊瑚礁，航拍，写实摄影"
-  },
-  {
-    "name": "乞力马扎罗山",
-    "difficulty": 2,
-    "prompt": "乞力马扎罗山雪峰，非洲草原与象群前景，日出，写实摄影"
-  },
-  {
-    "name": "圣托里尼",
-    "difficulty": 2,
-    "prompt": "圣托里尼蓝顶教堂与白墙，爱琴海日落，写实摄影风格"
-  },
-  {
-    "name": "科罗拉多大峡谷",
-    "difficulty": 2,
-    "prompt": "美国科罗拉多大峡谷，红色岩层与科罗拉多河，日落，写实摄影"
-  },
-  {
-    "name": "京都金阁寺",
-    "difficulty": 2,
-    "prompt": "京都金阁寺金色楼阁倒映镜湖池，雪景，写实摄影"
-  },
-  {
-    "name": "伊瓜苏瀑布",
-    "difficulty": 2,
-    "prompt": "阿根廷伊瓜苏瀑布群全景，水雾彩虹，热带雨林，写实摄影"
-  },
-  {
-    "name": "东京塔",
-    "difficulty": 2,
-    "prompt": "东京塔红白塔身夜景，城市灯火，写实摄影"
-  },
-  {
-    "name": "巴厘岛",
-    "difficulty": 2,
-    "prompt": "巴厘岛海神庙日落，寺庙建在海上岩石，写实摄影"
-  },
-  {
-    "name": "济州岛",
-    "difficulty": 2,
-    "prompt": "济州岛城山日出峰，绿色火山丘与蔚蓝大海，写实摄影"
-  },
-  {
-    "name": "下龙湾",
-    "difficulty": 2,
-    "prompt": "越南下龙湾，碧海上千座石灰岩山峰，木船，写实摄影"
-  },
-  {
-    "name": "莫高窟",
-    "difficulty": 2,
-    "prompt": "敦煌莫高窟石窟壁画，飞天乐舞，暖色调艺术摄影"
-  },
-  {
-    "name": "张家界",
-    "difficulty": 2,
-    "prompt": "张家界砂岩峰林云雾缭绕，绿色石柱群，写实摄影"
-  },
-  {
-    "name": "新天鹅堡",
-    "difficulty": 2,
-    "prompt": "德国新天鹅堡，白色城堡矗立山间，秋色森林，写实摄影"
-  },
-  {
-    "name": "阿尔罕布拉宫",
-    "difficulty": 2,
-    "prompt": "西班牙阿尔罕布拉宫拱廊庭院，摩尔式雕花，写实摄影"
-  },
-  {
-    "name": "庞贝古城",
-    "difficulty": 2,
-    "prompt": "庞贝古城遗址街道，维苏威火山远景，写实摄影"
-  },
-  {
-    "name": "白金汉宫",
-    "difficulty": 2,
-    "prompt": "白金汉宫正面广场，卫兵换岗仪式，写实摄影"
-  },
-  {
-    "name": "拉什莫尔山",
-    "difficulty": 2,
-    "prompt": "拉什莫尔山四位总统雕像，花岗岩山体，写实摄影"
-  },
-  {
-    "name": "优胜美地",
-    "difficulty": 2,
-    "prompt": "优胜美地山谷，半圆顶岩壁与瀑布，写实摄影"
-  },
-  {
-    "name": "班夫",
-    "difficulty": 2,
-    "prompt": "班夫路易斯湖，绿宝石色湖水与雪山倒影，写实摄影"
-  },
-  {
-    "name": "的的喀喀湖",
-    "difficulty": 2,
-    "prompt": "的的喀喀湖香蒲草浮岛，乌鲁斯人小舟，蓝天湖水，写实摄影"
-  },
-  {
-    "name": "科帕卡巴纳海滩",
-    "difficulty": 2,
-    "prompt": "里约科帕卡巴纳海滩，白色沙滩椰树海浪，写实摄影"
-  },
-  {
-    "name": "卢克索神庙",
-    "difficulty": 2,
-    "prompt": "卢克索神庙石柱大厅，古埃及浮雕与灯光，写实摄影"
-  },
-  {
-    "name": "桑给巴尔岛",
-    "difficulty": 2,
-    "prompt": "桑给巴尔石头城，阿拉伯风格木门老街，写实摄影"
-  },
-  {
-    "name": "桌山",
-    "difficulty": 2,
-    "prompt": "开普敦桌山平顶山体，云雾缭绕，俯瞰城市海湾，写实摄影"
-  },
-  {
-    "name": "十二门徒岩",
-    "difficulty": 2,
-    "prompt": "十二门徒岩海岸岩柱，南大洋波涛，日落，写实摄影"
-  },
-  {
-    "name": "米尔福德峡湾",
-    "difficulty": 2,
-    "prompt": "米尔福德峡湾，陡峭山崖与瀑布，游船，写实摄影"
-  }
+ {
+  "name": "万象",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": 17.97,
+  "lng": 102.6,
+  "hint": "亚洲"
+ },
+ {
+  "name": "中央公园",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 40.79,
+  "lng": -73.97,
+  "hint": "北美洲"
+ },
+ {
+  "name": "亚当峰",
+  "bucket": "scenics",
+  "difficulty": 4,
+  "lat": 6.8,
+  "lng": 80.55,
+  "hint": "亚洲"
+ },
+ {
+  "name": "伦敦塔桥",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 51.51,
+  "lng": -0.07,
+  "hint": "欧洲"
+ },
+ {
+  "name": "克利珀顿岛",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": 10.3,
+  "lng": -109.22,
+  "hint": "北美洲"
+ },
+ {
+  "name": "凯尔盖朗群岛",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": -49.2,
+  "lng": 70.23,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "凯旋门",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 48.87,
+  "lng": 2.3,
+  "hint": "欧洲"
+ },
+ {
+  "name": "利雅得",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": 24.72,
+  "lng": 46.72,
+  "hint": "亚洲"
+ },
+ {
+  "name": "加拉加斯",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": 10.49,
+  "lng": -66.88,
+  "hint": "南美洲"
+ },
+ {
+  "name": "努库阿洛法",
+  "bucket": "cities",
+  "difficulty": 5,
+  "lat": -21.14,
+  "lng": -175.2,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "南塔拉瓦",
+  "bucket": "cities",
+  "difficulty": 5,
+  "lat": 1.35,
+  "lng": 173.04,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "卡拉奇",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": 24.86,
+  "lng": 67.01,
+  "hint": "亚洲"
+ },
+ {
+  "name": "吉布提市",
+  "bucket": "cities",
+  "difficulty": 4,
+  "lat": 11.56,
+  "lng": 43.11,
+  "hint": "非洲"
+ },
+ {
+  "name": "因特拉肯",
+  "bucket": "scenics",
+  "difficulty": 3,
+  "lat": 46.69,
+  "lng": 7.86,
+  "hint": "欧洲"
+ },
+ {
+  "name": "图卜卡勒峰",
+  "bucket": "scenics",
+  "difficulty": 4,
+  "lat": 31.06,
+  "lng": -7.92,
+  "hint": "非洲"
+ },
+ {
+  "name": "圣多美",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": 0.34,
+  "lng": 6.73,
+  "hint": "非洲"
+ },
+ {
+  "name": "坎帕拉",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": 0.32,
+  "lng": 32.58,
+  "hint": "非洲"
+ },
+ {
+  "name": "埃特纳火山",
+  "bucket": "scenics",
+  "difficulty": 4,
+  "lat": 37.75,
+  "lng": 14.97,
+  "hint": "欧洲"
+ },
+ {
+  "name": "埃里温",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": 40.18,
+  "lng": 44.51,
+  "hint": "亚洲"
+ },
+ {
+  "name": "塔科塔斯",
+  "bucket": "cities",
+  "difficulty": 5,
+  "lat": -40.85,
+  "lng": 172.8,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "塔西拉克",
+  "bucket": "scenics",
+  "difficulty": 4,
+  "lat": 65.61,
+  "lng": -37.64,
+  "hint": "欧洲"
+ },
+ {
+  "name": "塞维利亚大教堂",
+  "bucket": "scenics",
+  "difficulty": 3,
+  "lat": 37.39,
+  "lng": -5.99,
+  "hint": "欧洲"
+ },
+ {
+  "name": "多洛米蒂",
+  "bucket": "scenics",
+  "difficulty": 3,
+  "lat": 46.3,
+  "lng": 12.05,
+  "hint": "欧洲"
+ },
+ {
+  "name": "大英博物馆",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 51.52,
+  "lng": -0.13,
+  "hint": "欧洲"
+ },
+ {
+  "name": "大西洋公路",
+  "bucket": "scenics",
+  "difficulty": 4,
+  "lat": 62.74,
+  "lng": 6.97,
+  "hint": "欧洲"
+ },
+ {
+  "name": "威尼斯运河",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 45.44,
+  "lng": 12.34,
+  "hint": "欧洲"
+ },
+ {
+  "name": "安卡拉",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": 39.92,
+  "lng": 32.85,
+  "hint": "亚洲"
+ },
+ {
+  "name": "巴黎圣母院",
+  "bucket": "scenics",
+  "difficulty": 2,
+  "lat": 48.85,
+  "lng": 2.35,
+  "hint": "欧洲"
+ },
+ {
+  "name": "布拉格查理大桥",
+  "bucket": "scenics",
+  "difficulty": 2,
+  "lat": 50.09,
+  "lng": 14.41,
+  "hint": "欧洲"
+ },
+ {
+  "name": "布达佩斯国会大厦",
+  "bucket": "scenics",
+  "difficulty": 2,
+  "lat": 47.51,
+  "lng": 19.05,
+  "hint": "欧洲"
+ },
+ {
+  "name": "布鲁塞尔",
+  "bucket": "cities",
+  "difficulty": 1,
+  "lat": 50.85,
+  "lng": 4.35,
+  "hint": "欧洲"
+ },
+ {
+  "name": "帝力",
+  "bucket": "cities",
+  "difficulty": 4,
+  "lat": -8.56,
+  "lng": 125.57,
+  "hint": "亚洲"
+ },
+ {
+  "name": "弗里敦",
+  "bucket": "cities",
+  "difficulty": 4,
+  "lat": 8.49,
+  "lng": -13.24,
+  "hint": "非洲"
+ },
+ {
+  "name": "德吉玛广场",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 31.63,
+  "lng": -7.99,
+  "hint": "非洲"
+ },
+ {
+  "name": "德班",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": -29.86,
+  "lng": 31.03,
+  "hint": "非洲"
+ },
+ {
+  "name": "恩德伯里岛",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": -50.5,
+  "lng": 166.29,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "慕尼黑",
+  "bucket": "cities",
+  "difficulty": 1,
+  "lat": 48.14,
+  "lng": 11.58,
+  "hint": "欧洲"
+ },
+ {
+  "name": "拉各斯",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": 6.45,
+  "lng": 3.4,
+  "hint": "非洲"
+ },
+ {
+  "name": "拉斯维加斯",
+  "bucket": "cities",
+  "difficulty": 1,
+  "lat": 36.18,
+  "lng": -115.14,
+  "hint": "北美洲"
+ },
+ {
+  "name": "斯奈山半岛",
+  "bucket": "scenics",
+  "difficulty": 4,
+  "lat": 64.95,
+  "lng": -23.43,
+  "hint": "欧洲"
+ },
+ {
+  "name": "日内瓦",
+  "bucket": "cities",
+  "difficulty": 1,
+  "lat": 46.24,
+  "lng": 6.11,
+  "hint": "欧洲"
+ },
+ {
+  "name": "朱巴",
+  "bucket": "cities",
+  "difficulty": 4,
+  "lat": 4.85,
+  "lng": 31.58,
+  "hint": "非洲"
+ },
+ {
+  "name": "柏林墙遗址",
+  "bucket": "scenics",
+  "difficulty": 2,
+  "lat": 52.51,
+  "lng": 13.44,
+  "hint": "欧洲"
+ },
+ {
+  "name": "楠迪",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": -17.8,
+  "lng": 177.42,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "波士顿",
+  "bucket": "cities",
+  "difficulty": 1,
+  "lat": 42.36,
+  "lng": -71.06,
+  "hint": "北美洲"
+ },
+ {
+  "name": "波多诺伏",
+  "bucket": "cities",
+  "difficulty": 4,
+  "lat": 6.5,
+  "lng": 2.6,
+  "hint": "非洲"
+ },
+ {
+  "name": "泰晤士河",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 51.51,
+  "lng": -0.12,
+  "hint": "欧洲"
+ },
+ {
+  "name": "洛美",
+  "bucket": "cities",
+  "difficulty": 4,
+  "lat": 6.13,
+  "lng": 1.22,
+  "hint": "非洲"
+ },
+ {
+  "name": "浅草寺",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 35.72,
+  "lng": 139.8,
+  "hint": "亚洲"
+ },
+ {
+  "name": "涩谷十字路口",
+  "bucket": "scenics",
+  "difficulty": 1,
+  "lat": 35.66,
+  "lng": 139.7,
+  "hint": "亚洲"
+ },
+ {
+  "name": "特拉维夫",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": 32.08,
+  "lng": 34.78,
+  "hint": "亚洲"
+ },
+ {
+  "name": "特里斯坦-达库尼亚",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": -37.07,
+  "lng": -12.31,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "白川乡",
+  "bucket": "scenics",
+  "difficulty": 3,
+  "lat": 36.26,
+  "lng": 136.87,
+  "hint": "亚洲"
+ },
+ {
+  "name": "的黎波里",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": 32.89,
+  "lng": 13.19,
+  "hint": "非洲"
+ },
+ {
+  "name": "皮特凯恩岛",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": -25.07,
+  "lng": -130.1,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "科伦坡",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": 6.94,
+  "lng": 79.85,
+  "hint": "亚洲"
+ },
+ {
+  "name": "科纳克里",
+  "bucket": "cities",
+  "difficulty": 4,
+  "lat": 9.54,
+  "lng": -13.68,
+  "hint": "非洲"
+ },
+ {
+  "name": "科罗尔",
+  "bucket": "cities",
+  "difficulty": 5,
+  "lat": 7.34,
+  "lng": 134.47,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "科隆大教堂",
+  "bucket": "scenics",
+  "difficulty": 2,
+  "lat": 50.94,
+  "lng": 6.96,
+  "hint": "欧洲"
+ },
+ {
+  "name": "米兰大教堂",
+  "bucket": "scenics",
+  "difficulty": 2,
+  "lat": 45.46,
+  "lng": 9.19,
+  "hint": "欧洲"
+ },
+ {
+  "name": "胡安·费尔南德斯群岛",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": -33.67,
+  "lng": -78.88,
+  "hint": "南美洲"
+ },
+ {
+  "name": "苏黎世",
+  "bucket": "cities",
+  "difficulty": 1,
+  "lat": 47.37,
+  "lng": 8.55,
+  "hint": "欧洲"
+ },
+ {
+  "name": "蒙罗维亚",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": 6.3,
+  "lng": -10.8,
+  "hint": "非洲"
+ },
+ {
+  "name": "蓝色清真寺",
+  "bucket": "scenics",
+  "difficulty": 2,
+  "lat": 41.01,
+  "lng": 28.98,
+  "hint": "亚洲"
+ },
+ {
+  "name": "豪兰岛",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": 0.81,
+  "lng": -176.62,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "贝克岛",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": 0.2,
+  "lng": -176.48,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "贝鲁特",
+  "bucket": "cities",
+  "difficulty": 2,
+  "lat": 33.89,
+  "lng": 35.5,
+  "hint": "亚洲"
+ },
+ {
+  "name": "贾卢伊特",
+  "bucket": "cities",
+  "difficulty": 5,
+  "lat": 5.95,
+  "lng": 169.43,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "赫德岛",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": -53.08,
+  "lng": 73.53,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "迪戈加西亚",
+  "bucket": "scenics",
+  "difficulty": 5,
+  "lat": -7.31,
+  "lng": 72.41,
+  "hint": "非洲"
+ },
+ {
+  "name": "阿克拉",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": 5.56,
+  "lng": -0.2,
+  "hint": "非洲"
+ },
+ {
+  "name": "马代",
+  "bucket": "cities",
+  "difficulty": 5,
+  "lat": 4.18,
+  "lng": 73.51,
+  "hint": "大洋洲"
+ },
+ {
+  "name": "马拉博",
+  "bucket": "cities",
+  "difficulty": 3,
+  "lat": 3.76,
+  "lng": 8.78,
+  "hint": "非洲"
+ },
+ {
+  "name": "马朱罗",
+  "bucket": "cities",
+  "difficulty": 5,
+  "lat": 7.09,
+  "lng": 171.38,
+  "hint": "大洋洲"
+ }
 ]

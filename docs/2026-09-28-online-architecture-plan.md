@@ -201,7 +201,7 @@ POST /v1/pay/:provider/callback                                   → 验签 →
 | 微信登录/支付需企业主体 | 个人开发者卡死 | 尽早注册个体工商户/公司；过渡用手机号验证码登录 |
 | 服务端判分引入延迟感 | 手感变差 | 揭晓动画本地先播占位、结果回填；判分目标 < 80ms |
 | 双端公式漂移 | 榜不公 | shared 包 + 契约测试（同一输入双端同输出） |
-| **200 张扩池配图为网络检索图，授权未核验** | 付费上线即构成侵权风险 | 收费前按 `scripts/<mode>-image-web-provenance.json` 逐条替换为 CC 真拍（开代理跑 `scripts/fetch_geo_images.py`）或自有拍摄 |
+| **剩余 149 张扩池配图仍为网络检索图，授权未核验** | 付费上线即构成侵权风险 | 已换掉 48 张；收费前按 `scripts/<mode>-image-web-provenance.json` 逐条替换：开代理跑 `GD_REPLACE=1 GD_STAGE=_ccstage python scripts/fetch_geo_images.py <mode> 9000` 取候选，Qwen-VL 核验后再提升，或改自有拍摄 |
 
 ---
 
