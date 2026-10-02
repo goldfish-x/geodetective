@@ -22,10 +22,14 @@ for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
         for lv in range(1, 6):
             cnt = sum(1 for q in items if q["difficulty"] == lv)
             assert cnt == 40, f"{bank_name}.{kind} 难度{lv} 数量 {cnt} != 40"
+        with open(rf"{ROOT}\web\src\data\{bank_name}-coords.json", encoding="utf-8") as f:
+            coords = json.load(f)
         for q in items:
             assert q["hint"] in hints, f"{bank_name}.{kind} 非法 hint: {q['hint']}"
-            assert isinstance(q["lat"], (int, float)) and -90 <= q["lat"] <= 90
-            assert isinstance(q["lng"], (int, float)) and -180 <= q["lng"] <= 180
+            assert "lat" not in q and "lng" not in q, f"{bank_name}.{kind} 题库不应内嵌坐标: {q['name']}"
+            c = coords.get(q["name"])
+            assert isinstance(c, list) and len(c) == 3, f"{q['name']} 缺坐标/归属"
+            assert -90 <= c[0] <= 90 and -180 <= c[1] <= 180, f"{q['name']} 坐标越界: {c}"
     print(f"[题库] {bank_name}: 共 {len(bank['cities']) + len(bank['scenics'])} 题 ✓")
 
 # ———— 2. 浏览器验证 ————
@@ -62,10 +66,11 @@ with sync_playwright() as p:
     assert info["qTypesOk"], "局内题目类型/难度与关卡配置不符"
     print(f"[结构] 10局×8题，门槛 {info['mins']} ✓")
 
-    # 使用线索道具（验证道具可用 + 本局标记 used）
-    page.click("#prop-hint")
+    # 使用疆域透镜（三档 1 次）：横幅出现、角标归零、按钮转 used
+    assert page.locator('[data-prop="area"] .prop-n').inner_text() == "1"
+    page.click('[data-prop="area"]')
     page.wait_for_selector("#hint-banner:not(.hidden)", timeout=3000)
-    assert "used" in page.locator("#prop-hint").get_attribute("class"), "道具未标记 used"
+    assert "used" in page.locator('[data-prop="area"]').get_attribute("class"), "道具未标记 used"
 
     # 快速作答前 7 题（点地图中心 → 确认 → 点「下一题」）
     box = page.locator("#map-holder").bounding_box()
@@ -105,9 +110,11 @@ with sync_playwright() as p:
     assert page.locator("#q-diff").inner_text() == "★☆☆☆☆"
     assert page.locator("#q-target").inner_text() == "9,000"
     assert page.locator("#q-stage-score").inner_text() == "0"
-    assert "used" not in page.locator("#prop-hint").get_attribute("class"), "道具未按局重置"
+    # 道具为整局按档位发放：跨局不重置，透镜仍为 used、加时仍剩 3 次
+    assert "used" in page.locator('[data-prop="area"]').get_attribute("class"), "透镜次数不应跨局恢复"
+    assert page.locator('[data-prop="time"] .prop-n').inner_text() == "3", "加时次数不应跨局变化"
     assert "danger" not in page.locator("#q-stage-wrap").get_attribute("class")
-    print("[晋级] 第1局达标 → 第2局（景点·简单·门槛9000），道具已重置 ✓")
+    print("[晋级] 第1局达标 → 第2局（景点·简单·门槛9000），道具为整局计数 ✓")
     page.screenshot(path=str(ROOT / "tests" / "gd_stage2.png"))
 
     # —— 2b. 门槛中止路径（第1局全部超时 → 0 分中止） ——

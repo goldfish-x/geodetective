@@ -1,406 +1,2006 @@
 {
-  "cities": [
-    { "name": "北京", "lat": 39.90, "lng": 116.41, "difficulty": 1, "hint": "华北地区" },
-    { "name": "上海", "lat": 31.23, "lng": 121.47, "difficulty": 1, "hint": "华东地区" },
-    { "name": "广州", "lat": 23.13, "lng": 113.26, "difficulty": 1, "hint": "华南地区" },
-    { "name": "深圳", "lat": 22.54, "lng": 114.06, "difficulty": 1, "hint": "华南地区" },
-    { "name": "成都", "lat": 30.57, "lng": 104.07, "difficulty": 1, "hint": "西南地区" },
-    { "name": "杭州", "lat": 30.27, "lng": 120.16, "difficulty": 1, "hint": "华东地区" },
-    { "name": "西安", "lat": 34.34, "lng": 108.94, "difficulty": 1, "hint": "西北地区" },
-    { "name": "重庆", "lat": 29.56, "lng": 106.55, "difficulty": 1, "hint": "西南地区" },
-    { "name": "天津", "lat": 39.08, "lng": 117.20, "difficulty": 1, "hint": "华北地区" },
-    { "name": "武汉", "lat": 30.59, "lng": 114.31, "difficulty": 1, "hint": "华中地区" },
-    { "name": "石家庄", "lat": 38.04, "lng": 114.51, "difficulty": 1, "hint": "华北地区" },
-    { "name": "太原", "lat": 37.87, "lng": 112.55, "difficulty": 1, "hint": "华北地区" },
-    { "name": "呼和浩特", "lat": 40.84, "lng": 111.75, "difficulty": 1, "hint": "华北地区" },
-    { "name": "沈阳", "lat": 41.80, "lng": 123.43, "difficulty": 1, "hint": "东北地区" },
-    { "name": "长春", "lat": 43.88, "lng": 125.32, "difficulty": 1, "hint": "东北地区" },
-    { "name": "大连", "lat": 38.91, "lng": 121.61, "difficulty": 1, "hint": "东北地区" },
-    { "name": "台北", "lat": 25.03, "lng": 121.57, "difficulty": 1, "hint": "华东地区" },
-    { "name": "济南", "lat": 36.65, "lng": 117.12, "difficulty": 1, "hint": "华东地区" },
-    { "name": "合肥", "lat": 31.82, "lng": 117.23, "difficulty": 1, "hint": "华东地区" },
-    { "name": "福州", "lat": 26.07, "lng": 119.30, "difficulty": 1, "hint": "华东地区" },
-    { "name": "南昌", "lat": 28.68, "lng": 115.86, "difficulty": 1, "hint": "华东地区" },
-    { "name": "苏州", "lat": 31.30, "lng": 120.58, "difficulty": 1, "hint": "华东地区" },
-    { "name": "南宁", "lat": 22.82, "lng": 108.32, "difficulty": 1, "hint": "华南地区" },
-    { "name": "海口", "lat": 20.04, "lng": 110.32, "difficulty": 1, "hint": "华南地区" },
-    { "name": "三亚", "lat": 18.25, "lng": 109.51, "difficulty": 1, "hint": "华南地区" },
-    { "name": "香港", "lat": 22.30, "lng": 114.17, "difficulty": 1, "hint": "华南地区" },
-    { "name": "澳门", "lat": 22.19, "lng": 113.54, "difficulty": 1, "hint": "华南地区" },
-    { "name": "贵阳", "lat": 26.65, "lng": 106.63, "difficulty": 1, "hint": "西南地区" },
-    { "name": "西宁", "lat": 36.62, "lng": 101.78, "difficulty": 1, "hint": "西北地区" },
-    { "name": "银川", "lat": 38.49, "lng": 106.23, "difficulty": 1, "hint": "西北地区" },
-    { "name": "哈尔滨", "lat": 45.80, "lng": 126.53, "difficulty": 2, "hint": "东北地区" },
-    { "name": "乌鲁木齐", "lat": 43.83, "lng": 87.62, "difficulty": 2, "hint": "西北地区" },
-    { "name": "拉萨", "lat": 29.65, "lng": 91.14, "difficulty": 2, "hint": "西南地区" },
-    { "name": "昆明", "lat": 24.88, "lng": 102.83, "difficulty": 2, "hint": "西南地区" },
-    { "name": "兰州", "lat": 36.06, "lng": 103.83, "difficulty": 2, "hint": "西北地区" },
-    { "name": "青岛", "lat": 36.07, "lng": 120.38, "difficulty": 2, "hint": "华东地区" },
-    { "name": "长沙", "lat": 28.23, "lng": 112.94, "difficulty": 2, "hint": "华中地区" },
-    { "name": "厦门", "lat": 24.48, "lng": 118.09, "difficulty": 2, "hint": "华东地区" },
-    { "name": "南京", "lat": 32.06, "lng": 118.80, "difficulty": 2, "hint": "华东地区" },
-    { "name": "郑州", "lat": 34.75, "lng": 113.63, "difficulty": 2, "hint": "华中地区" },
-    { "name": "唐山", "lat": 39.63, "lng": 118.18, "difficulty": 2, "hint": "华北地区" },
-    { "name": "大同", "lat": 40.08, "lng": 113.30, "difficulty": 2, "hint": "华北地区" },
-    { "name": "包头", "lat": 40.66, "lng": 109.84, "difficulty": 2, "hint": "华北地区" },
-    { "name": "吉林市", "lat": 43.84, "lng": 126.55, "difficulty": 2, "hint": "东北地区" },
-    { "name": "大庆", "lat": 46.59, "lng": 125.10, "difficulty": 2, "hint": "东北地区" },
-    { "name": "烟台", "lat": 37.46, "lng": 121.44, "difficulty": 2, "hint": "华东地区" },
-    { "name": "扬州", "lat": 32.39, "lng": 119.41, "difficulty": 2, "hint": "华东地区" },
-    { "name": "温州", "lat": 27.99, "lng": 120.70, "difficulty": 2, "hint": "华东地区" },
-    { "name": "宁波", "lat": 29.87, "lng": 121.55, "difficulty": 2, "hint": "华东地区" },
-    { "name": "宜昌", "lat": 30.69, "lng": 111.29, "difficulty": 2, "hint": "华中地区" },
-    { "name": "南阳", "lat": 32.99, "lng": 112.53, "difficulty": 2, "hint": "华中地区" },
-    { "name": "荆州", "lat": 30.33, "lng": 112.24, "difficulty": 2, "hint": "华中地区" },
-    { "name": "佛山", "lat": 23.02, "lng": 113.12, "difficulty": 2, "hint": "华南地区" },
-    { "name": "东莞", "lat": 23.02, "lng": 113.75, "difficulty": 2, "hint": "华南地区" },
-    { "name": "汕头", "lat": 23.35, "lng": 116.68, "difficulty": 2, "hint": "华南地区" },
-    { "name": "绵阳", "lat": 31.47, "lng": 104.68, "difficulty": 2, "hint": "西南地区" },
-    { "name": "乐山", "lat": 29.55, "lng": 103.77, "difficulty": 2, "hint": "西南地区" },
-    { "name": "咸阳", "lat": 34.34, "lng": 108.71, "difficulty": 2, "hint": "西北地区" },
-    { "name": "延安", "lat": 36.59, "lng": 109.49, "difficulty": 2, "hint": "西北地区" },
-    { "name": "克拉玛依", "lat": 45.58, "lng": 84.89, "difficulty": 2, "hint": "西北地区" },
-    { "name": "喀什", "lat": 39.47, "lng": 75.99, "difficulty": 3, "hint": "西北地区" },
-    { "name": "大理", "lat": 25.61, "lng": 100.27, "difficulty": 3, "hint": "西南地区" },
-    { "name": "漠河", "lat": 52.97, "lng": 122.54, "difficulty": 3, "hint": "东北地区" },
-    { "name": "景德镇", "lat": 29.27, "lng": 117.18, "difficulty": 3, "hint": "华东地区" },
-    { "name": "满洲里", "lat": 49.60, "lng": 117.38, "difficulty": 3, "hint": "华北地区" },
-    { "name": "延吉", "lat": 42.89, "lng": 129.51, "difficulty": 3, "hint": "东北地区" },
-    { "name": "吐鲁番", "lat": 42.95, "lng": 90.57, "difficulty": 3, "hint": "西北地区" },
-    { "name": "遵义", "lat": 27.73, "lng": 106.93, "difficulty": 3, "hint": "西南地区" },
-    { "name": "洛阳", "lat": 34.62, "lng": 112.45, "difficulty": 3, "hint": "华中地区" },
-    { "name": "桂林", "lat": 25.28, "lng": 110.29, "difficulty": 3, "hint": "华南地区" },
-    { "name": "赤峰", "lat": 42.26, "lng": 118.89, "difficulty": 3, "hint": "华北地区" },
-    { "name": "通辽", "lat": 43.65, "lng": 122.26, "difficulty": 3, "hint": "华北地区" },
-    { "name": "牡丹江", "lat": 44.55, "lng": 129.63, "difficulty": 3, "hint": "东北地区" },
-    { "name": "丹东", "lat": 40.13, "lng": 124.38, "difficulty": 3, "hint": "东北地区" },
-    { "name": "徐州", "lat": 34.26, "lng": 117.19, "difficulty": 3, "hint": "华东地区" },
-    { "name": "淮安", "lat": 33.61, "lng": 119.02, "difficulty": 3, "hint": "华东地区" },
-    { "name": "芜湖", "lat": 31.35, "lng": 118.43, "difficulty": 3, "hint": "华东地区" },
-    { "name": "赣州", "lat": 25.83, "lng": 114.93, "difficulty": 3, "hint": "华东地区" },
-    { "name": "临沂", "lat": 35.10, "lng": 118.36, "difficulty": 3, "hint": "华东地区" },
-    { "name": "株洲", "lat": 27.83, "lng": 113.13, "difficulty": 3, "hint": "华中地区" },
-    { "name": "衡阳", "lat": 26.89, "lng": 112.57, "difficulty": 3, "hint": "华中地区" },
-    { "name": "信阳", "lat": 32.15, "lng": 114.09, "difficulty": 3, "hint": "华中地区" },
-    { "name": "柳州", "lat": 24.33, "lng": 109.42, "difficulty": 3, "hint": "华南地区" },
-    { "name": "湛江", "lat": 21.27, "lng": 110.36, "difficulty": 3, "hint": "华南地区" },
-    { "name": "北海", "lat": 21.48, "lng": 109.12, "difficulty": 3, "hint": "华南地区" },
-    { "name": "南充", "lat": 30.84, "lng": 106.08, "difficulty": 3, "hint": "西南地区" },
-    { "name": "曲靖", "lat": 25.49, "lng": 103.80, "difficulty": 3, "hint": "西南地区" },
-    { "name": "天水", "lat": 34.58, "lng": 105.72, "difficulty": 3, "hint": "西北地区" },
-    { "name": "伊宁", "lat": 43.92, "lng": 81.28, "difficulty": 3, "hint": "西北地区" },
-    { "name": "哈密", "lat": 42.83, "lng": 93.51, "difficulty": 3, "hint": "西北地区" },
-    { "name": "敦煌", "lat": 40.14, "lng": 94.66, "difficulty": 4, "hint": "西北地区" },
-    { "name": "阿勒泰", "lat": 47.84, "lng": 88.14, "difficulty": 4, "hint": "西北地区" },
-    { "name": "康定", "lat": 30.06, "lng": 101.96, "difficulty": 4, "hint": "西南地区" },
-    { "name": "泉州", "lat": 24.87, "lng": 118.68, "difficulty": 4, "hint": "华东地区" },
-    { "name": "襄阳", "lat": 32.01, "lng": 112.12, "difficulty": 4, "hint": "华中地区" },
-    { "name": "张掖", "lat": 38.93, "lng": 100.45, "difficulty": 4, "hint": "西北地区" },
-    { "name": "防城港", "lat": 21.69, "lng": 108.35, "difficulty": 4, "hint": "华南地区" },
-    { "name": "佳木斯", "lat": 46.80, "lng": 130.32, "difficulty": 4, "hint": "东北地区" },
-    { "name": "格尔木", "lat": 36.40, "lng": 94.90, "difficulty": 4, "hint": "西北地区" },
-    { "name": "保山", "lat": 25.11, "lng": 99.16, "difficulty": 4, "hint": "西南地区" },
-    { "name": "乌兰察布", "lat": 40.99, "lng": 113.13, "difficulty": 4, "hint": "华北地区" },
-    { "name": "巴彦淖尔", "lat": 40.74, "lng": 107.42, "difficulty": 4, "hint": "华北地区" },
-    { "name": "忻州", "lat": 38.42, "lng": 112.73, "difficulty": 4, "hint": "华北地区" },
-    { "name": "通化", "lat": 41.73, "lng": 125.94, "difficulty": 4, "hint": "东北地区" },
-    { "name": "黑河", "lat": 50.25, "lng": 127.53, "difficulty": 4, "hint": "东北地区" },
-    { "name": "丽水", "lat": 28.45, "lng": 119.92, "difficulty": 4, "hint": "华东地区" },
-    { "name": "衢州", "lat": 28.97, "lng": 118.87, "difficulty": 4, "hint": "华东地区" },
-    { "name": "池州", "lat": 30.66, "lng": 117.49, "difficulty": 4, "hint": "华东地区" },
-    { "name": "三明", "lat": 26.26, "lng": 117.64, "difficulty": 4, "hint": "华东地区" },
-    { "name": "十堰", "lat": 32.63, "lng": 110.80, "difficulty": 4, "hint": "华中地区" },
-    { "name": "怀化", "lat": 27.95, "lng": 110.00, "difficulty": 4, "hint": "华中地区" },
-    { "name": "商丘", "lat": 34.41, "lng": 115.66, "difficulty": 4, "hint": "华中地区" },
-    { "name": "百色", "lat": 23.90, "lng": 106.62, "difficulty": 4, "hint": "华南地区" },
-    { "name": "河池", "lat": 24.69, "lng": 108.09, "difficulty": 4, "hint": "华南地区" },
-    { "name": "钦州", "lat": 21.98, "lng": 108.65, "difficulty": 4, "hint": "华南地区" },
-    { "name": "昭通", "lat": 27.34, "lng": 103.72, "difficulty": 4, "hint": "西南地区" },
-    { "name": "安顺", "lat": 26.25, "lng": 105.93, "difficulty": 4, "hint": "西南地区" },
-    { "name": "中卫", "lat": 37.50, "lng": 105.20, "difficulty": 4, "hint": "西北地区" },
-    { "name": "固原", "lat": 36.00, "lng": 106.24, "difficulty": 4, "hint": "西北地区" },
-    { "name": "酒泉", "lat": 39.74, "lng": 98.49, "difficulty": 4, "hint": "西北地区" },
-    { "name": "和田", "lat": 37.11, "lng": 79.92, "difficulty": 5, "hint": "西北地区" },
-    { "name": "那曲", "lat": 31.48, "lng": 92.06, "difficulty": 5, "hint": "西南地区" },
-    { "name": "马尔康", "lat": 31.91, "lng": 102.21, "difficulty": 5, "hint": "西南地区" },
-    { "name": "塔城", "lat": 46.75, "lng": 82.98, "difficulty": 5, "hint": "西北地区" },
-    { "name": "阿尔山", "lat": 47.32, "lng": 119.95, "difficulty": 5, "hint": "华北地区" },
-    { "name": "二连浩特", "lat": 43.65, "lng": 111.98, "difficulty": 5, "hint": "华北地区" },
-    { "name": "抚远", "lat": 48.34, "lng": 134.29, "difficulty": 5, "hint": "东北地区" },
-    { "name": "库尔勒", "lat": 41.76, "lng": 86.15, "difficulty": 5, "hint": "西北地区" },
-    { "name": "日喀则", "lat": 29.27, "lng": 88.88, "difficulty": 5, "hint": "西南地区" },
-    { "name": "三沙", "lat": 16.83, "lng": 112.34, "difficulty": 5, "hint": "华南地区" },
-    { "name": "锡林浩特", "lat": 43.93, "lng": 116.07, "difficulty": 5, "hint": "华北地区" },
-    { "name": "乌兰浩特", "lat": 46.07, "lng": 122.06, "difficulty": 5, "hint": "华北地区" },
-    { "name": "霍林郭勒", "lat": 45.53, "lng": 119.66, "difficulty": 5, "hint": "华北地区" },
-    { "name": "绥芬河", "lat": 44.39, "lng": 131.15, "difficulty": 5, "hint": "东北地区" },
-    { "name": "珲春", "lat": 42.86, "lng": 130.37, "difficulty": 5, "hint": "东北地区" },
-    { "name": "龙泉", "lat": 28.08, "lng": 119.14, "difficulty": 5, "hint": "华东地区" },
-    { "name": "德兴", "lat": 28.96, "lng": 117.58, "difficulty": 5, "hint": "华东地区" },
-    { "name": "石狮", "lat": 24.73, "lng": 118.65, "difficulty": 5, "hint": "华东地区" },
-    { "name": "武夷山", "lat": 27.76, "lng": 118.03, "difficulty": 5, "hint": "华东地区" },
-    { "name": "天门", "lat": 30.66, "lng": 113.17, "difficulty": 5, "hint": "华中地区" },
-    { "name": "潜江", "lat": 30.40, "lng": 112.90, "difficulty": 5, "hint": "华中地区" },
-    { "name": "冷水江", "lat": 27.69, "lng": 111.42, "difficulty": 5, "hint": "华中地区" },
-    { "name": "凭祥", "lat": 22.11, "lng": 106.76, "difficulty": 5, "hint": "华南地区" },
-    { "name": "东兴", "lat": 21.54, "lng": 107.97, "difficulty": 5, "hint": "华南地区" },
-    { "name": "琼海", "lat": 19.26, "lng": 110.48, "difficulty": 5, "hint": "华南地区" },
-    { "name": "墨脱", "lat": 29.33, "lng": 95.33, "difficulty": 5, "hint": "西南地区" },
-    { "name": "芒市", "lat": 24.43, "lng": 98.59, "difficulty": 5, "hint": "西南地区" },
-    { "name": "若羌", "lat": 38.15, "lng": 87.87, "difficulty": 5, "hint": "西北地区" },
-    { "name": "塔什库尔干", "lat": 37.77, "lng": 75.23, "difficulty": 5, "hint": "西北地区" },
-    { "name": "阿拉尔", "lat": 40.54, "lng": 81.28, "difficulty": 5, "hint": "西北地区" },
-    { "name": "无锡", "lat": 31.57, "lng": 120.29, "difficulty": 1, "hint": "华东地区" },
-    { "name": "南通", "lat": 32.03, "lng": 120.88, "difficulty": 1, "hint": "华东地区" },
-    { "name": "绍兴", "lat": 30.00, "lng": 120.61, "difficulty": 1, "hint": "华东地区" },
-    { "name": "嘉兴", "lat": 30.75, "lng": 120.75, "difficulty": 1, "hint": "华东地区" },
-    { "name": "义乌", "lat": 29.32, "lng": 120.08, "difficulty": 1, "hint": "华东地区" },
-    { "name": "昆山", "lat": 31.39, "lng": 120.98, "difficulty": 1, "hint": "华东地区" },
-    { "name": "珠海", "lat": 22.27, "lng": 113.57, "difficulty": 1, "hint": "华南地区" },
-    { "name": "秦皇岛", "lat": 39.94, "lng": 119.59, "difficulty": 1, "hint": "华北地区" },
-    { "name": "泰安", "lat": 36.20, "lng": 117.08, "difficulty": 1, "hint": "华北地区" },
-    { "name": "威海", "lat": 37.51, "lng": 122.11, "difficulty": 1, "hint": "华东地区" },
-    { "name": "潍坊", "lat": 36.71, "lng": 119.10, "difficulty": 2, "hint": "华东地区" },
-    { "name": "淄博", "lat": 36.79, "lng": 118.06, "difficulty": 2, "hint": "华东地区" },
-    { "name": "济宁", "lat": 35.41, "lng": 116.58, "difficulty": 2, "hint": "华东地区" },
-    { "name": "保定", "lat": 38.86, "lng": 115.49, "difficulty": 2, "hint": "华北地区" },
-    { "name": "廊坊", "lat": 39.51, "lng": 116.70, "difficulty": 2, "hint": "华北地区" },
-    { "name": "沧州", "lat": 38.30, "lng": 116.85, "difficulty": 2, "hint": "华北地区" },
-    { "name": "邯郸", "lat": 36.61, "lng": 114.49, "difficulty": 2, "hint": "华北地区" },
-    { "name": "张家口", "lat": 40.78, "lng": 114.87, "difficulty": 2, "hint": "华北地区" },
-    { "name": "临汾", "lat": 36.09, "lng": 111.52, "difficulty": 2, "hint": "华北地区" },
-    { "name": "运城", "lat": 35.03, "lng": 110.99, "difficulty": 2, "hint": "华北地区" },
-    { "name": "鄂尔多斯", "lat": 39.61, "lng": 109.78, "difficulty": 3, "hint": "华北地区" },
-    { "name": "乌海", "lat": 39.71, "lng": 106.79, "difficulty": 3, "hint": "华北地区" },
-    { "name": "四平", "lat": 43.17, "lng": 124.37, "difficulty": 3, "hint": "东北地区" },
-    { "name": "松原", "lat": 45.11, "lng": 124.81, "difficulty": 3, "hint": "东北地区" },
-    { "name": "鞍山", "lat": 41.11, "lng": 122.99, "difficulty": 3, "hint": "东北地区" },
-    { "name": "抚顺", "lat": 41.89, "lng": 123.91, "difficulty": 3, "hint": "东北地区" },
-    { "name": "锦州", "lat": 41.11, "lng": 121.12, "difficulty": 3, "hint": "东北地区" },
-    { "name": "营口", "lat": 40.67, "lng": 122.18, "difficulty": 3, "hint": "东北地区" },
-    { "name": "盘锦", "lat": 41.12, "lng": 122.07, "difficulty": 3, "hint": "东北地区" },
-    { "name": "香格里拉", "lat": 27.80, "lng": 99.70, "difficulty": 3, "hint": "西南地区" },
-    { "name": "长治", "lat": 36.18, "lng": 113.10, "difficulty": 4, "hint": "华北地区" },
-    { "name": "晋城", "lat": 35.50, "lng": 112.85, "difficulty": 4, "hint": "华北地区" },
-    { "name": "朔州", "lat": 39.32, "lng": 112.44, "difficulty": 4, "hint": "华北地区" },
-    { "name": "阳泉", "lat": 37.86, "lng": 113.59, "difficulty": 4, "hint": "华北地区" },
-    { "name": "承德", "lat": 40.96, "lng": 117.95, "difficulty": 4, "hint": "华北地区" },
-    { "name": "宿迁", "lat": 33.96, "lng": 118.27, "difficulty": 4, "hint": "华东地区" },
-    { "name": "泰州", "lat": 32.46, "lng": 119.92, "difficulty": 4, "hint": "华东地区" },
-    { "name": "镇江", "lat": 32.21, "lng": 119.46, "difficulty": 4, "hint": "华东地区" },
-    { "name": "潮州", "lat": 23.66, "lng": 116.62, "difficulty": 4, "hint": "华南地区" },
-    { "name": "揭阳", "lat": 23.55, "lng": 116.37, "difficulty": 4, "hint": "华南地区" },
-    { "name": "文昌", "lat": 19.55, "lng": 110.79, "difficulty": 5, "hint": "华南地区" },
-    { "name": "万宁", "lat": 18.80, "lng": 110.39, "difficulty": 5, "hint": "华南地区" },
-    { "name": "东方", "lat": 19.10, "lng": 108.65, "difficulty": 5, "hint": "华南地区" },
-    { "name": "五指山", "lat": 18.90, "lng": 109.71, "difficulty": 5, "hint": "华南地区" },
-    { "name": "乐东", "lat": 18.75, "lng": 109.17, "difficulty": 5, "hint": "华南地区" },
-    { "name": "昌江", "lat": 19.30, "lng": 109.05, "difficulty": 5, "hint": "华南地区" },
-    { "name": "腾冲", "lat": 25.03, "lng": 98.49, "difficulty": 5, "hint": "西南地区" },
-    { "name": "瑞丽", "lat": 24.00, "lng": 97.84, "difficulty": 5, "hint": "西南地区" },
-    { "name": "澜沧", "lat": 22.56, "lng": 99.93, "difficulty": 5, "hint": "西南地区" },
-    { "name": "阿拉山口", "lat": 45.17, "lng": 82.57, "difficulty": 5, "hint": "西北地区" }
-  ],
-  "scenics": [
-    { "name": "八达岭长城", "lat": 40.36, "lng": 116.02, "difficulty": 1, "hint": "华北地区" },
-    { "name": "故宫", "lat": 39.92, "lng": 116.40, "difficulty": 1, "hint": "华北地区" },
-    { "name": "杭州西湖", "lat": 30.24, "lng": 120.15, "difficulty": 1, "hint": "华东地区" },
-    { "name": "秦始皇兵马俑", "lat": 34.38, "lng": 109.28, "difficulty": 1, "hint": "西北地区" },
-    { "name": "桂林漓江", "lat": 25.27, "lng": 110.29, "difficulty": 1, "hint": "华南地区" },
-    { "name": "黄山", "lat": 30.13, "lng": 118.17, "difficulty": 1, "hint": "华东地区" },
-    { "name": "布达拉宫", "lat": 29.66, "lng": 91.12, "difficulty": 1, "hint": "西南地区" },
-    { "name": "泰山", "lat": 36.26, "lng": 117.10, "difficulty": 1, "hint": "华东地区" },
-    { "name": "张家界", "lat": 29.32, "lng": 110.43, "difficulty": 1, "hint": "华中地区" },
-    { "name": "九寨沟", "lat": 33.26, "lng": 103.92, "difficulty": 1, "hint": "西南地区" },
-    { "name": "颐和园", "lat": 39.99, "lng": 116.27, "difficulty": 1, "hint": "华北地区" },
-    { "name": "天坛", "lat": 39.88, "lng": 116.41, "difficulty": 1, "hint": "华北地区" },
-    { "name": "承德避暑山庄", "lat": 40.99, "lng": 117.94, "difficulty": 1, "hint": "华北地区" },
-    { "name": "云冈石窟", "lat": 40.11, "lng": 113.14, "difficulty": 1, "hint": "华北地区" },
-    { "name": "沈阳故宫", "lat": 41.80, "lng": 123.46, "difficulty": 1, "hint": "东北地区" },
-    { "name": "老虎滩海洋公园", "lat": 38.90, "lng": 121.68, "difficulty": 1, "hint": "东北地区" },
-    { "name": "拙政园", "lat": 31.32, "lng": 120.63, "difficulty": 1, "hint": "华东地区" },
-    { "name": "乌镇", "lat": 30.75, "lng": 120.49, "difficulty": 1, "hint": "华东地区" },
-    { "name": "外滩", "lat": 31.24, "lng": 121.49, "difficulty": 1, "hint": "华东地区" },
-    { "name": "普陀山", "lat": 30.00, "lng": 122.42, "difficulty": 1, "hint": "华东地区" },
-    { "name": "日月潭", "lat": 23.85, "lng": 120.91, "difficulty": 1, "hint": "华东地区" },
-    { "name": "少林寺", "lat": 34.51, "lng": 113.04, "difficulty": 1, "hint": "华中地区" },
-    { "name": "黄鹤楼", "lat": 30.54, "lng": 114.30, "difficulty": 1, "hint": "华中地区" },
-    { "name": "武当山", "lat": 32.40, "lng": 111.00, "difficulty": 1, "hint": "华中地区" },
-    { "name": "天涯海角", "lat": 18.24, "lng": 109.20, "difficulty": 1, "hint": "华南地区" },
-    { "name": "广州塔", "lat": 23.11, "lng": 113.32, "difficulty": 1, "hint": "华南地区" },
-    { "name": "亚龙湾", "lat": 18.19, "lng": 109.65, "difficulty": 1, "hint": "华南地区" },
-    { "name": "丽江古城", "lat": 26.87, "lng": 100.24, "difficulty": 1, "hint": "西南地区" },
-    { "name": "都江堰", "lat": 31.00, "lng": 103.62, "difficulty": 1, "hint": "西南地区" },
-    { "name": "鸣沙山月牙泉", "lat": 40.08, "lng": 94.67, "difficulty": 1, "hint": "西北地区" },
-    { "name": "敦煌莫高窟", "lat": 40.04, "lng": 94.81, "difficulty": 2, "hint": "西北地区" },
-    { "name": "乐山大佛", "lat": 29.54, "lng": 103.77, "difficulty": 2, "hint": "西南地区" },
-    { "name": "华山", "lat": 34.48, "lng": 110.09, "difficulty": 2, "hint": "西北地区" },
-    { "name": "西双版纳", "lat": 22.01, "lng": 100.80, "difficulty": 2, "hint": "西南地区" },
-    { "name": "峨眉山", "lat": 29.52, "lng": 103.33, "difficulty": 2, "hint": "西南地区" },
-    { "name": "庐山", "lat": 29.56, "lng": 115.98, "difficulty": 2, "hint": "华东地区" },
-    { "name": "洱海", "lat": 25.70, "lng": 100.18, "difficulty": 2, "hint": "西南地区" },
-    { "name": "鼓浪屿", "lat": 24.45, "lng": 118.07, "difficulty": 2, "hint": "华东地区" },
-    { "name": "青海湖", "lat": 36.88, "lng": 100.20, "difficulty": 2, "hint": "西北地区" },
-    { "name": "壶口瀑布", "lat": 36.15, "lng": 110.47, "difficulty": 2, "hint": "华中地区" },
-    { "name": "北戴河", "lat": 39.84, "lng": 119.45, "difficulty": 2, "hint": "华北地区" },
-    { "name": "平遥古城", "lat": 37.20, "lng": 112.18, "difficulty": 2, "hint": "华北地区" },
-    { "name": "五台山", "lat": 38.90, "lng": 113.57, "difficulty": 2, "hint": "华北地区" },
-    { "name": "镜泊湖", "lat": 43.73, "lng": 128.98, "difficulty": 2, "hint": "东北地区" },
-    { "name": "五大连池", "lat": 48.75, "lng": 126.15, "difficulty": 2, "hint": "东北地区" },
-    { "name": "千岛湖", "lat": 29.60, "lng": 119.03, "difficulty": 2, "hint": "华东地区" },
-    { "name": "崂山", "lat": 36.18, "lng": 120.60, "difficulty": 2, "hint": "华东地区" },
-    { "name": "婺源篁岭", "lat": 29.25, "lng": 117.86, "difficulty": 2, "hint": "华东地区" },
-    { "name": "中山陵", "lat": 32.06, "lng": 118.85, "difficulty": 2, "hint": "华东地区" },
-    { "name": "岳阳楼", "lat": 29.37, "lng": 113.10, "difficulty": 2, "hint": "华中地区" },
-    { "name": "天门山", "lat": 29.12, "lng": 110.48, "difficulty": 2, "hint": "华中地区" },
-    { "name": "神农架", "lat": 31.74, "lng": 110.68, "difficulty": 2, "hint": "华中地区" },
-    { "name": "龙门石窟", "lat": 34.56, "lng": 112.47, "difficulty": 2, "hint": "华中地区" },
-    { "name": "维多利亚港", "lat": 22.29, "lng": 114.17, "difficulty": 2, "hint": "华南地区" },
-    { "name": "世界之窗", "lat": 22.54, "lng": 113.97, "difficulty": 2, "hint": "华南地区" },
-    { "name": "三亚南山", "lat": 18.29, "lng": 108.58, "difficulty": 2, "hint": "华南地区" },
-    { "name": "青城山", "lat": 30.90, "lng": 103.61, "difficulty": 2, "hint": "西南地区" },
-    { "name": "黄果树瀑布", "lat": 26.03, "lng": 105.65, "difficulty": 2, "hint": "西南地区" },
-    { "name": "天山天池", "lat": 43.88, "lng": 88.13, "difficulty": 2, "hint": "西北地区" },
-    { "name": "沙坡头", "lat": 37.48, "lng": 105.01, "difficulty": 2, "hint": "西北地区" },
-    { "name": "稻城亚丁", "lat": 29.28, "lng": 100.13, "difficulty": 3, "hint": "西南地区" },
-    { "name": "喀纳斯湖", "lat": 48.72, "lng": 87.03, "difficulty": 3, "hint": "西北地区" },
-    { "name": "额济纳胡杨林", "lat": 41.96, "lng": 101.07, "difficulty": 3, "hint": "西北地区" },
-    { "name": "长白山天池", "lat": 42.01, "lng": 128.06, "difficulty": 3, "hint": "东北地区" },
-    { "name": "茶卡盐湖", "lat": 36.78, "lng": 99.08, "difficulty": 3, "hint": "西北地区" },
-    { "name": "恩施大峡谷", "lat": 30.73, "lng": 109.48, "difficulty": 3, "hint": "华中地区" },
-    { "name": "扎尕那", "lat": 34.31, "lng": 103.42, "difficulty": 3, "hint": "西北地区" },
-    { "name": "武功山", "lat": 27.46, "lng": 114.17, "difficulty": 3, "hint": "华中地区" },
-    { "name": "荔波小七孔", "lat": 25.27, "lng": 107.73, "difficulty": 3, "hint": "西南地区" },
-    { "name": "雨崩", "lat": 28.46, "lng": 98.82, "difficulty": 3, "hint": "西南地区" },
-    { "name": "悬空寺", "lat": 39.66, "lng": 113.73, "difficulty": 3, "hint": "华北地区" },
-    { "name": "乔家大院", "lat": 37.54, "lng": 112.45, "difficulty": 3, "hint": "华北地区" },
-    { "name": "白洋淀", "lat": 38.90, "lng": 115.99, "difficulty": 3, "hint": "华北地区" },
-    { "name": "乌兰布统草原", "lat": 42.40, "lng": 117.14, "difficulty": 3, "hint": "华北地区" },
-    { "name": "本溪水洞", "lat": 41.30, "lng": 124.08, "difficulty": 3, "hint": "东北地区" },
-    { "name": "千山", "lat": 41.10, "lng": 123.10, "difficulty": 3, "hint": "东北地区" },
-    { "name": "北极村", "lat": 53.48, "lng": 122.35, "difficulty": 3, "hint": "东北地区" },
-    { "name": "雁荡山", "lat": 28.36, "lng": 121.02, "difficulty": 3, "hint": "华东地区" },
-    { "name": "天柱山", "lat": 30.63, "lng": 116.47, "difficulty": 3, "hint": "华东地区" },
-    { "name": "三清山", "lat": 28.92, "lng": 118.06, "difficulty": 3, "hint": "华东地区" },
-    { "name": "阿里山", "lat": 23.52, "lng": 120.80, "difficulty": 3, "hint": "华东地区" },
-    { "name": "岳麓山", "lat": 28.18, "lng": 112.93, "difficulty": 3, "hint": "华中地区" },
-    { "name": "洞庭湖", "lat": 29.32, "lng": 112.96, "difficulty": 3, "hint": "华中地区" },
-    { "name": "衡山", "lat": 27.25, "lng": 112.72, "difficulty": 3, "hint": "华中地区" },
-    { "name": "云台山", "lat": 35.42, "lng": 113.38, "difficulty": 3, "hint": "华中地区" },
-    { "name": "涠洲岛", "lat": 21.04, "lng": 109.11, "difficulty": 3, "hint": "华南地区" },
-    { "name": "德天瀑布", "lat": 22.85, "lng": 106.73, "difficulty": 3, "hint": "华南地区" },
-    { "name": "开平碉楼", "lat": 22.32, "lng": 112.69, "difficulty": 3, "hint": "华南地区" },
-    { "name": "四姑娘山", "lat": 31.10, "lng": 102.90, "difficulty": 3, "hint": "西南地区" },
-    { "name": "火焰山", "lat": 42.93, "lng": 89.22, "difficulty": 3, "hint": "西北地区" },
-    { "name": "冈仁波齐", "lat": 31.05, "lng": 81.31, "difficulty": 4, "hint": "西南地区" },
-    { "name": "珠峰大本营", "lat": 28.15, "lng": 86.85, "difficulty": 4, "hint": "西南地区" },
-    { "name": "巴丹吉林沙漠", "lat": 39.60, "lng": 102.30, "difficulty": 4, "hint": "西北地区" },
-    { "name": "怒江第一湾", "lat": 28.02, "lng": 98.77, "difficulty": 4, "hint": "西南地区" },
-    { "name": "郎木寺", "lat": 34.08, "lng": 102.57, "difficulty": 4, "hint": "西北地区" },
-    { "name": "东川红土地", "lat": 25.50, "lng": 103.00, "difficulty": 4, "hint": "西南地区" },
-    { "name": "禾木村", "lat": 48.58, "lng": 87.42, "difficulty": 4, "hint": "西北地区" },
-    { "name": "靖边波浪谷", "lat": 37.40, "lng": 108.90, "difficulty": 4, "hint": "西北地区" },
-    { "name": "查干湖", "lat": 45.13, "lng": 124.31, "difficulty": 4, "hint": "东北地区" },
-    { "name": "喀拉峻草原", "lat": 43.00, "lng": 82.30, "difficulty": 4, "hint": "西北地区" },
-    { "name": "五当召", "lat": 40.78, "lng": 110.35, "difficulty": 4, "hint": "华北地区" },
-    { "name": "贺兰山岩画", "lat": 38.86, "lng": 105.99, "difficulty": 4, "hint": "华北地区" },
-    { "name": "乌梁素海", "lat": 40.90, "lng": 108.87, "difficulty": 4, "hint": "华北地区" },
-    { "name": "白石山", "lat": 39.38, "lng": 114.68, "difficulty": 4, "hint": "华北地区" },
-    { "name": "红海滩", "lat": 40.86, "lng": 121.82, "difficulty": 4, "hint": "东北地区" },
-    { "name": "防川", "lat": 42.60, "lng": 130.38, "difficulty": 4, "hint": "东北地区" },
-    { "name": "关门山", "lat": 41.10, "lng": 123.75, "difficulty": 4, "hint": "东北地区" },
-    { "name": "龙虎山", "lat": 28.05, "lng": 116.43, "difficulty": 4, "hint": "华东地区" },
-    { "name": "太姥山", "lat": 27.20, "lng": 120.17, "difficulty": 4, "hint": "华东地区" },
-    { "name": "霞浦北岐滩涂", "lat": 26.90, "lng": 120.01, "difficulty": 4, "hint": "华东地区" },
-    { "name": "绩溪龙川", "lat": 30.07, "lng": 118.60, "difficulty": 4, "hint": "华东地区" },
-    { "name": "屏山峡谷", "lat": 30.10, "lng": 109.66, "difficulty": 4, "hint": "华中地区" },
-    { "name": "东江湖", "lat": 26.28, "lng": 113.38, "difficulty": 4, "hint": "华中地区" },
-    { "name": "崀山", "lat": 26.36, "lng": 110.88, "difficulty": 4, "hint": "华中地区" },
-    { "name": "七百弄", "lat": 24.28, "lng": 107.73, "difficulty": 4, "hint": "华南地区" },
-    { "name": "鹅泉", "lat": 23.35, "lng": 106.55, "difficulty": 4, "hint": "华南地区" },
-    { "name": "明仕田园", "lat": 23.08, "lng": 106.77, "difficulty": 4, "hint": "华南地区" },
-    { "name": "牛背山", "lat": 29.78, "lng": 102.34, "difficulty": 4, "hint": "西南地区" },
-    { "name": "普者黑", "lat": 24.10, "lng": 104.42, "difficulty": 4, "hint": "西南地区" },
-    { "name": "江布拉克", "lat": 43.50, "lng": 89.43, "difficulty": 4, "hint": "西北地区" },
-    { "name": "扎达土林", "lat": 31.48, "lng": 79.80, "difficulty": 5, "hint": "西南地区" },
-    { "name": "艾肯泉", "lat": 37.90, "lng": 92.90, "difficulty": 5, "hint": "西北地区" },
-    { "name": "大柴旦翡翠湖", "lat": 37.80, "lng": 95.30, "difficulty": 5, "hint": "西北地区" },
-    { "name": "俄博梁雅丹", "lat": 38.20, "lng": 92.90, "difficulty": 5, "hint": "西北地区" },
-    { "name": "冷湖黑独山", "lat": 38.00, "lng": 93.40, "difficulty": 5, "hint": "西北地区" },
-    { "name": "帕米尔白沙山", "lat": 38.40, "lng": 74.60, "difficulty": 5, "hint": "西北地区" },
-    { "name": "达里诺尔湖", "lat": 43.30, "lng": 116.70, "difficulty": 5, "hint": "华北地区" },
-    { "name": "加榜梯田", "lat": 25.60, "lng": 108.30, "difficulty": 5, "hint": "西南地区" },
-    { "name": "安集海大峡谷", "lat": 44.20, "lng": 85.10, "difficulty": 5, "hint": "西北地区" },
-    { "name": "来古冰川", "lat": 29.30, "lng": 96.50, "difficulty": 5, "hint": "西南地区" },
-    { "name": "阿斯哈图石阵", "lat": 43.44, "lng": 117.54, "difficulty": 5, "hint": "华北地区" },
-    { "name": "乌兰哈达火山群", "lat": 41.30, "lng": 113.14, "difficulty": 5, "hint": "华北地区" },
-    { "name": "鸡鸣驿", "lat": 40.36, "lng": 115.42, "difficulty": 5, "hint": "华北地区" },
-    { "name": "黑瞎子岛", "lat": 48.36, "lng": 134.71, "difficulty": 5, "hint": "东北地区" },
-    { "name": "绿江村", "lat": 40.77, "lng": 125.00, "difficulty": 5, "hint": "东北地区" },
-    { "name": "嵊山无人村", "lat": 30.73, "lng": 122.82, "difficulty": 5, "hint": "华东地区" },
-    { "name": "呈坎", "lat": 29.92, "lng": 118.44, "difficulty": 5, "hint": "华东地区" },
-    { "name": "塔川", "lat": 29.98, "lng": 118.33, "difficulty": 5, "hint": "华东地区" },
-    { "name": "前童古镇", "lat": 29.29, "lng": 121.43, "difficulty": 5, "hint": "华东地区" },
-    { "name": "高椅岭", "lat": 25.87, "lng": 113.16, "difficulty": 5, "hint": "华中地区" },
-    { "name": "鹿院坪", "lat": 30.29, "lng": 109.49, "difficulty": 5, "hint": "华中地区" },
-    { "name": "黔阳古城", "lat": 27.32, "lng": 110.10, "difficulty": 5, "hint": "华中地区" },
-    { "name": "浩坤湖", "lat": 24.05, "lng": 107.19, "difficulty": 5, "hint": "华南地区" },
-    { "name": "尖峰岭", "lat": 18.68, "lng": 108.87, "difficulty": 5, "hint": "华南地区" },
-    { "name": "灯楼角", "lat": 20.21, "lng": 110.08, "difficulty": 5, "hint": "华南地区" },
-    { "name": "莺歌海盐场", "lat": 18.87, "lng": 108.73, "difficulty": 5, "hint": "华南地区" },
-    { "name": "坝美", "lat": 24.30, "lng": 105.25, "difficulty": 5, "hint": "西南地区" },
-    { "name": "尼汝村", "lat": 27.83, "lng": 99.72, "difficulty": 5, "hint": "西南地区" },
-    { "name": "罗布泊", "lat": 40.30, "lng": 90.60, "difficulty": 5, "hint": "西北地区" },
-    { "name": "大海道", "lat": 42.60, "lng": 91.90, "difficulty": 5, "hint": "西北地区" },
-    { "name": "慕田峪长城", "lat": 40.43, "lng": 116.56, "difficulty": 1, "hint": "华北地区" },
-    { "name": "恒山", "lat": 39.67, "lng": 113.73, "difficulty": 1, "hint": "华北地区" },
-    { "name": "应县木塔", "lat": 39.57, "lng": 113.18, "difficulty": 1, "hint": "华北地区" },
-    { "name": "鹳雀楼", "lat": 34.84, "lng": 110.27, "difficulty": 1, "hint": "华北地区" },
-    { "name": "清明上河园", "lat": 34.81, "lng": 114.33, "difficulty": 1, "hint": "华北地区" },
-    { "name": "嵩山", "lat": 34.47, "lng": 112.94, "difficulty": 1, "hint": "华中地区" },
-    { "name": "滕王阁", "lat": 28.68, "lng": 115.88, "difficulty": 1, "hint": "华中地区" },
-    { "name": "灵隐寺", "lat": 30.24, "lng": 120.10, "difficulty": 1, "hint": "华东地区" },
-    { "name": "雷峰塔", "lat": 30.23, "lng": 120.15, "difficulty": 1, "hint": "华东地区" },
-    { "name": "纳木错", "lat": 30.72, "lng": 90.59, "difficulty": 1, "hint": "西南地区" },
-    { "name": "凤凰古城", "lat": 27.95, "lng": 109.60, "difficulty": 2, "hint": "西南地区" },
-    { "name": "梵净山", "lat": 27.92, "lng": 108.69, "difficulty": 2, "hint": "西南地区" },
-    { "name": "普达措国家公园", "lat": 27.91, "lng": 99.90, "difficulty": 2, "hint": "西南地区" },
-    { "name": "老君山", "lat": 33.72, "lng": 111.64, "difficulty": 2, "hint": "华中地区" },
-    { "name": "可可托海", "lat": 47.19, "lng": 90.06, "difficulty": 2, "hint": "西北地区" },
-    { "name": "张掖七彩丹霞", "lat": 38.96, "lng": 100.43, "difficulty": 2, "hint": "西北地区" },
-    { "name": "独库公路", "lat": 43.14, "lng": 84.34, "difficulty": 2, "hint": "西北地区" },
-    { "name": "东极岛", "lat": 30.20, "lng": 122.68, "difficulty": 2, "hint": "华东地区" },
-    { "name": "扎龙湿地", "lat": 47.20, "lng": 124.30, "difficulty": 2, "hint": "东北地区" },
-    { "name": "微山湖", "lat": 34.83, "lng": 117.11, "difficulty": 2, "hint": "华东地区" },
-    { "name": "色达五明佛学院", "lat": 32.15, "lng": 100.47, "difficulty": 3, "hint": "西南地区" },
-    { "name": "甲居藏寨", "lat": 30.90, "lng": 101.88, "difficulty": 3, "hint": "西南地区" },
-    { "name": "达古冰川", "lat": 32.24, "lng": 102.86, "difficulty": 3, "hint": "西南地区" },
-    { "name": "毕棚沟", "lat": 31.32, "lng": 102.95, "difficulty": 3, "hint": "西南地区" },
-    { "name": "武隆天生三桥", "lat": 29.44, "lng": 107.80, "difficulty": 3, "hint": "西南地区" },
-    { "name": "金佛山", "lat": 29.03, "lng": 107.17, "difficulty": 3, "hint": "西南地区" },
-    { "name": "羊卓雍措", "lat": 28.98, "lng": 90.75, "difficulty": 3, "hint": "西南地区" },
-    { "name": "八里沟", "lat": 35.59, "lng": 113.54, "difficulty": 3, "hint": "华中地区" },
-    { "name": "壶瓶山", "lat": 29.94, "lng": 110.78, "difficulty": 3, "hint": "华中地区" },
-    { "name": "云丘山", "lat": 35.74, "lng": 111.03, "difficulty": 3, "hint": "华北地区" },
-    { "name": "萨普神山", "lat": 30.90, "lng": 93.79, "difficulty": 4, "hint": "西南地区" },
-    { "name": "冷嘎措", "lat": 29.64, "lng": 101.70, "difficulty": 4, "hint": "西南地区" },
-    { "name": "丙中洛", "lat": 28.04, "lng": 98.56, "difficulty": 4, "hint": "西南地区" },
-    { "name": "秋那桶", "lat": 28.11, "lng": 98.57, "difficulty": 4, "hint": "西南地区" },
-    { "name": "东台吉乃尔湖", "lat": 37.50, "lng": 93.95, "difficulty": 4, "hint": "西北地区" },
-    { "name": "乌素特水上雅丹", "lat": 37.62, "lng": 93.75, "difficulty": 4, "hint": "西北地区" },
-    { "name": "察尔汗盐湖", "lat": 36.86, "lng": 95.27, "difficulty": 4, "hint": "西北地区" },
-    { "name": "祁连山草原", "lat": 38.20, "lng": 100.30, "difficulty": 4, "hint": "西北地区" },
-    { "name": "扁都口", "lat": 38.25, "lng": 100.94, "difficulty": 4, "hint": "西北地区" },
-    { "name": "当金山", "lat": 39.19, "lng": 94.31, "difficulty": 4, "hint": "西北地区" },
-    { "name": "可可西里", "lat": 35.27, "lng": 93.19, "difficulty": 5, "hint": "西北地区" },
-    { "name": "羌塘", "lat": 34.00, "lng": 88.00, "difficulty": 5, "hint": "西北地区" },
-    { "name": "阿尔金山", "lat": 37.91, "lng": 87.39, "difficulty": 5, "hint": "西北地区" },
-    { "name": "扎陵湖", "lat": 34.92, "lng": 97.26, "difficulty": 5, "hint": "西北地区" },
-    { "name": "鄂陵湖", "lat": 34.94, "lng": 97.69, "difficulty": 5, "hint": "西北地区" },
-    { "name": "双湖", "lat": 33.19, "lng": 88.84, "difficulty": 5, "hint": "西北地区" },
-    { "name": "改则", "lat": 32.31, "lng": 84.06, "difficulty": 5, "hint": "西北地区" },
-    { "name": "尼玛", "lat": 31.79, "lng": 87.23, "difficulty": 5, "hint": "西北地区" },
-    { "name": "达里雅布依", "lat": 37.60, "lng": 81.40, "difficulty": 5, "hint": "西北地区" },
-    { "name": "瓦罕走廊", "lat": 37.22, "lng": 75.40, "difficulty": 5, "hint": "西北地区" }
-  ]
+ "cities": [
+  {
+   "name": "北京",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "上海",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "广州",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "深圳",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "成都",
+   "difficulty": 1,
+   "hint": "西南地区"
+  },
+  {
+   "name": "杭州",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "西安",
+   "difficulty": 1,
+   "hint": "西北地区"
+  },
+  {
+   "name": "重庆",
+   "difficulty": 1,
+   "hint": "西南地区"
+  },
+  {
+   "name": "天津",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "武汉",
+   "difficulty": 1,
+   "hint": "华中地区"
+  },
+  {
+   "name": "石家庄",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "太原",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "呼和浩特",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "沈阳",
+   "difficulty": 1,
+   "hint": "东北地区"
+  },
+  {
+   "name": "长春",
+   "difficulty": 1,
+   "hint": "东北地区"
+  },
+  {
+   "name": "大连",
+   "difficulty": 1,
+   "hint": "东北地区"
+  },
+  {
+   "name": "台北",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "济南",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "合肥",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "福州",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "南昌",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "苏州",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "南宁",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "海口",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "三亚",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "香港",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "澳门",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "贵阳",
+   "difficulty": 1,
+   "hint": "西南地区"
+  },
+  {
+   "name": "西宁",
+   "difficulty": 1,
+   "hint": "西北地区"
+  },
+  {
+   "name": "银川",
+   "difficulty": 1,
+   "hint": "西北地区"
+  },
+  {
+   "name": "哈尔滨",
+   "difficulty": 2,
+   "hint": "东北地区"
+  },
+  {
+   "name": "乌鲁木齐",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "拉萨",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "昆明",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "兰州",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "青岛",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "长沙",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "厦门",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "南京",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "郑州",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "唐山",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "大同",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "包头",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "吉林市",
+   "difficulty": 2,
+   "hint": "东北地区"
+  },
+  {
+   "name": "大庆",
+   "difficulty": 2,
+   "hint": "东北地区"
+  },
+  {
+   "name": "烟台",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "扬州",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "温州",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "宁波",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "宜昌",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "南阳",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "荆州",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "佛山",
+   "difficulty": 2,
+   "hint": "华南地区"
+  },
+  {
+   "name": "东莞",
+   "difficulty": 2,
+   "hint": "华南地区"
+  },
+  {
+   "name": "汕头",
+   "difficulty": 2,
+   "hint": "华南地区"
+  },
+  {
+   "name": "绵阳",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "乐山",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "咸阳",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "延安",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "克拉玛依",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "喀什",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "大理",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "漠河",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "景德镇",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "满洲里",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "延吉",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "吐鲁番",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "遵义",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "洛阳",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "桂林",
+   "difficulty": 3,
+   "hint": "华南地区"
+  },
+  {
+   "name": "赤峰",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "通辽",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "牡丹江",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "丹东",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "徐州",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "淮安",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "芜湖",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "赣州",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "临沂",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "株洲",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "衡阳",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "信阳",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "柳州",
+   "difficulty": 3,
+   "hint": "华南地区"
+  },
+  {
+   "name": "湛江",
+   "difficulty": 3,
+   "hint": "华南地区"
+  },
+  {
+   "name": "北海",
+   "difficulty": 3,
+   "hint": "华南地区"
+  },
+  {
+   "name": "南充",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "曲靖",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "天水",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "伊宁",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "哈密",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "敦煌",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "阿勒泰",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "康定",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "泉州",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "襄阳",
+   "difficulty": 4,
+   "hint": "华中地区"
+  },
+  {
+   "name": "张掖",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "防城港",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "佳木斯",
+   "difficulty": 4,
+   "hint": "东北地区"
+  },
+  {
+   "name": "格尔木",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "保山",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "乌兰察布",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "巴彦淖尔",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "忻州",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "通化",
+   "difficulty": 4,
+   "hint": "东北地区"
+  },
+  {
+   "name": "黑河",
+   "difficulty": 4,
+   "hint": "东北地区"
+  },
+  {
+   "name": "丽水",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "衢州",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "池州",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "三明",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "十堰",
+   "difficulty": 4,
+   "hint": "华中地区"
+  },
+  {
+   "name": "怀化",
+   "difficulty": 4,
+   "hint": "华中地区"
+  },
+  {
+   "name": "商丘",
+   "difficulty": 4,
+   "hint": "华中地区"
+  },
+  {
+   "name": "百色",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "河池",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "钦州",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "昭通",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "安顺",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "中卫",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "固原",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "酒泉",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "和田",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "那曲",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "马尔康",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "塔城",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "阿尔山",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "二连浩特",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "抚远",
+   "difficulty": 5,
+   "hint": "东北地区"
+  },
+  {
+   "name": "库尔勒",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "日喀则",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "三沙",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "锡林浩特",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "乌兰浩特",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "霍林郭勒",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "绥芬河",
+   "difficulty": 5,
+   "hint": "东北地区"
+  },
+  {
+   "name": "珲春",
+   "difficulty": 5,
+   "hint": "东北地区"
+  },
+  {
+   "name": "龙泉",
+   "difficulty": 5,
+   "hint": "华东地区"
+  },
+  {
+   "name": "德兴",
+   "difficulty": 5,
+   "hint": "华东地区"
+  },
+  {
+   "name": "石狮",
+   "difficulty": 5,
+   "hint": "华东地区"
+  },
+  {
+   "name": "武夷山",
+   "difficulty": 5,
+   "hint": "华东地区"
+  },
+  {
+   "name": "天门",
+   "difficulty": 5,
+   "hint": "华中地区"
+  },
+  {
+   "name": "潜江",
+   "difficulty": 5,
+   "hint": "华中地区"
+  },
+  {
+   "name": "冷水江",
+   "difficulty": 5,
+   "hint": "华中地区"
+  },
+  {
+   "name": "凭祥",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "东兴",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "琼海",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "墨脱",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "芒市",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "若羌",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "塔什库尔干",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "阿拉尔",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "无锡",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "南通",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "绍兴",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "嘉兴",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "义乌",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "昆山",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "珠海",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "秦皇岛",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "泰安",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "威海",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "潍坊",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "淄博",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "济宁",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "保定",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "廊坊",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "沧州",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "邯郸",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "张家口",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "临汾",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "运城",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "鄂尔多斯",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "乌海",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "四平",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "松原",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "鞍山",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "抚顺",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "锦州",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "营口",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "盘锦",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "香格里拉",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "长治",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "晋城",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "朔州",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "阳泉",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "承德",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "宿迁",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "泰州",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "镇江",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "潮州",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "揭阳",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "文昌",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "万宁",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "东方",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "五指山",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "乐东",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "昌江",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "腾冲",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "瑞丽",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "澜沧",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "阿拉山口",
+   "difficulty": 5,
+   "hint": "西北地区"
+  }
+ ],
+ "scenics": [
+  {
+   "name": "八达岭长城",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "故宫",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "杭州西湖",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "秦始皇兵马俑",
+   "difficulty": 1,
+   "hint": "西北地区"
+  },
+  {
+   "name": "桂林漓江",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "黄山",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "布达拉宫",
+   "difficulty": 1,
+   "hint": "西南地区"
+  },
+  {
+   "name": "泰山",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "张家界",
+   "difficulty": 1,
+   "hint": "华中地区"
+  },
+  {
+   "name": "九寨沟",
+   "difficulty": 1,
+   "hint": "西南地区"
+  },
+  {
+   "name": "颐和园",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "天坛",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "承德避暑山庄",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "云冈石窟",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "沈阳故宫",
+   "difficulty": 1,
+   "hint": "东北地区"
+  },
+  {
+   "name": "老虎滩海洋公园",
+   "difficulty": 1,
+   "hint": "东北地区"
+  },
+  {
+   "name": "拙政园",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "乌镇",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "外滩",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "普陀山",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "日月潭",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "少林寺",
+   "difficulty": 1,
+   "hint": "华中地区"
+  },
+  {
+   "name": "黄鹤楼",
+   "difficulty": 1,
+   "hint": "华中地区"
+  },
+  {
+   "name": "武当山",
+   "difficulty": 1,
+   "hint": "华中地区"
+  },
+  {
+   "name": "天涯海角",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "广州塔",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "亚龙湾",
+   "difficulty": 1,
+   "hint": "华南地区"
+  },
+  {
+   "name": "丽江古城",
+   "difficulty": 1,
+   "hint": "西南地区"
+  },
+  {
+   "name": "都江堰",
+   "difficulty": 1,
+   "hint": "西南地区"
+  },
+  {
+   "name": "鸣沙山月牙泉",
+   "difficulty": 1,
+   "hint": "西北地区"
+  },
+  {
+   "name": "敦煌莫高窟",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "乐山大佛",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "华山",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "西双版纳",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "峨眉山",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "庐山",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "洱海",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "鼓浪屿",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "青海湖",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "壶口瀑布",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "北戴河",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "平遥古城",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "五台山",
+   "difficulty": 2,
+   "hint": "华北地区"
+  },
+  {
+   "name": "镜泊湖",
+   "difficulty": 2,
+   "hint": "东北地区"
+  },
+  {
+   "name": "五大连池",
+   "difficulty": 2,
+   "hint": "东北地区"
+  },
+  {
+   "name": "千岛湖",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "崂山",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "婺源篁岭",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "中山陵",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "岳阳楼",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "天门山",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "神农架",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "龙门石窟",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "维多利亚港",
+   "difficulty": 2,
+   "hint": "华南地区"
+  },
+  {
+   "name": "世界之窗",
+   "difficulty": 2,
+   "hint": "华南地区"
+  },
+  {
+   "name": "三亚南山",
+   "difficulty": 2,
+   "hint": "华南地区"
+  },
+  {
+   "name": "青城山",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "黄果树瀑布",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "天山天池",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "沙坡头",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "稻城亚丁",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "喀纳斯湖",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "额济纳胡杨林",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "长白山天池",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "茶卡盐湖",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "恩施大峡谷",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "扎尕那",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "武功山",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "荔波小七孔",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "雨崩",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "悬空寺",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "乔家大院",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "白洋淀",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "乌兰布统草原",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "本溪水洞",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "千山",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "北极村",
+   "difficulty": 3,
+   "hint": "东北地区"
+  },
+  {
+   "name": "雁荡山",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "天柱山",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "三清山",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "阿里山",
+   "difficulty": 3,
+   "hint": "华东地区"
+  },
+  {
+   "name": "岳麓山",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "洞庭湖",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "衡山",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "云台山",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "涠洲岛",
+   "difficulty": 3,
+   "hint": "华南地区"
+  },
+  {
+   "name": "德天瀑布",
+   "difficulty": 3,
+   "hint": "华南地区"
+  },
+  {
+   "name": "开平碉楼",
+   "difficulty": 3,
+   "hint": "华南地区"
+  },
+  {
+   "name": "四姑娘山",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "火焰山",
+   "difficulty": 3,
+   "hint": "西北地区"
+  },
+  {
+   "name": "冈仁波齐",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "珠峰大本营",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "巴丹吉林沙漠",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "怒江第一湾",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "郎木寺",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "东川红土地",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "禾木村",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "靖边波浪谷",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "查干湖",
+   "difficulty": 4,
+   "hint": "东北地区"
+  },
+  {
+   "name": "喀拉峻草原",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "五当召",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "贺兰山岩画",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "乌梁素海",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "白石山",
+   "difficulty": 4,
+   "hint": "华北地区"
+  },
+  {
+   "name": "红海滩",
+   "difficulty": 4,
+   "hint": "东北地区"
+  },
+  {
+   "name": "防川",
+   "difficulty": 4,
+   "hint": "东北地区"
+  },
+  {
+   "name": "关门山",
+   "difficulty": 4,
+   "hint": "东北地区"
+  },
+  {
+   "name": "龙虎山",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "太姥山",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "霞浦北岐滩涂",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "绩溪龙川",
+   "difficulty": 4,
+   "hint": "华东地区"
+  },
+  {
+   "name": "屏山峡谷",
+   "difficulty": 4,
+   "hint": "华中地区"
+  },
+  {
+   "name": "东江湖",
+   "difficulty": 4,
+   "hint": "华中地区"
+  },
+  {
+   "name": "崀山",
+   "difficulty": 4,
+   "hint": "华中地区"
+  },
+  {
+   "name": "七百弄",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "鹅泉",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "明仕田园",
+   "difficulty": 4,
+   "hint": "华南地区"
+  },
+  {
+   "name": "牛背山",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "普者黑",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "江布拉克",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "扎达土林",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "艾肯泉",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "大柴旦翡翠湖",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "俄博梁雅丹",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "冷湖黑独山",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "帕米尔白沙山",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "达里诺尔湖",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "加榜梯田",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "安集海大峡谷",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "来古冰川",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "阿斯哈图石阵",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "乌兰哈达火山群",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "鸡鸣驿",
+   "difficulty": 5,
+   "hint": "华北地区"
+  },
+  {
+   "name": "黑瞎子岛",
+   "difficulty": 5,
+   "hint": "东北地区"
+  },
+  {
+   "name": "绿江村",
+   "difficulty": 5,
+   "hint": "东北地区"
+  },
+  {
+   "name": "嵊山无人村",
+   "difficulty": 5,
+   "hint": "华东地区"
+  },
+  {
+   "name": "呈坎",
+   "difficulty": 5,
+   "hint": "华东地区"
+  },
+  {
+   "name": "塔川",
+   "difficulty": 5,
+   "hint": "华东地区"
+  },
+  {
+   "name": "前童古镇",
+   "difficulty": 5,
+   "hint": "华东地区"
+  },
+  {
+   "name": "高椅岭",
+   "difficulty": 5,
+   "hint": "华中地区"
+  },
+  {
+   "name": "鹿院坪",
+   "difficulty": 5,
+   "hint": "华中地区"
+  },
+  {
+   "name": "黔阳古城",
+   "difficulty": 5,
+   "hint": "华中地区"
+  },
+  {
+   "name": "浩坤湖",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "尖峰岭",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "灯楼角",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "莺歌海盐场",
+   "difficulty": 5,
+   "hint": "华南地区"
+  },
+  {
+   "name": "坝美",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "尼汝村",
+   "difficulty": 5,
+   "hint": "西南地区"
+  },
+  {
+   "name": "罗布泊",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "大海道",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "慕田峪长城",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "恒山",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "应县木塔",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "鹳雀楼",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "清明上河园",
+   "difficulty": 1,
+   "hint": "华北地区"
+  },
+  {
+   "name": "嵩山",
+   "difficulty": 1,
+   "hint": "华中地区"
+  },
+  {
+   "name": "滕王阁",
+   "difficulty": 1,
+   "hint": "华中地区"
+  },
+  {
+   "name": "灵隐寺",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "雷峰塔",
+   "difficulty": 1,
+   "hint": "华东地区"
+  },
+  {
+   "name": "纳木错",
+   "difficulty": 1,
+   "hint": "西南地区"
+  },
+  {
+   "name": "凤凰古城",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "梵净山",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "普达措国家公园",
+   "difficulty": 2,
+   "hint": "西南地区"
+  },
+  {
+   "name": "老君山",
+   "difficulty": 2,
+   "hint": "华中地区"
+  },
+  {
+   "name": "可可托海",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "张掖七彩丹霞",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "独库公路",
+   "difficulty": 2,
+   "hint": "西北地区"
+  },
+  {
+   "name": "东极岛",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "扎龙湿地",
+   "difficulty": 2,
+   "hint": "东北地区"
+  },
+  {
+   "name": "微山湖",
+   "difficulty": 2,
+   "hint": "华东地区"
+  },
+  {
+   "name": "色达五明佛学院",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "甲居藏寨",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "达古冰川",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "毕棚沟",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "武隆天生三桥",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "金佛山",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "羊卓雍措",
+   "difficulty": 3,
+   "hint": "西南地区"
+  },
+  {
+   "name": "八里沟",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "壶瓶山",
+   "difficulty": 3,
+   "hint": "华中地区"
+  },
+  {
+   "name": "云丘山",
+   "difficulty": 3,
+   "hint": "华北地区"
+  },
+  {
+   "name": "萨普神山",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "冷嘎措",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "丙中洛",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "秋那桶",
+   "difficulty": 4,
+   "hint": "西南地区"
+  },
+  {
+   "name": "东台吉乃尔湖",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "乌素特水上雅丹",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "察尔汗盐湖",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "祁连山草原",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "扁都口",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "当金山",
+   "difficulty": 4,
+   "hint": "西北地区"
+  },
+  {
+   "name": "可可西里",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "羌塘",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "阿尔金山",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "扎陵湖",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "鄂陵湖",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "双湖",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "改则",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "尼玛",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "达里雅布依",
+   "difficulty": 5,
+   "hint": "西北地区"
+  },
+  {
+   "name": "瓦罕走廊",
+   "difficulty": 5,
+   "hint": "西北地区"
+  }
+ ]
 }

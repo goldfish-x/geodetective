@@ -33,7 +33,7 @@ jobs:
       - name: Build
         env:
           VITE_BASE: /${{ github.event.repository.name }}/
-        run: npm run build
+        run: npm run build:demo   # Pages 为离线试玩版，保留坐标
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

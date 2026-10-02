@@ -2,3 +2,4 @@
 // 浏览器与服务端都从这里取，避免 P1 服务端判分后出现双端漂移。
 export * from './scoring.js'
 export * from './quiz.js'
+export * from './props.js'

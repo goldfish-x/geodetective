@@ -322,6 +322,15 @@ export function createWorldMap(container, { onPick, onInvalidPick }) {
     // 供测试读取：相机正对的经纬度 [lng, lat]
     getView() { return facing() },
     highlightRegion() { /* 世界篇提示以文字呈现（原型简化） */ },
+    // 疆域透镜：高亮答案所在国家（geojson 特征名），无对应多边形时调用方退化为文字提示
+    highlightCountry(featureName) {
+      if (!featureName) return
+      chart.setOption({
+        globe: {
+          regions: [{ name: featureName, itemStyle: { color: '#e8b64c', opacity: 0.95 } }]
+        }
+      })
+    },
     clearHighlight() { /* no-op */ },
     // 局结算档案：显示红点并将镜头转向该地（保证可见），清除红点
     showSpot(lng, lat) {

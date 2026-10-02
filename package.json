@@ -15,6 +15,7 @@
     "start:server": "npm start --workspace server",
     "test": "npm test --workspace shared && npm test --workspace server",
     "test:shared": "npm test --workspace shared",
-    "test:server": "npm test --workspace server"
+    "test:server": "npm test --workspace server",
+    "build:demo": "npm run build:demo --workspace web"
   }
 }

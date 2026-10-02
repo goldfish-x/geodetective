@@ -1,5 +1,5 @@
 // 游戏页：出题 → 作答 → 单题结算 → 局结算（最低分门槛） → 终局结算
-import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS } from '@gd/shared'
+import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS, PROPS, PROP_ORDER, tierCounts } from '@gd/shared'
 import { getNickname, addScore } from '../core/storage.js'
 import { onlineEnabled } from '../net/api.js'
 import { getSession } from '../net/session.js'
@@ -17,9 +17,6 @@ const ICON_COMPASS = `<svg viewBox="0 0 24 24" width="16" height="16" fill="none
 
 const fmt = n => n.toLocaleString('zh-CN')
 const pad2 = n => String(n).padStart(2, '0')
-
-// 道具开关：加时属于后续付费内容，暂不开放（置 true 即可恢复，相关逻辑全部保留）
-const PROPS = { time: false, hint: true }
 
 // 榜首庆祝用的金粉雨：种子固定 → 每次呈现完全一致（自动化测试可断言片数与位置）
 const CONFETTI_N = 36
@@ -64,9 +61,10 @@ export async function renderGame(app, modeKey, routeToken) {
   const descBank = descModule.default
   const availableImages = new Set(imagesModule.default)
   const descOf = name => descBank[name] || {}
-  let stages = buildQuiz(bank)
+
   // 在线模式：未登录则回首页提示登录；已登录则整局由服务端驱动
-  if (onlineEnabled() && !getSession().access) {
+  const wantOnline = onlineEnabled()
+  if (wantOnline && !getSession().access) {
     app.innerHTML = `<div class="result-page"><div class="result-card">
       <div class="result-stamp">需登录</div>
       <p class="result-sub">在线对局的成绩计入全网榜，请先在首页登录</p>
@@ -75,8 +73,14 @@ export async function renderGame(app, modeKey, routeToken) {
     app.querySelector('#btn-home').addEventListener('click', () => { location.hash = '#/' })
     return
   }
-  const online = onlineEnabled() ? await createOnlineGame(modeKey) : null
-  if (online) stages = online.stages
+  const online = wantOnline ? await createOnlineGame(modeKey) : null
+
+  // 离线玩法需要坐标做本地判分；在线模式坐标一律来自服务端揭晓，构建期也不进产物
+  if (!online) {
+    const { loadCoords, mergeCoords } = await import('../core/coords.js')
+    mergeCoords(bank, (await loadCoords(modeKey)).default)
+  }
+  const stages = online ? online.stages : buildQuiz(bank)
 
   const state = {
     stageIndex: 0,      // 当前局（0 起）
@@ -86,7 +90,9 @@ export async function renderGame(app, modeKey, routeToken) {
     records: [],
     guess: null,
     phase: 'answering', // answering | settle | done
-    props: { time: PROPS.time, hint: PROPS.hint },
+    props: {},            // 道具剩余次数（按付费档位发放，整局共享）
+    revived: [],          // 被复活罗盘救回的局号（结算标黄）
+    tier: 3,
     timerTotal: mode.timeLimit,
     timerRemain: mode.timeLimit,
     timerEnd: 0,
@@ -139,10 +145,7 @@ export async function renderGame(app, modeKey, routeToken) {
     </div>
 
     <footer class="game-bottom">
-      <div class="props">
-        ${PROPS.time ? `<button class="prop" id="prop-time" title="当前题加时 10 秒">${ICON_CLOCK}<span>加时 +10s</span></button>` : ''}
-        <button class="prop" id="prop-hint" title="提示大致方位">${ICON_COMPASS}<span>线索</span></button>
-      </div>
+      <div class="props" id="props-bar"></div>
       <div class="timer">
         <div class="timer-fill" id="timer-fill"></div>
         <span class="timer-text" id="timer-text"></span>
@@ -225,11 +228,97 @@ export async function renderGame(app, modeKey, routeToken) {
     cancelAnimationFrame(state.rafId)
   }
 
-  function setPropsEnabled(on) {
-    for (const id of ['prop-time', 'prop-hint']) {
-      const el = $(id)
-      if (el) el.disabled = !on
+  // ————— 道具栏：图标 + 剩余次数 + 悬停说明 —————
+  const PROP_ICON = {
+    time: '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 2h12M6 22h12M8 2c0 5 3 6 4 8 1-2 4-3 4-8M8 22c0-5 3-6 4-8 1 2 4 3 4 8"/></svg>',
+    revive: '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 3v5h-5"/><circle cx="12" cy="12" r="2.4"/></svg>',
+    redo: '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></svg>',
+    area: '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M12 22V12M3 7l9 5 9-5"/></svg>'
+  }
+
+  function renderProps() {
+    const bar = $('props-bar')
+    if (!bar) return
+    const locked = state.phase !== 'answering'
+    bar.innerHTML = PROP_ORDER.map(k => {
+      const left = state.props[k] || 0
+      return `<button class="prop${left > 0 ? '' : ' used'}${locked ? ' locked' : ''}" data-prop="${k}" aria-label="${PROPS[k].name}">
+        ${PROP_ICON[k]}<em class="prop-n">${left}</em></button>`
+    }).join('') + '<span class="prop-tip" id="prop-tip" role="tooltip"></span>'
+    bar.querySelectorAll('[data-prop]').forEach(btn => {
+      const k = btn.dataset.prop
+      btn.addEventListener('click', () => useProp(k))
+      const show = () => {
+        const tip = $('prop-tip')
+        tip.innerHTML = `<b>${PROPS[k].name}</b> · 剩 ${state.props[k] || 0} 次<br>${PROPS[k].effect}`
+        const p = bar.getBoundingClientRect(), r = btn.getBoundingClientRect()
+        tip.style.left = Math.max(4, Math.min(r.left - p.left + r.width / 2 - 92, p.width - 188)) + 'px'
+        tip.classList.add('show')
+      }
+      const hide = () => $('prop-tip').classList.remove('show')
+      btn.addEventListener('mouseenter', show)
+      btn.addEventListener('focus', show)
+      btn.addEventListener('mouseleave', hide)
+      btn.addEventListener('blur', hide)
+    })
+  }
+
+  function showArea(area, hint) {
+    if (area) {
+      elHint.innerHTML = `<b>答案所在</b>：${area}`
+      elHint.classList.remove('hidden')
+      if (modeKey === 'china') map.highlightArea(area)
+      else map.highlightCountry(area)
+    } else {
+      const label = modeKey === 'china' ? '大致方位' : '所在大洲'
+      elHint.innerHTML = `<b>${label}</b>：${hint}`
+      elHint.classList.remove('hidden')
+      map.highlightRegion(hint)
     }
+  }
+
+  function rewindLocal(n) {
+    for (let i = 0; i < n; i++) {
+      const rec = state.records.pop()
+      if (!rec) break
+      state.total -= rec.points
+      state.stageScore -= rec.points
+    }
+    state.qInStage = Math.max(0, state.qInStage - n)
+    elScore.textContent = fmt(state.total)
+    elStageScore.textContent = fmt(state.stageScore)
+    startQuestion()
+  }
+
+  async function useProp(k) {
+    if (k === 'revive') return            // 复活只在局结算面板触发
+    if (state.phase !== 'answering' || !(state.props[k] > 0)) return
+    if (k === 'redo' && state.qInStage < 1) { showToast('本局还没有可回退的题目'); return }
+    sfxProp()
+    if (online) {
+      try {
+        if (k === 'time') {
+          const d = await online.prop('time')
+          state.timerTotal += d.add; state.timerRemain += d.add
+          state.lastTickSec = 99; startTimer(); showToast('已加时 12 秒')
+        } else if (k === 'area') {
+          const d = await online.prop('area'); showArea(d.area, d.hint)
+        } else if (k === 'redo') {
+          const d = await online.prop('redo'); online.ord = d.ord; rewindLocal(d.rewound)
+        }
+        state.props[k] -= 1
+        renderProps()
+      } catch (e) { showToast(e.message) }
+      return
+    }
+    const q = stages[state.stageIndex].questions[state.qInStage]
+    if (k === 'time') {
+      state.timerTotal += 12; state.timerRemain += 12
+      state.lastTickSec = 99; startTimer(); showToast('已加时 12 秒')
+    } else if (k === 'area') showArea(q.area || '', q.hint)
+    else if (k === 'redo') rewindLocal(Math.min(2, state.qInStage))
+    state.props[k] -= 1
+    renderProps()
   }
 
   // 把计时条彻底停住：不留上一题的残条，也不让它看起来还在倒计时
@@ -239,7 +328,7 @@ export async function renderGame(app, modeKey, routeToken) {
     elTimerText.textContent = text
     elTimerText.classList.remove('pulse')
     elTimer.classList.add('settled')
-    setPropsEnabled(false)
+    renderProps()
   }
 
   // ————— 流程 —————
@@ -258,6 +347,7 @@ export async function renderGame(app, modeKey, routeToken) {
     elHint.classList.add('hidden')
     elConfirm.classList.add('hidden')
     elSettle.classList.add('hidden')
+    renderProps()
     elTimer.classList.remove('settled')
     setSlot(false)
 
@@ -266,10 +356,6 @@ export async function renderGame(app, modeKey, routeToken) {
 
     // 新一局：重置道具与本局计分
     if (state.qInStage === 0) {
-      state.props = { time: PROPS.time, hint: PROPS.hint }
-      $('prop-time')?.classList.remove('used')
-      $('prop-hint').classList.remove('used')
-      setPropsEnabled(true)
       elTarget.textContent = fmt(stage.minScore)
       elStageScore.textContent = '0'
       $('q-stage-wrap').classList.remove('danger')
@@ -446,6 +532,7 @@ export async function renderGame(app, modeKey, routeToken) {
       </div>
       <div class="ss-foot">
         <span class="ss-hint">悬停地名 · 地图红点即实际位置${modeKey === 'world' ? ' · 地球自动转向' : ''}</span>
+        ${!passed && (state.props.revive || 0) > 0 && !isLast ? `<button class="btn btn-ghost revive" id="btn-revive">复活罗盘 · 剩 ${state.props.revive}</button>` : ''}
         <button class="btn btn-primary" id="btn-stage-next">${passed ? (isLast ? '查看最终结算' : `进入第${state.stageIndex + 2}局`) : '结束本局任务'}</button>
       </div>`
     elSlot.appendChild(panel)
@@ -476,6 +563,28 @@ export async function renderGame(app, modeKey, routeToken) {
       chip.addEventListener('mouseenter', activate)
       chip.addEventListener('mouseleave', () => map.clearSpot())
       chip.addEventListener('click', activate) // 触屏设备支持
+    })
+
+    panel.querySelector('#btn-revive')?.addEventListener('click', async () => {
+      state.props.revive -= 1
+      state.revived.push(state.stageIndex + 1)
+      panel.remove()
+      map.clearSpot()
+      if (online) {
+        const d = await online.prop('revive')
+        state.stageIndex = d.nextStage - 1
+      } else {
+        state.stageIndex++
+      }
+      state.qInStage = 0
+      state.stageScore = 0
+      const flash = document.createElement('div')
+      flash.className = 'stage-flash'
+      flash.innerHTML = `<span>第${state.stageIndex + 1}局 复活</span>`
+      elMap.parentElement.appendChild(flash)
+      setTimeout(() => flash.remove(), 1100)
+      renderProps()
+      startQuestion()
     })
 
     panel.querySelector('#btn-stage-next').addEventListener('click', () => {
@@ -509,41 +618,6 @@ export async function renderGame(app, modeKey, routeToken) {
   }
   window.addEventListener('keydown', onKey)
 
-  // ————— 道具 —————
-  $('prop-time')?.addEventListener('click', () => {
-    if (!state.props.time || state.phase !== 'answering') return
-    state.props.time = false
-    $('prop-time').classList.add('used')
-    state.timerTotal += 10
-    state.timerRemain += 10
-    state.lastTickSec = 99
-    startTimer()
-    sfxProp()
-    showToast('已加时 10 秒')
-  })
-
-  $('prop-hint').addEventListener('click', async () => {
-    if (!state.props.hint || state.phase !== 'answering') return
-    state.props.hint = false
-    $('prop-hint').classList.add('used')
-    sfxProp()
-    if (online) {
-      try {
-        const d = await online.hint()
-        const label = modeKey === 'china' ? '大致方位' : '所在大洲'
-        elHint.innerHTML = `<b>${label}</b>：${d.hint}`
-        elHint.classList.remove('hidden')
-        map.highlightRegion(d.hint)
-      } catch { /* 服务端不可用时静默退回 */ }
-      return
-    }
-    const q = stages[state.stageIndex].questions[state.qInStage]
-    const label = modeKey === 'china' ? '大致方位' : '所在大洲'
-    elHint.innerHTML = `<b>${label}</b>：${q.hint}`
-    elHint.classList.remove('hidden')
-    map.highlightRegion(q.hint)
-  })
-
   // ————— 终局 —————
   async function endGame(victory) {
     state.phase = 'done'
@@ -574,12 +648,13 @@ export async function renderGame(app, modeKey, routeToken) {
         <div class="result-stagebar">
           ${STAGES.map((s, i) => {
             const cleared = victory || i < state.stageIndex
-            return `<span class="stage-dot${cleared ? ' cleared' : ''}" title="第${i + 1}局 · ${DIFFICULTY_LABELS[s.difficulty]}${s.type === 'city' ? '城市' : '景点'} · 门槛 ${fmt(s.minScore)}">${i + 1}</span>`
+            return `<span class="stage-dot${cleared ? ' cleared' : ''}${state.revived.includes(i + 1) ? ' revived' : ''}" title="第${i + 1}局 · ${DIFFICULTY_LABELS[s.difficulty]}${s.type === 'city' ? '城市' : '景点'} · 门槛 ${fmt(s.minScore)}">${i + 1}</span>`
           }).join('<i class="stage-sep"></i>')}
         </div>
+        ${state.revived.length ? `<p class="result-revived-note">黄色局为复活罗盘救回：第 ${state.revived.join('、')} 局</p>` : ''}
         <ol class="result-list">
           ${state.records.map(r => `
-            <li>
+            <li${state.revived.includes(r.stage) ? ' class="revived"' : ''}>
               <span class="rl-idx">${r.stage}-${pad2(r.q)}</span>
               <span class="rl-name">${r.name}<em class="diff-tag lv${Math.min(5, r.difficulty)}">${DIFFICULTY_LABELS[Math.min(5, r.difficulty)]}</em></span>
               <span class="rl-dist">${r.distance != null ? fmt(Math.round(r.distance)) + ' km' : '未指认'}</span>
@@ -616,6 +691,10 @@ export async function renderGame(app, modeKey, routeToken) {
     clearTimeout(toastTimer)
     toastTimer = setTimeout(() => elToast.classList.add('hidden'), 1600)
   }
+
+  // 道具按档位发放：在线由服务端下发，离线读本地档位（内测默认三档）
+  state.tier = online ? online.tier : Number(localStorage.getItem('gd_tier') || 3)
+  state.props = online ? Object.assign({}, online.props) : tierCounts(state.tier)
 
   startQuestion()
 

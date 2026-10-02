@@ -35,7 +35,15 @@ export async function createOnlineGame(modeKey) {
       return r
     },
 
-    hint: () => api(`/v1/runs/${g.runId}/props/hint`, { method: 'POST' }),
+    async prop(key) {
+      const r = await api(`/v1/runs/${g.runId}/props/${key}`, { method: 'POST' })
+      if (key === 'revive' && r.question) {
+        const target = stages[r.nextStage - 1]
+        if (target && !target.questions.some(x => x.name === r.question.name)) target.questions.push({ ...r.question })
+      }
+      if (key === 'redo') g.ord = r.ord
+      return r
+    },
     finish: () => api(`/v1/runs/${g.runId}/finish`, { method: 'POST' })
   }
   return g

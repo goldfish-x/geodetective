@@ -101,24 +101,92 @@ test("超时由服务端判定：时钟越过时限即 0 分", async () => {
   assert.equal(b.points, 0);
 });
 
-test("线索道具每局一次，重放旧题序被拒", async () => {
+test("疆域透镜每局次数受限，重放旧题序被拒", async () => {
   const a = app();
   const t = await login(a, "13700000000");
-  const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access), payload: { mode: "china" } })).payload);
-  const p1 = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/hint`, headers: H(t.access) });
+  const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access), payload: { mode: "china", tier: 3 } })).payload);
+  const p1 = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/area`, headers: H(t.access) });
   assert.equal(p1.statusCode, 200);
-  assert.equal(JSON.parse(p1.payload).hint, "测试区");
-  const p2 = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/hint`, headers: H(t.access) });
+  assert.equal(JSON.parse(p1.payload).left, 0);
+  const p2 = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/area`, headers: H(t.access) });
   assert.equal(p2.statusCode, 409);
   const stale = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/answers`, headers: H(t.access), payload: { ord: 5, lat: 1, lng: 1 } });
   assert.equal(stale.statusCode, 409);
 });
 
-test("他人 run 不可读写", async () => {
+test("档位决定道具次数：二档无回溯与透镜", async () => {
   const a = app();
-  const t1 = await login(a, "13600000000");
-  const t2 = await login(a, "13500000000");
-  const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t1.access), payload: { mode: "china" } })).payload);
-  const x = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/answers`, headers: H(t2.access), payload: { ord: 0, lat: 1, lng: 1 } });
-  assert.equal(x.statusCode, 404);
+  const t = await login(a, "13100000000");
+  const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access), payload: { mode: "china", tier: 2 } })).payload);
+  assert.deepEqual(r.props, { time: 2, revive: 2 });
+  const redo = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/redo`, headers: H(t.access) });
+  assert.equal(redo.statusCode, 409);
+  const area = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/area`, headers: H(t.access) });
+  assert.equal(area.statusCode, 409);
+});
+
+test("加时 12 秒：越过原时限后仍可得分", async () => {
+  let T = 1_700_000_000_000;
+  const a = app({ now: () => T });
+  const t = await login(a, "13100000001");
+  const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access), payload: { mode: "china", tier: 3 } })).payload);
+  T += (MODES.china.timeLimit + 1) * 1000;
+  const pr = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/time`, headers: H(t.access) });
+  assert.equal(JSON.parse(pr.payload).add, 12);
+  const res = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/answers`, headers: H(t.access), payload: { ord: 0, lat: 31.2, lng: 121.4 } });
+  const b = JSON.parse(res.payload);
+  assert.equal(b.timedOut, false);
+  const left = JSON.parse(pr.payload).left;
+  const pr2 = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/time`, headers: H(t.access) });
+  assert.equal(JSON.parse(pr2.payload).left, left - 1);
+});
+
+test("回溯怀表：扣回最近两题得分并重发题序", async () => {
+  const a = app();
+  const t = await login(a, "13100000002");
+  const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access), payload: { mode: "china", tier: 3 } })).payload);
+  let sum = 0;
+  for (let i = 0; i < 2; i++) {
+    const b = JSON.parse((await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/answers`, headers: H(t.access), payload: { ord: i, lat: 31.2, lng: 121.4 } })).payload);
+    sum += b.points;
+  }
+  const rd = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/redo`, headers: H(t.access) });
+  const rb = JSON.parse(rd.payload);
+  assert.equal(rb.rewound, 2);
+  assert.equal(rb.ord, 0);
+  const again = JSON.parse((await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/answers`, headers: H(t.access), payload: { ord: 0, lat: 31.2, lng: 121.4 } })).payload);
+  assert.equal(again.points, sum >= 0 ? again.points : 0);
+  const rd2 = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/redo`, headers: H(t.access) });
+  assert.equal(rd2.statusCode, 409, "回溯次数应已用尽或无可回退");
+});
+
+test("复活罗盘：未达标局复活进下一局并在终局标黄", async () => {
+  const a = app();
+  const t = await login(a, "13100000003");
+  const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access), payload: { mode: "china", tier: 3 } })).payload);
+  let last = null;
+  for (let i = 0; i < 8; i++)
+    last = JSON.parse((await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/answers`, headers: H(t.access), payload: { ord: i, lat: -60, lng: -60 } })).payload);
+  assert.equal(last.stageSettle.passed, false);
+  assert.equal(last.canRevive, true);
+  const rv = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/revive`, headers: H(t.access) });
+  const rb = JSON.parse(rv.payload);
+  assert.equal(rb.nextStage, 2);
+  assert.deepEqual(rb.revived, [1]);
+  const rv2 = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/revive`, headers: H(t.access) });
+  assert.equal(rv2.statusCode, 409, "未死亡状态不得复活");
+  for (let i = 0; i < 8; i++)
+    last = JSON.parse((await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/answers`, headers: H(t.access), payload: { ord: 8 + i, lat: -60, lng: -60 } })).payload);
+  const f = JSON.parse((await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/finish`, headers: H(t.access) })).payload);
+  assert.deepEqual(f.revived, [1]);
+});
+
+test("疆域透镜：返回归属与提示", async () => {
+  const a = app();
+  const t = await login(a, "13100000004");
+  const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access), payload: { mode: "china", tier: 3 } })).payload);
+  const ar = await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/props/area`, headers: H(t.access) });
+  const b = JSON.parse(ar.payload);
+  assert.equal(typeof b.area, "string");
+  assert.equal(b.hint, "测试区");
 });

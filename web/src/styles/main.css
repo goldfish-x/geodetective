@@ -892,6 +892,58 @@ li.top3 .bl-score { color: #e8a877; }
   transition: opacity 0.15s, transform 0.1s;
 }
 .prop:disabled { opacity: 0.38; cursor: default; }
+/* 道具图标按钮：剩余次数角标 + 悬停说明气泡 */
+.prop {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 34px;
+  padding: 0;
+  color: var(--gold);
+}
+.prop .prop-n {
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 8px;
+  background: var(--ink-3);
+  border: 1px solid var(--line);
+  color: var(--parchment);
+}
+.prop.used { color: var(--parchment-dim); opacity: 0.42; }
+.prop.used .prop-n { display: none; }
+.prop.locked { pointer-events: none; opacity: 0.5; }
+.prop-tip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  width: 184px;
+  padding: 7px 9px;
+  border-radius: 4px;
+  background: rgba(13, 21, 34, 0.97);
+  border: 1px solid var(--gold);
+  font-size: 11.5px;
+  line-height: 1.55;
+  color: var(--parchment);
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity .12s ease, transform .12s ease;
+  z-index: 40;
+}
+.prop-tip.show { opacity: 1; transform: translateY(0); }
+.prop-tip b { color: var(--gold); font-family: var(--serif); }
+/* 复活局标识：结算进度点与成绩单行标黄 */
+.stage-dot.revived { border-color: var(--gold); color: var(--gold); box-shadow: 0 0 10px rgba(232,182,76,.45); }
+.result-list li.revived { background: rgba(232, 182, 76, 0.10); box-shadow: inset 2px 0 0 var(--gold); }
+.result-revived-note { margin-top: 8px; font-size: 11.5px; letter-spacing: .08em; color: var(--gold); }
+.btn.revive { border-color: var(--gold); color: var(--gold); margin-right: 8px; }
 
 .prop:active { transform: scale(0.96); }
 .prop.used {

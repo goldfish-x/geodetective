@@ -21,5 +21,11 @@ jobs:
         run: npm run test:shared
       - name: Server tests
         run: npm run test:server
-      - name: Web build
+      - name: Web build (online, coords stripped)
         run: npm run build
+      - name: Assert online bundle has no answer coords
+        run: node scripts/check_bundle_coords.mjs online
+      - name: Web build (demo, coords kept)
+        run: npm run build:demo
+      - name: Assert demo bundle keeps coords
+        run: node scripts/check_bundle_coords.mjs demo

@@ -5,15 +5,22 @@ import { fileURLToPath } from "node:url";
 import { randomUUID } from "node:crypto";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
-import { MODES, haversine, score, buildQuiz, STAGES, STAGE_SIZE } from "@gd/shared";
+import { MODES, haversine, score, buildQuiz, STAGES, STAGE_SIZE, PROPS, TIERS, tierCounts } from "@gd/shared";
 import { openStore, seasonOf } from "./db.js";
 import { verify, issueTokens, newCode, REFRESH_TTL } from "./auth.js";
 
 const HERE = fileURLToPath(new URL(".", import.meta.url));
 
 export function loadBank(mode) {
-  const p = HERE + "../../web/src/data/" + mode + ".json";
-  return JSON.parse(readFileSync(p, "utf-8"));
+  // meta 与坐标分文件存放：坐标只在服务端合并使用，永不下发给浏览器
+  const meta = JSON.parse(readFileSync(HERE + "../../web/src/data/" + mode + ".json", "utf-8"));
+  const coords = JSON.parse(readFileSync(HERE + "../../web/src/data/" + mode + "-coords.json", "utf-8"));
+  for (const bucket of ["cities", "scenics"])
+    for (const it of meta[bucket]) {
+      const c = coords[it.name];
+      if (c) { it.lat = c[0]; it.lng = c[1]; it.area = c[2] || ""; }
+    }
+  return meta;
 }
 
 // 下发题目：只含展示与判级所需字段，绝不含坐标
@@ -46,7 +53,9 @@ export function buildApp(opts = {}) {
       [k, { title: m.title, timeLimit: m.timeLimit, maxDistance: m.maxDistance, maxScore: m.maxScore }])),
     stages: STAGES.map(s => ({ type: s.type, difficulty: s.difficulty, minScore: s.minScore })),
     stageSize: STAGE_SIZE,
-    season: seasonOf(new Date(now()))
+    season: seasonOf(new Date(now())),
+    props: PROPS,
+    tiers: TIERS
   }));
 
   // —— 登录 ——
@@ -96,26 +105,80 @@ export function buildApp(opts = {}) {
     const mode = req.body?.mode;
     if (!MODES[mode]) return rep.code(400).send({ error: "bad_mode" });
     const stages = buildQuiz(bankOf(mode));
+    const tier = [1, 2, 3].includes(Number(req.body?.tier)) ? Number(req.body.tier) : 3;
     const run = {
-      id: randomUUID(), phone: req.user.sub, mode, stages,
-      s: 0, q: 0, stageScore: 0, total: 0, props: { hint: true },
+      id: randomUUID(), phone: req.user.sub, mode, stages, tier,
+      s: 0, q: 0, stageScore: 0, total: 0, props: tierCounts(tier),
+      revived: [], awaitRevive: false,
       issuedAt: now(), over: false, createdAt: now()
     };
     store.putRun(run);
-    return { runId: run.id, mode, stage: 1, question: pubQ(stages[0].questions[0]),
-             timeLimit: MODES[mode].timeLimit };
+    return { runId: run.id, mode, stage: 1, tier: run.tier, props: Object.assign({}, run.props),
+             question: pubQ(stages[0].questions[0]), timeLimit: MODES[mode].timeLimit };
   });
 
   const cur = run => run.stages[run.s].questions[run.q];
 
-  app.post("/v1/runs/:id/props/hint", async (req, rep) => {
+  const useProp = (run, key) => {
+    if (!run.props[key]) return false;
+    run.props[key] -= 1;
+    return true;
+  };
+
+  app.post("/v1/runs/:id/props/time", async (req, rep) => {
     if (await needAuth(req, rep)) return;
     const run = store.run(req.params.id);
     if (!run || run.phone !== req.user.sub || run.over) return rep.code(404).send({ error: "no_run" });
-    if (!run.props.hint) return rep.code(409).send({ error: "prop_used" });
-    run.props.hint = false;
+    if (!useProp(run, "time")) return rep.code(409).send({ error: "prop_exhausted" });
+    run.issuedAt += 12000;
     store.putRun(run);
-    return { hint: cur(run).hint };
+    return { add: 12, left: run.props.time };
+  });
+
+  app.post("/v1/runs/:id/props/area", async (req, rep) => {
+    if (await needAuth(req, rep)) return;
+    const run = store.run(req.params.id);
+    if (!run || run.phone !== req.user.sub || run.over) return rep.code(404).send({ error: "no_run" });
+    if (!useProp(run, "area")) return rep.code(409).send({ error: "prop_exhausted" });
+    const q = cur(run);
+    store.putRun(run);
+    return { area: q.area || "", hint: q.hint, left: run.props.area };
+  });
+
+  app.post("/v1/runs/:id/props/redo", async (req, rep) => {
+    if (await needAuth(req, rep)) return;
+    const run = store.run(req.params.id);
+    if (!run || run.phone !== req.user.sub || run.over) return rep.code(404).send({ error: "no_run" });
+    if (run.q < 1) return rep.code(409).send({ error: "nothing_to_redo" });
+    if (!useProp(run, "redo")) return rep.code(409).send({ error: "prop_exhausted" });
+    const n = Math.min(2, run.q);
+    const from = run.s * STAGE_SIZE + run.q - n;
+    for (const a of store.answers(run.id).filter(a => a.ord >= from)) {
+      run.total -= a.pts;
+      run.stageScore -= a.pts;
+    }
+    store.data.answers[run.id] = store.answers(run.id).filter(a => a.ord < from);
+    run.q -= n;
+    run.issuedAt = now();
+    store.putRun(run);
+    store.save();
+    return { rewound: n, ord: run.s * STAGE_SIZE + run.q, question: pubQ(cur(run)), left: run.props.redo };
+  });
+
+  app.post("/v1/runs/:id/props/revive", async (req, rep) => {
+    if (await needAuth(req, rep)) return;
+    const run = store.run(req.params.id);
+    if (!run || run.phone !== req.user.sub) return rep.code(404).send({ error: "no_run" });
+    if (!run.awaitRevive) return rep.code(409).send({ error: "not_dead" });
+    if (run.s + 1 >= run.stages.length) return rep.code(409).send({ error: "last_stage" });
+    if (!useProp(run, "revive")) return rep.code(409).send({ error: "prop_exhausted" });
+    run.revived.push(run.s + 1);
+    run.awaitRevive = false;
+    run.over = false;
+    run.s += 1; run.q = 0; run.stageScore = 0;
+    run.issuedAt = now();
+    store.putRun(run);
+    return { revived: run.revived.slice(), nextStage: run.s + 1, question: pubQ(cur(run)), left: run.props.revive };
   });
 
   app.post("/v1/runs/:id/answers", async (req, rep) => {
@@ -146,7 +209,6 @@ export function buildApp(opts = {}) {
     };
     if (!lastQ) {
       run.q += 1;
-      run.props = { hint: true };
       run.issuedAt = now();
       store.putRun(run);
       out.next = pubQ(cur(run));
@@ -156,11 +218,13 @@ export function buildApp(opts = {}) {
     out.stageSettle = { index: run.s + 1, passed, score: run.stageScore, minScore: stage.minScore };
     if (!passed || lastStage) {
       run.over = true;
+      run.awaitRevive = !passed && !lastStage && run.props.revive > 0;
+      out.canRevive = run.awaitRevive;
       store.putRun(run);
       out.runOver = true;
       return out;
     }
-    run.s += 1; run.q = 0; run.stageScore = 0; run.props = { hint: true }; run.issuedAt = now();
+    run.s += 1; run.q = 0; run.stageScore = 0; run.issuedAt = now();
     store.putRun(run);
     out.nextStage = run.s + 1;
     out.next = pubQ(cur(run));
@@ -180,7 +244,7 @@ export function buildApp(opts = {}) {
       store.boardUpset(run.mode, season, { phone: run.phone, nickname: user?.nickname || "无名侦探", score: run.total, date: new Date(now()).toISOString().slice(0, 10) });
     const board = store.board(run.mode, season, 10);
     const rank = board.findIndex(e => e.phone === run.phone) + 1;
-    return { total: run.total, season, rank: rank || null,
+    return { total: run.total, season, rank: rank || null, revived: run.revived.slice(),
              board: board.map((e, i) => ({ rank: i + 1, nickname: e.nickname, score: e.score, date: e.date })) };
   });
 

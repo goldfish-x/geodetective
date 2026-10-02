@@ -331,6 +331,12 @@ REJECT = json.loads(REJ_PATH.read_text(encoding="utf-8")) if REJ_PATH.exists() e
 ALIAS = json.loads((ROOT / "scripts/place-aliases.json").read_text(encoding="utf-8"))
 REGION = json.loads((ROOT / "scripts/place-region.json").read_text(encoding="utf-8"))
 BANK = json.loads((ROOT / ("web/src/data/%s.json" % MODE)).read_text(encoding="utf-8"))
+_COORDS = json.loads((ROOT / ("web/src/data/%s-coords.json" % MODE)).read_text(encoding="utf-8"))
+for _b in BANK.values():
+    for _it in _b:
+        _c = _COORDS.get(_it["name"])
+        if _c:
+            _it["lat"], _it["lng"] = _c
 todo = [{"name": it["name"], "lat": it["lat"], "lng": it["lng"], "diff": it["difficulty"],
          "bucket": k} for k in ("cities", "scenics") for it in BANK[k]
         if it["difficulty"] >= 3 and not (DEST / (it["name"] + ".webp")).exists()]

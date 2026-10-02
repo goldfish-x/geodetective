@@ -1,406 +1,2006 @@
 {
-  "cities": [
-    { "name": "巴黎", "lat": 48.86, "lng": 2.35, "difficulty": 1, "hint": "欧洲" },
-    { "name": "伦敦", "lat": 51.51, "lng": -0.13, "difficulty": 1, "hint": "欧洲" },
-    { "name": "纽约", "lat": 40.71, "lng": -74.01, "difficulty": 1, "hint": "北美洲" },
-    { "name": "东京", "lat": 35.68, "lng": 139.69, "difficulty": 1, "hint": "亚洲" },
-    { "name": "悉尼", "lat": -33.87, "lng": 151.21, "difficulty": 1, "hint": "大洋洲" },
-    { "name": "开罗", "lat": 30.04, "lng": 31.24, "difficulty": 1, "hint": "非洲" },
-    { "name": "莫斯科", "lat": 55.76, "lng": 37.62, "difficulty": 1, "hint": "欧洲" },
-    { "name": "里约热内卢", "lat": -22.91, "lng": -43.17, "difficulty": 1, "hint": "南美洲" },
-    { "name": "罗马", "lat": 41.90, "lng": 12.50, "difficulty": 1, "hint": "欧洲" },
-    { "name": "迪拜", "lat": 25.20, "lng": 55.27, "difficulty": 1, "hint": "亚洲" },
-    { "name": "北京", "lat": 39.90, "lng": 116.41, "difficulty": 1, "hint": "亚洲" },
-    { "name": "上海", "lat": 31.23, "lng": 121.47, "difficulty": 1, "hint": "亚洲" },
-    { "name": "香港", "lat": 22.32, "lng": 114.17, "difficulty": 1, "hint": "亚洲" },
-    { "name": "新德里", "lat": 28.61, "lng": 77.21, "difficulty": 1, "hint": "亚洲" },
-    { "name": "孟买", "lat": 19.08, "lng": 72.88, "difficulty": 1, "hint": "亚洲" },
-    { "name": "雅加达", "lat": -6.21, "lng": 106.85, "difficulty": 1, "hint": "亚洲" },
-    { "name": "马德里", "lat": 40.42, "lng": -3.70, "difficulty": 1, "hint": "欧洲" },
-    { "name": "阿姆斯特丹", "lat": 52.37, "lng": 4.90, "difficulty": 1, "hint": "欧洲" },
-    { "name": "维也纳", "lat": 48.21, "lng": 16.37, "difficulty": 1, "hint": "欧洲" },
-    { "name": "巴塞罗那", "lat": 41.39, "lng": 2.17, "difficulty": 1, "hint": "欧洲" },
-    { "name": "芝加哥", "lat": 41.88, "lng": -87.63, "difficulty": 1, "hint": "北美洲" },
-    { "name": "旧金山", "lat": 37.77, "lng": -122.42, "difficulty": 1, "hint": "北美洲" },
-    { "name": "多伦多", "lat": 43.65, "lng": -79.38, "difficulty": 1, "hint": "北美洲" },
-    { "name": "墨西哥城", "lat": 19.43, "lng": -99.13, "difficulty": 1, "hint": "北美洲" },
-    { "name": "圣保罗", "lat": -23.55, "lng": -46.63, "difficulty": 1, "hint": "南美洲" },
-    { "name": "利马", "lat": -12.05, "lng": -77.04, "difficulty": 1, "hint": "南美洲" },
-    { "name": "约翰内斯堡", "lat": -26.20, "lng": 28.05, "difficulty": 1, "hint": "非洲" },
-    { "name": "卡萨布兰卡", "lat": 33.57, "lng": -7.59, "difficulty": 1, "hint": "非洲" },
-    { "name": "墨尔本", "lat": -37.81, "lng": 144.96, "difficulty": 1, "hint": "大洋洲" },
-    { "name": "奥克兰", "lat": -36.85, "lng": 174.76, "difficulty": 1, "hint": "大洋洲" },
-    { "name": "内罗毕", "lat": -1.29, "lng": 36.82, "difficulty": 2, "hint": "非洲" },
-    { "name": "曼谷", "lat": 13.76, "lng": 100.50, "difficulty": 2, "hint": "亚洲" },
-    { "name": "伊斯坦布尔", "lat": 41.01, "lng": 28.98, "difficulty": 2, "hint": "亚洲" },
-    { "name": "温哥华", "lat": 49.28, "lng": -123.12, "difficulty": 2, "hint": "北美洲" },
-    { "name": "布宜诺斯艾利斯", "lat": -34.60, "lng": -58.38, "difficulty": 2, "hint": "南美洲" },
-    { "name": "新加坡", "lat": 1.35, "lng": 103.82, "difficulty": 2, "hint": "亚洲" },
-    { "name": "开普敦", "lat": -33.92, "lng": 18.42, "difficulty": 2, "hint": "非洲" },
-    { "name": "首尔", "lat": 37.57, "lng": 126.98, "difficulty": 2, "hint": "亚洲" },
-    { "name": "柏林", "lat": 52.52, "lng": 13.40, "difficulty": 2, "hint": "欧洲" },
-    { "name": "洛杉矶", "lat": 34.05, "lng": -118.24, "difficulty": 2, "hint": "北美洲" },
-    { "name": "吉隆坡", "lat": 3.14, "lng": 101.69, "difficulty": 2, "hint": "亚洲" },
-    { "name": "大阪", "lat": 34.69, "lng": 135.50, "difficulty": 2, "hint": "亚洲" },
-    { "name": "台北", "lat": 25.03, "lng": 121.57, "difficulty": 2, "hint": "亚洲" },
-    { "name": "德黑兰", "lat": 35.69, "lng": 51.39, "difficulty": 2, "hint": "亚洲" },
-    { "name": "马尼拉", "lat": 14.60, "lng": 120.98, "difficulty": 2, "hint": "亚洲" },
-    { "name": "雅典", "lat": 37.98, "lng": 23.73, "difficulty": 2, "hint": "欧洲" },
-    { "name": "哥本哈根", "lat": 55.68, "lng": 12.57, "difficulty": 2, "hint": "欧洲" },
-    { "name": "斯德哥尔摩", "lat": 59.33, "lng": 18.07, "difficulty": 2, "hint": "欧洲" },
-    { "name": "布达佩斯", "lat": 47.50, "lng": 19.04, "difficulty": 2, "hint": "欧洲" },
-    { "name": "都柏林", "lat": 53.35, "lng": -6.26, "difficulty": 2, "hint": "欧洲" },
-    { "name": "华盛顿", "lat": 38.91, "lng": -77.04, "difficulty": 2, "hint": "北美洲" },
-    { "name": "蒙特利尔", "lat": 45.50, "lng": -73.57, "difficulty": 2, "hint": "北美洲" },
-    { "name": "西雅图", "lat": 47.61, "lng": -122.33, "difficulty": 2, "hint": "北美洲" },
-    { "name": "圣地亚哥", "lat": -33.45, "lng": -70.67, "difficulty": 2, "hint": "南美洲" },
-    { "name": "波哥大", "lat": 4.71, "lng": -74.07, "difficulty": 2, "hint": "南美洲" },
-    { "name": "亚的斯亚贝巴", "lat": 9.02, "lng": 38.75, "difficulty": 2, "hint": "非洲" },
-    { "name": "达喀尔", "lat": 14.72, "lng": -17.47, "difficulty": 2, "hint": "非洲" },
-    { "name": "达累斯萨拉姆", "lat": -6.79, "lng": 39.21, "difficulty": 2, "hint": "非洲" },
-    { "name": "珀斯", "lat": -31.95, "lng": 115.86, "difficulty": 2, "hint": "大洋洲" },
-    { "name": "布里斯班", "lat": -27.47, "lng": 153.03, "difficulty": 2, "hint": "大洋洲" },
-    { "name": "雷克雅未克", "lat": 64.15, "lng": -21.94, "difficulty": 3, "hint": "欧洲" },
-    { "name": "乌兰巴托", "lat": 47.89, "lng": 106.91, "difficulty": 3, "hint": "亚洲" },
-    { "name": "惠灵顿", "lat": -41.29, "lng": 174.78, "difficulty": 3, "hint": "大洋洲" },
-    { "name": "阿斯塔纳", "lat": 51.17, "lng": 71.43, "difficulty": 3, "hint": "亚洲" },
-    { "name": "基多", "lat": -0.18, "lng": -78.47, "difficulty": 3, "hint": "南美洲" },
-    { "name": "塔那那利佛", "lat": -18.88, "lng": 47.51, "difficulty": 3, "hint": "非洲" },
-    { "name": "努克", "lat": 64.18, "lng": -51.72, "difficulty": 3, "hint": "北美洲" },
-    { "name": "苏瓦", "lat": -18.14, "lng": 178.44, "difficulty": 3, "hint": "大洋洲" },
-    { "name": "河内", "lat": 21.03, "lng": 105.85, "difficulty": 3, "hint": "亚洲" },
-    { "name": "里斯本", "lat": 38.72, "lng": -9.14, "difficulty": 3, "hint": "欧洲" },
-    { "name": "平壤", "lat": 39.03, "lng": 125.75, "difficulty": 3, "hint": "亚洲" },
-    { "name": "仰光", "lat": 16.87, "lng": 96.20, "difficulty": 3, "hint": "亚洲" },
-    { "name": "金边", "lat": 11.56, "lng": 104.92, "difficulty": 3, "hint": "亚洲" },
-    { "name": "加德满都", "lat": 27.72, "lng": 85.32, "difficulty": 3, "hint": "亚洲" },
-    { "name": "巴库", "lat": 40.41, "lng": 49.87, "difficulty": 3, "hint": "亚洲" },
-    { "name": "奥斯陆", "lat": 59.91, "lng": 10.75, "difficulty": 3, "hint": "欧洲" },
-    { "name": "赫尔辛基", "lat": 60.17, "lng": 24.94, "difficulty": 3, "hint": "欧洲" },
-    { "name": "布拉格", "lat": 50.08, "lng": 14.44, "difficulty": 3, "hint": "欧洲" },
-    { "name": "布加勒斯特", "lat": 44.43, "lng": 26.10, "difficulty": 3, "hint": "欧洲" },
-    { "name": "基辅", "lat": 50.45, "lng": 30.52, "difficulty": 3, "hint": "欧洲" },
-    { "name": "哈瓦那", "lat": 23.11, "lng": -82.37, "difficulty": 3, "hint": "北美洲" },
-    { "name": "巴拿马城", "lat": 8.98, "lng": -79.52, "difficulty": 3, "hint": "北美洲" },
-    { "name": "圣多明各", "lat": 18.49, "lng": -69.93, "difficulty": 3, "hint": "北美洲" },
-    { "name": "蒙得维的亚", "lat": -34.90, "lng": -56.16, "difficulty": 3, "hint": "南美洲" },
-    { "name": "亚松森", "lat": -25.28, "lng": -57.63, "difficulty": 3, "hint": "南美洲" },
-    { "name": "巴西利亚", "lat": -15.79, "lng": -47.88, "difficulty": 3, "hint": "南美洲" },
-    { "name": "突尼斯", "lat": 36.81, "lng": 10.18, "difficulty": 3, "hint": "非洲" },
-    { "name": "阿尔及尔", "lat": 36.75, "lng": 3.06, "difficulty": 3, "hint": "非洲" },
-    { "name": "拉巴特", "lat": 34.02, "lng": -6.84, "difficulty": 3, "hint": "非洲" },
-    { "name": "莫尔兹比港", "lat": -9.44, "lng": 147.18, "difficulty": 3, "hint": "大洋洲" },
-    { "name": "阿布贾", "lat": 9.06, "lng": 7.49, "difficulty": 4, "hint": "非洲" },
-    { "name": "卢萨卡", "lat": -15.42, "lng": 28.28, "difficulty": 4, "hint": "非洲" },
-    { "name": "阿拉木图", "lat": 43.24, "lng": 76.89, "difficulty": 4, "hint": "亚洲" },
-    { "name": "第比利斯", "lat": 41.72, "lng": 44.78, "difficulty": 4, "hint": "亚洲" },
-    { "name": "圣何塞", "lat": 9.93, "lng": -84.08, "difficulty": 4, "hint": "北美洲" },
-    { "name": "拉巴斯", "lat": -16.50, "lng": -68.15, "difficulty": 4, "hint": "南美洲" },
-    { "name": "帕拉马里博", "lat": 5.85, "lng": -55.20, "difficulty": 4, "hint": "南美洲" },
-    { "name": "维尔纽斯", "lat": 54.69, "lng": 25.28, "difficulty": 4, "hint": "欧洲" },
-    { "name": "塔什干", "lat": 41.30, "lng": 69.24, "difficulty": 4, "hint": "亚洲" },
-    { "name": "摩加迪沙", "lat": 2.04, "lng": 45.34, "difficulty": 4, "hint": "非洲" },
-    { "name": "比什凯克", "lat": 42.87, "lng": 74.59, "difficulty": 4, "hint": "亚洲" },
-    { "name": "科威特城", "lat": 29.38, "lng": 47.98, "difficulty": 4, "hint": "亚洲" },
-    { "name": "马斯喀特", "lat": 23.59, "lng": 58.41, "difficulty": 4, "hint": "亚洲" },
-    { "name": "安曼", "lat": 31.96, "lng": 35.95, "difficulty": 4, "hint": "亚洲" },
-    { "name": "多哈", "lat": 25.29, "lng": 51.53, "difficulty": 4, "hint": "亚洲" },
-    { "name": "里加", "lat": 56.95, "lng": 24.11, "difficulty": 4, "hint": "欧洲" },
-    { "name": "塔林", "lat": 59.44, "lng": 24.75, "difficulty": 4, "hint": "欧洲" },
-    { "name": "卢布尔雅那", "lat": 46.06, "lng": 14.51, "difficulty": 4, "hint": "欧洲" },
-    { "name": "布拉迪斯拉发", "lat": 48.15, "lng": 17.11, "difficulty": 4, "hint": "欧洲" },
-    { "name": "萨格勒布", "lat": 45.81, "lng": 15.98, "difficulty": 4, "hint": "欧洲" },
-    { "name": "地拉那", "lat": 41.33, "lng": 19.82, "difficulty": 4, "hint": "欧洲" },
-    { "name": "危地马拉城", "lat": 14.63, "lng": -90.51, "difficulty": 4, "hint": "北美洲" },
-    { "name": "拿骚", "lat": 25.06, "lng": -77.34, "difficulty": 4, "hint": "北美洲" },
-    { "name": "特古西加尔巴", "lat": 14.07, "lng": -87.19, "difficulty": 4, "hint": "北美洲" },
-    { "name": "库斯科", "lat": -13.53, "lng": -71.97, "difficulty": 4, "hint": "南美洲" },
-    { "name": "瓜亚基尔", "lat": -2.19, "lng": -79.89, "difficulty": 4, "hint": "南美洲" },
-    { "name": "基加利", "lat": -1.94, "lng": 30.06, "difficulty": 4, "hint": "非洲" },
-    { "name": "雅温得", "lat": 3.87, "lng": 11.52, "difficulty": 4, "hint": "非洲" },
-    { "name": "霍尼亚拉", "lat": -9.43, "lng": 159.96, "difficulty": 4, "hint": "大洋洲" },
-    { "name": "帕果帕果", "lat": -14.28, "lng": -170.70, "difficulty": 4, "hint": "大洋洲" },
-    { "name": "亚伦", "lat": -0.55, "lng": 166.92, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "恩吉鲁穆德", "lat": 7.50, "lng": 134.62, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "富纳富提", "lat": -8.52, "lng": 179.20, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "塔拉瓦", "lat": 1.33, "lng": 172.98, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "维拉港", "lat": -17.73, "lng": 168.32, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "普拉亚", "lat": 14.93, "lng": -23.51, "difficulty": 5, "hint": "非洲" },
-    { "name": "廷布", "lat": 27.47, "lng": 89.64, "difficulty": 5, "hint": "亚洲" },
-    { "name": "班珠尔", "lat": 13.45, "lng": -16.58, "difficulty": 5, "hint": "非洲" },
-    { "name": "恩贾梅纳", "lat": 12.11, "lng": 15.04, "difficulty": 5, "hint": "非洲" },
-    { "name": "朗伊尔城", "lat": 78.22, "lng": 15.63, "difficulty": 5, "hint": "欧洲" },
-    { "name": "内比都", "lat": 19.75, "lng": 96.13, "difficulty": 5, "hint": "亚洲" },
-    { "name": "阿什哈巴德", "lat": 37.96, "lng": 58.38, "difficulty": 5, "hint": "亚洲" },
-    { "name": "杜尚别", "lat": 38.56, "lng": 68.79, "difficulty": 5, "hint": "亚洲" },
-    { "name": "麦纳麦", "lat": 26.23, "lng": 50.59, "difficulty": 5, "hint": "亚洲" },
-    { "name": "瓦杜兹", "lat": 47.14, "lng": 9.52, "difficulty": 5, "hint": "欧洲" },
-    { "name": "圣马力诺", "lat": 43.94, "lng": 12.45, "difficulty": 5, "hint": "欧洲" },
-    { "name": "安道尔城", "lat": 42.51, "lng": 1.52, "difficulty": 5, "hint": "欧洲" },
-    { "name": "托尔斯港", "lat": 62.01, "lng": -6.77, "difficulty": 5, "hint": "欧洲" },
-    { "name": "布里奇敦", "lat": 13.10, "lng": -59.62, "difficulty": 5, "hint": "北美洲" },
-    { "name": "罗索", "lat": 15.30, "lng": -61.39, "difficulty": 5, "hint": "北美洲" },
-    { "name": "卡斯特里", "lat": 14.01, "lng": -60.99, "difficulty": 5, "hint": "北美洲" },
-    { "name": "威廉斯塔德", "lat": 12.11, "lng": -68.94, "difficulty": 5, "hint": "北美洲" },
-    { "name": "圣乔治", "lat": 12.06, "lng": -61.75, "difficulty": 5, "hint": "北美洲" },
-    { "name": "圣约翰", "lat": 17.12, "lng": -61.85, "difficulty": 5, "hint": "北美洲" },
-    { "name": "斯坦利", "lat": -51.70, "lng": -57.85, "difficulty": 5, "hint": "南美洲" },
-    { "name": "卡宴", "lat": 4.94, "lng": -52.33, "difficulty": 5, "hint": "南美洲" },
-    { "name": "乌斯怀亚", "lat": -54.80, "lng": -68.30, "difficulty": 5, "hint": "南美洲" },
-    { "name": "路易港", "lat": -20.16, "lng": 57.50, "difficulty": 5, "hint": "非洲" },
-    { "name": "维多利亚", "lat": -4.62, "lng": 55.45, "difficulty": 5, "hint": "非洲" },
-    { "name": "阿斯马拉", "lat": 15.34, "lng": 38.93, "difficulty": 5, "hint": "非洲" },
-    { "name": "华沙", "lat": 52.23, "lng": 21.01, "difficulty": 1, "hint": "欧洲" },
-    { "name": "布鲁塞尔", "lat": 50.85, "lng": 4.35, "difficulty": 1, "hint": "欧洲" },
-    { "name": "慕尼黑", "lat": 48.14, "lng": 11.58, "difficulty": 1, "hint": "欧洲" },
-    { "name": "米兰", "lat": 45.46, "lng": 9.19, "difficulty": 1, "hint": "欧洲" },
-    { "name": "威尼斯", "lat": 45.44, "lng": 12.33, "difficulty": 1, "hint": "欧洲" },
-    { "name": "圣彼得堡", "lat": 59.94, "lng": 30.31, "difficulty": 1, "hint": "欧洲" },
-    { "name": "日内瓦", "lat": 46.24, "lng": 6.11, "difficulty": 1, "hint": "欧洲" },
-    { "name": "苏黎世", "lat": 47.37, "lng": 8.55, "difficulty": 1, "hint": "欧洲" },
-    { "name": "波士顿", "lat": 42.36, "lng": -71.06, "difficulty": 1, "hint": "北美洲" },
-    { "name": "拉斯维加斯", "lat": 36.18, "lng": -115.14, "difficulty": 1, "hint": "北美洲" },
-    { "name": "卡拉奇", "lat": 24.86, "lng": 67.01, "difficulty": 2, "hint": "亚洲" },
-    { "name": "达卡", "lat": 23.71, "lng": 90.41, "difficulty": 2, "hint": "亚洲" },
-    { "name": "科伦坡", "lat": 6.94, "lng": 79.85, "difficulty": 2, "hint": "亚洲" },
-    { "name": "利雅得", "lat": 24.72, "lng": 46.72, "difficulty": 2, "hint": "亚洲" },
-    { "name": "特拉维夫", "lat": 32.08, "lng": 34.78, "difficulty": 2, "hint": "亚洲" },
-    { "name": "安卡拉", "lat": 39.92, "lng": 32.85, "difficulty": 2, "hint": "亚洲" },
-    { "name": "贝鲁特", "lat": 33.89, "lng": 35.50, "difficulty": 2, "hint": "亚洲" },
-    { "name": "加拉加斯", "lat": 10.49, "lng": -66.88, "difficulty": 2, "hint": "南美洲" },
-    { "name": "拉各斯", "lat": 6.45, "lng": 3.40, "difficulty": 2, "hint": "非洲" },
-    { "name": "德班", "lat": -29.86, "lng": 31.03, "difficulty": 2, "hint": "非洲" },
-    { "name": "万象", "lat": 17.97, "lng": 102.60, "difficulty": 3, "hint": "亚洲" },
-    { "name": "火奴鲁鲁", "lat": 21.31, "lng": -157.86, "difficulty": 3, "hint": "亚洲" },
-    { "name": "埃里温", "lat": 40.18, "lng": 44.51, "difficulty": 3, "hint": "亚洲" },
-    { "name": "坎帕拉", "lat": 0.32, "lng": 32.58, "difficulty": 3, "hint": "非洲" },
-    { "name": "阿克拉", "lat": 5.56, "lng": -0.20, "difficulty": 3, "hint": "非洲" },
-    { "name": "蒙罗维亚", "lat": 6.30, "lng": -10.80, "difficulty": 3, "hint": "非洲" },
-    { "name": "的黎波里", "lat": 32.89, "lng": 13.19, "difficulty": 3, "hint": "非洲" },
-    { "name": "圣多美", "lat": 0.34, "lng": 6.73, "difficulty": 3, "hint": "非洲" },
-    { "name": "马拉博", "lat": 3.76, "lng": 8.78, "difficulty": 3, "hint": "非洲" },
-    { "name": "楠迪", "lat": -17.80, "lng": 177.42, "difficulty": 3, "hint": "大洋洲" },
-    { "name": "吉布提市", "lat": 11.56, "lng": 43.11, "difficulty": 4, "hint": "非洲" },
-    { "name": "朱巴", "lat": 4.85, "lng": 31.58, "difficulty": 4, "hint": "非洲" },
-    { "name": "利伯维尔", "lat": 0.39, "lng": 9.45, "difficulty": 4, "hint": "非洲" },
-    { "name": "科纳克里", "lat": 9.54, "lng": -13.68, "difficulty": 4, "hint": "非洲" },
-    { "name": "弗里敦", "lat": 8.49, "lng": -13.24, "difficulty": 4, "hint": "非洲" },
-    { "name": "洛美", "lat": 6.13, "lng": 1.22, "difficulty": 4, "hint": "非洲" },
-    { "name": "波多诺伏", "lat": 6.50, "lng": 2.60, "difficulty": 4, "hint": "非洲" },
-    { "name": "帕皮提", "lat": -17.53, "lng": -149.57, "difficulty": 4, "hint": "大洋洲" },
-    { "name": "帝力", "lat": -8.56, "lng": 125.57, "difficulty": 4, "hint": "亚洲" },
-    { "name": "阿皮亚", "lat": -13.83, "lng": -171.77, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "努库阿洛法", "lat": -21.14, "lng": -175.20, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "马朱罗", "lat": 7.09, "lng": 171.38, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "科罗尔", "lat": 7.34, "lng": 134.47, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "阿卢斯", "lat": -10.31, "lng": 150.46, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "马代", "lat": 4.18, "lng": 73.51, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "贾卢伊特", "lat": 5.95, "lng": 169.43, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "南塔拉瓦", "lat": 1.35, "lng": 173.04, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "法考托", "lat": -9.37, "lng": -171.24, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "塔科塔斯", "lat": -40.85, "lng": 172.80, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "努美阿", "lat": -22.27, "lng": 166.45, "difficulty": 4, "hint": "大洋洲" }
-  ],
-  "scenics": [
-    { "name": "埃菲尔铁塔", "lat": 48.86, "lng": 2.29, "difficulty": 1, "hint": "欧洲" },
-    { "name": "自由女神像", "lat": 40.69, "lng": -74.04, "difficulty": 1, "hint": "北美洲" },
-    { "name": "吉萨金字塔", "lat": 29.98, "lng": 31.13, "difficulty": 1, "hint": "非洲" },
-    { "name": "悉尼歌剧院", "lat": -33.86, "lng": 151.22, "difficulty": 1, "hint": "大洋洲" },
-    { "name": "富士山", "lat": 35.36, "lng": 138.73, "difficulty": 1, "hint": "亚洲" },
-    { "name": "罗马斗兽场", "lat": 41.89, "lng": 12.49, "difficulty": 1, "hint": "欧洲" },
-    { "name": "莫斯科红场", "lat": 55.75, "lng": 37.62, "difficulty": 1, "hint": "欧洲" },
-    { "name": "泰姬陵", "lat": 27.17, "lng": 78.04, "difficulty": 1, "hint": "亚洲" },
-    { "name": "大本钟", "lat": 51.50, "lng": -0.12, "difficulty": 1, "hint": "欧洲" },
-    { "name": "帕特农神庙", "lat": 37.97, "lng": 23.73, "difficulty": 1, "hint": "欧洲" },
-    { "name": "长城", "lat": 40.36, "lng": 116.02, "difficulty": 1, "hint": "亚洲" },
-    { "name": "故宫", "lat": 39.92, "lng": 116.39, "difficulty": 1, "hint": "亚洲" },
-    { "name": "兵马俑", "lat": 34.38, "lng": 109.28, "difficulty": 1, "hint": "亚洲" },
-    { "name": "哈利法塔", "lat": 25.20, "lng": 55.27, "difficulty": 1, "hint": "亚洲" },
-    { "name": "珠穆朗玛峰", "lat": 27.99, "lng": 86.93, "difficulty": 1, "hint": "亚洲" },
-    { "name": "滨海湾金沙", "lat": 1.28, "lng": 103.86, "difficulty": 1, "hint": "亚洲" },
-    { "name": "巨石阵", "lat": 51.18, "lng": -1.83, "difficulty": 1, "hint": "欧洲" },
-    { "name": "圣家堂", "lat": 41.40, "lng": 2.17, "difficulty": 1, "hint": "欧洲" },
-    { "name": "勃兰登堡门", "lat": 52.52, "lng": 13.38, "difficulty": 1, "hint": "欧洲" },
-    { "name": "卢浮宫", "lat": 48.86, "lng": 2.34, "difficulty": 1, "hint": "欧洲" },
-    { "name": "圣彼得大教堂", "lat": 41.90, "lng": 12.45, "difficulty": 1, "hint": "欧洲" },
-    { "name": "黄石国家公园", "lat": 44.43, "lng": -110.59, "difficulty": 1, "hint": "北美洲" },
-    { "name": "帝国大厦", "lat": 40.75, "lng": -73.99, "difficulty": 1, "hint": "北美洲" },
-    { "name": "金门大桥", "lat": 37.82, "lng": -122.42, "difficulty": 1, "hint": "北美洲" },
-    { "name": "好莱坞", "lat": 34.13, "lng": -118.32, "difficulty": 1, "hint": "北美洲" },
-    { "name": "里约基督像", "lat": -22.95, "lng": -43.21, "difficulty": 1, "hint": "南美洲" },
-    { "name": "糖面包山", "lat": -22.95, "lng": -43.16, "difficulty": 1, "hint": "南美洲" },
-    { "name": "塞伦盖蒂", "lat": -2.33, "lng": 34.83, "difficulty": 1, "hint": "非洲" },
-    { "name": "好望角", "lat": -34.36, "lng": 18.47, "difficulty": 1, "hint": "非洲" },
-    { "name": "乌鲁鲁", "lat": -25.34, "lng": 131.04, "difficulty": 1, "hint": "大洋洲" },
-    { "name": "马丘比丘", "lat": -13.16, "lng": -72.55, "difficulty": 2, "hint": "南美洲" },
-    { "name": "吴哥窟", "lat": 13.41, "lng": 103.87, "difficulty": 2, "hint": "亚洲" },
-    { "name": "复活节岛", "lat": -27.11, "lng": -109.35, "difficulty": 2, "hint": "南美洲" },
-    { "name": "尼亚加拉瀑布", "lat": 43.08, "lng": -79.07, "difficulty": 2, "hint": "北美洲" },
-    { "name": "大堡礁", "lat": -18.29, "lng": 147.70, "difficulty": 2, "hint": "大洋洲" },
-    { "name": "乞力马扎罗山", "lat": -3.07, "lng": 37.36, "difficulty": 2, "hint": "非洲" },
-    { "name": "圣托里尼", "lat": 36.39, "lng": 25.46, "difficulty": 2, "hint": "欧洲" },
-    { "name": "科罗拉多大峡谷", "lat": 36.10, "lng": -112.11, "difficulty": 2, "hint": "北美洲" },
-    { "name": "京都金阁寺", "lat": 35.04, "lng": 135.73, "difficulty": 2, "hint": "亚洲" },
-    { "name": "伊瓜苏瀑布", "lat": -25.69, "lng": -54.44, "difficulty": 2, "hint": "南美洲" },
-    { "name": "东京塔", "lat": 35.66, "lng": 139.75, "difficulty": 2, "hint": "亚洲" },
-    { "name": "巴厘岛", "lat": -8.41, "lng": 115.19, "difficulty": 2, "hint": "亚洲" },
-    { "name": "济州岛", "lat": 33.37, "lng": 126.53, "difficulty": 2, "hint": "亚洲" },
-    { "name": "下龙湾", "lat": 20.91, "lng": 107.18, "difficulty": 2, "hint": "亚洲" },
-    { "name": "莫高窟", "lat": 40.04, "lng": 94.81, "difficulty": 2, "hint": "亚洲" },
-    { "name": "张家界", "lat": 29.32, "lng": 110.44, "difficulty": 2, "hint": "亚洲" },
-    { "name": "新天鹅堡", "lat": 47.56, "lng": 10.75, "difficulty": 2, "hint": "欧洲" },
-    { "name": "阿尔罕布拉宫", "lat": 37.18, "lng": -3.59, "difficulty": 2, "hint": "欧洲" },
-    { "name": "庞贝古城", "lat": 40.75, "lng": 14.49, "difficulty": 2, "hint": "欧洲" },
-    { "name": "白金汉宫", "lat": 51.50, "lng": -0.14, "difficulty": 2, "hint": "欧洲" },
-    { "name": "拉什莫尔山", "lat": 43.88, "lng": -103.46, "difficulty": 2, "hint": "北美洲" },
-    { "name": "优胜美地", "lat": 37.75, "lng": -119.59, "difficulty": 2, "hint": "北美洲" },
-    { "name": "班夫", "lat": 51.50, "lng": -115.93, "difficulty": 2, "hint": "北美洲" },
-    { "name": "的的喀喀湖", "lat": -15.76, "lng": -69.84, "difficulty": 2, "hint": "南美洲" },
-    { "name": "科帕卡巴纳海滩", "lat": -22.97, "lng": -43.18, "difficulty": 2, "hint": "南美洲" },
-    { "name": "卢克索神庙", "lat": 25.70, "lng": 32.64, "difficulty": 2, "hint": "非洲" },
-    { "name": "桑给巴尔岛", "lat": -6.16, "lng": 39.19, "difficulty": 2, "hint": "非洲" },
-    { "name": "桌山", "lat": -33.96, "lng": 18.41, "difficulty": 2, "hint": "非洲" },
-    { "name": "十二门徒岩", "lat": -38.67, "lng": 143.04, "difficulty": 2, "hint": "大洋洲" },
-    { "name": "米尔福德峡湾", "lat": -44.67, "lng": 167.93, "difficulty": 2, "hint": "大洋洲" },
-    { "name": "乌尤尼盐沼", "lat": -20.13, "lng": -67.49, "difficulty": 3, "hint": "南美洲" },
-    { "name": "维多利亚瀑布", "lat": -17.92, "lng": 25.86, "difficulty": 3, "hint": "非洲" },
-    { "name": "百内国家公园", "lat": -50.94, "lng": -73.41, "difficulty": 3, "hint": "南美洲" },
-    { "name": "棉花堡", "lat": 37.92, "lng": 29.12, "difficulty": 3, "hint": "亚洲" },
-    { "name": "佩特拉古城", "lat": 30.33, "lng": 35.44, "difficulty": 3, "hint": "亚洲" },
-    { "name": "盖朗厄尔峡湾", "lat": 62.10, "lng": 7.20, "difficulty": 3, "hint": "欧洲" },
-    { "name": "梅尔祖卡沙丘", "lat": 31.08, "lng": -4.01, "difficulty": 3, "hint": "非洲" },
-    { "name": "蒲甘", "lat": 21.17, "lng": 94.86, "difficulty": 3, "hint": "亚洲" },
-    { "name": "婆罗浮屠", "lat": -7.61, "lng": 110.20, "difficulty": 3, "hint": "亚洲" },
-    { "name": "奥卡万戈三角洲", "lat": -19.28, "lng": 22.90, "difficulty": 3, "hint": "非洲" },
-    { "name": "九寨沟", "lat": 33.26, "lng": 103.92, "difficulty": 3, "hint": "亚洲" },
-    { "name": "黄山", "lat": 30.13, "lng": 118.17, "difficulty": 3, "hint": "亚洲" },
-    { "name": "伏见稻荷大社", "lat": 34.97, "lng": 135.78, "difficulty": 3, "hint": "亚洲" },
-    { "name": "卡帕多奇亚", "lat": 38.64, "lng": 34.83, "difficulty": 3, "hint": "亚洲" },
-    { "name": "巨人之路", "lat": 55.24, "lng": -6.51, "difficulty": 3, "hint": "欧洲" },
-    { "name": "少女峰", "lat": 46.55, "lng": 7.98, "difficulty": 3, "hint": "欧洲" },
-    { "name": "马特洪峰", "lat": 45.98, "lng": 7.66, "difficulty": 3, "hint": "欧洲" },
-    { "name": "蓝湖温泉", "lat": 63.88, "lng": -22.45, "difficulty": 3, "hint": "欧洲" },
-    { "name": "羚羊峡谷", "lat": 36.86, "lng": -111.37, "difficulty": 3, "hint": "北美洲" },
-    { "name": "纪念碑谷", "lat": 36.98, "lng": -110.11, "difficulty": 3, "hint": "北美洲" },
-    { "name": "奇琴伊察", "lat": 20.68, "lng": -88.57, "difficulty": 3, "hint": "北美洲" },
-    { "name": "死亡谷", "lat": 36.51, "lng": -117.14, "difficulty": 3, "hint": "北美洲" },
-    { "name": "纳斯卡线条", "lat": -14.74, "lng": -75.13, "difficulty": 3, "hint": "南美洲" },
-    { "name": "佩里托莫雷诺冰川", "lat": -50.47, "lng": -73.03, "difficulty": 3, "hint": "南美洲" },
-    { "name": "加拉帕戈斯群岛", "lat": -0.74, "lng": -90.35, "difficulty": 3, "hint": "南美洲" },
-    { "name": "阿布辛贝神庙", "lat": 22.34, "lng": 31.63, "difficulty": 3, "hint": "非洲" },
-    { "name": "恩戈罗恩戈罗火山口", "lat": -3.17, "lng": 35.58, "difficulty": 3, "hint": "非洲" },
-    { "name": "汤加里罗国家公园", "lat": -39.29, "lng": 175.56, "difficulty": 3, "hint": "大洋洲" },
-    { "name": "怀托摩萤火虫洞", "lat": -38.26, "lng": 175.11, "difficulty": 3, "hint": "大洋洲" },
-    { "name": "罗托鲁瓦", "lat": -38.14, "lng": 176.25, "difficulty": 3, "hint": "大洋洲" },
-    { "name": "索苏斯维利沙丘", "lat": -24.73, "lng": 15.34, "difficulty": 4, "hint": "非洲" },
-    { "name": "猴面包树大道", "lat": -20.25, "lng": 44.42, "difficulty": 4, "hint": "非洲" },
-    { "name": "伊卢利萨特冰湾", "lat": 69.22, "lng": -51.10, "difficulty": 4, "hint": "北美洲" },
-    { "name": "瓦特纳冰川冰洞", "lat": 64.00, "lng": -16.90, "difficulty": 4, "hint": "欧洲" },
-    { "name": "阿塔卡马月亮谷", "lat": -22.91, "lng": -68.28, "difficulty": 4, "hint": "南美洲" },
-    { "name": "马赛马拉", "lat": -1.50, "lng": 35.14, "difficulty": 4, "hint": "非洲" },
-    { "name": "彩虹山", "lat": -13.87, "lng": -71.30, "difficulty": 4, "hint": "南美洲" },
-    { "name": "安赫尔瀑布", "lat": 5.97, "lng": -62.54, "difficulty": 4, "hint": "南美洲" },
-    { "name": "法罗群岛", "lat": 62.00, "lng": -6.79, "difficulty": 4, "hint": "欧洲" },
-    { "name": "瓦迪拉姆", "lat": 29.58, "lng": 35.42, "difficulty": 4, "hint": "亚洲" },
-    { "name": "稻城亚丁", "lat": 29.28, "lng": 100.11, "difficulty": 4, "hint": "亚洲" },
-    { "name": "张掖丹霞", "lat": 38.96, "lng": 100.07, "difficulty": 4, "hint": "亚洲" },
-    { "name": "冈仁波齐", "lat": 31.07, "lng": 81.31, "difficulty": 4, "hint": "亚洲" },
-    { "name": "锡吉里耶", "lat": 7.96, "lng": 80.75, "difficulty": 4, "hint": "亚洲" },
-    { "name": "会安古城", "lat": 15.88, "lng": 108.34, "difficulty": 4, "hint": "亚洲" },
-    { "name": "罗弗敦群岛", "lat": 68.15, "lng": 13.61, "difficulty": 4, "hint": "欧洲" },
-    { "name": "克鲁姆洛夫", "lat": 48.81, "lng": 14.32, "difficulty": 4, "hint": "欧洲" },
-    { "name": "普利特维采湖", "lat": 44.88, "lng": 15.62, "difficulty": 4, "hint": "欧洲" },
-    { "name": "马德拉岛", "lat": 32.76, "lng": -17.00, "difficulty": 4, "hint": "欧洲" },
-    { "name": "大提顿国家公园", "lat": 43.79, "lng": -110.68, "difficulty": 4, "hint": "北美洲" },
-    { "name": "白沙国家公园", "lat": 32.79, "lng": -106.20, "difficulty": 4, "hint": "北美洲" },
-    { "name": "迪纳利山", "lat": 63.07, "lng": -151.01, "difficulty": 4, "hint": "北美洲" },
-    { "name": "凯厄图尔瀑布", "lat": 5.18, "lng": -59.29, "difficulty": 4, "hint": "南美洲" },
-    { "name": "科尔卡峡谷", "lat": -15.62, "lng": -71.99, "difficulty": 4, "hint": "南美洲" },
-    { "name": "瓦尔登斯半岛", "lat": -42.60, "lng": -64.30, "difficulty": 4, "hint": "南美洲" },
-    { "name": "拉利贝拉岩石教堂", "lat": 12.03, "lng": 39.04, "difficulty": 4, "hint": "非洲" },
-    { "name": "鱼河峡谷", "lat": -27.57, "lng": 17.61, "difficulty": 4, "hint": "非洲" },
-    { "name": "塞米恩山脉", "lat": 13.25, "lng": 38.44, "difficulty": 4, "hint": "非洲" },
-    { "name": "水母湖", "lat": 7.16, "lng": 134.37, "difficulty": 4, "hint": "大洋洲" },
-    { "name": "宁格罗礁", "lat": -21.94, "lng": 113.79, "difficulty": 4, "hint": "大洋洲" },
-    { "name": "达尔瓦扎地狱之门", "lat": 40.25, "lng": 58.44, "difficulty": 5, "hint": "亚洲" },
-    { "name": "达纳基勒凹地", "lat": 14.24, "lng": 40.30, "difficulty": 5, "hint": "非洲" },
-    { "name": "索科特拉岛", "lat": 12.50, "lng": 53.90, "difficulty": 5, "hint": "亚洲" },
-    { "name": "堪察加间歇泉谷", "lat": 54.40, "lng": 160.10, "difficulty": 5, "hint": "亚洲" },
-    { "name": "纳汉尼国家公园", "lat": 61.50, "lng": -125.60, "difficulty": 5, "hint": "北美洲" },
-    { "name": "钦基石林", "lat": -18.80, "lng": 44.70, "difficulty": 5, "hint": "非洲" },
-    { "name": "克里穆图三色湖", "lat": -8.77, "lng": 121.82, "difficulty": 5, "hint": "亚洲" },
-    { "name": "扬马延岛", "lat": 71.00, "lng": -8.30, "difficulty": 5, "hint": "欧洲" },
-    { "name": "波浪岩", "lat": -32.44, "lng": 118.90, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "布温迪密林", "lat": -1.05, "lng": 29.70, "difficulty": 5, "hint": "非洲" },
-    { "name": "班公湖", "lat": 33.75, "lng": 78.63, "difficulty": 5, "hint": "亚洲" },
-    { "name": "恰伦峡谷", "lat": 43.35, "lng": 79.07, "difficulty": 5, "hint": "亚洲" },
-    { "name": "巴音扎格", "lat": 43.50, "lng": 100.90, "difficulty": 5, "hint": "亚洲" },
-    { "name": "罕萨山谷", "lat": 36.32, "lng": 74.65, "difficulty": 5, "hint": "亚洲" },
-    { "name": "希巴姆古城", "lat": 15.93, "lng": 48.62, "difficulty": 5, "hint": "亚洲" },
-    { "name": "设得兰群岛", "lat": 60.30, "lng": -1.25, "difficulty": 5, "hint": "欧洲" },
-    { "name": "多瑙河三角洲", "lat": 45.19, "lng": 29.63, "difficulty": 5, "hint": "欧洲" },
-    { "name": "里拉修道院", "lat": 42.13, "lng": 23.37, "difficulty": 5, "hint": "欧洲" },
-    { "name": "奈卡水晶洞", "lat": 27.95, "lng": -105.60, "difficulty": 5, "hint": "北美洲" },
-    { "name": "迪恩蓝洞", "lat": 24.72, "lng": -77.27, "difficulty": 5, "hint": "北美洲" },
-    { "name": "科科岛", "lat": 5.55, "lng": -87.06, "difficulty": 5, "hint": "北美洲" },
-    { "name": "中苏里南自然保护区", "lat": 4.00, "lng": -56.50, "difficulty": 5, "hint": "南美洲" },
-    { "name": "戈克塔瀑布", "lat": -5.95, "lng": -77.89, "difficulty": 5, "hint": "南美洲" },
-    { "name": "伦索伊斯国家公园", "lat": -2.49, "lng": -43.13, "difficulty": 5, "hint": "南美洲" },
-    { "name": "奥莫低谷", "lat": 5.30, "lng": 36.10, "difficulty": 5, "hint": "非洲" },
-    { "name": "撒哈拉之眼", "lat": 21.12, "lng": -11.40, "difficulty": 5, "hint": "非洲" },
-    { "name": "塔西利纳杰尔", "lat": 25.50, "lng": 8.90, "difficulty": 5, "hint": "非洲" },
-    { "name": "骷髅海岸", "lat": -20.00, "lng": 13.00, "difficulty": 5, "hint": "非洲" },
-    { "name": "南马都尔", "lat": 6.84, "lng": 158.34, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "马罗沃泻湖", "lat": -8.33, "lng": 157.33, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "凡尔赛宫", "lat": 48.81, "lng": 2.12, "difficulty": 1, "hint": "欧洲" },
-    { "name": "凯旋门", "lat": 48.87, "lng": 2.30, "difficulty": 1, "hint": "欧洲" },
-    { "name": "大英博物馆", "lat": 51.52, "lng": -0.13, "difficulty": 1, "hint": "欧洲" },
-    { "name": "伦敦塔桥", "lat": 51.51, "lng": -0.07, "difficulty": 1, "hint": "欧洲" },
-    { "name": "泰晤士河", "lat": 51.51, "lng": -0.12, "difficulty": 1, "hint": "欧洲" },
-    { "name": "中央公园", "lat": 40.79, "lng": -73.97, "difficulty": 1, "hint": "北美洲" },
-    { "name": "浅草寺", "lat": 35.72, "lng": 139.80, "difficulty": 1, "hint": "亚洲" },
-    { "name": "涩谷十字路口", "lat": 35.66, "lng": 139.70, "difficulty": 1, "hint": "亚洲" },
-    { "name": "威尼斯运河", "lat": 45.44, "lng": 12.34, "difficulty": 1, "hint": "欧洲" },
-    { "name": "德吉玛广场", "lat": 31.63, "lng": -7.99, "difficulty": 1, "hint": "非洲" },
-    { "name": "圣米歇尔山", "lat": 48.64, "lng": -1.51, "difficulty": 2, "hint": "欧洲" },
-    { "name": "巴黎圣母院", "lat": 48.85, "lng": 2.35, "difficulty": 2, "hint": "欧洲" },
-    { "name": "布拉格查理大桥", "lat": 50.09, "lng": 14.41, "difficulty": 2, "hint": "欧洲" },
-    { "name": "布达佩斯国会大厦", "lat": 47.51, "lng": 19.05, "difficulty": 2, "hint": "欧洲" },
-    { "name": "米兰大教堂", "lat": 45.46, "lng": 9.19, "difficulty": 2, "hint": "欧洲" },
-    { "name": "科隆大教堂", "lat": 50.94, "lng": 6.96, "difficulty": 2, "hint": "欧洲" },
-    { "name": "梵蒂冈博物馆", "lat": 41.91, "lng": 12.45, "difficulty": 2, "hint": "欧洲" },
-    { "name": "阿姆斯特丹运河", "lat": 52.37, "lng": 4.89, "difficulty": 2, "hint": "欧洲" },
-    { "name": "柏林墙遗址", "lat": 52.51, "lng": 13.44, "difficulty": 2, "hint": "欧洲" },
-    { "name": "蓝色清真寺", "lat": 41.01, "lng": 28.98, "difficulty": 2, "hint": "亚洲" },
-    { "name": "白川乡", "lat": 36.26, "lng": 136.87, "difficulty": 3, "hint": "亚洲" },
-    { "name": "屋久岛", "lat": 30.35, "lng": 130.52, "difficulty": 3, "hint": "亚洲" },
-    { "name": "多洛米蒂", "lat": 46.30, "lng": 12.05, "difficulty": 3, "hint": "欧洲" },
-    { "name": "因特拉肯", "lat": 46.69, "lng": 7.86, "difficulty": 3, "hint": "欧洲" },
-    { "name": "五渔村", "lat": 44.13, "lng": 9.73, "difficulty": 3, "hint": "欧洲" },
-    { "name": "波西塔诺", "lat": 40.63, "lng": 14.49, "difficulty": 3, "hint": "欧洲" },
-    { "name": "卡普里岛", "lat": 40.55, "lng": 14.23, "difficulty": 3, "hint": "欧洲" },
-    { "name": "龙达", "lat": 36.74, "lng": -5.17, "difficulty": 3, "hint": "欧洲" },
-    { "name": "塞维利亚大教堂", "lat": 37.39, "lng": -5.99, "difficulty": 3, "hint": "欧洲" },
-    { "name": "菲茨罗伊峰", "lat": -49.27, "lng": -73.04, "difficulty": 3, "hint": "南美洲" },
-    { "name": "塔西拉克", "lat": 65.61, "lng": -37.64, "difficulty": 4, "hint": "欧洲" },
-    { "name": "斯奈山半岛", "lat": 64.95, "lng": -23.43, "difficulty": 4, "hint": "欧洲" },
-    { "name": "大西洋公路", "lat": 62.74, "lng": 6.97, "difficulty": 4, "hint": "欧洲" },
-    { "name": "埃特纳火山", "lat": 37.75, "lng": 14.97, "difficulty": 4, "hint": "欧洲" },
-    { "name": "泰德火山", "lat": 28.27, "lng": -16.64, "difficulty": 4, "hint": "非洲" },
-    { "name": "图卜卡勒峰", "lat": 31.06, "lng": -7.92, "difficulty": 4, "hint": "非洲" },
-    { "name": "巴拿山", "lat": 16.03, "lng": 108.03, "difficulty": 4, "hint": "亚洲" },
-    { "name": "亚当峰", "lat": 6.80, "lng": 80.55, "difficulty": 4, "hint": "亚洲" },
-    { "name": "科莫多岛", "lat": -8.59, "lng": 119.46, "difficulty": 4, "hint": "亚洲" },
-    { "name": "特里斯坦-达库尼亚", "lat": -37.07, "lng": -12.31, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "皮特凯恩岛", "lat": -25.07, "lng": -130.10, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "豪兰岛", "lat": 0.81, "lng": -176.62, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "贝克岛", "lat": 0.20, "lng": -176.48, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "赫德岛", "lat": -53.08, "lng": 73.53, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "凯尔盖朗群岛", "lat": -49.20, "lng": 70.23, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "恩德伯里岛", "lat": -50.50, "lng": 166.29, "difficulty": 5, "hint": "大洋洲" },
-    { "name": "迪戈加西亚", "lat": -7.31, "lng": 72.41, "difficulty": 5, "hint": "非洲" },
-    { "name": "克利珀顿岛", "lat": 10.30, "lng": -109.22, "difficulty": 5, "hint": "北美洲" },
-    { "name": "胡安·费尔南德斯群岛", "lat": -33.67, "lng": -78.88, "difficulty": 5, "hint": "南美洲" },
-    { "name": "巧克力山", "lat": 9.80, "lng": 124.17, "difficulty": 4, "hint": "亚洲" }
-  ]
+ "cities": [
+  {
+   "name": "巴黎",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "伦敦",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "纽约",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "东京",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "悉尼",
+   "difficulty": 1,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "开罗",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "莫斯科",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "里约热内卢",
+   "difficulty": 1,
+   "hint": "南美洲"
+  },
+  {
+   "name": "罗马",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "迪拜",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "北京",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "上海",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "香港",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "新德里",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "孟买",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "雅加达",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "马德里",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "阿姆斯特丹",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "维也纳",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "巴塞罗那",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "芝加哥",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "旧金山",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "多伦多",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "墨西哥城",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "圣保罗",
+   "difficulty": 1,
+   "hint": "南美洲"
+  },
+  {
+   "name": "利马",
+   "difficulty": 1,
+   "hint": "南美洲"
+  },
+  {
+   "name": "约翰内斯堡",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "卡萨布兰卡",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "墨尔本",
+   "difficulty": 1,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "奥克兰",
+   "difficulty": 1,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "内罗毕",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "曼谷",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "伊斯坦布尔",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "温哥华",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "布宜诺斯艾利斯",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "新加坡",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "开普敦",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "首尔",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "柏林",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "洛杉矶",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "吉隆坡",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "大阪",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "台北",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "德黑兰",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "马尼拉",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "雅典",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "哥本哈根",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "斯德哥尔摩",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布达佩斯",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "都柏林",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "华盛顿",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "蒙特利尔",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "西雅图",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "圣地亚哥",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "波哥大",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "亚的斯亚贝巴",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "达喀尔",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "达累斯萨拉姆",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "珀斯",
+   "difficulty": 2,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "布里斯班",
+   "difficulty": 2,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "雷克雅未克",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "乌兰巴托",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "惠灵顿",
+   "difficulty": 3,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "阿斯塔纳",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "基多",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "塔那那利佛",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "努克",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "苏瓦",
+   "difficulty": 3,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "河内",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "里斯本",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "平壤",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "仰光",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "金边",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "加德满都",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "巴库",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "奥斯陆",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "赫尔辛基",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布拉格",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布加勒斯特",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "基辅",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "哈瓦那",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "巴拿马城",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "圣多明各",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "蒙得维的亚",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "亚松森",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "巴西利亚",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "突尼斯",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "阿尔及尔",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "拉巴特",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "莫尔兹比港",
+   "difficulty": 3,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "阿布贾",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "卢萨卡",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "阿拉木图",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "第比利斯",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "圣何塞",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "拉巴斯",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "帕拉马里博",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "维尔纽斯",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "塔什干",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "摩加迪沙",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "比什凯克",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "科威特城",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "马斯喀特",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "安曼",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "多哈",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "里加",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "塔林",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "卢布尔雅那",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布拉迪斯拉发",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "萨格勒布",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "地拉那",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "危地马拉城",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "拿骚",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "特古西加尔巴",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "库斯科",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "瓜亚基尔",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "基加利",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "雅温得",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "霍尼亚拉",
+   "difficulty": 4,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "帕果帕果",
+   "difficulty": 4,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "亚伦",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "恩吉鲁穆德",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "富纳富提",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "塔拉瓦",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "维拉港",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "普拉亚",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "廷布",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "班珠尔",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "恩贾梅纳",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "朗伊尔城",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "内比都",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "阿什哈巴德",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "杜尚别",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "麦纳麦",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "瓦杜兹",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "圣马力诺",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "安道尔城",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "托尔斯港",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布里奇敦",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "罗索",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "卡斯特里",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "威廉斯塔德",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "圣乔治",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "圣约翰",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "斯坦利",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "卡宴",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "乌斯怀亚",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "路易港",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "维多利亚",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "阿斯马拉",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "华沙",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布鲁塞尔",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "慕尼黑",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "米兰",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "威尼斯",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "圣彼得堡",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "日内瓦",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "苏黎世",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "波士顿",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "拉斯维加斯",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "卡拉奇",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "达卡",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "科伦坡",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "利雅得",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "特拉维夫",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "安卡拉",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "贝鲁特",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "加拉加斯",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "拉各斯",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "德班",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "万象",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "火奴鲁鲁",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "埃里温",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "坎帕拉",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "阿克拉",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "蒙罗维亚",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "的黎波里",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "圣多美",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "马拉博",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "楠迪",
+   "difficulty": 3,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "吉布提市",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "朱巴",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "利伯维尔",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "科纳克里",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "弗里敦",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "洛美",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "波多诺伏",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "帕皮提",
+   "difficulty": 4,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "帝力",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "阿皮亚",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "努库阿洛法",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "马朱罗",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "科罗尔",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "阿卢斯",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "马代",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "贾卢伊特",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "南塔拉瓦",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "法考托",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "塔科塔斯",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "努美阿",
+   "difficulty": 4,
+   "hint": "大洋洲"
+  }
+ ],
+ "scenics": [
+  {
+   "name": "埃菲尔铁塔",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "自由女神像",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "吉萨金字塔",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "悉尼歌剧院",
+   "difficulty": 1,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "富士山",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "罗马斗兽场",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "莫斯科红场",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "泰姬陵",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "大本钟",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "帕特农神庙",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "长城",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "故宫",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "兵马俑",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "哈利法塔",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "珠穆朗玛峰",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "滨海湾金沙",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "巨石阵",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "圣家堂",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "勃兰登堡门",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "卢浮宫",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "圣彼得大教堂",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "黄石国家公园",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "帝国大厦",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "金门大桥",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "好莱坞",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "里约基督像",
+   "difficulty": 1,
+   "hint": "南美洲"
+  },
+  {
+   "name": "糖面包山",
+   "difficulty": 1,
+   "hint": "南美洲"
+  },
+  {
+   "name": "塞伦盖蒂",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "好望角",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "乌鲁鲁",
+   "difficulty": 1,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "马丘比丘",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "吴哥窟",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "复活节岛",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "尼亚加拉瀑布",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "大堡礁",
+   "difficulty": 2,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "乞力马扎罗山",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "圣托里尼",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "科罗拉多大峡谷",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "京都金阁寺",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "伊瓜苏瀑布",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "东京塔",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "巴厘岛",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "济州岛",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "下龙湾",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "莫高窟",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "张家界",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "新天鹅堡",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "阿尔罕布拉宫",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "庞贝古城",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "白金汉宫",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "拉什莫尔山",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "优胜美地",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "班夫",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "的的喀喀湖",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "科帕卡巴纳海滩",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "卢克索神庙",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "桑给巴尔岛",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "桌山",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "十二门徒岩",
+   "difficulty": 2,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "米尔福德峡湾",
+   "difficulty": 2,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "乌尤尼盐沼",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "维多利亚瀑布",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "百内国家公园",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "棉花堡",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "佩特拉古城",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "盖朗厄尔峡湾",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "梅尔祖卡沙丘",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "蒲甘",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "婆罗浮屠",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "奥卡万戈三角洲",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "九寨沟",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "黄山",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "伏见稻荷大社",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "卡帕多奇亚",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "巨人之路",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "少女峰",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马特洪峰",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "蓝湖温泉",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "羚羊峡谷",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "纪念碑谷",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "奇琴伊察",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "死亡谷",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "纳斯卡线条",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "佩里托莫雷诺冰川",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "加拉帕戈斯群岛",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "阿布辛贝神庙",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "恩戈罗恩戈罗火山口",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "汤加里罗国家公园",
+   "difficulty": 3,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "怀托摩萤火虫洞",
+   "difficulty": 3,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "罗托鲁瓦",
+   "difficulty": 3,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "索苏斯维利沙丘",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "猴面包树大道",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "伊卢利萨特冰湾",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "瓦特纳冰川冰洞",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "阿塔卡马月亮谷",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "马赛马拉",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "彩虹山",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "安赫尔瀑布",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "法罗群岛",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "瓦迪拉姆",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "稻城亚丁",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "张掖丹霞",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "冈仁波齐",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "锡吉里耶",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "会安古城",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "罗弗敦群岛",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "克鲁姆洛夫",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "普利特维采湖",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马德拉岛",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "大提顿国家公园",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "白沙国家公园",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "迪纳利山",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "凯厄图尔瀑布",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "科尔卡峡谷",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "瓦尔登斯半岛",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "拉利贝拉岩石教堂",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "鱼河峡谷",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "塞米恩山脉",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "水母湖",
+   "difficulty": 4,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "宁格罗礁",
+   "difficulty": 4,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "达尔瓦扎地狱之门",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "达纳基勒凹地",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "索科特拉岛",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "堪察加间歇泉谷",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "纳汉尼国家公园",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "钦基石林",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "克里穆图三色湖",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "扬马延岛",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "波浪岩",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "布温迪密林",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "班公湖",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "恰伦峡谷",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "巴音扎格",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "罕萨山谷",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "希巴姆古城",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "设得兰群岛",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "多瑙河三角洲",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "里拉修道院",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "奈卡水晶洞",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "迪恩蓝洞",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "科科岛",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "中苏里南自然保护区",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "戈克塔瀑布",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "伦索伊斯国家公园",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "奥莫低谷",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "撒哈拉之眼",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "塔西利纳杰尔",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "骷髅海岸",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "南马都尔",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "马罗沃泻湖",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "凡尔赛宫",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "凯旋门",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "大英博物馆",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "伦敦塔桥",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "泰晤士河",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "中央公园",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "浅草寺",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "涩谷十字路口",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "威尼斯运河",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "德吉玛广场",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "圣米歇尔山",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "巴黎圣母院",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布拉格查理大桥",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布达佩斯国会大厦",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "米兰大教堂",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "科隆大教堂",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "梵蒂冈博物馆",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "阿姆斯特丹运河",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "柏林墙遗址",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "蓝色清真寺",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "白川乡",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "屋久岛",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "多洛米蒂",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "因特拉肯",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "五渔村",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "波西塔诺",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "卡普里岛",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "龙达",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "塞维利亚大教堂",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "菲茨罗伊峰",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "塔西拉克",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "斯奈山半岛",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "大西洋公路",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "埃特纳火山",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "泰德火山",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "图卜卡勒峰",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "巴拿山",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "亚当峰",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "科莫多岛",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "特里斯坦-达库尼亚",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "皮特凯恩岛",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "豪兰岛",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "贝克岛",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "赫德岛",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "凯尔盖朗群岛",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "恩德伯里岛",
+   "difficulty": 5,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "迪戈加西亚",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "克利珀顿岛",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "胡安·费尔南德斯群岛",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "巧克力山",
+   "difficulty": 4,
+   "hint": "亚洲"
+  }
+ ]
 }

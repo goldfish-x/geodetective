@@ -165,9 +165,12 @@ POST /v1/pay/:provider/callback                                   → 验签 →
 | P0 准备 | 选型定稿、monorepo 拆分（`web/ server/ shared/`）、CI 加服务端单测、域名/备案/主体启动 | CI 绿；server hello-world 部署成功 | 1 周 |
 | ↳ 进度 | **已完成**：分支 `codex/online-p0`；monorepo 拆分、`@gd/shared` 契约测试、Fastify BFF 骨架（`/v1/health` `/v1/config`）、`ci.yml`；**待办**：server 部署目标待定（依赖选型/主体），域名与备案未启动 | | |
 | P1 账号+权威对局 | auth、runs/answers/finish、storage 适配器、离线回落、mock API 测试模式 | 线上完整玩一局且 bundle 无坐标；E2E 全绿 | 2–3 周 |
+| ↳ 进度 | **坐标剥离已完成**：题库 meta 与 `<mode>-coords.json` 分离，生产构建把坐标别名成空对象，`scripts/check_bundle_coords.mjs` 在 CI 里对在线/demo 两种产物做哨兵断言 | | |
 | ↳ 进度 | **主体已完成**（分支 `codex/online-p0`）：手机号验证码登录（dev 短信）、runs/answers/props/finish 服务端权威、全网榜、未登录拦截、`test_online.py` 全链路、离线 13 套件不受影响。**待办**：坐标从 web bundle 剥离（离线演示与在线包分离构建）、storage 适配器化（目前在线/离线在 game.js 内分支）、PG 驱动替换文件驱动、部署到 ECS（档 A） | | |
 | P2 全网榜 | boards API + 首页 tab + 结算名次反馈 | 两设备互见成绩；赛季切换正确 | 1 周 |
+| ↳ 进度 | **已提前完成**：`/v1/boards/:mode`（mode × UTC 月赛季）+ 首页「本机/全网」切换 + 终局全网名次与榜首庆祝复用 | | |
 | P3 道具经济 | 库存/消耗/每日赠送/货币流水 | 断网重连不丢道具；消耗与判分一致 | 1–2 周 |
+| ↳ 进度 | **玩法侧已完成**：四道具（加时12s/复活/回溯两题/疆域透镜）+ 三档次数，服务端权威计数，离线与在线同语义；**待办**：货币与购买发货（订单状态机在 P4） | | |
 | P4 支付 | 订单状态机、回调验签、对账、商店 UI | 沙箱全链路；对账零差异 | 2–4 周（含资质） |
 | P5 加固运营 | shadow 队列、实时榜、好友榜、赛季结算奖励 | 抽样复核流程跑通 | 持续 |
 

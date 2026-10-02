@@ -25,7 +25,7 @@ def timer_state(page):
       w: document.getElementById('timer-fill').style.width,
       txt: document.getElementById('timer-text').textContent,
       settled: document.querySelector('.timer').classList.contains('settled'),
-      propsDisabled: !!document.querySelector('#prop-hint').disabled })''')
+      propsDisabled: [...document.querySelectorAll('[data-prop]')].every(b => b.className.includes('locked')) })''')
 
 
 def unit(p):

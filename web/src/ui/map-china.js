@@ -174,6 +174,15 @@ export function createChinaMap(container, { onPick, onInvalidPick }) {
     clearHighlight() {
       chart.setOption({ geo: { regions: baseRegions } })
     },
+    // 疆域透镜：高亮答案所在省份，其余压暗
+    highlightArea(provinceName) {
+      const merged = baseRegions.map(r =>
+        r.name === provinceName
+          ? { name: r.name, itemStyle: { areaColor: '#e8b64c', opacity: 1 } }
+          : { name: r.name, itemStyle: { ...r.itemStyle, opacity: 0.3 } }
+      )
+      chart.setOption({ geo: { regions: merged } })
+    },
     // 局结算档案：显示/清除红点
     showSpot(lng, lat) {
       chart.setOption({ series: [{ id: 'spot', data: [{ value: [lng, lat] }] }] })
