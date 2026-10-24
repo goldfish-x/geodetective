@@ -1,4 +1,4 @@
-# 完整流程回归：10 局 × 8 题、终局成绩单、排行榜、超时与移动端视口
+# 完整流程回归：15 局 × 8 题、终局成绩单、排行榜、超时与移动端视口
 import os
 import sys
 from pathlib import Path
@@ -17,7 +17,7 @@ errors = []
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
 
-    # —— 桌面端：中国篇完整 10 局 × 8 题 ——
+    # —— 桌面端：中国篇完整 15 局 × 8 题 ——
     page = browser.new_page(viewport={"width": 1280, "height": 800})
     page.on("console", lambda m: errors.append("[console] " + m.text) if m.type == "error" else None)
     page.on("pageerror", lambda e: errors.append("[pageerror] " + str(e)))
@@ -40,7 +40,7 @@ with sync_playwright() as p:
         page.wait_for_selector("#settle-pop:not(.hidden)", timeout=5000)
         page.click("#btn-next")
 
-    for stage_index in range(10):
+    for stage_index in range(15):
         page.wait_for_function(
             f"() => window.__gdDebug.state.stageIndex === {stage_index} && window.__gdDebug.state.qInStage === 0",
             timeout=10000,
@@ -60,9 +60,9 @@ with sync_playwright() as p:
 
     page.wait_for_selector(".result-page", timeout=10000)
     assert page.locator(".result-stamp").inner_text() == "完美结案"
-    assert page.locator(".result-list li").count() == 80, "终局成绩单不是 80 行"
-    assert page.locator(".stage-dot.cleared").count() == 10, "终局进度点不是 10 个"
-    print("[完整对局] 10 局 × 8 题 · 80 行成绩单 · 完美结案 ✓")
+    assert page.locator(".result-list li").count() == 120, "终局成绩单不是 120 行"
+    assert page.locator(".stage-dot.cleared").count() == 15, "终局进度点不是 15 个"
+    print("[完整对局] 15 局 × 8 题 · 120 行成绩单 · 完美结案 ✓")
     print("[总分]", page.locator(".result-score em").inner_text())
     page.screenshot(path=str(OUT / "china-result.png"))
 

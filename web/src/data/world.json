@@ -2002,5 +2002,1007 @@
    "difficulty": 4,
    "hint": "亚洲"
   }
+ ],
+ "history": [
+  {
+   "name": "凡尔登战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "凡尔赛条约签署",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "勒班陀海战",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "南非种族隔离制度确立",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "印度非暴力不合作运动",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "古巴导弹危机",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "哈斯丁斯战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "哥伦布抵达圣萨尔瓦多",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "奥斯特里茨战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "巴士底狱攻占",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "巴黎和会召开",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布伦海姆战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "广岛原子弹爆炸",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "敦刻尔克撤退",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "日本明治维新",
+   "difficulty": 1,
+   "hint": "亚洲"
+  },
+  {
+   "name": "普拉蒂纳战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "柏林墙修建",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "柏林战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "法国大革命攻占巴士底狱",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "波士顿倾茶事件",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "滑铁卢战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "特拉法尔加海战",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "珍珠港事件",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "索姆河战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "维也纳之战",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "美国南北战争爆发",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "美国独立宣言签署",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "联合国宪章签署",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "色当战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "苏联十月革命",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "英国光荣革命",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "莱比锡会战",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "葛底斯堡战役",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "诺曼底登陆",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "诺曼征服",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "阿拉莫战役",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "阿波罗11号登月",
+   "difficulty": 1,
+   "hint": "北美洲"
+  },
+  {
+   "name": "阿金库尔战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马哈赞河战役",
+   "difficulty": 1,
+   "hint": "非洲"
+  },
+  {
+   "name": "马恩河战役",
+   "difficulty": 1,
+   "hint": "欧洲"
+  },
+  {
+   "name": "中途岛海战",
+   "difficulty": 2,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "伊普尔毒气战",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "六日战争",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "凡尔赛和约签署",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "加尔文在日内瓦推行改革",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "卡廷惨案",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "卡廷森林惨案",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "印加帝国灭亡",
+   "difficulty": 2,
+   "hint": "南美洲"
+  },
+  {
+   "name": "印度独立宣言发表",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "君士坦丁堡陷落",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "哥伦布首航抵达圣萨尔瓦多",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "宗教改革开始",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "巴士底狱风暴",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布拉格之春",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布拉格之春镇压",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "彼得大帝建立圣彼得堡",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "彼得格勒武装起义",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "托莱多翻译运动",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "文艺复兴开端",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "斯大林格勒战役",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "曼哈顿计划启动",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "柏林空运",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "柏林空运开始",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "特拉法加海战",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "维也纳会议召开",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "莫斯科保卫战",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "莱茵河战役",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "萨拉热窝刺杀",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "阿兹特克帝国灭亡",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "阿拉斯加购地签约",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "阿拉曼战役",
+   "difficulty": 2,
+   "hint": "非洲"
+  },
+  {
+   "name": "阿波罗13号事故",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "阿莱西亚之战",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马其顿东征",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "马哈茂德二世废除耶尼切里",
+   "difficulty": 2,
+   "hint": "亚洲"
+  },
+  {
+   "name": "马恩河奇迹",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马歇尔计划宣布",
+   "difficulty": 2,
+   "hint": "北美洲"
+  },
+  {
+   "name": "马耳他围城战",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "麦哲伦船队完成环球航行",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "黑死病爆发",
+   "difficulty": 2,
+   "hint": "欧洲"
+  },
+  {
+   "name": "伊苏斯战役",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "华沙起义爆发",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "博斯沃思原野战役",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "卡纳提克战争爆发",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "卡迭石战役",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "塔拉韦拉战役",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "奥斯陆协议签署",
+   "difficulty": 3,
+   "hint": "北美洲"
+  },
+  {
+   "name": "巴士底狱起义",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "布匿战争爆发",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "布匿战争结束",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "布匿战争迦太基陷落",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "布宜诺斯艾利斯独立宣言",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "帕提战役",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "库尔斯克会战",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "开罗会议召开",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "开罗宣言签署",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "彼得格勒起义",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "德里苏丹国建立",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "德黑兰会议",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "德黑兰会议召开",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "托勒密王朝建立",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "托莱多宗教会议",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "托莱多攻防战",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "拿破仑加冕",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "普拉蒂河战役",
+   "difficulty": 3,
+   "hint": "南美洲"
+  },
+  {
+   "name": "温泉关战役",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "瓦尔哈拉宣言签署",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "瓦尔密战役",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "瓦西里三世吞并普斯科夫",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "的黎波里战争爆发",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "的黎波里海战",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "索菲亚宣言签署",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "长崎原子弹爆炸",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "阿莱西亚围城战",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马可波罗抵达忽必烈汗廷",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "马哈迪亚战役",
+   "difficulty": 3,
+   "hint": "非洲"
+  },
+  {
+   "name": "马德里围城战",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马恩河第二次战役",
+   "difficulty": 3,
+   "hint": "欧洲"
+  },
+  {
+   "name": "乌尔姆战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "五月风暴",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "克雷西战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "博尔霍夫战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "卡塔隆平原战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "卡萨布兰卡会议",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "卡诺萨觐见",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "哈丁战役",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "图尔战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "圣文森特角海战",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "塔拉戈纳围城战",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "奥斯特利茨战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "孟买恐怖袭击",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "布赖滕费尔德战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "帕文战役",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "帖木儿攻陷德里",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "开罗宣言发布",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "悉尼歌剧院开幕",
+   "difficulty": 4,
+   "hint": "大洋洲"
+  },
+  {
+   "name": "拉文纳战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "斯巴达克起义",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "普瓦捷战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "柏林墙倒塌",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "桑地诺革命",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "河内春节攻势",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "河内独立宣言宣读",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "瓦尔哈拉战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "瓦尔哈拉神殿奠基",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "瓦拉几亚抵抗奥斯曼",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "瓦特改良蒸汽机",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "科索沃战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "维京人劫掠林迪斯法恩",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "芝加哥大火",
+   "difficulty": 4,
+   "hint": "北美洲"
+  },
+  {
+   "name": "萨珊波斯围攻安条克",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "西哥特攻陷罗马",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "阿劳卡尼亚战争",
+   "difficulty": 4,
+   "hint": "南美洲"
+  },
+  {
+   "name": "阿尔苏夫战役",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "阿音札鲁特战役",
+   "difficulty": 4,
+   "hint": "亚洲"
+  },
+  {
+   "name": "马尔堡战役",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马德里围城结束",
+   "difficulty": 4,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马里格那诺战役",
+   "difficulty": 4,
+   "hint": "非洲"
+  },
+  {
+   "name": "乌得勒支和约签署",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "伊凡雷帝处决子嗣",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "伊斯坦布尔大起义",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "俾斯麦柏林会议",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "凡尔赛宫加冕",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "圣女贞德奥尔良解围",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "圣巴托洛缪大屠杀",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "塔兰托夜袭",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "威廉一世伦敦条约签署",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "孟买纺织工人大罢工",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "布宜诺斯艾利斯五月革命",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "布拉格之春苏军入侵",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "开普勒发表新天文学",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "彼得大帝建都",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "德雷福斯事件军事法庭宣判",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "德雷福斯事件审判",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "戈尔巴乔夫辞职",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "托洛茨基遇刺",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "拿破仑远征埃及",
+   "difficulty": 5,
+   "hint": "非洲"
+  },
+  {
+   "name": "柏林会议",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "河内战役结束",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "河内春节攻势启动",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "波士顿大屠杀",
+   "difficulty": 5,
+   "hint": "北美洲"
+  },
+  {
+   "name": "瓦特蒸汽机首次商用",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "维也纳会议",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "罗伯斯庇尔被处决",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "腓特烈二世攻占布拉格",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "苏莱曼大帝围攻维也纳",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "莫斯科保卫战转折",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "莱比锡各民族大会战",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "萨拉丁收复耶路撒冷",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "萨拉丁阿苏夫反击战",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "阿姆利则惨案",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "阿姆斯特丹银行成立",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "阿拔斯革命攻占雷伊",
+   "difficulty": 5,
+   "hint": "亚洲"
+  },
+  {
+   "name": "阿萨辛派刺杀桑贾尔",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马岛战争斯坦利港登陆",
+   "difficulty": 5,
+   "hint": "南美洲"
+  },
+  {
+   "name": "马德里公社起义",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "马德里围城开始",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "西罗马帝国灭亡",
+   "difficulty": 5,
+   "hint": "欧洲"
+  },
+  {
+   "name": "土耳其共和国宣告成立",
+   "difficulty": 3,
+   "hint": "亚洲"
+  },
+  {
+   "name": "纳瓦里诺海战",
+   "difficulty": 3,
+   "hint": "欧洲"
+  }
  ]
 }

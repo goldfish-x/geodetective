@@ -437,6 +437,7 @@ li.top3 .bl-score { color: #e8a877; }
   flex-shrink: 0;
 }
 .q-badge.scenic { background: var(--wax); color: var(--parchment); }
+.q-badge.history { background: #4e7c74; color: var(--parchment); }
 .q-name {
   font-family: var(--serif);
   font-size: clamp(20px, 4.5vw, 28px);

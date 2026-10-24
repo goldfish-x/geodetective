@@ -12,10 +12,10 @@ import { verify, issueTokens, newCode, REFRESH_TTL } from "./auth.js";
 const HERE = fileURLToPath(new URL(".", import.meta.url));
 
 export function loadBank(mode) {
-  // meta 与坐标分文件存放：坐标只在服务端合并使用，永不下发给浏览器
+  // meta 与坐标分文件存放：坐标与省份/国家归属只在服务端合并使用，永不下发给浏览器
   const meta = JSON.parse(readFileSync(HERE + "../../web/src/data/" + mode + ".json", "utf-8"));
   const coords = JSON.parse(readFileSync(HERE + "../../web/src/data/" + mode + "-coords.json", "utf-8"));
-  for (const bucket of ["cities", "scenics"])
+  for (const bucket of ["cities", "scenics", "history"])
     for (const it of meta[bucket]) {
       const c = coords[it.name];
       if (c) { it.lat = c[0]; it.lng = c[1]; it.area = c[2] || ""; }

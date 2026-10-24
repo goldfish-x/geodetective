@@ -442,5 +442,455 @@
   "page": "mbd.baidu.com",
   "title": "马朱罗环礁🌊50公里人文自然全攻略",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
+ },
+ "凡尔登战役": {
+  "url": "https://img0.baidu.com/it/u=385442220,421125431&fm=253&fmt=auto&app=138&f=JPEG?w=824&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "一战绞肉机,凡尔登战役",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "凡尔赛条约签署": {
+  "url": "https://img2.baidu.com/it/u=2656575535,4139757707&fm=253&fmt=auto&app=120&f=JPEG?w=1423&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "凡尔赛和约,德国接受的条约,到底有多苛刻?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "南非种族隔离制度确立": {
+  "url": "https://img2.baidu.com/it/u=1193908806,3776803384&fm=253&fmt=auto&app=120&f=JPEG?w=921&h=800",
+  "page": "mbd.baidu.com",
+  "title": "历史上的今天:3月17日 南非种族隔离制度结束",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "印度非暴力不合作运动": {
+  "url": "https://img2.baidu.com/it/u=1100595951,3129321612&fm=253&fmt=auto&app=138&f=JPEG?w=608&h=453",
+  "page": "www.zhihu.com",
+  "title": "怎么看印度非暴力不合作运动?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "古巴导弹危机": {
+  "url": "https://img1.baidu.com/it/u=2432242678,500503831&fm=253&fmt=auto&app=120&f=JPEG?w=1016&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "1962年古巴导弹危机:强势的赫鲁晓夫为何先认怂?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "奥斯特里茨战役": {
+  "url": "https://img1.baidu.com/it/u=3471381077,1742431264&fm=253&fmt=auto&app=138&f=JPEG?w=581&h=388",
+  "page": "www.veer.com",
+  "title": "布尔诺附近的奥斯特里茨战役纪念碑图片下载",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "巴士底狱攻占": {
+  "url": "https://img2.baidu.com/it/u=2102778602,782976331&fm=253&fmt=auto?w=677&h=451",
+  "page": "baijiahao.baidu.com",
+  "title": "巴士底狱攻占:法国大革命的起点与象征",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "巴黎和会召开": {
+  "url": "https://img2.baidu.com/it/u=2627442602,2524232537&fm=253&fmt=auto&app=120&f=JPEG?w=816&h=500",
+  "page": "news.sohu.com",
+  "title": "民国第一外交家顾维钧,敢对列强说\"不\",在巴黎和会上舌战群儒",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "广岛原子弹爆炸": {
+  "url": "https://img2.baidu.com/it/u=2424498562,3040650241&fm=253&fmt=auto&app=120&f=JPEG?w=904&h=500",
+  "page": "www.sohu.com",
+  "title": "直击广岛原子弹爆炸现场:10亿度高温,把中心地带一切都化为灰烬 直击",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "敦刻尔克撤退": {
+  "url": "https://img1.baidu.com/it/u=348952726,1280044467&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+  "page": "www.bilibili.com",
+  "title": "敦刻尔克大撤退(模拟战役)",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "日本明治维新": {
+  "url": "https://img1.baidu.com/it/u=2084673775,4032078966&fm=253&fmt=auto&app=138&f=JPEG?w=660&h=500",
+  "page": "mbd.baidu.com",
+  "title": "日本明治维新老照片:森林中的宁静与变革",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "柏林墙修建": {
+  "url": "https://img2.baidu.com/it/u=3329155570,2673917028&fm=253&fmt=auto&app=120&f=JPEG?w=1172&h=800",
+  "page": "mbd.baidu.com",
+  "title": "在柏林墙修建后的近三十年中,共有5043名东德人冒着被射杀的危险",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "柏林战役": {
+  "url": "https://img0.baidu.com/it/u=1245848509,1365308338&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=528",
+  "page": "www.sohu.com",
+  "title": "1945年柏林战役,6名德国士兵逃进防空洞,坚守5年仅一人成功存活",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "波士顿倾茶事件": {
+  "url": "https://img0.baidu.com/it/u=126229406,1337183384&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+  "page": "mbd.baidu.com",
+  "title": "波士顿倾茶事件博物馆:革命的起源",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "滑铁卢战役": {
+  "url": "https://img0.baidu.com/it/u=182404030,926345777&fm=253&fmt=auto&app=138&f=JPEG?w=686&h=500",
+  "page": "mbd.baidu.com",
+  "title": "滑铁卢战役遗址:拿破仑的败走之地",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "特拉法尔加海战": {
+  "url": "https://img0.baidu.com/it/u=42130551,4288219584&fm=253&fmt=auto&app=138&f=JPEG?w=526&h=350",
+  "page": "www.quanjing.com",
+  "title": "英格兰,黑色,纪念建筑,记忆,特拉法尔加海战",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "珍珠港事件": {
+  "url": "https://img1.baidu.com/it/u=1879338501,3151299461&fm=253&fmt=auto&app=120&f=JPEG?w=1002&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "珍珠港事件隐藏真相:不是日本太疯狂,而是美国断油把日本逼上绝路!",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "索姆河战役": {
+  "url": "https://img0.baidu.com/it/u=3471498692,2251811354&fm=253&fmt=auto&app=138&f=JPEG?w=810&h=500",
+  "page": "mbd.baidu.com",
+  "title": "索姆河战役,作为第一次世界大战中的一场关键战役,不仅因其持续的激战",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "维也纳之战": {
+  "url": "https://img2.baidu.com/it/u=2746561651,283926302&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=894",
+  "page": "mbd.baidu.com",
+  "title": "维也纳黑死病纪念柱:历史的印记 🏞️",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "美国南北战争爆发": {
+  "url": "https://img2.baidu.com/it/u=2639159885,371528657&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=640",
+  "page": "www.meipian.cn",
+  "title": "谢尔曼是美国南北战争时期北方的重要将领,西部方面军最高司令官.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "美国独立宣言签署": {
+  "url": "https://img1.baidu.com/it/u=1988663359,615983863&fm=253&fmt=auto&app=138&f=JPEG?w=686&h=500",
+  "page": "mbd.baidu.com",
+  "title": "费城独立宫:重温美国独立宣言签署历史",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "联合国宪章签署": {
+  "url": "https://img2.baidu.com/it/u=2036590380,2424796261&fm=253&fmt=auto&app=138&f=JPEG?w=651&h=500",
+  "page": "news.sohu.com",
+  "title": "中国代表作为联合国创始会员国之一,参与签署《联合国宪章》,周围聚集",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "色当战役": {
+  "url": "https://img0.baidu.com/it/u=460148519,1228185691&fm=253&fmt=auto&app=138&f=JPEG?w=418&h=852",
+  "page": "m2.allhistory.com",
+  "title": "色当战役:法兰西帝国进退两难",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "苏联十月革命": {
+  "url": "https://img2.baidu.com/it/u=4127662742,157129817&fm=253&fmt=auto&app=120&f=JPEG?w=681&h=500",
+  "page": "www.sohu.com",
+  "title": "【纪念俄国十月革命胜利108周年】程秉铎 || 勿忘一百零八年前的那声",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "英国光荣革命": {
+  "url": "https://img2.baidu.com/it/u=15087699,2624490393&fm=253&fmt=auto&app=138&f=JPEG?w=505&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "1688年英国光荣革命〞:资产阶级与新贵族统治的奠基之战",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "莱比锡会战": {
+  "url": "https://img0.baidu.com/it/u=1468307754,3291505912&fm=253&fmt=auto&app=138&f=JPEG?w=772&h=500",
+  "page": "mbd.baidu.com",
+  "title": "莱比锡民族大会战纪念碑:历史与争议",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "葛底斯堡战役": {
+  "url": "https://img0.baidu.com/it/u=1217420518,1955899948&fm=253&fmt=auto&app=138&f=JPEG?w=657&h=500",
+  "page": "zhuanlan.zhihu.com",
+  "title": "葛底斯堡战役小圆顶山血战缅因第20步兵团的绝地坚守",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "诺曼底登陆": {
+  "url": "https://img1.baidu.com/it/u=3643733043,3046518892&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=607",
+  "page": "mbd.baidu.com",
+  "title": "分享一组摄影师卡帕拍摄的一组诺曼底登陆照片,他是唯一一位随第一批",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "诺曼征服": {
+  "url": "https://img0.baidu.com/it/u=4095278637,2902361267&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=659",
+  "page": "mbd.baidu.com",
+  "title": "诺曼征服:英格兰的血统变迁",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "阿拉莫战役": {
+  "url": "https://img0.baidu.com/it/u=2397706551,2100233988&fm=253&fmt=auto&app=138&f=JPEG?w=914&h=500",
+  "page": "traveltrade.gousa.cn",
+  "title": "1836 年阿拉莫战役遗址阿拉莫传教区",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "阿波罗11号登月": {
+  "url": "https://img0.baidu.com/it/u=52236219,881144617&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500",
+  "page": "news.qq.com",
+  "title": "阿波罗11号登月56周年",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "阿金库尔战役": {
+  "url": "https://img0.baidu.com/it/u=3885429496,2748408832&fm=253&fmt=auto&app=138&f=JPEG?w=711&h=461",
+  "page": "www.xncsb.cn",
+  "title": "为了纪念阿金库尔战役,当地建立了相关博物馆agincourt 1415.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "马恩河战役": {
+  "url": "https://img2.baidu.com/it/u=3043306846,1414016764&fm=253&fmt=auto&app=120&f=JPEG?w=600&h=388",
+  "page": "baijiahao.baidu.com",
+  "title": "1916年11月10日马恩河战役,英军俘获五千名德军战俘",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "中途岛海战": {
+  "url": "https://img0.baidu.com/it/u=1294382605,566779061&fm=253&fmt=auto&app=120&f=JPEG?w=607&h=423",
+  "page": "baijiahao.baidu.com",
+  "title": "1942年中途岛海战,占据各种优势的日本海军,为何一败涂地",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "伊普尔毒气战": {
+  "url": "https://img1.baidu.com/it/u=1496111400,404195682&fm=253&fmt=auto&app=120&f=JPEG?w=607&h=427",
+  "page": "baijiahao.baidu.com",
+  "title": "战场瞬间变成\"地狱\",细说毒气弥漫的伊普尔战役",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "六日战争": {
+  "url": "https://img1.baidu.com/it/u=2473668768,3908349688&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=500",
+  "page": "www.bilibili.com",
+  "title": "六日战争——1967年6月以色列对阵埃及,约旦,伊拉克和叙利亚",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "凡尔赛和约签署": {
+  "url": "https://img2.baidu.com/it/u=786039012,2071029869&fm=253&fmt=auto&app=120&f=JPEG?w=1121&h=800",
+  "page": "mbd.baidu.com",
+  "title": "1919年,第一次世界大战后,为了削弱德国的势力,《凡尔赛条约》成功",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "加尔文在日内瓦推行改革": {
+  "url": "https://img0.baidu.com/it/u=473842283,1886435324&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+  "page": "",
+  "title": "日内瓦的圣彼得大教堂,以其宏伟的石柱而闻名.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "卡廷惨案": {
+  "url": "https://img1.baidu.com/it/u=3506333754,3844698922&fm=253&fmt=auto&app=138&f=JPEG?w=769&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "波兰卡廷惨案被西方念念不忘,南京30万无辜生命消逝于西方的沉默",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "卡廷森林惨案": {
+  "url": "https://img0.baidu.com/it/u=3504113838,1811795329&fm=253&fmt=auto&app=120&f=JPEG?w=569&h=369",
+  "page": "baijiahao.baidu.com",
+  "title": "震惊世界的\"卡廷惨案\" 之谜",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "印加帝国灭亡": {
+  "url": "https://img1.baidu.com/it/u=3364016351,1085555940&fm=253&fmt=auto&app=138&f=JPEG?w=769&h=500",
+  "page": "mbd.baidu.com",
+  "title": "秘鲁塔墓:印加帝国的死亡艺术",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "君士坦丁堡陷落": {
+  "url": "https://img0.baidu.com/it/u=420781776,1919863183&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=651",
+  "page": "mbd.baidu.com",
+  "title": "君士坦丁堡陷落:帝国终结的悲壮时刻",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "哥伦布首航抵达圣萨尔瓦多": {
+  "url": "https://img2.baidu.com/it/u=1851973261,1086893927&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1389",
+  "page": "www.zhihu.com",
+  "title": "黄玫瑰 的想法: 哥伦布纪念碑 | 西班牙 spain br>巴塞隆纳 barcelona",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "宗教改革开始": {
+  "url": "https://img1.baidu.com/it/u=71376251,3959100818&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+  "page": "www.bundesreisezentrale.admin.ch",
+  "title": "矗立于日内瓦的宗教改革纪念碑,展现着纪尧姆·法雷尔,让·加尔文,泰",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "布拉格之春": {
+  "url": "https://img0.baidu.com/it/u=3981197701,3824361758&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=630",
+  "page": "mbd.baidu.com",
+  "title": "《布拉格之春》:一部充满历史韵味的书籍",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "布拉格之春镇压": {
+  "url": "https://img2.baidu.com/it/u=1267002704,1032251455&fm=253&fmt=auto&app=120&f=JPEG?w=749&h=500",
+  "page": "roll.sohu.com",
+  "title": "苏联华约入侵捷克被坦克碾压的布拉格之春改革梦想",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "彼得大帝建立圣彼得堡": {
+  "url": "https://img0.baidu.com/it/u=974336745,2468667377&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889",
+  "page": "mbd.baidu.com",
+  "title": "彼得大帝建立圣彼得堡彼得堡要塞里的教堂图片圣彼得堡彼得保罗要塞",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "彼得格勒武装起义": {
+  "url": "https://img2.baidu.com/it/u=82250512,2827107917&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+  "page": "www.meipian.cn",
+  "title": "旅游景点",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "托莱多翻译运动": {
+  "url": "https://img2.baidu.com/it/u=166844716,2677885813&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+  "page": "mbd.baidu.com",
+  "title": "托莱多古城一日游:历史与美食的完美结合",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "斯大林格勒战役": {
+  "url": "https://img0.baidu.com/it/u=2601600383,4233163844&fm=253&fmt=auto&app=120&f=JPEG?w=778&h=500",
+  "page": "www.sohu.com",
+  "title": "士兵均活不过1天,新兵活三天就成为连长 斯大林格勒战役多惨烈?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "柏林空运": {
+  "url": "https://img0.baidu.com/it/u=3663902092,1197643166&fm=253&fmt=auto?w=935&h=545",
+  "page": "baijiahao.baidu.com",
+  "title": "27.8万架次飞出的\"空中长城\":柏林空运全景档案",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "柏林空运开始": {
+  "url": "https://img0.baidu.com/it/u=1152454899,1810386663&fm=253&fmt=auto&app=138&f=JPEG?w=832&h=500",
+  "page": "www.zhihu.com",
+  "title": "柏林空运的发生在当时有何意义? - 知乎",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "特拉法加海战": {
+  "url": "https://img1.baidu.com/it/u=1340511115,1026935020&fm=253&fmt=auto?w=950&h=528",
+  "page": "baijiahao.baidu.com",
+  "title": "特拉法加海战:历史的壮烈交响与艺术的不朽再现",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "莫斯科保卫战": {
+  "url": "https://img1.baidu.com/it/u=2472408426,3154482555&fm=253&fmt=auto&app=120&f=JPEG?w=745&h=500",
+  "page": "mil.sohu.com",
+  "title": "莫斯科保卫战:苏联几乎灭国,多亏伏龙芝十多年前留下的一张王牌_德军_",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "莱茵河战役": {
+  "url": "https://img0.baidu.com/it/u=4180160290,3537032030&fm=253&fmt=auto?w=1311&h=800",
+  "page": "mbd.baidu.com",
+  "title": "1945年,西线莱茵河战役中,美军手持巴祖卡炸毁的德军3号坦克.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "萨拉热窝刺杀": {
+  "url": "https://img0.baidu.com/it/u=3735236315,4254129821&fm=253&fmt=auto?w=1256&h=800",
+  "page": "mbd.baidu.com",
+  "title": "萨拉热窝刺杀事件 在第一次世界大战之前,巴尔干地区就早已因为国家线",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "阿兹特克帝国灭亡": {
+  "url": "https://img1.baidu.com/it/u=3938437494,3106315570&fm=253&fmt=auto&app=138&f=JPEG?w=838&h=500",
+  "page": "history.sohu.com",
+  "title": "美洲文明的背景 在讨论阿兹特克帝国灭亡的原因之前,我们有必要先了解",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "阿拉曼战役": {
+  "url": "https://img1.baidu.com/it/u=210316894,4291739053&fm=253&fmt=auto&app=138&f=JPEG?w=842&h=475",
+  "page": "mbd.baidu.com",
+  "title": "🏜️ 沙漠之狐的北非折戟:阿拉曼战役揭秘",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "阿波罗13号事故": {
+  "url": "https://img2.baidu.com/it/u=3711517478,4067477286&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+  "page": "www.uux.cn",
+  "title": "阿波罗13号:关于美国宇航局近乎灾难的月球任务的事实",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "阿莱西亚之战": {
+  "url": "https://img1.baidu.com/it/u=4065865785,1349798987&fm=253&fmt=auto&app=138&f=JPEG?w=772&h=500",
+  "page": "apoc.org.cn",
+  "title": "来到阿莱西亚考古遗址,跟随奥运火炬的脚步,我们将进入拉斯科洞穴",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "马其顿东征": {
+  "url": "https://img2.baidu.com/it/u=1337891385,3555627141&fm=253&fmt=auto&app=120&f=JPEG?w=1201&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "古马其顿王国宫殿遗址重新向公众开放",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "马恩河奇迹": {
+  "url": "https://img1.baidu.com/it/u=2565377531,1968251963&fm=253&fmt=auto&app=138&f=JPEG?w=426&h=569",
+  "page": "baijiahao.baidu.com",
+  "title": "他才是马恩河奇迹的第一功臣",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "马耳他围城战": {
+  "url": "https://img2.baidu.com/it/u=2954351089,612921685&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500",
+  "page": "www.bilibili.com",
+  "title": "英军二战地中海战场英联邦军队马耳他围城战历史重演",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "勒班陀海战": {
+  "url": "https://img2.baidu.com/it/u=3862759760,4221568209&fm=253&fmt=auto?w=750&h=500",
+  "page": "www.veer.com",
+  "title": "希腊纳夫帕克托斯镇港口的城堡墙",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "哥伦布抵达圣萨尔瓦多": {
+  "url": "https://img2.baidu.com/it/u=1812735221,1262042447&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+  "page": "mbd.baidu.com",
+  "title": "哥伦布纪念塔,从这里出发发现新大陆,一边是地中海,朝向古希腊和古",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "巴士底狱风暴": {
+  "url": "https://img0.baidu.com/it/u=1847279963,2546033265&fm=253&fmt=auto&app=138&f=JPEG?w=601&h=419",
+  "page": "baike.baidu.com",
+  "title": "巴士底狱遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "曼哈顿计划启动": {
+  "url": "https://img0.baidu.com/it/u=3100345743,751576021&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=516",
+  "page": "baijiahao.baidu.com",
+  "title": "曼哈顿计划中代号为\"三位一体\"的核武器首次试验",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "阿拉斯加购地签约": {
+  "url": "https://img2.baidu.com/it/u=2587014256,3996306710&fm=253&fmt=auto&app=138&f=JPEG?w=743&h=500",
+  "page": "www.meipian.cn",
+  "title": "2024美国行之 🇺🇸阿拉斯加追寻极光,穿越冰川",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "麦哲伦船队完成环球航行": {
+  "url": "https://img0.baidu.com/it/u=4053344403,1790818754&fm=253&fmt=auto&app=120&f=JPEG?w=822&h=500",
+  "page": "www.sohu.com",
+  "title": "五百多年前的8月20日,麦哲伦船队开始启航,踏上\"地球是圆的\"被证实的",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "布伦海姆战役": {
+  "url": "https://img1.baidu.com/it/u=2283411992,871068239&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+  "page": "wanderlog.com",
+  "title": "marlborough museum, 布伦海姆, 新西兰 - 评论,评分,建议及推荐理由",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "法国大革命攻占巴士底狱": {
+  "url": "https://img2.baidu.com/it/u=2127037541,3487684159&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
+  "page": "weibo.com",
+  "title": "30🔹街头随拍👻🔹图1-4:巴黎巴士底广场中心的七月柱.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "黑死病爆发": {
+  "url": "https://img2.baidu.com/it/u=2894323646,4157985545&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=652",
+  "page": "mbd.baidu.com",
+  "title": "米兰的恐怖教堂:黑死病骷髅室",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "文艺复兴开端": {
+  "url": "https://img1.baidu.com/it/u=3215993633,2996941493&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
+  "page": "mbd.baidu.com",
+  "title": "文艺复兴建筑的魅力:穿越时光的旅程 🌅",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "维也纳会议召开": {
+  "url": "https://img0.baidu.com/it/u=2594898267,1112213070&fm=253&fmt=auto?w=815&h=458",
+  "page": "baijiahao.baidu.com",
+  "title": "维也纳会议的历史影响与欧洲的新秩序",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "马哈赞河战役": {
+  "url": "https://img2.baidu.com/it/u=2099359307,1362947375&fm=253&fmt=auto&app=138&f=JPEG?w=607&h=405",
+  "page": "www.douban.com",
+  "title": "第5073回:葡摩战争三王驾崩,马哈赞河远海帝国",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  }
 }

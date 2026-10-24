@@ -13,20 +13,25 @@ for bank_name, desc_name in (("china", "china-desc"), ("world", "world-desc")):
         bank = json.load(f)
     with open(rf"{ROOT}\web\src\data\{desc_name}.json", encoding="utf-8") as f:
         desc = json.load(f)
-    all_q = bank["cities"] + bank["scenics"]
-    assert len(desc) == 400, f"{desc_name} 条目 {len(desc)} != 400"
+    all_q = ([(it, 100, False) for b in ("cities", "scenics") for it in bank[b]]
+             + [(it, 100, True) for it in bank["history"]])
+    assert len(desc) == 600, f"{desc_name} 条目 {len(desc)} != 600"
     img_cnt = 0
-    for q in all_q:
+    for q, lo, is_hist in all_q:
         e = desc.get(q["name"])
         assert e, f"缺少档案: {q['name']}"
         L = len(e["desc"])
-        assert 100 <= L <= 200, f"{q['name']} 简介 {L} 字"
+        assert lo <= L <= 200, f"{q['name']} 简介 {L} 字（下限 {lo}）"
         if q["difficulty"] <= 2:
-            assert e.get("img"), f"{q['name']}（难度{q['difficulty']}）缺少配图 prompt"
-            img_cnt += 1
+            if is_hist:
+                # 历史线允许个别事件暂无合格实景图（此时不出 img 提示词），见 docs/历史事件待出图清单.md
+                img_cnt += 1 if e.get("img") else 0
+            else:
+                assert e.get("img"), f"{q['name']}（难度{q['difficulty']}）缺少配图 prompt"
+                img_cnt += 1
         else:
             assert not e.get("img"), f"{q['name']}（难度{q['difficulty']}）不应有配图"
-    print(f"[档案] {desc_name}: 400 条 · 配图 {img_cnt} 条 ✓")
+    print(f"[档案] {desc_name}: 600 条 · 一二星配图提示词 {img_cnt} 条 ✓")
 
 with open(rf"{ROOT}\web\src\data\china-desc.json", encoding="utf-8") as f:
     CDESC = json.load(f)

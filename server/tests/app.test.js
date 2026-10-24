@@ -5,8 +5,8 @@ import { MODES, haversine, score } from "@gd/shared";
 
 // 合成题库：每 (桶, 难度) 8 题，坐标互不相同
 function bank() {
-  const out = { cities: [], scenics: [] };
-  for (const bucket of ["cities", "scenics"])
+  const out = { cities: [], scenics: [], history: [] };
+  for (const bucket of ["cities", "scenics", "history"])
     for (let d = 1; d <= 5; d++)
       for (let i = 0; i < 8; i++)
         out[bucket].push({ name: bucket[0] + d + "-" + i, difficulty: d, hint: "测试区",

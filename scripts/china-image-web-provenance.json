@@ -448,5 +448,485 @@
   "page": "baijiahao.baidu.com",
   "title": "探秘潮州:古城风情与美食的完美旅程",
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
+ },
+ "七七事变": {
+  "url": "https://img0.baidu.com/it/u=2900069777,846556740&fm=253&fmt=auto&app=138&f=JPEG?w=738&h=500",
+  "page": "news.sohu.com",
+  "title": "七七事变始末:1937年那个改变中国的夏夜",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "中共一大": {
+  "url": "https://img1.baidu.com/it/u=3963597931,883372876&fm=253&fmt=auto&app=138&f=JPEG?w=785&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "中共一大纪念馆:探寻党的发展历程与重要纪念地",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "九一八事变": {
+  "url": "https://img2.baidu.com/it/u=71766945,1453014832&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+  "page": "mbd.baidu.com",
+  "title": "事变图片素材九·一八事变九一八事变图片高清大图九一八图片918图片",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "五四运动": {
+  "url": "https://img0.baidu.com/it/u=2456204151,1369716600&fm=253&fmt=auto&app=138&f=JPEG?w=375&h=500",
+  "page": "travel.qunar.com",
+  "title": "五四运动火烧赵家楼遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "井冈山会师": {
+  "url": "https://img2.baidu.com/it/u=1858936582,3383226921&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=857",
+  "page": "www.meipian.cn",
+  "title": "游朱毛井冈山会师地龙市",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "会宁会师": {
+  "url": "https://img1.baidu.com/it/u=3841777520,4165196092&fm=253&fmt=auto&app=120&f=JPEG?w=664&h=443",
+  "page": "news.sina.com.cn",
+  "title": "位于红军会宁会师旧址内的会师门(央广网见习记者 苏睿楠 摄)",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "南京大屠杀": {
+  "url": "https://img1.baidu.com/it/u=314245947,3968337717&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=610",
+  "page": "mbd.baidu.com",
+  "title": "南京大屠杀:揭露战争残酷的震撼照片",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "南昌起义": {
+  "url": "https://img1.baidu.com/it/u=2367616123,2357159025&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+  "page": "mbd.baidu.com",
+  "title": "古诗词# #暑期 南昌起义南昌起义旧址南昌起义旧址图片南昌起义遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "台儿庄大捷": {
+  "url": "https://img2.baidu.com/it/u=3788846674,1665870661&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=550",
+  "page": "baijiahao.baidu.com",
+  "title": "台儿庄大捷:敢死队存活率不足15,700勇士坚守3天抵抗3000日军",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "四渡赤水": {
+  "url": "https://img2.baidu.com/it/u=3735791830,3834076498&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500",
+  "page": "rongqt.blogchina.com",
+  "title": "红军四渡赤水纪念塔",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "垓下之战": {
+  "url": "https://img0.baidu.com/it/u=611722495,4202843042&fm=253&fmt=auto?w=800&h=1200",
+  "page": "baijiahao.baidu.com",
+  "title": "蚌埠垓下遗址:冬日遗址怀古,楚汉相争垓下之战发生地,古战场遗",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "官渡之战": {
+  "url": "https://img1.baidu.com/it/u=4121747094,3536633358&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500",
+  "page": "www.sohu.com",
+  "title": "文化中国行•走进河南省郑州市中牟县•官渡之战遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "巨鹿之战": {
+  "url": "https://img2.baidu.com/it/u=737443884,2896563081&fm=253&fmt=auto&app=138&f=JPEG?w=677&h=500",
+  "page": "mbd.baidu.com",
+  "title": "🚩陈胜吴广起义后,秦末的巨鹿之战🌪️",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "平津战役": {
+  "url": "https://img0.baidu.com/it/u=2189693771,762904880&fm=253&fmt=auto&app=120&f=JPEG?w=607&h=407",
+  "page": "news.sohu.com",
+  "title": "平津战役中规模最大的一战,双方投入超47万人,国军为何死战不退",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "广州起义": {
+  "url": "https://img1.baidu.com/it/u=4026235035,4212305026&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1044",
+  "page": "mbd.baidu.com",
+  "title": "🌺广州起义烈士陵园风光🌺",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "开国大典": {
+  "url": "https://img0.baidu.com/it/u=3080304404,765943112&fm=253&fmt=auto&app=138&f=JPEG?w=885&h=500",
+  "page": "yule.sohu.com",
+  "title": "新中国成立75周年特别报道|一场与历史的对话……《开国大典》4k修复",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "张骞出使西域": {
+  "url": "https://img0.baidu.com/it/u=1034726300,3376190889&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1067",
+  "page": "www.douyin.com",
+  "title": "公元前139年,张骞出使西域,带回了葡萄干.公元2024年",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "淝水之战": {
+  "url": "https://img1.baidu.com/it/u=1333317168,3009713689&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1044",
+  "page": "mbd.baidu.com",
+  "title": "探秘淝水之战:寿县之旅",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "淮海战役": {
+  "url": "https://img0.baidu.com/it/u=1082422869,2676518968&fm=253&fmt=auto&app=120&f=JPEG?w=1153&h=800",
+  "page": "www.sohu.com",
+  "title": "淮海战役中最惨烈的战斗,双方六个团奋力拼杀,围观国军吓得投降_人民",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "牧野之战": {
+  "url": "https://img2.baidu.com/it/u=3957741908,351125413&fm=253&fmt=auto&app=120&f=JPEG?w=820&h=615",
+  "page": "baijiahao.baidu.com",
+  "title": "牧野之战遗址,诗经文化源头,新乡原来这么好玩",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "甲午战争": {
+  "url": "https://img0.baidu.com/it/u=3168088917,4260377766&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+  "page": "baike.baidu.com",
+  "title": "刘公岛甲午战争纪念地",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "百团大战": {
+  "url": "https://img2.baidu.com/it/u=1995526756,634987037&fm=253&fmt=auto&app=120&f=JPEG?w=1082&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "百团大战中,一发子弹从陈锡联胳膊和身体间穿过,击中政治部主任",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "百色起义": {
+  "url": "https://img2.baidu.com/it/u=4073065901,2467186477&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+  "page": "mbd.baidu.com",
+  "title": "第二天一早,我们去了百色起义纪念碑,虽然时间有点晚,没能去纪念馆,但",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "秋收起义": {
+  "url": "https://img1.baidu.com/it/u=2736163847,1739611792&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+  "page": "mbd.baidu.com",
+  "title": "2026元旦打卡红色圣地·秋收起义纪念园",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "蔡伦改进造纸术": {
+  "url": "https://img1.baidu.com/it/u=4269437946,4067168174&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
+  "page": "baijiahao.baidu.com",
+  "title": "蔡伦改进造纸术的7个步骤凝聚着超越时代的智慧,让纸从贵族奢侈品变成",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "虎门销烟": {
+  "url": "https://img1.baidu.com/it/u=1556688186,3160120609&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
+  "page": "mbd.baidu.com",
+  "title": "虎门销烟遗址:历史与英雄的见证",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "西安事变": {
+  "url": "https://img1.baidu.com/it/u=4166802307,570928290&fm=253&fmt=auto&app=120&f=JPEG?w=960&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "1936年西安事变,一个军长被张学良扣押,他老婆却成了唯一能自由活动的",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "赤壁之战": {
+  "url": "https://img0.baidu.com/it/u=2653323759,1403501622&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1108",
+  "page": "www.meipian.cn",
+  "title": "三国古战场遗址~赤壁之战",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "辛亥革命": {
+  "url": "https://img1.baidu.com/it/u=2625952845,348164003&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+  "page": "mbd.baidu.com",
+  "title": "荣县军政府旧址,位于四川省荣县,是辛亥革命时期的重要历史遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "辽沈战役": {
+  "url": "https://img2.baidu.com/it/u=3397899926,2392706154&fm=253&fmt=auto&app=120&f=JPEG?w=1307&h=800",
+  "page": "mbd.baidu.com",
+  "title": "【历史上的事件——三大战役之辽沈战役】 解放战争三大战役之辽沈",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "遵义会议": {
+  "url": "https://img1.baidu.com/it/u=3551455562,3302897237&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=500",
+  "page": "news.ifeng.com",
+  "title": "遵义会议会址修缮项目即将完工(4)_凤凰网",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "郑和下西洋": {
+  "url": "https://img2.baidu.com/it/u=1258273660,2860193756&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+  "page": "mbd.baidu.com",
+  "title": "是明代郑和下西洋时期宝船的建造地遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "郑成功收复台湾": {
+  "url": "https://img1.baidu.com/it/u=768950391,1992965421&fm=253&fmt=auto&app=138&f=JPEG?w=749&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "追寻郑成功收复台湾的英雄足迹",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "重庆谈判": {
+  "url": "https://img0.baidu.com/it/u=4279870874,258038189&fm=253&fmt=auto&app=120&f=JPEG?w=958&h=800",
+  "page": "mbd.baidu.com",
+  "title": "1945年10月重庆谈判.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "金田起义": {
+  "url": "https://img2.baidu.com/it/u=2646375546,2664503173&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+  "page": "hd3g.gxnews.com.cn",
+  "title": "参观太平天国金田起义遗址!",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "长平之战": {
+  "url": "https://img1.baidu.com/it/u=3462291943,1397352314&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=970",
+  "page": "baijiahao.baidu.com",
+  "title": "赵括背锅两千年?揭开长平之战的真相:赵国粮仓见底时,早已注定惨败!",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "长沙会战": {
+  "url": "https://img0.baidu.com/it/u=7909457,1590194908&fm=253&fmt=auto&app=120&f=JPEG?w=946&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "长沙会战前三次都胜利了,为什么第四次却失败了?力量悬殊太大!",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "陈桥兵变": {
+  "url": "https://img0.baidu.com/it/u=2182140893,2500546425&fm=253&fmt=auto&app=138&f=JPEG?w=736&h=500",
+  "page": "www.xiaohongshu.com",
+  "title": "陈桥兵变旧址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "靖康之变": {
+  "url": "https://img1.baidu.com/it/u=2860692560,2342294617&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
+  "page": "history.sohu.com",
+  "title": "图源:图虫创意靖康之变后,宋室南渡,建立南宋(1127—1279),后定都临安",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "飞夺泸定桥": {
+  "url": "https://img0.baidu.com/it/u=3294436008,3853279936&fm=253&fmt=auto&app=120&f=JPEG?w=1025&h=711",
+  "page": "news.sohu.com",
+  "title": "红军飞夺泸定桥纪念碑(图片来源:学习时报)在当今时代,科技创新日",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "勾践复国": {
+  "url": "https://img2.baidu.com/it/u=41002583,2157404924&fm=253&fmt=auto&app=120&f=JPEG?w=727&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "勾践卧薪尝胆10年复国,成功后第一件事,为啥杀功臣?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "司马迁写史记": {
+  "url": "https://img0.baidu.com/it/u=682810719,2985327046&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
+  "page": "mbd.baidu.com",
+  "title": "探访司马迁祠:历史与自然的完美融合",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "宋应星著天工开物": {
+  "url": "https://img0.baidu.com/it/u=3098283231,1552556713&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=647",
+  "page": "baijiahao.baidu.com",
+  "title": "《天工开物》:科举落榜生宋应星如何写出世界第一科技百科全书?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "平型关大捷": {
+  "url": "https://img2.baidu.com/it/u=1626857186,2289531775&fm=253&fmt=auto&app=138&f=JPEG?w=670&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "平型关大捷,凭什么能载入史册?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "张衡地动仪": {
+  "url": "https://img0.baidu.com/it/u=603223269,817859275&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+  "page": "www.myzaker.com",
+  "title": "江苏一高校\"复活\"张衡地动仪:不仅是技术探索,更是文化传承",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "徐霞客出发": {
+  "url": "https://img2.baidu.com/it/u=4180001868,2139352108&fm=253&fmt=auto&app=138&f=JPEG?w=890&h=500",
+  "page": "mbd.baidu.com",
+  "title": "跟\"史上最强旅游搭子\"徐霞客出发,这节目不追不行! 大消息!",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "戚继光抗倭": {
+  "url": "https://img1.baidu.com/it/u=2004375151,1923610279&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=500",
+  "page": "news.sohu.com",
+  "title": "精神传承:从历史到当代走在纪念馆内,《戚继光抗倭史迹陈列》通过文献",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "曹雪芹著红楼梦": {
+  "url": "https://img1.baidu.com/it/u=3404819406,3014541337&fm=253&fmt=auto&app=138&f=JPEG?w=725&h=500",
+  "page": "mbd.baidu.com",
+  "title": "初夏出游攻略#曹雪芹纪念馆--《红楼梦》诞生地 位于北京市海淀区",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "李时珍采药": {
+  "url": "https://img1.baidu.com/it/u=284087347,2902481059&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+  "page": "mbd.baidu.com",
+  "title": "李时珍墓,位于湖北省黄冈市蕲春县蕲州镇李时珍纪念馆,建于明万历二十",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "武汉会战": {
+  "url": "https://img0.baidu.com/it/u=134832587,2897120709&fm=253&fmt=auto&app=120&f=JPEG?w=1200&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "武汉会战:浴血烽火中的抗战转折",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "毕昇发明活字印刷": {
+  "url": "https://img2.baidu.com/it/u=184862051,4200515432&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=846",
+  "page": "baijiahao.baidu.com",
+  "title": "毕昇发明活字印刷术,用胶泥刻字火烧硬,比欧洲早四百多年",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "淞沪会战": {
+  "url": "https://img1.baidu.com/it/u=1816014128,3525532385&fm=253&fmt=auto&app=120&f=JPEG?w=944&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "淞沪会战究竟惨烈到了什么地步?三个月时间里,近百万军队在上海厮杀,",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "渑池之会": {
+  "url": "https://img1.baidu.com/it/u=2723536266,2097483684&fm=253&fmt=auto&app=120&f=JPEG?w=646&h=862",
+  "page": "baijiahao.baidu.com",
+  "title": "历史故事渑池之会",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "渡江战役": {
+  "url": "https://img0.baidu.com/it/u=1941184399,2891981702&fm=253&fmt=auto&app=120&f=JPEG?w=1034&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "渡江战役:解放军仅一夜就突破长江防线,70万国军为何如此不堪?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "湘江战役": {
+  "url": "https://img2.baidu.com/it/u=3614680932,810917596&fm=253&fmt=auto&app=138&f=JPEG?w=655&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "历史档案|湘江战役:6万忠魂血洒湘江",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "澶渊之盟": {
+  "url": "https://img2.baidu.com/it/u=974376464,1007713282&fm=253&fmt=auto&app=138&f=JPEG?w=665&h=500",
+  "page": "mbd.baidu.com",
+  "title": "穿越千年|澶渊之盟纪念馆超全打卡攻略",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "玄奘西行": {
+  "url": "https://img1.baidu.com/it/u=2155545175,3317548201&fm=253&fmt=auto&app=138&f=JPEG?w=840&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "玄奘西行的佛经:宗教交流如何促进外交互信?",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "玄武门之变": {
+  "url": "https://img2.baidu.com/it/u=1345329774,3135381907&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1067",
+  "page": "mbd.baidu.com",
+  "title": "旧址 唐高祖武德九年,秦王李世民在这里发动了影响历史进程玄武门之变",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "王安石变法": {
+  "url": "https://img2.baidu.com/it/u=2837053997,4093499956&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1067",
+  "page": "www.vcg.com",
+  "title": "江西省抚州王安石纪念馆",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "王羲之兰亭雅集": {
+  "url": "https://img0.baidu.com/it/u=1953618415,3942676966&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+  "page": "mbd.baidu.com",
+  "title": "探访绍兴兰亭:王羲之的雅致生活",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "班超经营西域": {
+  "url": "https://img0.baidu.com/it/u=2126921285,869298083&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=889",
+  "page": "www.meipian.cn",
+  "title": "七十年代,盘橐城是当时疏勒国的宫城,后来成了班超经营西域的大本营",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "纪晓岚修四库全书": {
+  "url": "https://img1.baidu.com/it/u=243364317,2511704383&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
+  "page": "mbd.baidu.com",
+  "title": "📍探访纪晓岚故居",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "蔡文姬归汉": {
+  "url": "https://img1.baidu.com/it/u=2733180375,3739783370&fm=253&fmt=auto&app=138&f=JPEG?w=686&h=500",
+  "page": "mbd.baidu.com",
+  "title": "蔡文姬纪念馆:探访一代才女的传奇",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "郑板桥任县令": {
+  "url": "https://img1.baidu.com/it/u=1777359576,3094144738&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+  "page": "mbd.baidu.com",
+  "title": "郑板桥纪念馆,位于山东省潍坊市潍城区十笏园文化街区.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "郾城大捷": {
+  "url": "https://img0.baidu.com/it/u=1499422373,3937950102&fm=253&fmt=auto&app=138&f=JPEG?w=627&h=470",
+  "page": "www.163.com",
+  "title": "据史料记载,宋高宗绍兴十年,金人南侵,杨再兴为岳飞部将,郾城大捷后",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "采石大捷": {
+  "url": "https://img1.baidu.com/it/u=1113348260,3010943238&fm=253&fmt=auto&app=138&f=JPEG?w=1150&h=500",
+  "page": "mbd.baidu.com",
+  "title": "年(1161年),这里发生了一场惊心动魄的宋金之战,即著名的采石大捷",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "雅克萨之战": {
+  "url": "https://img2.baidu.com/it/u=3603678292,3741835026&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=889",
+  "page": "weibo.com",
+  "title": "参观了位于黑龙江边的雅克萨之战古战场遗址.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "顾恺之作画": {
+  "url": "https://img2.baidu.com/it/u=3524504819,155374112&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+  "page": "m.dianping.com",
+  "title": "很满意的入住体验,客厅很大,环境一级棒!",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "马陵之战": {
+  "url": "https://img0.baidu.com/it/u=508736978,749728703&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
+  "page": "history.sohu.com",
+  "title": "马陵之战纪念馆",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "鸿门宴": {
+  "url": "https://img2.baidu.com/it/u=1296240461,3075549020&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1000",
+  "page": "mbd.baidu.com",
+  "title": "行摄西安:参观《鸿门宴》遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "黄巾起义": {
+  "url": "https://img1.baidu.com/it/u=3481710871,1528409793&fm=253&fmt=auto&app=138&f=JPEG?w=607&h=373",
+  "page": "baike.baidu.com",
+  "title": "黄巾起义遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "南京条约": {
+  "url": "https://img1.baidu.com/it/u=430383285,1195221675&fm=253&fmt=auto&app=120&f=JPEG?w=1067&h=800",
+  "page": "mbd.baidu.com",
+  "title": "《南京条约》史料陈列馆位于南京市鼓楼区狮子山西麓,其中两艘英国",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "大泽乡起义": {
+  "url": "https://img0.baidu.com/it/u=2730849568,3001115259&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
+  "page": "www.meipian.cn",
+  "title": "吊古大泽乡起义旧址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "商鞅变法": {
+  "url": "https://img0.baidu.com/it/u=3321317129,3311707593&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+  "page": "mbd.baidu.com",
+  "title": "今天骑行阎良武屯,一直对这个地方比较好奇,商鞅变法怎么会在这个地方",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "天京事变": {
+  "url": "https://img0.baidu.com/it/u=3508198329,3462851404&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889",
+  "page": "mbd.baidu.com",
+  "title": "太平天国内斗,血流成河,史称天京事变.",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "土木堡之变": {
+  "url": "https://img2.baidu.com/it/u=3850901766,940855314&fm=253&fmt=auto&app=138&f=JPEG?w=665&h=500",
+  "page": "mbd.baidu.com",
+  "title": "🏯穿越六百年的\"土木堡之变\"遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "太原会战": {
+  "url": "https://img2.baidu.com/it/u=427353892,3337118156&fm=253&fmt=auto&app=138&f=JPEG?w=683&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "太原会战:民族精神之光的闪耀时刻",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "城濮之战": {
+  "url": "https://img2.baidu.com/it/u=4019027597,1838559657&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=725",
+  "page": "www.sohu.com",
+  "title": "\"葵丘濮上\"之行(四)——鄄城葵堌堆与城濮之战遗址",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "崖山海战": {
+  "url": "https://img2.baidu.com/it/u=12230474,1529456604&fm=253&fmt=auto&app=138&f=JPEG?w=885&h=500",
+  "page": "baijiahao.baidu.com",
+  "title": "崖山海战:汉家精神永不磨灭,民族大义永存心间",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "邯郸之战": {
+  "url": "https://img0.baidu.com/it/u=149950308,751817811&fm=253&fmt=auto&app=120&f=JPEG?w=1303&h=800",
+  "page": "baijiahao.baidu.com",
+  "title": "在战国时期的邯郸之战中,魏国,楚国为何出兵救援赵国,其他三国却选择",
+  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  }
 }

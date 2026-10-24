@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-# 回归验证：400 题题库 + 10 局关卡结构 + 局门槛中止/晋级路径
+# 回归验证：题库 + 15 局三线关卡结构 + 局门槛中止/晋级路径
 import json
 from playwright.sync_api import sync_playwright
 
@@ -14,7 +14,7 @@ WORLD_HINTS = {"亚洲", "欧洲", "非洲", "北美洲", "南美洲", "大洋�
 for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
     with open(rf"{ROOT}\web\src\data\{bank_name}.json", encoding="utf-8") as f:
         bank = json.load(f)
-    for kind in ("cities", "scenics"):
+    for kind in ("cities", "scenics", "history"):
         items = bank[kind]
         names = [q["name"] for q in items]
         assert len(items) == 200, f"{bank_name}.{kind} 数量 {len(items)} != 200"
@@ -30,7 +30,8 @@ for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
             c = coords.get(q["name"])
             assert isinstance(c, list) and len(c) == 3, f"{q['name']} 缺坐标/归属"
             assert -90 <= c[0] <= 90 and -180 <= c[1] <= 180, f"{q['name']} 坐标越界: {c}"
-    print(f"[题库] {bank_name}: 共 {len(bank['cities']) + len(bank['scenics'])} 题 ✓")
+    print(f"[题库] {bank_name}: 共 {sum(len(v) for v in bank.values())} 题"
+            f"（城市 {len(bank['cities'])} / 景点 {len(bank['scenics'])} / 历史 {len(bank['history'])}） ✓")
 
 # ———— 2. 浏览器验证 ————
 with sync_playwright() as p:
@@ -57,14 +58,16 @@ with sync_playwright() as p:
         qTypesOk: stages.every(s => s.questions.every(q => q.type === s.type && q.difficulty === s.difficulty))
       }
     }""")
-    assert info["stageCount"] == 10, f"局数 {info['stageCount']} != 10"
+    assert info["stageCount"] == 15, f"局数 {info['stageCount']} != 15"
     assert all(s == 8 for s in info["sizes"]), f"每局题数异常: {info['sizes']}"
-    assert info["types"] == ["city", "scenic"] * 5, f"类型交替异常: {info['types']}"
-    assert info["diffs"] == [1, 1, 2, 2, 3, 3, 4, 4, 5, 5], f"难度递增异常: {info['diffs']}"
-    assert all(info["mins"][i] < info["mins"][i + 1] for i in range(9)), f"门槛递增异常: {info['mins']}"
+    assert info["types"] == ["city", "scenic", "history"] * 5, f"三线循环异常: {info['types']}"
+    assert info["diffs"] == [1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5], f"难度递增异常: {info['diffs']}"
+    assert all(info["mins"][i] < info["mins"][i + 1] for i in range(14)), f"门槛递增异常: {info['mins']}"
+    assert info["mins"][0] == 6000 and info["mins"][-1] == 13000, f"门槛区间异常: {info['mins'][0]}~{info['mins'][-1]}"
+    assert info["mins"][1] - info["mins"][0] == 500, f"门槛涨幅异常: {info['mins']}"
     assert info["unique"], "80 题存在重复"
     assert info["qTypesOk"], "局内题目类型/难度与关卡配置不符"
-    print(f"[结构] 10局×8题，门槛 {info['mins']} ✓")
+    print(f"[结构] 15局×8题 城市/景点/历史三线循环，门槛 {info['mins'][0]}→{info['mins'][-1]}（每局 +500） ✓")
 
     # 使用疆域透镜（三档 1 次）：横幅出现、角标归零、按钮转 used
     assert page.locator('[data-prop="area"] .prop-n').inner_text() == "1"
@@ -108,13 +111,13 @@ with sync_playwright() as p:
     assert page.locator("#q-index").inner_text() == "第2局 · 01/08", page.locator("#q-index").inner_text()
     assert page.locator("#q-badge").inner_text() == "景点"
     assert page.locator("#q-diff").inner_text() == "★☆☆☆☆"
-    assert page.locator("#q-target").inner_text() == "9,000"
+    assert page.locator("#q-target").inner_text() == "6,500"
     assert page.locator("#q-stage-score").inner_text() == "0"
     # 道具为整局按档位发放：跨局不重置，透镜仍为 used、加时仍剩 3 次
     assert "used" in page.locator('[data-prop="area"]').get_attribute("class"), "透镜次数不应跨局恢复"
     assert page.locator('[data-prop="time"] .prop-n').inner_text() == "3", "加时次数不应跨局变化"
     assert "danger" not in page.locator("#q-stage-wrap").get_attribute("class")
-    print("[晋级] 第1局达标 → 第2局（景点·简单·门槛9000），道具为整局计数 ✓")
+    print("[晋级] 第1局达标 → 第2局（景点·简单·门槛6,500），道具为整局计数 ✓")
     page.screenshot(path=str(ROOT / "tests" / "gd_stage2.png"))
 
     # —— 2b. 门槛中止路径（第1局全部超时 → 0 分中止） ——

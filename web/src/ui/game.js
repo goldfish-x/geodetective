@@ -1,5 +1,5 @@
 // 游戏页：出题 → 作答 → 单题结算 → 局结算（最低分门槛） → 终局结算
-import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS, PROPS, PROP_ORDER, tierCounts } from '@gd/shared'
+import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS, TYPE_LABELS, PROPS, PROP_ORDER, tierCounts } from '@gd/shared'
 import { getNickname, addScore } from '../core/storage.js'
 import { onlineEnabled } from '../net/api.js'
 import { getSession } from '../net/session.js'
@@ -361,8 +361,8 @@ export async function renderGame(app, modeKey, routeToken) {
       $('q-stage-wrap').classList.remove('danger')
     }
 
-    elBadge.textContent = q.type === 'city' ? '城市' : '景点'
-    elBadge.classList.toggle('scenic', q.type === 'scenic')
+    elBadge.textContent = TYPE_LABELS[q.type]
+    elBadge.className = 'q-badge ' + q.type
     elName.textContent = q.name
     const lv = Math.min(5, Math.max(1, q.difficulty || 1))
     elDiff.className = 'q-diff lv' + lv
@@ -517,7 +517,7 @@ export async function renderGame(app, modeKey, routeToken) {
     panel.className = 'stage-settle'
     panel.innerHTML = `
       <div class="ss-head">
-        <span class="ss-title">第${state.stageIndex + 1}局 · ${stage.type === 'city' ? '城市' : '景点'}档案</span>
+        <span class="ss-title">第${state.stageIndex + 1}局 · ${TYPE_LABELS[stage.type]}档案</span>
         <span class="ss-result ${passed ? 'pass' : 'fail'}">${passed ? '通 关' : '未达标'}</span>
       </div>
       <div class="ss-score-line">本局得分 <b>${fmt(state.stageScore)}</b> / 通关门槛 ${fmt(stage.minScore)} · 单题最高 ${fmt(mode.maxScore)}</div>
@@ -648,7 +648,7 @@ export async function renderGame(app, modeKey, routeToken) {
         <div class="result-stagebar">
           ${STAGES.map((s, i) => {
             const cleared = victory || i < state.stageIndex
-            return `<span class="stage-dot${cleared ? ' cleared' : ''}${state.revived.includes(i + 1) ? ' revived' : ''}" title="第${i + 1}局 · ${DIFFICULTY_LABELS[s.difficulty]}${s.type === 'city' ? '城市' : '景点'} · 门槛 ${fmt(s.minScore)}">${i + 1}</span>`
+            return `<span class="stage-dot${cleared ? ' cleared' : ''}${state.revived.includes(i + 1) ? ' revived' : ''}" title="第${i + 1}局 · ${DIFFICULTY_LABELS[s.difficulty]}${TYPE_LABELS[s.type]} · 门槛 ${fmt(s.minScore)}">${i + 1}</span>`
           }).join('<i class="stage-sep"></i>')}
         </div>
         ${state.revived.length ? `<p class="result-revived-note">黄色局为复活罗盘救回：第 ${state.revived.join('、')} 局</p>` : ''}
