@@ -1,3008 +1,3008 @@
 {
- "cities": [
-  {
-   "name": "北京",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "上海",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "广州",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "深圳",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "成都",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "杭州",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "西安",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "重庆",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "天津",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "武汉",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "石家庄",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "太原",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "呼和浩特",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "沈阳",
-   "difficulty": 1,
-   "hint": "东北地区"
-  },
-  {
-   "name": "长春",
-   "difficulty": 1,
-   "hint": "东北地区"
-  },
-  {
-   "name": "大连",
-   "difficulty": 1,
-   "hint": "东北地区"
-  },
-  {
-   "name": "台北",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "济南",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "合肥",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "福州",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "南昌",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "苏州",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "南宁",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "海口",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "三亚",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "香港",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "澳门",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "贵阳",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "西宁",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "银川",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "哈尔滨",
-   "difficulty": 2,
-   "hint": "东北地区"
-  },
-  {
-   "name": "乌鲁木齐",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "拉萨",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "昆明",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "兰州",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "青岛",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "长沙",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "厦门",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "南京",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "郑州",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "唐山",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "大同",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "包头",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "吉林市",
-   "difficulty": 2,
-   "hint": "东北地区"
-  },
-  {
-   "name": "大庆",
-   "difficulty": 2,
-   "hint": "东北地区"
-  },
-  {
-   "name": "烟台",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "扬州",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "温州",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "宁波",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "宜昌",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "南阳",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "荆州",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "佛山",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "东莞",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "汕头",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "绵阳",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "乐山",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "咸阳",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "延安",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "克拉玛依",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "喀什",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "大理",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "漠河",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "景德镇",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "满洲里",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "延吉",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "吐鲁番",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "遵义",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "洛阳",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "桂林",
-   "difficulty": 3,
-   "hint": "华南地区"
-  },
-  {
-   "name": "赤峰",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "通辽",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "牡丹江",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "丹东",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "徐州",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "淮安",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "芜湖",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "赣州",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "临沂",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "株洲",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "衡阳",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "信阳",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "柳州",
-   "difficulty": 3,
-   "hint": "华南地区"
-  },
-  {
-   "name": "湛江",
-   "difficulty": 3,
-   "hint": "华南地区"
-  },
-  {
-   "name": "北海",
-   "difficulty": 3,
-   "hint": "华南地区"
-  },
-  {
-   "name": "南充",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "曲靖",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "天水",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "伊宁",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "哈密",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "敦煌",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "阿勒泰",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "康定",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "泉州",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "襄阳",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "张掖",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "防城港",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "佳木斯",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "格尔木",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "保山",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "乌兰察布",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "巴彦淖尔",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "忻州",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "通化",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "黑河",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "丽水",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "衢州",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "池州",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "三明",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "十堰",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "怀化",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "商丘",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "百色",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "河池",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "钦州",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "昭通",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "安顺",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "中卫",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "固原",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "酒泉",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "和田",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "那曲",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "马尔康",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "塔城",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "阿尔山",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "二连浩特",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "抚远",
-   "difficulty": 5,
-   "hint": "东北地区"
-  },
-  {
-   "name": "库尔勒",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "日喀则",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "三沙",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "锡林浩特",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "乌兰浩特",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "霍林郭勒",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "绥芬河",
-   "difficulty": 5,
-   "hint": "东北地区"
-  },
-  {
-   "name": "珲春",
-   "difficulty": 5,
-   "hint": "东北地区"
-  },
-  {
-   "name": "龙泉",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "德兴",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "石狮",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "武夷山",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "天门",
-   "difficulty": 5,
-   "hint": "华中地区"
-  },
-  {
-   "name": "潜江",
-   "difficulty": 5,
-   "hint": "华中地区"
-  },
-  {
-   "name": "冷水江",
-   "difficulty": 5,
-   "hint": "华中地区"
-  },
-  {
-   "name": "凭祥",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "东兴",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "琼海",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "墨脱",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "芒市",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "若羌",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "塔什库尔干",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "阿拉尔",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "无锡",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "南通",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "绍兴",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "嘉兴",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "义乌",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "昆山",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "珠海",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "秦皇岛",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "泰安",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "威海",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "潍坊",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "淄博",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "济宁",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "保定",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "廊坊",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "沧州",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "邯郸",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "张家口",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "临汾",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "运城",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "鄂尔多斯",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "乌海",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "四平",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "松原",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "鞍山",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "抚顺",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "锦州",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "营口",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "盘锦",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "香格里拉",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "长治",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "晋城",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "朔州",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "阳泉",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "承德",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "宿迁",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "泰州",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "镇江",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "潮州",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "揭阳",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "文昌",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "万宁",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "东方",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "五指山",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "乐东",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "昌江",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "腾冲",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "瑞丽",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "澜沧",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "阿拉山口",
-   "difficulty": 5,
-   "hint": "西北地区"
-  }
- ],
- "scenics": [
-  {
-   "name": "八达岭长城",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "故宫",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "杭州西湖",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "秦始皇兵马俑",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "桂林漓江",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "黄山",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "布达拉宫",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "泰山",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "张家界",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "九寨沟",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "颐和园",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "天坛",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "承德避暑山庄",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "云冈石窟",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "沈阳故宫",
-   "difficulty": 1,
-   "hint": "东北地区"
-  },
-  {
-   "name": "老虎滩海洋公园",
-   "difficulty": 1,
-   "hint": "东北地区"
-  },
-  {
-   "name": "拙政园",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "乌镇",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "外滩",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "普陀山",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "日月潭",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "少林寺",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "黄鹤楼",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "武当山",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "天涯海角",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "广州塔",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "亚龙湾",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "丽江古城",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "都江堰",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "鸣沙山月牙泉",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "敦煌莫高窟",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "乐山大佛",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "华山",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "西双版纳",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "峨眉山",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "庐山",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "洱海",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "鼓浪屿",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "青海湖",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "壶口瀑布",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "北戴河",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "平遥古城",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "五台山",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "镜泊湖",
-   "difficulty": 2,
-   "hint": "东北地区"
-  },
-  {
-   "name": "五大连池",
-   "difficulty": 2,
-   "hint": "东北地区"
-  },
-  {
-   "name": "千岛湖",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "崂山",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "婺源篁岭",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "中山陵",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "岳阳楼",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "天门山",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "神农架",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "龙门石窟",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "维多利亚港",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "世界之窗",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "三亚南山",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "青城山",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "黄果树瀑布",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "天山天池",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "沙坡头",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "稻城亚丁",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "喀纳斯湖",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "额济纳胡杨林",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "长白山天池",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "茶卡盐湖",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "恩施大峡谷",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "扎尕那",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "武功山",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "荔波小七孔",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "雨崩",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "悬空寺",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "乔家大院",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "白洋淀",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "乌兰布统草原",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "本溪水洞",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "千山",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "北极村",
-   "difficulty": 3,
-   "hint": "东北地区"
-  },
-  {
-   "name": "雁荡山",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "天柱山",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "三清山",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "阿里山",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "岳麓山",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "洞庭湖",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "衡山",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "云台山",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "涠洲岛",
-   "difficulty": 3,
-   "hint": "华南地区"
-  },
-  {
-   "name": "德天瀑布",
-   "difficulty": 3,
-   "hint": "华南地区"
-  },
-  {
-   "name": "开平碉楼",
-   "difficulty": 3,
-   "hint": "华南地区"
-  },
-  {
-   "name": "四姑娘山",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "火焰山",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "冈仁波齐",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "珠峰大本营",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "巴丹吉林沙漠",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "怒江第一湾",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "郎木寺",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "东川红土地",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "禾木村",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "靖边波浪谷",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "查干湖",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "喀拉峻草原",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "五当召",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "贺兰山岩画",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "乌梁素海",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "白石山",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "红海滩",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "防川",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "关门山",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "龙虎山",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "太姥山",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "霞浦北岐滩涂",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "绩溪龙川",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "屏山峡谷",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "东江湖",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "崀山",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "七百弄",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "鹅泉",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "明仕田园",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "牛背山",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "普者黑",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "江布拉克",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "扎达土林",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "艾肯泉",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "大柴旦翡翠湖",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "俄博梁雅丹",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "冷湖黑独山",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "帕米尔白沙山",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "达里诺尔湖",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "加榜梯田",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "安集海大峡谷",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "来古冰川",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "阿斯哈图石阵",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "乌兰哈达火山群",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "鸡鸣驿",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "黑瞎子岛",
-   "difficulty": 5,
-   "hint": "东北地区"
-  },
-  {
-   "name": "绿江村",
-   "difficulty": 5,
-   "hint": "东北地区"
-  },
-  {
-   "name": "嵊山无人村",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "呈坎",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "塔川",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "前童古镇",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "高椅岭",
-   "difficulty": 5,
-   "hint": "华中地区"
-  },
-  {
-   "name": "鹿院坪",
-   "difficulty": 5,
-   "hint": "华中地区"
-  },
-  {
-   "name": "黔阳古城",
-   "difficulty": 5,
-   "hint": "华中地区"
-  },
-  {
-   "name": "浩坤湖",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "尖峰岭",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "灯楼角",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "莺歌海盐场",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "坝美",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "尼汝村",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "罗布泊",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "大海道",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "慕田峪长城",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "恒山",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "应县木塔",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "鹳雀楼",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "清明上河园",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "嵩山",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "滕王阁",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "灵隐寺",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "雷峰塔",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "纳木错",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "凤凰古城",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "梵净山",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "普达措国家公园",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "老君山",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "可可托海",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "张掖七彩丹霞",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "独库公路",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "东极岛",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "扎龙湿地",
-   "difficulty": 2,
-   "hint": "东北地区"
-  },
-  {
-   "name": "微山湖",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "色达五明佛学院",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "甲居藏寨",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "达古冰川",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "毕棚沟",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "武隆天生三桥",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "金佛山",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "羊卓雍措",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "八里沟",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "壶瓶山",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "云丘山",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "萨普神山",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "冷嘎措",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "丙中洛",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "秋那桶",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "东台吉乃尔湖",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "乌素特水上雅丹",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "察尔汗盐湖",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "祁连山草原",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "扁都口",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "当金山",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "可可西里",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "羌塘",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "阿尔金山",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "扎陵湖",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "鄂陵湖",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "双湖",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "改则",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "尼玛",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "达里雅布依",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "瓦罕走廊",
-   "difficulty": 5,
-   "hint": "西北地区"
-  }
- ],
- "history": [
-  {
-   "name": "七七事变",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "中共一大",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "九一八事变",
-   "difficulty": 1,
-   "hint": "东北地区"
-  },
-  {
-   "name": "五四运动",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "井冈山会师",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "会宁会师",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "南京大屠杀",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "南昌起义",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "台儿庄大捷",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "四渡赤水",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "垓下之战",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "官渡之战",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "巨鹿之战",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "平津战役",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "广州起义",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "开国大典",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "张骞出使西域",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "淝水之战",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "淮海战役",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "牧野之战",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "甲午战争",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "百团大战",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "百色起义",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "秋收起义",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "蔡伦改进造纸术",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "虎门销烟",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "西安事变",
-   "difficulty": 1,
-   "hint": "西北地区"
-  },
-  {
-   "name": "赤壁之战",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "辛亥革命",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "辽沈战役",
-   "difficulty": 1,
-   "hint": "东北地区"
-  },
-  {
-   "name": "遵义会议",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "郑和下西洋",
-   "difficulty": 1,
-   "hint": "华东地区"
-  },
-  {
-   "name": "郑成功收复台湾",
-   "difficulty": 1,
-   "hint": "华北地区"
-  },
-  {
-   "name": "重庆谈判",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "金田起义",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "长平之战",
-   "difficulty": 1,
-   "hint": "华南地区"
-  },
-  {
-   "name": "长沙会战",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "陈桥兵变",
-   "difficulty": 1,
-   "hint": "华中地区"
-  },
-  {
-   "name": "靖康之变",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "飞夺泸定桥",
-   "difficulty": 1,
-   "hint": "西南地区"
-  },
-  {
-   "name": "勾践复国",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "南京条约",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "司马迁写史记",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "商鞅变法",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "土木堡之变",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "城濮之战",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "大泽乡起义",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "天京事变",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "太原会战",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "宋应星著天工开物",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "崖山海战",
-   "difficulty": 2,
-   "hint": "西南地区"
-  },
-  {
-   "name": "平型关大捷",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "张衡地动仪",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "徐霞客出发",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "戚继光抗倭",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "曹雪芹著红楼梦",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "李时珍采药",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "武汉会战",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "毕昇发明活字印刷",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "淞沪会战",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "渑池之会",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "渡江战役",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "湘江战役",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "澶渊之盟",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "玄奘西行",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "玄武门之变",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "王安石变法",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "王羲之兰亭雅集",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "班超经营西域",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "纪晓岚修四库全书",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "蔡文姬归汉",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "邯郸之战",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "郑板桥任县令",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "郾城大捷",
-   "difficulty": 2,
-   "hint": "华中地区"
-  },
-  {
-   "name": "采石大捷",
-   "difficulty": 2,
-   "hint": "华南地区"
-  },
-  {
-   "name": "雅克萨之战",
-   "difficulty": 2,
-   "hint": "东北地区"
-  },
-  {
-   "name": "顾恺之作画",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "马陵之战",
-   "difficulty": 2,
-   "hint": "华东地区"
-  },
-  {
-   "name": "鸿门宴",
-   "difficulty": 2,
-   "hint": "西北地区"
-  },
-  {
-   "name": "黄巾起义",
-   "difficulty": 2,
-   "hint": "华北地区"
-  },
-  {
-   "name": "七国之乱",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "三顾茅庐",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "党锢之祸",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "八王之乱",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "兰亭集序",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "共和行政",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "刘裕北伐",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "卫青霍去病漠北之战",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "召陵之盟",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "国人暴动",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "夷陵之战",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "崤之战",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "巫蛊之祸",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "平王东迁",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "指鹿为马",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "昆阳之战",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "柏举之战",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "桂陵之战",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "桓温北伐",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "沙丘之变",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "烽火戏诸侯",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "犬戎破镐京",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "王昭君出塞",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "王莽改制",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "班超投笔从戎",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "田单火牛阵",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "白登之围",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "白起拔郢",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "盐铁会议",
-   "difficulty": 3,
-   "hint": "西北地区"
-  },
-  {
-   "name": "花木兰从军",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "荆轲刺秦王",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "葵丘会盟",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "蒙恬北击匈奴",
-   "difficulty": 3,
-   "hint": "华北地区"
-  },
-  {
-   "name": "衣冠南渡",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "践土之盟",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "邲之战",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "鄢陵之战",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "长勺之战",
-   "difficulty": 3,
-   "hint": "华东地区"
-  },
-  {
-   "name": "阏与之战",
-   "difficulty": 3,
-   "hint": "西南地区"
-  },
-  {
-   "name": "黄池之会",
-   "difficulty": 3,
-   "hint": "华中地区"
-  },
-  {
-   "name": "一江山岛战役",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "三藩之乱",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "东山岛战役",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "侯景台城陷落",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "冉闵杀胡令",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "刘秀破铜马",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "努尔哈赤萨尔浒之战",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "吴三桂引清兵入关",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "壬寅宫变",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "大小金川之战",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "宁远大捷",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "宇文泰沙苑之战",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "安史之乱邺城之战",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "安禄山起兵范阳",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "完颜阿骨打建国",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "尔朱荣河阴沉河",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "左宗棠收复新疆",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "张献忠屠武昌",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "忽必烈开平即位",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "成吉思汗围中都",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "拓跋珪参合陂之战",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "捻军雉河集会盟",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "朱元璋取集庆",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "李自成破承天",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "李靖夜袭阴山",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "林则徐虎门销烟",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "林爽文起义",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "永乐迁都",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "永嘉之乱",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "河阴之变",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "窦固破北匈奴",
-   "difficulty": 4,
-   "hint": "西北地区"
-  },
-  {
-   "name": "耶律德光灭后晋",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "萨尔浒之战",
-   "difficulty": 4,
-   "hint": "东北地区"
-  },
-  {
-   "name": "蓝玉捕鱼儿海大捷",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "陈霸先建康平叛",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "马嵬驿兵变",
-   "difficulty": 4,
-   "hint": "华东地区"
-  },
-  {
-   "name": "马援平交趾",
-   "difficulty": 4,
-   "hint": "华南地区"
-  },
-  {
-   "name": "高欢玉璧之战",
-   "difficulty": 4,
-   "hint": "华北地区"
-  },
-  {
-   "name": "高欢邙山之战",
-   "difficulty": 4,
-   "hint": "华中地区"
-  },
-  {
-   "name": "鲜卑慕容皝建前燕",
-   "difficulty": 4,
-   "hint": "西南地区"
-  },
-  {
-   "name": "也先土木堡之变",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "亦失哈巡视奴儿干",
-   "difficulty": 5,
-   "hint": "东北地区"
-  },
-  {
-   "name": "俺答汗围北京",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "兀良哈三卫叛明",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "刘整降元献策",
-   "difficulty": 5,
-   "hint": "华中地区"
-  },
-  {
-   "name": "刘福通红巾军颍州起义",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "吴三桂山海关之战",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "哱拜宁夏之乱",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "噶尔丹昭莫多之战",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "大小和卓木霍斯库鲁克之战",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "姑臧之战",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "孛罗帖木儿大同兵变",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "平阳之战",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "张士诚高邮之战",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "张弘范崖山海战",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "张格尔喀什噶尔之乱",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "徐达常遇春太原之战",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "扩廓帖木儿沈儿峪之战",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "晋阳之战",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "朵颜三卫内附",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "李璮之乱济南起事",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "李璮叛乱",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "杨载福田家镇水战",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "枹罕之战",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "沐英平定云南曲靖之战",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "浅水原之战",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "灵宝之战",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "玉璧之战",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "王辅臣平凉叛乱",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "盱眙之战",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "硖石之战",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "萨哈廉攻占旅顺口",
-   "difficulty": 5,
-   "hint": "东北地区"
-  },
-  {
-   "name": "蓝玉定西之战",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "蓝玉远征捕鱼儿海",
-   "difficulty": 5,
-   "hint": "华北地区"
-  },
-  {
-   "name": "虎牢之战",
-   "difficulty": 5,
-   "hint": "西南地区"
-  },
-  {
-   "name": "邙山之战",
-   "difficulty": 5,
-   "hint": "华中地区"
-  },
-  {
-   "name": "钟离之战",
-   "difficulty": 5,
-   "hint": "华东地区"
-  },
-  {
-   "name": "阿合马被刺",
-   "difficulty": 5,
-   "hint": "华南地区"
-  },
-  {
-   "name": "阿睦尔撒纳伊犁叛乱",
-   "difficulty": 5,
-   "hint": "西北地区"
-  },
-  {
-   "name": "陈友谅鄱阳湖水战",
-   "difficulty": 5,
-   "hint": "西南地区"
-  }
- ]
+  "cities": [
+    {
+      "name": "北京",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "上海",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "广州",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "深圳",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "成都",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "杭州",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "西安",
+      "difficulty": 1,
+      "hint": "西北地区"
+    },
+    {
+      "name": "重庆",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "天津",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "武汉",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "石家庄",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "太原",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "呼和浩特",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "沈阳",
+      "difficulty": 1,
+      "hint": "东北地区"
+    },
+    {
+      "name": "长春",
+      "difficulty": 1,
+      "hint": "东北地区"
+    },
+    {
+      "name": "大连",
+      "difficulty": 1,
+      "hint": "东北地区"
+    },
+    {
+      "name": "台北",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "济南",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "合肥",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "福州",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "南昌",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "苏州",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "南宁",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "海口",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "三亚",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "香港",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "澳门",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "贵阳",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "西宁",
+      "difficulty": 1,
+      "hint": "西北地区"
+    },
+    {
+      "name": "银川",
+      "difficulty": 1,
+      "hint": "西北地区"
+    },
+    {
+      "name": "哈尔滨",
+      "difficulty": 2,
+      "hint": "东北地区"
+    },
+    {
+      "name": "乌鲁木齐",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "拉萨",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "昆明",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "兰州",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "青岛",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "长沙",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "厦门",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "南京",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "郑州",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "唐山",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "大同",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "包头",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "吉林市",
+      "difficulty": 2,
+      "hint": "东北地区"
+    },
+    {
+      "name": "大庆",
+      "difficulty": 2,
+      "hint": "东北地区"
+    },
+    {
+      "name": "烟台",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "扬州",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "温州",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "宁波",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "宜昌",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "南阳",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "荆州",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "佛山",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "东莞",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "汕头",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "绵阳",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "乐山",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "咸阳",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "延安",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "克拉玛依",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "喀什",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "大理",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "漠河",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "景德镇",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "满洲里",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "延吉",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "吐鲁番",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "遵义",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "洛阳",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "桂林",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "赤峰",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "通辽",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "牡丹江",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "丹东",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "徐州",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "淮安",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "芜湖",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "赣州",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "临沂",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "株洲",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "衡阳",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "信阳",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "柳州",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "湛江",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "北海",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "南充",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "曲靖",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "天水",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "伊宁",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "哈密",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "敦煌",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "阿勒泰",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "康定",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "泉州",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "襄阳",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "张掖",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "防城港",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "佳木斯",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "格尔木",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "保山",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "乌兰察布",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "巴彦淖尔",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "忻州",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "通化",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "黑河",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "丽水",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "衢州",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "池州",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "三明",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "十堰",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "怀化",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "商丘",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "百色",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "河池",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "钦州",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "昭通",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "安顺",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "中卫",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "固原",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "酒泉",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "和田",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "那曲",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "马尔康",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "塔城",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "阿尔山",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "二连浩特",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "抚远",
+      "difficulty": 5,
+      "hint": "东北地区"
+    },
+    {
+      "name": "库尔勒",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "日喀则",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "三沙",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "锡林浩特",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "乌兰浩特",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "霍林郭勒",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "绥芬河",
+      "difficulty": 5,
+      "hint": "东北地区"
+    },
+    {
+      "name": "珲春",
+      "difficulty": 5,
+      "hint": "东北地区"
+    },
+    {
+      "name": "龙泉",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "德兴",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "石狮",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "武夷山",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "天门",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "潜江",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "冷水江",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "凭祥",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "东兴",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "琼海",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "墨脱",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "芒市",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "若羌",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "塔什库尔干",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "阿拉尔",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "无锡",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "南通",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "绍兴",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "嘉兴",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "义乌",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "昆山",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "珠海",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "秦皇岛",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "泰安",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "威海",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "潍坊",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "淄博",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "济宁",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "保定",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "廊坊",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "沧州",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "邯郸",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "张家口",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "临汾",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "运城",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "鄂尔多斯",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "乌海",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "四平",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "松原",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "鞍山",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "抚顺",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "锦州",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "营口",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "盘锦",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "香格里拉",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "长治",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "晋城",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "朔州",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "阳泉",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "承德",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "宿迁",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "泰州",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "镇江",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "潮州",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "揭阳",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "文昌",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "万宁",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "东方",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "五指山",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "乐东",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "昌江",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "腾冲",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "瑞丽",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "澜沧",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "阿拉山口",
+      "difficulty": 5,
+      "hint": "西北地区"
+    }
+  ],
+  "scenics": [
+    {
+      "name": "八达岭长城",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "故宫",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "杭州西湖",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "秦始皇兵马俑",
+      "difficulty": 1,
+      "hint": "西北地区"
+    },
+    {
+      "name": "桂林漓江",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "黄山",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "布达拉宫",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "泰山",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "张家界",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "九寨沟",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "颐和园",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "天坛",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "承德避暑山庄",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "云冈石窟",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "沈阳故宫",
+      "difficulty": 1,
+      "hint": "东北地区"
+    },
+    {
+      "name": "老虎滩海洋公园",
+      "difficulty": 1,
+      "hint": "东北地区"
+    },
+    {
+      "name": "拙政园",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "乌镇",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "外滩",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "普陀山",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "日月潭",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "少林寺",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "黄鹤楼",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "武当山",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "天涯海角",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "广州塔",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "亚龙湾",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "丽江古城",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "都江堰",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "鸣沙山月牙泉",
+      "difficulty": 1,
+      "hint": "西北地区"
+    },
+    {
+      "name": "敦煌莫高窟",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "乐山大佛",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "华山",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "西双版纳",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "峨眉山",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "庐山",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "洱海",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "鼓浪屿",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "青海湖",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "壶口瀑布",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "北戴河",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "平遥古城",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "五台山",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "镜泊湖",
+      "difficulty": 2,
+      "hint": "东北地区"
+    },
+    {
+      "name": "五大连池",
+      "difficulty": 2,
+      "hint": "东北地区"
+    },
+    {
+      "name": "千岛湖",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "崂山",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "婺源篁岭",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "中山陵",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "岳阳楼",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "天门山",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "神农架",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "龙门石窟",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "维多利亚港",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "世界之窗",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "三亚南山",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "青城山",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "黄果树瀑布",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "天山天池",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "沙坡头",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "稻城亚丁",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "喀纳斯湖",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "额济纳胡杨林",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "长白山天池",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "茶卡盐湖",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "恩施大峡谷",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "扎尕那",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "武功山",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "荔波小七孔",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "雨崩",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "悬空寺",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "乔家大院",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "白洋淀",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "乌兰布统草原",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "本溪水洞",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "千山",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "北极村",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "雁荡山",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "天柱山",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "三清山",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "阿里山",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "岳麓山",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "洞庭湖",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "衡山",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "云台山",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "涠洲岛",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "德天瀑布",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "开平碉楼",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "四姑娘山",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "火焰山",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "冈仁波齐",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "珠峰大本营",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "巴丹吉林沙漠",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "怒江第一湾",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "郎木寺",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "东川红土地",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "禾木村",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "靖边波浪谷",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "查干湖",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "喀拉峻草原",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "五当召",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "贺兰山岩画",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "乌梁素海",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "白石山",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "红海滩",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "防川",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "关门山",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "龙虎山",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "太姥山",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "霞浦北岐滩涂",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "绩溪龙川",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "屏山峡谷",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "东江湖",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "崀山",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "七百弄",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "鹅泉",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "明仕田园",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "牛背山",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "普者黑",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "江布拉克",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "扎达土林",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "艾肯泉",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "大柴旦翡翠湖",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "俄博梁雅丹",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "冷湖黑独山",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "帕米尔白沙山",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "达里诺尔湖",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "加榜梯田",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "安集海大峡谷",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "来古冰川",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "阿斯哈图石阵",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "乌兰哈达火山群",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "鸡鸣驿",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "黑瞎子岛",
+      "difficulty": 5,
+      "hint": "东北地区"
+    },
+    {
+      "name": "绿江村",
+      "difficulty": 5,
+      "hint": "东北地区"
+    },
+    {
+      "name": "嵊山无人村",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "呈坎",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "塔川",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "前童古镇",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "高椅岭",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "鹿院坪",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "黔阳古城",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "浩坤湖",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "尖峰岭",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "灯楼角",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "莺歌海盐场",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "坝美",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "尼汝村",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "罗布泊",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "大海道",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "慕田峪长城",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "恒山",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "应县木塔",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "鹳雀楼",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "清明上河园",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "嵩山",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "滕王阁",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "灵隐寺",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "雷峰塔",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "纳木错",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "凤凰古城",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "梵净山",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "普达措国家公园",
+      "difficulty": 2,
+      "hint": "西南地区"
+    },
+    {
+      "name": "老君山",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "可可托海",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "张掖七彩丹霞",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "独库公路",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "东极岛",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "扎龙湿地",
+      "difficulty": 2,
+      "hint": "东北地区"
+    },
+    {
+      "name": "微山湖",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "色达五明佛学院",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "甲居藏寨",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "达古冰川",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "毕棚沟",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "武隆天生三桥",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "金佛山",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "羊卓雍措",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "八里沟",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "壶瓶山",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "云丘山",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "萨普神山",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "冷嘎措",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "丙中洛",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "秋那桶",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "东台吉乃尔湖",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "乌素特水上雅丹",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "察尔汗盐湖",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "祁连山草原",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "扁都口",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "当金山",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "可可西里",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "羌塘",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "阿尔金山",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "扎陵湖",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "鄂陵湖",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "双湖",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "改则",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "尼玛",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "达里雅布依",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "瓦罕走廊",
+      "difficulty": 5,
+      "hint": "西北地区"
+    }
+  ],
+  "history": [
+    {
+      "name": "七七事变",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "中共一大",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "九一八事变",
+      "difficulty": 1,
+      "hint": "东北地区"
+    },
+    {
+      "name": "五四运动",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "井冈山会师",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "南京大屠杀",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "南昌起义",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "台儿庄大捷",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "四渡赤水",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "圆明园被焚",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "垓下之战",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "大泽乡起义",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "孔子出生",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "孙中山出生",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "孟子出生",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "官渡之战",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "平津战役",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "广州起义",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "开国大典",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "戊戌变法",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "文成公主入藏",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "李冰修建都江堰",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "淝水之战",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "淮海战役",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "渡江战役",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "玄武门之变",
+      "difficulty": 1,
+      "hint": "西北地区"
+    },
+    {
+      "name": "甲午战争",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "百团大战",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "秦始皇出生",
+      "difficulty": 1,
+      "hint": "华北地区"
+    },
+    {
+      "name": "虎门销烟",
+      "difficulty": 1,
+      "hint": "华南地区"
+    },
+    {
+      "name": "西安事变",
+      "difficulty": 1,
+      "hint": "西北地区"
+    },
+    {
+      "name": "赤壁之战",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "辛亥革命",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "辽沈战役",
+      "difficulty": 1,
+      "hint": "东北地区"
+    },
+    {
+      "name": "遵义会议",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "郑和下西洋",
+      "difficulty": 1,
+      "hint": "华东地区"
+    },
+    {
+      "name": "重庆谈判",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "长沙会战",
+      "difficulty": 1,
+      "hint": "华中地区"
+    },
+    {
+      "name": "飞夺泸定桥",
+      "difficulty": 1,
+      "hint": "西南地区"
+    },
+    {
+      "name": "鸿门宴",
+      "difficulty": 1,
+      "hint": "西北地区"
+    },
+    {
+      "name": "会宁会师",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "勾践复国",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "南京条约",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "司马迁写史记",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "商鞅变法",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "土木堡之变",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "城濮之战",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "天京事变",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "太原会战",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "崖山海战",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "平型关大捷",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "张衡地动仪",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "张骞出使西域",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "徐霞客出发",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "戚继光抗倭",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "曹雪芹著红楼梦",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "李时珍采药",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "武汉会战",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "毕昇发明活字印刷",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "淞沪会战",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "渑池之会",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "澶渊之盟",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "玄奘西行",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "王安石变法",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "王羲之兰亭雅集",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "班超经营西域",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "秋收起义",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "荆轲刺秦王",
+      "difficulty": 2,
+      "hint": "西北地区"
+    },
+    {
+      "name": "蔡伦改进造纸术",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "邯郸之战",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "郑成功收复台湾",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "郾城大捷",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "采石大捷",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "金田起义",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "陈桥兵变",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "雅克萨之战",
+      "difficulty": 2,
+      "hint": "东北地区"
+    },
+    {
+      "name": "靖康之变",
+      "difficulty": 2,
+      "hint": "华中地区"
+    },
+    {
+      "name": "顾恺之作画",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "马陵之战",
+      "difficulty": 2,
+      "hint": "华东地区"
+    },
+    {
+      "name": "黄巾起义",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "七国之乱",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "三藩之乱",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "三顾茅庐",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "党锢之祸",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "八王之乱",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "包拯出生",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "大运河开通",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "夷陵之战",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "岳飞出生",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "崤之战",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "巨鹿之战",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "巫蛊之祸",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "康有为出生",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "指鹿为马",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "敦煌藏经洞发现",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "昆阳之战",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "李白出生",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "林则徐出生",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "永乐迁都",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "沙丘之变",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "牧野之战",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "王昭君出塞",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "王莽改制",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "王阳明出生",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "田单火牛阵",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "甲骨文出土",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "白登之围",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "白起拔郢",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "百色起义",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "秦始皇兵马俑出土",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "萨尔浒之战",
+      "difficulty": 3,
+      "hint": "东北地区"
+    },
+    {
+      "name": "蒙恬北击匈奴",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "邲之战",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "鄢陵之战",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "长勺之战",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "长平之战",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "马嵬驿兵变",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "马王堆汉墓发掘",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "黄池之会",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "龙场悟道",
+      "difficulty": 3,
+      "hint": "西南地区"
+    },
+    {
+      "name": "一江山岛战役",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "东山岛战役",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "云冈石窟开凿",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "侯景台城陷落",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "共和行政",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "冉闵杀胡令",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "刘裕北伐",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "司马迁出生",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "壬寅宫变",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "大小金川之战",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "宁远大捷",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "安禄山起兵范阳",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "宋应星著天工开物",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "完颜阿骨打建国",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "左宗棠收复新疆",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "张献忠屠武昌",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "忽必烈开平即位",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "成吉思汗围中都",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "拓跋珪参合陂之战",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "捻军雉河集会盟",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "曾侯乙编钟出土",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "朱元璋取集庆",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "朱熹出生",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "李自成破承天",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "李靖夜袭阴山",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "林爽文起义",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "桓温北伐",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "沈括出生",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "河阴之变",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "犬戎破镐京",
+      "difficulty": 4,
+      "hint": "西北地区"
+    },
+    {
+      "name": "王安石出生",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "班超投笔从戎",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "白居易出生",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "纪晓岚修四库全书",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "花木兰从军",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "蔡文姬归汉",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "践土之盟",
+      "difficulty": 4,
+      "hint": "华中地区"
+    },
+    {
+      "name": "郑板桥任县令",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "马可·波罗抵达上都",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "马援平交趾",
+      "difficulty": 4,
+      "hint": "华南地区"
+    },
+    {
+      "name": "俺答汗围北京",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "关汉卿出生",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "刘整降元献策",
+      "difficulty": 5,
+      "hint": "西南地区"
+    },
+    {
+      "name": "刘福通红巾军颍州起义",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "召陵之盟",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "哱拜宁夏之乱",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "国人暴动",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "姑臧之战",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "孛罗帖木儿大同兵变",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "宇文泰沙苑之战",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "左宗棠出生",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "平王东迁",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "张格尔喀什噶尔之乱",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "徐光启出生",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "曾国藩出生",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "朵颜三卫内附",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "李璮之乱济南起事",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "李鸿章出生",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "柏举之战",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "桂陵之战",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "永嘉之乱",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "海瑞出生",
+      "difficulty": 5,
+      "hint": "华南地区"
+    },
+    {
+      "name": "烽火戏诸侯",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "王辅臣平凉叛乱",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "盐铁会议",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "硖石之战",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "窦固破北匈奴",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "耶律德光灭后晋",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "萨哈廉攻占旅顺口",
+      "difficulty": 5,
+      "hint": "东北地区"
+    },
+    {
+      "name": "葵丘会盟",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "衣冠南渡",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "赵州桥建成",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "越王勾践剑出土",
+      "difficulty": 5,
+      "hint": "华中地区"
+    },
+    {
+      "name": "郭守敬出生",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "阏与之战",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "阿合马被刺",
+      "difficulty": 5,
+      "hint": "华北地区"
+    },
+    {
+      "name": "阿睦尔撒纳伊犁叛乱",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "陈霸先建康平叛",
+      "difficulty": 5,
+      "hint": "华东地区"
+    },
+    {
+      "name": "鲜卑慕容皝建前燕",
+      "difficulty": 5,
+      "hint": "东北地区"
+    },
+    {
+      "name": "龙门石窟开凿",
+      "difficulty": 5,
+      "hint": "华中地区"
+    }
+  ]
 }

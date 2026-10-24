@@ -10,6 +10,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 SOURCES = [
+    ("china", "scripts/china-image-commons-provenance.json"),
+    ("world", "scripts/world-image-commons-provenance.json"),
     ("world", "scripts/world-image-provenance.json"),
     ("world", "scripts/world-image-geo-provenance.json"),
     ("china", "scripts/china-image-geo-provenance.json"),
