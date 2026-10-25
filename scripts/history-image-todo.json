@@ -1,84 +1,20 @@
 {
- "A": [
-  {
-   "mode": "china",
-   "name": "指鹿为马",
-   "tier": 3,
-   "place": "陕西省西安市"
-  },
-  {
-   "mode": "china",
-   "name": "共和行政",
-   "tier": 4,
-   "place": "陕西省西安市"
-  },
-  {
-   "mode": "china",
-   "name": "捻军雉河集会盟",
-   "tier": 4,
-   "place": "安徽省涡阳县"
-  },
+ "A": [],
+ "B": [],
+ "regen": [
   {
    "mode": "china",
    "name": "犬戎破镐京",
+   "why": "改为高处俯视全景，突出远山烽火台狼烟；申侯甲士是来杀幽王的，幽王须狼狈奔逃跌坐，不再立于残垣",
    "tier": 4,
    "place": "陕西省西安市"
   },
   {
    "mode": "china",
    "name": "阿合马被刺",
+   "why": "去掉「惊愕」（易被画成夸张漫画脸），并把「铜锤」换成不易误解的短柄铁骨朵（锤头为拳头大实心铜球）",
    "tier": 5,
    "place": "北京市东城区"
-  }
- ],
- "B": [
-  {
-   "mode": "china",
-   "name": "徐霞客出发",
-   "tier": 2,
-   "place": "属江苏省江阴市"
-  },
-  {
-   "mode": "china",
-   "name": "马可·波罗抵达上都",
-   "tier": 4,
-   "place": "内蒙古自治区锡林郭勒盟正蓝旗"
-  },
-  {
-   "mode": "china",
-   "name": "马援平交趾",
-   "tier": 4,
-   "place": "越南北宁省顺城县"
-  },
-  {
-   "mode": "china",
-   "name": "萨哈廉攻占旅顺口",
-   "tier": 5,
-   "place": "辽宁省大连市"
-  },
-  {
-   "mode": "world",
-   "name": "亚克兴海战",
-   "tier": 3,
-   "place": "Greece"
-  },
-  {
-   "mode": "world",
-   "name": "刚果独立",
-   "tier": 4,
-   "place": "Dem. Rep. Congo"
-  },
-  {
-   "mode": "world",
-   "name": "奥格斯堡和约签订",
-   "tier": 5,
-   "place": "Germany"
-  },
-  {
-   "mode": "world",
-   "name": "特尔诺沃起义",
-   "tier": 5,
-   "place": "Bulgaria"
   }
  ]
 }

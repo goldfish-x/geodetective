@@ -70,5 +70,86 @@
   "md5": "100abfb8fd822d1a980f2fbe20ea0266",
   "subject": "event",
   "source": "user"
+ },
+ "指鹿为马": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "ac8b82465bee8666576e6971a909d784"
+ },
+ "共和行政": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "399dd8f08a6fa9c06ea383ea970b2c2d"
+ },
+ "捻军雉河集会盟": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "509d50570ac876eb731ff250033261da"
+ },
+ "犬戎破镐京": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "ed78ca2dcb11613a6178cc606c8bfa3d"
+ },
+ "阿合马被刺": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "8765f1f11d392b06e52a87efb91daf2c"
+ },
+ "徐霞客出发": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "53604367c06b73851a7dfa0e1512849e"
+ },
+ "马可·波罗抵达上都": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "6a41e59cae71342bda24268fff6028f8"
+ },
+ "马援平交趾": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "c8ab1d0d4031dc5d44190c078e371527"
+ },
+ "萨哈廉攻占旅顺口": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "7b341913af2203ae24933bd28fd2f2bc"
  }
 }

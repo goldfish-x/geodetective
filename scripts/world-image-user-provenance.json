@@ -88,5 +88,41 @@
   "md5": "bfad35c9ebb79679b4895c331e1f86ce",
   "subject": "event",
   "source": "user"
+ },
+ "亚克兴海战": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "20a22d3881ae25b0599e2e4e7f12f32c"
+ },
+ "刚果独立": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "da1f2c9b599fb88710237bc93d7296ed"
+ },
+ "奥格斯堡和约签订": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "163559d4493c840612cda2a52739c584"
+ },
+ "特尔诺沃起义": {
+  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "url": "",
+  "artist": "",
+  "license": "项目自备素材（AI 生成，非第三方授权）",
+  "subject": "event",
+  "source": "generated",
+  "md5": "d5d9b823cb5e2f11d8ea666a201b54d6"
  }
 }

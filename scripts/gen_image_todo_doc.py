@@ -20,7 +20,7 @@ for m in ("china","world"):
         for k,v in rd(p).items():
             if isinstance(v,dict) and v.get("subject")=="event": EVENT.add(m+"|"+k)
 NEED=set(x["mode"]+"|"+x["name"] for s in ("A","B") for x in TODO[s])
-A=[x for x in TODO["A"]]; B=[x for x in TODO["B"]]
+A=[x for x in TODO["A"]]; B=[x for x in TODO["B"]]; E=[x for x in TODO.get("regen",[])]
 C=[k for k in INFO if FILED[k] and k not in EVENT and k not in NEED]
 D=[k for k in EVENT if FILED[k]]
 def lab(m): return "中国篇" if m=="china" else "世界篇"
@@ -37,10 +37,11 @@ L=["# 历史事件线待出图清单","",
 "> 提示词一致性（防序号串台、防塑像/幼年）由 `scripts/check_image_prompts.py` 把关，已接入 CI。","",
 "## 统计","","| 档 | 含义 | 中国篇 | 世界篇 | 合计 |","|---|---|---|---|---|"]
 for tag,rows,mean in (("A",A,"完全无图（当前走确定性占位图）"),("B",B,"有图但只是城市风貌/无法指认地点，需换成事件图"),
-                      ("C",C,"已有可指认地点的遗址·纪念馆·地标实景（达标）"),("D",D,"已是事件画 / 老照片 / 肖像 / 传世画像（达标）")):
+                      ("C",C,"已有可指认地点的遗址·纪念馆·地标实景（达标）"),("D",D,"已是事件画 / 老照片 / 肖像 / 传世画像（达标）"),
+                      ("E",E,"已有图但提示词已修订，建议按新提示词重生成")):
     n=len(rows); c=cnt(rows); L.append("| %s | %s | %d | %d | %d |"%(tag,mean,c,n-c,n))
 L+=["**待生成 {} 张**（A {} + B {}）。原图建议 600×600 以上正方形，文件名用事件名原文，放进 `web/public/images/<篇章>/` 后由我裁成 300×300 WebP、查重并登记来源。".format(len(A)+len(B),len(A),len(B)),""]
-for tag,rows,title in (("A",A,"A 档：完全无图"),("B",B,"B 档：需把城市风貌照换成事件图")):
+for tag,rows,title in (("A",A,"A 档：完全无图"),("B",B,"B 档：需把城市风貌照换成事件图"),("E",E,"E 档：已配图，但提示词已修订、建议重生成")):
     L+=["## %s（%d 条）"%(title,len(rows)),"","| 篇章 | 难度 | 事件 | 发生地（今） | 建议出图提示词 |","|---|---|---|---|---|"]
     for x in rows:
         k=x["mode"]+"|"+x["name"]

@@ -11,7 +11,7 @@ for m in ("china","world"):
     d=json.load(open(os.path.join(R,"web/src/data/%s.json"%m),encoding="utf-8"))
     de=json.load(open(os.path.join(R,"web/src/data/%s-desc.json"%m),encoding="utf-8"))
     for x in d["history"]: rows[m+"|"+x["name"]]=de[x["name"]]["desc"]
-ALL=[x["mode"]+"|"+x["name"] for s in ("A","B") for x in TODO[s]]
+ALL=[x["mode"]+"|"+x["name"] for s in ("A","B") for x in TODO[s]]+[x["mode"]+"|"+x["name"] for x in TODO.get("regen",[])]
 def core(n):
     return re.sub(r"(之战|之役|之变|之会|之盟|出生|签署|起义|事变|会议|政变|大捷|战役|惨案|屠杀|革命|改革|变法|改制|"
      r"会盟|会战|战争|陷落|灭亡|独立|条约|和约|运动|开凿|建成|出土|发现|爆发|遇刺|撤退|登陆|爆炸|获释|成立|航行|"
@@ -28,7 +28,7 @@ for k in ALL:
         if len(c2)>=3 and c2 in pr and c2!=c: fail.append((k,"串台→%s"%n2))
     # 本事件可辨识性：提示词应含事件名核心、地名核心或梗概里的人名/关键词
     sig={n[:2],c}
-    place=next((x["place"] for s in ("A","B") for x in TODO[s] if x["mode"]+"|"+x["name"]==k),"")
+    place=next((x.get("place","") for s in ("A","B","regen") for x in TODO.get(s,[]) if x["mode"]+"|"+x["name"]==k),"")
     if place: sig.add(place[:2]); sig.add(re.sub(r"(省|市|区|县|自治区|旗|州)$","",place)[:3])
     desc=rows.get(k,"")
     sig|={w for w in re.findall(r"[\u4e00-\u9fa5]{2,4}",desc[:120])}
