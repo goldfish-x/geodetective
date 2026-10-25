@@ -1,5 +1,5 @@
 // 游戏页：出题 → 作答 → 单题结算 → 局结算（最低分门槛） → 终局结算
-import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS, TYPE_LABELS, PROPS, PROP_ORDER, tierCounts } from '@gd/shared'
+import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS, TYPE_LABELS, PROPS, PROP_ORDER, TIERS, FREE_TIER, tierCounts } from '@gd/shared'
 import { getNickname, addScore } from '../core/storage.js'
 import { onlineEnabled } from '../net/api.js'
 import { getSession } from '../net/session.js'
@@ -90,7 +90,8 @@ export async function renderGame(app, modeKey, routeToken) {
     records: [],
     guess: null,
     phase: 'answering', // answering | settle | done
-    props: {},            // 道具剩余次数（按付费档位发放，整局共享）
+    props: {},            // 道具剩余次数（按档位发放，整局共享）
+    grant: [],            // 本局获发的道具 key（未获发的不显示图标）
     revived: [],          // 被复活罗盘救回的局号（结算标黄）
     tier: 3,
     timerTotal: mode.timeLimit,
@@ -240,7 +241,7 @@ export async function renderGame(app, modeKey, routeToken) {
     const bar = $('props-bar')
     if (!bar) return
     const locked = state.phase !== 'answering'
-    bar.innerHTML = PROP_ORDER.map(k => {
+    bar.innerHTML = PROP_ORDER.filter(k => (state.grant || PROP_ORDER).includes(k)).map(k => {
       const left = state.props[k] || 0
       return `<button class="prop${left > 0 ? '' : ' used'}${locked ? ' locked' : ''}" data-prop="${k}" aria-label="${PROPS[k].name}">
         ${PROP_ICON[k]}<em class="prop-n">${left}</em></button>`
@@ -692,9 +693,13 @@ export async function renderGame(app, modeKey, routeToken) {
     toastTimer = setTimeout(() => elToast.classList.add('hidden'), 1600)
   }
 
-  // 道具按档位发放：在线由服务端下发，离线读本地档位（内测默认三档）
-  state.tier = online ? online.tier : Number(localStorage.getItem('gd_tier') || 3)
+  // 道具按档位发放：在线由服务端下发；离线演示包（vite --mode demo，即 GitHub Pages 版）
+  // 固定用免费版档位，本地 dev/preview 仍可用 localStorage.gd_tier 覆盖方便联调付费档
+  const DEMO_BUILD = import.meta.env.MODE === 'demo'
+  state.tier = online ? online.tier : Number(localStorage.getItem('gd_tier') ?? (DEMO_BUILD ? FREE_TIER : 3))
   state.props = online ? Object.assign({}, online.props) : tierCounts(state.tier)
+  // 本局「获发」的道具集合：次数用尽也保留图标，未下发的（如演示版的加时沙漏）不渲染
+  state.grant = PROP_ORDER.filter(k => (TIERS[state.tier]?.counts?.[k] ?? online?.props?.[k] ?? 0) > 0)
 
   startQuestion()
 

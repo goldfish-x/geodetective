@@ -8,6 +8,11 @@ export function renderHome(app) {
   window.__gdCleanup = null
   const nickname = getNickname()
 
+  const DEMO_BUILD = import.meta.env.MODE === 'demo'
+  const PROP_RULE_LINE = DEMO_BUILD
+    ? '道具（演示版免费档）：复活罗盘 ×2、回溯怀表 ×2、疆域透镜 ×2，整局共享；加时沙漏属付费档内容，演示版不开放。'
+    : '道具按付费档位发放（内测默认三档）：一档无道具；二档 2 枚加时沙漏 + 2 枚复活罗盘；三档再加 1 枚回溯怀表与 1 枚疆域透镜。'
+
   app.innerHTML = `
   <div class="home-page">
     <div class="home-inner">
@@ -55,7 +60,7 @@ export function renderHome(app) {
           <li>在地图上点击你认为的地理位置，越接近实际位置得分越高，单题最高 ${MODES.china.maxScore} 分；历史局考的是事件发生地。</li>
           <li>中国篇超过 300 km、世界篇超过 1500 km 即 0 分；超时亦 0 分。</li>
           <li>每局设有最低通关得分，局末未达标即任务中止。</li>
-          <li>道具按付费档位发放（内测默认三档）：一档无道具；二档 2 枚加时沙漏 + 2 枚复活罗盘；三档再加 1 枚回溯怀表与 1 枚疆域透镜。</li>
+          <li>${PROP_RULE_LINE}</li>
           <li>加时沙漏：本题倒计时 +12 秒。复活罗盘：本局未达标时复活一次并进入下一局，该局在结算中以黄色标识。回溯怀表：回退并重做本局最近两题，重做得分替换原得分。疆域透镜：高亮答案所在的省份或国家，地图无该区域时改为文字提示。</li>
           <li>局末结算展示本局「地名档案」：悬停地名可阅读简介与配图，实际位置以红点标注在地图上。</li>
           <li>成绩自动记录到本机，各模式保留历史最高 10 次。</li>

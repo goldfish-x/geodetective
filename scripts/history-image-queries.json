@@ -1,0 +1,2402 @@
+{
+ "china|七七事变": {
+  "en": "Marco Polo Bridge Incident",
+  "zh": "七七事变照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|中共一大": {
+  "en": "First National Congress of the Chinese Communist Party",
+  "zh": "中共一大油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|九一八事变": {
+  "en": "Japanese invasion of Manchuria",
+  "zh": "九一八事变照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|五四运动": {
+  "en": "May Fourth Movement",
+  "zh": "五四运动照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|井冈山会师": {
+  "en": "Jinggangshan Convergence",
+  "zh": "井冈山会师油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|南京大屠杀": {
+  "en": "Nanjing Massacre",
+  "zh": "南京大屠杀照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|南昌起义": {
+  "en": "Nanchang Uprising",
+  "zh": "南昌起义油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|台儿庄大捷": {
+  "en": "Battle of Taierzhuang",
+  "zh": "台儿庄大捷照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|四渡赤水": {
+  "en": "Crossing the Chishui River",
+  "zh": "四渡赤水油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|圆明园被焚": {
+  "en": "Destruction of the Old Summer Palace",
+  "zh": "圆明园被焚油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|垓下之战": {
+  "en": "Battle of Gaixia",
+  "zh": "垓下之战画像",
+  "kind": "portrait",
+  "tier": 1
+ },
+ "china|大泽乡起义": {
+  "en": "Dazexiang Uprising",
+  "zh": "大泽乡起义画像",
+  "kind": "portrait",
+  "tier": 1
+ },
+ "china|孔子出生": {
+  "en": "Birth of Confucius",
+  "zh": "孔子出生画像",
+  "kind": "portrait",
+  "tier": 1
+ },
+ "china|孙中山出生": {
+  "en": "Sun Yat-sen birthplace",
+  "zh": "孙中山出生照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|孟子出生": {
+  "en": "Birth of Mencius",
+  "zh": "孟子出生画像",
+  "kind": "portrait",
+  "tier": 1
+ },
+ "china|官渡之战": {
+  "en": "Battle of Guandu",
+  "zh": "官渡之战画像",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|平津战役": {
+  "en": "Pingjin Campaign",
+  "zh": "平津战役照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|广州起义": {
+  "en": "Canton Uprising",
+  "zh": "广州起义油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|开国大典": {
+  "en": "Founding Ceremony of the People's Republic of China",
+  "zh": "开国大典照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|戊戌变法": {
+  "en": "Hundred Days' Reform",
+  "zh": "戊戌变法画像",
+  "kind": "portrait",
+  "tier": 1
+ },
+ "china|文成公主入藏": {
+  "en": "Princess Wencheng's entry into Tibet",
+  "zh": "文成公主入藏油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|李冰修建都江堰": {
+  "en": "Li Bing and the Dujiangyan Irrigation System",
+  "zh": "李冰修建都江堰画像",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|淝水之战": {
+  "en": "Battle of Fei River",
+  "zh": "淝水之战油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|淮海战役": {
+  "en": "Huaihai Campaign",
+  "zh": "淮海战役照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|渡江战役": {
+  "en": "Crossing the Yangtze River Campaign",
+  "zh": "渡江战役照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|玄武门之变": {
+  "en": "Xuanwu Gate Incident",
+  "zh": "玄武门之变油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|甲午战争": {
+  "en": "First Sino-Japanese War",
+  "zh": "甲午战争照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|百团大战": {
+  "en": "Hundred Regiments Offensive",
+  "zh": "百团大战照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|秦始皇出生": {
+  "en": "Birth of Qin Shi Huang",
+  "zh": "秦始皇出生画像",
+  "kind": "portrait",
+  "tier": 1
+ },
+ "china|虎门销烟": {
+  "en": "Destruction of opium at Humen",
+  "zh": "虎门销烟油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|西安事变": {
+  "en": "Xi'an Incident",
+  "zh": "西安事变照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|赤壁之战": {
+  "en": "Battle of Red Cliffs",
+  "zh": "赤壁之战油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|辛亥革命": {
+  "en": "Xinhai Revolution",
+  "zh": "辛亥革命照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|辽沈战役": {
+  "en": "Liaoshen Campaign",
+  "zh": "辽沈战役照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|遵义会议": {
+  "en": "Zunyi Conference",
+  "zh": "遵义会议照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|郑和下西洋": {
+  "en": "Zheng He's voyages",
+  "zh": "郑和下西洋油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|重庆谈判": {
+  "en": "Chongqing Negotiations",
+  "zh": "重庆谈判照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|长沙会战": {
+  "en": "Changsha Campaign",
+  "zh": "长沙会战照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|飞夺泸定桥": {
+  "en": "Seizing the Luding Bridge",
+  "zh": "飞夺泸定桥照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "china|鸿门宴": {
+  "en": "Hongmen Banquet",
+  "zh": "鸿门宴油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "china|会宁会师": {
+  "en": "Huining Meeting of the Red Armies",
+  "zh": "会宁会师 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|勾践复国": {
+  "en": "Goujian's restoration of Yue",
+  "zh": "勾践复国 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|南京条约": {
+  "en": "Treaty of Nanking signing",
+  "zh": "南京条约签订 photo",
+  "kind": "photo",
+  "tier": 2
+ },
+ "china|司马迁写史记": {
+  "en": "Sima Qian writing Records of the Grand Historian",
+  "zh": "司马迁写史记 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|商鞅变法": {
+  "en": "Shang Yang's reforms",
+  "zh": "商鞅变法 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|土木堡之变": {
+  "en": "Tumu Crisis",
+  "zh": "土木堡之变 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|城濮之战": {
+  "en": "Battle of Chengpu",
+  "zh": "城濮之战 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|天京事变": {
+  "en": "Tianjing Incident",
+  "zh": "天京事变 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|太原会战": {
+  "en": "Taiyuan Campaign",
+  "zh": "太原会战 photo",
+  "kind": "photo",
+  "tier": 2
+ },
+ "china|崖山海战": {
+  "en": "Battle of Yamen",
+  "zh": "崖山海战 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|平型关大捷": {
+  "en": "Pingxingguan Victory",
+  "zh": "平型关大捷 photo",
+  "kind": "photo",
+  "tier": 2
+ },
+ "china|张衡地动仪": {
+  "en": "Zhang Heng's seismoscope",
+  "zh": "张衡地动仪 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|张骞出使西域": {
+  "en": "Zhang Qian's expedition to the Western Regions",
+  "zh": "张骞出使西域 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|徐霞客出发": {
+  "en": "Xu Xiake's first journey",
+  "zh": "徐霞客出发 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|戚继光抗倭": {
+  "en": "Qi Jiguang's anti-Wokou campaign in Zhejiang",
+  "zh": "戚继光抗倭 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|曹雪芹著红楼梦": {
+  "en": "Cao Xueqin writing Dream of the Red Chamber",
+  "zh": "曹雪芹著红楼梦 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|李时珍采药": {
+  "en": "Li Shizhen collecting herbs",
+  "zh": "李时珍采药 portrait",
+  "kind": "portrait",
+  "tier": 2
+ },
+ "china|武汉会战": {
+  "en": "Wuhan Campaign",
+  "zh": "武汉会战 photo",
+  "kind": "photo",
+  "tier": 2
+ },
+ "china|毕昇发明活字印刷": {
+  "en": "Bi Sheng's invention of movable type printing",
+  "zh": "毕昇发明活字印刷 painting",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|淞沪会战": {
+  "en": "Battle of Shanghai",
+  "zh": "淞沪会战 photo",
+  "kind": "photo",
+  "tier": 2
+ },
+ "china|渑池之会": {
+  "en": "Meeting at Mianchi",
+  "zh": "渑池之会 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|澶渊之盟": {
+  "en": "Chanyuan Treaty",
+  "zh": "澶渊之盟 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|玄奘西行": {
+  "en": "Xuanzang's journey to the West",
+  "zh": "玄奘西行 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|王安石变法": {
+  "en": "Wang Anshi's reforms",
+  "zh": "王安石变法 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|王羲之兰亭雅集": {
+  "en": "Orchid Pavilion Gathering",
+  "zh": "兰亭雅集 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|班超经营西域": {
+  "en": "Ban Chao in the Western Regions",
+  "zh": "班超经营西域 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|秋收起义": {
+  "en": "Autumn Harvest Uprising",
+  "zh": "秋收起义 照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "china|荆轲刺秦王": {
+  "en": "Jing Ke's assassination attempt on Qin Shi Huang",
+  "zh": "荆轲刺秦王 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|蔡伦改进造纸术": {
+  "en": "Cai Lun's papermaking improvement",
+  "zh": "蔡伦改进造纸术 画像",
+  "kind": "portrait",
+  "tier": 2
+ },
+ "china|邯郸之战": {
+  "en": "Battle of Handan",
+  "zh": "邯郸之战 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|郑成功收复台湾": {
+  "en": "Zheng Chenggong's conquest of Taiwan",
+  "zh": "郑成功收复台湾 版画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|郾城大捷": {
+  "en": "Battle of Yancheng",
+  "zh": "郾城大捷 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|采石大捷": {
+  "en": "Battle of Caishi",
+  "zh": "采石大捷 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|金田起义": {
+  "en": "Jintian Uprising",
+  "zh": "金田起义 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|陈桥兵变": {
+  "en": "Chenqiao Mutiny",
+  "zh": "陈桥兵变 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|雅克萨之战": {
+  "en": "Battle of Albazin",
+  "zh": "雅克萨之战 照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "china|靖康之变": {
+  "en": "Jingkang Incident",
+  "zh": "靖康之变 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|顾恺之作画": {
+  "en": "Gu Kaizhi painting",
+  "zh": "顾恺之作画 画像",
+  "kind": "portrait",
+  "tier": 2
+ },
+ "china|马陵之战": {
+  "en": "Battle of Maling",
+  "zh": "马陵之战 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|黄巾起义": {
+  "en": "Yellow Turban Rebellion",
+  "zh": "黄巾起义 油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "china|七国之乱": {
+  "en": "Rebellion of the Seven States",
+  "zh": "七国之乱 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|三藩之乱": {
+  "en": "Revolt of the Three Feudatories",
+  "zh": "三藩之乱 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|三顾茅庐": {
+  "en": "Liu Bei's Three Visits to Zhuge Liang",
+  "zh": "三顾茅庐 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|党锢之祸": {
+  "en": "Partisan Prohibitions",
+  "zh": "党锢之祸 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|八王之乱": {
+  "en": "War of the Eight Princes",
+  "zh": "八王之乱 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|包拯出生": {
+  "en": "Birth of Bao Zheng",
+  "zh": "包拯出生 画像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "china|大运河开通": {
+  "en": "Grand Canal of Sui Dynasty",
+  "zh": "大运河开通 古画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|夷陵之战": {
+  "en": "Battle of Yiling",
+  "zh": "夷陵之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|岳飞出生": {
+  "en": "Birth of Yue Fei",
+  "zh": "岳飞出生 画像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "china|崤之战": {
+  "en": "Battle of Yao",
+  "zh": "崤之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|巨鹿之战": {
+  "en": "Battle of Julu",
+  "zh": "巨鹿之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|巫蛊之祸": {
+  "en": "Wugu Incident",
+  "zh": "巫蛊之祸 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|康有为出生": {
+  "en": "Birth of Kang Youwei",
+  "zh": "康有为出生 肖像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "china|指鹿为马": {
+  "en": "Zhao Gao pointing at a deer and calling it a horse",
+  "zh": "指鹿为马 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|敦煌藏经洞发现": {
+  "en": "Discovery of the Dunhuang Library Cave",
+  "zh": "敦煌藏经洞发现 照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "china|昆阳之战": {
+  "en": "Battle of Kunyang",
+  "zh": "昆阳之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|李白出生": {
+  "en": "Birth of Li Bai",
+  "zh": "李白出生 肖像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "china|林则徐出生": {
+  "en": "Birth of Lin Zexu",
+  "zh": "林则徐出生 肖像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "china|永乐迁都": {
+  "en": "Yongle Emperor's relocation of the capital",
+  "zh": "永乐迁都 版画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|沙丘之变": {
+  "en": "Sha Qiu Incident",
+  "zh": "沙丘之变 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|牧野之战": {
+  "en": "Battle of Muye",
+  "zh": "牧野之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|王昭君出塞": {
+  "en": "Wang Zhaojun's departure to the Xiongnu",
+  "zh": "王昭君出塞 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|王莽改制": {
+  "en": "Wang Mang's reforms",
+  "zh": "王莽改制 历史画像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "china|王阳明出生": {
+  "en": "Birth of Wang Yangming",
+  "zh": "王阳明出生 肖像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "china|田单火牛阵": {
+  "en": "Tian Dan's fire oxen tactic",
+  "zh": "田单火牛阵 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|甲骨文出土": {
+  "en": "Discovery of oracle bone inscriptions",
+  "zh": "甲骨文出土 照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "china|白登之围": {
+  "en": "Baideng Campaign",
+  "zh": "白登之围 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|白起拔郢": {
+  "en": "Bai Qi's capture of Ying",
+  "zh": "白起拔郢 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|百色起义": {
+  "en": "Baise Uprising",
+  "zh": "百色起义 照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "china|秦始皇兵马俑出土": {
+  "en": "Terracotta Army excavation",
+  "zh": "秦始皇兵马俑出土 照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "china|萨尔浒之战": {
+  "en": "Battle of Sarhu",
+  "zh": "萨尔浒之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|蒙恬北击匈奴": {
+  "en": "Meng Tian's campaign against the Xiongnu",
+  "zh": "蒙恬北击匈奴 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|邲之战": {
+  "en": "Battle of Bi",
+  "zh": "邲之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|鄢陵之战": {
+  "en": "Battle of Yanling",
+  "zh": "鄢陵之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|长勺之战": {
+  "en": "Battle of Changshao",
+  "zh": "长勺之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|长平之战": {
+  "en": "Battle of Changping",
+  "zh": "长平之战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|马嵬驿兵变": {
+  "en": "Ma嵬Yi mutiny",
+  "zh": "马嵬驿兵变 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|马王堆汉墓发掘": {
+  "en": "Excavation of Mawangdui Han tombs",
+  "zh": "马王堆汉墓发掘 照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "china|黄池之会": {
+  "en": "Huangchi Conference",
+  "zh": "黄池之会 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "china|龙场悟道": {
+  "en": "Longchang Enlightenment",
+  "zh": "龙场悟道 肖像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "china|一江山岛战役": {
+  "en": "Battle of Yijiangshan Islands",
+  "zh": "一江山岛战役照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "china|东山岛战役": {
+  "en": "Battle of Dongshan Island",
+  "zh": "东山岛战役照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "china|云冈石窟开凿": {
+  "en": "Yungang Grottoes construction",
+  "zh": "云冈石窟开凿油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|侯景台城陷落": {
+  "en": "Hou Jing's capture of Tai Cheng",
+  "zh": "侯景台城陷落画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|共和行政": {
+  "en": "Gonghe Regency",
+  "zh": "共和行政画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|冉闵杀胡令": {
+  "en": "Ran Min's Edict against the Hu",
+  "zh": "冉闵杀胡令画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|刘裕北伐": {
+  "en": "Liu Yu's Northern Expeditions",
+  "zh": "刘裕北伐油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|司马迁出生": {
+  "en": "Sima Qian birthplace",
+  "zh": "司马迁出生画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|壬寅宫变": {
+  "en": "Renyin Palace Coup",
+  "zh": "壬寅宫变画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|大小金川之战": {
+  "en": "Jinchuan Campaigns",
+  "zh": "大小金川之战油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|宁远大捷": {
+  "en": "Battle of Ningyuan",
+  "zh": "宁远大捷油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|安禄山起兵范阳": {
+  "en": "An Lushan Rebellion outbreak at Fanyang",
+  "zh": "安禄山起兵范阳画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|宋应星著天工开物": {
+  "en": "Song Yingxing and Tian Gong Kai Wu",
+  "zh": "宋应星著天工开物画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|完颜阿骨打建国": {
+  "en": "Wanyan Aguda founding the Jin dynasty",
+  "zh": "完颜阿骨打建国画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|左宗棠收复新疆": {
+  "en": "Zuo Zongtang's reconquest of Xinjiang",
+  "zh": "左宗棠收复新疆照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "china|张献忠屠武昌": {
+  "en": "Zhang Xianzhong's massacre of Wuchang",
+  "zh": "张献忠屠武昌油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|忽必烈开平即位": {
+  "en": "Kublai Khan's enthronement at Kaiping",
+  "zh": "忽必烈开平即位画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|成吉思汗围中都": {
+  "en": "Genghis Khan's siege of Zhongdu",
+  "zh": "成吉思汗围中都油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|拓跋珪参合陂之战": {
+  "en": "Battle of Canhe Slope",
+  "zh": "拓跋珪参合陂之战画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|捻军雉河集会盟": {
+  "en": "Nian Army assembly at Zhiheji",
+  "zh": "捻军雉河集会盟画像",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|曾侯乙编钟出土": {
+  "en": "Excavation of Marquis Yi of Zeng's bells",
+  "zh": "曾侯乙编钟出土照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "china|朱元璋取集庆": {
+  "en": "Zhu Yuanzhang captures Jiqing",
+  "zh": "朱元璋取集庆油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|朱熹出生": {
+  "en": "Birth of Zhu Xi",
+  "zh": "朱熹出生画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|李自成破承天": {
+  "en": "Li Zicheng captures Chengtian",
+  "zh": "李自成破承天油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|李靖夜袭阴山": {
+  "en": "Li Jing's night raid on Yinshan",
+  "zh": "李靖夜袭阴山油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|林爽文起义": {
+  "en": "Lin Shuangwen rebellion",
+  "zh": "林爽文起义油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|桓温北伐": {
+  "en": "Huan Wen's Northern Expedition",
+  "zh": "桓温北伐油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|沈括出生": {
+  "en": "Birth of Shen Kuo",
+  "zh": "沈括出生画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|河阴之变": {
+  "en": "Heyin Coup",
+  "zh": "河阴之变油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|犬戎破镐京": {
+  "en": "Quanrong sack of Haojing",
+  "zh": "犬戎破镐京油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|王安石出生": {
+  "en": "Birth of Wang Anshi",
+  "zh": "王安石出生画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|班超投笔从戎": {
+  "en": "Ban Chao throws down his brush",
+  "zh": "班超投笔从戎油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|白居易出生": {
+  "en": "Birth of Bai Juyi",
+  "zh": "白居易出生画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|纪晓岚修四库全书": {
+  "en": "Ji Xiaolan compiles Siku Quanshu",
+  "zh": "纪晓岚修四库全书油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|花木兰从军": {
+  "en": "Hua Mulan joins the army",
+  "zh": "花木兰从军画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|蔡文姬归汉": {
+  "en": "Cai Wenji's return to Han",
+  "zh": "蔡文姬归汉画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|践土之盟": {
+  "en": "Alliance of Jiantu",
+  "zh": "践土之盟壁画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|郑板桥任县令": {
+  "en": "Zheng Banqiao serves as county magistrate",
+  "zh": "郑板桥任县令画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "china|马可·波罗抵达上都": {
+  "en": "Marco Polo arrives at Shangdu",
+  "zh": "马可·波罗抵达上都油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|马援平交趾": {
+  "en": "Ma Yuan pacifies Jiaozhi",
+  "zh": "马援平交趾油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "china|俺答汗围北京": {
+  "en": "Altan Khan's siege of Beijing",
+  "zh": "俺答汗围北京",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|关汉卿出生": {
+  "en": "Guan Hanqing portrait",
+  "zh": "关汉卿画像",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "china|刘整降元献策": {
+  "en": "Liu Zheng surrender to Yuan",
+  "zh": "刘整降元献策",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|刘福通红巾军颍州起义": {
+  "en": "Liu Futong's Red Turban Rebellion in Yingzhou",
+  "zh": "刘福通红巾军颍州起义",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|召陵之盟": {
+  "en": "Shaoling Alliance",
+  "zh": "召陵之盟",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|哱拜宁夏之乱": {
+  "en": "Pubei's Ningxia rebellion",
+  "zh": "哱拜宁夏之乱",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|国人暴动": {
+  "en": "Rebellion of the Nationals in Western Zhou",
+  "zh": "国人暴动",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|姑臧之战": {
+  "en": "Battle of Guzang",
+  "zh": "姑臧之战",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|孛罗帖木儿大同兵变": {
+  "en": "Boluo Timur's Datong military mutiny",
+  "zh": "孛罗帖木儿大同兵变",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|宇文泰沙苑之战": {
+  "en": "Battle of Shayuan",
+  "zh": "宇文泰沙苑之战",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|左宗棠出生": {
+  "en": "Zuo Zongtang portrait",
+  "zh": "左宗棠画像",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "china|平王东迁": {
+  "en": "Eastern Zhou migration",
+  "zh": "平王东迁",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|张格尔喀什噶尔之乱": {
+  "en": "Zhang格尔's Kashgar rebellion",
+  "zh": "张格尔喀什噶尔之乱",
+  "kind": "photo",
+  "tier": 5
+ },
+ "china|徐光启出生": {
+  "en": "Xu Guangqi portrait",
+  "zh": "徐光启画像",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "china|曾国藩出生": {
+  "en": "Zeng Guofan portrait",
+  "zh": "曾国藩画像",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "china|朵颜三卫内附": {
+  "en": "Doyin Three Guards submission to Ming",
+  "zh": "朵颜三卫内附",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|李璮之乱济南起事": {
+  "en": "Li Tan's rebellion in Jinan",
+  "zh": "李璮之乱济南起事",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|李鸿章出生": {
+  "en": "Li Hongzhang portrait",
+  "zh": "李鸿章画像",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "china|柏举之战": {
+  "en": "Battle of Baiju",
+  "zh": "柏举之战",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|桂陵之战": {
+  "en": "Battle of Guiling",
+  "zh": "桂陵之战",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|永嘉之乱": {
+  "en": "Sack of Luoyang (311)",
+  "zh": "永嘉之乱油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|海瑞出生": {
+  "en": "Hai Rui portrait",
+  "zh": "海瑞画像",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "china|烽火戏诸侯": {
+  "en": "King You of Zhou lighting beacon fires",
+  "zh": "烽火戏诸侯油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|王辅臣平凉叛乱": {
+  "en": "Wang Fuchen's rebellion in Pingliang",
+  "zh": "王辅臣平凉叛乱油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|盐铁会议": {
+  "en": "Salt and Iron Conference",
+  "zh": "盐铁会议油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|硖石之战": {
+  "en": "Battle of Xia Shi",
+  "zh": "硖石之战油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|窦固破北匈奴": {
+  "en": "Dou Gu's campaign against the Northern Xiongnu",
+  "zh": "窦固破北匈奴油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|耶律德光灭后晋": {
+  "en": "Yelü De'guang's conquest of Later Jin",
+  "zh": "耶律德光灭后晋油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|萨哈廉攻占旅顺口": {
+  "en": "Sahalian's capture of Lüshunkou",
+  "zh": "萨哈廉攻占旅顺口油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|葵丘会盟": {
+  "en": "Kuiqiu Alliance",
+  "zh": "葵丘会盟油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|衣冠南渡": {
+  "en": "Southern Migration of the Aristocracy",
+  "zh": "衣冠南渡油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|赵州桥建成": {
+  "en": "Zhaozhou Bridge construction",
+  "zh": "赵州桥建成照片",
+  "kind": "photo",
+  "tier": 5
+ },
+ "china|越王勾践剑出土": {
+  "en": "Sword of Goujian excavation",
+  "zh": "越王勾践剑出土照片",
+  "kind": "photo",
+  "tier": 5
+ },
+ "china|郭守敬出生": {
+  "en": "Guo Shoujing portrait",
+  "zh": "郭守敬画像",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "china|阏与之战": {
+  "en": "Battle of Yan Yu",
+  "zh": "阏与之战油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|阿合马被刺": {
+  "en": "Assassination of Ahmad Fanakati",
+  "zh": "阿合马被刺油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|阿睦尔撒纳伊犁叛乱": {
+  "en": "Amursana's rebellion in Ili",
+  "zh": "阿睦尔撒纳伊犁叛乱油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|陈霸先建康平叛": {
+  "en": "Chen Baxian's suppression of rebellion in Jiankang",
+  "zh": "陈霸先建康平叛油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|鲜卑慕容皝建前燕": {
+  "en": "Murong Huang founding Former Yan",
+  "zh": "鲜卑慕容皝建前燕油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "china|龙门石窟开凿": {
+  "en": "Longmen Grottoes construction",
+  "zh": "龙门石窟开凿照片",
+  "kind": "photo",
+  "tier": 5
+ },
+ "world|中途岛海战": {
+  "en": "Battle of Midway",
+  "zh": "中途岛海战照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|俄国十月革命": {
+  "en": "October Revolution",
+  "zh": "十月革命油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|凡尔登战役": {
+  "en": "Battle of Verdun",
+  "zh": "凡尔登战役照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|凡尔赛条约签署": {
+  "en": "Signing of the Treaty of Versailles",
+  "zh": "凡尔赛条约签署照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|印度独立": {
+  "en": "Indian Independence",
+  "zh": "印度独立照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|古巴导弹危机": {
+  "en": "Cuban Missile Crisis",
+  "zh": "古巴导弹危机照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|君士坦丁堡陷落": {
+  "en": "Fall of Constantinople",
+  "zh": "君士坦丁堡陷落油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|奥斯特里茨战役": {
+  "en": "Battle of Austerlitz",
+  "zh": "奥斯特里茨战役油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|宗教改革开始": {
+  "en": "Ninety-five Theses",
+  "zh": "九十五条论纲油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|广岛原子弹爆炸": {
+  "en": "Atomic bombing of Hiroshima",
+  "zh": "广岛原子弹爆炸照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|慕尼黑协定签署": {
+  "en": "Munich Agreement",
+  "zh": "慕尼黑协定签署照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|攻占巴士底狱": {
+  "en": "Storming of the Bastille",
+  "zh": "攻占巴士底狱油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|敦刻尔克撤退": {
+  "en": "Dunkirk evacuation",
+  "zh": "敦刻尔克撤退照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|文艺复兴开端": {
+  "en": "Florence Baptistery doors competition",
+  "zh": "佛罗伦萨洗礼堂北门浮雕画像",
+  "kind": "portrait",
+  "tier": 1
+ },
+ "world|斯大林格勒战役": {
+  "en": "Battle of Stalingrad",
+  "zh": "斯大林格勒战役照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|日本无条件投降": {
+  "en": "Japanese surrender",
+  "zh": "日本无条件投降照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|明治维新": {
+  "en": "Meiji Restoration",
+  "zh": "明治维新画像",
+  "kind": "portrait",
+  "tier": 1
+ },
+ "world|来克星顿的枪声": {
+  "en": "Battles of Lexington and Concord",
+  "zh": "来克星顿的枪声油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|柏林墙修建": {
+  "en": "Berlin Wall construction",
+  "zh": "柏林墙修建照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|柏林墙倒塌": {
+  "en": "Fall of the Berlin Wall",
+  "zh": "柏林墙倒塌照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|柏林奥运会": {
+  "en": "1936 Summer Olympics in Berlin",
+  "zh": "柏林奥运会 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|柏林战役": {
+  "en": "Battle of Berlin",
+  "zh": "柏林战役 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|波士顿倾茶事件": {
+  "en": "Boston Tea Party",
+  "zh": "波士顿倾茶事件 油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|温泉关战役": {
+  "en": "Battle of Thermopylae",
+  "zh": "温泉关战役 油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|滑铁卢战役": {
+  "en": "Battle of Waterloo",
+  "zh": "滑铁卢战役 油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|珍珠港事件": {
+  "en": "Attack on Pearl Harbor",
+  "zh": "珍珠港事件 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|美国南北战争爆发": {
+  "en": "Bombardment of Fort Sumter",
+  "zh": "萨姆特堡炮击 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|美国独立宣言签署": {
+  "en": "Signing of the Declaration of Independence",
+  "zh": "美国独立宣言签署 油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|联合国宪章签署": {
+  "en": "Signing of the United Nations Charter",
+  "zh": "联合国宪章签署 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|苏联解体": {
+  "en": "Dissolution of the Soviet Union",
+  "zh": "苏联解体 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|英国光荣革命": {
+  "en": "Glorious Revolution",
+  "zh": "英国光荣革命 油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|莱比锡会战": {
+  "en": "Battle of Leipzig",
+  "zh": "莱比锡会战 油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|萨拉热窝事件": {
+  "en": "Assassination of Archduke Franz Ferdinand",
+  "zh": "萨拉热窝事件 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|葛底斯堡战役": {
+  "en": "Battle of Gettysburg",
+  "zh": "葛底斯堡战役 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|诺曼底登陆": {
+  "en": "Normandy landings",
+  "zh": "诺曼底登陆 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|长崎原子弹爆炸": {
+  "en": "Atomic bombing of Nagasaki",
+  "zh": "长崎原子弹爆炸 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|阿波罗11号登月": {
+  "en": "Apollo 11 moon landing",
+  "zh": "阿波罗11号登月 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|雅尔塔会议": {
+  "en": "Yalta Conference",
+  "zh": "雅尔塔会议 照片",
+  "kind": "photo",
+  "tier": 1
+ },
+ "world|马拉松战役": {
+  "en": "Battle of Marathon",
+  "zh": "马拉松战役 油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|黑斯廷斯战役": {
+  "en": "Battle of Hastings",
+  "zh": "黑斯廷斯战役 油画",
+  "kind": "painting",
+  "tier": 1
+ },
+ "world|万隆会议": {
+  "en": "Bandung Conference",
+  "zh": "万隆会议照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|六日战争": {
+  "en": "Six-Day War",
+  "zh": "六日战争照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|切尔诺贝利核事故": {
+  "en": "Chernobyl disaster",
+  "zh": "切尔诺贝利核事故照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|列宁格勒保卫战": {
+  "en": "Siege of Leningrad",
+  "zh": "列宁格勒保卫战照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|加尔文在日内瓦推行改革": {
+  "en": "John Calvin in Geneva",
+  "zh": "加尔文在日内瓦推行改革画像",
+  "kind": "portrait",
+  "tier": 2
+ },
+ "world|华沙起义": {
+  "en": "Warsaw Uprising",
+  "zh": "华沙起义照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|南非种族隔离制度确立": {
+  "en": "Apartheid in South Africa",
+  "zh": "南非种族隔离制度确立照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|印加帝国灭亡": {
+  "en": "Fall of the Inca Empire",
+  "zh": "印加帝国灭亡油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|印度民族大起义": {
+  "en": "Indian Rebellion of 1857",
+  "zh": "印度民族大起义油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|印度非暴力不合作运动": {
+  "en": "Non-cooperation movement",
+  "zh": "印度非暴力不合作运动照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|古巴革命胜利": {
+  "en": "Cuban Revolution",
+  "zh": "古巴革命胜利照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|哥伦布首航抵达圣萨尔瓦多": {
+  "en": "Columbus landing on San Salvador",
+  "zh": "哥伦布首航抵达圣萨尔瓦多油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|布拉格之春": {
+  "en": "Prague Spring",
+  "zh": "布拉格之春照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|开罗宣言签署": {
+  "en": "Cairo Declaration",
+  "zh": "开罗宣言签署照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|彼得大帝建立圣彼得堡": {
+  "en": "Foundation of Saint Petersburg",
+  "zh": "彼得大帝建立圣彼得堡油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|恺撒遇刺": {
+  "en": "Assassination of Julius Caesar",
+  "zh": "恺撒遇刺油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|拿破仑加冕": {
+  "en": "Coronation of Napoleon",
+  "zh": "拿破仑加冕油画",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|曼德拉获释": {
+  "en": "Release of Nelson Mandela",
+  "zh": "曼德拉获释照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|林肯遇刺": {
+  "en": "Assassination of Abraham Lincoln",
+  "zh": "林肯遇刺照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|柏林空运": {
+  "en": "Berlin Airlift",
+  "zh": "柏林空运照片",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|水门事件": {
+  "en": "Watergate scandal",
+  "zh": "水门事件",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|波士顿大屠杀": {
+  "en": "Boston Massacre",
+  "zh": "波士顿大屠杀",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|波茨坦公告发表": {
+  "en": "Potsdam Declaration",
+  "zh": "波茨坦公告发表",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|泰坦尼克号沉没": {
+  "en": "Sinking of the RMS Titanic",
+  "zh": "泰坦尼克号沉没",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|特拉法尔加海战": {
+  "en": "Battle of Trafalgar",
+  "zh": "特拉法尔加海战",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|第一次十字军攻陷耶路撒冷": {
+  "en": "Capture of Jerusalem (1099)",
+  "zh": "第一次十字军攻陷耶路撒冷",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|索姆河战役": {
+  "en": "Battle of the Somme",
+  "zh": "索姆河战役",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|维也纳之战": {
+  "en": "Battle of Vienna (1683)",
+  "zh": "维也纳之战",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|美国宪法签署": {
+  "en": "Signing of the United States Constitution",
+  "zh": "美国宪法签署",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|肯尼迪遇刺": {
+  "en": "Assassination of John F. Kennedy",
+  "zh": "肯尼迪遇刺",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|芝加哥大火": {
+  "en": "Great Chicago Fire",
+  "zh": "芝加哥大火",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|苏伊士运河通航": {
+  "en": "Opening of the Suez Canal",
+  "zh": "苏伊士运河通航",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|莫斯科保卫战": {
+  "en": "Battle of Moscow",
+  "zh": "莫斯科保卫战",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|萨拉丁收复耶路撒冷": {
+  "en": "Saladin's capture of Jerusalem",
+  "zh": "萨拉丁收复耶路撒冷",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|西班牙内战爆发": {
+  "en": "Spanish Civil War outbreak",
+  "zh": "西班牙内战爆发",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|阿兹特克帝国灭亡": {
+  "en": "Fall of Tenochtitlan",
+  "zh": "阿兹特克帝国灭亡",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|阿姆利则惨案": {
+  "en": "Jallianwala Bagh massacre",
+  "zh": "阿姆利则惨案",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|阿拉曼战役": {
+  "en": "Second Battle of El Alamein",
+  "zh": "阿拉曼战役",
+  "kind": "photo",
+  "tier": 2
+ },
+ "world|阿金库尔战役": {
+  "en": "Battle of Agincourt",
+  "zh": "阿金库尔战役",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|麦哲伦船队完成环球航行": {
+  "en": "Magellan expedition circumnavigation",
+  "zh": "麦哲伦船队完成环球航行",
+  "kind": "painting",
+  "tier": 2
+ },
+ "world|五月花号抵达普利茅斯": {
+  "en": "Mayflower arrival at Plymouth",
+  "zh": "五月花号抵达普利茅斯 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|亚克兴海战": {
+  "en": "Battle of Actium",
+  "zh": "亚克兴海战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|伊凡雷帝攻陷喀山": {
+  "en": "Siege of Kazan by Ivan the Terrible",
+  "zh": "伊凡雷帝攻陷喀山 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|伊苏斯战役": {
+  "en": "Battle of Issus",
+  "zh": "伊苏斯战役 古代马赛克/油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|关原之战": {
+  "en": "Battle of Sekigahara",
+  "zh": "关原之战 浮世绘",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|勒班陀海战": {
+  "en": "Battle of Lepanto",
+  "zh": "勒班陀海战 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|卡迭石战役": {
+  "en": "Battle of Kadesh",
+  "zh": "卡迭石战役 浮雕",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|哈丁战役": {
+  "en": "Battle of Hattin",
+  "zh": "哈丁战役 中世纪手稿插图",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|土耳其共和国宣告成立": {
+  "en": "Proclamation of the Republic of Turkey",
+  "zh": "土耳其共和国宣告成立 照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|圣女贞德奥尔良解围": {
+  "en": "Joan of Arc lifting the siege of Orléans",
+  "zh": "圣女贞德奥尔良解围 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|圣巴托洛缪大屠杀": {
+  "en": "St. Bartholomew's Day Massacre",
+  "zh": "圣巴托洛缪大屠杀 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|墨西哥独立战争爆发": {
+  "en": "Mexican War of Independence begins",
+  "zh": "墨西哥独立战争爆发 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|大化改新": {
+  "en": "Taika Reform",
+  "zh": "大化改新 古代绘画/壁画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|大宪章签署": {
+  "en": "Signing of the Magna Carta",
+  "zh": "大宪章签署 中世纪手稿插图",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|巴黎公社成立": {
+  "en": "Paris Commune proclamation",
+  "zh": "巴黎公社成立 照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|布伦海姆战役": {
+  "en": "Battle of Blenheim",
+  "zh": "布伦海姆战役 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|布拉格掷出窗外事件": {
+  "en": "Defenestration of Prague",
+  "zh": "布拉格掷出窗外事件 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|托尔德西里亚斯条约签署": {
+  "en": "Treaty of Tordesillas signing",
+  "zh": "托尔德西里亚斯条约签署 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|拿破仑远征埃及": {
+  "en": "Napoleon's campaign in Egypt",
+  "zh": "拿破仑远征埃及 老照片/版画",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|曼哈顿计划启动": {
+  "en": "Chicago Pile-1 first nuclear chain reaction",
+  "zh": "曼哈顿计划启动 照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|本能寺之变": {
+  "en": "Honnō-ji Incident",
+  "zh": "本能寺之变 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|查理曼加冕": {
+  "en": "Coronation of Charlemagne",
+  "zh": "查理曼加冕 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|海地独立宣言发表": {
+  "en": "Declaration of Independence of Haiti",
+  "zh": "海地独立宣言发表 版画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|玻利瓦尔解放新格拉纳达": {
+  "en": "Liberation of New Granada by Bolivar",
+  "zh": "玻利瓦尔解放新格拉纳达 油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|米兰敕令颁布": {
+  "en": "Edict of Milan",
+  "zh": "米兰敕令 壁画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|约克镇围城战役": {
+  "en": "Siege of Yorktown",
+  "zh": "约克镇围城战役 历史油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|罗马大火": {
+  "en": "Great Fire of Rome",
+  "zh": "罗马大火 历史油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|色当战役": {
+  "en": "Battle of Sedan",
+  "zh": "色当战役 老照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|苏莱曼大帝围攻维也纳": {
+  "en": "Siege of Vienna (1529)",
+  "zh": "苏莱曼大帝围攻维也纳 历史油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|门罗宣言发表": {
+  "en": "Monroe Doctrine",
+  "zh": "门罗宣言发表 画像",
+  "kind": "portrait",
+  "tier": 3
+ },
+ "world|阿杜瓦战役": {
+  "en": "Battle of Adwa",
+  "zh": "阿杜瓦战役 老照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|阿波罗13号事故": {
+  "en": "Apollo 13 accident",
+  "zh": "阿波罗13号事故 老照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|雾月政变": {
+  "en": "Coup of 18 Brumaire",
+  "zh": "雾月政变 历史油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|马哈赞河战役": {
+  "en": "Battle of Alcácer Quibir",
+  "zh": "马哈赞河战役 历史油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|马恩河战役": {
+  "en": "First Battle of the Marne",
+  "zh": "马恩河战役 老照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|马歇尔计划提出": {
+  "en": "Marshall Plan speech",
+  "zh": "马歇尔计划提出 老照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|马耳他围城战": {
+  "en": "Great Siege of Malta",
+  "zh": "马耳他围城战 历史油画",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|高加米拉战役": {
+  "en": "Battle of Gaugamela",
+  "zh": "高加米拉战役 古代浮雕",
+  "kind": "ruin",
+  "tier": 3
+ },
+ "world|黑死病爆发": {
+  "en": "Black Death in Europe",
+  "zh": "黑死病爆发 中世纪手稿插图",
+  "kind": "painting",
+  "tier": 3
+ },
+ "world|黑船来航": {
+  "en": "Perry Expedition",
+  "zh": "黑船来航 老照片",
+  "kind": "photo",
+  "tier": 3
+ },
+ "world|乌尔姆战役": {
+  "en": "Battle of Ulm",
+  "zh": "乌尔姆战役油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|亨利八世宗教改革": {
+  "en": "Act of Supremacy 1534",
+  "zh": "亨利八世宗教改革油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|克雷西会战": {
+  "en": "Battle of Crécy",
+  "zh": "克雷西会战油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|刚果独立": {
+  "en": "Independence of the Democratic Republic of the Congo",
+  "zh": "刚果独立照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|博斯沃思战役": {
+  "en": "Battle of Bosworth Field",
+  "zh": "博斯沃思战役油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|卡萨布兰卡会议": {
+  "en": "Casablanca Conference",
+  "zh": "卡萨布兰卡会议照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|卡诺萨觐见": {
+  "en": "Walk to Canossa",
+  "zh": "卡诺萨觐见油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|塔兰托夜袭": {
+  "en": "Battle of Taranto",
+  "zh": "塔兰托夜袭照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|塞瓦斯托波尔围攻": {
+  "en": "Siege of Sevastopol (1854–1855)",
+  "zh": "塞瓦斯托波尔围攻油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|孔雀王朝建立": {
+  "en": "Maurya Empire foundation",
+  "zh": "孔雀王朝建立画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "world|孟买恐怖袭击": {
+  "en": "2008 Mumbai attacks",
+  "zh": "孟买恐怖袭击照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|巴西迁都": {
+  "en": "Inauguration of Brasília",
+  "zh": "巴西迁都照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|布赖滕费尔德战役": {
+  "en": "Battle of Breitenfeld (1631)",
+  "zh": "布赖滕费尔德战役油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|帕维亚战役": {
+  "en": "Battle of Pavia",
+  "zh": "帕维亚战役油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|帖木儿帝国建立": {
+  "en": "Foundation of the Timurid Empire",
+  "zh": "帖木儿帝国建立画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "world|德黑兰会议": {
+  "en": "Tehran Conference",
+  "zh": "德黑兰会议照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|怀唐伊条约签署": {
+  "en": "Treaty of Waitangi signing",
+  "zh": "怀唐伊条约签署油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|普瓦捷战役": {
+  "en": "Battle of Tours",
+  "zh": "普瓦捷战役油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|柏林会议": {
+  "en": "Berlin Conference (1878)",
+  "zh": "柏林会议油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|格拉纳达陷落": {
+  "en": "Fall of Granada",
+  "zh": "格拉纳达陷落油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|桑地诺革命": {
+  "en": "Sandino Rebellion",
+  "zh": "桑地诺革命 油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|沙隆战役": {
+  "en": "Battle of Châlons",
+  "zh": "沙隆战役 油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|泰姬陵落成": {
+  "en": "Taj Mahal completion",
+  "zh": "泰姬陵落成 画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "world|澳大利亚淘金热开始": {
+  "en": "Australian gold rush 1851",
+  "zh": "澳大利亚淘金热开始 照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|瓦尔纳战役": {
+  "en": "Battle of Varna",
+  "zh": "瓦尔纳战役 油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|科索沃战役": {
+  "en": "Battle of Kosovo",
+  "zh": "科索沃战役 油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|第一次帕尼帕特战役": {
+  "en": "First Battle of Panipat",
+  "zh": "第一次帕尼帕特战役 油画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|第四次十字军攻陷君士坦丁堡": {
+  "en": "Sack of Constantinople 1204",
+  "zh": "第四次十字军攻陷君士坦丁堡 版画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|维京人袭击林迪斯法恩": {
+  "en": "Viking raid on Lindisfarne",
+  "zh": "维京人袭击林迪斯法恩 版画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|胡志明战役": {
+  "en": "Ho Chi Minh Campaign",
+  "zh": "胡志明战役 照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|苏伊士运河国有化": {
+  "en": "Suez Canal nationalization",
+  "zh": "苏伊士运河国有化 照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|莱茵河战役": {
+  "en": "Rhineland campaign 1945",
+  "zh": "莱茵河战役 照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|萨珊波斯围攻安条克": {
+  "en": "Sasanian siege of Antioch 540",
+  "zh": "萨珊波斯围攻安条克 壁画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|西哥特攻陷罗马": {
+  "en": "Sack of Rome 410",
+  "zh": "西哥特攻陷罗马 版画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|西班牙无敌舰队覆灭": {
+  "en": "Defeat of the Spanish Armada",
+  "zh": "西班牙无敌舰队覆灭 版画",
+  "kind": "painting",
+  "tier": 4
+ },
+ "world|阿斯旺大坝落成": {
+  "en": "Aswan High Dam completion",
+  "zh": "阿斯旺大坝落成 照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|阿根廷独立宣言签署": {
+  "en": "Argentine Declaration of Independence",
+  "zh": "阿根廷独立宣言签署 画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "world|食盐长征": {
+  "en": "Salt March",
+  "zh": "食盐长征 照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|首批囚船抵达悉尼": {
+  "en": "First Fleet arrival in Sydney",
+  "zh": "首批囚船抵达悉尼 照片",
+  "kind": "photo",
+  "tier": 4
+ },
+ "world|马哈茂德二世废除近卫军": {
+  "en": "Auspicious Incident",
+  "zh": "马哈茂德二世废除近卫军 画像",
+  "kind": "portrait",
+  "tier": 4
+ },
+ "world|桑海帝国攻陷廷巴克图": {
+  "en": "Capture of Timbuktu by Sonni Ali",
+  "zh": "桑海帝国攻陷廷巴克图 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|波托西银矿大规模开采": {
+  "en": "Potosí silver mine 16th century",
+  "zh": "波托西银矿大规模开采 版画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|特尔诺沃起义": {
+  "en": "April Uprising in Tarnovo",
+  "zh": "特尔诺沃起义 画像",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "world|第一次瓜分波兰": {
+  "en": "First Partition of Poland",
+  "zh": "第一次瓜分波兰 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|纳瓦里诺海战": {
+  "en": "Battle of Navarino",
+  "zh": "纳瓦里诺海战 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|维也纳会议": {
+  "en": "Congress of Vienna",
+  "zh": "维也纳会议 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|罗马之劫": {
+  "en": "Sack of Rome 1527",
+  "zh": "罗马之劫 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|英国内战爆发": {
+  "en": "Start of the English Civil War",
+  "zh": "英国内战爆发 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|萨佛纳罗拉被处火刑": {
+  "en": "Execution of Savonarola",
+  "zh": "萨佛纳罗拉被处火刑 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|谷登堡印刷术问世": {
+  "en": "Gutenberg printing press",
+  "zh": "谷登堡印刷术问世 版画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|路易十四迁宫凡尔赛": {
+  "en": "Louis XIV moves court to Versailles",
+  "zh": "路易十四迁宫凡尔赛 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|里斯本大地震": {
+  "en": "1755 Lisbon earthquake",
+  "zh": "里斯本大地震 老照片",
+  "kind": "photo",
+  "tier": 5
+ },
+ "world|闲山岛海战": {
+  "en": "Battle of Hansan Island",
+  "zh": "闲山岛海战 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|阿姆斯特丹银行成立": {
+  "en": "Amsterdam Wisselbank 1609",
+  "zh": "阿姆斯特丹银行成立 版画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|阿拔斯王朝建立": {
+  "en": "Establishment of the Abbasid Caliphate in Kufa",
+  "zh": "阿拔斯王朝建立 壁画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|阿瑜陀耶王朝灭亡": {
+  "en": "Fall of Ayutthaya",
+  "zh": "阿瑜陀耶王朝灭亡 遗址",
+  "kind": "ruin",
+  "tier": 5
+ },
+ "world|阿音札鲁特战役": {
+  "en": "Battle of Ain Jalut",
+  "zh": "阿音札鲁特战役 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|青年土耳其党革命": {
+  "en": "Young Turk Revolution",
+  "zh": "青年土耳其党革命 老照片",
+  "kind": "photo",
+  "tier": 5
+ },
+ "world|魏玛共和国成立": {
+  "en": "Proclamation of the Weimar Republic",
+  "zh": "魏玛共和国成立 老照片",
+  "kind": "photo",
+  "tier": 5
+ },
+ "world|麦哲伦在麦克坦岛战死": {
+  "en": "Death of Magellan on Mactan",
+  "zh": "麦哲伦在麦克坦岛战死 油画",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|乌得勒支和约签署": {
+  "en": "Treaty of Utrecht",
+  "zh": "Utrecht treaty painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|伊散德尔瓦纳战役": {
+  "en": "Battle of Isandlwana",
+  "zh": "Isandlwana battle painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|克鲁亚围城战": {
+  "en": "Siege of Krujë Skanderbeg",
+  "zh": "Kruja siege painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|十二月党人起义": {
+  "en": "Decembrist revolt",
+  "zh": "Decembrist uprising painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|卡拉乔治起义": {
+  "en": "First Serbian Uprising",
+  "zh": "Karađorđe portrait",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "world|古斯塔夫二世战死吕岑": {
+  "en": "Battle of Lützen 1632",
+  "zh": "Gustav II Adolf Lützen painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|圣索菲亚大教堂建成": {
+  "en": "Hagia Sophia interior",
+  "zh": "Hagia Sophia 1900 photograph",
+  "kind": "photo",
+  "tier": 5
+ },
+ "world|奥格斯堡和约签订": {
+  "en": "Peace of Augsburg",
+  "zh": "Augsburg religious peace engraving",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|威廉·华莱士遇害": {
+  "en": "William Wallace portrait",
+  "zh": "William Wallace painting",
+  "kind": "portrait",
+  "tier": 5
+ },
+ "world|威斯特伐利亚和约签订": {
+  "en": "Peace of Westphalia Münster",
+  "zh": "Osnabrück treaty hall engraving",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|岛原之乱": {
+  "en": "Shimabara Rebellion",
+  "zh": "Hara Castle siege painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|巴布教起义": {
+  "en": "Báb Shiraz",
+  "zh": "Shiraz Vakil Mosque photograph",
+  "kind": "photo",
+  "tier": 5
+ },
+ "world|希腊独立战争爆发": {
+  "en": "Greek War of Independence",
+  "zh": "Greek revolution painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|帕齐阴谋": {
+  "en": "Pazzi conspiracy Botticelli",
+  "zh": "Pazzi conspiracy execution painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|德雷福斯事件": {
+  "en": "Dreyfus affair",
+  "zh": "Dreyfus Le Figaro cartoon",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|戊辰战争爆发": {
+  "en": "Boshin War",
+  "zh": "Boshin war woodblock print",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|拉文纳战役": {
+  "en": "Battle of Ravenna 1512",
+  "zh": "Ravenna battle tapestry",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|拿破仑流放厄尔巴岛": {
+  "en": "Napoleon exile Elba",
+  "zh": "Napoleon at Fontainebleau painting",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|斯德哥尔摩血案": {
+  "en": "Stockholm Bloodbath",
+  "zh": "Stockholm bloodbath engraving",
+  "kind": "painting",
+  "tier": 5
+ },
+ "world|普加乔夫起义": {
+  "en": "Pugachev's Rebellion",
+  "zh": "Pugachev portrait",
+  "kind": "portrait",
+  "tier": 5
+ }
+}

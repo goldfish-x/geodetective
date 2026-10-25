@@ -1,7 +1,7 @@
 // 契约测试：锁定计分公式与关卡结构的对外行为，浏览器与服务端共用同一实现
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { MODES, haversine, score, STAGES, STAGE_SIZE, DIFFICULTY_LABELS, PROPS, TIERS, tierCounts, TYPE_LABELS, BUCKET_OF_TYPE } from '../src/index.js'
+import { MODES, haversine, score, STAGES, STAGE_SIZE, DIFFICULTY_LABELS, PROPS, TIERS, FREE_TIER, tierCounts, TYPE_LABELS, BUCKET_OF_TYPE } from '../src/index.js'
 
 test('haversine 赤道经度 1 度约 111.19 km', () => {
   assert.ok(Math.abs(haversine(0, 0, 0, 1) - 111.195) < 0.05)
@@ -29,8 +29,12 @@ test('关卡结构不变量：15 局、三线循环、难度每三局递增', ()
 
 test('道具与档位不变量', () => {
   assert.deepEqual(Object.keys(PROPS), ['time', 'revive', 'redo', 'area'])
-  assert.deepEqual(tierCounts(1), {})
+  assert.deepEqual(tierCounts(0), { revive: 2, redo: 2, area: 2 })   // 演示版免费档：不含付费专属的加时沙漏
+assert.equal(tierCounts(0).time, undefined)
+assert.deepEqual(tierCounts(1), {})
   assert.deepEqual(tierCounts(2), { time: 2, revive: 2 })
   assert.deepEqual(tierCounts(3), { time: 3, revive: 2, redo: 1, area: 1 })
   assert.equal(TIERS[4], undefined)
+assert.equal(FREE_TIER, 0)
+assert.equal(TIERS[0].label, '免费版')
 })
