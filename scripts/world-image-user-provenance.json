@@ -99,13 +99,13 @@
   "md5": "20a22d3881ae25b0599e2e4e7f12f32c"
  },
  "刚果独立": {
-  "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
+  "title": "用户 AI 生图（本轮重生成，提示词见 scripts/history-image-prompts.json）",
   "url": "",
   "artist": "",
   "license": "项目自备素材（AI 生成，非第三方授权）",
   "subject": "event",
   "source": "generated",
-  "md5": "da1f2c9b599fb88710237bc93d7296ed"
+  "md5": "ca4eed13dc0c3ddd6d9fdfe7d601d626"
  },
  "奥格斯堡和约签订": {
   "title": "用户 AI 生图（提示词见 scripts/history-image-prompts.json）",
