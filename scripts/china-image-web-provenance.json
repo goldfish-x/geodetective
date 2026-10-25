@@ -510,10 +510,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "垓下之战": {
-  "url": "https://img0.baidu.com/it/u=611722495,4202843042&fm=253&fmt=auto?w=800&h=1200",
-  "page": "baijiahao.baidu.com",
-  "title": "蚌埠垓下遗址:冬日遗址怀古,楚汉相争垓下之战发生地,古战场遗",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img0.baidu.com/it/u=625907630,1725228108&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=800",
+  "page": "",
+  "title": "垓下之战:西楚霸王的最后一舞,结局虽败,气质依然无敌",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "官渡之战": {
   "url": "https://img1.baidu.com/it/u=4121747094,3536633358&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500",
@@ -594,10 +595,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "蔡伦改进造纸术": {
-  "url": "https://img1.baidu.com/it/u=4269437946,4067168174&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
-  "page": "baijiahao.baidu.com",
-  "title": "蔡伦改进造纸术的7个步骤凝聚着超越时代的智慧,让纸从贵族奢侈品变成",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img2.baidu.com/it/u=4033018838,243595395&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=677",
+  "page": "",
+  "title": "蔡伦改进造纸术后并没有得到赏赐,反而被逼得服毒自杀了",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "虎门销烟": {
   "url": "https://img1.baidu.com/it/u=1556688186,3160120609&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
@@ -642,10 +644,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "郑成功收复台湾": {
-  "url": "https://img1.baidu.com/it/u=768950391,1992965421&fm=253&fmt=auto&app=138&f=JPEG?w=749&h=500",
-  "page": "baijiahao.baidu.com",
-  "title": "追寻郑成功收复台湾的英雄足迹",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img2.baidu.com/it/u=385896788,1581517886&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1034",
+  "page": "",
+  "title": "郑成功收复台湾:血战海峡的英雄传说",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "重庆谈判": {
   "url": "https://img0.baidu.com/it/u=4279870874,258038189&fm=253&fmt=auto&app=120&f=JPEG?w=958&h=800",
@@ -714,10 +717,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "张衡地动仪": {
-  "url": "https://img0.baidu.com/it/u=603223269,817859275&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
-  "page": "www.myzaker.com",
-  "title": "江苏一高校\"复活\"张衡地动仪:不仅是技术探索,更是文化传承",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img2.baidu.com/it/u=3755918104,840723441&fm=253&fmt=auto&app=138&f=JPEG?w=380&h=394",
+  "page": "",
+  "title": "张衡地动仪",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "徐霞客出发": {
   "url": "https://img2.baidu.com/it/u=4180001868,2139352108&fm=253&fmt=auto&app=138&f=JPEG?w=890&h=500",
@@ -745,21 +749,24 @@
  },
  "武汉会战": {
   "url": "https://img0.baidu.com/it/u=134832587,2897120709&fm=253&fmt=auto&app=120&f=JPEG?w=1200&h=800",
-  "page": "baijiahao.baidu.com",
+  "page": "",
   "title": "武汉会战:浴血烽火中的抗战转折",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "毕昇发明活字印刷": {
-  "url": "https://img2.baidu.com/it/u=184862051,4200515432&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=846",
-  "page": "baijiahao.baidu.com",
-  "title": "毕昇发明活字印刷术,用胶泥刻字火烧硬,比欧洲早四百多年",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img0.baidu.com/it/u=1270992411,4020842709&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
+  "page": "",
+  "title": "印刷术:北宋毕昇发明活字印刷!",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "淞沪会战": {
-  "url": "https://img1.baidu.com/it/u=1816014128,3525532385&fm=253&fmt=auto&app=120&f=JPEG?w=944&h=800",
-  "page": "baijiahao.baidu.com",
-  "title": "淞沪会战究竟惨烈到了什么地步?三个月时间里,近百万军队在上海厮杀,",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img0.baidu.com/it/u=2582838565,211683076&fm=253&fmt=auto&app=120&f=JPEG?w=1417&h=800",
+  "page": "",
+  "title": "淞沪会战一场改写二战东方战局的战略奇迹",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "渑池之会": {
   "url": "https://img1.baidu.com/it/u=2723536266,2097483684&fm=253&fmt=auto&app=120&f=JPEG?w=646&h=862",
@@ -810,10 +817,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "班超经营西域": {
-  "url": "https://img0.baidu.com/it/u=2126921285,869298083&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=889",
-  "page": "www.meipian.cn",
-  "title": "七十年代,盘橐城是当时疏勒国的宫城,后来成了班超经营西域的大本营",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img1.baidu.com/it/u=3309261402,607523821&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+  "page": "",
+  "title": "\"洛阳宫中,和帝览奏动容:\"班超经营西域三十载,白头思乡,情实可悯.",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "纪晓岚修四库全书": {
   "url": "https://img1.baidu.com/it/u=243364317,2511704383&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
@@ -834,16 +842,18 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "郾城大捷": {
-  "url": "https://img0.baidu.com/it/u=1499422373,3937950102&fm=253&fmt=auto&app=138&f=JPEG?w=627&h=470",
-  "page": "www.163.com",
-  "title": "据史料记载,宋高宗绍兴十年,金人南侵,杨再兴为岳飞部将,郾城大捷后",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img2.baidu.com/it/u=902016232,3139254873&fm=253&fmt=auto&app=120&f=JPEG?w=1828&h=800",
+  "page": "",
+  "title": "郾城大捷",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "采石大捷": {
-  "url": "https://img1.baidu.com/it/u=1113348260,3010943238&fm=253&fmt=auto&app=138&f=JPEG?w=1150&h=500",
-  "page": "mbd.baidu.com",
-  "title": "年(1161年),这里发生了一场惊心动魄的宋金之战,即著名的采石大捷",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img1.baidu.com/it/u=4087914776,4160920850&fm=253&fmt=auto&app=120&f=JPEG?w=983&h=500",
+  "page": "",
+  "title": "采石之战:南宋文人与金国皇帝的较量,最终结局如何?",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "雅克萨之战": {
   "url": "https://img2.baidu.com/it/u=3603678292,3741835026&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=889",
@@ -852,10 +862,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "顾恺之作画": {
-  "url": "https://img2.baidu.com/it/u=3524504819,155374112&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
-  "page": "m.dianping.com",
-  "title": "很满意的入住体验,客厅很大,环境一级棒!",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img0.baidu.com/it/u=2685324992,762484160&fm=253&fmt=auto&app=138&f=JPEG?w=1405&h=500",
+  "page": "",
+  "title": "🎨顾恺之《洛神赋图》探秘",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "马陵之战": {
   "url": "https://img0.baidu.com/it/u=508736978,749728703&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
@@ -906,10 +917,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "太原会战": {
-  "url": "https://img2.baidu.com/it/u=427353892,3337118156&fm=253&fmt=auto&app=138&f=JPEG?w=683&h=500",
-  "page": "baijiahao.baidu.com",
-  "title": "太原会战:民族精神之光的闪耀时刻",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "https://img1.baidu.com/it/u=2751637325,2209164090&fm=253&fmt=auto&app=120&f=JPEG?w=1252&h=800",
+  "page": "",
+  "title": "太原战役:双方超18万人死伤,两大元帅出手,200天才获得胜利",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  },
  "城濮之战": {
   "url": "https://img2.baidu.com/it/u=4019027597,1838559657&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=725",
@@ -928,5 +940,201 @@
   "page": "baijiahao.baidu.com",
   "title": "在战国时期的邯郸之战中,魏国,楚国为何出兵救援赵国,其他三国却选择",
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+ },
+ "李璮之乱济南起事": {
+  "url": "https://img2.baidu.com/it/u=1040688749,2901577389&fm=253&fmt=auto&app=138&f=JPEG?w=821&h=500",
+  "page": "",
+  "title": "李璮之乱:忽必烈对汉人失去信任",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "沈括出生": {
+  "url": "https://img2.baidu.com/it/u=1682596203,798571630&fm=253&fmt=auto&app=120&f=JPEG?w=928&h=500",
+  "page": "",
+  "title": "沈括出生于1031年,字存中,号梦溪丈人,杭州钱塘(今浙江杭州)人.",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "云冈石窟开凿": {
+  "url": "https://img1.baidu.com/it/u=572128342,2887341557&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=751",
+  "page": "",
+  "title": "北魏微笑佛 公元489年,冯太后73岁时,云冈石窟的第5窟和第6窟开始开凿",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "八王之乱": {
+  "url": "https://img1.baidu.com/it/u=197062387,4020112231&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=929",
+  "page": "",
+  "title": "八王之乱变奏:五胡军进中原 八王之乱是中国历史上一个重要的事件",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "孛罗帖木儿大同兵变": {
+  "url": "https://img1.baidu.com/it/u=506094750,2185964519&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500",
+  "page": "",
+  "title": "孛罗帖木儿:一代名将到官至丞相,娶了40位皇室女子",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "宇文泰沙苑之战": {
+  "url": "https://img2.baidu.com/it/u=94263682,2843129383&fm=253&fmt=auto&app=120&f=JPEG?w=890&h=500",
+  "page": "",
+  "title": "沙苑之战:宇文泰如何用一万兵力击溃高欢二十万大军",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "安禄山起兵范阳": {
+  "url": "https://img0.baidu.com/it/u=2739861057,173410458&fm=253&fmt=auto&app=138&f=JPEG?w=702&h=500",
+  "page": "",
+  "title": "安禄山造反,唐玄宗到底被蒙在鼓里多久?_范阳_唐朝_野心",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "崤之战": {
+  "url": "https://img0.baidu.com/it/u=2996416318,778269232&fm=253&fmt=auto&app=138&f=JPEG?w=971&h=500",
+  "page": "",
+  "title": "春秋战国崤之战故事",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "巫蛊之祸": {
+  "url": "https://img1.baidu.com/it/u=1168128439,3460061425&fm=253&fmt=auto&app=138&f=JPEG?w=666&h=500",
+  "page": "",
+  "title": "巫蛊之祸:汉武帝削权的暗箭与权力游戏的血腥代价",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "忽必烈开平即位": {
+  "url": "https://img1.baidu.com/it/u=2824923080,2857651409&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=826",
+  "page": "",
+  "title": "忽必烈:大元帝国的开创者与历史的传奇",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "成吉思汗围中都": {
+  "url": "https://img0.baidu.com/it/u=1732315740,4058735858&fm=253&fmt=auto&app=138&f=JPEG?w=584&h=500",
+  "page": "",
+  "title": "画家孙立新《成吉思汗与蒙古铁骑》油画",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "拓跋珪参合陂之战": {
+  "url": "https://img0.baidu.com/it/u=2084711860,2133749259&fm=253&fmt=auto&app=120&f=JPEG?w=674&h=500",
+  "page": "",
+  "title": "参合陂之战:北魏凭什么能胜利?_慕容宝_拓跋部_拓跋珪",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "曾国藩出生": {
+  "url": "https://img2.baidu.com/it/u=3705365555,2655826171&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=968",
+  "page": "",
+  "title": "曾国藩的祖父:普通人成功的典范",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "李冰修建都江堰": {
+  "url": "https://img2.baidu.com/it/u=2893153989,3318341876&fm=253&fmt=auto&app=120&f=JPEG?w=1067&h=800",
+  "page": "",
+  "title": "李冰修都江堰,不是治水,是\"给洪水装了一个开关\"",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "李白出生": {
+  "url": "https://img1.baidu.com/it/u=2696348588,3238641622&fm=253&fmt=auto&app=120&f=PNG?w=531&h=500",
+  "page": "",
+  "title": "民间传说:李白出世",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "李靖夜袭阴山": {
+  "url": "https://img0.baidu.com/it/u=768447134,2560478306&fm=253&fmt=auto&app=120&f=JPEG?w=812&h=500",
+  "page": "",
+  "title": "李靖夜袭阴山,大破突厥,为大唐北疆立下大功",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "河阴之变": {
+  "url": "https://img0.baidu.com/it/u=2503676585,2404828354&fm=253&fmt=auto&app=138&f=JPEG?w=844&h=500",
+  "page": "",
+  "title": "门阀政治下的激荡与变革——北魏河阴之变:针对贵族的屠杀",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "王昭君出塞": {
+  "url": "https://img1.baidu.com/it/u=3682232756,2509990380&fm=253&fmt=auto&app=138&f=JPEG?w=708&h=500",
+  "page": "",
+  "title": "王昭君出塞真相:不仅靠美貌,宫廷生活陋习让她身不由己",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "王莽改制": {
+  "url": "https://img0.baidu.com/it/u=3868339150,1862934356&fm=253&fmt=auto&app=120&f=JPEG?w=1561&h=800",
+  "page": "",
+  "title": "王莽改制:从理想主义覆灭到王朝崩塌,改革还是催命?",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "王辅臣平凉叛乱": {
+  "url": "https://img2.baidu.com/it/u=225290667,1258390674&fm=253&fmt=auto?w=607&h=384",
+  "page": "",
+  "title": "王辅臣在三藩之乱中的抉择与命运",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "王阳明出生": {
+  "url": "https://img2.baidu.com/it/u=1607335144,295209622&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=929",
+  "page": "",
+  "title": "(1472)九月三十日,王阳明出生于东南名邑——浙江余姚的一个书香门第",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "田单火牛阵": {
+  "url": "https://img2.baidu.com/it/u=3199777914,2759842701&fm=253&fmt=auto&app=138&f=JPEG?w=666&h=500",
+  "page": "",
+  "title": "田单火牛阵传奇:以弱胜强的经典战例,解读齐国复兴的智谋密码",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "白登之围": {
+  "url": "https://img2.baidu.com/it/u=2414253082,979412566&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
+  "page": "",
+  "title": "白登之围:一场改变汉朝命运的生死较量",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "盐铁会议": {
+  "url": "https://img1.baidu.com/it/u=2220592332,645652429&fm=253&fmt=auto?w=823&h=800",
+  "page": "",
+  "title": "汉朝盐铁之议:政治理念的激荡与变革",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "萨尔浒之战": {
+  "url": "https://img2.baidu.com/it/u=1762376638,4280794485&fm=253&fmt=auto&app=120&f=JPEG?w=1161&h=646",
+  "page": "",
+  "title": "1619年萨尔浒之战是朝鲜本来跟着明军一起搂草打兔子,1.",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "蒙恬北击匈奴": {
+  "url": "https://img0.baidu.com/it/u=539281815,3919822421&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=667",
+  "page": "",
+  "title": "秦蒙恬北击匈奴:逐匈奴固北疆",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "践土之盟": {
+  "url": "https://img0.baidu.com/it/u=3311697135,2013104929&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=790",
+  "page": "",
+  "title": "践土之盟:春秋时期晋国崛起与霸业追求的见证",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "阏与之战": {
+  "url": "https://img2.baidu.com/it/u=3421845592,455369254&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
+  "page": "",
+  "title": "阏与之战:秦国是如何败在赵国手上的 ?",
+  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
  }
 }

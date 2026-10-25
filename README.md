@@ -171,6 +171,17 @@ Wikimedia Commons 授权图与网络检索真拍算「已登记来源」，其�
 | `scripts/history-image-queries.json` | 400 个事件 → Commons 检索词（英文事件名 + 中文名 + 期望图型） |
 | `scripts/history-image-todo.json` | 待生成清单条目（A 无图 / B 只有城市风貌照） |
 | `scripts/history-image-prompts.json` | 待生成条目的生图提示词（近代=档案老照片，古代=历史画/版画/肖像） |
+| `scripts/<篇>-image-user-provenance.json` | 人工搜集并复核的事件图来源登记（含用户提供图与网络检索图） |
+
+两条硬性口径（`check_image_prompts.py` 会在 CI 里拦）：
+
+- **中国古代没有塑像习俗**：提示词里不得出现铜像、石像、半身塑像、雕塑，人物一律用历代传世肖像画、
+  工笔重彩人物像或水墨写意画像；
+- **人物出生地不画幼年**：有成年传世画像/照片的直接用成年像（曾国藩像、王阳明像、忽必烈像那一类），
+  不编「神童场景」。
+
+清单文档由 `python scripts/gen_image_todo_doc.py` 生成，四档统计（A 无图 / B 仅城市风貌 /
+C 遗址达标 / D 事件图达标）全部来自上面几份 JSON 与磁盘实际文件，不手写。
 
 ```powershell
 python scripts\check_image_prompts.py     # 校验提示词：不得串到其他事件、长度合规、必须能对上本事件

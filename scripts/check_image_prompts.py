@@ -33,6 +33,15 @@ for k in ALL:
     desc=rows.get(k,"")
     sig|={w for w in re.findall(r"[\u4e00-\u9fa5]{2,4}",desc[:120])}
     if not any(t and t in pr for t in sig): fail.append((k,"无法对应本事件"))
+
+BAN={"塑像","铜像","石像","雕像","雕塑","幼年","少年","神童"}
+ANC={"china"}
+for k,v in P.items():
+    m=k.split("|",1)[0]
+    if m in ANC:
+        hit=[w for w in BAN if w in v]
+        if hit: fail.append((k,"古代事件提示词含"+ "/".join(hit)))
+
 print("检查 %d 条，问题 %d 条"%(len(ALL),len(set(f[0] for f in fail))))
 for k,w in sorted(set(fail))[:30]: print("  ✗",k.split("|",1)[1],w)
 sys.exit(1 if fail else 0)
