@@ -2,7 +2,8 @@
 """校验待出图提示词：不得串到其他事件、长度合规、必须能对上本事件（防序号错位）"""
 import json,sys,os,re
 sys.stdout.reconfigure(encoding="utf-8")
-R=r"D:\GPTprojects\geodetective"
+import pathlib
+R=str(pathlib.Path(__file__).resolve().parents[1])
 P=json.load(open(os.path.join(R,"scripts/history-image-prompts.json"),encoding="utf-8"))
 TODO=json.load(open(os.path.join(R,"scripts/history-image-todo.json"),encoding="utf-8"))
 rows={}
