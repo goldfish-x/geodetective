@@ -1,0 +1,552 @@
+{
+ "A": [
+  {
+   "mode": "china",
+   "name": "巫蛊之祸",
+   "tier": 3,
+   "place": "陕西省西安市"
+  },
+  {
+   "mode": "china",
+   "name": "指鹿为马",
+   "tier": 3,
+   "place": "陕西省西安市"
+  },
+  {
+   "mode": "china",
+   "name": "王莽改制",
+   "tier": 3,
+   "place": "陕西省西安市"
+  },
+  {
+   "mode": "china",
+   "name": "白登之围",
+   "tier": 3,
+   "place": "山西省"
+  },
+  {
+   "mode": "china",
+   "name": "共和行政",
+   "tier": 4,
+   "place": "陕西省西安市"
+  },
+  {
+   "mode": "china",
+   "name": "忽必烈开平即位",
+   "tier": 4,
+   "place": "内蒙古自治区锡林郭勒盟正蓝旗"
+  },
+  {
+   "mode": "china",
+   "name": "成吉思汗围中都",
+   "tier": 4,
+   "place": "北京市西南部旧城区"
+  },
+  {
+   "mode": "china",
+   "name": "捻军雉河集会盟",
+   "tier": 4,
+   "place": "安徽省涡阳县"
+  },
+  {
+   "mode": "china",
+   "name": "犬戎破镐京",
+   "tier": 4,
+   "place": "陕西省西安市"
+  },
+  {
+   "mode": "china",
+   "name": "盐铁会议",
+   "tier": 5,
+   "place": "陕西省西安市"
+  },
+  {
+   "mode": "china",
+   "name": "阿合马被刺",
+   "tier": 5,
+   "place": "北京市东城区"
+  },
+  {
+   "mode": "world",
+   "name": "印度民族大起义",
+   "tier": 2,
+   "place": "属印度北方邦勒克瑙市"
+  }
+ ],
+ "B": [
+  {
+   "mode": "china",
+   "name": "七七事变",
+   "tier": 1,
+   "place": "北京市丰台区"
+  },
+  {
+   "mode": "china",
+   "name": "井冈山会师",
+   "tier": 1,
+   "place": "江西省井冈山市"
+  },
+  {
+   "mode": "china",
+   "name": "垓下之战",
+   "tier": 1,
+   "place": "安徽省宿州市"
+  },
+  {
+   "mode": "china",
+   "name": "李冰修建都江堰",
+   "tier": 1,
+   "place": "四川省成都市"
+  },
+  {
+   "mode": "china",
+   "name": "淮海战役",
+   "tier": 1,
+   "place": "江苏省"
+  },
+  {
+   "mode": "china",
+   "name": "玄武门之变",
+   "tier": 1,
+   "place": "陕西省西安市"
+  },
+  {
+   "mode": "china",
+   "name": "重庆谈判",
+   "tier": 1,
+   "place": "重庆市渝中区"
+  },
+  {
+   "mode": "china",
+   "name": "南京条约",
+   "tier": 2,
+   "place": "江苏省"
+  },
+  {
+   "mode": "china",
+   "name": "太原会战",
+   "tier": 2,
+   "place": "山西省"
+  },
+  {
+   "mode": "china",
+   "name": "张衡地动仪",
+   "tier": 2,
+   "place": "河南省南阳市"
+  },
+  {
+   "mode": "china",
+   "name": "徐霞客出发",
+   "tier": 2,
+   "place": "属江苏省江阴市"
+  },
+  {
+   "mode": "china",
+   "name": "武汉会战",
+   "tier": 2,
+   "place": "湖北省"
+  },
+  {
+   "mode": "china",
+   "name": "毕昇发明活字印刷",
+   "tier": 2,
+   "place": "湖北省黄冈市"
+  },
+  {
+   "mode": "china",
+   "name": "淞沪会战",
+   "tier": 2,
+   "place": "上海市"
+  },
+  {
+   "mode": "china",
+   "name": "玄奘西行",
+   "tier": 2,
+   "place": "陕西省西安市"
+  },
+  {
+   "mode": "china",
+   "name": "班超经营西域",
+   "tier": 2,
+   "place": "新疆维吾尔自治区喀什地区"
+  },
+  {
+   "mode": "china",
+   "name": "秋收起义",
+   "tier": 2,
+   "place": "江西省"
+  },
+  {
+   "mode": "china",
+   "name": "蔡伦改进造纸术",
+   "tier": 2,
+   "place": "湖南省郴州市"
+  },
+  {
+   "mode": "china",
+   "name": "郑成功收复台湾",
+   "tier": 2,
+   "place": "台湾省台南市"
+  },
+  {
+   "mode": "china",
+   "name": "郾城大捷",
+   "tier": 2,
+   "place": "河南省漯河市"
+  },
+  {
+   "mode": "china",
+   "name": "采石大捷",
+   "tier": 2,
+   "place": "安徽省马鞍山市"
+  },
+  {
+   "mode": "china",
+   "name": "顾恺之作画",
+   "tier": 2,
+   "place": "属江苏省南京市"
+  },
+  {
+   "mode": "china",
+   "name": "八王之乱",
+   "tier": 3,
+   "place": "河南省"
+  },
+  {
+   "mode": "china",
+   "name": "崤之战",
+   "tier": 3,
+   "place": "河南省洛宁县"
+  },
+  {
+   "mode": "china",
+   "name": "李白出生",
+   "tier": 3,
+   "place": "四川省江油市"
+  },
+  {
+   "mode": "china",
+   "name": "王昭君出塞",
+   "tier": 3,
+   "place": "内蒙古自治区呼和浩特市"
+  },
+  {
+   "mode": "china",
+   "name": "王阳明出生",
+   "tier": 3,
+   "place": "浙江省宁波市"
+  },
+  {
+   "mode": "china",
+   "name": "田单火牛阵",
+   "tier": 3,
+   "place": "山东省青岛市"
+  },
+  {
+   "mode": "china",
+   "name": "萨尔浒之战",
+   "tier": 3,
+   "place": "辽宁省抚顺市"
+  },
+  {
+   "mode": "china",
+   "name": "蒙恬北击匈奴",
+   "tier": 3,
+   "place": "内蒙古自治区鄂尔多斯市"
+  },
+  {
+   "mode": "china",
+   "name": "云冈石窟开凿",
+   "tier": 4,
+   "place": "山西省大同市"
+  },
+  {
+   "mode": "china",
+   "name": "安禄山起兵范阳",
+   "tier": 4,
+   "place": "河北省保定市"
+  },
+  {
+   "mode": "china",
+   "name": "拓跋珪参合陂之战",
+   "tier": 4,
+   "place": "内蒙古自治区乌兰察布市"
+  },
+  {
+   "mode": "china",
+   "name": "李靖夜袭阴山",
+   "tier": 4,
+   "place": "内蒙古自治区呼和浩特市"
+  },
+  {
+   "mode": "china",
+   "name": "沈括出生",
+   "tier": 4,
+   "place": "浙江省杭州市"
+  },
+  {
+   "mode": "china",
+   "name": "河阴之变",
+   "tier": 4,
+   "place": "河南省洛阳市"
+  },
+  {
+   "mode": "china",
+   "name": "践土之盟",
+   "tier": 4,
+   "place": "河南省原阳县"
+  },
+  {
+   "mode": "china",
+   "name": "马可·波罗抵达上都",
+   "tier": 4,
+   "place": "内蒙古自治区锡林郭勒盟正蓝旗"
+  },
+  {
+   "mode": "china",
+   "name": "马援平交趾",
+   "tier": 4,
+   "place": "越南北宁省顺城县"
+  },
+  {
+   "mode": "china",
+   "name": "孛罗帖木儿大同兵变",
+   "tier": 5,
+   "place": "山西省大同市"
+  },
+  {
+   "mode": "china",
+   "name": "宇文泰沙苑之战",
+   "tier": 5,
+   "place": "陕西省大荔县"
+  },
+  {
+   "mode": "china",
+   "name": "曾国藩出生",
+   "tier": 5,
+   "place": "湖南省娄底市"
+  },
+  {
+   "mode": "china",
+   "name": "李璮之乱济南起事",
+   "tier": 5,
+   "place": "山东省"
+  },
+  {
+   "mode": "china",
+   "name": "王辅臣平凉叛乱",
+   "tier": 5,
+   "place": "甘肃省"
+  },
+  {
+   "mode": "china",
+   "name": "萨哈廉攻占旅顺口",
+   "tier": 5,
+   "place": "辽宁省大连市"
+  },
+  {
+   "mode": "china",
+   "name": "阏与之战",
+   "tier": 5,
+   "place": "山西省和顺县"
+  },
+  {
+   "mode": "world",
+   "name": "柏林墙修建",
+   "tier": 1,
+   "place": "Germany"
+  },
+  {
+   "mode": "world",
+   "name": "温泉关战役",
+   "tier": 1,
+   "place": "Greece"
+  },
+  {
+   "mode": "world",
+   "name": "萨拉热窝事件",
+   "tier": 1,
+   "place": "Bosnia and Herz."
+  },
+  {
+   "mode": "world",
+   "name": "葛底斯堡战役",
+   "tier": 1,
+   "place": "United States"
+  },
+  {
+   "mode": "world",
+   "name": "诺曼底登陆",
+   "tier": 1,
+   "place": "France"
+  },
+  {
+   "mode": "world",
+   "name": "南非种族隔离制度确立",
+   "tier": 2,
+   "place": "South Africa"
+  },
+  {
+   "mode": "world",
+   "name": "林肯遇刺",
+   "tier": 2,
+   "place": "United States"
+  },
+  {
+   "mode": "world",
+   "name": "柏林空运",
+   "tier": 2,
+   "place": "Germany"
+  },
+  {
+   "mode": "world",
+   "name": "肯尼迪遇刺",
+   "tier": 2,
+   "place": "United States"
+  },
+  {
+   "mode": "world",
+   "name": "莫斯科保卫战",
+   "tier": 2,
+   "place": "Russia"
+  },
+  {
+   "mode": "world",
+   "name": "萨拉丁收复耶路撒冷",
+   "tier": 2,
+   "place": "Palestine"
+  },
+  {
+   "mode": "world",
+   "name": "阿拉曼战役",
+   "tier": 2,
+   "place": "埃及马特鲁省"
+  },
+  {
+   "mode": "world",
+   "name": "麦哲伦船队完成环球航行",
+   "tier": 2,
+   "place": "属西班牙安达卢西亚自治区塞维利亚市"
+  },
+  {
+   "mode": "world",
+   "name": "亚克兴海战",
+   "tier": 3,
+   "place": "Greece"
+  },
+  {
+   "mode": "world",
+   "name": "墨西哥独立战争爆发",
+   "tier": 3,
+   "place": "Mexico"
+  },
+  {
+   "mode": "world",
+   "name": "玻利瓦尔解放新格拉纳达",
+   "tier": 3,
+   "place": "哥伦比亚波哥大市"
+  },
+  {
+   "mode": "world",
+   "name": "马哈赞河战役",
+   "tier": 3,
+   "place": "Morocco"
+  },
+  {
+   "mode": "world",
+   "name": "马耳他围城战",
+   "tier": 3,
+   "place": "Malta"
+  },
+  {
+   "mode": "world",
+   "name": "黑死病爆发",
+   "tier": 3,
+   "place": "Italy"
+  },
+  {
+   "mode": "world",
+   "name": "乌尔姆战役",
+   "tier": 4,
+   "place": "Germany"
+  },
+  {
+   "mode": "world",
+   "name": "亨利八世宗教改革",
+   "tier": 4,
+   "place": "属英国英格兰大伦敦市"
+  },
+  {
+   "mode": "world",
+   "name": "刚果独立",
+   "tier": 4,
+   "place": "Dem. Rep. Congo"
+  },
+  {
+   "mode": "world",
+   "name": "第一次帕尼帕特战役",
+   "tier": 4,
+   "place": "India"
+  },
+  {
+   "mode": "world",
+   "name": "苏伊士运河国有化",
+   "tier": 4,
+   "place": "Egypt"
+  },
+  {
+   "mode": "world",
+   "name": "西班牙无敌舰队覆灭",
+   "tier": 4,
+   "place": "France"
+  },
+  {
+   "mode": "world",
+   "name": "食盐长征",
+   "tier": 4,
+   "place": "India"
+  },
+  {
+   "mode": "world",
+   "name": "乌得勒支和约签署",
+   "tier": 5,
+   "place": "Netherlands"
+  },
+  {
+   "mode": "world",
+   "name": "圣索菲亚大教堂建成",
+   "tier": 5,
+   "place": "Turkey"
+  },
+  {
+   "mode": "world",
+   "name": "奥格斯堡和约签订",
+   "tier": 5,
+   "place": "Germany"
+  },
+  {
+   "mode": "world",
+   "name": "特尔诺沃起义",
+   "tier": 5,
+   "place": "Bulgaria"
+  },
+  {
+   "mode": "world",
+   "name": "纳瓦里诺海战",
+   "tier": 5,
+   "place": "Greece"
+  },
+  {
+   "mode": "world",
+   "name": "罗马之劫",
+   "tier": 5,
+   "place": "Italy"
+  },
+  {
+   "mode": "world",
+   "name": "阿音札鲁特战役",
+   "tier": 5,
+   "place": "Israel"
+  }
+ ]
+}

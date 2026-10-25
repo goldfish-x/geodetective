@@ -17,6 +17,8 @@ jobs:
           cache: npm
       - name: Install
         run: npm ci
+      - name: 待出图提示词一致性（防序号错位串台）
+        run: python3 scripts/check_image_prompts.py
       - name: Shared contract tests
         run: npm run test:shared
       - name: Server tests
