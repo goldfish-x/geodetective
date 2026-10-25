@@ -12,7 +12,7 @@
   "tier": 1
  },
  "china|九一八事变": {
-  "en": "Japanese invasion of Manchuria",
+  "en": "Manchurian Incident",
   "zh": "九一八事变照片",
   "kind": "photo",
   "tier": 1
@@ -24,7 +24,7 @@
   "tier": 1
  },
  "china|井冈山会师": {
-  "en": "Jinggangshan Convergence",
+  "en": "Jinggangshan Convergence (or Jinggangshan Meeting)",
   "zh": "井冈山会师油画",
   "kind": "painting",
   "tier": 1
@@ -48,7 +48,7 @@
   "tier": 1
  },
  "china|四渡赤水": {
-  "en": "Crossing the Chishui River",
+  "en": "Four Crossings of the Chishui River",
   "zh": "四渡赤水油画",
   "kind": "painting",
   "tier": 1
@@ -78,7 +78,7 @@
   "tier": 1
  },
  "china|孙中山出生": {
-  "en": "Sun Yat-sen birthplace",
+  "en": "Birth of Sun Yat-sen",
   "zh": "孙中山出生照片",
   "kind": "photo",
   "tier": 1
@@ -120,13 +120,13 @@
   "tier": 1
  },
  "china|文成公主入藏": {
-  "en": "Princess Wencheng's entry into Tibet",
+  "en": "Princess Wencheng's Marriage to Songtsen Gampo",
   "zh": "文成公主入藏油画",
   "kind": "painting",
   "tier": 1
  },
  "china|李冰修建都江堰": {
-  "en": "Li Bing and the Dujiangyan Irrigation System",
+  "en": "Construction of the Dujiangyan Irrigation System by Li Bing",
   "zh": "李冰修建都江堰画像",
   "kind": "painting",
   "tier": 1
@@ -210,7 +210,7 @@
   "tier": 1
  },
  "china|郑和下西洋": {
-  "en": "Zheng He's voyages",
+  "en": "Zheng He's voyages to the Western Seas",
   "zh": "郑和下西洋油画",
   "kind": "painting",
   "tier": 1
@@ -222,7 +222,7 @@
   "tier": 1
  },
  "china|长沙会战": {
-  "en": "Changsha Campaign",
+  "en": "Battle of Changsha",
   "zh": "长沙会战照片",
   "kind": "photo",
   "tier": 1
@@ -246,19 +246,19 @@
   "tier": 2
  },
  "china|勾践复国": {
-  "en": "Goujian's restoration of Yue",
+  "en": "Goujian's restoration of the State of Yue",
   "zh": "勾践复国 painting",
   "kind": "painting",
   "tier": 2
  },
  "china|南京条约": {
-  "en": "Treaty of Nanking signing",
+  "en": "Treaty of Nanking",
   "zh": "南京条约签订 photo",
   "kind": "photo",
   "tier": 2
  },
  "china|司马迁写史记": {
-  "en": "Sima Qian writing Records of the Grand Historian",
+  "en": "Sima Qian writing the Records of the Grand Historian",
   "zh": "司马迁写史记 painting",
   "kind": "painting",
   "tier": 2
@@ -288,7 +288,7 @@
   "tier": 2
  },
  "china|太原会战": {
-  "en": "Taiyuan Campaign",
+  "en": "Battle of Taiyuan",
   "zh": "太原会战 photo",
   "kind": "photo",
   "tier": 2
@@ -324,19 +324,19 @@
   "tier": 2
  },
  "china|戚继光抗倭": {
-  "en": "Qi Jiguang's anti-Wokou campaign in Zhejiang",
+  "en": "Qi Jiguang's anti-wokou campaigns",
   "zh": "戚继光抗倭 painting",
   "kind": "painting",
   "tier": 2
  },
  "china|曹雪芹著红楼梦": {
-  "en": "Cao Xueqin writing Dream of the Red Chamber",
+  "en": "Dream of the Red Chamber authorship",
   "zh": "曹雪芹著红楼梦 painting",
   "kind": "painting",
   "tier": 2
  },
  "china|李时珍采药": {
-  "en": "Li Shizhen collecting herbs",
+  "en": "Li Shizhen's herbal research",
   "zh": "李时珍采药 portrait",
   "kind": "portrait",
   "tier": 2
@@ -348,7 +348,7 @@
   "tier": 2
  },
  "china|毕昇发明活字印刷": {
-  "en": "Bi Sheng's invention of movable type printing",
+  "en": "Bi Sheng's invention of movable type",
   "zh": "毕昇发明活字印刷 painting",
   "kind": "painting",
   "tier": 2
@@ -372,7 +372,7 @@
   "tier": 2
  },
  "china|玄奘西行": {
-  "en": "Xuanzang's journey to the West",
+  "en": "Xuanzang's journey to India",
   "zh": "玄奘西行 油画",
   "kind": "painting",
   "tier": 2
@@ -390,7 +390,7 @@
   "tier": 2
  },
  "china|班超经营西域": {
-  "en": "Ban Chao in the Western Regions",
+  "en": "Ban Chao's administration of the Western Regions",
   "zh": "班超经营西域 油画",
   "kind": "painting",
   "tier": 2
@@ -408,7 +408,7 @@
   "tier": 2
  },
  "china|蔡伦改进造纸术": {
-  "en": "Cai Lun's papermaking improvement",
+  "en": "Cai Lun's improvement of papermaking",
   "zh": "蔡伦改进造纸术 画像",
   "kind": "portrait",
   "tier": 2
@@ -420,7 +420,7 @@
   "tier": 2
  },
  "china|郑成功收复台湾": {
-  "en": "Zheng Chenggong's conquest of Taiwan",
+  "en": "Qing conquest of Taiwan (1661–1662)",
   "zh": "郑成功收复台湾 版画",
   "kind": "painting",
   "tier": 2
@@ -462,7 +462,7 @@
   "tier": 2
  },
  "china|顾恺之作画": {
-  "en": "Gu Kaizhi painting",
+  "en": "Gu Kaizhi",
   "zh": "顾恺之作画 画像",
   "kind": "portrait",
   "tier": 2
@@ -510,13 +510,13 @@
   "tier": 3
  },
  "china|包拯出生": {
-  "en": "Birth of Bao Zheng",
+  "en": "Bao Zheng",
   "zh": "包拯出生 画像",
   "kind": "portrait",
   "tier": 3
  },
  "china|大运河开通": {
-  "en": "Grand Canal of Sui Dynasty",
+  "en": "Grand Canal (China)",
   "zh": "大运河开通 古画",
   "kind": "painting",
   "tier": 3
@@ -528,7 +528,7 @@
   "tier": 3
  },
  "china|岳飞出生": {
-  "en": "Birth of Yue Fei",
+  "en": "Yue Fei",
   "zh": "岳飞出生 画像",
   "kind": "portrait",
   "tier": 3
@@ -552,7 +552,7 @@
   "tier": 3
  },
  "china|康有为出生": {
-  "en": "Birth of Kang Youwei",
+  "en": "Kang Youwei",
   "zh": "康有为出生 肖像",
   "kind": "portrait",
   "tier": 3
@@ -576,13 +576,13 @@
   "tier": 3
  },
  "china|李白出生": {
-  "en": "Birth of Li Bai",
+  "en": "Li Bai",
   "zh": "李白出生 肖像",
   "kind": "portrait",
   "tier": 3
  },
  "china|林则徐出生": {
-  "en": "Birth of Lin Zexu",
+  "en": "Lin Zexu",
   "zh": "林则徐出生 肖像",
   "kind": "portrait",
   "tier": 3
@@ -654,7 +654,7 @@
   "tier": 3
  },
  "china|秦始皇兵马俑出土": {
-  "en": "Terracotta Army excavation",
+  "en": "Excavation of the Terracotta Army",
   "zh": "秦始皇兵马俑出土 照片",
   "kind": "photo",
   "tier": 3
@@ -708,7 +708,7 @@
   "tier": 3
  },
  "china|黄池之会": {
-  "en": "Huangchi Conference",
+  "en": "Huangchi Meeting",
   "zh": "黄池之会 油画",
   "kind": "painting",
   "tier": 3
@@ -732,7 +732,7 @@
   "tier": 4
  },
  "china|云冈石窟开凿": {
-  "en": "Yungang Grottoes construction",
+  "en": "Construction of the Yungang Grottoes",
   "zh": "云冈石窟开凿油画",
   "kind": "painting",
   "tier": 4
@@ -762,7 +762,7 @@
   "tier": 4
  },
  "china|司马迁出生": {
-  "en": "Sima Qian birthplace",
+  "en": "Birth of Sima Qian",
   "zh": "司马迁出生画像",
   "kind": "portrait",
   "tier": 4
@@ -786,19 +786,19 @@
   "tier": 4
  },
  "china|安禄山起兵范阳": {
-  "en": "An Lushan Rebellion outbreak at Fanyang",
+  "en": "An Lushan Rebellion",
   "zh": "安禄山起兵范阳画像",
   "kind": "painting",
   "tier": 4
  },
  "china|宋应星著天工开物": {
-  "en": "Song Yingxing and Tian Gong Kai Wu",
+  "en": "Tiangong Kaiwu",
   "zh": "宋应星著天工开物画像",
   "kind": "portrait",
   "tier": 4
  },
  "china|完颜阿骨打建国": {
-  "en": "Wanyan Aguda founding the Jin dynasty",
+  "en": "Establishment of the Jin dynasty by Wanyan Aguda",
   "zh": "完颜阿骨打建国画像",
   "kind": "painting",
   "tier": 4
@@ -906,7 +906,7 @@
   "tier": 4
  },
  "china|班超投笔从戎": {
-  "en": "Ban Chao throws down his brush",
+  "en": "Ban Chao's refusal of clerical service",
   "zh": "班超投笔从戎油画",
   "kind": "painting",
   "tier": 4
@@ -918,19 +918,19 @@
   "tier": 4
  },
  "china|纪晓岚修四库全书": {
-  "en": "Ji Xiaolan compiles Siku Quanshu",
+  "en": "Siku Quanshu compilation",
   "zh": "纪晓岚修四库全书油画",
   "kind": "painting",
   "tier": 4
  },
  "china|花木兰从军": {
-  "en": "Hua Mulan joins the army",
+  "en": "Hua Mulan",
   "zh": "花木兰从军画像",
   "kind": "portrait",
   "tier": 4
  },
  "china|蔡文姬归汉": {
-  "en": "Cai Wenji's return to Han",
+  "en": "Cai Wenji's return to the Han dynasty",
   "zh": "蔡文姬归汉画像",
   "kind": "portrait",
   "tier": 4
@@ -942,19 +942,19 @@
   "tier": 4
  },
  "china|郑板桥任县令": {
-  "en": "Zheng Banqiao serves as county magistrate",
+  "en": "Zheng Banqiao as magistrate of Fanxian",
   "zh": "郑板桥任县令画像",
   "kind": "portrait",
   "tier": 4
  },
  "china|马可·波罗抵达上都": {
-  "en": "Marco Polo arrives at Shangdu",
+  "en": "Marco Polo's arrival at Shangdu",
   "zh": "马可·波罗抵达上都油画",
   "kind": "painting",
   "tier": 4
  },
  "china|马援平交趾": {
-  "en": "Ma Yuan pacifies Jiaozhi",
+  "en": "Ma Yuan's pacification of Jiaozhi",
   "zh": "马援平交趾油画",
   "kind": "painting",
   "tier": 4
@@ -966,13 +966,13 @@
   "tier": 5
  },
  "china|关汉卿出生": {
-  "en": "Guan Hanqing portrait",
+  "en": "Guan Hanqing birth",
   "zh": "关汉卿画像",
   "kind": "portrait",
   "tier": 5
  },
  "china|刘整降元献策": {
-  "en": "Liu Zheng surrender to Yuan",
+  "en": "Liu Zheng's surrender to the Yuan dynasty",
   "zh": "刘整降元献策",
   "kind": "painting",
   "tier": 5
@@ -984,7 +984,7 @@
   "tier": 5
  },
  "china|召陵之盟": {
-  "en": "Shaoling Alliance",
+  "en": "Alliance of Shaoling",
   "zh": "召陵之盟",
   "kind": "painting",
   "tier": 5
@@ -996,7 +996,7 @@
   "tier": 5
  },
  "china|国人暴动": {
-  "en": "Rebellion of the Nationals in Western Zhou",
+  "en": "Rebellion of the Commons",
   "zh": "国人暴动",
   "kind": "painting",
   "tier": 5
@@ -1008,7 +1008,7 @@
   "tier": 5
  },
  "china|孛罗帖木儿大同兵变": {
-  "en": "Boluo Timur's Datong military mutiny",
+  "en": "Bolod Temür's Datong mutiny",
   "zh": "孛罗帖木儿大同兵变",
   "kind": "painting",
   "tier": 5
@@ -1020,37 +1020,37 @@
   "tier": 5
  },
  "china|左宗棠出生": {
-  "en": "Zuo Zongtang portrait",
+  "en": "Zuo Zongtang birth",
   "zh": "左宗棠画像",
   "kind": "portrait",
   "tier": 5
  },
  "china|平王东迁": {
-  "en": "Eastern Zhou migration",
+  "en": "King Ping's eastward relocation",
   "zh": "平王东迁",
   "kind": "painting",
   "tier": 5
  },
  "china|张格尔喀什噶尔之乱": {
-  "en": "Zhang格尔's Kashgar rebellion",
+  "en": "Zhang格尔 Rebellion in Kashgar",
   "zh": "张格尔喀什噶尔之乱",
   "kind": "photo",
   "tier": 5
  },
  "china|徐光启出生": {
-  "en": "Xu Guangqi portrait",
+  "en": "Xu Guangqi birth",
   "zh": "徐光启画像",
   "kind": "portrait",
   "tier": 5
  },
  "china|曾国藩出生": {
-  "en": "Zeng Guofan portrait",
+  "en": "Zeng Guofan birth",
   "zh": "曾国藩画像",
   "kind": "portrait",
   "tier": 5
  },
  "china|朵颜三卫内附": {
-  "en": "Doyin Three Guards submission to Ming",
+  "en": "Doyin Three Guards submission to the Ming dynasty",
   "zh": "朵颜三卫内附",
   "kind": "painting",
   "tier": 5
@@ -1062,7 +1062,7 @@
   "tier": 5
  },
  "china|李鸿章出生": {
-  "en": "Li Hongzhang portrait",
+  "en": "Li Hongzhang birth",
   "zh": "李鸿章画像",
   "kind": "portrait",
   "tier": 5
@@ -1080,13 +1080,13 @@
   "tier": 5
  },
  "china|永嘉之乱": {
-  "en": "Sack of Luoyang (311)",
+  "en": "Disaster of Yongjia",
   "zh": "永嘉之乱油画",
   "kind": "painting",
   "tier": 5
  },
  "china|海瑞出生": {
-  "en": "Hai Rui portrait",
+  "en": "Hai Rui birth",
   "zh": "海瑞画像",
   "kind": "portrait",
   "tier": 5
@@ -1146,19 +1146,19 @@
   "tier": 5
  },
  "china|赵州桥建成": {
-  "en": "Zhaozhou Bridge construction",
+  "en": "Zhaozhou Bridge completion",
   "zh": "赵州桥建成照片",
   "kind": "photo",
   "tier": 5
  },
  "china|越王勾践剑出土": {
-  "en": "Sword of Goujian excavation",
+  "en": "Sword of Goujian discovery",
   "zh": "越王勾践剑出土照片",
   "kind": "photo",
   "tier": 5
  },
  "china|郭守敬出生": {
-  "en": "Guo Shoujing portrait",
+  "en": "Guo Shoujing birth",
   "zh": "郭守敬画像",
   "kind": "portrait",
   "tier": 5
@@ -1194,7 +1194,7 @@
   "tier": 5
  },
  "china|龙门石窟开凿": {
-  "en": "Longmen Grottoes construction",
+  "en": "Longmen Grottoes excavation",
   "zh": "龙门石窟开凿照片",
   "kind": "photo",
   "tier": 5
@@ -1248,7 +1248,7 @@
   "tier": 1
  },
  "world|宗教改革开始": {
-  "en": "Ninety-five Theses",
+  "en": "Protestant Reformation",
   "zh": "九十五条论纲油画",
   "kind": "painting",
   "tier": 1
@@ -1278,7 +1278,7 @@
   "tier": 1
  },
  "world|文艺复兴开端": {
-  "en": "Florence Baptistery doors competition",
+  "en": "Renaissance",
   "zh": "佛罗伦萨洗礼堂北门浮雕画像",
   "kind": "portrait",
   "tier": 1
@@ -1290,7 +1290,7 @@
   "tier": 1
  },
  "world|日本无条件投降": {
-  "en": "Japanese surrender",
+  "en": "Surrender of Japan",
   "zh": "日本无条件投降照片",
   "kind": "photo",
   "tier": 1
@@ -1308,7 +1308,7 @@
   "tier": 1
  },
  "world|柏林墙修建": {
-  "en": "Berlin Wall construction",
+  "en": "Construction of the Berlin Wall",
   "zh": "柏林墙修建照片",
   "kind": "photo",
   "tier": 1
@@ -1464,7 +1464,7 @@
   "tier": 2
  },
  "world|加尔文在日内瓦推行改革": {
-  "en": "John Calvin in Geneva",
+  "en": "Calvinist Reformation in Geneva",
   "zh": "加尔文在日内瓦推行改革画像",
   "kind": "portrait",
   "tier": 2
@@ -1476,7 +1476,7 @@
   "tier": 2
  },
  "world|南非种族隔离制度确立": {
-  "en": "Apartheid in South Africa",
+  "en": "Enactment of apartheid laws in South Africa",
   "zh": "南非种族隔离制度确立照片",
   "kind": "photo",
   "tier": 2
@@ -1506,7 +1506,7 @@
   "tier": 2
  },
  "world|哥伦布首航抵达圣萨尔瓦多": {
-  "en": "Columbus landing on San Salvador",
+  "en": "Columbus's landing on San Salvador Island",
   "zh": "哥伦布首航抵达圣萨尔瓦多油画",
   "kind": "painting",
   "tier": 2
@@ -1638,13 +1638,13 @@
   "tier": 2
  },
  "world|萨拉丁收复耶路撒冷": {
-  "en": "Saladin's capture of Jerusalem",
+  "en": "Saladin's capture of Jerusalem (1187)",
   "zh": "萨拉丁收复耶路撒冷",
   "kind": "painting",
   "tier": 2
  },
  "world|西班牙内战爆发": {
-  "en": "Spanish Civil War outbreak",
+  "en": "Spanish Civil War",
   "zh": "西班牙内战爆发",
   "kind": "photo",
   "tier": 2
@@ -1674,7 +1674,7 @@
   "tier": 2
  },
  "world|麦哲伦船队完成环球航行": {
-  "en": "Magellan expedition circumnavigation",
+  "en": "Magellan circumnavigation",
   "zh": "麦哲伦船队完成环球航行",
   "kind": "painting",
   "tier": 2
@@ -1692,7 +1692,7 @@
   "tier": 3
  },
  "world|伊凡雷帝攻陷喀山": {
-  "en": "Siege of Kazan by Ivan the Terrible",
+  "en": "Siege of Kazan (1552)",
   "zh": "伊凡雷帝攻陷喀山 油画",
   "kind": "painting",
   "tier": 3
@@ -1734,7 +1734,7 @@
   "tier": 3
  },
  "world|圣女贞德奥尔良解围": {
-  "en": "Joan of Arc lifting the siege of Orléans",
+  "en": "Siege of Orléans (1428–1429)",
   "zh": "圣女贞德奥尔良解围 油画",
   "kind": "painting",
   "tier": 3
@@ -1746,7 +1746,7 @@
   "tier": 3
  },
  "world|墨西哥独立战争爆发": {
-  "en": "Mexican War of Independence begins",
+  "en": "Mexican War of Independence",
   "zh": "墨西哥独立战争爆发 油画",
   "kind": "painting",
   "tier": 3
@@ -1758,13 +1758,13 @@
   "tier": 3
  },
  "world|大宪章签署": {
-  "en": "Signing of the Magna Carta",
+  "en": "Magna Carta",
   "zh": "大宪章签署 中世纪手稿插图",
   "kind": "painting",
   "tier": 3
  },
  "world|巴黎公社成立": {
-  "en": "Paris Commune proclamation",
+  "en": "Paris Commune",
   "zh": "巴黎公社成立 照片",
   "kind": "photo",
   "tier": 3
@@ -1782,19 +1782,19 @@
   "tier": 3
  },
  "world|托尔德西里亚斯条约签署": {
-  "en": "Treaty of Tordesillas signing",
+  "en": "Treaty of Tordesillas",
   "zh": "托尔德西里亚斯条约签署 油画",
   "kind": "painting",
   "tier": 3
  },
  "world|拿破仑远征埃及": {
-  "en": "Napoleon's campaign in Egypt",
+  "en": "French campaign in Egypt and Syria",
   "zh": "拿破仑远征埃及 老照片/版画",
   "kind": "photo",
   "tier": 3
  },
  "world|曼哈顿计划启动": {
-  "en": "Chicago Pile-1 first nuclear chain reaction",
+  "en": "Manhattan Project",
   "zh": "曼哈顿计划启动 照片",
   "kind": "photo",
   "tier": 3
@@ -1818,7 +1818,7 @@
   "tier": 3
  },
  "world|玻利瓦尔解放新格拉纳达": {
-  "en": "Liberation of New Granada by Bolivar",
+  "en": "Bolivarian Liberation of New Granada",
   "zh": "玻利瓦尔解放新格拉纳达 油画",
   "kind": "painting",
   "tier": 3
@@ -1866,7 +1866,7 @@
   "tier": 3
  },
  "world|阿波罗13号事故": {
-  "en": "Apollo 13 accident",
+  "en": "Apollo 13 mission",
   "zh": "阿波罗13号事故 老照片",
   "kind": "photo",
   "tier": 3
@@ -1890,7 +1890,7 @@
   "tier": 3
  },
  "world|马歇尔计划提出": {
-  "en": "Marshall Plan speech",
+  "en": "Marshall Plan",
   "zh": "马歇尔计划提出 老照片",
   "kind": "photo",
   "tier": 3
@@ -1908,7 +1908,7 @@
   "tier": 3
  },
  "world|黑死病爆发": {
-  "en": "Black Death in Europe",
+  "en": "Black Death",
   "zh": "黑死病爆发 中世纪手稿插图",
   "kind": "painting",
   "tier": 3
@@ -1926,7 +1926,7 @@
   "tier": 4
  },
  "world|亨利八世宗教改革": {
-  "en": "Act of Supremacy 1534",
+  "en": "English Reformation",
   "zh": "亨利八世宗教改革油画",
   "kind": "painting",
   "tier": 4
@@ -1974,7 +1974,7 @@
   "tier": 4
  },
  "world|孔雀王朝建立": {
-  "en": "Maurya Empire foundation",
+  "en": "Maurya Empire",
   "zh": "孔雀王朝建立画像",
   "kind": "portrait",
   "tier": 4
@@ -1986,7 +1986,7 @@
   "tier": 4
  },
  "world|巴西迁都": {
-  "en": "Inauguration of Brasília",
+  "en": "Brasília inauguration",
   "zh": "巴西迁都照片",
   "kind": "photo",
   "tier": 4
@@ -2004,7 +2004,7 @@
   "tier": 4
  },
  "world|帖木儿帝国建立": {
-  "en": "Foundation of the Timurid Empire",
+  "en": "Timurid Empire",
   "zh": "帖木儿帝国建立画像",
   "kind": "portrait",
   "tier": 4
@@ -2016,19 +2016,19 @@
   "tier": 4
  },
  "world|怀唐伊条约签署": {
-  "en": "Treaty of Waitangi signing",
+  "en": "Treaty of Waitangi",
   "zh": "怀唐伊条约签署油画",
   "kind": "painting",
   "tier": 4
  },
  "world|普瓦捷战役": {
-  "en": "Battle of Tours",
+  "en": "Battle of Poitiers (732)",
   "zh": "普瓦捷战役油画",
   "kind": "painting",
   "tier": 4
  },
  "world|柏林会议": {
-  "en": "Berlin Conference (1878)",
+  "en": "Congress of Berlin",
   "zh": "柏林会议油画",
   "kind": "painting",
   "tier": 4
@@ -2046,19 +2046,19 @@
   "tier": 4
  },
  "world|沙隆战役": {
-  "en": "Battle of Châlons",
+  "en": "Battle of the Catalaunian Plains",
   "zh": "沙隆战役 油画",
   "kind": "painting",
   "tier": 4
  },
  "world|泰姬陵落成": {
-  "en": "Taj Mahal completion",
+  "en": "Taj Mahal",
   "zh": "泰姬陵落成 画像",
   "kind": "portrait",
   "tier": 4
  },
  "world|澳大利亚淘金热开始": {
-  "en": "Australian gold rush 1851",
+  "en": "Australian gold rushes",
   "zh": "澳大利亚淘金热开始 照片",
   "kind": "photo",
   "tier": 4
@@ -2070,7 +2070,7 @@
   "tier": 4
  },
  "world|科索沃战役": {
-  "en": "Battle of Kosovo",
+  "en": "Battle of Kosovo (1389)",
   "zh": "科索沃战役 油画",
   "kind": "painting",
   "tier": 4
@@ -2082,7 +2082,7 @@
   "tier": 4
  },
  "world|第四次十字军攻陷君士坦丁堡": {
-  "en": "Sack of Constantinople 1204",
+  "en": "Sack of Constantinople",
   "zh": "第四次十字军攻陷君士坦丁堡 版画",
   "kind": "painting",
   "tier": 4
@@ -2106,7 +2106,7 @@
   "tier": 4
  },
  "world|莱茵河战役": {
-  "en": "Rhineland campaign 1945",
+  "en": "Rhine crossings 1945",
   "zh": "莱茵河战役 照片",
   "kind": "photo",
   "tier": 4
@@ -2130,7 +2130,7 @@
   "tier": 4
  },
  "world|阿斯旺大坝落成": {
-  "en": "Aswan High Dam completion",
+  "en": "Aswan High Dam inauguration",
   "zh": "阿斯旺大坝落成 照片",
   "kind": "photo",
   "tier": 4
@@ -2166,13 +2166,13 @@
   "tier": 5
  },
  "world|波托西银矿大规模开采": {
-  "en": "Potosí silver mine 16th century",
+  "en": "Potosí silver boom",
   "zh": "波托西银矿大规模开采 版画",
   "kind": "painting",
   "tier": 5
  },
  "world|特尔诺沃起义": {
-  "en": "April Uprising in Tarnovo",
+  "en": "April Uprising 1876",
   "zh": "特尔诺沃起义 画像",
   "kind": "portrait",
   "tier": 5
@@ -2202,7 +2202,7 @@
   "tier": 5
  },
  "world|英国内战爆发": {
-  "en": "Start of the English Civil War",
+  "en": "Outbreak of the English Civil War",
   "zh": "英国内战爆发 油画",
   "kind": "painting",
   "tier": 5
@@ -2214,13 +2214,13 @@
   "tier": 5
  },
  "world|谷登堡印刷术问世": {
-  "en": "Gutenberg printing press",
+  "en": "Gutenberg Bible printing",
   "zh": "谷登堡印刷术问世 版画",
   "kind": "painting",
   "tier": 5
  },
  "world|路易十四迁宫凡尔赛": {
-  "en": "Louis XIV moves court to Versailles",
+  "en": "Louis XIV's move to Versailles",
   "zh": "路易十四迁宫凡尔赛 油画",
   "kind": "painting",
   "tier": 5
@@ -2244,7 +2244,7 @@
   "tier": 5
  },
  "world|阿拔斯王朝建立": {
-  "en": "Establishment of the Abbasid Caliphate in Kufa",
+  "en": "Abbasid Revolution",
   "zh": "阿拔斯王朝建立 壁画",
   "kind": "painting",
   "tier": 5
@@ -2274,7 +2274,7 @@
   "tier": 5
  },
  "world|麦哲伦在麦克坦岛战死": {
-  "en": "Death of Magellan on Mactan",
+  "en": "Battle of Mactan",
   "zh": "麦哲伦在麦克坦岛战死 油画",
   "kind": "painting",
   "tier": 5
@@ -2292,7 +2292,7 @@
   "tier": 5
  },
  "world|克鲁亚围城战": {
-  "en": "Siege of Krujë Skanderbeg",
+  "en": "Siege of Krujë (1450)",
   "zh": "Kruja siege painting",
   "kind": "painting",
   "tier": 5
@@ -2310,13 +2310,13 @@
   "tier": 5
  },
  "world|古斯塔夫二世战死吕岑": {
-  "en": "Battle of Lützen 1632",
+  "en": "Battle of Lützen (1632)",
   "zh": "Gustav II Adolf Lützen painting",
   "kind": "painting",
   "tier": 5
  },
  "world|圣索菲亚大教堂建成": {
-  "en": "Hagia Sophia interior",
+  "en": "Construction of Hagia Sophia",
   "zh": "Hagia Sophia 1900 photograph",
   "kind": "photo",
   "tier": 5
@@ -2328,13 +2328,13 @@
   "tier": 5
  },
  "world|威廉·华莱士遇害": {
-  "en": "William Wallace portrait",
+  "en": "Execution of William Wallace",
   "zh": "William Wallace painting",
   "kind": "portrait",
   "tier": 5
  },
  "world|威斯特伐利亚和约签订": {
-  "en": "Peace of Westphalia Münster",
+  "en": "Peace of Westphalia",
   "zh": "Osnabrück treaty hall engraving",
   "kind": "painting",
   "tier": 5
@@ -2346,7 +2346,7 @@
   "tier": 5
  },
  "world|巴布教起义": {
-  "en": "Báb Shiraz",
+  "en": "Bábí uprising",
   "zh": "Shiraz Vakil Mosque photograph",
   "kind": "photo",
   "tier": 5
@@ -2358,7 +2358,7 @@
   "tier": 5
  },
  "world|帕齐阴谋": {
-  "en": "Pazzi conspiracy Botticelli",
+  "en": "Pazzi conspiracy",
   "zh": "Pazzi conspiracy execution painting",
   "kind": "painting",
   "tier": 5
@@ -2376,13 +2376,13 @@
   "tier": 5
  },
  "world|拉文纳战役": {
-  "en": "Battle of Ravenna 1512",
+  "en": "Battle of Ravenna (1512)",
   "zh": "Ravenna battle tapestry",
   "kind": "painting",
   "tier": 5
  },
  "world|拿破仑流放厄尔巴岛": {
-  "en": "Napoleon exile Elba",
+  "en": "Exile of Napoleon to Elba",
   "zh": "Napoleon at Fontainebleau painting",
   "kind": "painting",
   "tier": 5

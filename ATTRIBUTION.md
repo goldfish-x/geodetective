@@ -1,6 +1,6 @@
 # 图片素材署名 / Attribution
 
-`web/public/images/` 中来自 Wikimedia Commons 的地名配图，共 671 张。
+`web/public/images/` 中来自 Wikimedia Commons 的地名配图，共 699 张。
 这些图片多为 CC BY / CC BY-SA 授权，按许可证要求在此列出作者与许可证；
 部分为 CC0 或公有领域。每条链接均指向 Commons 文件页（含原始分辨率与完整授权信息）。
 
@@ -26,8 +26,10 @@
 | 中国篇 · 乌兰察布 | [Yurts.jpg](https://commons.wikimedia.org/wiki/File:Yurts.jpg) | Fanghong | CC BY-SA 3.0 |
 | 中国篇 · 乌兰浩特 | [乌兰浩特 01.jpg](https://commons.wikimedia.org/wiki/File:乌兰浩特_01.jpg) | 維基小霸王 | CC BY-SA 4.0 |
 | 中国篇 · 乔家大院 | [The Skyline of Qiao Family Compound Shanxi.jpg](https://commons.wikimedia.org/wiki/File:The_Skyline_of_Qiao_Family_Compound_Shanxi.jpg) | Charlie fong | CC BY-SA 4.0 |
+| 中国篇 · 九一八事变 | [5th Anniversary of the Manchurian Incident Poster.JPG](https://commons.wikimedia.org/wiki/File:5th_Anniversary_of_the_Manchurian_Incident_Poster.JPG) | Labour-Farmer Party | Public domain |
 | 中国篇 · 二连浩特 | [二连浩特的早晨.jpg](https://commons.wikimedia.org/wiki/File:二连浩特的早晨.jpg) | 三猎 | CC BY-SA 4.0 |
 | 中国篇 · 云台山 | [云台山风光 - panoramio (1).jpg](https://commons.wikimedia.org/wiki/File:云台山风光_-_panoramio_(1).jpg) | 江上清风1961 | CC BY 3.0 |
+| 中国篇 · 五四运动 | [051 May Fourth Movement Printing Press, Tianjin.jpg](https://commons.wikimedia.org/wiki/File:051_May_Fourth_Movement_Printing_Press,_Tianjin.jpg) | Gary Lee Todd, Ph.D. | CC0 |
 | 中国篇 · 五当召 | [五当召 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:五当召_-_panoramio.jpg) | 天王星 | CC BY-SA 3.0 |
 | 中国篇 · 伊宁 | [Batul Mosque of Yining.jpg](https://commons.wikimedia.org/wiki/File:Batul_Mosque_of_Yining.jpg) | Akira CA | CC BY-SA 4.0 |
 | 中国篇 · 佳木斯 | [South shore of Songhua River, Jiamusi, Aug 2019.jpg](https://commons.wikimedia.org/wiki/File:South_shore_of_Songhua_River,_Jiamusi,_Aug_2019.jpg) | 颜邯 | CC BY-SA 4.0 |
@@ -44,7 +46,7 @@
 | 中国篇 · 刘福通红巾军颍州起义 | [Fuyang Anhui Bridge.jpeg](https://commons.wikimedia.org/wiki/File:Fuyang_Anhui_Bridge.jpeg) | Huihermit | CC0 |
 | 中国篇 · 刘裕北伐 | [Liu Yu expeditions.png](https://commons.wikimedia.org/wiki/File:Liu_Yu_expeditions.png) | SY | CC BY-SA 4.0 |
 | 中国篇 · 前童古镇 | [Overlook of Qiantong Town on the top of Lushan Mountain.jpg](https://commons.wikimedia.org/wiki/File:Overlook_of_Qiantong_Town_on_the_top_of_Lushan_Mountain.jpg) | Xhtongyin | CC BY-SA 4.0 |
-| 中国篇 · 包拯出生 | [Yaohai Park Bridge, Hefei, taken in 2024-04-02.jpg](https://commons.wikimedia.org/wiki/File:Yaohai_Park_Bridge,_Hefei,_taken_in_2024-04-02.jpg) | Perimeter Chou | CC BY-SA 4.0 |
+| 中国篇 · 包拯出生 | [Portrait of Bao Zheng (998-1061).jpg](https://commons.wikimedia.org/wiki/File:Portrait_of_Bao_Zheng_(998-1061).jpg) | 见文件页 | CC0 |
 | 中国篇 · 北极村 | [北极村大门.jpg](https://commons.wikimedia.org/wiki/File:北极村大门.jpg) | HCCB3947 | CC BY-SA 4.0 |
 | 中国篇 · 北海 | [北海的街景 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:北海的街景_-_panoramio.jpg) | 史氏 | CC BY 3.0 |
 | 中国篇 · 十堰 | [Zhushan, Shiyan, Hubei, China - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Zhushan,_Shiyan,_Hubei,_China_-_panoramio.jpg) | 再1次私奔 | CC BY-SA 3.0 |
@@ -59,12 +61,14 @@
 | 中国篇 · 和田 | [Hotan Tuanjie Square Day North.jpg](https://commons.wikimedia.org/wiki/File:Hotan_Tuanjie_Square_Day_North.jpg) | Voidvector | CC BY-SA 4.0 |
 | 中国篇 · 哈密 | [Downtown Hami City night.jpg](https://commons.wikimedia.org/wiki/File:Downtown_Hami_City_night.jpg) | Baycrest | CC BY-SA 2.5 |
 | 中国篇 · 商丘 | [20251016 Shangqiu Catholic Church 02.jpg](https://commons.wikimedia.org/wiki/File:20251016_Shangqiu_Catholic_Church_02.jpg) | Windmemories | CC BY-SA 4.0 |
+| 中国篇 · 商鞅变法 | [Statue of Shang Yang.jpg](https://commons.wikimedia.org/wiki/File:Statue_of_Shang_Yang.jpg) | Taken by Fanghong | CC BY 2.5 |
 | 中国篇 · 喀什 | [喀什老城 - Kashgar Old Town - 2015.04 - panoramio (1).jpg](https://commons.wikimedia.org/wiki/File:喀什老城_-_Kashgar_Old_Town_-_2015.04_-_panoramio_(1).jpg) | rheins | CC BY 3.0 |
 | 中国篇 · 喀拉峻草原 | [Kalajun Grassland.jpg](https://commons.wikimedia.org/wiki/File:Kalajun_Grassland.jpg) | Akira CA | CC BY-SA 4.0 |
 | 中国篇 · 喀纳斯湖 | [新疆-喀纳斯湖-卧龙湾的景色 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:新疆-喀纳斯湖-卧龙湾的景色_-_panoramio.jpg) | Nyx Ning | CC BY-SA 3.0 |
 | 中国篇 · 四姑娘山 | [四姑娘山 - panoramio (1).jpg](https://commons.wikimedia.org/wiki/File:四姑娘山_-_panoramio_(1).jpg) | 薄兰安 | CC BY 3.0 |
 | 中国篇 · 四渡赤水 | [Memorial Hall of Red Army Crossing Chishui River Four Times (20260206151449).jpg](https://commons.wikimedia.org/wiki/File:Memorial_Hall_of_Red_Army_Crossing_Chishui_River_Four_Times_(20260206151449).jpg) | N509FZ | CC BY-SA 4.0 |
 | 中国篇 · 固原 | [固原市区东山俯瞰长焦.jpg](https://commons.wikimedia.org/wiki/File:固原市区东山俯瞰长焦.jpg) | 董辰兴 | CC BY-SA 4.0 |
+| 中国篇 · 国人暴动 | [Group photograph of the 23rd Sikh Pioneer Regiment posing with Sikh war veterans of the Indian Rebellion of 1857, circa late 19th century.jpg](https://commons.wikimedia.org/wiki/File:Group_photograph_of_the_23rd_Sikh_Pioneer_Regiment_posing_with_Sikh_war_veterans_of_the_Indian_Rebellion_of_1857,_circa_late_19th_century.jpg) | Unknown photographer | Public domain |
 | 中国篇 · 圆明园被焚 | [New Summer Palace, Beijing (25286726037).jpg](https://commons.wikimedia.org/wiki/File:New_Summer_Palace,_Beijing_(25286726037).jpg) | Laurent Charbonnet | CC BY 2.0 |
 | 中国篇 · 坝美 | [Bamei Village - panoramio (4).jpg](https://commons.wikimedia.org/wiki/File:Bamei_Village_-_panoramio_(4).jpg) | Anders Johnson | CC BY 3.0 |
 | 中国篇 · 塔什库尔干 | [塔什库尔干街景 - Street View of Taxkorgan County - 2015.04 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:塔什库尔干街景_-_Street_View_of_Taxkorgan_County_-_2015.04_-_panoramio.jpg) | rheins | CC BY 3.0 |
@@ -100,6 +104,7 @@
 | 中国篇 · 平王东迁 | [Lijing Gate,Luoyang in 2025.jpg](https://commons.wikimedia.org/wiki/File:Lijing_Gate,Luoyang_in_2025.jpg) | Rongcan Lu | CC0 |
 | 中国篇 · 库尔勒 | [中国新疆库尔勒市 China Xinjiang,Korla City, China Xinjiang U - panoramio - 罗布泊 (12).jpg](https://commons.wikimedia.org/wiki/File:中国新疆库尔勒市_China_Xinjiang,Korla_City,_China_Xinjiang_U_-_panoramio_-_罗布泊_(12).jpg) | 罗布泊 | CC BY 3.0 |
 | 中国篇 · 康定 | [康定 - panoramio.jpg](https://commons.wikimedia.org/wiki/File:康定_-_panoramio.jpg) | guan | CC BY 3.0 |
+| 中国篇 · 康有为出生 | [Portrait of Kang Youwei.jpg](https://commons.wikimedia.org/wiki/File:Portrait_of_Kang_Youwei.jpg) | Elmer Chickering | Public domain |
 | 中国篇 · 延吉 | [Yanji, China.jpg](https://commons.wikimedia.org/wiki/File:Yanji,_China.jpg) | EditQ | CC BY-SA 4.0 |
 | 中国篇 · 开国大典 | [Founding Ceremony of People's Republic of China.jpg](https://commons.wikimedia.org/wiki/File:Founding_Ceremony_of_People's_Republic_of_China.jpg) | Unknown authorUnknown author | Public domain |
 | 中国篇 · 开平碉楼 | [Kaiping Diaolou (3548696583).jpg](https://commons.wikimedia.org/wiki/File:Kaiping_Diaolou_(3548696583).jpg) | Kevin Poh from Petaling Jaya, Malaysia | CC BY 2.0 |
@@ -274,6 +279,7 @@
 | 世界篇 · 下龙湾 | [Lan Ha Bay and Ha Long Bay.jpg](https://commons.wikimedia.org/wiki/File:Lan_Ha_Bay_and_Ha_Long_Bay.jpg) | Christophe95 | CC BY-SA 4.0 |
 | 世界篇 · 东京塔 | [Day 1 - Tokyo Tower (4065701725).jpg](https://commons.wikimedia.org/wiki/File:Day_1_-_Tokyo_Tower_(4065701725).jpg) | JoshBerglund19 | CC BY 2.0 |
 | 世界篇 · 中苏里南自然保护区 | [Amazon jungle from above.jpg](https://commons.wikimedia.org/wiki/File:Amazon_jungle_from_above.jpg) | David Evers | CC BY 2.0 |
+| 世界篇 · 中途岛海战 | [Sinking Sun. 1942 painting describing the death of Japanese flyers at the Battle of Midway.jpg](https://commons.wikimedia.org/wiki/File:Sinking_Sun._1942_painting_describing_the_death_of_Japanese_flyers_at_the_Battle_of_Midway.jpg) | Griffith Baily Coale, U.S. Navy | Public domain |
 | 世界篇 · 乌兰巴托 | [2024-10-18 View of Ulaanbaatar.jpg](https://commons.wikimedia.org/wiki/File:2024-10-18_View_of_Ulaanbaatar.jpg) | Alexkom000 | CC BY 4.0 |
 | 世界篇 · 乌尔姆战役 | [Ulm Panorama 01.jpg](https://commons.wikimedia.org/wiki/File:Ulm_Panorama_01.jpg) | Uoaei1 | CC BY-SA 4.0 |
 | 世界篇 · 乌尤尼盐沼 | [Isla del Pescado, Salar de Uyuni, Bolivia, 2016-02-04, DD 42.JPG](https://commons.wikimedia.org/wiki/File:Isla_del_Pescado,_Salar_de_Uyuni,_Bolivia,_2016-02-04,_DD_42.JPG) | Diego Delso | CC BY-SA 4.0 |
@@ -295,13 +301,14 @@
 | 世界篇 · 伊卢利萨特冰湾 | [Blue iceberg in the Ilulissat icefjord - edited.jpg](https://commons.wikimedia.org/wiki/File:Blue_iceberg_in_the_Ilulissat_icefjord_-_edited.jpg) | Marcus Engdahl | CC BY-SA 4.0 |
 | 世界篇 · 伊散德尔瓦纳战役 | [Isandlwana Battlefield, Reserve 18 15840, Nqutu District.JPG](https://commons.wikimedia.org/wiki/File:Isandlwana_Battlefield,_Reserve_18_15840,_Nqutu_District.JPG) | RedNovember82 | CC BY-SA 3.0 |
 | 世界篇 · 伊瓜苏瀑布 | [GD - Devil's Throat from a Brazilian viewpoint at Iguazu Falls, 2023.jpg](https://commons.wikimedia.org/wiki/File:GD_-_Devil's_Throat_from_a_Brazilian_viewpoint_at_Iguazu_Falls,_2023.jpg) | Josep M. Gracia | CC BY-SA 4.0 |
-| 世界篇 · 伊苏斯战役 | [İskenderun - Sahil - panoramio.jpg](https://commons.wikimedia.org/wiki/File:İskenderun_-_Sahil_-_panoramio.jpg) | Ahmet KAYNARPUNAR | CC BY-SA 3.0 |
+| 世界篇 · 伊苏斯战役 | [Alexander (Battle of Issus) Mosaic.jpg](https://commons.wikimedia.org/wiki/File:Alexander_(Battle_of_Issus)_Mosaic.jpg) | 见文件页 | Public domain |
 | 世界篇 · 伏见稻荷大社 | [Torii path with lantern at Fushimi Inari Taisha Shrine, Kyoto, Japan.jpg](https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg) | Basile Morin | CC BY-SA 4.0 |
 | 世界篇 · 优胜美地 | [Half Dome and Bridalveil Falls from Tunnel View Yosemite National Park ,( 2012) (2).jpg](https://commons.wikimedia.org/wiki/File:Half_Dome_and_Bridalveil_Falls_from_Tunnel_View_Yosemite_National_Park_,(_2012)_(2).jpg) | Pierre André Leclercq | CC BY-SA 4.0 |
 | 世界篇 · 会安古城 | [Hội An, Ancient Town, 2020-01 CN-06.jpg](https://commons.wikimedia.org/wiki/File:Hội_An,_Ancient_Town,_2020-01_CN-06.jpg) | Steffen Schmitz ( more photos ) | CC BY-SA 4.0 |
 | 世界篇 · 伦索伊斯国家公园 | [Casal de turistas caminha em uma duna, enquanto o dia morre nos Lençóis Maranhenses (edited).jpg](https://commons.wikimedia.org/wiki/File:Casal_de_turistas_caminha_em_uma_duna,_enquanto_o_dia_morre_nos_Lençóis_Maranhenses_(edited).jpg) | Original: Julio Cesar Goncalves Corrêa Derivative work: Aristeas | CC BY-SA 4.0 |
 | 世界篇 · 佩特拉古城 | [Petra , Al-Khazneh 2.jpg](https://commons.wikimedia.org/wiki/File:Petra_,_Al-Khazneh_2.jpg) | Faraheed | CC BY-SA 3.0 |
 | 世界篇 · 佩里托莫雷诺冰川 | [Perito Moreno Glacier Patagonia Argentina Luca Galuzzi 2005.JPG](https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG) | Luca Galuzzi ( Lucag ) | CC BY-SA 2.5 |
+| 世界篇 · 俄国十月革命 | [Image-taken-from-page-8-of-revolution-belagerung-und-ersturnung-von-wien-im-october-1848-mit-portrait-des-windisch-gratz-etc-herausgegeben-von-o-fr 11029021076 o.jpg](https://commons.wikimedia.org/wiki/File:Image-taken-from-page-8-of-revolution-belagerung-und-ersturnung-von-wien-im-october-1848-mit-portrait-des-windisch-gratz-etc-herausgegeben-von-o-fr_11029021076_o.jpg) | Unknown authorUnknown author | No restrictions |
 | 世界篇 · 克里穆图三色湖 | [Kelimutu 2007-07-21.jpg](https://commons.wikimedia.org/wiki/File:Kelimutu_2007-07-21.jpg) | Rosino | CC BY-SA 2.0 |
 | 世界篇 · 克鲁亚围城战 | [Fushë-Krujë - Bush Square.jpg](https://commons.wikimedia.org/wiki/File:Fushë-Krujë_-_Bush_Square.jpg) | Fushë-Krujë_-_Bush_Square_C_IMG_0484.JPG: Anneli Salo
 derivative work: Albinfo | CC BY-SA 3.0 |
@@ -311,6 +318,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 内比都 | [NPDAerial22.jpg](https://commons.wikimedia.org/wiki/File:NPDAerial22.jpg) | AthosworldLi | CC BY-SA 4.0 |
 | 世界篇 · 冈仁波齐 | [Gaurikund at Mount Kailash in Tibet.jpg](https://commons.wikimedia.org/wiki/File:Gaurikund_at_Mount_Kailash_in_Tibet.jpg) | Amitbalani | CC0 |
 | 世界篇 · 凡尔赛宫 | [2023-06-03 Palace and park of Versailles 77.jpg](https://commons.wikimedia.org/wiki/File:2023-06-03_Palace_and_park_of_Versailles_77.jpg) | Thomas1313 | CC BY-SA 4.0 |
+| 世界篇 · 凡尔赛条约签署 | [Sketch of the Table in the Hall of Mirrors, at which the Treaty of Versailles was Signed Art.IWMART4213.jpg](https://commons.wikimedia.org/wiki/File:Sketch_of_the_Table_in_the_Hall_of_Mirrors,_at_which_the_Treaty_of_Versailles_was_Signed_Art.IWMART4213.jpg) | Herbert Arnould Olivier | Public domain |
 | 世界篇 · 凯厄图尔瀑布 | [Kaieteur Falls Guyana (2) 2007.jpg](https://commons.wikimedia.org/wiki/File:Kaieteur_Falls_Guyana_(2)_2007.jpg) | Bill Cameron | CC BY-SA 3.0 |
 | 世界篇 · 切尔诺贝利核事故 | [Statue to the Chernobyl Disaster, Chernihiv 02.jpg](https://commons.wikimedia.org/wiki/File:Statue_to_the_Chernobyl_Disaster,_Chernihiv_02.jpg) | Dmytro Petishkin | CC BY 4.0 |
 | 世界篇 · 列宁格勒保卫战 | [2023-07-24 Memorial Hall of the Former Residence of Zhao Mengfu and Zhao Mengfu Art Gallery 赵孟頫故居旧址纪念馆、赵孟頫艺术馆.jpg](https://commons.wikimedia.org/wiki/File:2023-07-24_Memorial_Hall_of_the_Former_Residence_of_Zhao_Mengfu_and_Zhao_Mengfu_Art_Gallery_赵孟頫故居旧址纪念馆、赵孟頫艺术馆.jpg) | 源義信 | CC BY-SA 4.0 |
@@ -321,16 +329,17 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 努克 | [Nuuk, Greenland skyline.jpg](https://commons.wikimedia.org/wiki/File:Nuuk,_Greenland_skyline.jpg) | Quintin Soloviev | CC BY 4.0 |
 | 世界篇 · 努美阿 | [Car Park in Nouméa, New Caledonia.jpg](https://commons.wikimedia.org/wiki/File:Car_Park_in_Nouméa,_New_Caledonia.jpg) | Michael Coghlan | CC BY-SA 2.0 |
 | 世界篇 · 勃兰登堡门 | [Brandenburg Gate from west detail.jpg](https://commons.wikimedia.org/wiki/File:Brandenburg_Gate_from_west_detail.jpg) | User:Orderinchaos | CC BY-SA 3.0 |
+| 世界篇 · 勒班陀海战 | [Anonymous - Die Sieger der Seeschlacht von Lepanto 1571 - GG 8270 - Kunsthistorisches Museum.jpg](https://commons.wikimedia.org/wiki/File:Anonymous_-_Die_Sieger_der_Seeschlacht_von_Lepanto_1571_-_GG_8270_-_Kunsthistorisches_Museum.jpg) | Unidentified painter | Public domain |
 | 世界篇 · 十二月党人起义 | [Saint-Petersburg. Bolsheokhtinsky Bridge (Peter the Great Bridge). Rivets on the bridge support.jpg](https://commons.wikimedia.org/wiki/File:Saint-Petersburg._Bolsheokhtinsky_Bridge_(Peter_the_Great_Bridge)._Rivets_on_the_bridge_support.jpg) | Александр Байдуков | CC BY-SA 4.0 |
 | 世界篇 · 十二门徒岩 | [PXL 20241002 064304134.MP Twelve Apostles at Sunset Victoria, Australia Great Ocean Road Trip 15.jpg](https://commons.wikimedia.org/wiki/File:PXL_20241002_064304134.MP_Twelve_Apostles_at_Sunset_Victoria,_Australia_Great_Ocean_Road_Trip_15.jpg) | Sourabh.biswas003 | CC BY-SA 4.0 |
 | 世界篇 · 华沙 | [Warszawa Śródmieście wejście.jpg](https://commons.wikimedia.org/wiki/File:Warszawa_Śródmieście_wejście.jpg) | Panek | CC BY 3.0 |
-| 世界篇 · 华沙起义 | [Warsaw 07-13 img29 View from Palace of Culture and Science.jpg](https://commons.wikimedia.org/wiki/File:Warsaw_07-13_img29_View_from_Palace_of_Culture_and_Science.jpg) | A.Savin | CC BY-SA 3.0 |
+| 世界篇 · 华沙起义 | [Warsaw Uprising by Lokajski - Hitler Photos - 7804.jpg](https://commons.wikimedia.org/wiki/File:Warsaw_Uprising_by_Lokajski_-_Hitler_Photos_-_7804.jpg) | Eugeniusz Lokajski | Public domain |
 | 世界篇 · 华盛顿 | [Cherry Blossoms surrounding United States Capitol Dome.jpg](https://commons.wikimedia.org/wiki/File:Cherry_Blossoms_surrounding_United_States_Capitol_Dome.jpg) | Crglenn | CC BY-SA 4.0 |
 | 世界篇 · 南马都尔 | [Nan Madol megalithic site, Pohnpei (Federated States of Micronesia) 5.jpg](https://commons.wikimedia.org/wiki/File:Nan_Madol_megalithic_site,_Pohnpei_(Federated_States_of_Micronesia)_5.jpg) | Patrick Nunn | CC BY-SA 4.0 |
 | 世界篇 · 博斯沃思战役 | [Battle of Bosworth Field.jpg](https://commons.wikimedia.org/wiki/File:Battle_of_Bosworth_Field.jpg) | 见文件页 | Public domain |
 | 世界篇 · 卡宴 | [Cayenne city (8525272038).jpg](https://commons.wikimedia.org/wiki/File:Cayenne_city_(8525272038).jpg) | Spotting973 | CC BY-SA 2.0 |
 | 世界篇 · 卡帕多奇亚 | [Cappadocia Aerial View Landscape.jpg](https://commons.wikimedia.org/wiki/File:Cappadocia_Aerial_View_Landscape.jpg) | Benh LIEU SONG ( Flickr ) | CC BY-SA 4.0 |
-| 世界篇 · 卡拉乔治起义 | [Ada Bridge pylon (Sava river, Belgrade).jpg](https://commons.wikimedia.org/wiki/File:Ada_Bridge_pylon_(Sava_river,_Belgrade).jpg) | Petar Milošević | CC BY-SA 4.0 |
+| 世界篇 · 卡拉乔治起义 | [Illustration commemorating Uprising Day in Montenegro.png](https://commons.wikimedia.org/wiki/File:Illustration_commemorating_Uprising_Day_in_Montenegro.png) | Pivo Karamatijević | Public domain |
 | 世界篇 · 卡斯特里 | [St. Lucia - View of Castries Town.jpg](https://commons.wikimedia.org/wiki/File:St._Lucia_-_View_of_Castries_Town.jpg) | Joseph Le Grand | Public domain |
 | 世界篇 · 卡普里岛 | [Capri (8259065832).jpg](https://commons.wikimedia.org/wiki/File:Capri_(8259065832).jpg) | Eric Salard | CC BY-SA 2.0 |
 | 世界篇 · 卡萨布兰卡会议 | [No Known Restrictions- President Roosevelt at Casablanca Conference Reviewing the Troops, 1943 (LOC).jpg](https://commons.wikimedia.org/wiki/File:No_Known_Restrictions-_President_Roosevelt_at_Casablanca_Conference_Reviewing_the_Troops,_1943_(LOC).jpg) | pingnews.com | Public domain |
@@ -342,8 +351,8 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 卢萨卡 | [Lusaka, capital city of Zambia.jpg](https://commons.wikimedia.org/wiki/File:Lusaka,_capital_city_of_Zambia.jpg) | Alex Mukuka | CC BY-SA 4.0 |
 | 世界篇 · 印度独立 | [India Gate, New Delhi.jpg](https://commons.wikimedia.org/wiki/File:India_Gate,_New_Delhi.jpg) | Yann | CC BY-SA 3.0 |
 | 世界篇 · 危地马拉城 | [Guatemala City - Guatemala - High-Rises.jpg](https://commons.wikimedia.org/wiki/File:Guatemala_City_-_Guatemala_-_High-Rises.jpg) | Rene Hernandez | CC BY-SA 2.0 |
-| 世界篇 · 古巴革命胜利 | [Cojímar-Tower-near-Havana-225-031-208A.jpg](https://commons.wikimedia.org/wiki/File:Cojímar-Tower-near-Havana-225-031-208A.jpg) | Fraganda https://fragandaphoto.mypixieset.com | CC BY-SA 4.0 |
-| 世界篇 · 古斯塔夫二世战死吕岑 | [Lützen Röcken Kirche 5.jpg](https://commons.wikimedia.org/wiki/File:Lützen_Röcken_Kirche_5.jpg) | PaulT (Gunther Tschuch) | CC BY-SA 4.0 |
+| 世界篇 · 古巴革命胜利 | [Cuban Revolution paint.png](https://commons.wikimedia.org/wiki/File:Cuban_Revolution_paint.png) | User:SSCreader | Public domain |
+| 世界篇 · 古斯塔夫二世战死吕岑 | [Der Tod Gustav II. Adolfs in der Schlacht bei Lützen.jpg](https://commons.wikimedia.org/wiki/File:Der_Tod_Gustav_II._Adolfs_in_der_Schlacht_bei_Lützen.jpg) | Wilhelm Räuber | Public domain |
 | 世界篇 · 台北 | [Taipei night skyline from Elephant Mountain May 2025 2.jpg](https://commons.wikimedia.org/wiki/File:Taipei_night_skyline_from_Elephant_Mountain_May_2025_2.jpg) | 4300streetcar | CC BY 4.0 |
 | 世界篇 · 吉萨金字塔 | [Sphinx and pyramids of Giza panorama.jpg](https://commons.wikimedia.org/wiki/File:Sphinx_and_pyramids_of_Giza_panorama.jpg) | kallerna | CC BY-SA 3.0 |
 | 世界篇 · 吉隆坡 | [Kuala Lumpur Malaysia Petronas-Twin-Towers-01.jpg](https://commons.wikimedia.org/wiki/File:Kuala_Lumpur_Malaysia_Petronas-Twin-Towers-01.jpg) | CEphoto, Uwe Aranas | CC BY-SA 3.0 |
@@ -394,6 +403,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 奇琴伊察 | [Chichen Itza 3.jpg](https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg) | Daniel Schwen | CC BY-SA 4.0 |
 | 世界篇 · 奈卡水晶洞 | [Cristales cueva de Naica.JPG](https://commons.wikimedia.org/wiki/File:Cristales_cueva_de_Naica.JPG) | Alexander Van Driessche | CC BY 3.0 |
 | 世界篇 · 奥卡万戈三角洲 | [Cebras de Burchell (Equus quagga burchellii), vista aérea del delta del Okavango, Botsuana, 2018-08-01, DD 30.jpg](https://commons.wikimedia.org/wiki/File:Cebras_de_Burchell_(Equus_quagga_burchellii),_vista_aérea_del_delta_del_Okavango,_Botsuana,_2018-08-01,_DD_30.jpg) | Diego Delso | CC BY-SA 4.0 |
+| 世界篇 · 奥斯特里茨战役 | [La bataille d'Austerlitz. 2 decembre 1805 (François Gérard).jpg](https://commons.wikimedia.org/wiki/File:La_bataille_d'Austerlitz._2_decembre_1805_(François_Gérard).jpg) | François Gérard | Public domain |
 | 世界篇 · 奥斯陆 | [Oslo Opera House - 2025.jpg](https://commons.wikimedia.org/wiki/File:Oslo_Opera_House_-_2025.jpg) | Pierre Blaché | CC0 |
 | 世界篇 · 奥格斯堡和约签订 | [20231023 Augsburg Cathedral 03.jpg](https://commons.wikimedia.org/wiki/File:20231023_Augsburg_Cathedral_03.jpg) | Flocci Nivis | CC BY 4.0 |
 | 世界篇 · 奥莫低谷 | [Washare from the Hamer tribe in Logara, near Turmi, Omo Valley, Ethiopia (16882803797).jpg](https://commons.wikimedia.org/wiki/File:Washare_from_the_Hamer_tribe_in_Logara,_near_Turmi,_Omo_Valley,_Ethiopia_(16882803797).jpg) | Alfred Weidinger from Vienna, Austria | CC BY 2.0 |
@@ -402,12 +412,13 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 威尼斯 | [Venezia SC Ponte de la Rioda 20120423.jpg](https://commons.wikimedia.org/wiki/File:Venezia_SC_Ponte_de_la_Rioda_20120423.jpg) | Unofeld781 | CC BY-SA 3.0 |
 | 世界篇 · 威廉·华莱士遇害 | [Smithfield Presbyterian Church on Main Street.jpg](https://commons.wikimedia.org/wiki/File:Smithfield_Presbyterian_Church_on_Main_Street.jpg) | Nyttend | Public domain |
 | 世界篇 · 威廉斯塔德 | [View of Otrobanda, Willemstad, Curaçao - February 2020.jpg](https://commons.wikimedia.org/wiki/File:View_of_Otrobanda,_Willemstad,_Curaçao_-_February_2020.jpg) | Martin Falbisoner | CC BY-SA 4.0 |
-| 世界篇 · 威斯特伐利亚和约签订 | [Münster, Aasee, Restaurants -- 2019 -- 3464-8.jpg](https://commons.wikimedia.org/wiki/File:Münster,_Aasee,_Restaurants_--_2019_--_3464-8.jpg) | Dietmar Rabich | CC BY-SA 4.0 |
+| 世界篇 · 威斯特伐利亚和约签订 | [Antony van der Does - Portrait of Georg Wagner, Delegate at the Peace of Münster.jpg](https://commons.wikimedia.org/wiki/File:Antony_van_der_Does_-_Portrait_of_Georg_Wagner,_Delegate_at_the_Peace_of_Münster.jpg) | Antoon van der Does | Public domain |
 | 世界篇 · 婆罗浮屠 | [Borobudur-Nothwest-view.jpg](https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg) | Gunawan Kartapranata | CC BY-SA 3.0 |
 | 世界篇 · 宁格罗礁 | [Cape Range National Park and Ningaloo Reef from the air.jpg](https://commons.wikimedia.org/wiki/File:Cape_Range_National_Park_and_Ningaloo_Reef_from_the_air.jpg) | Andrew Turner | CC BY-SA 4.0 |
 | 世界篇 · 安曼 | [Amman Night Down Town.JPG](https://commons.wikimedia.org/wiki/File:Amman_Night_Down_Town.JPG) | Freedom's Falcon | Public domain |
 | 世界篇 · 安赫尔瀑布 | [Kerepakupai Vená II.JPG](https://commons.wikimedia.org/wiki/File:Kerepakupai_Vená_II.JPG) | Sinfinitu | CC BY 3.0 |
 | 世界篇 · 安道尔城 | [Andorra la vella felul.jpg](https://commons.wikimedia.org/wiki/File:Andorra_la_vella_felul.jpg) | Original uploader was User:Cserlajos at hu.wikipedia | Public domain |
+| 世界篇 · 宗教改革开始 | [Mural of Protestant Reformation, Mourneview - geograph.org.uk - 1401992.jpg](https://commons.wikimedia.org/wiki/File:Mural_of_Protestant_Reformation,_Mourneview_-_geograph.org.uk_-_1401992.jpg) | Dean Molyneaux | CC BY-SA 2.0 |
 | 世界篇 · 富士山 | [12-Chureito-pagoda-and-Mount-Fuji-Japan (29677439878).jpg](https://commons.wikimedia.org/wiki/File:12-Chureito-pagoda-and-Mount-Fuji-Japan_(29677439878).jpg) | Dang Son | CC0 |
 | 世界篇 · 富纳富提 | [Funafuti township.jpg](https://commons.wikimedia.org/wiki/File:Funafuti_township.jpg) | Davidarfonjones | CC BY-SA 3.0 |
 | 世界篇 · 少女峰 | [Eiger, Mönch and Jungfrau, Swiss Skyline, Birg, Schilthorn (Ank Kumar) 03.jpg](https://commons.wikimedia.org/wiki/File:Eiger,_Mönch_and_Jungfrau,_Swiss_Skyline,_Birg,_Schilthorn_(Ank_Kumar)_03.jpg) | Ank kumar | CC BY-SA 4.0 |
@@ -426,6 +437,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 巴西迁都 | [Brasília Memorial dos Povos Indígenas 2009.jpg](https://commons.wikimedia.org/wiki/File:Brasília_Memorial_dos_Povos_Indígenas_2009.jpg) | Cayambe | CC BY-SA 3.0 |
 | 世界篇 · 巴音扎格 | [Bayanzag 05.jpg](https://commons.wikimedia.org/wiki/File:Bayanzag_05.jpg) | Bernard Gagnon | CC0 |
 | 世界篇 · 巴黎公社成立 | [Hôtel de Ville de Paris. Dernier Ballon partant pour la Province emportant les Proclamations de la Commune Agonisante, PH2023.jpg](https://commons.wikimedia.org/wiki/File:Hôtel_de_Ville_de_Paris._Dernier_Ballon_partant_pour_la_Province_emportant_les_Proclamations_de_la_Commune_Agonisante,_PH2023.jpg) | Anonyme, photographe | CC0 |
+| 世界篇 · 布伦海姆战役 | [Battle of Blenheim Tapestry.jpg](https://commons.wikimedia.org/wiki/File:Battle_of_Blenheim_Tapestry.jpg) | 见文件页 | Public domain |
 | 世界篇 · 布加勒斯特 | [Remote view of Bucharest, taken from Strada Boteanu no. 3, Bucharest.jpg](https://commons.wikimedia.org/wiki/File:Remote_view_of_Bucharest,_taken_from_Strada_Boteanu_no._3,_Bucharest.jpg) | Neoclassicism Enthusiast | CC0 |
 | 世界篇 · 布拉格 | [Prague skyline at dawn.jpg](https://commons.wikimedia.org/wiki/File:Prague_skyline_at_dawn.jpg) | Petar Milošević | CC BY-SA 4.0 |
 | 世界篇 · 布拉格掷出窗外事件 | [Defenestration-prague-1618.jpg](https://commons.wikimedia.org/wiki/File:Defenestration-prague-1618.jpg) | Maximilian Ornelas Solis | Public domain |
@@ -436,6 +448,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 布里奇敦 | [Bridgetown aerial.JPG](https://commons.wikimedia.org/wiki/File:Bridgetown_aerial.JPG) | P.Lechien | CC0 |
 | 世界篇 · 布里斯班 | [Brisbane River at night with illuminated Story Bridge from Customs House, Brisbane City, 2022.jpg](https://commons.wikimedia.org/wiki/File:Brisbane_River_at_night_with_illuminated_Story_Bridge_from_Customs_House,_Brisbane_City,_2022.jpg) | Anonymous | CC BY 4.0 |
 | 世界篇 · 希巴姆古城 | [Shibam Wadi Hadhramaut Yemen.jpg](https://commons.wikimedia.org/wiki/File:Shibam_Wadi_Hadhramaut_Yemen.jpg) | Jialiang Gao www.peace-on-earth.org [ dead link ] | CC BY-SA 3.0 |
+| 世界篇 · 希腊独立战争爆发 | [Greek Painting Battle of Sakarya.jpg](https://commons.wikimedia.org/wiki/File:Greek_Painting_Battle_of_Sakarya.jpg) | Sotiris Christidis | Public domain |
 | 世界篇 · 帕拉马里博 | [Paramaribo district 20.jpg](https://commons.wikimedia.org/wiki/File:Paramaribo_district_20.jpg) | Sn.fernandez | CC BY-SA 4.0 |
 | 世界篇 · 帕果帕果 | [Pago Pago - View of harbor.jpg](https://commons.wikimedia.org/wiki/File:Pago_Pago_-_View_of_harbor.jpg) | P. Hughes | CC BY-SA 4.0 |
 | 世界篇 · 帕特农神庙 | [The East Facade of the Parthenon on March 22, 2021.jpg](https://commons.wikimedia.org/wiki/File:The_East_Facade_of_the_Parthenon_on_March_22,_2021.jpg) | George E. Koronaios | CC BY-SA 2.0 |
@@ -445,6 +458,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 帖木儿帝国建立 | [Lada in Samarkand.jpg](https://commons.wikimedia.org/wiki/File:Lada_in_Samarkand.jpg) | Adam Harangozó | CC BY-SA 4.0 |
 | 世界篇 · 帝国大厦 | [Empire State Building illuminated at night aerial view Manhattan.jpg](https://commons.wikimedia.org/wiki/File:Empire_State_Building_illuminated_at_night_aerial_view_Manhattan.jpg) | SebastianBlumeArt | CC BY-SA 4.0 |
 | 世界篇 · 平壤 | [Panoramic view from Juche Tower.jpg](https://commons.wikimedia.org/wiki/File:Panoramic_view_from_Juche_Tower.jpg) | Christophe95 | CC BY-SA 4.0 |
+| 世界篇 · 广岛原子弹爆炸 | [Photograph of Hiroshima After Atomic Bombing taken March 1946 - 342-C-K6011.jpg](https://commons.wikimedia.org/wiki/File:Photograph_of_Hiroshima_After_Atomic_Bombing_taken_March_1946_-_342-C-K6011.jpg) | Department of Defense- Department of the Air Force | Public domain |
 | 世界篇 · 库斯科 | [Cusco, Sacsayhuamán - panoramio.jpg](https://commons.wikimedia.org/wiki/File:Cusco,_Sacsayhuamán_-_panoramio.jpg) | gertrudis2010 | CC BY-SA 3.0 |
 | 世界篇 · 庞贝古城 | [Pompeii, Ancient Roman Fountain at the junction of Via Stabiana and Via dell'Abbondanza (48441020961).jpg](https://commons.wikimedia.org/wiki/File:Pompeii,_Ancient_Roman_Fountain_at_the_junction_of_Via_Stabiana_and_Via_dell'Abbondanza_(48441020961).jpg) | Gary Todd from Xinzheng, China | Public domain |
 | 世界篇 · 廷布 | [View of central Thimphu 2019-07-21.jpg](https://commons.wikimedia.org/wiki/File:View_of_central_Thimphu_2019-07-21.jpg) | Christopher J. Fynn | CC BY-SA 4.0 |
@@ -454,13 +468,14 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 彩虹山 | [Rainbow Mountain Peru.jpg](https://commons.wikimedia.org/wiki/File:Rainbow_Mountain_Peru.jpg) | MareikeHeuer(WMDE) | CC0 |
 | 世界篇 · 德雷福斯事件 | [L'affaire Dreyfus, la dernière dame voilée, en place pour le quadrille.jpg](https://commons.wikimedia.org/wiki/File:L'affaire_Dreyfus,_la_dernière_dame_voilée,_en_place_pour_le_quadrille.jpg) | Henri Gabriel Ibels | Public domain |
 | 世界篇 · 德黑兰 | [Azadi Tower at Night Tehran.jpg](https://commons.wikimedia.org/wiki/File:Azadi_Tower_at_Night_Tehran.jpg) | Lifeandnothingmore | CC BY-SA 4.0 |
-| 世界篇 · 德黑兰会议 | [Azadi Square - Tehran, Iran.jpg](https://commons.wikimedia.org/wiki/File:Azadi_Square_-_Tehran,_Iran.jpg) | Stefano Vigorelli | CC BY-SA 4.0 |
+| 世界篇 · 德黑兰会议 | [Tehran Conference 2023 stamp of Russia.jpg](https://commons.wikimedia.org/wiki/File:Tehran_Conference_2023_stamp_of_Russia.jpg) | S. Kapranov | Public domain |
+| 世界篇 · 怀唐伊条约签署 | [“The Signing of the Treaty of Waitangi”, Ōriwa Haddon - Flickr - Archives New Zealand.jpg](https://commons.wikimedia.org/wiki/File:“The_Signing_of_the_Treaty_of_Waitangi”,_Ōriwa_Haddon_-_Flickr_-_Archives_New_Zealand.jpg) | Archives New Zealand from New Zealand | CC BY 2.0 |
 | 世界篇 · 怀托摩萤火虫洞 | [NZL-waitomo-cave-exit.jpg](https://commons.wikimedia.org/wiki/File:NZL-waitomo-cave-exit.jpg) | Bgabel | CC BY-SA 3.0 |
 | 世界篇 · 恩吉鲁穆德 | [Ngerulmud 14.jpg](https://commons.wikimedia.org/wiki/File:Ngerulmud_14.jpg) | Zykasaa | CC BY 4.0 |
 | 世界篇 · 恩戈罗恩戈罗火山口 | [013 Black-backed jackal in the Ngorongoro Crater Photo by Giles Laurent.jpg](https://commons.wikimedia.org/wiki/File:013_Black-backed_jackal_in_the_Ngorongoro_Crater_Photo_by_Giles_Laurent.jpg) | Giles Laurent | CC BY-SA 4.0 |
 | 世界篇 · 恩贾梅纳 | [Ndjamena 1952.jpg](https://commons.wikimedia.org/wiki/File:Ndjamena_1952.jpg) | Anonymous Unknown author | Public domain |
 | 世界篇 · 恰伦峡谷 | [Charyn Canyon, Kazakhstan 03.jpg](https://commons.wikimedia.org/wiki/File:Charyn_Canyon,_Kazakhstan_03.jpg) | Bgag | CC0 |
-| 世界篇 · 恺撒遇刺 | [The Largo di Torre Argentina is a historic square in Rome.jpg](https://commons.wikimedia.org/wiki/File:The_Largo_di_Torre_Argentina_is_a_historic_square_in_Rome.jpg) | Wilfredor | CC0 |
+| 世界篇 · 恺撒遇刺 | [Jacopo del Sellaio (1441 - 1493) - Julius Caesar's assassination - 1133 - Gemäldegalerie.jpg](https://commons.wikimedia.org/wiki/File:Jacopo_del_Sellaio_(1441_-_1493)_-_Julius_Caesar's_assassination_-_1133_-_Gemäldegalerie.jpg) | Jacopo da Sellaio | Public domain |
 | 世界篇 · 悉尼歌剧院 | [View from Mrs Macquaries Point, Sydney.jpg](https://commons.wikimedia.org/wiki/File:View_from_Mrs_Macquaries_Point,_Sydney.jpg) | Bernard Gagnon | CC BY-SA 4.0 |
 | 世界篇 · 惠灵顿 | [Birdseye View of Port Nicholson in New Zealand, Wellington 1839.jpg](https://commons.wikimedia.org/wiki/File:Birdseye_View_of_Port_Nicholson_in_New_Zealand,_Wellington_1839.jpg) | Allom, Thomas. (Printer) | Public domain |
 | 世界篇 · 慕尼黑协定签署 | [Bayerisches Nationalmuseum Munich, April 2018.jpg](https://commons.wikimedia.org/wiki/File:Bayerisches_Nationalmuseum_Munich,_April_2018.jpg) | Martin Falbisoner | CC BY-SA 4.0 |
@@ -473,7 +488,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 拉巴斯 | [La Paz-center.jpg](https://commons.wikimedia.org/wiki/File:La_Paz-center.jpg) | 见文件页 | CC BY-SA 3.0 |
 | 世界篇 · 拉巴特 | [Hassan Tower, Rabat (صومعة حسان).jpg](https://commons.wikimedia.org/wiki/File:Hassan_Tower,_Rabat_(صومعة_حسان).jpg) | Petar Milošević This photograph was taken with a Panasonic Lumix DMC-G85/G80 | CC BY-SA 4.0 |
 | 世界篇 · 拉文纳战役 | [Ary Scheffer - Death of Gaston de Foix in the Battle of Ravenna on 11 April 1512 - WGA20977.jpg](https://commons.wikimedia.org/wiki/File:Ary_Scheffer_-_Death_of_Gaston_de_Foix_in_the_Battle_of_Ravenna_on_11_April_1512_-_WGA20977.jpg) | Ary Scheffer | Public domain |
-| 世界篇 · 拿破仑加冕 | [Paris Notre-Dame East View 02.JPG](https://commons.wikimedia.org/wiki/File:Paris_Notre-Dame_East_View_02.JPG) | Uoaei1 | CC BY-SA 4.0 |
+| 世界篇 · 拿破仑加冕 | [Visitor taking a photograph of The Coronation of Napoleon (15577555313).jpg](https://commons.wikimedia.org/wiki/File:Visitor_taking_a_photograph_of_The_Coronation_of_Napoleon_(15577555313).jpg) | Guillaume Baviere from Uppsala, Sweden | CC BY-SA 2.0 |
 | 世界篇 · 拿破仑流放厄尔巴岛 | [Aerial image of Portoferraio (view from the northwest).jpg](https://commons.wikimedia.org/wiki/File:Aerial_image_of_Portoferraio_(view_from_the_northwest).jpg) | Carsten Steger | CC BY-SA 4.0 |
 | 世界篇 · 拿破仑远征埃及 | [CairoAbbasiyaMarkEntrance-Cropped.jpg](https://commons.wikimedia.org/wiki/File:CairoAbbasiyaMarkEntrance-Cropped.jpg) | Roland Unger | CC BY-SA 4.0 |
 | 世界篇 · 拿骚 | [Nassau, Bahamas aerial view.jpg](https://commons.wikimedia.org/wiki/File:Nassau,_Bahamas_aerial_view.jpg) | Quintin Soloviev | CC BY 4.0 |
@@ -481,6 +496,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 撒哈拉之眼 | [Earth from Space- Eye of the Sahara ESA515004 - The Richat Structure in Mauritania.jpg](https://commons.wikimedia.org/wiki/File:Earth_from_Space-_Eye_of_the_Sahara_ESA515004_-_The_Richat_Structure_in_Mauritania.jpg) | European Space Agency | Attribution |
 | 世界篇 · 故宫 | [Hall of Supreme Harmony (Forbidden City) 1.jpg](https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_(Forbidden_City)_1.jpg) | EditQ | CC BY-SA 4.0 |
 | 世界篇 · 斯坦利 | [Aerial photo Port Stanley.jpg](https://commons.wikimedia.org/wiki/File:Aerial_photo_Port_Stanley.jpg) | 见文件页 | CC BY-SA 3.0 |
+| 世界篇 · 斯大林格勒战役 | [Photos of Stalingrad Battle by Sergey Strunnikov 01.jpg](https://commons.wikimedia.org/wiki/File:Photos_of_Stalingrad_Battle_by_Sergey_Strunnikov_01.jpg) | Sergey Strunnikov | CC BY 4.0 |
 | 世界篇 · 斯德哥尔摩 | [Stockholm City Hall (26461653638).jpg](https://commons.wikimedia.org/wiki/File:Stockholm_City_Hall_(26461653638).jpg) | Brian Dooley | CC0 |
 | 世界篇 · 斯德哥尔摩血案 | [Stockholm Bloodbath.jpg](https://commons.wikimedia.org/wiki/File:Stockholm_Bloodbath.jpg) | 见文件页 | Public domain |
 | 世界篇 · 新天鹅堡 | [Neuschwanstein Castle (532850).jpg](https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_(532850).jpg) | cameralends | CC0 |
@@ -488,7 +504,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 普利特维采湖 | [Plitvice Lakes1.jpg](https://commons.wikimedia.org/wiki/File:Plitvice_Lakes1.jpg) | Tesla Delacroix | CC BY-SA 4.0 |
 | 世界篇 · 普加乔夫起义 | [Assault of Kazan by Pugachev by Moller.jpg](https://commons.wikimedia.org/wiki/File:Assault_of_Kazan_by_Pugachev_by_Moller.jpg) | Otto Friedrich Theodor von Möller | Public domain |
 | 世界篇 · 普拉亚 | [Praia aerial.jpg](https://commons.wikimedia.org/wiki/File:Praia_aerial.jpg) | Original uploader was David Trainer at en.wikipedia | Public domain |
-| 世界篇 · 普瓦捷战役 | [Fresque de cavalier au baptistère Saint-Jean de Poitiers-edit.jpg](https://commons.wikimedia.org/wiki/File:Fresque_de_cavalier_au_baptistère_Saint-Jean_de_Poitiers-edit.jpg) | Pradigue | CC BY-SA 4.0 |
+| 世界篇 · 普瓦捷战役 | [Charles de Steuben's Bataille de Poitiers en octobre 732 romantically depicts a triumphant Charles Martel (mounted) facing Abdul Rahman Al Ghafiqi (right) at the Battle of Tours.jpg](https://commons.wikimedia.org/wiki/File:Charles_de_Steuben's_Bataille_de_Poitiers_en_octobre_732_romantically_depicts_a_triumphant_Charles_Martel_(mounted)_facing_Abdul_Rahman_Al_Ghafiqi_(right)_at_the_Battle_of_Tours.jpg) | 见文件页 | Public domain |
 | 世界篇 · 曼德拉获释 | [Mural Nelson Mandela Lisbon.jpg](https://commons.wikimedia.org/wiki/File:Mural_Nelson_Mandela_Lisbon.jpg) | EconAmbiente | CC BY-SA 4.0 |
 | 世界篇 · 朗伊尔城 | [Longyearbyen panorama.JPG](https://commons.wikimedia.org/wiki/File:Longyearbyen_panorama.JPG) | Dagny | Public domain |
 | 世界篇 · 本能寺之变 | [Founder's Hall gate of Higashi-Honganji Temple, with water reflection, Kyoto, Japan.jpg](https://commons.wikimedia.org/wiki/File:Founder's_Hall_gate_of_Higashi-Honganji_Temple,_with_water_reflection,_Kyoto,_Japan.jpg) | Basile Morin | CC BY-SA 4.0 |
@@ -497,6 +513,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 柏林会议 | [Armenian Representatives of Berlin Conference.jpg](https://commons.wikimedia.org/wiki/File:Armenian_Representatives_of_Berlin_Conference.jpg) | Teotig | Public domain |
 | 世界篇 · 柏林墙倒塌 | [Berlin Wall , East Side Gallery ( Ank Kumar, Infosys Limited) 03.jpg](https://commons.wikimedia.org/wiki/File:Berlin_Wall_,_East_Side_Gallery_(_Ank_Kumar,_Infosys_Limited)_03.jpg) | Ank Kumar | CC BY-SA 4.0 |
 | 世界篇 · 柏林奥运会 | [1936 in Germany by a Hungarian photographer (Berlin Olympics) 01.jpg](https://commons.wikimedia.org/wiki/File:1936_in_Germany_by_a_Hungarian_photographer_(Berlin_Olympics)_01.jpg) | Unknown authorUnknown author | Public domain |
+| 世界篇 · 柏林战役 | [Charles Meynier - Entrée de Napoléon à Berlin. 27 octobre 1806 (cropped, 1to1 portrait).jpg](https://commons.wikimedia.org/wiki/File:Charles_Meynier_-_Entrée_de_Napoléon_à_Berlin._27_octobre_1806_(cropped,_1to1_portrait).jpg) | Charles Meynier | Public domain |
 | 世界篇 · 查理曼加冕 | [Saint Peter's Basilica, Sant'Angelo bridge, by night, Rome, Italy.jpg](https://commons.wikimedia.org/wiki/File:Saint_Peter's_Basilica,_Sant'Angelo_bridge,_by_night,_Rome,_Italy.jpg) | Jebulon | CC0 |
 | 世界篇 · 格拉纳达陷落 | [– Storia di Granada, 1492 – 9889871 BEIC one-day-one-paint.jpg](https://commons.wikimedia.org/wiki/File:–_Storia_di_Granada,_1492_–_9889871_BEIC_one-day-one-paint.jpg) | 见文件页 | Public domain |
 | 世界篇 · 桌山 | [Cape Town, Table Mountain, Table Cloth.jpg](https://commons.wikimedia.org/wiki/File:Cape_Town,_Table_Mountain,_Table_Cloth.jpg) | KodachromeFan | CC BY-SA 3.0 |
@@ -520,7 +537,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 波浪岩 | [Wave-Rock-Hyden-WA.jpg](https://commons.wikimedia.org/wiki/File:Wave-Rock-Hyden-WA.jpg) | SKY-PuLeun | CC BY-SA 4.0 |
 | 世界篇 · 波茨坦公告发表 | [2007-04-26 in Potsdam 01 - Cecilienhof.jpg](https://commons.wikimedia.org/wiki/File:2007-04-26_in_Potsdam_01_-_Cecilienhof.jpg) | Szilas | CC BY-SA 4.0 |
 | 世界篇 · 波西塔诺 | [Positano at sunset.jpg](https://commons.wikimedia.org/wiki/File:Positano_at_sunset.jpg) | Thomas Fabian | CC BY-SA 2.0 |
-| 世界篇 · 泰坦尼克号沉没 | [Cobh - The Last Port Of Call For The Titanic (7163921899).jpg](https://commons.wikimedia.org/wiki/File:Cobh_-_The_Last_Port_Of_Call_For_The_Titanic_(7163921899).jpg) | William Murphy from Dublin, Ireland | CC BY-SA 2.0 |
+| 世界篇 · 泰坦尼克号沉没 | [A Photograph of an Iceberg Floating Near the Site of the TITANIC Sinking. - NARA - 278334.jpg](https://commons.wikimedia.org/wiki/File:A_Photograph_of_an_Iceberg_Floating_Near_the_Site_of_the_TITANIC_Sinking._-_NARA_-_278334.jpg) | Louis Ogden | Public domain |
 | 世界篇 · 泰姬陵 | [Taj Mahal at Sunrise IMG 6028.jpg](https://commons.wikimedia.org/wiki/File:Taj_Mahal_at_Sunrise_IMG_6028.jpg) | Malpaniashutosh | CC BY-SA 4.0 |
 | 世界篇 · 泰姬陵落成 | [Agra 03-2016 14 Agra Fort.jpg](https://commons.wikimedia.org/wiki/File:Agra_03-2016_14_Agra_Fort.jpg) | A.Savin | FAL |
 | 世界篇 · 泰德火山 | [El Teide, Patrimonio Mundial de la Humanidad - panoramio.jpg](https://commons.wikimedia.org/wiki/File:El_Teide,_Patrimonio_Mundial_de_la_Humanidad_-_panoramio.jpg) | Canarina | CC BY-SA 3.0 |
@@ -528,10 +545,12 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 济州岛 | [The Volcanic crater of Seongsan Ilchulbong.jpg](https://commons.wikimedia.org/wiki/File:The_Volcanic_crater_of_Seongsan_Ilchulbong.jpg) | 螺钉 | CC BY-SA 3.0 |
 | 世界篇 · 海地独立宣言发表 | [Commune of Port-au-Prince, Haiti.jpg](https://commons.wikimedia.org/wiki/File:Commune_of_Port-au-Prince,_Haiti.jpg) | NASA | Public domain |
 | 世界篇 · 温泉关战役 | [Leonidas at Thermopylae MET DP213754.jpg](https://commons.wikimedia.org/wiki/File:Leonidas_at_Thermopylae_MET_DP213754.jpg) | Jacques-Louis David | CC0 |
+| 世界篇 · 滑铁卢战役 | [Battle of Waterloo 1815 (cropped, 1to1 portrait).PNG](https://commons.wikimedia.org/wiki/File:Battle_of_Waterloo_1815_(cropped,_1to1_portrait).PNG) | William Sadler | Public domain |
 | 世界篇 · 滨海湾金沙 | [Singapore Marina Sands Bay rooftop swimming pool 20170306.jpg](https://commons.wikimedia.org/wiki/File:Singapore_Marina_Sands_Bay_rooftop_swimming_pool_20170306.jpg) | Jorge Cortell | CC BY 3.0 |
 | 世界篇 · 火奴鲁鲁 | [Marks Garage sunrise (13294468183).jpg](https://commons.wikimedia.org/wiki/File:Marks_Garage_sunrise_(13294468183).jpg) | billsoPHOTO from Honolulu, USA | CC BY-SA 2.0 |
 | 世界篇 · 特古西加尔巴 | [Tegucigalpa view in october 2021.jpg](https://commons.wikimedia.org/wiki/File:Tegucigalpa_view_in_october_2021.jpg) | Descubriasintiniaparaserfelix | CC BY-SA 4.0 |
 | 世界篇 · 特尔诺沃起义 | [Veliko Tarnovo (Велико Търново) - panorama.JPG](https://commons.wikimedia.org/wiki/File:Veliko_Tarnovo_(Велико_Търново)_-_panorama.JPG) | Pudelek (Marcin Szala) | CC BY-SA 3.0 |
+| 世界篇 · 特拉法尔加海战 | [The Battle of Trafalgar engraving by William Miller after J M W Turner R698.jpg](https://commons.wikimedia.org/wiki/File:The_Battle_of_Trafalgar_engraving_by_William_Miller_after_J_M_W_Turner_R698.jpg) | William Miller | Public domain |
 | 世界篇 · 猴面包树大道 | [Adansonia grandidieri04.jpg](https://commons.wikimedia.org/wiki/File:Adansonia_grandidieri04.jpg) | Bernard Gagnon | CC BY-SA 3.0 |
 | 世界篇 · 玻利瓦尔解放新格拉纳达 | [Capitalio National de Colombia, Bogotá.jpg](https://commons.wikimedia.org/wiki/File:Capitalio_National_de_Colombia,_Bogotá.jpg) | Bernard Gagnon | CC BY-SA 4.0 |
 | 世界篇 · 珀斯 | [Perth skyline from swan river foreshore.jpg](https://commons.wikimedia.org/wiki/File:Perth_skyline_from_swan_river_foreshore.jpg) | Unknown authorUnknown author | Public domain |
@@ -565,6 +584,9 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 米兰敕令颁布 | [Ambigram tessellation Milan - concentric circles.png](https://commons.wikimedia.org/wiki/File:Ambigram_tessellation_Milan_-_concentric_circles.png) | Basile Morin | CC BY-SA 4.0 |
 | 世界篇 · 米尔福德峡湾 | [Milford Sound Mitre Peak.JPG](https://commons.wikimedia.org/wiki/File:Milford_Sound_Mitre_Peak.JPG) | MurielBendel | CC BY-SA 4.0 |
 | 世界篇 · 糖面包山 | [Sugarloaf Mountain and cable car station viewed from Morro da Urca, Rio de Janeiro, Brazil.jpg](https://commons.wikimedia.org/wiki/File:Sugarloaf_Mountain_and_cable_car_station_viewed_from_Morro_da_Urca,_Rio_de_Janeiro,_Brazil.jpg) | Wilfredor | CC0 |
+| 世界篇 · 索姆河战役 | [Recueil. Images diverses de la première guerre mondiale - bataille de la Somme, des Dardanelles, destructions, soldats - btv1b84515845 (10 of 46).jpg](https://commons.wikimedia.org/wiki/File:Recueil._Images_diverses_de_la_première_guerre_mondiale_-_bataille_de_la_Somme,_des_Dardanelles,_destructions,_soldats_-_btv1b84515845_(10_of_46).jpg) | Branger, Maurice-Louis (1874-1950). Photographe
+
+Agence Rol. Photographe | Public domain |
 | 世界篇 · 索科特拉岛 | [Socotra dragon tree.JPG](https://commons.wikimedia.org/wiki/File:Socotra_dragon_tree.JPG) | Boris Khvostichenko( User:Boriskhv ) | CC BY-SA 4.0 |
 | 世界篇 · 索苏斯维利沙丘 | [Sossusvlei Dune Rippled cropped.jpg](https://commons.wikimedia.org/wiki/File:Sossusvlei_Dune_Rippled_cropped.jpg) | Daniel Kraft | CC BY-SA 3.0 |
 | 世界篇 · 约克镇围城战役 | [Battle of Yorktown, Pursuit sketch.png](https://commons.wikimedia.org/wiki/File:Battle_of_Yorktown,_Pursuit_sketch.png) | Alfred Waud | Public domain |
@@ -572,7 +594,7 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 纳斯卡线条 | [Líneas de Nazca, Nazca, Perú, 2015-07-29, DD 51.JPG](https://commons.wikimedia.org/wiki/File:Líneas_de_Nazca,_Nazca,_Perú,_2015-07-29,_DD_51.JPG) | Diego Delso | CC BY-SA 4.0 |
 | 世界篇 · 纳汉尼国家公园 | [Nahanni - VirginiaFalls.jpg](https://commons.wikimedia.org/wiki/File:Nahanni_-_VirginiaFalls.jpg) | Paul Gierszewski | Public domain |
 | 世界篇 · 纳瓦里诺海战 | [2022 Neokastro (Pylos) (07) Navarino Bay.jpg](https://commons.wikimedia.org/wiki/File:2022_Neokastro_(Pylos)_(07)_Navarino_Bay.jpg) | Chris06 | CC BY-SA 4.0 |
-| 世界篇 · 维也纳会议 | [Main entrance of the Naturhistorisches Museum (Vienna, Austria).jpg](https://commons.wikimedia.org/wiki/File:Main_entrance_of_the_Naturhistorisches_Museum_(Vienna,_Austria).jpg) | Jules Verne Times Two | CC BY-SA 4.0 |
+| 世界篇 · 维也纳会议 | [Vicente López Portaña - Portrait of the Marquis of Labrador, Spanish Ambassador to the Congress of Vienna of 1815 - Google Art Project.jpg](https://commons.wikimedia.org/wiki/File:Vicente_López_Portaña_-_Portrait_of_the_Marquis_of_Labrador,_Spanish_Ambassador_to_the_Congress_of_Vienna_of_1815_-_Google_Art_Project.jpg) | Vicente López Portaña | Public domain |
 | 世界篇 · 维京人袭击林迪斯法恩 | [Holy Island Lindisfarne Castle.jpg](https://commons.wikimedia.org/wiki/File:Holy_Island_Lindisfarne_Castle.jpg) | Michael D Beckwith | CC0 |
 | 世界篇 · 维多利亚 | [Port-victoria Seychelles.jpg](https://commons.wikimedia.org/wiki/File:Port-victoria_Seychelles.jpg) | No machine-readable author provided. Clipper assumed (based on copyright claims). | CC BY 2.5 |
 | 世界篇 · 维多利亚瀑布 | [Lunar Rainbow at Victoria Falls HP L2778e2.jpg](https://commons.wikimedia.org/wiki/File:Lunar_Rainbow_at_Victoria_Falls_HP_L2778e2.jpg) | Alchemist-hp ( talk ) | FAL |
@@ -585,7 +607,9 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 罗马之劫 | [Colosseum in Rome, Italy - April 2007.jpg](https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome,_Italy_-_April_2007.jpg) | Diliff | CC BY-SA 2.5 |
 | 世界篇 · 罗马大火 | [Saint Peter's Basilica, Sant'Angelo bridge, by night, Rome, Italy.jpg](https://commons.wikimedia.org/wiki/File:Saint_Peter's_Basilica,_Sant'Angelo_bridge,_by_night,_Rome,_Italy.jpg) | Jebulon | CC0 |
 | 世界篇 · 罗马斗兽场 | [Colosseum of Rome and Roman forum.jpg](https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg) | Wilfredor | CC0 |
+| 世界篇 · 美国南北战争爆发 | [Bombardment of Fort Sumter engraving by unknown artist 1863.jpg](https://commons.wikimedia.org/wiki/File:Bombardment_of_Fort_Sumter_engraving_by_unknown_artist_1863.jpg) | George Edward Perine (1837-1885) | Public domain |
 | 世界篇 · 美国宪法签署 | [Independence Hall, the scene of the signing of both the Declaration of Independence and the United States Constitution, is (3015bd8e-1dd8-b71b-0b04-5dcfac9a1928).jpg](https://commons.wikimedia.org/wiki/File:Independence_Hall,_the_scene_of_the_signing_of_both_the_Declaration_of_Independence_and_the_United_States_Constitution,_is_(3015bd8e-1dd8-b71b-0b04-5dcfac9a1928).jpg) | NPS photo | Public domain |
+| 世界篇 · 美国独立宣言签署 | ["Signing of the Declaration of Independence" from the American Bank Note Company of Philadelphia, engraved by C. Toppan in 1840 (cropped).jpg](https://commons.wikimedia.org/wiki/File:"Signing_of_the_Declaration_of_Independence"_from_the_American_Bank_Note_Company_of_Philadelphia,_engraved_by_C._Toppan_in_1840_(cropped).jpg) | Toppan, Charles, 1796-1874, engraver | Public domain |
 | 世界篇 · 羚羊峡谷 | [Lower Antelope Canyon 478.jpg](https://commons.wikimedia.org/wiki/File:Lower_Antelope_Canyon_478.jpg) | Uploaded by Meckimac | CC BY-SA 3.0 |
 | 世界篇 · 肯尼迪遇刺 | [Martyr's Park and Dealey Plaza in Dallas Texas May 2024.png](https://commons.wikimedia.org/wiki/File:Martyr's_Park_and_Dealey_Plaza_in_Dallas_Texas_May_2024.png) | IcedCowboyCoffee | CC0 |
 | 世界篇 · 胡志明战役 | [The Statue of Victory 30-4-1975 at the Museum of Ho Chi Minh Campaign.JPG](https://commons.wikimedia.org/wiki/File:The_Statue_of_Victory_30-4-1975_at_the_Museum_of_Ho_Chi_Minh_Campaign.JPG) | HappyMidnight | CC BY-SA 3.0 |
@@ -594,13 +618,14 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 苏伊士运河国有化 | [Ismailia Egypt 1941.jpg](https://commons.wikimedia.org/wiki/File:Ismailia_Egypt_1941.jpg) | Egyptian Survey Department (Maṣlaḥat al-Misāḥah) | Public domain |
 | 世界篇 · 苏伊士运河通航 | [Mural embodies the opening ceremony of the Suez Canal.jpg](https://commons.wikimedia.org/wiki/File:Mural_embodies_the_opening_ceremony_of_the_Suez_Canal.jpg) | Ahmed Yousry Mahfouz | CC BY-SA 4.0 |
 | 世界篇 · 苏瓦 | [Suva, Fiji 52.jpg](https://commons.wikimedia.org/wiki/File:Suva,_Fiji_52.jpg) | Maksym Kozlenko | CC BY-SA 4.0 |
-| 世界篇 · 苏联解体 | [Baptist church Golgotha in Moscow, Russia on 2021 March 20 (0076).jpg](https://commons.wikimedia.org/wiki/File:Baptist_church_Golgotha_in_Moscow,_Russia_on_2021_March_20_(0076).jpg) | Alexey V. Kurochkin | CC BY-SA 4.0 |
+| 世界篇 · 苏联解体 | [Huge Anti-Soviet Painting in the Pope's Summer Palace (52205242430).jpg](https://commons.wikimedia.org/wiki/File:Huge_Anti-Soviet_Painting_in_the_Pope's_Summer_Palace_(52205242430).jpg) | Steve Jurvetson from Los Altos, USA | CC BY 2.0 |
 | 世界篇 · 苏莱曼大帝围攻维也纳 | [Pieter Bruegel the Elder - The Tower of Babel (Vienna) - Google Art Project - edited.jpg](https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg) | Pieter Brueghel the Elder | Public domain |
 | 世界篇 · 莫尔兹比港 | [Port Moresby Town Mschlauch.JPG](https://commons.wikimedia.org/wiki/File:Port_Moresby_Town_Mschlauch.JPG) | Mschlauch | Public domain |
 | 世界篇 · 莫斯科红场 | [Saint Basil's Cathedral Moscow at winter night from the Red Square.jpg](https://commons.wikimedia.org/wiki/File:Saint_Basil's_Cathedral_Moscow_at_winter_night_from_the_Red_Square.jpg) | Yaroslav Murashkin | Public domain |
 | 世界篇 · 莫高窟 | [2021.12.24-12.26 800pcs 璀璨敦煌系列：第257窟-鹿王本生局部圖 Mogao Grottoes Cave 257 Main Chamber West Wall (1) (51776320643).jpg](https://commons.wikimedia.org/wiki/File:2021.12.24-12.26_800pcs_璀璨敦煌系列：第257窟-鹿王本生局部圖_Mogao_Grottoes_Cave_257_Main_Chamber_West_Wall_(1)_(51776320643).jpg) | Grace Hwu from Taiwan | CC BY 2.0 |
+| 世界篇 · 莱比锡会战 | [Völkerschlachtdenkmal Leipzig beim Nacht.jpg](https://commons.wikimedia.org/wiki/File:Völkerschlachtdenkmal_Leipzig_beim_Nacht.jpg) | Stein53 | CC BY-SA 4.0 |
 | 世界篇 · 菲茨罗伊峰 | [Mermoz at sunset.jpg](https://commons.wikimedia.org/wiki/File:Mermoz_at_sunset.jpg) | Masa Sakano | CC BY-SA 2.0 |
-| 世界篇 · 萨佛纳罗拉被处火刑 | [Florence Cathedral seen from Piazzale Michelangelo night dllu.jpg](https://commons.wikimedia.org/wiki/File:Florence_Cathedral_seen_from_Piazzale_Michelangelo_night_dllu.jpg) | Dllu | CC BY-SA 4.0 |
+| 世界篇 · 萨佛纳罗拉被处火刑 | [Unknown painter - Execution of Savonarola on the Piazza della Signoria - WGA23932.jpg](https://commons.wikimedia.org/wiki/File:Unknown_painter_-_Execution_of_Savonarola_on_the_Piazza_della_Signoria_-_WGA23932.jpg) | attributed to Francesco Rosselli (this image possibly of an early modern copy) | Public domain |
 | 世界篇 · 萨拉丁收复耶路撒冷 | [Jerusalem, old city, historical religious sights, القدس البلده القديمه 34.jpg](https://commons.wikimedia.org/wiki/File:Jerusalem,_old_city,_historical_religious_sights,_القدس_البلده_القديمه_34.jpg) | Ahed izhiman | CC BY-SA 4.0 |
 | 世界篇 · 萨格勒布 | [Zagreb (29255640143).jpg](https://commons.wikimedia.org/wiki/File:Zagreb_(29255640143).jpg) | Nick Savchenko from Kiev, Ukraine | CC BY-SA 2.0 |
 | 世界篇 · 萨珊波斯围攻安条克 | [Antakya Sarcophagus in Antakya Archaeological Museum 01.jpg](https://commons.wikimedia.org/wiki/File:Antakya_Sarcophagus_in_Antakya_Archaeological_Museum_01.jpg) | Alicembasli | CC BY 4.0 |
@@ -635,8 +660,10 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 锡吉里耶 | [Sigiriya Luftbild (29781064900).jpg](https://commons.wikimedia.org/wiki/File:Sigiriya_Luftbild_(29781064900).jpg) | dronepicr | CC BY 2.0 |
 | 世界篇 · 长城 | [Pano mutianyu great wall.jpg](https://commons.wikimedia.org/wiki/File:Pano_mutianyu_great_wall.jpg) | Fabienkhan | CC BY-SA 2.5 |
 | 世界篇 · 长崎原子弹爆炸 | [20190202 Nagasaki Peace Park Maiden of Peace-1.jpg](https://commons.wikimedia.org/wiki/File:20190202_Nagasaki_Peace_Park_Maiden_of_Peace-1.jpg) | Balon Greyjoy | CC0 |
-| 世界篇 · 闲山岛海战 | [Geoje 2000.JPG](https://commons.wikimedia.org/wiki/File:Geoje_2000.JPG) | Rafael.lcw0120 | CC BY-SA 4.0 |
+| 世界篇 · 闲山岛海战 | [Documentary painting of the Battle of Hansan Island.jpg](https://commons.wikimedia.org/wiki/File:Documentary_painting_of_the_Battle_of_Hansan_Island.jpg) | War Memorial of Korea Open Archives | KOGL Type 1 |
+| 世界篇 · 阿兹特克帝国灭亡 | [Conquista-de-México-por-Cortés-Tenochtitlan-Painting.png](https://commons.wikimedia.org/wiki/File:Conquista-de-México-por-Cortés-Tenochtitlan-Painting.png) | Unknown authorUnknown author | Public domain |
 | 世界篇 · 阿塔卡马月亮谷 | [Anfiteatro, Valle de la Luna, San Pedro de Atacama, Chile, 2016-02-01, DD 149.JPG](https://commons.wikimedia.org/wiki/File:Anfiteatro,_Valle_de_la_Luna,_San_Pedro_de_Atacama,_Chile,_2016-02-01,_DD_149.JPG) | Diego Delso | CC BY-SA 4.0 |
+| 世界篇 · 阿姆利则惨案 | [Detail of Mural Depicting 1919 Amritsar Massacre - Jallianwala Bagh - Amritsar - Punjab - India (12675536215).jpg](https://commons.wikimedia.org/wiki/File:Detail_of_Mural_Depicting_1919_Amritsar_Massacre_-_Jallianwala_Bagh_-_Amritsar_-_Punjab_-_India_(12675536215).jpg) | Adam Jones from Kelowna, BC, Canada | CC BY-SA 2.0 |
 | 世界篇 · 阿姆斯特丹运河 | [Amsterdam, historic houses1.jpg](https://commons.wikimedia.org/wiki/File:Amsterdam,_historic_houses1.jpg) | Sergio Calleja (Life is a trip) from Barcelona, Spain | CC BY-SA 2.0 |
 | 世界篇 · 阿姆斯特丹银行成立 | [Amsterdam 2841.jpg](https://commons.wikimedia.org/wiki/File:Amsterdam_2841.jpg) | C messier | CC BY-SA 4.0 |
 | 世界篇 · 阿尔及尔 | [Alger monochrome.jpg](https://commons.wikimedia.org/wiki/File:Alger_monochrome.jpg) | Cherif Meriam | CC BY-SA 4.0 |
@@ -651,7 +678,8 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 阿杜瓦战役 | [Battle of Adwa tapestry at Smithsonian 2.png](https://commons.wikimedia.org/wiki/File:Battle_of_Adwa_tapestry_at_Smithsonian_2.png) | Battle_of_Adwa_tapestry_at_Smithsonian.png: Joshua Sherurcij
 derivative work: Zheim (talk) | Attribution |
 | 世界篇 · 阿根廷独立宣言签署 | [Imágen del Monumento a Belgrano, San Miguel de Tucumán, Tucumán, Argentina.jpg](https://commons.wikimedia.org/wiki/File:Imágen_del_Monumento_a_Belgrano,_San_Miguel_de_Tucumán,_Tucumán,_Argentina.jpg) | UnaValquiria | CC BY-SA 4.0 |
-| 世界篇 · 阿瑜陀耶王朝灭亡 | [Ayutthaya - Wat Ratchaburana - 0014.jpg](https://commons.wikimedia.org/wiki/File:Ayutthaya_-_Wat_Ratchaburana_-_0014.jpg) | Stefan Fussan | CC BY-SA 3.0 |
+| 世界篇 · 阿波罗11号登月 | [Apollo 13 - Prime Crew Portrait (S69-62224).jpg](https://commons.wikimedia.org/wiki/File:Apollo_13_-_Prime_Crew_Portrait_(S69-62224).jpg) | NASA Johnson Space Center | Public domain |
+| 世界篇 · 阿瑜陀耶王朝灭亡 | [Naresuan of Ayutthaya Elephant Duel with Mingyi Swa of Toungoo Painting.jpg](https://commons.wikimedia.org/wiki/File:Naresuan_of_Ayutthaya_Elephant_Duel_with_Mingyi_Swa_of_Toungoo_Painting.jpg) | Painting artist Chan Chittrakon, photo by Iudexvivorum, edit by Artanisen | Public domain |
 | 世界篇 · 阿皮亚 | [Apia clock tower, Samoa - August 2016.jpg](https://commons.wikimedia.org/wiki/File:Apia_clock_tower,_Samoa_-_August_2016.jpg) | Rickard Törnblad | CC BY-SA 4.0 |
 | 世界篇 · 阿音札鲁特战役 | [Nazareth Panorama Dafna Tal IMOT (14532097313).jpg](https://commons.wikimedia.org/wiki/File:Nazareth_Panorama_Dafna_Tal_IMOT_(14532097313).jpg) | Israel_photo_gallery | CC BY-SA 2.0 |
 | 世界篇 · 雅典 | [Panorama of Athens from the area of the National Observatory of Athens. In the distance the Acropolis of Athens and Mount Lycabettus.jpg](https://commons.wikimedia.org/wiki/File:Panorama_of_Athens_from_the_area_of_the_National_Observatory_of_Athens._In_the_distance_the_Acropolis_of_Athens_and_Mount_Lycabettus.jpg) | George E. Koronaios | CC BY-SA 4.0 |
@@ -669,6 +697,7 @@ derivative work: Zheim (talk) | Attribution |
 | 世界篇 · 马德拉岛 | [Ribeira da Janela (Madeira, Portugal), Ilheus da Rib -- 2025 -- 1582.jpg](https://commons.wikimedia.org/wiki/File:Ribeira_da_Janela_(Madeira,_Portugal),_Ilheus_da_Rib_--_2025_--_1582.jpg) | Dietmar Rabich | CC BY-SA 4.0 |
 | 世界篇 · 马拉松战役 | [Marathon battle in Stoa Poikile, Carl Robert.jpg](https://commons.wikimedia.org/wiki/File:Marathon_battle_in_Stoa_Poikile,_Carl_Robert.jpg) | Carl Georg Ludwig Theodor Herwig Joseph Robert; (1850-1922) | Public domain |
 | 世界篇 · 马斯喀特 | [Old Muscat City View, Muscat, Oman3.jpg](https://commons.wikimedia.org/wiki/File:Old_Muscat_City_View,_Muscat,_Oman3.jpg) | Domenico Convertini | CC BY-SA 2.0 |
+| 世界篇 · 马歇尔计划提出 | [Europe Plan Marshall. Poster 1947.JPG](https://commons.wikimedia.org/wiki/File:Europe_Plan_Marshall._Poster_1947.JPG) | Reyn Dirksen | Public domain |
 | 世界篇 · 马特洪峰 | [Matterhorn, March 2019 (01).jpg](https://commons.wikimedia.org/wiki/File:Matterhorn,_March_2019_(01).jpg) | Liridon | CC BY-SA 4.0 |
 | 世界篇 · 马罗沃泻湖 | [Marovo Lagoon (16 August 2008).jpg](https://commons.wikimedia.org/wiki/File:Marovo_Lagoon_(16_August_2008).jpg) | Xplore Dive from Mooloolaba, Australia | CC BY 2.0 |
 | 世界篇 · 马赛马拉 | [Grey kestrel bird at the Maasai Mara, Kenya (2014).jpg](https://commons.wikimedia.org/wiki/File:Grey_kestrel_bird_at_the_Maasai_Mara,_Kenya_(2014).jpg) | Sumeet Moghe | CC BY-SA 4.0 |
@@ -678,6 +707,7 @@ derivative work: Zheim (talk) | Attribution |
 | 世界篇 · 麦纳麦 | [Manama, Bahrain Decembre 2014.jpg](https://commons.wikimedia.org/wiki/File:Manama,_Bahrain_Decembre_2014.jpg) | Wadiia | CC BY-SA 4.0 |
 | 世界篇 · 黄山 | [Anhui Huangshan.jpg](https://commons.wikimedia.org/wiki/File:Anhui_Huangshan.jpg) | Miaulian | CC BY-SA 3.0 |
 | 世界篇 · 黄石国家公园 | [Old Faithful Geyser eruption 03.jpg](https://commons.wikimedia.org/wiki/File:Old_Faithful_Geyser_eruption_03.jpg) | Supercarwaar | CC BY-SA 4.0 |
+| 世界篇 · 黑船来航 | [The American expedition, under Commodore Perry, landing in Japan, July 14, 1853 - Lith. & print by Hatch & Severyn, 140 Fulton St. N.Y. ; Severyn del. LCCN2014647410.jpg](https://commons.wikimedia.org/wiki/File:The_American_expedition,_under_Commodore_Perry,_landing_in_Japan,_July_14,_1853_-_Lith._&_print_by_Hatch_&_Severyn,_140_Fulton_St._N.Y._;_Severyn_del._LCCN2014647410.jpg) | Hatch &amp; Severyn, lithographer; Taylor, Bayard, 1825-1878.; Severyn, Charles, 1820-, ar | Public domain |
 | 世界篇 · 龙达 | [RondaBridge.jpg](https://commons.wikimedia.org/wiki/File:RondaBridge.jpg) | Gavin pais | CC BY-SA 4.0 |
 
 其余图片来自项目自备素材，不由 Wikimedia Commons 提供：其中 157 张为 AI 生成图（中国篇一二星 120 张、世界篇 37 张），29 张为 scripts/generate_illustrations.py 按地名意象绘制的插画（中国篇 28 张、世界篇 1 张），均未登记在本表中。

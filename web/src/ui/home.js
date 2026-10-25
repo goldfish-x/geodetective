@@ -10,7 +10,7 @@ export function renderHome(app) {
 
   const DEMO_BUILD = import.meta.env.MODE === 'demo'
   const PROP_RULE_LINE = DEMO_BUILD
-    ? '道具（演示版免费档）：复活罗盘 ×2、回溯怀表 ×2、疆域透镜 ×2，整局共享；加时沙漏属付费档内容，演示版不开放。'
+    ? '道具（演示版免费档）：复活罗盘 ×1、回溯怀表 ×1、疆域透镜 ×2，整局共享；加时沙漏属付费档内容，演示版不开放。'
     : '道具按付费档位发放（内测默认三档）：一档无道具；二档 2 枚加时沙漏 + 2 枚复活罗盘；三档再加 1 枚回溯怀表与 1 枚疆域透镜。'
 
   app.innerHTML = `

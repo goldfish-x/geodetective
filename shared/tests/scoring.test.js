@@ -29,7 +29,7 @@ test('关卡结构不变量：15 局、三线循环、难度每三局递增', ()
 
 test('道具与档位不变量', () => {
   assert.deepEqual(Object.keys(PROPS), ['time', 'revive', 'redo', 'area'])
-  assert.deepEqual(tierCounts(0), { revive: 2, redo: 2, area: 2 })   // 演示版免费档：不含付费专属的加时沙漏
+  assert.deepEqual(tierCounts(0), { revive: 1, redo: 1, area: 2 })   // 演示版免费档：不含付费专属的加时沙漏
 assert.equal(tierCounts(0).time, undefined)
 assert.deepEqual(tierCounts(1), {})
   assert.deepEqual(tierCounts(2), { time: 2, revive: 2 })

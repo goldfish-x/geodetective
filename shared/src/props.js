@@ -9,11 +9,11 @@ export const PROPS = {
 }
 
 // 付费档位：1 档无道具；2 档 2 次加时 + 2 次复活；3 档再加 1 次回溯 + 1 次透镜
-// 0 档 = 演示版（GitHub Pages 免费包）：只给三种非付费道具各 2 次，
+// 0 档 = 演示版（GitHub Pages 免费包）：复活罗盘与回溯怀表各 1 次、疆域透镜 2 次，
 // 加时沙漏属于付费档内容，演示版不下发、道具栏也不出现该图标。
 export const FREE_TIER = 0
 export const TIERS = {
-  0: { label: '免费版', counts: { revive: 2, redo: 2, area: 2 } },
+  0: { label: '免费版', counts: { revive: 1, redo: 1, area: 2 } },
   1: { label: '一档', counts: {} },
   2: { label: '二档', counts: { time: 2, revive: 2 } },
   3: { label: '三档', counts: { time: 3, revive: 2, redo: 1, area: 1 } }
