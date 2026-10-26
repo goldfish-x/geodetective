@@ -24,6 +24,7 @@ for m in ("china","world"):
             else: badge="Commons 实景"
             prov.setdefault(p,{"badge":badge,"title":(v.get("title") or v.get("url") or "")[:90],
                                "license":(v.get("license") or "")[:40]})
+RECHECK=set(json.load(open(os.path.join(R,"scripts/history-image-recheck-prompts.json"),encoding="utf-8"))) if os.path.exists(os.path.join(R,"scripts/history-image-recheck-prompts.json")) else set()
 ITEM=[]
 for m in ("china","world"):
     for x in bank[m]["history"]:
@@ -33,7 +34,8 @@ for m in ("china","world"):
         ill=set(json.load(open(os.path.join(R,"scripts/illustration-scenes.json"),encoding="utf-8"))) if os.path.exists(os.path.join(R,"scripts/illustration-scenes.json")) else set()
         badge=pv.get("badge") or ("代码插画" if n in ill else ("自备生成图" if desc[m].get(n,{}).get("img") else "自备素材"))
         ITEM.append({"m":m,"n":n,"t":x["difficulty"],"a":co[m][n][2],"hint":x["hint"],
-                     "f":f,"b":badge,"ttl":pv.get("title",""),"lic":pv.get("license","")})
+                     "f":f,"b":badge,"ttl":pv.get("title",""),"lic":pv.get("license",""),
+                     "r":1 if (m+"|"+n) in RECHECK else 0})
 ITEM.sort(key=lambda x:(x["m"],x["t"],x["n"]))
 from collections import Counter
 cnt=Counter((i["m"],i["b"]) for i in ITEM)
@@ -91,7 +93,7 @@ textarea{flex:1;min-height:52px;background:#0b1015;color:var(--fg);border:1px so
 <script>
 const DATA=__DATA__;
 const KEY="gd_review_hist_v1";
-let mark=new Set(JSON.parse(localStorage.getItem(KEY)||"[]"));
+let mark=new Set(JSON.parse(localStorage.getItem(KEY)||"null")||DATA.filter(d=>d.r).map(d=>d.m+"|"+d.n));
 const st={m:"",t:"",mark:"",q:""};
 const grid=document.getElementById("grid");
 function save(){localStorage.setItem(KEY,JSON.stringify([...mark]))}
