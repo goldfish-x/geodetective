@@ -462,16 +462,18 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "九一八事变": {
-  "url": "https://img2.baidu.com/it/u=71766945,1453014832&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
-  "page": "mbd.baidu.com",
-  "title": "事变图片素材九·一八事变九一八事变图片高清大图九一八图片918图片",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__九一八事变__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "五四运动": {
-  "url": "https://img0.baidu.com/it/u=2456204151,1369716600&fm=253&fmt=auto&app=138&f=JPEG?w=375&h=500",
-  "page": "travel.qunar.com",
-  "title": "五四运动火烧赵家楼遗址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__五四运动__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "井冈山会师": {
   "url": "https://img2.baidu.com/it/u=1858936582,3383226921&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=857",
@@ -517,16 +519,18 @@
   "subject": "event"
  },
  "官渡之战": {
-  "url": "https://img1.baidu.com/it/u=4121747094,3536633358&fm=253&fmt=auto&app=120&f=JPEG?w=667&h=500",
-  "page": "www.sohu.com",
-  "title": "文化中国行•走进河南省郑州市中牟县•官渡之战遗址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__官渡之战__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "巨鹿之战": {
-  "url": "https://img2.baidu.com/it/u=737443884,2896563081&fm=253&fmt=auto&app=138&f=JPEG?w=677&h=500",
-  "page": "mbd.baidu.com",
-  "title": "🚩陈胜吴广起义后,秦末的巨鹿之战🌪️",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__巨鹿之战__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "平津战役": {
   "url": "https://img0.baidu.com/it/u=2189693771,762904880&fm=253&fmt=auto&app=120&f=JPEG?w=607&h=407",
@@ -565,10 +569,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "牧野之战": {
-  "url": "https://img2.baidu.com/it/u=3957741908,351125413&fm=253&fmt=auto&app=120&f=JPEG?w=820&h=615",
-  "page": "baijiahao.baidu.com",
-  "title": "牧野之战遗址,诗经文化源头,新乡原来这么好玩",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__牧野之战__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "甲午战争": {
   "url": "https://img0.baidu.com/it/u=3168088917,4260377766&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
@@ -614,10 +619,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "赤壁之战": {
-  "url": "https://img0.baidu.com/it/u=2653323759,1403501622&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1108",
-  "page": "www.meipian.cn",
-  "title": "三国古战场遗址~赤壁之战",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__赤壁之战__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "辛亥革命": {
   "url": "https://img1.baidu.com/it/u=2625952845,348164003&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
@@ -681,16 +687,18 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "靖康之变": {
-  "url": "https://img1.baidu.com/it/u=2860692560,2342294617&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
-  "page": "history.sohu.com",
-  "title": "图源:图虫创意靖康之变后,宋室南渡,建立南宋(1127—1279),后定都临安",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__靖康之变__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "飞夺泸定桥": {
-  "url": "https://img0.baidu.com/it/u=3294436008,3853279936&fm=253&fmt=auto&app=120&f=JPEG?w=1025&h=711",
-  "page": "news.sohu.com",
-  "title": "红军飞夺泸定桥纪念碑(图片来源:学习时报)在当今时代,科技创新日",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__飞夺泸定桥__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "勾践复国": {
   "url": "https://img2.baidu.com/it/u=41002583,2157404924&fm=253&fmt=auto&app=120&f=JPEG?w=727&h=500",
@@ -787,10 +795,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "澶渊之盟": {
-  "url": "https://img2.baidu.com/it/u=974376464,1007713282&fm=253&fmt=auto&app=138&f=JPEG?w=665&h=500",
-  "page": "mbd.baidu.com",
-  "title": "穿越千年|澶渊之盟纪念馆超全打卡攻略",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__澶渊之盟__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "玄奘西行": {
   "url": "https://img1.baidu.com/it/u=2155545175,3317548201&fm=253&fmt=auto&app=138&f=JPEG?w=840&h=500",
@@ -881,10 +890,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "黄巾起义": {
-  "url": "https://img1.baidu.com/it/u=3481710871,1528409793&fm=253&fmt=auto&app=138&f=JPEG?w=607&h=373",
-  "page": "baike.baidu.com",
-  "title": "黄巾起义遗址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__黄巾起义__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "南京条约": {
   "url": "https://img1.baidu.com/it/u=430383285,1195221675&fm=253&fmt=auto&app=120&f=JPEG?w=1067&h=800",
@@ -893,10 +903,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "大泽乡起义": {
-  "url": "https://img0.baidu.com/it/u=2730849568,3001115259&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
-  "page": "www.meipian.cn",
-  "title": "吊古大泽乡起义旧址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__大泽乡起义__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
  },
  "商鞅变法": {
   "url": "https://img0.baidu.com/it/u=3321317129,3311707593&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
@@ -1135,6 +1146,363 @@
   "page": "",
   "title": "阏与之战:秦国是如何败在赵国手上的 ?",
   "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "subject": "event"
+ },
+ "一江山岛战役": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__一江山岛战役__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "三藩之乱": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__三藩之乱__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "东山岛战役": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__东山岛战役__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "俺答汗围北京": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__俺答汗围北京__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "党锢之祸": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__党锢之祸__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "关汉卿出生": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__关汉卿出生__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "刘整降元献策": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__刘整降元献策__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "刘福通红巾军颍州起义": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__刘福通红巾军颍州起义__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "刘裕北伐": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__刘裕北伐__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "召陵之盟": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__召陵之盟__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "哱拜宁夏之乱": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__哱拜宁夏之乱__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "国人暴动": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__国人暴动__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "圆明园被焚": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__圆明园被焚__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "壬寅宫变": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__壬寅宫变__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "大小金川之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__大小金川之战__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "大运河开通": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__大运河开通__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "夷陵之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__夷陵之战__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "姑臧之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__姑臧之战__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "完颜阿骨打建国": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__完颜阿骨打建国__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "岳飞出生": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__岳飞出生__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "左宗棠收复新疆": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__左宗棠收复新疆__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "戊戌变法": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__戊戌变法__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "昆阳之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__昆阳之战__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "曾侯乙编钟出土": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__曾侯乙编钟出土__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "朵颜三卫内附": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__朵颜三卫内附__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "李自成破承天": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__李自成破承天__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "李鸿章出生": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__李鸿章出生__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "林则徐出生": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__林则徐出生__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "柏举之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__柏举之战__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "桂陵之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__桂陵之战__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "桓温北伐": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__桓温北伐__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "永乐迁都": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__永乐迁都__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "永嘉之乱": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__永嘉之乱__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "沙丘之变": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__沙丘之变__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "烽火戏诸侯": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__烽火戏诸侯__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "甲骨文出土": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__甲骨文出土__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "白起拔郢": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__白起拔郢__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "硖石之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__硖石之战__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "窦固破北匈奴": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__窦固破北匈奴__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "耶律德光灭后晋": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__耶律德光灭后晋__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "花木兰从军": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__花木兰从军__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "衣冠南渡": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__衣冠南渡__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "赵州桥建成": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__赵州桥建成__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "鄢陵之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__鄢陵之战__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "长勺之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__长勺之战__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "阿睦尔撒纳伊犁叛乱": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__阿睦尔撒纳伊犁叛乱__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "马嵬驿兵变": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__马嵬驿兵变__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "马王堆汉墓发掘": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__马王堆汉墓发掘__2.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "鲜卑慕容皝建前燕": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__鲜卑慕容皝建前燕__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "黄池之会": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__黄池之会__1.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "龙场悟道": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "china__龙场悟道__0.jpg",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
   "subject": "event"
  }
 }
