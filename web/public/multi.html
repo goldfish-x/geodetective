@@ -17,12 +17,13 @@ footer{position:fixed;left:0;right:0;bottom:0;background:rgba(15,20,25,.98);bord
 textarea{flex:1;height:46px;background:#0b1015;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px;font-size:12px}
 button{background:#1f2937;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px 10px;cursor:pointer}
 </style></head><body>
-<header><h1>多选复核 · 17 条事件</h1>
+<header><h1>多选复核 · 0 条事件</h1>
 <div class="dim">这些事件当时被点了多张（网页取消选择没删记录导致的）。每条**只能留一张**：点你想要的那张，最后「导出」，把结果发我，我按你选的重装。</div></header>
-<div id="list"></div>
+<div style="padding:20px;color:#93a4b8">全部 17 条多选已按你的选择确认入库，此页保留备查。</div>
+<div id="done" class="dim" style="padding:20px;display:none">全部 17 条多选已确认入库，此页保留备查。</div>
 <footer><button id="exp">导出改选</button><textarea id="out" placeholder="点导出后出现清单"></textarea></footer>
 <script>
-const D=[{"m":"china","n":"圆明园被焚","t":1,"a":"北京市","c":[{"f":"china__圆明园被焚__1.jpg"},{"f":"china__圆明园被焚__0.jpg"}]},{"m":"china","n":"大泽乡起义","t":1,"a":"安徽省","c":[{"f":"china__大泽乡起义__0.jpg"},{"f":"china__大泽乡起义__1.jpg"},{"f":"china__大泽乡起义__2.jpg"}]},{"m":"china","n":"飞夺泸定桥","t":1,"a":"四川省","c":[{"f":"china__飞夺泸定桥__2.jpg"},{"f":"china__飞夺泸定桥__0.jpg"}]},{"m":"china","n":"白起拔郢","t":3,"a":"湖北省","c":[{"f":"china__白起拔郢__2.jpg"},{"f":"china__白起拔郢__0.jpg"}]},{"m":"china","n":"刘裕北伐","t":4,"a":"陕西省","c":[{"f":"china__刘裕北伐__1.jpg"},{"f":"china__刘裕北伐__2.jpg"}]},{"m":"china","n":"大小金川之战","t":4,"a":"四川省","c":[{"f":"china__大小金川之战__1.jpg"},{"f":"china__大小金川之战__2.jpg"}]},{"m":"china","n":"俺答汗围北京","t":5,"a":"北京市","c":[{"f":"china__俺答汗围北京__2.jpg"},{"f":"china__俺答汗围北京__1.jpg"},{"f":"china__俺答汗围北京__0.jpg"}]},{"m":"china","n":"永嘉之乱","t":5,"a":"河南省","c":[{"f":"china__永嘉之乱__1.jpg"},{"f":"china__永嘉之乱__2.jpg"}]},{"m":"china","n":"烽火戏诸侯","t":5,"a":"陕西省","c":[{"f":"china__烽火戏诸侯__1.jpg"},{"f":"china__烽火戏诸侯__2.jpg"}]},{"m":"china","n":"赵州桥建成","t":5,"a":"河北省","c":[{"f":"china__赵州桥建成__2.jpg"},{"f":"china__赵州桥建成__0.jpg"}]},{"m":"world","n":"芝加哥大火","t":2,"a":"United States","c":[{"f":"world__芝加哥大火__0.jpg"},{"f":"world__芝加哥大火__2.jpg"}]},{"m":"world","n":"圣女贞德奥尔良解围","t":3,"a":"France","c":[{"f":"world__圣女贞德奥尔良解围__1.jpg"},{"f":"world__圣女贞德奥尔良解围__2.jpg"}]},{"m":"world","n":"罗马大火","t":3,"a":"Italy","c":[{"f":"world__罗马大火__0.jpg"},{"f":"world__罗马大火__2.jpg"}]},{"m":"world","n":"马哈茂德二世废除近卫军","t":4,"a":"Turkey","c":[{"f":"world__马哈茂德二世废除近卫军__0.jpg"},{"f":"world__马哈茂德二世废除近卫军__1.jpg"}]},{"m":"world","n":"威廉·华莱士遇害","t":5,"a":"United Kingdom","c":[{"f":"world__威廉·华莱士遇害__0.jpg"},{"f":"world__威廉·华莱士遇害__1.jpg"}]},{"m":"world","n":"阿拔斯王朝建立","t":5,"a":"Iraq","c":[{"f":"world__阿拔斯王朝建立__0.jpg"},{"f":"world__阿拔斯王朝建立__1.jpg"}]},{"m":"world","n":"麦哲伦在麦克坦岛战死","t":5,"a":"Philippines","c":[{"f":"world__麦哲伦在麦克坦岛战死__1.jpg"},{"f":"world__麦哲伦在麦克坦岛战死__2.jpg"}]}];const K="gd_multi_pick_v1";
+const D=[];const K="gd_multi_pick_v1";
 let sel=new Map(JSON.parse(localStorage.getItem(K)||"[]"));
 const list=document.getElementById("list");
 function draw(){

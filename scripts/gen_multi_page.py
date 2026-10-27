@@ -5,7 +5,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def rd(p):
     fp=os.path.join(R,p); return json.load(open(fp,encoding="utf-8")) if os.path.exists(fp) else {}
-MULTI=rd("_multi.json")
+MULTI=rd("scripts/history-image-multi.json")
 INFO={}
 for m in ("china","world"):
     d=rd("web/src/data/%s.json"%m); co=rd("web/src/data/%s-coords.json"%m)
@@ -37,6 +37,7 @@ button{background:#1f2937;color:var(--fg);border:1px solid var(--line);border-ra
 <header><h1>多选复核 · __N__ 条事件</h1>
 <div class="dim">这些事件当时被点了多张（网页取消选择没删记录导致的）。每条**只能留一张**：点你想要的那张，最后「导出」，把结果发我，我按你选的重装。</div></header>
 <div id="list"></div>
+<div id="done" class="dim" style="padding:20px;display:none">全部 17 条多选已确认入库，此页保留备查。</div>
 <footer><button id="exp">导出改选</button><textarea id="out" placeholder="点导出后出现清单"></textarea></footer>
 <script>
 const D=__DATA__;const K="gd_multi_pick_v1";
@@ -64,6 +65,8 @@ document.getElementById("exp").addEventListener("click",()=>{
 });
 draw();
 </script></body></html>"""
+if not rows:
+    HTML=HTML.replace('<div id="list"></div>','<div style="padding:20px;color:#93a4b8">全部 17 条多选已按你的选择确认入库，此页保留备查。</div>')
 HTML=(HTML.replace("__DATA__",json.dumps(rows,ensure_ascii=False,separators=(",",":"))).replace("__N__",str(len(rows))))
 open(os.path.join(R,"web/public/multi.html"),"w",encoding="utf-8").write(HTML)
 print("multi events",len(rows))
