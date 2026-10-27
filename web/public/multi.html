@@ -1,0 +1,49 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>多选复核 · 历史配图</title>
+<style>
+:root{--bg:#0f1419;--card:#171e26;--line:#243040;--fg:#e6edf3;--dim:#93a4b8;--ok:#2ea043;--acc:#ffb454}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+header{position:sticky;top:0;z-index:9;background:rgba(15,20,25,.97);border-bottom:1px solid var(--line);padding:10px 14px}
+h1{font-size:15px;margin:0 0 6px}.dim{color:var(--dim);font-size:12px}
+.ev{border-bottom:1px solid var(--line);padding:12px 14px}
+.ev h3{margin:0 0 8px;font-size:14px}.ev h3 span{color:var(--dim);font-weight:400;font-size:12px;margin-left:8px}
+.cands{display:flex;gap:10px;flex-wrap:wrap}
+.cand{width:230px;border:2px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;background:var(--card);position:relative}
+.cand img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.cand .f{font-size:11px;color:var(--dim);padding:4px 6px}
+.cand.sel{border-color:var(--ok);box-shadow:0 0 0 2px rgba(46,160,67,.35)}
+.cand.cur::after{content:"当前使用";position:absolute;top:6px;right:6px;background:var(--acc);color:#111;font-size:10px;padding:2px 6px;border-radius:5px;font-weight:700}
+footer{position:fixed;left:0;right:0;bottom:0;background:rgba(15,20,25,.98);border-top:1px solid var(--line);padding:8px 12px;display:flex;gap:10px;align-items:center}
+textarea{flex:1;height:46px;background:#0b1015;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px;font-size:12px}
+button{background:#1f2937;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px 10px;cursor:pointer}
+</style></head><body>
+<header><h1>多选复核 · 17 条事件</h1>
+<div class="dim">这些事件当时被点了多张（网页取消选择没删记录导致的）。每条**只能留一张**：点你想要的那张，最后「导出」，把结果发我，我按你选的重装。</div></header>
+<div id="list"></div>
+<footer><button id="exp">导出改选</button><textarea id="out" placeholder="点导出后出现清单"></textarea></footer>
+<script>
+const D=[{"m":"china","n":"圆明园被焚","t":1,"a":"北京市","c":[{"f":"china__圆明园被焚__1.jpg"},{"f":"china__圆明园被焚__0.jpg"}]},{"m":"china","n":"大泽乡起义","t":1,"a":"安徽省","c":[{"f":"china__大泽乡起义__0.jpg"},{"f":"china__大泽乡起义__1.jpg"},{"f":"china__大泽乡起义__2.jpg"}]},{"m":"china","n":"飞夺泸定桥","t":1,"a":"四川省","c":[{"f":"china__飞夺泸定桥__2.jpg"},{"f":"china__飞夺泸定桥__0.jpg"}]},{"m":"china","n":"白起拔郢","t":3,"a":"湖北省","c":[{"f":"china__白起拔郢__2.jpg"},{"f":"china__白起拔郢__0.jpg"}]},{"m":"china","n":"刘裕北伐","t":4,"a":"陕西省","c":[{"f":"china__刘裕北伐__1.jpg"},{"f":"china__刘裕北伐__2.jpg"}]},{"m":"china","n":"大小金川之战","t":4,"a":"四川省","c":[{"f":"china__大小金川之战__1.jpg"},{"f":"china__大小金川之战__2.jpg"}]},{"m":"china","n":"俺答汗围北京","t":5,"a":"北京市","c":[{"f":"china__俺答汗围北京__2.jpg"},{"f":"china__俺答汗围北京__1.jpg"},{"f":"china__俺答汗围北京__0.jpg"}]},{"m":"china","n":"永嘉之乱","t":5,"a":"河南省","c":[{"f":"china__永嘉之乱__1.jpg"},{"f":"china__永嘉之乱__2.jpg"}]},{"m":"china","n":"烽火戏诸侯","t":5,"a":"陕西省","c":[{"f":"china__烽火戏诸侯__1.jpg"},{"f":"china__烽火戏诸侯__2.jpg"}]},{"m":"china","n":"赵州桥建成","t":5,"a":"河北省","c":[{"f":"china__赵州桥建成__2.jpg"},{"f":"china__赵州桥建成__0.jpg"}]},{"m":"world","n":"芝加哥大火","t":2,"a":"United States","c":[{"f":"world__芝加哥大火__0.jpg"},{"f":"world__芝加哥大火__2.jpg"}]},{"m":"world","n":"圣女贞德奥尔良解围","t":3,"a":"France","c":[{"f":"world__圣女贞德奥尔良解围__1.jpg"},{"f":"world__圣女贞德奥尔良解围__2.jpg"}]},{"m":"world","n":"罗马大火","t":3,"a":"Italy","c":[{"f":"world__罗马大火__0.jpg"},{"f":"world__罗马大火__2.jpg"}]},{"m":"world","n":"马哈茂德二世废除近卫军","t":4,"a":"Turkey","c":[{"f":"world__马哈茂德二世废除近卫军__0.jpg"},{"f":"world__马哈茂德二世废除近卫军__1.jpg"}]},{"m":"world","n":"威廉·华莱士遇害","t":5,"a":"United Kingdom","c":[{"f":"world__威廉·华莱士遇害__0.jpg"},{"f":"world__威廉·华莱士遇害__1.jpg"}]},{"m":"world","n":"阿拔斯王朝建立","t":5,"a":"Iraq","c":[{"f":"world__阿拔斯王朝建立__0.jpg"},{"f":"world__阿拔斯王朝建立__1.jpg"}]},{"m":"world","n":"麦哲伦在麦克坦岛战死","t":5,"a":"Philippines","c":[{"f":"world__麦哲伦在麦克坦岛战死__1.jpg"},{"f":"world__麦哲伦在麦克坦岛战死__2.jpg"}]}];const K="gd_multi_pick_v1";
+let sel=new Map(JSON.parse(localStorage.getItem(K)||"[]"));
+const list=document.getElementById("list");
+function draw(){
+  list.innerHTML=D.map(r=>{const k=r.m+"|"+r.n;
+    return `<div class="ev"><h3>${r.n}<span>${r.m==="china"?"中国篇":"世界篇"} · ${"★".repeat(r.t)} · ${r.a||"—"}</span></h3>
+    <div class="cands">`+r.c.map(c=>{const f=c.f.replace(/^cand\//,"");
+      const cur=(r.c[0].f===c.f);
+      return `<div class="cand${sel.get(k)===f?" sel":""}${cur?" cur":""}" data-k="${k}" data-f="${f}">
+      <img loading="lazy" src="cand/${encodeURIComponent(f)}"><div class="f">${f.slice(-8)}</div></div>`}).join("")+`</div></div>`}).join("");
+}
+list.addEventListener("click",e=>{
+  const el=e.target.closest(".cand"); if(!el) return;
+  const k=el.dataset.k, f=el.dataset.f;
+  [...list.querySelectorAll(`.cand[data-k="${CSS.escape(k)}"]`)].forEach(x=>x.classList.remove("sel"));
+  sel.set(k,f); el.classList.add("sel");
+  localStorage.setItem(K,JSON.stringify([...sel]));
+});
+document.getElementById("exp").addEventListener("click",()=>{
+  const lines=[...sel].map(([k,f])=>{const p=k.split("|");
+    return (p[0]==="china"?"中国篇 ":"世界篇 ")+p[1]+" -> "+f});
+  document.getElementById("out").value=lines.join("\n");document.getElementById("out").select();
+});
+draw();
+</script></body></html>

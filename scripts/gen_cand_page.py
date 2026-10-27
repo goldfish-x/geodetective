@@ -58,7 +58,9 @@ list.addEventListener("click",e=>{
   const k=el.dataset.k, f=el.dataset.f;
   [...list.querySelectorAll(`.cand[data-k="${CSS.escape(k)}"]`)].forEach(x=>x.classList.remove("sel"));
   const key=k+"|"+f;
-  if(sel.has(key)) sel.delete(key); else { sel.add(key); el.classList.add("sel"); }
+  const was=sel.has(key);
+  [...sel].filter(x=>x.startsWith(k+"|")).forEach(x=>sel.delete(x));   // 同一事件只保留一张
+  if(!was){ sel.add(key); el.classList.add("sel"); }
   localStorage.setItem(K,JSON.stringify([...sel]));
 });
 document.getElementById("q").addEventListener("input",e=>draw(e.target.value));

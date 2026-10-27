@@ -1355,8 +1355,8 @@
  "苏联解体": {
   "url": "",
   "page": "user-supplied",
-  "title": "苏联解体.png（用户提供网络图）",
-  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "title": "world__苏联解体__1.jpg",
+  "license": "未核验授权（用户提供的网络图/用户点选图，商用前需替换）",
   "subject": "event"
  },
  "阿斯旺大坝落成": {
@@ -1364,6 +1364,13 @@
   "page": "user-supplied",
   "title": "阿斯旺大坝建成.png（用户提供网络图）",
   "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "克鲁亚围城战": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "克鲁亚围城战.png",
+  "license": "未核验授权（用户提供的网络图/用户点选图，商用前需替换）",
   "subject": "event"
  }
 }

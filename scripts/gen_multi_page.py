@@ -1,0 +1,69 @@
+# -*- coding: utf-8 -*-
+"""生成 web/public/multi.html：17 条「多选」事件，同一事件内单选，导出改选结果"""
+import os,json,sys
+sys.stdout.reconfigure(encoding="utf-8")
+R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+def rd(p):
+    fp=os.path.join(R,p); return json.load(open(fp,encoding="utf-8")) if os.path.exists(fp) else {}
+MULTI=rd("_multi.json")
+INFO={}
+for m in ("china","world"):
+    d=rd("web/src/data/%s.json"%m); co=rd("web/src/data/%s-coords.json"%m)
+    for x in d["history"]: INFO[m+"|"+x["name"]]=(x["difficulty"],co[x["name"]][2])
+rows=[]
+for k,files in MULTI.items():
+    m,n=k.split("|",1); t,a=INFO[k]
+    rows.append({"m":m,"n":n,"t":t,"a":a,"c":[{"f":f} for f in files]})
+rows.sort(key=lambda r:(r["m"]!="china",r["t"],r["n"]))
+HTML="""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>多选复核 · 历史配图</title>
+<style>
+:root{--bg:#0f1419;--card:#171e26;--line:#243040;--fg:#e6edf3;--dim:#93a4b8;--ok:#2ea043;--acc:#ffb454}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+header{position:sticky;top:0;z-index:9;background:rgba(15,20,25,.97);border-bottom:1px solid var(--line);padding:10px 14px}
+h1{font-size:15px;margin:0 0 6px}.dim{color:var(--dim);font-size:12px}
+.ev{border-bottom:1px solid var(--line);padding:12px 14px}
+.ev h3{margin:0 0 8px;font-size:14px}.ev h3 span{color:var(--dim);font-weight:400;font-size:12px;margin-left:8px}
+.cands{display:flex;gap:10px;flex-wrap:wrap}
+.cand{width:230px;border:2px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;background:var(--card);position:relative}
+.cand img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.cand .f{font-size:11px;color:var(--dim);padding:4px 6px}
+.cand.sel{border-color:var(--ok);box-shadow:0 0 0 2px rgba(46,160,67,.35)}
+.cand.cur::after{content:"当前使用";position:absolute;top:6px;right:6px;background:var(--acc);color:#111;font-size:10px;padding:2px 6px;border-radius:5px;font-weight:700}
+footer{position:fixed;left:0;right:0;bottom:0;background:rgba(15,20,25,.98);border-top:1px solid var(--line);padding:8px 12px;display:flex;gap:10px;align-items:center}
+textarea{flex:1;height:46px;background:#0b1015;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px;font-size:12px}
+button{background:#1f2937;color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px 10px;cursor:pointer}
+</style></head><body>
+<header><h1>多选复核 · __N__ 条事件</h1>
+<div class="dim">这些事件当时被点了多张（网页取消选择没删记录导致的）。每条**只能留一张**：点你想要的那张，最后「导出」，把结果发我，我按你选的重装。</div></header>
+<div id="list"></div>
+<footer><button id="exp">导出改选</button><textarea id="out" placeholder="点导出后出现清单"></textarea></footer>
+<script>
+const D=__DATA__;const K="gd_multi_pick_v1";
+let sel=new Map(JSON.parse(localStorage.getItem(K)||"[]"));
+const list=document.getElementById("list");
+function draw(){
+  list.innerHTML=D.map(r=>{const k=r.m+"|"+r.n;
+    return `<div class="ev"><h3>${r.n}<span>${r.m==="china"?"中国篇":"世界篇"} · ${"★".repeat(r.t)} · ${r.a||"—"}</span></h3>
+    <div class="cands">`+r.c.map(c=>{const f=c.f.replace(/^cand\\//,"");
+      const cur=(r.c[0].f===c.f);
+      return `<div class="cand${sel.get(k)===f?" sel":""}${cur?" cur":""}" data-k="${k}" data-f="${f}">
+      <img loading="lazy" src="cand/${encodeURIComponent(f)}"><div class="f">${f.slice(-8)}</div></div>`}).join("")+`</div></div>`}).join("");
+}
+list.addEventListener("click",e=>{
+  const el=e.target.closest(".cand"); if(!el) return;
+  const k=el.dataset.k, f=el.dataset.f;
+  [...list.querySelectorAll(`.cand[data-k="${CSS.escape(k)}"]`)].forEach(x=>x.classList.remove("sel"));
+  sel.set(k,f); el.classList.add("sel");
+  localStorage.setItem(K,JSON.stringify([...sel]));
+});
+document.getElementById("exp").addEventListener("click",()=>{
+  const lines=[...sel].map(([k,f])=>{const p=k.split("|");
+    return (p[0]==="china"?"中国篇 ":"世界篇 ")+p[1]+" -> "+f});
+  document.getElementById("out").value=lines.join("\\n");document.getElementById("out").select();
+});
+draw();
+</script></body></html>"""
+HTML=(HTML.replace("__DATA__",json.dumps(rows,ensure_ascii=False,separators=(",",":"))).replace("__N__",str(len(rows))))
+open(os.path.join(R,"web/public/multi.html"),"w",encoding="utf-8").write(HTML)
+print("multi events",len(rows))
