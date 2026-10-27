@@ -463,9 +463,9 @@
  },
  "九一八事变": {
   "url": "",
-  "page": "image.baidu.com",
-  "title": "china__九一八事变__2.jpg",
-  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "page": "user-supplied",
+  "title": "九一八事变.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "五四运动": {
@@ -620,9 +620,9 @@
  },
  "赤壁之战": {
   "url": "",
-  "page": "image.baidu.com",
-  "title": "china__赤壁之战__2.jpg",
-  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "page": "user-supplied",
+  "title": "赤壁之战.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "辛亥革命": {
@@ -644,10 +644,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "郑和下西洋": {
-  "url": "https://img2.baidu.com/it/u=1258273660,2860193756&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
-  "page": "mbd.baidu.com",
-  "title": "是明代郑和下西洋时期宝船的建造地遗址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "郑和下西洋.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "郑成功收复台湾": {
   "url": "https://img2.baidu.com/it/u=385896788,1581517886&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1034",
@@ -796,9 +797,9 @@
  },
  "澶渊之盟": {
   "url": "",
-  "page": "image.baidu.com",
-  "title": "china__澶渊之盟__0.jpg",
-  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "page": "user-supplied",
+  "title": "澶渊之盟.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "玄奘西行": {
@@ -891,9 +892,9 @@
  },
  "黄巾起义": {
   "url": "",
-  "page": "image.baidu.com",
-  "title": "china__黄巾起义__2.jpg",
-  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "page": "user-supplied",
+  "title": "黄巾起义.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "南京条约": {
@@ -1234,9 +1235,9 @@
  },
  "圆明园被焚": {
   "url": "",
-  "page": "image.baidu.com",
-  "title": "china__圆明园被焚__1.jpg",
-  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "page": "user-supplied",
+  "title": "圆明园被烧.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "壬寅宫变": {
@@ -1503,6 +1504,76 @@
   "page": "image.baidu.com",
   "title": "china__龙场悟道__0.jpg",
   "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event"
+ },
+ "七国之乱": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "七国之乱.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "秦始皇兵马俑出土": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "兵马俑出土.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "左宗棠出生": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "左宗棠出生.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "朱元璋取集庆": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "朱元璋取集庆.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "朱熹出生": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "朱熹出生.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "王安石出生": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "王安石出生.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "班超投笔从戎": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "班超投笔从戎.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "荆轲刺秦王": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "荆轲刺秦王.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "葵丘会盟": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "葵丘会盟.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "越王勾践剑出土": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "越王勾践剑.png（用户提供网络图）",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  }
 }

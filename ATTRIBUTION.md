@@ -1,6 +1,6 @@
 # 图片素材署名 / Attribution
 
-`web/public/images/` 中来自 Wikimedia Commons 的地名配图，共 699 张。
+`web/public/images/` 中来自 Wikimedia Commons 的地名配图，共 698 张。
 这些图片多为 CC BY / CC BY-SA 授权，按许可证要求在此列出作者与许可证；
 部分为 CC0 或公有领域。每条链接均指向 Commons 文件页（含原始分辨率与完整授权信息）。
 
@@ -618,7 +618,6 @@ Agence Rol. Photographe | Public domain |
 | 世界篇 · 苏伊士运河国有化 | [Ismailia Egypt 1941.jpg](https://commons.wikimedia.org/wiki/File:Ismailia_Egypt_1941.jpg) | Egyptian Survey Department (Maṣlaḥat al-Misāḥah) | Public domain |
 | 世界篇 · 苏伊士运河通航 | [Mural embodies the opening ceremony of the Suez Canal.jpg](https://commons.wikimedia.org/wiki/File:Mural_embodies_the_opening_ceremony_of_the_Suez_Canal.jpg) | Ahmed Yousry Mahfouz | CC BY-SA 4.0 |
 | 世界篇 · 苏瓦 | [Suva, Fiji 52.jpg](https://commons.wikimedia.org/wiki/File:Suva,_Fiji_52.jpg) | Maksym Kozlenko | CC BY-SA 4.0 |
-| 世界篇 · 苏联解体 | [Huge Anti-Soviet Painting in the Pope's Summer Palace (52205242430).jpg](https://commons.wikimedia.org/wiki/File:Huge_Anti-Soviet_Painting_in_the_Pope's_Summer_Palace_(52205242430).jpg) | Steve Jurvetson from Los Altos, USA | CC BY 2.0 |
 | 世界篇 · 苏莱曼大帝围攻维也纳 | [Pieter Bruegel the Elder - The Tower of Babel (Vienna) - Google Art Project - edited.jpg](https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg) | Pieter Brueghel the Elder | Public domain |
 | 世界篇 · 莫尔兹比港 | [Port Moresby Town Mschlauch.JPG](https://commons.wikimedia.org/wiki/File:Port_Moresby_Town_Mschlauch.JPG) | Mschlauch | Public domain |
 | 世界篇 · 莫斯科红场 | [Saint Basil's Cathedral Moscow at winter night from the Red Square.jpg](https://commons.wikimedia.org/wiki/File:Saint_Basil's_Cathedral_Moscow_at_winter_night_from_the_Red_Square.jpg) | Yaroslav Murashkin | Public domain |
