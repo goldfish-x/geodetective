@@ -2415,6 +2415,11 @@
       "hint": "华东地区"
     },
     {
+      "name": "黄埔军校成立",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
       "name": "黄巾起义",
       "difficulty": 2,
       "hint": "华北地区"
@@ -2433,6 +2438,11 @@
       "name": "三顾茅庐",
       "difficulty": 3,
       "hint": "华中地区"
+    },
+    {
+      "name": "中山舰事件",
+      "difficulty": 3,
+      "hint": "华南地区"
     },
     {
       "name": "党锢之祸",
@@ -2510,6 +2520,11 @@
       "hint": "华中地区"
     },
     {
+      "name": "朱元璋出生",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
       "name": "李白出生",
       "difficulty": 3,
       "hint": "西南地区"
@@ -2575,6 +2590,11 @@
       "hint": "华中地区"
     },
     {
+      "name": "白马寺建立",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
       "name": "百色起义",
       "difficulty": 3,
       "hint": "华南地区"
@@ -2608,6 +2628,11 @@
       "name": "鄢陵之战",
       "difficulty": 3,
       "hint": "华中地区"
+    },
+    {
+      "name": "鄱阳湖大战",
+      "difficulty": 3,
+      "hint": "华东地区"
     },
     {
       "name": "钓鱼城之战",
@@ -2903,11 +2928,6 @@
       "name": "哱拜宁夏之乱",
       "difficulty": 5,
       "hint": "西北地区"
-    },
-    {
-      "name": "嘉山大捷",
-      "difficulty": 5,
-      "hint": "华东地区"
     },
     {
       "name": "国人暴动",

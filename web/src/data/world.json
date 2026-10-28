@@ -2310,6 +2310,11 @@
       "hint": "非洲"
     },
     {
+      "name": "板门店谈判",
+      "difficulty": 2,
+      "hint": "亚洲"
+    },
+    {
       "name": "林肯遇刺",
       "difficulty": 2,
       "hint": "北美洲"
@@ -2581,6 +2586,11 @@
     },
     {
       "name": "查理曼加冕",
+      "difficulty": 3,
+      "hint": "欧洲"
+    },
+    {
+      "name": "欧盟成立",
       "difficulty": 3,
       "hint": "欧洲"
     },
