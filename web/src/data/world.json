@@ -2225,6 +2225,11 @@
       "hint": "欧洲"
     },
     {
+      "name": "加加林首次进入太空",
+      "difficulty": 2,
+      "hint": "亚洲"
+    },
+    {
       "name": "加尔文在日内瓦推行改革",
       "difficulty": 2,
       "hint": "欧洲"
@@ -2265,7 +2270,17 @@
       "hint": "北美洲"
     },
     {
+      "name": "啤酒馆暴动",
+      "difficulty": 2,
+      "hint": "欧洲"
+    },
+    {
       "name": "布拉格之春",
+      "difficulty": 2,
+      "hint": "欧洲"
+    },
+    {
+      "name": "库尔斯克会战",
       "difficulty": 2,
       "hint": "欧洲"
     },
@@ -2370,6 +2385,16 @@
       "hint": "欧洲"
     },
     {
+      "name": "莫斯科大火",
+      "difficulty": 2,
+      "hint": "欧洲"
+    },
+    {
+      "name": "莱特兄弟首次飞行",
+      "difficulty": 2,
+      "hint": "北美洲"
+    },
+    {
       "name": "萨拉丁收复耶路撒冷",
       "difficulty": 2,
       "hint": "亚洲"
@@ -2395,6 +2420,11 @@
       "hint": "非洲"
     },
     {
+      "name": "阿芙乐尔号上的炮声",
+      "difficulty": 2,
+      "hint": "欧洲"
+    },
+    {
       "name": "阿金库尔战役",
       "difficulty": 2,
       "hint": "欧洲"
@@ -2415,12 +2445,32 @@
       "hint": "欧洲"
     },
     {
+      "name": "亚历山大大帝即位",
+      "difficulty": 3,
+      "hint": "北美洲"
+    },
+    {
       "name": "伊凡雷帝攻陷喀山",
       "difficulty": 3,
       "hint": "欧洲"
     },
     {
+      "name": "伊斯兰教建立",
+      "difficulty": 3,
+      "hint": "亚洲"
+    },
+    {
       "name": "伊苏斯战役",
+      "difficulty": 3,
+      "hint": "亚洲"
+    },
+    {
+      "name": "伊藤博文遇刺",
+      "difficulty": 3,
+      "hint": "亚洲"
+    },
+    {
+      "name": "佛教建立",
       "difficulty": 3,
       "hint": "亚洲"
     },
@@ -2460,6 +2510,16 @@
       "hint": "欧洲"
     },
     {
+      "name": "坦能堡会战",
+      "difficulty": 3,
+      "hint": "欧洲"
+    },
+    {
+      "name": "基督教建立",
+      "difficulty": 3,
+      "hint": "亚洲"
+    },
+    {
       "name": "墨西哥独立战争爆发",
       "difficulty": 3,
       "hint": "北美洲"
@@ -2473,6 +2533,11 @@
       "name": "大宪章签署",
       "difficulty": 3,
       "hint": "欧洲"
+    },
+    {
+      "name": "对马海战",
+      "difficulty": 3,
+      "hint": "亚洲"
     },
     {
       "name": "巴黎公社成立",
@@ -2500,6 +2565,11 @@
       "hint": "非洲"
     },
     {
+      "name": "斯巴达克斯起义",
+      "difficulty": 3,
+      "hint": "欧洲"
+    },
+    {
       "name": "曼哈顿计划启动",
       "difficulty": 3,
       "hint": "北美洲"
@@ -2525,6 +2595,11 @@
       "hint": "南美洲"
     },
     {
+      "name": "珊瑚海海战",
+      "difficulty": 3,
+      "hint": "大洋洲"
+    },
+    {
       "name": "米兰敕令颁布",
       "difficulty": 3,
       "hint": "欧洲"
@@ -2538,6 +2613,11 @@
       "name": "罗马大火",
       "difficulty": 3,
       "hint": "欧洲"
+    },
+    {
+      "name": "胡弗大坝建成",
+      "difficulty": 3,
+      "hint": "北美洲"
     },
     {
       "name": "色当战役",
@@ -2573,6 +2653,11 @@
       "name": "马哈赞河战役",
       "difficulty": 3,
       "hint": "非洲"
+    },
+    {
+      "name": "马岛战争",
+      "difficulty": 3,
+      "hint": "南美洲"
     },
     {
       "name": "马恩河战役",
@@ -2615,9 +2700,24 @@
       "hint": "欧洲"
     },
     {
+      "name": "伊松佐河战役",
+      "difficulty": 4,
+      "hint": "欧洲"
+    },
+    {
+      "name": "伏见鸟羽之战",
+      "difficulty": 4,
+      "hint": "亚洲"
+    },
+    {
       "name": "克雷西会战",
       "difficulty": 4,
       "hint": "欧洲"
+    },
+    {
+      "name": "兴登堡号事件",
+      "difficulty": 4,
+      "hint": "北美洲"
     },
     {
       "name": "刚果独立",
@@ -2650,6 +2750,11 @@
       "hint": "欧洲"
     },
     {
+      "name": "大流士一世改革",
+      "difficulty": 4,
+      "hint": "亚洲"
+    },
+    {
       "name": "孔雀王朝建立",
       "difficulty": 4,
       "hint": "亚洲"
@@ -2658,6 +2763,16 @@
       "name": "孟买恐怖袭击",
       "difficulty": 4,
       "hint": "亚洲"
+    },
+    {
+      "name": "居鲁士大帝征服巴比伦",
+      "difficulty": 4,
+      "hint": "亚洲"
+    },
+    {
+      "name": "巴丹死亡行军",
+      "difficulty": 4,
+      "hint": "北美洲"
     },
     {
       "name": "巴西迁都",
@@ -2688,6 +2803,16 @@
       "name": "怀唐伊条约签署",
       "difficulty": 4,
       "hint": "大洋洲"
+    },
+    {
+      "name": "成吉思汗统一蒙古",
+      "difficulty": 4,
+      "hint": "亚洲"
+    },
+    {
+      "name": "托洛茨基被刺杀",
+      "difficulty": 4,
+      "hint": "北美洲"
     },
     {
       "name": "普瓦捷战役",
@@ -2760,12 +2885,22 @@
       "hint": "非洲"
     },
     {
+      "name": "莫卧儿帝国建立",
+      "difficulty": 4,
+      "hint": "亚洲"
+    },
+    {
       "name": "莱茵河战役",
       "difficulty": 4,
       "hint": "欧洲"
     },
     {
       "name": "萨珊波斯围攻安条克",
+      "difficulty": 4,
+      "hint": "亚洲"
+    },
+    {
+      "name": "蒙古征服花剌子模",
       "difficulty": 4,
       "hint": "亚洲"
     },
@@ -2778,6 +2913,16 @@
       "name": "西班牙无敌舰队覆灭",
       "difficulty": 4,
       "hint": "欧洲"
+    },
+    {
+      "name": "诺门坎事件",
+      "difficulty": 4,
+      "hint": "亚洲"
+    },
+    {
+      "name": "长筱之战",
+      "difficulty": 4,
+      "hint": "亚洲"
     },
     {
       "name": "阿斯旺大坝落成",

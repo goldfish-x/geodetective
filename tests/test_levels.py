@@ -8,7 +8,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 BASE = os.environ.get("GD_BASE", "http://127.0.0.1:5173")
 # ———— 1. 题库静态校验 ————
-CHINA_HINTS = {"华北地区", "东北地区", "华东地区", "华中地区", "华南地区", "西南地区", "西北地区"}
+CHINA_HINTS = {"华北地区", "东北地区", "华东地区", "华中地区", "华南地区", "西南地区", "西北地区", "蒙古高原"}
 WORLD_HINTS = {"亚洲", "欧洲", "非洲", "北美洲", "南美洲", "大洋洲"}
 
 for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
@@ -17,11 +17,11 @@ for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
     for kind in ("cities", "scenics", "history"):
         items = bank[kind]
         names = [q["name"] for q in items]
-        assert len(items) == 200, f"{bank_name}.{kind} 数量 {len(items)} != 200"
-        assert len(set(names)) == 200, f"{bank_name}.{kind} 存在重复题目"
+        assert len(items) >= 200, f"{bank_name}.{kind} 数量 {len(items)} < 200"
+        assert len(set(names)) == len(items), f"{bank_name}.{kind} 存在重复题目"
         for lv in range(1, 6):
             cnt = sum(1 for q in items if q["difficulty"] == lv)
-            assert cnt == 40, f"{bank_name}.{kind} 难度{lv} 数量 {cnt} != 40"
+            assert cnt >= 40, f"{bank_name}.{kind} 难度{lv} 数量 {cnt} < 40"
         with open(rf"{ROOT}\web\src\data\{bank_name}-coords.json", encoding="utf-8") as f:
             coords = json.load(f)
         for q in items:

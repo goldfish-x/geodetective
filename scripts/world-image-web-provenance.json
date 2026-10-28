@@ -774,10 +774,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "莱茵河战役": {
-  "url": "https://img0.baidu.com/it/u=4180160290,3537032030&fm=253&fmt=auto?w=1311&h=800",
-  "page": "mbd.baidu.com",
-  "title": "1945年,西线莱茵河战役中,美军手持巴祖卡炸毁的德军3号坦克.",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "莱茵河战役.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
  },
  "阿兹特克帝国灭亡": {
   "url": "https://img1.baidu.com/it/u=3938437494,3106315570&fm=253&fmt=auto&app=138&f=JPEG?w=838&h=500",
@@ -891,11 +893,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "马哈赞河战役": {
-  "url": "https://img1.baidu.com/it/u=4017155701,358943261&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1067",
-  "page": "",
-  "title": "马哈赞河战役  在公元十六世纪末期的北非摩洛哥地区,是一个各方势力",
-  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
-  "subject": "event"
+  "url": "",
+  "page": "user-supplied",
+  "title": "马哈赞河战役.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
  },
  "第一次帕尼帕特战役": {
   "url": "https://img0.baidu.com/it/u=2170445138,210523240&fm=253&fmt=auto&app=120&f=JPEG?w=831&h=494",
@@ -1548,5 +1551,92 @@
   "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event",
   "source": "user"
+ },
+ "塞瓦斯托波尔围攻": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "塞瓦斯托波尔围攻.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "孔雀王朝建立": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "孔雀王朝建立.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "拿破仑流放厄尔巴岛": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "拿破仑流放厄尔巴岛.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "柏林会议": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "柏林会议.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "格拉纳达陷落": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "格拉纳达陷落.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "维也纳会议": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "维也纳会议.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "胡志明战役": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "胡志明战役.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "英国内战爆发": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "英国内战爆发.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "马拉松战役": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "马拉松战役.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "黑船来航": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "黑船来航.png",
+  "license": "未核验授权（用户提供的网络图）",
+  "subject": "event",
+  "source": "user"
+ },
+ "胡弗大坝建成": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "胡佛水坝全景",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event"
  }
 }

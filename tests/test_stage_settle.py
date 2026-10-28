@@ -15,7 +15,8 @@ for bank_name, desc_name in (("china", "china-desc"), ("world", "world-desc")):
         desc = json.load(f)
     all_q = ([(it, 100, False) for b in ("cities", "scenics") for it in bank[b]]
              + [(it, 100, True) for it in bank["history"]])
-    assert len(desc) == 600, f"{desc_name} 条目 {len(desc)} != 600"
+    total = sum(len(bank[b]) for b in ("cities", "scenics", "history"))
+    assert len(desc) == total, f"{desc_name} 条目 {len(desc)} != {total}"
     img_cnt = 0
     for q, lo, is_hist in all_q:
         e = desc.get(q["name"])
