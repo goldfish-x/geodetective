@@ -483,22 +483,25 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "会宁会师": {
-  "url": "https://img1.baidu.com/it/u=3841777520,4165196092&fm=253&fmt=auto&app=120&f=JPEG?w=664&h=443",
-  "page": "news.sina.com.cn",
-  "title": "位于红军会宁会师旧址内的会师门(央广网见习记者 苏睿楠 摄)",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "会宁会师.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "南京大屠杀": {
-  "url": "https://img1.baidu.com/it/u=314245947,3968337717&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=610",
-  "page": "mbd.baidu.com",
-  "title": "南京大屠杀:揭露战争残酷的震撼照片",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "南京大屠杀.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "南昌起义": {
-  "url": "https://img1.baidu.com/it/u=2367616123,2357159025&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
-  "page": "mbd.baidu.com",
-  "title": "古诗词# #暑期 南昌起义南昌起义旧址南昌起义旧址图片南昌起义遗址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "南昌起义.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "台儿庄大捷": {
   "url": "https://img2.baidu.com/it/u=3788846674,1665870661&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=550",
@@ -507,16 +510,17 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "四渡赤水": {
-  "url": "https://img2.baidu.com/it/u=3735791830,3834076498&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500",
-  "page": "rongqt.blogchina.com",
-  "title": "红军四渡赤水纪念塔",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "四渡赤水.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "垓下之战": {
-  "url": "https://img0.baidu.com/it/u=625907630,1725228108&fm=253&fmt=auto&app=120&f=JPEG?w=889&h=800",
-  "page": "",
-  "title": "垓下之战:西楚霸王的最后一舞,结局虽败,气质依然无敌",
-  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "url": "",
+  "page": "user-supplied",
+  "title": "垓下之战.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "官渡之战": {
@@ -540,10 +544,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "广州起义": {
-  "url": "https://img1.baidu.com/it/u=4026235035,4212305026&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1044",
-  "page": "mbd.baidu.com",
-  "title": "🌺广州起义烈士陵园风光🌺",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "广州起义.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "开国大典": {
   "url": "https://img0.baidu.com/it/u=3080304404,765943112&fm=253&fmt=auto&app=138&f=JPEG?w=885&h=500",
@@ -552,16 +557,18 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "张骞出使西域": {
-  "url": "https://img0.baidu.com/it/u=1034726300,3376190889&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1067",
-  "page": "www.douyin.com",
-  "title": "公元前139年,张骞出使西域,带回了葡萄干.公元2024年",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "张骞出使西域.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "淝水之战": {
-  "url": "https://img1.baidu.com/it/u=1333317168,3009713689&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=1044",
-  "page": "mbd.baidu.com",
-  "title": "探秘淝水之战:寿县之旅",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "淝水之战.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "淮海战役": {
   "url": "https://img0.baidu.com/it/u=1082422869,2676518968&fm=253&fmt=auto&app=120&f=JPEG?w=1153&h=800",
@@ -577,10 +584,11 @@
   "subject": "event"
  },
  "甲午战争": {
-  "url": "https://img0.baidu.com/it/u=3168088917,4260377766&fm=253&fmt=auto&app=138&f=JPEG?w=667&h=500",
-  "page": "baike.baidu.com",
-  "title": "刘公岛甲午战争纪念地",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "甲午战争.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "百团大战": {
   "url": "https://img2.baidu.com/it/u=1995526756,634987037&fm=253&fmt=auto&app=120&f=JPEG?w=1082&h=800",
@@ -608,10 +616,11 @@
   "subject": "event"
  },
  "虎门销烟": {
-  "url": "https://img1.baidu.com/it/u=1556688186,3160120609&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
-  "page": "mbd.baidu.com",
-  "title": "虎门销烟遗址:历史与英雄的见证",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "虎门销烟.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "西安事变": {
   "url": "https://img1.baidu.com/it/u=4166802307,570928290&fm=253&fmt=auto&app=120&f=JPEG?w=960&h=500",
@@ -709,10 +718,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "司马迁写史记": {
-  "url": "https://img0.baidu.com/it/u=682810719,2985327046&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
-  "page": "mbd.baidu.com",
-  "title": "探访司马迁祠:历史与自然的完美融合",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "司马光写史记.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "宋应星著天工开物": {
   "url": "https://img0.baidu.com/it/u=3098283231,1552556713&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=647",
@@ -727,10 +737,10 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "张衡地动仪": {
-  "url": "https://img2.baidu.com/it/u=3755918104,840723441&fm=253&fmt=auto&app=138&f=JPEG?w=380&h=394",
-  "page": "",
-  "title": "张衡地动仪",
-  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "url": "",
+  "page": "user-supplied",
+  "title": "张衡地动仪.jpeg",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "徐霞客出发": {
@@ -740,10 +750,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "戚继光抗倭": {
-  "url": "https://img1.baidu.com/it/u=2004375151,1923610279&fm=253&fmt=auto&app=120&f=JPEG?w=750&h=500",
-  "page": "news.sohu.com",
-  "title": "精神传承:从历史到当代走在纪念馆内,《戚继光抗倭史迹陈列》通过文献",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "戚继光抗倭.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "曹雪芹著红楼梦": {
   "url": "https://img1.baidu.com/it/u=3404819406,3014541337&fm=253&fmt=auto&app=138&f=JPEG?w=725&h=500",
@@ -873,10 +884,10 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "顾恺之作画": {
-  "url": "https://img0.baidu.com/it/u=2685324992,762484160&fm=253&fmt=auto&app=138&f=JPEG?w=1405&h=500",
-  "page": "",
-  "title": "🎨顾恺之《洛神赋图》探秘",
-  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "url": "",
+  "page": "user-supplied",
+  "title": "顾恺之作画.jpeg",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "马陵之战": {
@@ -886,10 +897,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "鸿门宴": {
-  "url": "https://img2.baidu.com/it/u=1296240461,3075549020&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=1000",
-  "page": "mbd.baidu.com",
-  "title": "行摄西安:参观《鸿门宴》遗址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "鸿门宴.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "黄巾起义": {
   "url": "",
@@ -912,10 +924,11 @@
   "subject": "event"
  },
  "商鞅变法": {
-  "url": "https://img0.baidu.com/it/u=3321317129,3311707593&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=667",
-  "page": "mbd.baidu.com",
-  "title": "今天骑行阎良武屯,一直对这个地方比较好奇,商鞅变法怎么会在这个地方",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "商鞅变法.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "天京事变": {
   "url": "https://img0.baidu.com/it/u=3508198329,3462851404&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889",
@@ -924,10 +937,11 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "土木堡之变": {
-  "url": "https://img2.baidu.com/it/u=3850901766,940855314&fm=253&fmt=auto&app=138&f=JPEG?w=665&h=500",
-  "page": "mbd.baidu.com",
-  "title": "🏯穿越六百年的\"土木堡之变\"遗址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "土木堡之变.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "太原会战": {
   "url": "https://img1.baidu.com/it/u=2751637325,2209164090&fm=253&fmt=auto&app=120&f=JPEG?w=1252&h=800",
@@ -937,16 +951,18 @@
   "subject": "event"
  },
  "城濮之战": {
-  "url": "https://img2.baidu.com/it/u=4019027597,1838559657&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=725",
-  "page": "www.sohu.com",
-  "title": "\"葵丘濮上\"之行(四)——鄄城葵堌堆与城濮之战遗址",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "城濮之战.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "崖山海战": {
-  "url": "https://img2.baidu.com/it/u=12230474,1529456604&fm=253&fmt=auto&app=138&f=JPEG?w=885&h=500",
-  "page": "baijiahao.baidu.com",
-  "title": "崖山海战:汉家精神永不磨灭,民族大义永存心间",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "崖山海战.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
  },
  "邯郸之战": {
   "url": "https://img0.baidu.com/it/u=149950308,751817811&fm=253&fmt=auto&app=120&f=JPEG?w=1303&h=800",
@@ -1046,10 +1062,10 @@
   "subject": "event"
  },
  "李冰修建都江堰": {
-  "url": "https://img2.baidu.com/it/u=2893153989,3318341876&fm=253&fmt=auto&app=120&f=JPEG?w=1067&h=800",
-  "page": "",
-  "title": "李冰修都江堰,不是治水,是\"给洪水装了一个开关\"",
-  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
+  "url": "",
+  "page": "user-supplied",
+  "title": "李冰修都江堰.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  },
  "李白出生": {
@@ -1595,6 +1611,20 @@
   "url": "",
   "page": "user-supplied",
   "title": "包拯出生.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "孙中山出生": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "孙中山出生.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event"
+ },
+ "文成公主入藏": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "文成公主进藏.png",
   "license": "未核验授权（用户提供的网络图，商用前需替换）",
   "subject": "event"
  }
