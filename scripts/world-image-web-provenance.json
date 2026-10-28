@@ -450,10 +450,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "凡尔赛条约签署": {
-  "url": "https://img2.baidu.com/it/u=2656575535,4139757707&fm=253&fmt=auto&app=120&f=JPEG?w=1423&h=800",
-  "page": "baijiahao.baidu.com",
-  "title": "凡尔赛和约,德国接受的条约,到底有多苛刻?",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "凡尔赛条约签署.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "南非种族隔离制度确立": {
   "url": "https://img2.baidu.com/it/u=1193908806,3776803384&fm=253&fmt=auto&app=120&f=JPEG?w=921&h=800",
@@ -543,10 +545,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "维也纳之战": {
-  "url": "https://img2.baidu.com/it/u=2746561651,283926302&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=894",
-  "page": "mbd.baidu.com",
-  "title": "维也纳黑死病纪念柱:历史的印记 🏞️",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "维也纳之战.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "美国南北战争爆发": {
   "url": "https://img2.baidu.com/it/u=2639159885,371528657&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=640",
@@ -567,10 +571,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "色当战役": {
-  "url": "https://img0.baidu.com/it/u=460148519,1228185691&fm=253&fmt=auto&app=138&f=JPEG?w=418&h=852",
-  "page": "m2.allhistory.com",
-  "title": "色当战役:法兰西帝国进退两难",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "色当战役.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "英国光荣革命": {
   "url": "",
@@ -580,10 +586,12 @@
   "subject": "event"
  },
  "莱比锡会战": {
-  "url": "https://img0.baidu.com/it/u=1468307754,3291505912&fm=253&fmt=auto&app=138&f=JPEG?w=772&h=500",
-  "page": "mbd.baidu.com",
-  "title": "莱比锡民族大会战纪念碑:历史与争议",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "莱比锡会战.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "葛底斯堡战役": {
   "url": "https://img0.baidu.com/it/u=1217420518,1955899948&fm=253&fmt=auto&app=138&f=JPEG?w=657&h=500",
@@ -655,10 +663,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "加尔文在日内瓦推行改革": {
-  "url": "https://img0.baidu.com/it/u=473842283,1886435324&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
-  "page": "",
-  "title": "日内瓦的圣彼得大教堂,以其宏伟的石柱而闻名.",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "加尔文在日内瓦推行改革.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "卡廷惨案": {
   "url": "https://img1.baidu.com/it/u=3506333754,3844698922&fm=253&fmt=auto&app=138&f=JPEG?w=769&h=500",
@@ -673,10 +683,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "印加帝国灭亡": {
-  "url": "https://img1.baidu.com/it/u=3364016351,1085555940&fm=253&fmt=auto&app=138&f=JPEG?w=769&h=500",
-  "page": "mbd.baidu.com",
-  "title": "秘鲁塔墓:印加帝国的死亡艺术",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "印加帝国灭亡.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "君士坦丁堡陷落": {
   "url": "",
@@ -712,10 +724,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "彼得大帝建立圣彼得堡": {
-  "url": "https://img0.baidu.com/it/u=974336745,2468667377&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=889",
-  "page": "mbd.baidu.com",
-  "title": "彼得大帝建立圣彼得堡彼得堡要塞里的教堂图片圣彼得堡彼得保罗要塞",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "user-supplied",
+  "title": "彼得大帝建立圣彼得堡.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "彼得格勒武装起义": {
   "url": "https://img2.baidu.com/it/u=82250512,2827107917&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
@@ -1018,10 +1032,11 @@
  },
  "列宁格勒保卫战": {
   "url": "",
-  "page": "image.baidu.com",
-  "title": "world__列宁格勒保卫战__2.jpg",
-  "license": "未核验授权（百度图片检索，用户逐张点选）",
-  "subject": "event"
+  "page": "user-supplied",
+  "title": "列宁格勒保卫战.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "十二月党人起义": {
   "url": "",
@@ -1354,10 +1369,11 @@
  },
  "苏联解体": {
   "url": "",
-  "page": "image.baidu.com",
-  "title": "cand/world__苏联解体__1.jpg（用户指定：红旗落下+加盟国旗帜）",
-  "license": "未核验授权（用户点选的网络图）",
-  "subject": "event"
+  "page": "user-supplied",
+  "title": "苏联解体.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  },
  "阿斯旺大坝落成": {
   "url": "",
@@ -1372,5 +1388,165 @@
   "title": "克鲁亚围城战.png",
   "license": "未核验授权（用户提供的网络图/用户点选图，商用前需替换）",
   "subject": "event"
+ },
+ "万隆会议": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "万隆会议.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "伊凡雷帝攻陷喀山": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "伊凡雷帝攻克喀山.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "恺撒遇刺": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "凯撒遇刺.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "印度独立": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "印度独立.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "土耳其共和国宣告成立": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "土耳其共和国成立.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "大宪章签署": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "大宪章签署.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "巴黎公社成立": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "巴黎公社成立.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "慕尼黑协定签署": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "慕尼黑协定 签署.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "明治维新": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "明治维新.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "曼德拉获释": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "曼德拉获释.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "本能寺之变": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "本能寺之变.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "柏林墙倒塌": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "柏林墙倒塌.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "波茨坦公告发表": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "波茨坦公告发表.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "泰坦尼克号沉没": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "泰坦尼克号沉没.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "苏伊士运河通航": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "苏伊士运河开通.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "苏莱曼大帝围攻维也纳": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "苏莱曼大帝围攻维也纳.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "雅尔塔会议": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "雅尔塔会议.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "雾月政变": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "雾月政变.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "黑斯廷斯战役": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "黑斯廷斯战役.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
+ },
+ "来克星顿的枪声": {
+  "url": "",
+  "page": "user-supplied",
+  "title": "莱克星顿的枪声.png",
+  "license": "未核验授权（用户提供的网络图，商用前需替换）",
+  "subject": "event",
+  "source": "user"
  }
 }
