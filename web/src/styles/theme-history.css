@@ -326,3 +326,29 @@ body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
   body.trk-history .q-index,
   body.trk-history .q-stage { letter-spacing: 0.06em; }
 }
+
+/* ---------- v5 收尾：移动端触摸区实测补足 ---------- */
+/* 只给 min-height 不够：.ts-link 是行内元素，高度由 line-height 决定。
+   改成 inline-flex 并锁定 40px，触摸区才真正达标。 */
+@media (max-width: 560px) {
+  body.trk-history .ts-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 20px;
+  }
+  body.trk-history .board-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 13px;
+  }
+  /* 顶栏第一行三块 HUD 与音量键之间留出间距，字号略收避免贴死 */
+  body.trk-history .q-stats { gap: 8px; margin-right: 4px; }
+  body.trk-history .q-index,
+  body.trk-history .q-stage,
+  body.trk-history .q-score { font-size: 10.5px; letter-spacing: 0.04em; }
+  body.trk-history .btn-snd { flex-shrink: 0; margin-left: 2px; }
+}
