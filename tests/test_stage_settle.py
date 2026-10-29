@@ -32,7 +32,7 @@ for bank_name, desc_name in (("china", "china-desc"), ("world", "world-desc")):
                 img_cnt += 1
         else:
             assert not e.get("img"), f"{q['name']}（难度{q['difficulty']}）不应有配图"
-    print(f"[档案] {desc_name}: 600 条 · 一二星配图提示词 {img_cnt} 条 ✓")
+    print(f"[档案] {desc_name}: {total} 条 · 一二星配图提示词 {img_cnt} 条 ✓")
 
 with open(rf"{ROOT}\web\src\data\china-desc.json", encoding="utf-8") as f:
     CDESC = json.load(f)

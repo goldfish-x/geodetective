@@ -4,10 +4,11 @@ import { buildApp } from "../src/app.js";
 import { MODES, haversine, score } from "@gd/shared";
 
 // 合成题库：每 (桶, 难度) 8 题，坐标互不相同
+// 历史桶多给一档（历史版 6 难度），地理两桶仍是 5 难度
 function bank() {
   const out = { cities: [], scenics: [], history: [] };
   for (const bucket of ["cities", "scenics", "history"])
-    for (let d = 1; d <= 5; d++)
+    for (let d = 1; d <= (bucket === "history" ? 6 : 5); d++)
       for (let i = 0; i < 8; i++)
         out[bucket].push({ name: bucket[0] + d + "-" + i, difficulty: d, hint: "测试区",
           lat: 10 + d * 3 + i * 0.7, lng: 100 + d * 5 + i * 1.3 });
@@ -189,4 +190,60 @@ test("疆域透镜：返回归属与提示", async () => {
   const b = JSON.parse(ar.payload);
   assert.equal(typeof b.area, "string");
   assert.equal(b.hint, "测试区");
+});
+
+test("赛道契约：config 暴露两条赛道，历史版 12 局且只出历史题", async () => {
+  const a = app();
+  const cfg = JSON.parse((await a.inject({ method: "GET", url: "/v1/config" })).payload);
+  assert.equal(cfg.tracks.geo.stages.length, 10);
+  assert.equal(cfg.tracks.history.stages.length, 12);
+  assert.deepEqual(cfg.tracks.geo.stages.map(s => s.type),
+    ["city", "scenic", "city", "scenic", "city", "scenic", "city", "scenic", "city", "scenic"]);
+  assert.deepEqual(cfg.tracks.history.stages.map(s => s.type), Array(12).fill("history"));
+  assert.deepEqual(cfg.tracks.history.stages.map(s => s.difficulty), [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]);
+  assert.equal(cfg.tracks.history.stages[0].minScore, 5000);
+  assert.equal(cfg.tracks.history.stages[11].minScore, 9400);
+  assert.equal(cfg.tracks.history.levels, 6);
+  // 旧客户端兼容：顶层 stages 仍是地理版
+  assert.equal(cfg.stages.length, 10);
+
+  const t = await login(a, "13800000009");
+  const h = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access),
+    payload: { mode: "china", track: "history" } })).payload);
+  assert.equal(h.track, "history");
+  assert.equal(h.question.type, "history");
+  assert.ok(h.question.name.startsWith("h"), h.question.name);
+
+  const g = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access),
+    payload: { mode: "china" } })).payload);
+  assert.equal(g.track, "geo");
+  assert.ok(g.question.name[0] !== "h", g.question.name);
+
+  // 非法 track 一律回落地理版，不允许越权拿到别的关卡表
+  const bad = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access),
+    payload: { mode: "china", track: "whatever" } })).payload);
+  assert.equal(bad.track, "geo");
+});
+
+test("榜单按赛道分库：历史版成绩不覆盖地理版", async () => {
+  const a = app();
+  const t = await login(a, "13800000008");
+  async function play(track) {
+    const r = JSON.parse((await a.inject({ method: "POST", url: "/v1/runs", headers: H(t.access),
+      payload: { mode: "china", track } })).payload);
+    await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/answers`, headers: H(t.access),
+      payload: { ord: 0, lat: 13, lng: 105 } });
+    return JSON.parse((await a.inject({ method: "POST", url: `/v1/runs/${r.runId}/finish`, headers: H(t.access) })).payload);
+  }
+  await play("geo");
+  await play("history");
+  const g = JSON.parse((await a.inject({ method: "GET", url: "/v1/boards/china?track=geo" })).payload);
+  const h = JSON.parse((await a.inject({ method: "GET", url: "/v1/boards/china?track=history" })).payload);
+  assert.equal(g.track, "geo");
+  assert.equal(h.track, "history");
+  assert.equal(g.board.length, 1, "地理版榜单应只有 1 条");
+  assert.equal(h.board.length, 1, "历史版榜单应只有 1 条");
+  // 未带 track 参数时默认地理版，旧客户端行为不变
+  const d = JSON.parse((await a.inject({ method: "GET", url: "/v1/boards/china" })).payload);
+  assert.equal(d.board.length, 1);
 });

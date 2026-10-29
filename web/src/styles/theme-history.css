@@ -1,0 +1,305 @@
+/* ============ 历史版皮肤（DLC）============
+   世界篇：罗马式大理石 —— 整屏浅色石材 + 深墨字 + 青铜金 + 帝国紫红
+   中国篇：中式红木青砖 —— 青砖墙打底 + 红木面板 + 鎏金 + 朱砂
+   历史版首页：中性暗色石材「档案馆」，两张篇章卡分别预告各自材质
+   所有噪点滤镜都开 stitchTiles='stitch'，纹理四方连续，平铺不出现拼缝。
+   皮肤只改配色与材质，布局与交互与地理版一致，地理版不受影响。 */
+
+/* ================= 罗马大理石（世界篇历史版）================= */
+body.trk-history.md-world {
+  --ink: #2b2620;
+  --ink-2: #fbf8f1;
+  --ink-3: #ece6d8;
+  --parchment: #2f2a22;
+  --parchment-dim: rgba(47, 42, 34, 0.74);
+  --gold: #8a6a1f;
+  --gold-deep: #6d5316;
+  --wax: #8c2b23;
+  --line: rgba(60, 52, 38, 0.28);
+  --marble: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27900%27%20height%3D%27900%27%3E%20%3Cfilter%20id%3D%27v1%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%20filterUnits%3D%27objectBoundingBox%27%20primitiveUnits%3D%27userSpaceOnUse%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.0035%200.016%27%20numOctaves%3D%275%27%20seed%3D%2723%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.36%200%200%200%200%200.34%200%200%200%200%200.31%202.1%200%200%200%20-0.72%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27v2%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.011%200.05%27%20numOctaves%3D%273%27%20seed%3D%277%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.55%200%200%200%200%200.52%200%200%200%200%200.47%201.5%200%200%200%20-0.85%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.85%27%20numOctaves%3D%272%27%20seed%3D%275%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27900%27%20height%3D%27900%27%20fill%3D%27%23f4f0e6%27/%3E%20%3Crect%20width%3D%27900%27%20height%3D%27900%27%20filter%3D%27url%28%23v1%29%27%20opacity%3D%270.55%27/%3E%20%3Crect%20width%3D%27900%27%20height%3D%27900%27%20filter%3D%27url%28%23v2%29%27%20opacity%3D%270.35%27/%3E%20%3Crect%20width%3D%27900%27%20height%3D%27900%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.045%27/%3E%20%3C/svg%3E");
+  --marble-panel: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27700%27%20height%3D%27700%27%3E%20%3Cfilter%20id%3D%27v%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.006%200.026%27%20numOctaves%3D%275%27%20seed%3D%2731%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.44%200%200%200%200%200.42%200%200%200%200%200.38%202.0%200%200%200%20-0.72%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.85%27%20numOctaves%3D%272%27%20seed%3D%279%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20fill%3D%27%23fcfaf4%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23v%29%27%20opacity%3D%270.55%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.04%27/%3E%20%3C/svg%3E");
+  color: var(--parchment);
+  background: linear-gradient(rgba(255,255,255,0.26), rgba(126,116,98,0.18)), var(--marble) 50% 50%/900px 900px repeat;
+}
+body.trk-history.md-world .home-page,
+body.trk-history.md-world .game-page,
+body.trk-history.md-world .result-page { background: transparent; }
+body.trk-history.md-world::before { opacity: 0.03; }
+
+/* 磨光石板：卡片 / 面板 / 顶栏 / 底栏 / 弹层 */
+body.trk-history.md-world .mode-card,
+body.trk-history.md-world .board,
+body.trk-history.md-world .rules,
+body.trk-history.md-world .result-card,
+body.trk-history.md-world .stage-settle,
+body.trk-history.md-world .confirm-pop,
+body.trk-history.md-world .settle-pop,
+body.trk-history.md-world .prop-tip {
+  background: linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.10)), var(--marble-panel) 50% 50%/700px 700px repeat;
+  border: 1px solid rgba(120, 106, 74, 0.58);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.8) inset, 0 -3px 8px rgba(96,86,64,0.14) inset, 0 10px 26px rgba(60,52,38,0.26);
+  color: var(--parchment);
+}
+body.trk-history.md-world .settle-pop::before { border-color: rgba(120,106,74,0.28); }
+body.trk-history.md-world .game-top,
+body.trk-history.md-world .game-bottom {
+  background: linear-gradient(rgba(255,255,255,0.58), rgba(226,219,203,0.44)), var(--marble-panel) 50% 50%/700px 700px repeat;
+  border-color: rgba(120, 106, 74, 0.48);
+  color: var(--parchment);
+}
+body.trk-history.md-world .game-top { border-bottom: 2px solid rgba(120,106,74,0.42); }
+body.trk-history.md-world .game-bottom { border-top: 2px solid rgba(120,106,74,0.42); }
+
+/* 文字与强调色 */
+body.trk-history.md-world .home-title { color: #2b2519; text-shadow: 0 1px 0 rgba(255,255,255,0.9), 0 2px 12px rgba(90,78,50,0.30); }
+body.trk-history.md-world .home-title::after { background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+body.trk-history.md-world .home-tagline,
+body.trk-history.md-world .mc-desc,
+body.trk-history.md-world .board-title,
+body.trk-history.md-world .rules summary,
+body.trk-history.md-world .rules li,
+body.trk-history.md-world .ss-desc,
+body.trk-history.md-world .ss-geo,
+body.trk-history.md-world .ss-hint,
+body.trk-history.md-world .ss-score-line,
+body.trk-history.md-world .settle-detail,
+body.trk-history.md-world .settle-tip,
+body.trk-history.md-world .result-sub { color: rgba(47, 42, 34, 0.86); }
+body.trk-history.md-world .q-index,
+body.trk-history.md-world .q-stage,
+body.trk-history.md-world .q-score { color: rgba(47, 42, 34, 0.84); font-size: 12.5px; }
+body.trk-history.md-world .q-name,
+body.trk-history.md-world .ss-title,
+body.trk-history.md-world .ss-name,
+body.trk-history.md-world .home-file-tag,
+body.trk-history.md-world .settle-detail b { color: #2b2519; }
+body.trk-history.md-world .home-file-tag { border-color: rgba(120,106,74,0.5); }
+body.trk-history.md-world .q-score em { color: var(--gold-deep); }
+body.trk-history.md-world .q-stage em { color: var(--wax); }
+body.trk-history.md-world .mc-cta { color: var(--gold-deep); }
+body.trk-history.md-world .mode-card.world .mc-name,
+body.trk-history.md-world .mode-card.china .mc-name { color: var(--wax); }
+body.trk-history.md-world .mode-card::before { background: linear-gradient(90deg, var(--gold), transparent); }
+body.trk-history.md-world .home-foot { color: rgba(47,42,34,0.60); }
+body.trk-history.md-world .rules a { color: var(--gold-deep); }
+body.trk-history.md-world .ss-score-line b { color: var(--gold-deep); }
+
+/* 控件 */
+body.trk-history.md-world .btn-primary { background: var(--gold); border-color: var(--gold); color: #fffaf0; }
+body.trk-history.md-world .btn-primary:hover { background: var(--gold-deep); border-color: var(--gold-deep); }
+body.trk-history.md-world .btn-ghost { color: #3d352a; border-color: rgba(120,106,74,0.58); }
+body.trk-history.md-world .btn-ghost:hover { border-color: var(--wax); color: var(--wax); }
+body.trk-history.md-world .btn-back,
+body.trk-history.md-world .btn-snd { border-color: rgba(120,106,74,0.55); color: #3d352a; }
+body.trk-history.md-world .nick-row label { color: rgba(47,42,34,0.86); }
+body.trk-history.md-world .nick-row input { background: rgba(255,255,255,0.66); border: 1px solid rgba(120,106,74,0.5); color: #2f2a22; }
+body.trk-history.md-world .board-tab { background: rgba(255,255,255,0.5); border: 1px solid rgba(120,106,74,0.42); color: rgba(47,42,34,0.8); }
+body.trk-history.md-world .board-tab.active { background: var(--gold); border-color: var(--gold); color: #fffaf0; }
+body.trk-history.md-world .board-list li { border-bottom: 1px solid rgba(120,106,74,0.26); color: #2f2a22; }
+body.trk-history.md-world .board-list .bl-score { color: var(--wax); }
+body.trk-history.md-world .board-list li.top1 { background: rgba(138,106,31,0.22); }
+body.trk-history.md-world .board-list li.top2 { background: rgba(110,110,116,0.22); }
+body.trk-history.md-world .board-list li.top3 { background: rgba(150,96,52,0.20); }
+
+/* 道具与计时 */
+body.trk-history.md-world .prop { background: rgba(255,255,255,0.66); border: 1px solid rgba(120,106,74,0.6); color: var(--gold-deep); }
+body.trk-history.md-world .prop svg { stroke-width: 2.6; }
+body.trk-history.md-world .prop:hover { border-color: var(--wax); color: var(--wax); }
+body.trk-history.md-world .prop .prop-n { background: var(--wax); border-color: var(--wax); color: #fffaf0; }
+body.trk-history.md-world .prop.used { color: rgba(47,42,34,0.45); }
+body.trk-history.md-world .timer { background: rgba(120,106,74,0.22); border-color: rgba(120,106,74,0.45); }
+body.trk-history.md-world .timer-fill { background: linear-gradient(90deg, #4f6b3e, #6d8c53); }
+body.trk-history.md-world .timer-fill.warn { background: linear-gradient(90deg, #8a6a1f, #b08a2c); }
+body.trk-history.md-world .timer-fill.danger { background: linear-gradient(90deg, #7d251e, #a83a29); }
+body.trk-history.md-world .timer-text { color: #fffaf0; text-shadow: 0 1px 3px rgba(0,0,0,0.85), 0 0 2px rgba(0,0,0,0.6); }
+body.trk-history.md-world .hint-banner { background: rgba(140,43,35,0.95); color: #fff6ea; }
+body.trk-history.md-world .q-badge { background: var(--wax); color: #fffaf0; }
+
+/* 判级标签：浅色石材上用深底浅字，避免红压红 */
+body.trk-history.md-world .grade { background: rgba(43, 37, 25, 0.90); border-color: rgba(43,37,25,0.55); }
+body.trk-history.md-world .grade.great { color: #9fd6a3; }
+body.trk-history.md-world .grade.good { color: #e6c46a; }
+body.trk-history.md-world .grade.ok { color: #ffb27a; }
+body.trk-history.md-world .grade.bad { color: #ff9a90; }
+body.trk-history.md-world .settle-title { color: var(--gold-deep); }
+body.trk-history.md-world .settle-title small { color: rgba(47,42,34,0.72); }
+
+/* 局档案 */
+body.trk-history.md-world .ss-chip { background: rgba(255,255,255,0.58); border: 1px solid rgba(120,106,74,0.42); color: #2f2a22; }
+body.trk-history.md-world .ss-chip i { color: rgba(47,42,34,0.6); }
+body.trk-history.md-world .ss-chip:hover,
+body.trk-history.md-world .ss-chip.active { background: rgba(140,43,35,0.14); border-color: var(--wax); color: #6d211a; }
+body.trk-history.md-world .ss-chip.active i { color: var(--wax); }
+body.trk-history.md-world .ss-detail { background: rgba(255,255,255,0.45); border: 1px dashed rgba(120,106,74,0.45); }
+body.trk-history.md-world .ss-empty { color: rgba(47,42,34,0.62); }
+body.trk-history.md-world .ss-img { border-color: rgba(120,106,74,0.4); background: linear-gradient(110deg, #e7e0d0 30%, #f6f2e8 45%, #e7e0d0 60%); }
+body.trk-history.md-world .ss-result.pass { color: #3f7a44; }
+body.trk-history.md-world .ss-result.fail { color: var(--wax); }
+body.trk-history.md-world .result-stamp { color: var(--wax); border-color: var(--wax); }
+body.trk-history.md-world .result-score em { color: var(--wax); }
+body.trk-history.md-world .stage-dot { background: rgba(120,106,74,0.24); color: rgba(47,42,34,0.75); border-color: rgba(120,106,74,0.42); }
+body.trk-history.md-world .stage-dot.cleared { background: var(--gold); border-color: var(--gold); color: #fffaf0; }
+body.trk-history.md-world .stage-dot.revived { background: #d9a441; border-color: #b8862c; color: #2b2519; }
+
+/* ================= 中式红木青砖（中国篇历史版）================= */
+body.trk-history.md-china {
+  --ink: #17110e;
+  --ink-2: #2c1a12;
+  --ink-3: #3b2418;
+  --parchment: #f2e3c2;
+  --parchment-dim: rgba(242, 227, 194, 0.76);
+  --gold: #d9b45c;
+  --gold-deep: #c19a3e;
+  --wax: #b8382a;
+  --line: rgba(217, 180, 92, 0.26);
+  --brick: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27176%27%20height%3D%2788%27%3E%20%3Cfilter%20id%3D%27n%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.75%27%20numOctaves%3D%273%27%20seed%3D%279%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27176%27%20height%3D%2788%27%20fill%3D%27%232b2f31%27/%3E%20%3Cg%20fill%3D%27%235d6a6d%27%3E%20%3Crect%20x%3D%272%27%20y%3D%272%27%20width%3D%2784%27%20height%3D%2740%27%20rx%3D%271.5%27/%3E%3Crect%20x%3D%2790%27%20y%3D%272%27%20width%3D%2784%27%20height%3D%2740%27%20rx%3D%271.5%27/%3E%20%3Crect%20x%3D%27-42%27%20y%3D%2746%27%20width%3D%2784%27%20height%3D%2740%27%20rx%3D%271.5%27/%3E%3Crect%20x%3D%2746%27%20y%3D%2746%27%20width%3D%2784%27%20height%3D%2740%27%20rx%3D%271.5%27/%3E%20%3Crect%20x%3D%27134%27%20y%3D%2746%27%20width%3D%2784%27%20height%3D%2740%27%20rx%3D%271.5%27/%3E%3C/g%3E%20%3Cg%20fill%3D%27%236e7c7f%27%20opacity%3D%270.5%27%3E%20%3Crect%20x%3D%272%27%20y%3D%272%27%20width%3D%2784%27%20height%3D%2713%27%20rx%3D%271.5%27/%3E%3Crect%20x%3D%2790%27%20y%3D%272%27%20width%3D%2784%27%20height%3D%2713%27%20rx%3D%271.5%27/%3E%20%3Crect%20x%3D%2746%27%20y%3D%2746%27%20width%3D%2784%27%20height%3D%2713%27%20rx%3D%271.5%27/%3E%3Crect%20x%3D%27134%27%20y%3D%2746%27%20width%3D%2784%27%20height%3D%2713%27%20rx%3D%271.5%27/%3E%20%3Crect%20x%3D%27-42%27%20y%3D%2746%27%20width%3D%2784%27%20height%3D%2713%27%20rx%3D%271.5%27/%3E%3C/g%3E%20%3Crect%20width%3D%27176%27%20height%3D%2788%27%20filter%3D%27url%28%23n%29%27%20opacity%3D%270.20%27/%3E%20%3C/svg%3E");
+  --wood: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27620%27%20height%3D%27620%27%3E%20%3Cfilter%20id%3D%27w1%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.004%200.085%27%20numOctaves%3D%275%27%20seed%3D%2713%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.09%200%200%200%200%200.03%200%200%200%200%200.015%201.9%200%200%200%20-0.62%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27w2%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.0025%200.045%27%20numOctaves%3D%274%27%20seed%3D%2747%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.66%200%200%200%200%200.36%200%200%200%200%200.21%201.5%200%200%200%20-0.78%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.9%27%20numOctaves%3D%272%27%20seed%3D%273%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20fill%3D%27%234d2317%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23w2%29%27%20opacity%3D%270.62%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23w1%29%27%20opacity%3D%270.70%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.05%27/%3E%20%3C/svg%3E");
+  background:
+    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(217,180,92,0.10), transparent),
+    linear-gradient(rgba(10,7,5,0.62), rgba(10,7,5,0.74)),
+    var(--brick) 50% 50%/176px 88px repeat;
+}
+body.trk-history.md-china .home-page,
+body.trk-history.md-china .game-page,
+body.trk-history.md-china .result-page { background: transparent; }
+body.trk-history.md-china::before { opacity: 0.07; }
+
+body.trk-history.md-china .mode-card,
+body.trk-history.md-china .board,
+body.trk-history.md-china .rules,
+body.trk-history.md-china .result-card,
+body.trk-history.md-china .stage-settle,
+body.trk-history.md-china .confirm-pop,
+body.trk-history.md-china .settle-pop,
+body.trk-history.md-china .prop-tip {
+  background: linear-gradient(rgba(0,0,0,0.16), rgba(0,0,0,0.38)), var(--wood) 50% 50%/620px 620px repeat;
+  border: 1px solid rgba(217,180,92,0.48);
+  box-shadow: 0 0 0 3px rgba(23,17,14,0.85) inset, 0 0 0 4px rgba(217,180,92,0.22) inset, 0 14px 34px rgba(0,0,0,0.55);
+}
+body.trk-history.md-china .settle-pop::before { border-color: rgba(217,180,92,0.22); }
+body.trk-history.md-china .game-top,
+body.trk-history.md-china .game-bottom {
+  background: linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.50)), var(--wood) 50% 50%/620px 620px repeat;
+  border-color: rgba(217,180,92,0.40);
+}
+body.trk-history.md-china .game-top { border-bottom: 1px solid rgba(217,180,92,0.48); }
+body.trk-history.md-china .game-bottom { border-top: 1px solid rgba(217,180,92,0.48); }
+body.trk-history.md-china .mode-card:hover { transform: translateY(-3px); border-color: var(--gold); }
+body.trk-history.md-china .home-title { color: var(--gold); text-shadow: 0 0 30px rgba(217,180,92,0.35), 0 2px 0 rgba(0,0,0,0.65); }
+body.trk-history.md-china .home-title::after { background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+body.trk-history.md-china .mode-card.china .mc-name { color: var(--gold); }
+body.trk-history.md-china .mode-card.world .mc-name { color: #e08a6a; }
+body.trk-history.md-china .mode-card::before { background: linear-gradient(90deg, var(--gold), transparent); }
+body.trk-history.md-china .board-tab.active { background: var(--wax); border-color: var(--wax); color: #fff2df; }
+body.trk-history.md-china .board-list li.top1 { background: rgba(217,180,92,0.20); }
+body.trk-history.md-china .board-list li.top2 { background: rgba(190,190,196,0.16); }
+body.trk-history.md-china .board-list li.top3 { background: rgba(184,56,42,0.20); }
+body.trk-history.md-china .btn-primary { background: var(--wax); border-color: var(--wax); color: #fff2df; }
+body.trk-history.md-china .btn-primary:hover { background: #98301f; border-color: #98301f; }
+body.trk-history.md-china .q-badge { background: var(--wax); color: #fff2df; }
+body.trk-history.md-china .result-stamp { color: #ff8f7a; border-color: #ff8f7a; }
+body.trk-history.md-china .prop { background: rgba(23,17,14,0.58); border-color: rgba(217,180,92,0.48); color: var(--gold); }
+body.trk-history.md-china .prop .prop-n { background: var(--wax); border-color: var(--wax); color: #fff2df; }
+body.trk-history.md-china .timer { background: rgba(10,7,5,0.55); border-color: rgba(217,180,92,0.35); }
+body.trk-history.md-china .timer-fill { background: linear-gradient(90deg, #4f6b3e, #6d8c53); }
+body.trk-history.md-china .timer-text { color: #fff6e6; text-shadow: 0 1px 3px rgba(0,0,0,0.9); }
+body.trk-history.md-china .grade { background: rgba(12, 8, 6, 0.82); }
+body.trk-history.md-china .grade.bad { color: #ff9a90; }
+body.trk-history.md-china .ss-detail { background: rgba(12,8,6,0.42); border-color: rgba(217,180,92,0.30); }
+body.trk-history.md-china .ss-chip { background: rgba(23,17,14,0.42); border-color: rgba(217,180,92,0.28); }
+body.trk-history.md-china .ss-chip:hover,
+body.trk-history.md-china .ss-chip.active { background: rgba(184,56,42,0.30); border-color: var(--wax); color: #fff2df; }
+body.trk-history.md-china .ss-empty { color: rgba(242,227,194,0.62); }
+body.trk-history.md-china .settle-detail,
+body.trk-history.md-china .settle-tip,
+body.trk-history.md-china .ss-score-line,
+body.trk-history.md-china .ss-desc,
+body.trk-history.md-china .ss-geo,
+body.trk-history.md-china .ss-hint { color: rgba(242, 227, 194, 0.88); }
+body.trk-history.md-china .ss-img { background: linear-gradient(110deg, #2c1a12 30%, #43261a 45%, #2c1a12 60%); }
+
+/* ================= 历史版首页（中性石材档案馆）================= */
+body.trk-history:not(.md-china):not(.md-world) {
+  --stone: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27700%27%20height%3D%27700%27%3E%20%3Cfilter%20id%3D%27s%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.012%200.02%27%20numOctaves%3D%275%27%20seed%3D%2719%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.32%200%200%200%200%200.29%200%200%200%200%200.25%201.4%200%200%200%20-0.55%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.85%27%20numOctaves%3D%272%27%20seed%3D%275%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20fill%3D%27%232a2724%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23s%29%27%20opacity%3D%270.65%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.05%27/%3E%20%3C/svg%3E");
+  --gold: #d8b771;
+  --gold-deep: #bd9a52;
+  --wax: #c04a37;
+  --parchment: #f3e8d2;
+  --parchment-dim: rgba(243, 232, 210, 0.80);
+  --line: rgba(216, 183, 113, 0.26);
+  background:
+    radial-gradient(ellipse 80% 55% at 50% -10%, rgba(216,183,113,0.14), transparent),
+    linear-gradient(rgba(12,10,8,0.48), rgba(12,10,8,0.62)),
+    var(--stone) 50% 50%/700px 700px repeat;
+}
+body.trk-history:not(.md-china):not(.md-world) .home-page { background: transparent; }
+body.trk-history:not(.md-china):not(.md-world) .home-title { color: var(--gold); letter-spacing: 0.20em; text-shadow: 0 2px 0 rgba(0,0,0,0.6); }
+body.trk-history:not(.md-china):not(.md-world) .home-title::after { background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+body.trk-history:not(.md-china):not(.md-world) .home-tagline { color: rgba(243,232,210,0.86); }
+body.trk-history:not(.md-china):not(.md-world) .home-file-tag { color: rgba(243,232,210,0.72); border-color: var(--line); }
+/* 篇章卡不再用地理版的藏青蓝：世界篇=大理石，中国篇=红木，底部各有一条材质预告 */
+body.trk-history:not(.md-china):not(.md-world) .mode-card {
+  background: linear-gradient(rgba(255,255,255,0.10), rgba(0,0,0,0.34)), var(--stone) 50% 50%/700px 700px repeat;
+  border: 1px solid rgba(216,183,113,0.38);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+}
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world { border-color: rgba(226,220,205,0.55); }
+body.trk-history:not(.md-china):not(.md-world) .mode-card.china { border-color: rgba(217,180,92,0.55); }
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world .mc-name { color: #efe7d6; }
+body.trk-history:not(.md-china):not(.md-world) .mode-card.china .mc-name { color: var(--gold); }
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after,
+body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 8px;
+}
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after {
+  background: linear-gradient(rgba(255,255,255,0.5), rgba(150,142,124,0.35)), url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27700%27%20height%3D%27700%27%3E%20%3Cfilter%20id%3D%27v%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.006%200.026%27%20numOctaves%3D%275%27%20seed%3D%2731%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.44%200%200%200%200%200.42%200%200%200%200%200.38%202.0%200%200%200%20-0.72%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.85%27%20numOctaves%3D%272%27%20seed%3D%279%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20fill%3D%27%23fcfaf4%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23v%29%27%20opacity%3D%270.55%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.04%27/%3E%20%3C/svg%3E") 50% 50%/200px 200px repeat;
+  border-top: 1px solid rgba(226,220,205,0.55);
+}
+body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
+  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.42)), url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27620%27%20height%3D%27620%27%3E%20%3Cfilter%20id%3D%27w1%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.004%200.085%27%20numOctaves%3D%275%27%20seed%3D%2713%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.09%200%200%200%200%200.03%200%200%200%200%200.015%201.9%200%200%200%20-0.62%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27w2%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.0025%200.045%27%20numOctaves%3D%274%27%20seed%3D%2747%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.66%200%200%200%200%200.36%200%200%200%200%200.21%201.5%200%200%200%20-0.78%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.9%27%20numOctaves%3D%272%27%20seed%3D%273%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20fill%3D%27%234d2317%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23w2%29%27%20opacity%3D%270.62%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23w1%29%27%20opacity%3D%270.70%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.05%27/%3E%20%3C/svg%3E") 50% 50%/200px 200px repeat;
+  border-top: 1px solid rgba(217,180,92,0.55);
+}
+body.trk-history .mode-card { position: relative; overflow: hidden; }
+body.trk-history:not(.md-china):not(.md-world) .board,
+body.trk-history:not(.md-china):not(.md-world) .rules {
+  background: linear-gradient(rgba(255,255,255,0.06), rgba(0,0,0,0.30)), var(--stone) 50% 50%/700px 700px repeat;
+  border-color: var(--line);
+}
+body.trk-history:not(.md-china):not(.md-world) .board-tab.active { background: var(--gold-deep); border-color: var(--gold-deep); color: #1b1712; }
+
+/* ================= 通用补充 ================= */
+.q-diff.lv6 { color: #ff4d6d; }
+.diff-tag.lv6 { color: #ff4d6d; border: 1px solid rgba(255, 77, 109, 0.65); }
+.nw { white-space: nowrap; }
+
+.track-switch { width: 100%; display: flex; justify-content: center; margin: 2px 0 18px; }
+.ts-link {
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--parchment-dim);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 18px;
+  transition: color .15s ease, border-color .15s ease, transform .15s ease;
+}
+.ts-link:hover { color: var(--gold); border-color: var(--gold); transform: translateY(-1px); }
+body.trk-history .mode-card .mc-desc { line-height: 1.6; }
+
+/* ---------- v3 收尾 ---------- */
+/* 结算后计时条压暗过头，历史版两套皮肤都提亮，保证「本局小结 / 已结算」可读 */
+body.trk-history .timer.settled { opacity: 0.78; }
+body.trk-history.md-world .timer.settled .timer-text { color: #2b2620; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
+body.trk-history.md-china .timer.settled .timer-text { color: #fff6e6; text-shadow: 0 1px 3px rgba(0,0,0,0.9); }
+/* 局档案占位提示：浅色石材上加深，红木上提亮 */
+body.trk-history.md-world .ss-empty { color: rgba(47,42,34,0.72); }
+body.trk-history.md-china .ss-empty { color: rgba(242,227,194,0.72); }
+/* 首页两张篇章卡的材质预告条：描边统一成同一支金线，避免一白一金 */
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after,
+body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
+  border-top: 1px solid rgba(216, 183, 113, 0.55);
+}

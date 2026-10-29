@@ -2,10 +2,12 @@
 // 本地只保留展示状态；服务端下发的题目不含坐标，坐标在判分后才回填用于揭晓。
 import { api } from './api.js'
 
-export async function createOnlineGame(modeKey) {
+export async function createOnlineGame(modeKey, track = 'geo') {
   const cfg = await api('/v1/config')
-  const run = await api('/v1/runs', { method: 'POST', body: { mode: modeKey } })
-  const stages = cfg.stages.map(s => ({ type: s.type, difficulty: s.difficulty, minScore: s.minScore, questions: [] }))
+  const run = await api('/v1/runs', { method: 'POST', body: { mode: modeKey, track } })
+  // 关卡表按赛道取：地理版 10 局、历史版 12 局
+  const cfgStages = (cfg.tracks && cfg.tracks[track] && cfg.tracks[track].stages) || cfg.stages
+  const stages = cfgStages.map(s => ({ type: s.type, difficulty: s.difficulty, minScore: s.minScore, questions: [] }))
   stages[0].questions.push({ ...run.question })
 
   const g = {

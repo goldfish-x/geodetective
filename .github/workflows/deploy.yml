@@ -2,7 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    # main = 正式线；codex/history-dlc = 历史版分支，同样部署到 Pages 供测试
+    # 一次部署同时产出两个入口：/（地理版）与 /history.html（历史版）
+    branches: [main, codex/history-dlc]
   workflow_dispatch:
 
 permissions:

@@ -2246,7 +2246,7 @@
     },
     {
       "name": "城濮之战",
-      "difficulty": 2,
+      "difficulty": 3,
       "hint": "华东地区"
     },
     {
@@ -2316,7 +2316,7 @@
     },
     {
       "name": "渑池之会",
-      "difficulty": 2,
+      "difficulty": 3,
       "hint": "华中地区"
     },
     {
@@ -2366,7 +2366,7 @@
     },
     {
       "name": "邯郸之战",
-      "difficulty": 2,
+      "difficulty": 3,
       "hint": "华北地区"
     },
     {
@@ -2376,12 +2376,12 @@
     },
     {
       "name": "郾城大捷",
-      "difficulty": 2,
+      "difficulty": 3,
       "hint": "华中地区"
     },
     {
       "name": "采石大捷",
-      "difficulty": 2,
+      "difficulty": 3,
       "hint": "华东地区"
     },
     {
@@ -2396,7 +2396,7 @@
     },
     {
       "name": "雅克萨之战",
-      "difficulty": 2,
+      "difficulty": 3,
       "hint": "东北地区"
     },
     {
@@ -2406,7 +2406,7 @@
     },
     {
       "name": "顾恺之作画",
-      "difficulty": 2,
+      "difficulty": 3,
       "hint": "华东地区"
     },
     {
@@ -2426,12 +2426,12 @@
     },
     {
       "name": "七国之乱",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
       "name": "三藩之乱",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "西南地区"
     },
     {
@@ -2446,12 +2446,12 @@
     },
     {
       "name": "党锢之祸",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
       "name": "八王之乱",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
@@ -2476,7 +2476,7 @@
     },
     {
       "name": "崤之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
@@ -2486,7 +2486,7 @@
     },
     {
       "name": "巫蛊之祸",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "西北地区"
     },
     {
@@ -2496,7 +2496,7 @@
     },
     {
       "name": "彭城之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华东地区"
     },
     {
@@ -2516,7 +2516,7 @@
     },
     {
       "name": "昆阳之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
@@ -2541,12 +2541,12 @@
     },
     {
       "name": "沙丘之变",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华北地区"
     },
     {
       "name": "漠北之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "蒙古高原"
     },
     {
@@ -2571,7 +2571,7 @@
     },
     {
       "name": "田单火牛阵",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华东地区"
     },
     {
@@ -2581,12 +2581,12 @@
     },
     {
       "name": "白登之围",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华北地区"
     },
     {
       "name": "白起拔郢",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
@@ -2606,47 +2606,47 @@
     },
     {
       "name": "萨尔浒之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "东北地区"
     },
     {
       "name": "蒙恬北击匈奴",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华北地区"
     },
     {
       "name": "虎牢关大战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
       "name": "邲之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
       "name": "鄢陵之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
       "name": "鄱阳湖大战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华东地区"
     },
     {
       "name": "钓鱼城之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "西南地区"
     },
     {
       "name": "长勺之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华东地区"
     },
     {
       "name": "长城保卫战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华北地区"
     },
     {
@@ -2671,22 +2671,22 @@
     },
     {
       "name": "黄池之会",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华中地区"
     },
     {
       "name": "龙场悟道",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "西南地区"
     },
     {
       "name": "一江山岛战役",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "东山岛战役",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
@@ -2696,27 +2696,27 @@
     },
     {
       "name": "井陉之战",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华北地区"
     },
     {
       "name": "侯景台城陷落",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "共和行政",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "西北地区"
     },
     {
       "name": "冉闵杀胡令",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华中地区"
     },
     {
       "name": "刘裕北伐",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "西北地区"
     },
     {
@@ -2731,12 +2731,12 @@
     },
     {
       "name": "壬寅宫变",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华北地区"
     },
     {
       "name": "大小金川之战",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "西南地区"
     },
     {
@@ -2751,17 +2751,17 @@
     },
     {
       "name": "宋应星著天工开物",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "完颜阿骨打建国",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "东北地区"
     },
     {
       "name": "定陶之战",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
@@ -2771,7 +2771,7 @@
     },
     {
       "name": "张献忠屠武昌",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华中地区"
     },
     {
@@ -2786,343 +2786,423 @@
     },
     {
       "name": "拓跋珪参合陂之战",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华北地区"
     },
     {
       "name": "捻军雉河集会盟",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "曾侯乙编钟出土",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "朱元璋取集庆",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "朱熹出生",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "李自成破承天",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华中地区"
     },
     {
       "name": "李靖夜袭阴山",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华北地区"
     },
     {
       "name": "林爽文起义",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "桓温北伐",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "西北地区"
     },
     {
       "name": "沈括出生",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "河阴之变",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华中地区"
     },
     {
       "name": "犬戎破镐京",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "西北地区"
     },
     {
       "name": "王安石出生",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "班超投笔从戎",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华中地区"
     },
     {
       "name": "白居易出生",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华中地区"
     },
     {
       "name": "纪晓岚修四库全书",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华北地区"
     },
     {
       "name": "花木兰从军",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "蔡文姬归汉",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华中地区"
     },
     {
       "name": "践土之盟",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华中地区"
     },
     {
       "name": "郑板桥任县令",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华东地区"
     },
     {
       "name": "马可·波罗抵达上都",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华北地区"
     },
     {
       "name": "马援平交趾",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华南地区"
     },
     {
       "name": "龙城之战",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "蒙古高原"
     },
     {
       "name": "俺答汗围北京",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华北地区"
     },
     {
       "name": "关汉卿出生",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华北地区"
     },
     {
       "name": "刘整降元献策",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西南地区"
     },
     {
       "name": "刘福通红巾军颍州起义",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华东地区"
     },
     {
       "name": "召陵之盟",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "哱拜宁夏之乱",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "国人暴动",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "姑臧之战",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "孛罗帖木儿大同兵变",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华北地区"
     },
     {
       "name": "宇文泰沙苑之战",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "左宗棠出生",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "平王东迁",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "张格尔喀什噶尔之乱",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "徐光启出生",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华东地区"
     },
     {
       "name": "曾国藩出生",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "朵颜三卫内附",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华北地区"
     },
     {
       "name": "李璮之乱济南起事",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华东地区"
     },
     {
       "name": "李鸿章出生",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华东地区"
     },
     {
       "name": "柏举之战",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "桂陵之战",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "永嘉之乱",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "海瑞出生",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华南地区"
     },
     {
       "name": "烽火戏诸侯",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "王辅臣平凉叛乱",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "盐铁会议",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "硖石之战",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华东地区"
     },
     {
       "name": "窦固破北匈奴",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "耶律德光灭后晋",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "萨哈廉攻占旅顺口",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "东北地区"
     },
     {
       "name": "葵丘会盟",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "衣冠南渡",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华东地区"
     },
     {
       "name": "赵州桥建成",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华北地区"
     },
     {
       "name": "越王勾践剑出土",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "郭守敬出生",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华北地区"
     },
     {
       "name": "阏与之战",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华北地区"
     },
     {
       "name": "阿合马被刺",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华北地区"
     },
     {
       "name": "阿睦尔撒纳伊犁叛乱",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "西北地区"
     },
     {
       "name": "陈霸先建康平叛",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华东地区"
     },
     {
       "name": "鲜卑慕容皝建前燕",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "东北地区"
     },
     {
       "name": "龙门石窟开凿",
-      "difficulty": 5,
+      "difficulty": 6,
       "hint": "华中地区"
     },
     {
       "name": "郭子仪嘉山之战",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "华北地区"
     },
     {
       "name": "白狼山之战",
-      "difficulty": 4,
+      "difficulty": 5,
       "hint": "东北地区"
     },
     {
       "name": "黄天荡之战",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华东地区"
     },
     {
       "name": "耶律阿保机建立契丹国",
-      "difficulty": 3,
+      "difficulty": 4,
       "hint": "华北地区"
     },
     {
       "name": "努尔哈赤建立后金",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "盘庚迁殷",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "焚书坑儒",
+      "difficulty": 3,
+      "hint": "西北地区"
+    },
+    {
+      "name": "董卓焚烧洛阳",
+      "difficulty": 3,
+      "hint": "华中地区"
+    },
+    {
+      "name": "鉴真东渡",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "交子诞生",
+      "difficulty": 4,
+      "hint": "西南地区"
+    },
+    {
+      "name": "北京保卫战",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "北伐誓师",
+      "difficulty": 3,
+      "hint": "华南地区"
+    },
+    {
+      "name": "古田会议",
+      "difficulty": 4,
+      "hint": "华东地区"
+    },
+    {
+      "name": "中央红军长征出发",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "抗美援朝出兵",
       "difficulty": 3,
       "hint": "东北地区"
+    },
+    {
+      "name": "大庆油田会战",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "十一届三中全会",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "香港回归",
+      "difficulty": 2,
+      "hint": "华南地区"
+    },
+    {
+      "name": "北京奥运会开幕",
+      "difficulty": 2,
+      "hint": "华北地区"
+    },
+    {
+      "name": "青藏铁路通车",
+      "difficulty": 5,
+      "hint": "西北地区"
+    },
+    {
+      "name": "商汤灭夏",
+      "difficulty": 5,
+      "hint": "华北地区"
     }
   ]
 }

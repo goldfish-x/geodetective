@@ -1,5 +1,5 @@
 // 游戏页：出题 → 作答 → 单题结算 → 局结算（最低分门槛） → 终局结算
-import { MODES, haversine, score, buildQuiz, STAGE_SIZE, STAGES, DIFFICULTY_LABELS, TYPE_LABELS, PROPS, PROP_ORDER, TIERS, FREE_TIER, tierCounts } from '@gd/shared'
+import { MODES, haversine, score, buildQuiz, STAGE_SIZE, stagesOf, levelsOf, difficultyLabel, TYPE_LABELS, PROPS, PROP_ORDER, TIERS, FREE_TIER, tierCounts } from '@gd/shared'
 import { getNickname, addScore } from '../core/storage.js'
 import { onlineEnabled } from '../net/api.js'
 import { getSession } from '../net/session.js'
@@ -44,9 +44,19 @@ const imgURL = (name, modeKey, availableImages) => {
   return placeholderFor(name, 120, 120)
 }
 
-export async function renderGame(app, modeKey, routeToken) {
+export async function renderGame(app, modeKey, routeToken, track = 'geo') {
   const mode = MODES[modeKey]
   if (!mode) return
+
+  // 赛道（产品线）：geo=地理版 / history=历史版。决定关卡表、难度层数、皮肤与榜单键。
+  const TRACK = track === 'history' ? 'history' : 'geo'
+  const STAGES = stagesOf(TRACK)          // 本局使用的关卡表（地理 10 局 / 历史 12 局）
+  const LEVELS = levelsOf(TRACK)          // 难度层数：地理 5 / 历史 6
+  const dLabel = lv => difficultyLabel(TRACK, lv)
+  const ROUTE = TRACK === 'history' ? 'history' : 'game'
+  document.body.classList.toggle('trk-history', TRACK === 'history')
+  document.body.classList.toggle('md-china', modeKey === 'china')
+  document.body.classList.toggle('md-world', modeKey === 'world')
 
   // 按模式懒加载地图、题库与档案，避免 ECharts/ECharts GL 与两套大 GeoJSON 全部进入首屏。
   const [mapModule, bankModule, descModule, imagesModule] = await Promise.all([
@@ -73,14 +83,14 @@ export async function renderGame(app, modeKey, routeToken) {
     app.querySelector('#btn-home').addEventListener('click', () => { location.hash = '#/' })
     return
   }
-  const online = wantOnline ? await createOnlineGame(modeKey) : null
+  const online = wantOnline ? await createOnlineGame(modeKey, TRACK) : null
 
   // 离线玩法需要坐标做本地判分；在线模式坐标一律来自服务端揭晓，构建期也不进产物
   if (!online) {
     const { loadCoords, mergeCoords } = await import('../core/coords.js')
     mergeCoords(bank, (await loadCoords(modeKey)).default)
   }
-  const stages = online ? online.stages : buildQuiz(bank)
+  const stages = online ? online.stages : buildQuiz(bank, TRACK)
 
   const state = {
     stageIndex: 0,      // 当前局（0 起）
@@ -365,10 +375,10 @@ export async function renderGame(app, modeKey, routeToken) {
     elBadge.textContent = TYPE_LABELS[q.type]
     elBadge.className = 'q-badge ' + q.type
     elName.textContent = q.name
-    const lv = Math.min(5, Math.max(1, q.difficulty || 1))
+    const lv = Math.min(LEVELS, Math.max(1, q.difficulty || 1))
     elDiff.className = 'q-diff lv' + lv
-    elDiff.title = `难度 ${lv}/5 · ${DIFFICULTY_LABELS[lv]}`
-    elDiff.textContent = '★'.repeat(lv) + '☆'.repeat(5 - lv)
+    elDiff.title = `难度 ${lv}/${LEVELS} · ${dLabel(lv)}`
+    elDiff.textContent = '★'.repeat(lv) + '☆'.repeat(LEVELS - lv)
     elIndex.textContent = `第${state.stageIndex + 1}局 · ${pad2(state.qInStage + 1)}/${pad2(STAGE_SIZE)}`
     // 题目名入场动画（重触发）
     elName.classList.remove('enter')
@@ -454,9 +464,9 @@ export async function renderGame(app, modeKey, routeToken) {
       : pts > 0 ? '<span class="grade ok">偏 远</span>'
       : '<span class="grade bad">失 手</span>'
     $('settle-title').innerHTML = `${grade}<b>${fmt(pts)}</b><small>分</small>`
-    const distText = dist != null ? `距离实际位置 <b>${fmt(Math.round(dist))}</b> 公里` : '未能完成指认'
-    const lv = Math.min(5, Math.max(1, q.difficulty || 1))
-    $('settle-detail').innerHTML = `${q.name} · <span class="diff-tag lv${lv}">${DIFFICULTY_LABELS[lv]}</span> · ${distText}`
+    const distText = dist != null ? `距离实际位置 <span class="nw"><b>${fmt(Math.round(dist))}</b> 公里</span>` : '未能完成指认'
+    const lv = Math.min(LEVELS, Math.max(1, q.difficulty || 1))
+    $('settle-detail').innerHTML = `${q.name} · <span class="diff-tag lv${lv}">${dLabel(lv)}</span> · ${distText}`
     elSettle.classList.remove('hidden')
     // 结算弹层重触发入场动画
     elSettle.classList.remove('pop')
@@ -521,7 +531,7 @@ export async function renderGame(app, modeKey, routeToken) {
         <span class="ss-title">第${state.stageIndex + 1}局 · ${TYPE_LABELS[stage.type]}档案</span>
         <span class="ss-result ${passed ? 'pass' : 'fail'}">${passed ? '通 关' : '未达标'}</span>
       </div>
-      <div class="ss-score-line">本局得分 <b>${fmt(state.stageScore)}</b> / 通关门槛 ${fmt(stage.minScore)} · 单题最高 ${fmt(mode.maxScore)}</div>
+      <div class="ss-score-line">本局得分 <b class="nw">${fmt(state.stageScore)}</b> / 通关门槛 <span class="nw">${fmt(stage.minScore)}</span> · <span class="nw">单题最高 ${fmt(mode.maxScore)}</span></div>
       <div class="ss-body">
         <div class="ss-list">
           ${stage.questions.map((q, i) => `
@@ -541,11 +551,11 @@ export async function renderGame(app, modeKey, routeToken) {
     const detail = panel.querySelector('#ss-detail')
     const showDetail = q => {
       const e = descOf(q.name)
-      const lv = Math.min(5, Math.max(1, q.difficulty || 1))
+      const lv = Math.min(LEVELS, Math.max(1, q.difficulty || 1))
       detail.innerHTML = `
         ${availableImages.has(q.name) || e.img ? `<img class="ss-img" src="${imgURL(q.name, modeKey, availableImages)}" alt="${q.name}" onerror="this.remove()">` : ''}
         <div class="ss-text">
-          <div class="ss-name">${q.name}<em class="diff-tag lv${lv}">${DIFFICULTY_LABELS[lv]}</em></div>
+          <div class="ss-name">${q.name}<em class="diff-tag lv${lv}">${dLabel(lv)}</em></div>
           <p class="ss-desc">${e.desc || ''}</p>
           <div class="ss-geo">${q.hint} · ${Math.abs(q.lat).toFixed(2)}°${q.lat >= 0 ? 'N' : 'S'} ${Math.abs(q.lng).toFixed(2)}°${q.lng >= 0 ? 'E' : 'W'}</div>
         </div>`
@@ -630,7 +640,7 @@ export async function renderGame(app, modeKey, routeToken) {
     const nickname = getNickname() || '无名侦探'
     const rankInfo = online
       ? await online.finish().then(fb => { state.total = fb.total; return { rank: fb.rank, board: fb.board } })
-      : addScore(modeKey, state.total)
+      : addScore(modeKey, state.total, TRACK)
     const champion = !!rankInfo && rankInfo.rank === 1   // 本次成绩登顶 → 播放庆祝画面
     const reached = Math.min(state.stageIndex + 1, STAGES.length)
 
@@ -639,7 +649,7 @@ export async function renderGame(app, modeKey, routeToken) {
       <div class="result-card${champion ? ' champion' : ''}">
         <div class="result-stamp">${victory ? '完美结案' : '任务中止'}</div>
         ${champion ? '<div class="result-crown">★ 独占榜首 · 新纪录 ★</div>' : ''}
-        <p class="result-sub">${nickname} · ${mode.title} · ${victory ? '十局全部通关' : `止步第${reached}局`}</p>
+        <p class="result-sub">${nickname} · ${mode.title} · ${victory ? `${STAGES.length} 局全部通关` : `止步第${reached}局`}</p>
         <div class="result-score"><em>${fmt(state.total)}</em><span>总分</span></div>
         ${champion
           ? `<div class="result-rank first">第 1 名 · ${online ? '全网榜首' : '本机历史最高'}</div>`
@@ -649,7 +659,7 @@ export async function renderGame(app, modeKey, routeToken) {
         <div class="result-stagebar">
           ${STAGES.map((s, i) => {
             const cleared = victory || i < state.stageIndex
-            return `<span class="stage-dot${cleared ? ' cleared' : ''}${state.revived.includes(i + 1) ? ' revived' : ''}" title="第${i + 1}局 · ${DIFFICULTY_LABELS[s.difficulty]}${TYPE_LABELS[s.type]} · 门槛 ${fmt(s.minScore)}">${i + 1}</span>`
+            return `<span class="stage-dot${cleared ? ' cleared' : ''}${state.revived.includes(i + 1) ? ' revived' : ''}" title="第${i + 1}局 · ${dLabel(s.difficulty)}${TRACK === 'history' ? '' : TYPE_LABELS[s.type]} · 门槛 ${fmt(s.minScore)}">${i + 1}</span>`
           }).join('<i class="stage-sep"></i>')}
         </div>
         ${state.revived.length ? `<p class="result-revived-note">黄色局为复活罗盘救回：第 ${state.revived.join('、')} 局</p>` : ''}
@@ -657,7 +667,7 @@ export async function renderGame(app, modeKey, routeToken) {
           ${state.records.map(r => `
             <li${state.revived.includes(r.stage) ? ' class="revived"' : ''}>
               <span class="rl-idx">${r.stage}-${pad2(r.q)}</span>
-              <span class="rl-name">${r.name}<em class="diff-tag lv${Math.min(5, r.difficulty)}">${DIFFICULTY_LABELS[Math.min(5, r.difficulty)]}</em></span>
+              <span class="rl-name">${r.name}<em class="diff-tag lv${Math.min(LEVELS, r.difficulty)}">${dLabel(Math.min(LEVELS, r.difficulty))}</em></span>
               <span class="rl-dist">${r.distance != null ? fmt(Math.round(r.distance)) + ' km' : '未指认'}</span>
               <span class="rl-pts">${fmt(r.points)}</span>
             </li>`).join('')}
@@ -671,8 +681,8 @@ export async function renderGame(app, modeKey, routeToken) {
     </div>`
 
     app.querySelector('#btn-again').addEventListener('click', () => {
-      location.hash = '#/game/' + modeKey
-      if (location.hash === '#/game/' + modeKey) window.dispatchEvent(new HashChangeEvent('hashchange'))
+      location.hash = '#/' + ROUTE + '/' + modeKey
+      if (location.hash === '#/' + ROUTE + '/' + modeKey) window.dispatchEvent(new HashChangeEvent('hashchange'))
     })
     app.querySelector('#btn-home').addEventListener('click', () => { location.hash = '#/' })
 

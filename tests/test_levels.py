@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-# 回归验证：题库 + 15 局三线关卡结构 + 局门槛中止/晋级路径
+# 回归验证：题库 + 两条赛道（地理版 10 局 / 历史版 12 局）关卡结构 + 局门槛中止/晋级路径
 import json
 from playwright.sync_api import sync_playwright
 
@@ -10,6 +10,8 @@ BASE = os.environ.get("GD_BASE", "http://127.0.0.1:5173")
 # ———— 1. 题库静态校验 ————
 CHINA_HINTS = {"华北地区", "东北地区", "华东地区", "华中地区", "华南地区", "西南地区", "西北地区", "蒙古高原"}
 WORLD_HINTS = {"亚洲", "欧洲", "非洲", "北美洲", "南美洲", "大洋洲"}
+# 地理版两线仍是 5 档；历史版扩到 6 档
+LEVELS_OF_KIND = {"cities": 5, "scenics": 5, "history": 6}
 
 for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
     with open(rf"{ROOT}\web\src\data\{bank_name}.json", encoding="utf-8") as f:
@@ -19,9 +21,11 @@ for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
         names = [q["name"] for q in items]
         assert len(items) >= 200, f"{bank_name}.{kind} 数量 {len(items)} < 200"
         assert len(set(names)) == len(items), f"{bank_name}.{kind} 存在重复题目"
-        for lv in range(1, 6):
+        lvls = LEVELS_OF_KIND[kind]
+        for lv in range(1, lvls + 1):
             cnt = sum(1 for q in items if q["difficulty"] == lv)
             assert cnt >= 40, f"{bank_name}.{kind} 难度{lv} 数量 {cnt} < 40"
+        assert not any(q["difficulty"] > lvls for q in items), f"{bank_name}.{kind} 存在超出 {lvls} 档的难度"
         with open(rf"{ROOT}\web\src\data\{bank_name}-coords.json", encoding="utf-8") as f:
             coords = json.load(f)
         for q in items:
@@ -31,7 +35,7 @@ for bank_name, hints in (("china", CHINA_HINTS), ("world", WORLD_HINTS)):
             assert isinstance(c, list) and len(c) == 3, f"{q['name']} 缺坐标/归属"
             assert -90 <= c[0] <= 90 and -180 <= c[1] <= 180, f"{q['name']} 坐标越界: {c}"
     print(f"[题库] {bank_name}: 共 {sum(len(v) for v in bank.values())} 题"
-            f"（城市 {len(bank['cities'])} / 景点 {len(bank['scenics'])} / 历史 {len(bank['history'])}） ✓")
+          f"（城市 {len(bank['cities'])} / 景点 {len(bank['scenics'])} / 历史 {len(bank['history'])}） ✓")
 
 # ———— 2. 浏览器验证 ————
 with sync_playwright() as p:
@@ -40,7 +44,7 @@ with sync_playwright() as p:
     errors = []
     page.on("pageerror", lambda e: errors.append(str(e)))
 
-    # —— 2a. 关卡结构与晋级路径（中国篇：第1局 → 第2局） ——
+    # —— 2a. 地理版：10 局、城市/景点两线、5 难度 ——
     page.goto(f"{BASE}/#/game/china")
     page.wait_for_selector("#q-name", timeout=20000)
     page.wait_for_function("() => window.__gdDebug && window.__gdDebug.stages", timeout=10000)
@@ -55,19 +59,21 @@ with sync_playwright() as p:
         diffs: stages.map(s => s.difficulty),
         mins: stages.map(s => s.minScore),
         unique: new Set(names).size === names.length,
-        qTypesOk: stages.every(s => s.questions.every(q => q.type === s.type && q.difficulty === s.difficulty))
+        qTypesOk: stages.every(s => s.questions.every(q => q.type === s.type && q.difficulty === s.difficulty)),
+        body: document.body.className
       }
     }""")
-    assert info["stageCount"] == 15, f"局数 {info['stageCount']} != 15"
+    assert info["stageCount"] == 10, f"地理版局数 {info['stageCount']} != 10"
     assert all(s == 8 for s in info["sizes"]), f"每局题数异常: {info['sizes']}"
-    assert info["types"] == ["city", "scenic", "history"] * 5, f"三线循环异常: {info['types']}"
-    assert info["diffs"] == [1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5], f"难度递增异常: {info['diffs']}"
-    assert all(info["mins"][i] < info["mins"][i + 1] for i in range(14)), f"门槛递增异常: {info['mins']}"
-    assert info["mins"][0] == 6000 and info["mins"][-1] == 13000, f"门槛区间异常: {info['mins'][0]}~{info['mins'][-1]}"
+    assert info["types"] == ["city", "scenic"] * 5, f"两线交替异常: {info['types']}"
+    assert info["diffs"] == [1, 1, 2, 2, 3, 3, 4, 4, 5, 5], f"难度递增异常: {info['diffs']}"
+    assert all(info["mins"][i] < info["mins"][i + 1] for i in range(9)), f"门槛递增异常: {info['mins']}"
+    assert info["mins"][0] == 6000 and info["mins"][-1] == 12500, f"门槛区间异常: {info['mins'][0]}~{info['mins'][-1]}"
     assert info["mins"][1] - info["mins"][0] == 500, f"门槛涨幅异常: {info['mins']}"
     assert info["unique"], "80 题存在重复"
     assert info["qTypesOk"], "局内题目类型/难度与关卡配置不符"
-    print(f"[结构] 15局×8题 城市/景点/历史三线循环，门槛 {info['mins'][0]}→{info['mins'][-1]}（每局 +500） ✓")
+    assert "trk-history" not in info["body"], "地理版不应挂历史版皮肤"
+    print(f"[地理版] 10局×8题 城市/景点交替，门槛 {info['mins'][0]}→{info['mins'][-1]} ✓")
 
     # 使用疆域透镜（三档 1 次）：横幅出现、角标归零、按钮转 used
     assert page.locator('[data-prop="area"] .prop-n').inner_text() == "1"
@@ -83,7 +89,6 @@ with sync_playwright() as p:
         page.wait_for_selector("#confirm-pop:not(.hidden)", timeout=5000)
         page.click("#btn-confirm")
         page.wait_for_selector("#settle-pop:not(.hidden)", timeout=5000)
-        # 玩家点击「下一题」才会推进（无自动跳题）
         page.click("#btn-next")
         page.wait_for_function(
             f"() => window.__gdDebug.state.qInStage === {i + 1} && window.__gdDebug.state.phase === 'answering'",
@@ -96,8 +101,7 @@ with sync_playwright() as p:
     page.wait_for_selector("#confirm-pop:not(.hidden)", timeout=5000)
     page.click("#btn-confirm")
     page.wait_for_selector("#settle-pop:not(.hidden)", timeout=5000)
-    page.click("#btn-next")  # 第 8 题结算后点击「查看本局档案」
-    # 局结算档案面板出现（通关）
+    page.click("#btn-next")
     page.wait_for_selector(".stage-settle", timeout=10000)
     assert page.locator(".ss-chip").count() == 8, "档案面板缺少 8 个地名"
     assert "通 关" in page.locator(".ss-result").inner_text()
@@ -107,36 +111,69 @@ with sync_playwright() as p:
         timeout=10000,
     )
 
-    # 第 2 局界面断言
     assert page.locator("#q-index").inner_text() == "第2局 · 01/08", page.locator("#q-index").inner_text()
     assert page.locator("#q-badge").inner_text() == "景点"
     assert page.locator("#q-diff").inner_text() == "★☆☆☆☆"
     assert page.locator("#q-target").inner_text() == "6,500"
     assert page.locator("#q-stage-score").inner_text() == "0"
-    # 道具为整局按档位发放：跨局不重置，透镜仍为 used、加时仍剩 3 次
     assert "used" in page.locator('[data-prop="area"]').get_attribute("class"), "透镜次数不应跨局恢复"
     assert page.locator('[data-prop="time"] .prop-n').inner_text() == "3", "加时次数不应跨局变化"
     assert "danger" not in page.locator("#q-stage-wrap").get_attribute("class")
     print("[晋级] 第1局达标 → 第2局（景点·简单·门槛6,500），道具为整局计数 ✓")
     page.screenshot(path=str(ROOT / "tests" / "gd_stage2.png"))
 
-    # —— 2b. 门槛中止路径（第1局全部超时 → 0 分中止） ——
-    # 先回首页再进入，确保 hash 变化触发路由重建游戏状态（goto 相同 hash 不会重载）
+    # —— 2b. 历史版：12 局、单线、6 难度、独立门槛、皮肤挂载 ——
+    hpage = browser.new_page(viewport={"width": 1280, "height": 800})
+    herr = []
+    hpage.on("pageerror", lambda e: herr.append(str(e)))
+    for mode, cls in (("china", "md-china"), ("world", "md-world")):
+        hpage.goto(f"{BASE}/#/history/{mode}")
+        hpage.wait_for_selector("#q-name", timeout=20000)
+        hpage.wait_for_function("() => window.__gdDebug && window.__gdDebug.stages", timeout=10000)
+        hi = hpage.evaluate("""() => {
+          const { stages } = window.__gdDebug
+          const names = stages.flatMap(s => s.questions.map(q => q.name))
+          return {
+            n: stages.length,
+            sizes: stages.map(s => s.questions.length),
+            types: [...new Set(stages.map(s => s.type))],
+            diffs: stages.map(s => s.difficulty),
+            mins: stages.map(s => s.minScore),
+            unique: new Set(names).size === names.length,
+            stars: document.querySelector('#q-diff').textContent,
+            body: document.body.className,
+            bg: getComputedStyle(document.body).backgroundImage
+          }
+        }""")
+        assert hi["n"] == 12, f"历史版局数 {hi['n']} != 12"
+        assert all(s == 8 for s in hi["sizes"]), f"每局题数异常: {hi['sizes']}"
+        assert hi["types"] == ["history"], f"历史版应只有 history 线: {hi['types']}"
+        assert hi["diffs"] == [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6], f"六档递增异常: {hi['diffs']}"
+        assert hi["mins"][0] == 5000 and hi["mins"][-1] == 9400, f"门槛区间异常: {hi['mins'][0]}~{hi['mins'][-1]}"
+        assert all(hi["mins"][i + 1] - hi["mins"][i] == 400 for i in range(11)), f"门槛涨幅异常: {hi['mins']}"
+        assert hi["unique"], "96 题存在重复"
+        assert hi["stars"] == "★☆☆☆☆☆", f"六档星标异常: {hi['stars']}"
+        assert "trk-history" in hi["body"] and cls in hi["body"], f"皮肤类名缺失: {hi['body']}"
+        assert "svg" in hi["bg"], f"皮肤纹理未生效: {hi['bg']}"
+        hpage.screenshot(path=str(ROOT / "tests" / f"history_{mode}.png"))
+        print(f"[历史版·{mode}] 12局×8题 六档，门槛 {hi['mins'][0]}→{hi['mins'][-1]}，皮肤 {cls} ✓")
+    assert not herr, f"历史版页面 JS 报错: {herr}"
+    hpage.close()
+
+    # —— 2c. 门槛中止路径（第1局全部超时 → 0 分中止） ——
     page.goto(f"{BASE}/#/")
     page.wait_for_selector(".mode-card", timeout=10000)
     page.goto(f"{BASE}/#/game/china")
     page.wait_for_selector("#q-name", timeout=20000)
     page.wait_for_function("() => window.__gdDebug && window.__gdDebug.stages", timeout=10000)
     for i in range(8):
-        # 超时自动结算（中国篇每题 15 秒）
         page.wait_for_selector("#settle-pop:not(.hidden)", timeout=30000)
-        page.click("#btn-next")  # 超时结算后同样需要点击推进（第 8 题 → 局结算面板）
+        page.click("#btn-next")
         if i < 7:
             page.wait_for_function(
                 f"() => window.__gdDebug.state.qInStage === {i + 1} && window.__gdDebug.state.phase === 'answering'",
                 timeout=10000,
             )
-    # 第 8 题超时结算后 → 局结算档案面板（未达标）→ 结束本局任务
     page.wait_for_selector(".stage-settle", timeout=15000)
     assert "未达标" in page.locator(".ss-result").inner_text()
     assert page.locator("#btn-stage-next").inner_text() == "结束本局任务"
@@ -150,8 +187,9 @@ with sync_playwright() as p:
     assert len(rows) == 8, f"成绩单 {len(rows)} 行 != 8"
     assert page.locator(".stage-dot.cleared").count() == 0, "未通关却有已通关标记"
     assert page.locator(".result-score em").inner_text() == "0"
+    assert page.locator(".stage-dot").count() == 10, f"地理版进度点 {page.locator('.stage-dot').count()} != 10"
     page.screenshot(path=str(ROOT / "tests" / "gd_gameover.png"))
-    print("[中止] 第1局 0 分未达门槛 → 任务中止 · 止步第1局 · 8 行成绩单 ✓")
+    print("[中止] 第1局 0 分未达门槛 → 任务中止 · 止步第1局 · 8 行成绩单 · 10 个进度点 ✓")
 
     browser.close()
     assert not errors, f"页面 JS 报错: {errors}"

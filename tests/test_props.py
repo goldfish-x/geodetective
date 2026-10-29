@@ -17,19 +17,30 @@ with sync_playwright() as p:
     errs = []
     page.on("pageerror", lambda e: errs.append(str(e)))
 
-    # —— 档位门禁：一档全 0，二档无回溯/透镜 ——
-    for tier, want in ((1, {"time": 0, "revive": 0, "redo": 0, "area": 0}),
-                       (2, {"time": 2, "revive": 2, "redo": 0, "area": 0}),
+    # —— 档位门禁：未获发的道具连图标都不出现（grant 过滤），已获发的按档位给次数 ——
+    # 一档 counts 为空 → 道具栏没有任何图标；二档只有加时+复活；三档四种全给
+    for tier, want in ((1, {}),
+                       (2, {"time": 2, "revive": 2}),
                        (3, {"time": 3, "revive": 2, "redo": 1, "area": 1})):
         page.goto(BASE + "/#/")
         page.wait_for_selector(".mode-card", timeout=10000)
         page.evaluate("t => localStorage.setItem('gd_tier', String(t))", tier)
         page.goto(BASE + "/#/game/china")
-        page.wait_for_selector("#props-bar [data-prop]", timeout=15000)
+        page.wait_for_selector("#q-name", timeout=15000)
+        page.wait_for_function("() => window.__gdDebug && window.__gdDebug.state.grant", timeout=10000)
+        page.wait_for_timeout(300)
+        if want:
+            page.wait_for_selector("#props-bar [data-prop]", timeout=15000)
         got = {k: n for k, n, _ in counts(page)}
         if got != want:
             fails.append(f"档位{tier} 道具次数 {got} != {want}")
-    print("[档位] 1/2/3 档次数门禁 ✓")
+    print("[档位] 1 档无图标 / 2 档加时+复活 / 3 档四种全给 ✓")
+    # 后续用例需要完整道具，切回三档
+    page.goto(BASE + "/#/")
+    page.wait_for_selector(".mode-card", timeout=10000)
+    page.evaluate("() => localStorage.setItem('gd_tier', '3')")
+    page.goto(BASE + "/#/game/china")
+    page.wait_for_selector("#props-bar [data-prop]", timeout=15000)
 
     # —— 悬停说明 ——
     page.hover('[data-prop="revive"]')

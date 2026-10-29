@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { randomUUID } from "node:crypto";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
-import { MODES, haversine, score, buildQuiz, STAGES, STAGE_SIZE, PROPS, TIERS, tierCounts } from "@gd/shared";
+import { MODES, haversine, score, buildQuiz, stagesOf, STAGE_SIZE, PROPS, TIERS, TRACKS, tierCounts } from "@gd/shared";
 import { openStore, seasonOf } from "./db.js";
 import { verify, issueTokens, newCode, REFRESH_TTL } from "./auth.js";
 
@@ -25,6 +25,12 @@ export function loadBank(mode) {
 
 // 下发题目：只含展示与判级所需字段，绝不含坐标
 const pubQ = q => ({ name: q.name, difficulty: q.difficulty, type: q.type });
+
+// 赛道（产品线）：geo=地理版（城市+景点，10 局）、history=历史版（历史事件，12 局）
+const normTrack = t => (t === "history" ? "history" : "geo");
+// 榜单按赛道分库：地理版沿用 china/world 旧键，历史版加 -history 后缀，互不覆盖
+const boardKey = (mode, track) => (track === "history" ? mode + "-history" : mode);
+const stageMeta = t => stagesOf(t).map(s => ({ type: s.type, difficulty: s.difficulty, minScore: s.minScore }));
 
 export function buildApp(opts = {}) {
   const secret = opts.secret || process.env.GD_JWT_SECRET || "dev-secret-change-me";
@@ -51,7 +57,11 @@ export function buildApp(opts = {}) {
   app.get("/v1/config", async () => ({
     modes: Object.fromEntries(Object.entries(MODES).map(([k, m]) =>
       [k, { title: m.title, timeLimit: m.timeLimit, maxDistance: m.maxDistance, maxScore: m.maxScore }])),
-    stages: STAGES.map(s => ({ type: s.type, difficulty: s.difficulty, minScore: s.minScore })),
+    // stages 保留为地理版关卡表（兼容旧客户端），tracks 给出两条赛道各自的完整配置
+    stages: stageMeta("geo"),
+    tracks: Object.fromEntries(Object.values(TRACKS).map(t => [t.key, {
+      label: t.label, sub: t.sub, levels: t.levels, stages: stageMeta(t.key)
+    }])),
     stageSize: STAGE_SIZE,
     season: seasonOf(new Date(now())),
     props: PROPS,
@@ -92,10 +102,13 @@ export function buildApp(opts = {}) {
     const season = seasonOf(new Date(now()));
     const user = store.userByPhone(req.user.sub);
     const best = {};
-    for (const m of Object.keys(MODES)) {
-      const e = store.bestOf(m, season, req.user.sub);
-      best[m] = e ? { score: e.score, rank: store.board(m, season, 500).findIndex(x => x.phone === req.user.sub) + 1 } : null;
-    }
+    for (const m of Object.keys(MODES))
+      for (const t of ["geo", "history"]) {
+        const k = boardKey(m, t);
+        const e = store.bestOf(k, season, req.user.sub);
+        best[t === "geo" ? m : m + "-history"] =
+          e ? { score: e.score, rank: store.board(k, season, 500).findIndex(x => x.phone === req.user.sub) + 1 } : null;
+      }
     return { phone: req.user.sub.slice(0, 3) + "****" + req.user.sub.slice(7), nickname: user?.nickname || req.user.nick, season, best };
   });
 
@@ -104,16 +117,17 @@ export function buildApp(opts = {}) {
     if (await needAuth(req, rep)) return;
     const mode = req.body?.mode;
     if (!MODES[mode]) return rep.code(400).send({ error: "bad_mode" });
-    const stages = buildQuiz(bankOf(mode));
+    const track = normTrack(req.body?.track);
+    const stages = buildQuiz(bankOf(mode), track);
     const tier = [1, 2, 3].includes(Number(req.body?.tier)) ? Number(req.body.tier) : 3;
     const run = {
-      id: randomUUID(), phone: req.user.sub, mode, stages, tier,
+      id: randomUUID(), phone: req.user.sub, mode, track, stages, tier,
       s: 0, q: 0, stageScore: 0, total: 0, props: tierCounts(tier),
       revived: [], awaitRevive: false,
       issuedAt: now(), over: false, createdAt: now()
     };
     store.putRun(run);
-    return { runId: run.id, mode, stage: 1, tier: run.tier, props: Object.assign({}, run.props),
+    return { runId: run.id, mode, track: run.track, stage: 1, tier: run.tier, props: Object.assign({}, run.props),
              question: pubQ(stages[0].questions[0]), timeLimit: MODES[mode].timeLimit };
   });
 
@@ -239,10 +253,11 @@ export function buildApp(opts = {}) {
     store.putRun(run);
     const season = seasonOf(new Date(now()));
     const user = store.userByPhone(run.phone);
-    const prev = store.bestOf(run.mode, season, run.phone);
+    const bkey = boardKey(run.mode, normTrack(run.track));
+    const prev = store.bestOf(bkey, season, run.phone);
     if (!prev || run.total > prev.score)
-      store.boardUpset(run.mode, season, { phone: run.phone, nickname: user?.nickname || "无名侦探", score: run.total, date: new Date(now()).toISOString().slice(0, 10) });
-    const board = store.board(run.mode, season, 10);
+      store.boardUpset(bkey, season, { phone: run.phone, nickname: user?.nickname || "无名侦探", score: run.total, date: new Date(now()).toISOString().slice(0, 10) });
+    const board = store.board(bkey, season, 10);
     const rank = board.findIndex(e => e.phone === run.phone) + 1;
     return { total: run.total, season, rank: rank || null, revived: run.revived.slice(),
              board: board.map((e, i) => ({ rank: i + 1, nickname: e.nickname, score: e.score, date: e.date })) };
@@ -251,9 +266,10 @@ export function buildApp(opts = {}) {
   app.get("/v1/boards/:mode", async (req, rep) => {
     const mode = req.params.mode;
     if (!MODES[mode]) return rep.code(404).send({ error: "bad_mode" });
+    const track = normTrack(req.query.track);
     const season = req.query.season || seasonOf(new Date(now()));
     const limit = Math.min(100, Math.max(1, Number(req.query.limit) || 20));
-    return { season, board: store.board(mode, season, limit)
+    return { season, track, board: store.board(boardKey(mode, track), season, limit)
       .map((e, i) => ({ rank: i + 1, nickname: e.nickname, score: e.score, date: e.date })) };
   });
 
