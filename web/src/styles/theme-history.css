@@ -303,3 +303,26 @@ body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after,
 body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
   border-top: 1px solid rgba(216, 183, 113, 0.55);
 }
+
+/* ---------- v4 收尾：材质预告条统一 + 移动端触摸区 ---------- */
+/* 世界篇那条原来是近白大理石，和中国篇的暗红木并排看像两种描边；
+   统一为「同一支金线 + 各自材质底」：世界篇用冷灰石材渐变，中国篇仍是红木纹。 */
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after {
+  background: linear-gradient(180deg, #d8d2c4 0%, #b3aca0 55%, #8e887c 100%);
+}
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after,
+body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
+  height: 10px;
+  border-top: 2px solid rgba(216, 183, 113, 0.80);
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* 移动端：胶囊按钮触摸区抬到 ≥40px，历史版顶栏第二行留出间距 */
+@media (max-width: 560px) {
+  body.trk-history .ts-link { padding: 11px 20px; font-size: 13.5px; }
+  body.trk-history .board-tab { min-height: 40px; padding: 10px 13px; }
+  body.trk-history .game-top { gap: 7px 12px; padding: 10px 12px 9px; }
+  body.trk-history .q-stats { gap: 3px; }
+  body.trk-history .q-index,
+  body.trk-history .q-stage { letter-spacing: 0.06em; }
+}
