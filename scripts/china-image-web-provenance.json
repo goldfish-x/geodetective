@@ -833,10 +833,12 @@
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
  "王羲之兰亭雅集": {
-  "url": "https://img0.baidu.com/it/u=1953618415,3942676966&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
-  "page": "mbd.baidu.com",
-  "title": "探访绍兴兰亭:王羲之的雅致生活",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "《兰亭修禊图》长卷（曲水流觞雅集）",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event",
+  "note": "用户提供的《兰亭集序》书法图不合格，改用兰亭修禊图"
  },
  "班超经营西域": {
   "url": "https://img1.baidu.com/it/u=3309261402,607523821&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500",
@@ -1663,9 +1665,57 @@
  "白马寺建立": {
   "url": "",
   "page": "image.baidu.com",
-  "title": "洛阳白马寺山门正面实景",
+  "title": "洛阳白马寺齐云塔",
   "license": "未核验授权（百度图片检索）",
   "subject": "event",
-  "note": "2026-10-29 按用户要求换图（原图或为文字海报/形势图/带题字），已裁切去字"
+  "note": "用户提供的山门照匾额直书「白马寺」且带电线，改用齐云塔"
+ },
+ "郭子仪嘉山之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "古代骑兵交战绘画（安史之乱题材）",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event",
+  "note": "「嘉山之战」无专属史料图，选用唐军骑兵作战古画"
+ },
+ "白狼山之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "汉末骑兵交锋白描线稿",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event",
+  "note": "白描线稿，白底，卡片内以模糊底衬托"
+ },
+ "黄天荡之战": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "梁红玉擂鼓战金山（工笔重彩）",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event",
+  "note": "宋金水战题材传统绘画"
+ },
+ "耶律阿保机建立契丹国": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "辽太祖耶律阿保机坐像（南薰殿历代帝王像）",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event",
+  "note": "传世画像"
+ },
+ "努尔哈赤建立后金": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "清太祖努尔哈赤朝服像",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event",
+  "note": "传世画像，已裁去右下角水印"
+ },
+ "郭守敬出生": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "郭守敬人物像（仿古纸本，现代绘制）",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event",
+  "note": "郭守敬无可靠传世画像，用户提供图实为现代雕塑，改用非雕塑人物像"
  }
 }

@@ -124,5 +124,14 @@
   "subject": "event",
   "source": "generated",
   "md5": "d5d9b823cb5e2f11d8ea666a201b54d6"
+ },
+ "欧盟成立": {
+  "title": "用户提供：欧盟成立.png",
+  "url": "",
+  "license": "未核验授权（网络检索/教材扫描，用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "445abeb2d89be1ce7cacaf41de1b8cba",
+  "subject": "event",
+  "source": "user"
  }
 }

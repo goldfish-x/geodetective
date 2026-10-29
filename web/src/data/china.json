@@ -3098,6 +3098,31 @@
       "name": "龙门石窟开凿",
       "difficulty": 5,
       "hint": "华中地区"
+    },
+    {
+      "name": "郭子仪嘉山之战",
+      "difficulty": 4,
+      "hint": "华北地区"
+    },
+    {
+      "name": "白狼山之战",
+      "difficulty": 4,
+      "hint": "东北地区"
+    },
+    {
+      "name": "黄天荡之战",
+      "difficulty": 3,
+      "hint": "华东地区"
+    },
+    {
+      "name": "耶律阿保机建立契丹国",
+      "difficulty": 3,
+      "hint": "华北地区"
+    },
+    {
+      "name": "努尔哈赤建立后金",
+      "difficulty": 3,
+      "hint": "东北地区"
     }
   ]
 }
