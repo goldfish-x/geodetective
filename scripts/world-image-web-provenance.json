@@ -793,12 +793,6 @@
   "title": "🏜️ 沙漠之狐的北非折戟:阿拉曼战役揭秘",
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
  },
- "阿波罗13号事故": {
-  "url": "https://img2.baidu.com/it/u=3711517478,4067477286&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500",
-  "page": "www.uux.cn",
-  "title": "阿波罗13号:关于美国宇航局近乎灾难的月球任务的事实",
-  "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
- },
  "阿莱西亚之战": {
   "url": "https://img1.baidu.com/it/u=4065865785,1349798987&fm=253&fmt=auto&app=138&f=JPEG?w=772&h=500",
   "page": "apoc.org.cn",
@@ -872,13 +866,6 @@
   "page": "weibo.com",
   "title": "30🔹街头随拍👻🔹图1-4:巴黎巴士底广场中心的七月柱.",
   "license": "未核验授权（网络检索图，经 Qwen3.8-Max 视觉核验为与事件地点相关的实景照片；商用前需替换为 CC 或自拍）"
- },
- "黑死病爆发": {
-  "url": "https://img1.baidu.com/it/u=2786202887,1780546335&fm=253&fmt=auto&app=138&f=JPEG?w=730&h=500",
-  "page": "",
-  "title": "黑死病杰作!勃鲁盖尔《死亡》",
-  "license": "未核验授权（网络检索图，经人工逐张复核与事件对应；商用前需替换为 CC 或自拍）",
-  "subject": "event"
  },
  "文艺复兴开端": {
   "url": "https://img1.baidu.com/it/u=3215993633,2996941493&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=656",
@@ -1655,14 +1642,6 @@
   "subject": "event",
   "note": "2026-10-29 按用户要求换图（原图或为文字海报/形势图/带题字），已裁切去字"
  },
- "德意志帝国成立": {
-  "url": "",
-  "page": "image.baidu.com",
-  "title": "《德意志帝国宣告成立》（安东·冯·维尔纳，1877）",
-  "license": "未核验授权（百度图片检索）",
-  "subject": "event",
-  "note": "1871年1月18日凡尔赛宫镜厅加冕场景油画"
- },
  "第一届现代奥运会": {
   "url": "",
   "page": "image.baidu.com",
@@ -1711,14 +1690,6 @@
   "subject": "event",
   "note": "历史版 DLC 扩充题库新增，经视觉复核无叠加文字/水印"
  },
- "意大利王国成立": {
-  "url": "",
-  "page": "image.baidu.com",
-  "title": "维托里奥·埃马努埃莱二世肖像油画",
-  "license": "未核验授权（百度图片检索）",
-  "subject": "event",
-  "note": "历史版 DLC 扩充题库新增，经视觉复核无叠加文字/水印"
- },
  "罗马共和国建立": {
   "url": "",
   "page": "image.baidu.com",
@@ -1734,5 +1705,13 @@
   "license": "未核验授权（百度图片检索）",
   "subject": "event",
   "note": "历史版 DLC 扩充题库新增，经视觉复核无叠加文字/水印"
+ },
+ "小猎犬号抵达加拉帕戈斯": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "小猎犬号（HMS Beagle）水彩画",
+  "license": "未核验授权（百度图片检索）",
+  "subject": "event",
+  "note": "达尔文随小猎犬号抵达加拉帕戈斯，1835"
  }
 }

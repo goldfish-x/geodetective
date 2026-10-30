@@ -259,5 +259,32 @@
   "md5": "222ed201fd1d4d25d8c6eafdc3a6fb9a",
   "subject": "event",
   "source": "user"
+ },
+ "德意志帝国成立": {
+  "title": "用户提供：德意志帝国成立.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "32e788921e572aa047b8e86814192eca",
+  "subject": "event",
+  "source": "user"
+ },
+ "意大利王国成立": {
+  "title": "用户提供：意大利王国成立.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "f6ae9f47828b305c03a4d2031f132b8f",
+  "subject": "event",
+  "source": "user"
+ },
+ "黑死病爆发": {
+  "title": "用户提供：黑死病爆发.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "601cf1f71e4e3df1d6b04ceb2d096b5d",
+  "subject": "event",
+  "source": "user"
  }
 }
