@@ -204,6 +204,10 @@ test("赛道契约：config 暴露两条赛道，历史版 12 局且只出历史
   assert.equal(cfg.tracks.history.stages[0].minScore, 6000);
   assert.equal(cfg.tracks.history.stages[5].minScore, 12000);
   assert.equal(cfg.tracks.history.levels, 6);
+  // 历史版·世界篇的距离衰减单独收紧，地理版保持不变
+  assert.equal(cfg.modeParams.geo.world.decayK, 2.3);
+  assert.equal(cfg.modeParams.history.world.decayK, 1.25);
+  assert.equal(cfg.modeParams.history.china.decayK, 1.7);
   // 旧客户端兼容：顶层 stages 仍是地理版
   assert.equal(cfg.stages.length, 10);
 

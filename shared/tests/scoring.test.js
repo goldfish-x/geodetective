@@ -2,7 +2,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import {
-  MODES, haversine, score, STAGES, GEO_STAGES, HISTORY_STAGES, STAGE_SIZE,
+  MODES, modeOf, haversine, score, STAGES, GEO_STAGES, HISTORY_STAGES, STAGE_SIZE,
   DIFFICULTY_LABELS, difficultyLabel, levelsOf, stagesOf, TRACKS, TRACK_KEYS,
   PROPS, TIERS, FREE_TIER, tierCounts, TYPE_LABELS, BUCKET_OF_TYPE, buildQuiz
 } from '../src/index.js'
@@ -39,6 +39,27 @@ test('历史版：6 局（每难度 1 局）、单线、门槛 6000 起每局 +1
   assert.deepEqual(HISTORY_STAGES, stagesOf('history'))
   assert.equal(levelsOf('history'), 6)
   assert.equal(levelsOf('geo'), 5)
+})
+
+test('历史版·世界篇距离衰减单独收紧，其余赛道不受影响', () => {
+  const gw = modeOf('geo', 'world')
+  const hw = modeOf('history', 'world')
+  const hc = modeOf('history', 'china')
+  // 地理版、历史版中国篇沿用原参数
+  assert.equal(gw.decayK, MODES.world.decayK)
+  assert.equal(hc.decayK, MODES.china.decayK)
+  assert.equal(hw.decayK, 1.25)
+  assert.equal(hw.maxDistance, MODES.world.maxDistance)
+  assert.equal(hw.maxScore, MODES.world.maxScore)
+  // 同样的误差，历史版世界篇明显更低：750 km 处 3985 → 2898
+  assert.equal(score(750, gw), 3985)
+  assert.equal(score(750, hw), 2898)
+  // 4000 分所需的误差从约 745 km 收紧到约 415 km
+  assert.ok(score(400, hw) > 4000)
+  assert.ok(score(415, hw) <= 4000)
+  // 极近与越界行为不变
+  assert.equal(score(0, hw), 5000)
+  assert.equal(score(1500, hw), 0)
 })
 
 test('难度名分赛道：地理版 5 级旧称，历史版 6 级史感称', () => {

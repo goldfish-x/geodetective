@@ -1,5 +1,5 @@
 // 游戏页：出题 → 作答 → 单题结算 → 局结算（最低分门槛） → 终局结算
-import { MODES, haversine, score, buildQuiz, STAGE_SIZE, stagesOf, levelsOf, difficultyLabel, TYPE_LABELS, PROPS, PROP_ORDER, TIERS, FREE_TIER, tierCounts } from '@gd/shared'
+import { MODES, modeOf, haversine, score, buildQuiz, STAGE_SIZE, stagesOf, levelsOf, difficultyLabel, TYPE_LABELS, PROPS, PROP_ORDER, TIERS, FREE_TIER, tierCounts } from '@gd/shared'
 import { getNickname, addScore } from '../core/storage.js'
 import { onlineEnabled } from '../net/api.js'
 import { getSession } from '../net/session.js'
@@ -45,12 +45,13 @@ const imgURL = (name, modeKey, availableImages) => {
 }
 
 export async function renderGame(app, modeKey, routeToken, track = 'geo') {
-  const mode = MODES[modeKey]
-  if (!mode) return
+  if (!MODES[modeKey]) return
 
   // 赛道（产品线）：geo=地理版 / history=历史版。决定关卡表、难度层数、皮肤与榜单键。
   const TRACK = track === 'history' ? 'history' : 'geo'
-  const STAGES = stagesOf(TRACK)          // 本局使用的关卡表（地理 10 局 / 历史 12 局）
+  // 计分参数按赛道取：历史版·世界篇的距离衰减单独收紧（见 shared/src/scoring.js）
+  const mode = modeOf(TRACK, modeKey)
+  const STAGES = stagesOf(TRACK)          // 本局使用的关卡表（地理 10 局 / 历史 6 局）
   const LEVELS = levelsOf(TRACK)          // 难度层数：地理 5 / 历史 6
   const dLabel = lv => difficultyLabel(TRACK, lv)
   const ROUTE = TRACK === 'history' ? 'history' : 'game'
@@ -719,7 +720,7 @@ export async function renderGame(app, modeKey, routeToken, track = 'geo') {
   startQuestion()
 
   // 测试钩子（仅供自动化测试读取内部状态）
-  window.__gdDebug = { state, stages, map }
+  window.__gdDebug = { state, stages, map, mode, track: TRACK }   // mode/track 供回归测试核对赛道计分参数
 
   // 注册清理（路由切换时）
   window.__gdCleanup = () => {

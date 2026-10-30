@@ -74,6 +74,9 @@ with sync_playwright() as p:
     assert info["qTypesOk"], "局内题目类型/难度与关卡配置不符"
     assert "trk-history" not in info["body"], "地理版不应挂历史版皮肤"
     print(f"[地理版] 10局×8题 城市/景点交替，门槛 {info['mins'][0]}→{info['mins'][-1]}（每局 +1000） ✓")
+    gk = page.evaluate("() => window.__gdDebug.mode.decayK")
+    assert gk == 1.7, f"地理版·中国篇衰减指数 {gk} != 1.7"
+    print("[计分] 地理版·中国篇衰减 1.7 ✓（历史版·世界篇 1.25 才收严，地理版不受影响）")
 
     # 使用疆域透镜（三档 1 次）：横幅出现、角标归零、按钮转 used
     assert page.locator('[data-prop="area"] .prop-n').inner_text() == "1"
@@ -142,7 +145,8 @@ with sync_playwright() as p:
             unique: new Set(names).size === names.length,
             stars: document.querySelector('#q-diff').textContent,
             body: document.body.className,
-            bg: getComputedStyle(document.body).backgroundImage
+            bg: getComputedStyle(document.body).backgroundImage,
+            k: window.__gdDebug.mode.decayK
           }
         }""")
         assert hi["n"] == 6, f"历史版局数 {hi['n']} != 6"
@@ -155,6 +159,9 @@ with sync_playwright() as p:
         assert hi["stars"] == "★☆☆☆☆☆", f"六档星标异常: {hi['stars']}"
         assert "trk-history" in hi["body"] and cls in hi["body"], f"皮肤类名缺失: {hi['body']}"
         assert "svg" in hi["bg"], f"皮肤纹理未生效: {hi['bg']}"
+        # 历史版·世界篇的距离衰减单独收严；中国篇沿用原曲线
+        want_k = 1.25 if mode == "world" else 1.7
+        assert hi["k"] == want_k, f"历史版·{mode} 衰减指数 {hi['k']} != {want_k}"
         hpage.screenshot(path=str(ROOT / "tests" / f"history_{mode}.png"))
         print(f"[历史版·{mode}] 6局×8题 六档，门槛 {hi['mins'][0]}→{hi['mins'][-1]}，皮肤 {cls} ✓")
     assert not herr, f"历史版页面 JS 报错: {herr}"

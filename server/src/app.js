@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { randomUUID } from "node:crypto";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
-import { MODES, haversine, score, buildQuiz, stagesOf, STAGE_SIZE, PROPS, TIERS, TRACKS, tierCounts } from "@gd/shared";
+import { MODES, modeOf, haversine, score, buildQuiz, stagesOf, STAGE_SIZE, PROPS, TIERS, TRACKS, tierCounts } from "@gd/shared";
 import { openStore, seasonOf } from "./db.js";
 import { verify, issueTokens, newCode, REFRESH_TTL } from "./auth.js";
 
@@ -57,6 +57,12 @@ export function buildApp(opts = {}) {
   app.get("/v1/config", async () => ({
     modes: Object.fromEntries(Object.entries(MODES).map(([k, m]) =>
       [k, { title: m.title, timeLimit: m.timeLimit, maxDistance: m.maxDistance, maxScore: m.maxScore }])),
+    // 各赛道的实际计分参数（历史版·世界篇的距离衰减更严），供客户端显示与离线模式对齐
+    modeParams: Object.fromEntries(Object.keys(TRACKS).map(t =>
+      [t, Object.fromEntries(Object.keys(MODES).map(m => {
+        const cfg = modeOf(t, m);
+        return [m, { timeLimit: cfg.timeLimit, maxDistance: cfg.maxDistance, decayK: cfg.decayK, maxScore: cfg.maxScore }];
+      }))])),
     // stages 保留为地理版关卡表（兼容旧客户端），tracks 给出两条赛道各自的完整配置
     stages: stageMeta("geo"),
     tracks: Object.fromEntries(Object.values(TRACKS).map(t => [t.key, {
@@ -128,7 +134,8 @@ export function buildApp(opts = {}) {
     };
     store.putRun(run);
     return { runId: run.id, mode, track: run.track, stage: 1, tier: run.tier, props: Object.assign({}, run.props),
-             question: pubQ(stages[0].questions[0]), timeLimit: MODES[mode].timeLimit };
+             question: pubQ(stages[0].questions[0]), timeLimit: modeOf(track, mode).timeLimit,
+             modeParams: modeOf(track, mode) };
   });
 
   const cur = run => run.stages[run.s].questions[run.q];
@@ -202,7 +209,7 @@ export function buildApp(opts = {}) {
     const ord = Number(req.body?.ord);
     if (ord !== run.s * STAGE_SIZE + run.q) return rep.code(409).send({ error: "stale_answer" });
     const q = cur(run);
-    const mode = MODES[run.mode];
+    const mode = modeOf(normTrack(run.track), run.mode);
     const elapsed = (now() - run.issuedAt) / 1000;
     const timedOut = elapsed > mode.timeLimit;
     const lat = Number(req.body?.lat), lng = Number(req.body?.lng);

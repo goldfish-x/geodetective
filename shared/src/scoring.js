@@ -18,6 +18,29 @@ export const MODES = {
   }
 }
 
+// 赛道级参数补丁：只覆盖个别 (赛道, 篇章) 组合，其余一律沿用 MODES 原值。
+//
+// 历史版·世界篇要单独收紧：历史事件在地理上高度聚集（欧洲尤其密集），
+// 沿用地理版 1500 km / k=2.3 的曲线时，随便点一座欧洲城市、误差 700 km 也能拿 4000+，
+// 等于不认地方也能过关。把衰减指数从 2.3 收到 1.25 后：
+//   4000 分所需误差 约 745 km → 约 415 km
+//   750 km 处        约 3985 分 → 约 2667 分
+//   1000 km 处       约 3025 分 → 约 1793 分
+// 中国篇（300 km 容差本来就紧）与整个地理版完全不动。
+export const TRACK_MODE_OVERRIDES = {
+  history: {
+    world: { decayK: 1.25 }
+  }
+}
+
+/** 取某赛道某篇章的实际计分参数（含赛道级覆盖） */
+export function modeOf(trackKey, modeKey) {
+  const base = MODES[modeKey]
+  if (!base) return base
+  const ov = (TRACK_MODE_OVERRIDES[trackKey] || {})[modeKey]
+  return ov ? { ...base, ...ov } : base
+}
+
 // 地球半径（公里）
 const EARTH_R = 6371
 
