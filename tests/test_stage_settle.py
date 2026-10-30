@@ -13,16 +13,20 @@ for bank_name, desc_name in (("china", "china-desc"), ("world", "world-desc")):
         bank = json.load(f)
     with open(rf"{ROOT}\web\src\data\{desc_name}.json", encoding="utf-8") as f:
         desc = json.load(f)
-    all_q = ([(it, 100, False) for b in ("cities", "scenics") for it in bank[b]]
-             + [(it, 100, True) for it in bank["history"]])
+    # 地质/景点：简介 100–200 字；历史版定位是「边玩边学」，简介 120–250 字且必须带当时地名
+    all_q = ([(it, 100, 200, False) for b in ("cities", "scenics") for it in bank[b]]
+             + [(it, 120, 250, True) for it in bank["history"]])
     total = sum(len(bank[b]) for b in ("cities", "scenics", "history"))
     assert len(desc) == total, f"{desc_name} 条目 {len(desc)} != {total}"
     img_cnt = 0
-    for q, lo, is_hist in all_q:
+    for q, lo, hi, is_hist in all_q:
         e = desc.get(q["name"])
         assert e, f"缺少档案: {q['name']}"
         L = len(e["desc"])
-        assert lo <= L <= 200, f"{q['name']} 简介 {L} 字（下限 {lo}）"
+        assert lo <= L <= hi, f"{q['name']} 简介 {L} 字（应在 {lo}–{hi}）"
+        if is_hist:
+            assert e.get("then"), f"{q['name']} 缺少「事件发生当时的旧地名」"
+            assert e.get("now"), f"{q['name']} 缺少「今属地名」"
         if q["difficulty"] <= 2:
             if is_hist:
                 # 历史线允许个别事件暂无合格实景图（此时不出 img 提示词），见 docs/历史事件待出图清单.md

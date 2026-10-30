@@ -31,6 +31,7 @@ export function renderHome(app, track = 'geo') {
   const T = TRACKS[track] || TRACKS.geo
   const M = TRACK_META[track] || TRACK_META.geo
   const stages = T.levels * T.stagesPerLevel
+  // 首页保持原始（深夜侦探事务所）风格；材质皮肤只在进入具体篇章后挂载
   document.body.classList.toggle('trk-history', track === 'history')
   document.body.classList.remove('md-china', 'md-world')
   const nickname = getNickname()
@@ -59,12 +60,12 @@ export function renderHome(app, track = 'geo') {
       <div class="mode-cards">
         <a class="mode-card china" href="#/${M.route}/china">
           <span class="mc-name">中国篇</span>
-          <span class="mc-desc">${track === 'history' ? '红木青砖 · 240 桩中华往事' : '省级区划地图 · 15 秒/题 · 300 km 判定'}</span>
+          <span class="mc-desc">${track === 'history' ? '240 桩中华往事 · 12 局六档' : '省级区划地图 · 15 秒/题 · 300 km 判定'}</span>
           <span class="mc-cta">开始侦查 →</span>
         </a>
         <a class="mode-card world" href="#/${M.route}/world">
           <span class="mc-name">世界篇</span>
-          <span class="mc-desc">${track === 'history' ? '罗马大理石 · 240 桩世界大事' : '立体地球 · 20 秒/题 · 1500 km 判定'}</span>
+          <span class="mc-desc">${track === 'history' ? '240 桩世界大事 · 12 局六档' : '立体地球 · 20 秒/题 · 1500 km 判定'}</span>
           <span class="mc-cta">开始侦查 →</span>
         </a>
       </div>

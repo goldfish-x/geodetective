@@ -552,10 +552,15 @@ export async function renderGame(app, modeKey, routeToken, track = 'geo') {
     const showDetail = q => {
       const e = descOf(q.name)
       const lv = Math.min(LEVELS, Math.max(1, q.difficulty || 1))
+      // 世界篇的 then 存的是「拉丁名 中文名」，档案栏较窄，只显示中文那一半，避免长串把地名挤成孤字
+      const thenCn = e.then ? (e.then.replace(/^[\x00-\x7F\s]+/, '') || e.then) : ''
       detail.innerHTML = `
         ${availableImages.has(q.name) || e.img ? `<img class="ss-img" src="${imgURL(q.name, modeKey, availableImages)}" alt="${q.name}" onerror="this.remove()">` : ''}
         <div class="ss-text">
           <div class="ss-name">${q.name}<em class="diff-tag lv${lv}">${dLabel(lv)}</em></div>
+          ${e.then ? `<div class="ss-then">事件发生地 · ${e.now && e.now !== thenCn
+            ? `当时称 <b>${thenCn}</b> · <span class="nw">今属 <b>${e.now}</b></span>`
+            : `<span class="nw"><b>${e.now || thenCn}</b>（地名沿用至今）</span>`}</div>` : ''}
           <p class="ss-desc">${e.desc || ''}</p>
           <div class="ss-geo">${q.hint} · ${Math.abs(q.lat).toFixed(2)}°${q.lat >= 0 ? 'N' : 'S'} ${Math.abs(q.lng).toFixed(2)}°${q.lng >= 0 ? 'E' : 'W'}</div>
         </div>`

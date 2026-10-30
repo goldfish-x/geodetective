@@ -71,13 +71,16 @@ with sync_playwright() as p:
         page.wait_for_timeout(250)
     rec_before = page.evaluate("() => window.__gdDebug.state.records.length")
     tot_before = page.evaluate("() => window.__gdDebug.state.total")
+    # 回退会扣回最近两题的得分；中心点击不一定命中 0 分（看题目落点），所以按实际扣分校验
+    removed = page.evaluate(
+        "() => window.__gdDebug.state.records.slice(-2).reduce((a, b) => a + (b.points || 0), 0)")
     page.click('[data-prop="redo"]')
     page.wait_for_function("() => window.__gdDebug.state.qInStage === 0 && window.__gdDebug.state.phase === 'answering'", timeout=8000)
     rec_after = page.evaluate("() => window.__gdDebug.state.records.length")
     tot_after = page.evaluate("() => window.__gdDebug.state.total")
-    if rec_after != rec_before - 2 or tot_after != tot_before:
-        fails.append(f"回溯后记录 {rec_after}!={rec_before - 2} 或总分变化 {tot_after}!={tot_before}")
-    print("[回溯] 回退 2 题，记录 %d→%d，总分不变（中心点 0 分）✓" % (rec_before, rec_after))
+    if rec_after != rec_before - 2 or tot_after != tot_before - removed:
+        fails.append(f"回溯后记录 {rec_after}!={rec_before - 2} 或总分 {tot_after}!={tot_before - removed}")
+    print("[回溯] 回退 2 题，记录 %d→%d，扣回 %d 分（%d→%d）✓" % (rec_before, rec_after, removed, tot_before, tot_after))
 
     # —— 疆域透镜：横幅 + 省份高亮截图 ——
     page.click('[data-prop="area"]')

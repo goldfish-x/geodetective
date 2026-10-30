@@ -30,12 +30,12 @@ test('地理版：10 局、城市/景点两线、5 难度、门槛沿用合并�
   assert.equal(STAGES, GEO_STAGES)
 })
 
-test('历史版：12 局、单线、6 难度、门槛 5000 起每局 +400', () => {
+test('历史版：12 局、单线、6 难度、门槛 6000 起每局 +600', () => {
   assert.equal(HISTORY_STAGES.length, 12)
   assert.deepEqual(HISTORY_STAGES.map(s => s.difficulty), [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6])
   assert.ok(HISTORY_STAGES.every(s => s.type === 'history'))
   assert.deepEqual(HISTORY_STAGES.map(s => s.minScore),
-    [5000, 5400, 5800, 6200, 6600, 7000, 7400, 7800, 8200, 8600, 9000, 9400])
+    [6000, 6600, 7200, 7800, 8400, 9000, 9600, 10200, 10800, 11400, 12000, 12600])
   assert.deepEqual(HISTORY_STAGES, stagesOf('history'))
   assert.equal(levelsOf('history'), 6)
   assert.equal(levelsOf('geo'), 5)

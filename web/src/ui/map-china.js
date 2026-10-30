@@ -2,7 +2,25 @@
 import * as echarts from 'echarts'
 import chinaGeo from '../data/china-map.json'
 
-echarts.registerMap('china', chinaGeo)
+// china-map.json 末尾有一个 adchar='JD' 的「九段线」要素，properties.name 为空。
+// 它不参与省份配色，就会落到 echarts 的默认白底，在地图上呈现为一块白色三角/白框。
+// 这里给它补上名字并单独指定样式：透明填充 + 细描边，只保留九段线本身。
+const NANHAI_NAME = '南海诸岛'
+const NANHAI_STYLE = {
+  areaColor: 'rgba(0,0,0,0)',
+  // 底图是深墨蓝，九段线必须用浅色描边才看得见（原来用深色等于画在深色上）
+  borderColor: 'rgba(232,226,205,.75)',
+  borderWidth: 1.2
+}
+const geoSource = {
+  ...chinaGeo,
+  features: chinaGeo.features.map(f =>
+    f.properties && f.properties.name
+      ? f
+      : { ...f, properties: { ...(f.properties || {}), name: NANHAI_NAME } })
+}
+
+echarts.registerMap('china', geoSource)
 
 // 复古地图册色板（哑光大地色系）
 const PALETTE = [
@@ -27,14 +45,18 @@ const CHINA_BBOX = { lngMin: 72, lngMax: 136, latMin: 2, latMax: 56 }
 export function createChinaMap(container, { onPick, onInvalidPick }) {
   const chart = echarts.init(container)
 
-  const provinceNames = chinaGeo.features
+  // 省份（不含九段线要素）；九段线单独一条固定样式，永不被调色板染色
+  const provinceNames = geoSource.features
     .map(f => f.properties && f.properties.name)
-    .filter(Boolean)
+    .filter(n => n && n !== NANHAI_NAME)
 
-  const baseRegions = provinceNames.map((name, i) => ({
-    name,
-    itemStyle: { areaColor: PALETTE[i % PALETTE.length] }
-  }))
+  const baseRegions = [
+    ...provinceNames.map((name, i) => ({
+      name,
+      itemStyle: { areaColor: PALETTE[i % PALETTE.length] }
+    })),
+    { name: NANHAI_NAME, itemStyle: NANHAI_STYLE }
+  ]
 
   const option = {
     backgroundColor: 'transparent',
@@ -165,9 +187,11 @@ export function createChinaMap(container, { onPick, onInvalidPick }) {
     highlightRegion(regionName) {
       const provinces = REGION_PROVINCES[regionName] || []
       const merged = baseRegions.map(r =>
-        provinces.includes(r.name)
-          ? { name: r.name, itemStyle: { areaColor: '#d9a441', opacity: 1 } }
-          : { name: r.name, itemStyle: { ...r.itemStyle, opacity: 0.35 } }
+        r.name === NANHAI_NAME
+          ? r
+          : provinces.includes(r.name)
+            ? { name: r.name, itemStyle: { areaColor: '#d9a441', opacity: 1 } }
+            : { name: r.name, itemStyle: { ...r.itemStyle, opacity: 0.35 } }
       )
       chart.setOption({ geo: { regions: merged } })
     },
@@ -177,9 +201,11 @@ export function createChinaMap(container, { onPick, onInvalidPick }) {
     // 疆域透镜：高亮答案所在省份，其余压暗
     highlightArea(provinceName) {
       const merged = baseRegions.map(r =>
-        r.name === provinceName
-          ? { name: r.name, itemStyle: { areaColor: '#e8b64c', opacity: 1 } }
-          : { name: r.name, itemStyle: { ...r.itemStyle, opacity: 0.3 } }
+        r.name === NANHAI_NAME
+          ? r
+          : r.name === provinceName
+            ? { name: r.name, itemStyle: { areaColor: '#e8b64c', opacity: 1 } }
+            : { name: r.name, itemStyle: { ...r.itemStyle, opacity: 0.3 } }
       )
       chart.setOption({ geo: { regions: merged } })
     },

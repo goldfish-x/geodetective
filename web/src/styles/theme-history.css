@@ -218,57 +218,7 @@ body.trk-history.md-china .ss-geo,
 body.trk-history.md-china .ss-hint { color: rgba(242, 227, 194, 0.88); }
 body.trk-history.md-china .ss-img { background: linear-gradient(110deg, #2c1a12 30%, #43261a 45%, #2c1a12 60%); }
 
-/* ================= 历史版首页（中性石材档案馆）================= */
-body.trk-history:not(.md-china):not(.md-world) {
-  --stone: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27700%27%20height%3D%27700%27%3E%20%3Cfilter%20id%3D%27s%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.012%200.02%27%20numOctaves%3D%275%27%20seed%3D%2719%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.32%200%200%200%200%200.29%200%200%200%200%200.25%201.4%200%200%200%20-0.55%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.85%27%20numOctaves%3D%272%27%20seed%3D%275%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20fill%3D%27%232a2724%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23s%29%27%20opacity%3D%270.65%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.05%27/%3E%20%3C/svg%3E");
-  --gold: #d8b771;
-  --gold-deep: #bd9a52;
-  --wax: #c04a37;
-  --parchment: #f3e8d2;
-  --parchment-dim: rgba(243, 232, 210, 0.80);
-  --line: rgba(216, 183, 113, 0.26);
-  background:
-    radial-gradient(ellipse 80% 55% at 50% -10%, rgba(216,183,113,0.14), transparent),
-    linear-gradient(rgba(12,10,8,0.48), rgba(12,10,8,0.62)),
-    var(--stone) 50% 50%/700px 700px repeat;
-}
-body.trk-history:not(.md-china):not(.md-world) .home-page { background: transparent; }
-body.trk-history:not(.md-china):not(.md-world) .home-title { color: var(--gold); letter-spacing: 0.20em; text-shadow: 0 2px 0 rgba(0,0,0,0.6); }
-body.trk-history:not(.md-china):not(.md-world) .home-title::after { background: linear-gradient(90deg, transparent, var(--gold), transparent); }
-body.trk-history:not(.md-china):not(.md-world) .home-tagline { color: rgba(243,232,210,0.86); }
-body.trk-history:not(.md-china):not(.md-world) .home-file-tag { color: rgba(243,232,210,0.72); border-color: var(--line); }
-/* 篇章卡不再用地理版的藏青蓝：世界篇=大理石，中国篇=红木，底部各有一条材质预告 */
-body.trk-history:not(.md-china):not(.md-world) .mode-card {
-  background: linear-gradient(rgba(255,255,255,0.10), rgba(0,0,0,0.34)), var(--stone) 50% 50%/700px 700px repeat;
-  border: 1px solid rgba(216,183,113,0.38);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
-}
-body.trk-history:not(.md-china):not(.md-world) .mode-card.world { border-color: rgba(226,220,205,0.55); }
-body.trk-history:not(.md-china):not(.md-world) .mode-card.china { border-color: rgba(217,180,92,0.55); }
-body.trk-history:not(.md-china):not(.md-world) .mode-card.world .mc-name { color: #efe7d6; }
-body.trk-history:not(.md-china):not(.md-world) .mode-card.china .mc-name { color: var(--gold); }
-body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after,
-body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
-  content: '';
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 8px;
-}
-body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after {
-  background: linear-gradient(rgba(255,255,255,0.5), rgba(150,142,124,0.35)), url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27700%27%20height%3D%27700%27%3E%20%3Cfilter%20id%3D%27v%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.006%200.026%27%20numOctaves%3D%275%27%20seed%3D%2731%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.44%200%200%200%200%200.42%200%200%200%200%200.38%202.0%200%200%200%20-0.72%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.85%27%20numOctaves%3D%272%27%20seed%3D%279%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20fill%3D%27%23fcfaf4%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23v%29%27%20opacity%3D%270.55%27/%3E%20%3Crect%20width%3D%27700%27%20height%3D%27700%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.04%27/%3E%20%3C/svg%3E") 50% 50%/200px 200px repeat;
-  border-top: 1px solid rgba(226,220,205,0.55);
-}
-body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
-  background: linear-gradient(rgba(0,0,0,0.22), rgba(0,0,0,0.42)), url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http://www.w3.org/2000/svg%27%20width%3D%27620%27%20height%3D%27620%27%3E%20%3Cfilter%20id%3D%27w1%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.004%200.085%27%20numOctaves%3D%275%27%20seed%3D%2713%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.09%200%200%200%200%200.03%200%200%200%200%200.015%201.9%200%200%200%20-0.62%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27w2%27%20x%3D%270%27%20y%3D%270%27%20width%3D%27100%25%27%20height%3D%27100%25%27%3E%20%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.0025%200.045%27%20numOctaves%3D%274%27%20seed%3D%2747%27%20stitchTiles%3D%27stitch%27%20result%3D%27t%27/%3E%20%3CfeColorMatrix%20in%3D%27t%27%20type%3D%27matrix%27%20values%3D%270%200%200%200%200.66%200%200%200%200%200.36%200%200%200%200%200.21%201.5%200%200%200%20-0.78%27/%3E%20%3C/filter%3E%20%3Cfilter%20id%3D%27gr%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.9%27%20numOctaves%3D%272%27%20seed%3D%273%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20fill%3D%27%234d2317%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23w2%29%27%20opacity%3D%270.62%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23w1%29%27%20opacity%3D%270.70%27/%3E%20%3Crect%20width%3D%27620%27%20height%3D%27620%27%20filter%3D%27url%28%23gr%29%27%20opacity%3D%270.05%27/%3E%20%3C/svg%3E") 50% 50%/200px 200px repeat;
-  border-top: 1px solid rgba(217,180,92,0.55);
-}
-body.trk-history .mode-card { position: relative; overflow: hidden; }
-body.trk-history:not(.md-china):not(.md-world) .board,
-body.trk-history:not(.md-china):not(.md-world) .rules {
-  background: linear-gradient(rgba(255,255,255,0.06), rgba(0,0,0,0.30)), var(--stone) 50% 50%/700px 700px repeat;
-  border-color: var(--line);
-}
-body.trk-history:not(.md-china):not(.md-world) .board-tab.active { background: var(--gold-deep); border-color: var(--gold-deep); color: #1b1712; }
+/* 历史版首页沿用原始（深夜侦探事务所）风格：材质皮肤只在进入篇章页后挂载。 */
 
 /* ================= 通用补充 ================= */
 .q-diff.lv6 { color: #ff4d6d; }
@@ -351,4 +301,37 @@ body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
   body.trk-history .q-stage,
   body.trk-history .q-score { font-size: 10.5px; letter-spacing: 0.04em; }
   body.trk-history .btn-snd { flex-shrink: 0; margin-left: 2px; }
+}
+
+/* ================= 历史版结算面板：占半屏、图放大、长文可读 ================= */
+/* 历史版定位是「边玩边学」：档案面板占右侧约一半，地图/地球退到左半边，
+   面板始终与地图并排（flex 两列），不覆盖地图上的红点。 */
+body.trk-history .card-slot { flex: 0 0 clamp(380px, 48%, 680px); }
+
+body.trk-history .ss-body { gap: 14px; }
+body.trk-history .ss-detail { min-height: 0; padding: 14px; gap: 14px; }
+/* 配图放大一倍（100 → 200） */
+body.trk-history .ss-img { width: 200px; height: 200px; }
+body.trk-history .ss-name { font-size: 18px; }
+body.trk-history .ss-desc { max-height: 260px; font-size: 13.5px; line-height: 1.85; }
+/* 事件发生当时的旧地名 */
+body.trk-history .ss-then {
+  margin-top: 7px;
+  padding-left: 9px;
+  border-left: 2px solid var(--gold);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+  color: var(--parchment);
+}
+body.trk-history .ss-then b { color: var(--gold); font-weight: 700; }
+
+/* 窄屏：面板回落到地图下方，配图按屏宽分级缩小 */
+@media (max-width: 899px) {
+  body.trk-history .card-slot { flex: 0 0 auto; }
+  body.trk-history .ss-img { width: 150px; height: 150px; }
+  body.trk-history .ss-desc { max-height: none; }
+}
+@media (max-width: 720px) {
+  body.trk-history .ss-img { width: 120px; height: 120px; }
 }
