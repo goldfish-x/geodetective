@@ -513,8 +513,8 @@ li.top3 .bl-score { color: #e8a877; }
   display: flex;
   flex-direction: column;
   gap: 12px;
-  justify-content: center;
-  justify-content: safe center;
+  /* 顶部对齐：面板高度会随「悬停的地名」内容变化，垂直居中会让整块上下跳 */
+  justify-content: flex-start;
   overflow-y: auto;
   overscroll-behavior: contain;
 }
@@ -1248,3 +1248,40 @@ li.top3 .bl-score { color: #e8a877; }
   .ss-foot { flex-direction: column-reverse; gap: 8px; }
   .ss-foot .btn { width: 100%; }
 }
+/* ============ 载入进度条（进入对局时贴在页面底部） ============ */
+.gd-load {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 320;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 18px 11px;
+  background: rgba(13, 21, 34, 0.96);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.45);
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+  color: var(--parchment-dim);
+  animation: gdLoadIn 0.18s ease;
+}
+@keyframes gdLoadIn { from { transform: translateY(100%); } to { transform: translateY(0); } }
+.gd-load-track {
+  flex: 1 1 auto;
+  height: 5px;
+  border-radius: 3px;
+  background: rgba(236, 225, 200, 0.14);
+  overflow: hidden;
+  min-width: 80px;
+}
+.gd-load-track i {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--wax));
+  transition: width 0.25s ease;
+}
+.gd-load span { flex: 0 0 auto; white-space: nowrap; }
+/* 历史版两套皮肤下也保持同一条深色进度条，保证对比度 */
+body.trk-history .gd-load { background: rgba(10, 8, 6, 0.96); color: #e8dcc0; }

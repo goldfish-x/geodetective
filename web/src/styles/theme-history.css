@@ -335,3 +335,7 @@ body.trk-history .ss-then b { color: var(--gold); font-weight: 700; }
 @media (max-width: 720px) {
   body.trk-history .ss-img { width: 120px; height: 120px; }
 }
+
+/* 档案详情区高度固定：不同事件简介长短不一，避免悬停时整块面板上下伸缩 */
+body.trk-history .ss-detail { min-height: 232px; }
+body.trk-history .ss-desc { min-height: 132px; }

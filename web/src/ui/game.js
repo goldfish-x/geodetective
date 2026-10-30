@@ -1,6 +1,7 @@
 // 游戏页：出题 → 作答 → 单题结算 → 局结算（最低分门槛） → 终局结算
 import { MODES, modeOf, haversine, score, buildQuiz, STAGE_SIZE, stagesOf, levelsOf, difficultyLabel, TYPE_LABELS, PROPS, PROP_ORDER, TIERS, FREE_TIER, tierCounts } from '@gd/shared'
 import { getNickname, addScore } from '../core/storage.js'
+import { bump } from '../core/loading.js'
 import { onlineEnabled } from '../net/api.js'
 import { getSession } from '../net/session.js'
 import { createOnlineGame } from '../net/online-game.js'
@@ -60,11 +61,14 @@ export async function renderGame(app, modeKey, routeToken, track = 'geo') {
   document.body.classList.toggle('md-world', modeKey === 'world')
 
   // 按模式懒加载地图、题库与档案，避免 ECharts/ECharts GL 与两套大 GeoJSON 全部进入首屏。
+  // 四份资源并行加载，各自完成时推进一次底部进度条
+  let done = 0
+  const step = (p, label) => p.then(m => { done += 1; bump(8 + done * 17, label); return m })
   const [mapModule, bankModule, descModule, imagesModule] = await Promise.all([
-    modeKey === 'china' ? import('./map-china.js') : import('./map-world.js'),
-    modeKey === 'china' ? import('../data/china.json') : import('../data/world.json'),
-    modeKey === 'china' ? import('../data/china-desc.json') : import('../data/world-desc.json'),
-    modeKey === 'china' ? import('../data/china-images.json') : import('../data/world-images.json')
+    step(modeKey === 'china' ? import('./map-china.js') : import('./map-world.js'), '正在加载地图…'),
+    step(modeKey === 'china' ? import('../data/china.json') : import('../data/world.json'), '正在加载题库…'),
+    step(modeKey === 'china' ? import('../data/china-desc.json') : import('../data/world-desc.json'), '正在加载事件档案…'),
+    step(modeKey === 'china' ? import('../data/china-images.json') : import('../data/world-images.json'), '正在加载配图清单…')
   ])
   if (window.__gdRouteToken !== routeToken || !app.isConnected) return
 
@@ -91,7 +95,9 @@ export async function renderGame(app, modeKey, routeToken, track = 'geo') {
     const { loadCoords, mergeCoords } = await import('../core/coords.js')
     mergeCoords(bank, (await loadCoords(modeKey)).default)
   }
+  bump(92, '正在编排关卡…')
   const stages = online ? online.stages : buildQuiz(bank, TRACK)
+  bump(100, '准备就绪')
 
   const state = {
     stageIndex: 0,      // 当前局（0 起）
