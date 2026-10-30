@@ -48,15 +48,15 @@ test('历史版·世界篇距离衰减单独收紧，其余赛道不受影响', 
   // 地理版、历史版中国篇沿用原参数
   assert.equal(gw.decayK, MODES.world.decayK)
   assert.equal(hc.decayK, MODES.china.decayK)
-  assert.equal(hw.decayK, 1.25)
+  assert.equal(hw.decayK, 1.1)
   assert.equal(hw.maxDistance, MODES.world.maxDistance)
   assert.equal(hw.maxScore, MODES.world.maxScore)
-  // 同样的误差，历史版世界篇明显更低：750 km 处 3985 → 2898
+  // 同样的误差，历史版世界篇明显更低：750 km 处 3985 → 2667
   assert.equal(score(750, gw), 3985)
-  assert.equal(score(750, hw), 2898)
-  // 4000 分所需的误差从约 745 km 收紧到约 415 km
-  assert.ok(score(400, hw) > 4000)
-  assert.ok(score(415, hw) <= 4000)
+  assert.equal(score(750, hw), 2667)
+  // 4000 分所需的误差从约 745 km 收紧到约 350 km
+  assert.ok(score(340, hw) > 4000)
+  assert.ok(score(350, hw) <= 4000)
   // 极近与越界行为不变
   assert.equal(score(0, hw), 5000)
   assert.equal(score(1500, hw), 0)
