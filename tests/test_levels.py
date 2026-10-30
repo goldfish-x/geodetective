@@ -68,12 +68,12 @@ with sync_playwright() as p:
     assert info["types"] == ["city", "scenic"] * 5, f"两线交替异常: {info['types']}"
     assert info["diffs"] == [1, 1, 2, 2, 3, 3, 4, 4, 5, 5], f"难度递增异常: {info['diffs']}"
     assert all(info["mins"][i] < info["mins"][i + 1] for i in range(9)), f"门槛递增异常: {info['mins']}"
-    assert info["mins"][0] == 6000 and info["mins"][-1] == 12500, f"门槛区间异常: {info['mins'][0]}~{info['mins'][-1]}"
-    assert info["mins"][1] - info["mins"][0] == 500, f"门槛涨幅异常: {info['mins']}"
+    assert info["mins"][0] == 6000 and info["mins"][-1] == 15000, f"门槛区间异常: {info['mins'][0]}~{info['mins'][-1]}"
+    assert all(info["mins"][i + 1] - info["mins"][i] == 1000 for i in range(9)), f"门槛涨幅异常: {info['mins']}"
     assert info["unique"], "80 题存在重复"
     assert info["qTypesOk"], "局内题目类型/难度与关卡配置不符"
     assert "trk-history" not in info["body"], "地理版不应挂历史版皮肤"
-    print(f"[地理版] 10局×8题 城市/景点交替，门槛 {info['mins'][0]}→{info['mins'][-1]} ✓")
+    print(f"[地理版] 10局×8题 城市/景点交替，门槛 {info['mins'][0]}→{info['mins'][-1]}（每局 +1000） ✓")
 
     # 使用疆域透镜（三档 1 次）：横幅出现、角标归零、按钮转 used
     assert page.locator('[data-prop="area"] .prop-n').inner_text() == "1"
@@ -114,12 +114,12 @@ with sync_playwright() as p:
     assert page.locator("#q-index").inner_text() == "第2局 · 01/08", page.locator("#q-index").inner_text()
     assert page.locator("#q-badge").inner_text() == "景点"
     assert page.locator("#q-diff").inner_text() == "★☆☆☆☆"
-    assert page.locator("#q-target").inner_text() == "6,500"
+    assert page.locator("#q-target").inner_text() == "7,000"
     assert page.locator("#q-stage-score").inner_text() == "0"
     assert "used" in page.locator('[data-prop="area"]').get_attribute("class"), "透镜次数不应跨局恢复"
     assert page.locator('[data-prop="time"] .prop-n').inner_text() == "3", "加时次数不应跨局变化"
     assert "danger" not in page.locator("#q-stage-wrap").get_attribute("class")
-    print("[晋级] 第1局达标 → 第2局（景点·简单·门槛6,500），道具为整局计数 ✓")
+    print("[晋级] 第1局达标 → 第2局（景点·简单·门槛7,000），道具为整局计数 ✓")
     page.screenshot(path=str(ROOT / "tests" / "gd_stage2.png"))
 
     # —— 2b. 历史版：12 局、单线、6 难度、独立门槛、皮肤挂载 ——
@@ -145,18 +145,18 @@ with sync_playwright() as p:
             bg: getComputedStyle(document.body).backgroundImage
           }
         }""")
-        assert hi["n"] == 12, f"历史版局数 {hi['n']} != 12"
+        assert hi["n"] == 6, f"历史版局数 {hi['n']} != 6"
         assert all(s == 8 for s in hi["sizes"]), f"每局题数异常: {hi['sizes']}"
         assert hi["types"] == ["history"], f"历史版应只有 history 线: {hi['types']}"
-        assert hi["diffs"] == [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6], f"六档递增异常: {hi['diffs']}"
-        assert hi["mins"][0] == 6000 and hi["mins"][-1] == 12600, f"门槛区间异常: {hi['mins'][0]}~{hi['mins'][-1]}"
-        assert all(hi["mins"][i + 1] - hi["mins"][i] == 600 for i in range(11)), f"门槛涨幅异常: {hi['mins']}"
-        assert hi["unique"], "96 题存在重复"
+        assert hi["diffs"] == [1, 2, 3, 4, 5, 6], f"六档递增异常: {hi['diffs']}"
+        assert hi["mins"][0] == 6000 and hi["mins"][-1] == 12000, f"门槛区间异常: {hi['mins'][0]}~{hi['mins'][-1]}"
+        assert all(hi["mins"][i + 1] - hi["mins"][i] == 1200 for i in range(5)), f"门槛涨幅异常: {hi['mins']}"
+        assert hi["unique"], "48 题存在重复"
         assert hi["stars"] == "★☆☆☆☆☆", f"六档星标异常: {hi['stars']}"
         assert "trk-history" in hi["body"] and cls in hi["body"], f"皮肤类名缺失: {hi['body']}"
         assert "svg" in hi["bg"], f"皮肤纹理未生效: {hi['bg']}"
         hpage.screenshot(path=str(ROOT / "tests" / f"history_{mode}.png"))
-        print(f"[历史版·{mode}] 12局×8题 六档，门槛 {hi['mins'][0]}→{hi['mins'][-1]}，皮肤 {cls} ✓")
+        print(f"[历史版·{mode}] 6局×8题 六档，门槛 {hi['mins'][0]}→{hi['mins'][-1]}，皮肤 {cls} ✓")
     assert not herr, f"历史版页面 JS 报错: {herr}"
     hpage.close()
 

@@ -19,23 +19,23 @@ test('score 边界与衰减（两版共用同一公式）', () => {
   assert.equal(score(750, MODES.world), 3985)
 })
 
-test('地理版：10 局、城市/景点两线、5 难度、门槛沿用合并版原值', () => {
+test('地理版：10 局、城市/景点两线、5 难度、门槛 6000 起每局 +1000', () => {
   assert.equal(GEO_STAGES.length, 10)
   assert.equal(STAGE_SIZE, 8)
   assert.deepEqual(GEO_STAGES.map(s => s.difficulty), [1, 1, 2, 2, 3, 3, 4, 4, 5, 5])
   assert.deepEqual(GEO_STAGES.map(s => s.type), ['city', 'scenic', 'city', 'scenic', 'city', 'scenic', 'city', 'scenic', 'city', 'scenic'])
   assert.deepEqual(GEO_STAGES.map(s => s.minScore),
-    [6000, 6500, 7500, 8000, 9000, 9500, 10500, 11000, 12000, 12500])
+    [6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000])
   // STAGES 仍指向地理版，旧引用不破
   assert.equal(STAGES, GEO_STAGES)
 })
 
-test('历史版：12 局、单线、6 难度、门槛 6000 起每局 +600', () => {
-  assert.equal(HISTORY_STAGES.length, 12)
-  assert.deepEqual(HISTORY_STAGES.map(s => s.difficulty), [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6])
+test('历史版：6 局（每难度 1 局）、单线、门槛 6000 起每局 +1200', () => {
+  assert.equal(HISTORY_STAGES.length, 6)
+  assert.deepEqual(HISTORY_STAGES.map(s => s.difficulty), [1, 2, 3, 4, 5, 6])
   assert.ok(HISTORY_STAGES.every(s => s.type === 'history'))
   assert.deepEqual(HISTORY_STAGES.map(s => s.minScore),
-    [6000, 6600, 7200, 7800, 8400, 9000, 9600, 10200, 10800, 11400, 12000, 12600])
+    [6000, 7200, 8400, 9600, 10800, 12000])
   assert.deepEqual(HISTORY_STAGES, stagesOf('history'))
   assert.equal(levelsOf('history'), 6)
   assert.equal(levelsOf('geo'), 5)
@@ -68,14 +68,14 @@ test('buildQuiz 按赛道取对应题库且不重复', () => {
   assert.ok(geoNames.every(n => n[0] !== 'h'))
 
   const his = buildQuiz(bank, 'history')
-  assert.equal(his.length, 12)
+  assert.equal(his.length, 6)
   const hisNames = his.flatMap(s => s.questions.map(q => q.name))
   assert.equal(new Set(hisNames).size, hisNames.length)
   assert.ok(hisNames.every(n => n[0] === 'h'))
-  // 历史版每难度两局共 16 题，都能从 40 题的池子里抽满
+  // 历史版每难度一局共 8 题，都能从 40 题的池子里抽满
   for (let lv = 1; lv <= 6; lv++) {
     const n = his.filter(s => s.difficulty === lv).flatMap(s => s.questions).filter(q => q.difficulty === lv).length
-    assert.equal(n, 16)
+    assert.equal(n, 8)
   }
   assert.deepEqual(TRACKS.geo.types, ['city', 'scenic'])
   assert.deepEqual(TRACKS.history.types, ['history'])

@@ -60,12 +60,12 @@ export function renderHome(app, track = 'geo') {
       <div class="mode-cards">
         <a class="mode-card china" href="#/${M.route}/china">
           <span class="mc-name">中国篇</span>
-          <span class="mc-desc">${track === 'history' ? '240 桩中华往事 · 12 局六档' : '省级区划地图 · 15 秒/题 · 300 km 判定'}</span>
+          <span class="mc-desc">${track === 'history' ? '240 桩中华往事 · 6 局六档' : '省级区划地图 · 15 秒/题 · 300 km 判定'}</span>
           <span class="mc-cta">开始侦查 →</span>
         </a>
         <a class="mode-card world" href="#/${M.route}/world">
           <span class="mc-name">世界篇</span>
-          <span class="mc-desc">${track === 'history' ? '240 桩世界大事 · 12 局六档' : '立体地球 · 20 秒/题 · 1500 km 判定'}</span>
+          <span class="mc-desc">${track === 'history' ? '240 桩世界大事 · 6 局六档' : '立体地球 · 20 秒/题 · 1500 km 判定'}</span>
           <span class="mc-cta">开始侦查 →</span>
         </a>
       </div>

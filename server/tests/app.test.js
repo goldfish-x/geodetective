@@ -196,13 +196,13 @@ test("赛道契约：config 暴露两条赛道，历史版 12 局且只出历史
   const a = app();
   const cfg = JSON.parse((await a.inject({ method: "GET", url: "/v1/config" })).payload);
   assert.equal(cfg.tracks.geo.stages.length, 10);
-  assert.equal(cfg.tracks.history.stages.length, 12);
+  assert.equal(cfg.tracks.history.stages.length, 6);
   assert.deepEqual(cfg.tracks.geo.stages.map(s => s.type),
     ["city", "scenic", "city", "scenic", "city", "scenic", "city", "scenic", "city", "scenic"]);
-  assert.deepEqual(cfg.tracks.history.stages.map(s => s.type), Array(12).fill("history"));
-  assert.deepEqual(cfg.tracks.history.stages.map(s => s.difficulty), [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]);
+  assert.deepEqual(cfg.tracks.history.stages.map(s => s.type), Array(6).fill("history"));
+  assert.deepEqual(cfg.tracks.history.stages.map(s => s.difficulty), [1, 2, 3, 4, 5, 6]);
   assert.equal(cfg.tracks.history.stages[0].minScore, 6000);
-  assert.equal(cfg.tracks.history.stages[11].minScore, 12600);
+  assert.equal(cfg.tracks.history.stages[5].minScore, 12000);
   assert.equal(cfg.tracks.history.levels, 6);
   // 旧客户端兼容：顶层 stages 仍是地理版
   assert.equal(cfg.stages.length, 10);
