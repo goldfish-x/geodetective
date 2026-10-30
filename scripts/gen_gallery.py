@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-"""生成 web/public/gallery.html：历史线 400 张配图总览，可筛选/标记/导出"""
+"""生成 web/public/gallery.html：历史线 480 张配图总览，可筛选/标记/导出
+（历史版 6 档难度，星级条按 6 档渲染；不能用 5 档写死，否则 repeat(-1) 会整页报错）"""
 import os,json,sys
 sys.stdout.reconfigure(encoding="utf-8")
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -70,7 +71,7 @@ textarea{flex:1;min-height:52px;background:#0b1015;color:var(--fg);border:1px so
 .tip{color:var(--dim);font-size:12px}
 </style></head><body>
 <header>
-  <h1>历史配图总览 · 中国篇 / 世界篇 400 张 <span class="stat" id="stat"></span></h1>
+  <h1>历史配图总览 · 中国篇 / 世界篇 480 张（六档）<span class="stat" id="stat"></span></h1>
   <div class="row">
     <span class="tip">篇章</span>
     <button data-f="m" data-v="" class="on">全部</button>
@@ -79,7 +80,8 @@ textarea{flex:1;min-height:52px;background:#0b1015;color:var(--fg);border:1px so
     <span class="tip">星级</span>
     <button data-f="t" data-v="" class="on">全部</button>
     <button data-f="t" data-v="1">1★</button><button data-f="t" data-v="2">2★</button>
-    <button data-f="t" data-v="3">3★</button><button data-f="t" data-v="4">4★</button><button data-f="t" data-v="5">5★</button>
+    <button data-f="t" data-v="3">3★</button><button data-f="t" data-v="4">4★</button>
+    <button data-f="t" data-v="5">5★</button><button data-f="t" data-v="6">6★</button>
     <button data-f="mark" data-v="">全部</button><button data-f="mark" data-v="1">只看待换</button>
     <input id="q" type="search" placeholder="搜事件名 / 省份国家（如 西安、洛阳）">
   </div>
@@ -95,6 +97,7 @@ const DATA=__DATA__;
 const KEY="gd_review_hist_v1";
 let mark=new Set(JSON.parse(localStorage.getItem(KEY)||"null")||DATA.filter(d=>d.r).map(d=>d.m+"|"+d.n));
 const st={m:"",t:"",mark:"",q:""};
+const MAX_T=6;   // 历史版 6 档难度；星级条按 6 格渲染，避免 repeat(-1)
 const grid=document.getElementById("grid");
 function save(){localStorage.setItem(KEY,JSON.stringify([...mark]))}
 function render(){
@@ -114,7 +117,7 @@ function render(){
            :`<div class="meta" style="aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;color:#5b6b7d">缺图</div>`}
       <span class="bd">${d.b}</span>
       <div class="meta"><div class="nm">${d.n}</div>
-      <div class="sub">${d.m==="china"?"中国篇":"世界篇"} · ${"★".repeat(d.t)}${"☆".repeat(5-d.t)} · ${d.a||"—"}</div></div></div>`;
+      <div class="sub">${d.m==="china"?"中国篇":"世界篇"} · ${"★".repeat(Math.min(d.t,MAX_T))}${"☆".repeat(Math.max(0,MAX_T-d.t))} · ${d.a||"—"}</div></div></div>`;
   }).join("");
   document.getElementById("stat").textContent=`共 ${DATA.length} 张 · 当前 ${shown} · 待换 ${mark.size}`;
 }
