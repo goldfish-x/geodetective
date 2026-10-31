@@ -66,10 +66,12 @@
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "吉布提市": {
-  "url": "https://img1.baidu.com/it/u=1073806478,3112345592&fm=253&fmt=auto?w=500&h=709",
-  "page": "www.veer.com",
-  "title": "吉布提市:努里耶清真寺",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 5（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
  },
  "因特拉肯": {
   "url": "https://img2.baidu.com/it/u=1177454052,2046660447&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=653",
@@ -204,10 +206,12 @@
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "恩德伯里岛": {
-  "url": "https://img0.baidu.com/it/u=2629779339,1097516045&fm=253&fmt=auto&app=138&f=JPEG?w=750&h=500",
-  "page": "weibo.com",
-  "title": "enderby island, auckland islands, image © tony whitehead by",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 6（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
  },
  "慕尼黑": {
   "url": "https://img95.699pic.com/photo/50493/3060.jpg_wh860.jpg",
@@ -1709,5 +1713,53 @@
   "license": "未核验授权（百度图片检索，用户逐张点选）",
   "subject": "event",
   "note": "原为「戊辰战争爆发」条目配图，实为西南战争城山决战，随条目改题沿用"
+ },
+ "维多利亚瀑布": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 6（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "戈克塔瀑布": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 6（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "圣多明各": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 6（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "马尼拉": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 3（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "勃兰登堡门": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 1（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "吉萨金字塔": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "吉萨金字塔群全景（重新检索）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 复核后重选"
  }
 }

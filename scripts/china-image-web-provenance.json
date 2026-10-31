@@ -126,10 +126,12 @@
   "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
  },
  "尼玛": {
-  "url": "https://img0.baidu.com/it/u=1882430158,1588159541&fm=253&fmt=auto&app=138&f=JPEG?w=763&h=431",
-  "page": "mbd.baidu.com",
-  "title": "探秘尼玛县:西藏高原的神秘之地",
-  "license": "未核验授权（网络检索图，经 Qwen-VL 核验为实景照片且与地名对应；商用前需替换为 CC 或自拍）"
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 2（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
  },
  "嵩山": {
   "url": "https://k.sinaimg.cn/n/sinakd10117/53/w1003h650/20201206/1ea9-keyancw5012250.jpg/w700d1q75cms.jpg",
@@ -1830,5 +1832,117 @@
   "license": "未核验授权（百度图片检索）",
   "subject": "event",
   "note": "历史版 DLC 扩充题库新增，经视觉复核无叠加文字/水印"
+ },
+ "洞庭湖": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 4（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "涠洲岛": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 3（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "丽水": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 1（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "江布拉克": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 4（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "大柴旦翡翠湖": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 5（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "额济纳胡杨林": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 1（原图）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "巴彦淖尔": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 2（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "郎木寺": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 1（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "泰安": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 3（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "营口": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "营口城市航拍（已裁掉右下角微博水印）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 复核后重裁"
+ },
+ "阿拉尔": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "阿拉尔市风光（重新检索）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 复核后重选"
+ },
+ "崀山": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 3（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "温州": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "地理篇换图候选 1（220px 缩略图回捞）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 用户复核选定，替换原不合格配图"
+ },
+ "霍林郭勒": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "霍林郭勒市全景（重新检索）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "place",
+  "note": "2026-10-31 复核后重选"
  }
 }
