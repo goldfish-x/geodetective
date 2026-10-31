@@ -17,7 +17,9 @@ export function showLoadBar(text = '正在加载地图与题库…') {
   el = document.createElement('div')
   el.className = 'gd-load'
   el.id = 'gd-load'
-  el.innerHTML = '<div class="gd-load-track"><i id="gd-load-fill"></i></div><span id="gd-load-text"></span>'
+  el.innerHTML = '<div class="gd-load-title">正在调取档案</div>'
+    + '<div class="gd-load-track"><i id="gd-load-fill"></i></div>'
+    + '<div class="gd-load-text" id="gd-load-text"></div>'
   document.body.appendChild(el)
   fillEl = el.querySelector('#gd-load-fill')
   textEl = el.querySelector('#gd-load-text')

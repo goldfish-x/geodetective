@@ -303,6 +303,89 @@ body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
   body.trk-history .btn-snd { flex-shrink: 0; margin-left: 2px; }
 }
 
+/* ================= 通用补充 ================= */
+.q-diff.lv6 { color: #ff4d6d; }
+.diff-tag.lv6 { color: #ff4d6d; border: 1px solid rgba(255, 77, 109, 0.65); }
+.nw { white-space: nowrap; }
+
+.track-switch { width: 100%; display: flex; justify-content: center; margin: 2px 0 18px; }
+.ts-link {
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--parchment-dim);
+  text-decoration: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 18px;
+  transition: color .15s ease, border-color .15s ease, transform .15s ease;
+}
+.ts-link:hover { color: var(--gold); border-color: var(--gold); transform: translateY(-1px); }
+body.trk-history .mode-card .mc-desc { line-height: 1.6; }
+
+/* ---------- v3 收尾 ---------- */
+/* 结算后计时条压暗过头，历史版两套皮肤都提亮，保证「本局小结 / 已结算」可读 */
+body.trk-history .timer.settled { opacity: 0.78; }
+body.trk-history.md-world .timer.settled .timer-text { color: #2b2620; text-shadow: 0 1px 0 rgba(255,255,255,0.7); }
+body.trk-history.md-china .timer.settled .timer-text { color: #fff6e6; text-shadow: 0 1px 3px rgba(0,0,0,0.9); }
+/* 局档案占位提示：浅色石材上加深，红木上提亮 */
+body.trk-history.md-world .ss-empty { color: rgba(47,42,34,0.72); }
+body.trk-history.md-china .ss-empty { color: rgba(242,227,194,0.72); }
+/* 首页两张篇章卡的材质预告条：描边统一成同一支金线，避免一白一金 */
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after,
+body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
+  border-top: 1px solid rgba(216, 183, 113, 0.55);
+}
+
+/* ---------- v4 收尾：材质预告条统一 + 移动端触摸区 ---------- */
+/* 世界篇那条原来是近白大理石，和中国篇的暗红木并排看像两种描边；
+   统一为「同一支金线 + 各自材质底」：世界篇用冷灰石材渐变，中国篇仍是红木纹。 */
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after {
+  background: linear-gradient(180deg, #d8d2c4 0%, #b3aca0 55%, #8e887c 100%);
+}
+body.trk-history:not(.md-china):not(.md-world) .mode-card.world::after,
+body.trk-history:not(.md-china):not(.md-world) .mode-card.china::after {
+  height: 10px;
+  border-top: 2px solid rgba(216, 183, 113, 0.80);
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* 移动端：胶囊按钮触摸区抬到 ≥40px，历史版顶栏第二行留出间距 */
+@media (max-width: 560px) {
+  body.trk-history .ts-link { padding: 11px 20px; font-size: 13.5px; }
+  body.trk-history .board-tab { min-height: 40px; padding: 10px 13px; }
+  body.trk-history .game-top { gap: 7px 12px; padding: 10px 12px 9px; }
+  body.trk-history .q-stats { gap: 3px; }
+  body.trk-history .q-index,
+  body.trk-history .q-stage { letter-spacing: 0.06em; }
+}
+
+/* ---------- v5 收尾：移动端触摸区实测补足 ---------- */
+/* 只给 min-height 不够：.ts-link 是行内元素，高度由 line-height 决定。
+   改成 inline-flex 并锁定 40px，触摸区才真正达标。 */
+@media (max-width: 560px) {
+  body.trk-history .ts-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 20px;
+  }
+  body.trk-history .board-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    padding: 0 13px;
+  }
+  /* 顶栏第一行三块 HUD 与音量键之间留出间距，字号略收避免贴死 */
+  body.trk-history .q-stats { gap: 8px; margin-right: 4px; }
+  body.trk-history .q-index,
+  body.trk-history .q-stage,
+  body.trk-history .q-score { font-size: 10.5px; letter-spacing: 0.04em; }
+  body.trk-history .btn-snd { flex-shrink: 0; margin-left: 2px; }
+}
+
 /* ================= 历史版结算面板：占半屏、图放大、长文可读 ================= */
 /* 历史版定位是「边玩边学」：档案面板占右侧约一半，地图/地球退到左半边，
    面板始终与地图并排（flex 两列），不覆盖地图上的红点。 */
@@ -336,9 +419,6 @@ body.trk-history .ss-then b { color: var(--gold); font-weight: 700; }
   body.trk-history .ss-img { width: 120px; height: 120px; }
 }
 
-/* 档案详情区高度固定：不同事件简介长短不一，避免悬停时整块面板上下伸缩 */
-body.trk-history .ss-detail { min-height: 232px; }
-body.trk-history .ss-desc { min-height: 132px; }
 
 /* 「当时称」后面附的拉丁原名：小一号、淡一点，不与主地名抢视觉 */
 body.trk-history .then-lat {
