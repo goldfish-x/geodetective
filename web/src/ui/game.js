@@ -559,8 +559,11 @@ export async function renderGame(app, modeKey, routeToken, track = 'geo') {
     const showDetail = q => {
       const e = descOf(q.name)
       const lv = Math.min(LEVELS, Math.max(1, q.difficulty || 1))
-      // 世界篇的 then 存的是「拉丁名 中文名」，档案栏较窄，只显示中文那一半，避免长串把地名挤成孤字
-      const thenCn = e.then ? (e.then.replace(/^[\x00-\x7F\s]+/, '') || e.then) : ''
+      // 世界篇的 then 存的是「拉丁名 中文名」，档案栏只显示中文那一半。
+      // 注意不能用 ASCII 正则截断：München / Soča / Orléans 这些带变音符号的字母不在 ASCII 范围内，
+      // 会留下「ünchen 慕尼黑」「ča 伊松佐河」这种残字。改为从第一个汉字处截取。
+      const cjkAt = e.then ? e.then.search(/[\u3400-\u9fff]/) : -1
+      const thenCn = e.then ? (cjkAt >= 0 ? e.then.slice(cjkAt) : e.then) : ''
       detail.innerHTML = `
         ${availableImages.has(q.name) || e.img ? `<img class="ss-img" src="${imgURL(q.name, modeKey, availableImages)}" alt="${q.name}" onerror="this.remove()">` : ''}
         <div class="ss-text">
