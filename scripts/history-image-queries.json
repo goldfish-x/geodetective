@@ -2369,12 +2369,6 @@
   "kind": "painting",
   "tier": 5
  },
- "world|戊辰战争爆发": {
-  "en": "Boshin War",
-  "zh": "Boshin war woodblock print",
-  "kind": "painting",
-  "tier": 5
- },
  "world|拉文纳战役": {
   "en": "Battle of Ravenna (1512)",
   "zh": "Ravenna battle tapestry",
@@ -2398,5 +2392,11 @@
   "zh": "Pugachev portrait",
   "kind": "portrait",
   "tier": 5
+ },
+ "world|西南战争": {
+  "en": "Satsuma Rebellion Shiroyama",
+  "zh": "西南战争 鹿儿岛城山 浮世绘",
+  "kind": "painting",
+  "tier": 6
  }
 }

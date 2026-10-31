@@ -1126,13 +1126,6 @@
   "license": "未核验授权（百度图片检索，用户逐张点选）",
   "subject": "event"
  },
- "戊辰战争爆发": {
-  "url": "",
-  "page": "image.baidu.com",
-  "title": "world__戊辰战争爆发__1.jpg",
-  "license": "未核验授权（百度图片检索，用户逐张点选）",
-  "subject": "event"
- },
  "托尔德西里亚斯条约签署": {
   "url": "",
   "page": "image.baidu.com",
@@ -1714,5 +1707,13 @@
   "license": "未核验授权（百度图片检索）",
   "subject": "event",
   "note": "斯科特探险队遇难，1912"
+ },
+ "西南战争": {
+  "url": "",
+  "page": "image.baidu.com",
+  "title": "鹿儿岛城山之战（浮世绘）",
+  "license": "未核验授权（百度图片检索，用户逐张点选）",
+  "subject": "event",
+  "note": "原为「戊辰战争爆发」条目配图，实为西南战争城山决战，随条目改题沿用"
  }
 }
