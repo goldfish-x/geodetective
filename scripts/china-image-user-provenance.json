@@ -457,5 +457,14 @@
   "md5": "6b49eb8b1ae558e4b6fa233e43eb0299",
   "subject": "event",
   "source": "user"
+ },
+ "敦煌莫高窟": {
+  "title": "用户提供：敦煌莫高窟.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "fb2545b47cde646e4632564f80ed6f19",
+  "subject": "place",
+  "source": "user"
  }
 }

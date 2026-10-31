@@ -313,5 +313,86 @@
   "md5": "71cf6d6a7d2f23266cb1cb94c9a49818",
   "subject": "event",
   "source": "user"
+ },
+ "好莱坞": {
+  "title": "用户提供：好莱坞.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "3bdafc0909afd7d7241fd5fb4cffbd6e",
+  "subject": "place",
+  "source": "user"
+ },
+ "圣家堂": {
+  "title": "用户提供：圣家堂.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "b94a318e5d0141097359e4138853f008",
+  "subject": "place",
+  "source": "user"
+ },
+ "哈利法塔": {
+  "title": "用户提供：哈里发塔.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "41449addeffa1d7f4235dc83a033ff1f",
+  "subject": "place",
+  "source": "user"
+ },
+ "华盛顿": {
+  "title": "用户提供：华盛顿.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "da36c73f6f11e619065cfbe89a8c6e93",
+  "subject": "place",
+  "source": "user"
+ },
+ "乞力马扎罗山": {
+  "title": "用户提供：乞力马扎罗山.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "7f665fd9816147c5a545401a373fdcea",
+  "subject": "place",
+  "source": "user"
+ },
+ "蓝色清真寺": {
+  "title": "用户提供：蓝色清真寺.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "b66b11463045d6119298fca87054e440",
+  "subject": "place",
+  "source": "user"
+ },
+ "科帕卡巴纳海滩": {
+  "title": "用户提供：科帕卡巴纳海滩.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "52b01ddd4aba019edf38461131d06e23",
+  "subject": "place",
+  "source": "user"
+ },
+ "米尔福德峡湾": {
+  "title": "用户提供：米尔福德峡湾.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "220f7f9cf2ff83f42b9771c10b07ac2e",
+  "subject": "place",
+  "source": "user"
+ },
+ "长城": {
+  "title": "用户提供：长城.png",
+  "url": "",
+  "license": "未核验授权（用户提供；商用前需替换为 CC 或自拍）",
+  "artist": "",
+  "md5": "127cbec43c1f8f481b9ba15d7baf2455",
+  "subject": "place",
+  "source": "user"
  }
 }
