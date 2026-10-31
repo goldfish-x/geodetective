@@ -339,3 +339,12 @@ body.trk-history .ss-then b { color: var(--gold); font-weight: 700; }
 /* 档案详情区高度固定：不同事件简介长短不一，避免悬停时整块面板上下伸缩 */
 body.trk-history .ss-detail { min-height: 232px; }
 body.trk-history .ss-desc { min-height: 132px; }
+
+/* 「当时称」后面附的拉丁原名：小一号、淡一点，不与主地名抢视觉 */
+body.trk-history .then-lat {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0;
+  opacity: 0.78;
+  color: var(--parchment-dim);
+}

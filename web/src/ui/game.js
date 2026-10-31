@@ -564,12 +564,14 @@ export async function renderGame(app, modeKey, routeToken, track = 'geo') {
       // 会留下「ünchen 慕尼黑」「ča 伊松佐河」这种残字。改为从第一个汉字处截取。
       const cjkAt = e.then ? e.then.search(/[\u3400-\u9fff]/) : -1
       const thenCn = e.then ? (cjkAt >= 0 ? e.then.slice(cjkAt) : e.then) : ''
+      // 拉丁原名（then 里汉字之前的那一段），有就一并显示：伊松佐河（Soča）
+      const thenLat = e.then && cjkAt > 0 ? e.then.slice(0, cjkAt).trim() : ''
       detail.innerHTML = `
         ${availableImages.has(q.name) || e.img ? `<img class="ss-img" src="${imgURL(q.name, modeKey, availableImages)}" alt="${q.name}" onerror="this.remove()">` : ''}
         <div class="ss-text">
           <div class="ss-name">${q.name}<em class="diff-tag lv${lv}">${dLabel(lv)}</em></div>
           ${e.then ? `<div class="ss-then">事件发生地 · ${e.now && e.now !== thenCn
-            ? `当时称 <b>${thenCn}</b> · <span class="nw">今属 <b>${e.now}</b></span>`
+            ? `当时称 <b>${thenCn}</b>${thenLat ? `<span class="then-lat">（${thenLat}）</span>` : ''} · <span class="nw">今属 <b>${e.now}</b></span>`
             : `<span class="nw"><b>${e.now || thenCn}</b>（地名沿用至今）</span>`}</div>` : ''}
           <p class="ss-desc">${e.desc || ''}</p>
           <div class="ss-geo">${q.hint} · ${Math.abs(q.lat).toFixed(2)}°${q.lat >= 0 ? 'N' : 'S'} ${Math.abs(q.lng).toFixed(2)}°${q.lng >= 0 ? 'E' : 'W'}</div>

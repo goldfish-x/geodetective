@@ -1,6 +1,6 @@
 # 图片素材署名 / Attribution
 
-`web/public/images/` 中来自 Wikimedia Commons 的地名配图，共 698 张。
+`web/public/images/` 中来自 Wikimedia Commons 的地名配图，共 697 张。
 这些图片多为 CC BY / CC BY-SA 授权，按许可证要求在此列出作者与许可证；
 部分为 CC0 或公有领域。每条链接均指向 Commons 文件页（含原始分辨率与完整授权信息）。
 
@@ -504,7 +504,6 @@ derivative work: Albinfo | CC BY-SA 3.0 |
 | 世界篇 · 普利特维采湖 | [Plitvice Lakes1.jpg](https://commons.wikimedia.org/wiki/File:Plitvice_Lakes1.jpg) | Tesla Delacroix | CC BY-SA 4.0 |
 | 世界篇 · 普加乔夫起义 | [Assault of Kazan by Pugachev by Moller.jpg](https://commons.wikimedia.org/wiki/File:Assault_of_Kazan_by_Pugachev_by_Moller.jpg) | Otto Friedrich Theodor von Möller | Public domain |
 | 世界篇 · 普拉亚 | [Praia aerial.jpg](https://commons.wikimedia.org/wiki/File:Praia_aerial.jpg) | Original uploader was David Trainer at en.wikipedia | Public domain |
-| 世界篇 · 普瓦捷战役 | [Charles de Steuben's Bataille de Poitiers en octobre 732 romantically depicts a triumphant Charles Martel (mounted) facing Abdul Rahman Al Ghafiqi (right) at the Battle of Tours.jpg](https://commons.wikimedia.org/wiki/File:Charles_de_Steuben's_Bataille_de_Poitiers_en_octobre_732_romantically_depicts_a_triumphant_Charles_Martel_(mounted)_facing_Abdul_Rahman_Al_Ghafiqi_(right)_at_the_Battle_of_Tours.jpg) | 见文件页 | Public domain |
 | 世界篇 · 曼德拉获释 | [Mural Nelson Mandela Lisbon.jpg](https://commons.wikimedia.org/wiki/File:Mural_Nelson_Mandela_Lisbon.jpg) | EconAmbiente | CC BY-SA 4.0 |
 | 世界篇 · 朗伊尔城 | [Longyearbyen panorama.JPG](https://commons.wikimedia.org/wiki/File:Longyearbyen_panorama.JPG) | Dagny | Public domain |
 | 世界篇 · 本能寺之变 | [Founder's Hall gate of Higashi-Honganji Temple, with water reflection, Kyoto, Japan.jpg](https://commons.wikimedia.org/wiki/File:Founder's_Hall_gate_of_Higashi-Honganji_Temple,_with_water_reflection,_Kyoto,_Japan.jpg) | Basile Morin | CC BY-SA 4.0 |

@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = os.environ.get("GD_BASE", "http://127.0.0.1:5173")
 # ———— 1. 题库静态校验 ————
 CHINA_HINTS = {"华北地区", "东北地区", "华东地区", "华中地区", "华南地区", "西南地区", "西北地区", "蒙古高原"}
-WORLD_HINTS = {"亚洲", "欧洲", "非洲", "北美洲", "南美洲", "大洋洲"}
+WORLD_HINTS = {"亚洲", "欧洲", "非洲", "北美洲", "南美洲", "大洋洲", "南极洲"}
 # 地理版两线仍是 5 档；历史版扩到 6 档
 LEVELS_OF_KIND = {"cities": 5, "scenics": 5, "history": 6}
 
